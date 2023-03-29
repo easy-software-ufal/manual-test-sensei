@@ -14,6 +14,3 @@ This folder contains the tool and it's packages. There's a `README.md` inside it
 ## `\testcases\`
 This folder contains the manual testcases utilized by the quality team for testing ubuntu (and its flavors) packages and images, as well as manual tests for hardware compatibility. It's a fork of [Ubuntu Manual Tests](https://launchpad.net/ubuntu-manual-tests) that has been analyzed in search of test smells. If you want to see how a manual test is written, enter this folder.
 
-
-
-
