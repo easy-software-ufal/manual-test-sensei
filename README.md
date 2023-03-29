@@ -3,8 +3,6 @@ Manual Test Sensei is a tool for detecting "test smells" in manual testing. Test
 
 The smells identified by our Sensei are based on the paper [Hunting for smells in natural language tests](https://ieeexplore.ieee.org/document/6606682/), by _Hauptmann et al._, on the [Open Test Smells Catalog](https://easy.github.io/testsmells/index.html), and on the tool creators' expertise on the subject.
 
-Also, there is a written paper associated 
-
 This repository is divided in two main folders. `\ManualTestSensei\` which is our tool, `\testcases\` where the UbuntuOS testcases are located.
 
 ## `\ManualTestSensei\`
