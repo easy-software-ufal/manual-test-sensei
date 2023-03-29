@@ -1,0 +1,41 @@
+Scope of this test is to start a recovery session.
+
+<em>Proceed in your native language if you wish. Instructions will remain in English</em>
+
+<dl>
+    <dt>Boot up the image</dt>
+    <dt>At the main screen press ESC</dt>
+    <dt>Select "Rescue a broken system"</dt>
+    <dt>Choose the desired language</dt>
+    <dt>Choose the language</dt>
+    <dt>Select your location</dt>
+    <dt>Configure locales</dt>
+    <dt>At configure keyboard page, select NO </dt>
+    <dt>Select the country of the keyboard</dt>
+    <dt>Select the keyboard layout</dt>
+    <dt>Select hostname ubuntu as default</dt>
+    <dt>Verify or setup the timezone</dt>
+    <dt>Choose the device to use as root filesystem</dt>
+    <dt>The list of the Rescue operations will be shown:</dt>
+    <dt>Execute a shell /dev/sda1 (or what you have choosed as root filesytem)</dt>
+        <dd>Press Enter to proceed into the rescue mode</dd>
+        <dd>Type in standard commands like ls, cd /usr/games/, ls, cp sol sol1, ls</dd>
+        <dd>Ensure that changes have been made and that there is a new file created</dd>
+        <dd>Type Exit and press Enter to return to the menu</dd>
+    <dt>Execute a shell in the installer environement</dt>
+        <dd>Type in standard commands like ls, chroot /target, ls  chroot /target  changes the root to the partition you selected as root filesystem</dd>
+        <dd>Ensure that chroot works and that files are listed in both enviroments</dd>
+        <dd>Type Exit and press Enter to return to the menu</dd>
+    <dt>Reinstall GRUB boot loader</dt>
+        <dd>Select Reinstall GRUB boot loader and press Enter. Doing this will remove your Grub config and mbr and place a new automatic version in it's place</dd>
+        <dd>Type in where the boot loader need to be run and press Enter. The default for this will be hd0 or /dev/hda (ide) /dev/sda (scsi)</dd>
+        <dd>From the menu select Reboot the system and press Enter</dd>
+        <dd>Ensure the system boots as expected</dd>
+    <dt>Choose a different root file system</dt>
+        <dd>This case requires more than one root partition</dd>
+        <dd>Select Choose a different root file system</dd>
+        <dd>Choose your new root file system and press Enter</dd>
+        <dd>Check the new partition is mounted</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

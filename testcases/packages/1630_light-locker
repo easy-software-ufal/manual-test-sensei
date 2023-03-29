@@ -1,0 +1,33 @@
+<strong>light-locker is disabled from autostart in a live session, this test will need to run in an installed system</strong>
+
+This test will check that light-locker locks the screen
+<dl>
+    <dt>From menu, press Lock Screen button</dt>
+        <dd>Machine locks</dd>
+    <dt>Move mouse or press a key</dt>
+        <dd>Unlock dialogue appears</dd>
+        <dd>Session and language options in bar are unavailable</dd>
+</dl>
+
+This test will check that light-locker will inhibit access to session
+<dl>
+    <dt>While in locked screen, press Ctrl+Alt+F7</dt>
+        <dd>Screen lock warning shows and returns to unlock dialogue</dd>
+</dl>
+
+This test will check that suspend while locked will inhibit access to session
+<dl>
+    <dt>Click Power Button icon at top right of the panel, select suspend</dt>
+        <dd>Machine suspends</dd>
+    <dt>Bring machine out of suspension, then move mouse or press a key</dt>
+        <dd>Machine returns to unlock dialogue</dd>
+</dl>
+
+This test will check that light-locker unlocks the screen
+<dl>
+    <dt>Enter password and press Unlock</dt>
+        <dd>Desktop appears with any applications previously open visible</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

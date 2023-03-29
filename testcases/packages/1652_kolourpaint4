@@ -1,0 +1,13 @@
+This test will check that Kolourpaint can draw an image
+<dl>
+    <dt>Launch kolourpaint</dt>
+        <dd>kolourpaint opens and showing one window by default</dd>
+    <dt>Click on 'Pen(P)' button in the leftside of the window</dt>
+        <dd>Draw anything in the drawing area</dd>
+    <!-- EAGER STEP -->    
+    <dt>Click on 'Save' > Enter the name of the file > Click on 'Save' button in the 'Save Image' dialogue box</dt>
+        <dd>The image is saved</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

@@ -1,0 +1,14 @@
+Tests that FAMILY correctly recognises firewire devices.
+<!-- Smells: UNVERIFIED STEPS -->
+<dl>
+    <dt>Connect a Firewire external hard drive to the first Firewire port on the computer</dt>
+        <dd>The drive automatically mounts and an icon appears on the desktop</dd>
+    <dt>Right-click the drive icon and select Unmount Volume.</dt>
+        <dd>The drive icon disappears</dd>
+    <dt>Disconnect the Firewire external hard drive from the computer</dt>
+    <dt>Repeat for each Firewire port on the computer</dt>
+</dl>
+
+<strong>
+    If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

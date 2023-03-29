@@ -1,0 +1,13 @@
+These tests check browser extensions are installed.
+<dl>
+    <dt>Open Firefox</dt>
+        <dd>Firefox opens properly</dd>
+    <dt>Go to "about:add-ons"</dt>
+        <dd>Ubuntu web accounts Firefox add-on must be installed and enabled</dd>
+    <dt>Open Chromium</dt>
+        <dd>Chromium opens properly</dd>
+    <dt>Go to chrome://settings/extensions</dt>
+        <dd>Ubuntu web accounts Chromium extension must be installed and enabled</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

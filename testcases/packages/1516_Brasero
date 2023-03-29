@@ -1,0 +1,252 @@
+Test-case name: brasero/bra-001
+This test will check that Audio project menu Works
+<dl>
+    <dt>Open "Brasero Disc Burner"</dt>
+        <dd>Can you open Brasero correctly?</dd>
+    <dt>Click "Audio project"</dt>
+        <dd>A "New Audio Disc Project" window is shown</dd>
+    <dt>Press the "Add" button (+)</dt>
+        <dd>A new window asking for files appears</dd>
+    <dt>Select at least 3 music files</dt>
+        <dd>The files are added to the project</dd>
+        <dd>All information about the files is displayed: Track, Title, Artist, Length</dd>
+    <dt>Remove any project's file selecting it and using the "Remove" button (-)</dt>
+        <dd>The file is removed</dd>
+    <dt>Select another file and press the "Delete" button</dt>
+        <dd>The file is removed</dd>
+    <dt>Click on "Remove all files of the project"</dt>
+        <dd>The project is empty</dd>
+    <dt>Add again new files, press the "Add" button (+)</dt>
+        <dd>A new window asking for files appears</dd>
+    <dt>Select at least 3 music files</dt>
+        <dd>The files are added to the project</dd>
+    <dt>Write a new name for the CD/DVD in bottom the text field. It originally has "Audio disc (date)"</dt>
+        <dd>Can you change the name successfully?</dd>
+    <dt>Select one file and click "Split the select track" (the razor icon)</dt>
+        <dd>A new window should appear called "Split Track"</dd>
+    <dt>Use the slide-bar to define the cutting and click "Slice"</dt>
+        <dd>Can you see the changes in the "Slices Preview" area?</dd>
+    <dt>Click on the play button</dt>
+        <dd>No sound is heard</dd>
+    <dt>Change the track's volume</dt>
+        <dd>The sound is heard</dd>
+    <dt>Select any element of the "Slices Preview" area and click "Remove"</dt>
+        <dd>The element selected disappears</dd>
+    <dt>Click "Remove All"</dt>
+        <dd>A window asking for confirmation is displayed</dd>
+    <dt>Select "Remove All"</dt>
+        <dd>The preview area is empty</dd>
+    <dt>Click the "Ok" button</dt>
+        <dd>The main "New Audio Disc Project" window is displayed</dd>
+    <dt>Select one file and click "Split the select track" (the razor icon)</dt>
+        <dd>A new window should appear called "Split Track"</dd>
+    <dt>Select the method called "Split track in parts with a fixed length"</dt>
+        <dd>A new widget appears in the "Split Track" window asking for number of seconds.</dd>
+    <dt>Write "10", or use the buttons "-" or "+", and click "Slice"</dt>
+        <dd>The selected file is split into N tracks, each one with a 10 min duration</dd>
+    <dt>Select two elements of the "Slices Preview" area and click on the "Merge" button</dt>
+        <dd>The elements selected become one of 20min duration</dd>
+    <dt>Click "Remove All"</dt>
+        <dd>The preview area is empty</dd>
+    <dt>Click on "Ok"</dt>
+        <dd>The main "New Audio Disc Project" window is displayed</dd>
+    <dt>Select one file and click "Split the select track" (the razor icon)</dt>
+        <dd>A new window should appear called "Split Track"</dd>
+    <dt>Select the method called "Split track in a fixed number of parts"</dt>
+        <dd>A new widget appears in the "Split Track" window asking for number of parts.</dd>
+    <dt>Write "3", or use the buttons "-" or "+", and click "Slice"</dt>
+        <dd>The selected file is split into 3 tracks</dd>
+    <dt>Click "Ok"</dt>
+        <dd>The main "New Audio Disc Project" window is displayed with the file split into 3 chuncks</dd>
+    <dt>Select one file and click "Split the select track" (the razor icon)</dt>
+        <dd>A new window should appear called "Split Track"</dd>
+    <dt>Select the method called "Split track for each silence"</dt>
+    <dt>Click "Slice" to split the file</dt>
+    <dt>If the track has no silences</dt>
+        <dd>A new window appears showing "The track wasn't split" "No silence could be detected"</dd>
+    <dt>If the track has silences</dt>
+        <dd>Changes are displayed in the "Slices Preview" area</dd>
+    <dt>Click "Remove All"</dt>
+        <dd>Is the area empty?</dd>
+    <dt>Click "Ok"</dt>
+        <dd>The main "New Audio Disc Project" window is displayed</dd>
+    <dt>Select one file, and click the pause icon which stand for "Add a 2 second pause after the track"</dt>
+        <dd>A new entry appears called "Pause" below the track selected, is this track 2 seconds length?</dd>
+    <dt>Right click on the new entry and select "Remove"</dt>
+    <!-- UNVERIFIED STEPS -->
+    <dt>Once you have added files, select one of those and click on "Add a 2 second pause after the track"</dt>
+        <dd>A new entry must appear called "Pause" below our track selected, has this track 2seconds of Length?</dd>
+    <dt>Right click on the new entry and select "Remove"</dt>
+        <dd>The "Pause" entry disapears</dd>
+    <dt>Click the "Burn..." button 	<em>Note: If you don't have a CD/DVD, you can create a .iso file and keep testing</em></dt>
+    <dt>If you don't have a CD/DVD burner</dt>
+        <dd>A new window must appears asking for a name for the iso file</dd>
+    <dt>Write a new name (brasero.iso is the name by default) and click "Create Image"</dt>
+        <dd>A new window appears indicating the creation process</dd>
+    <dt>Select "Close" once Brasero finishes</dt>
+        <dd>Is the main "Audio Disc Project" interface displayed?</dd>
+</dl>
+
+
+Test-case name: brasero/bra-002
+This test will check that Data project Works
+<dl>
+    <dt>Open Brasero Disc Burner</dt>
+        <dd>Can you open Brasero correctly?</dd>
+    <dt>Click "Data project"</dt>
+        <dd>A "New Data Disc Project" window is shown</dd>
+    <dt>Press the "Add" button (+)</dt>
+        <dd>A new window asking for files appears</dd>
+    <dt>Select at least 3 files</dt>
+        <dd>The files are added to the project</dd>
+        <dd>All information about the files is displayed: Title, Size, Description and Space</dd>
+    <dt>Click the "Create a new folder" icon and press Enter</dt>
+        <dd>A new folder called "New folder" is created</dd>
+    <dt>Click the New folder item, write "Folder" and press Enter</dt>
+        <dd>The item is renamed to "Folder"</dd>
+    <dt>Drag an element to the "Folder" directory</dt>
+        <dd>The file is added and the folder gets opened</dd>
+    <dt>Click the "Burn..." button <em>Note: If you don't have a CD/DVD burner, you can create a .iso file and keep testing</em></dt>
+    <dt>If you don't have a CD/DVD writer</dt>
+        <dd>A new window must appears asking for a name for the iso file</dd>
+    <dt>Write a new name (brasero.iso is the name by default) and click "Create Image"</dt>
+        <dd>A new window appears indicating the creation process</dd>
+    <dt>Select "Close" once Brasero finishes</dt>
+        <dd>Is the main "Audio Disc Project" interface shown?</dd>
+</dl>
+
+
+Test-case name: brasero/bra-003
+This test will check that the Video project menu works
+<dl>
+    <dt>Open the Brasero Disc Burner</dt>
+    <dt>Click "Video project"</dt>
+        <dd>A "New Video Disc Project" window is shown</dd>
+    <dt>Press the "Add" button (+)</dt>
+        <dd>A new window asking for files appears</dd>
+    <dt>Select at least 3 video files</dt>
+        <dd>The files are added to the project</dd>
+        <dd>All information about the files is displayed: Title, Size</dd>
+    <dt>Click the "Burn..." button <em>Note: If you don't have a CD/DVD burner, you can create a .iso file and keep testing</em></dt>
+    <dt>If you don't have a CD/DVD writter</dt>
+        <dd>A new window must appears asking for a name for the iso file</dd>
+    <dt>Write a new name (brasero.iso is the name by default) and click "Create Image"</dt>
+        <dd>A new window appears indicating the creation process</dd>
+    <dt>Select "Close" once Brasero finishes</dt>
+        <dd>Is the main "Video Disc Project" interface shown?</dd>
+</dl>
+
+
+Test-case name: brasero/bra-004
+This test will check that the Copy disc feature works
+<dl>
+    <dt>Open the Brasero Disc Burner</dt>
+        <dd>Can you open Brasero correctly?</dd>
+    <dt>Click "Disc copy"</dt>
+        <dd>A new interface appears where you can select "Disc to copy" and "Disc to write to", do you see it?</dd>
+    <dt>Click on "Select a disc to copy"</dt>
+        <dd>All discs mounted are displayed</dd>
+    <dt>Click on "Select a disc to write to"</dt>
+        <dd>All burners are displayed</dd>
+        <dd>If you don't have a CD/DVD writer, the window shows an option to create an image (iso/toc/cue)</dd>
+    <dt>Click on "Burn" or "Create Image"</dt>
+    <dt>Is the process completed successfully?</dt>
+</dl>
+
+
+Test-case name: brasero/bra-005
+This test will check that Burn image feature works
+<dl>
+    <dt>Open "Brasero Disc Burner"</dt>
+        <dd>Can you open Brasero correctly?</dd>
+    <dt>Click on "Burn image"</dt>
+        <dd>A new interface appears where you select "disc image to write" and "disc to write to"</dd>
+    <dt>Press the "Click here to select a disc image" button</dt>
+        <dd>A new window asking for an iso file is shown</dd>
+    <dt>Select an iso file and press "Open"</dt>
+        <dd>The file information is displayed in the main interface</dd>
+    <dt>Click the "Select a disc to write to" button</dt>
+        <dd>You should see all discs availables to burn</dd>
+        <!-- CONDITIONAL TEST -->
+        <dd>If you don't have a disc, the "write to" section will be gray out</dd>
+    <dt>Click the "Burn" or "Create Image" button</dt>
+    <dt>Is the process completed successfully?</dt>
+</dl>
+
+
+Test-case name: brasero/bra-006
+This test will check that the plugins Work
+<dl>
+    <dt>Open the Brasero Disc Burner</dt>
+        <dd>Can you open Brasero correctly?</dd>
+    <dt>Go to the top bar and click on "Edit" and later on "Plugins"</dt>
+        <dd>A new "Brasero Plugins" window appears</dd>
+    <dt>Select a plugin and configure it by doing click on "Configure"</dt>
+        <dd>A new "Disc Burner" window appears</dd>
+    <dt>Select the appropriate options and select "Close"</dt>
+        <dd>The "Brasero Plugins" take the focus</dd>
+    <dt>Click the "About" button</dt>
+        <dd>A new window appears with information about the plugin and its developers</dd>
+    <dt>Select "Close"</dt>
+        <dd>Changes were applied successfully?</dd>
+</dl>
+
+
+Test-case name: brasero/bra-007
+This test will check that the Help menu works
+<dl>
+    <dt>Open the Brasero Disc Burner</dt>
+        <dd>Can you open Brasero correctly?</dd>
+    <dt>Press "F1"</dt>
+        <dd>A new "Brasero Help" window appears</dd>
+    <dt>Navigate main topics</dt>
+        <dd>Is there any issue with the content?</dd>
+    <dt>Close the "Brasero Help" window</dt>
+        <dd>The main Brasero window is displayed</dd>
+    <dt>Go to the top bar and click the "Help" menu and later "Contents"</dt>
+        <dd>The same content which was displayed in the previous step is shown</dd>
+    <dt>Close the "Brasero Help" window</dt>
+        <dd>The main Brasero window is displayed</dd>
+    <dt>Go to the top bar and click the "Help" menu and later "About"</dt>
+        <dd>A new "About Brasero" window appears</dd>
+    <dt>Press the "Brasero Homepage" link</dt>
+        <dd>Firefox open a valid url?</dd>
+    <dt>Go back to the "About Brasero" window</dt>
+    <dt>Press the "Credits" button</dt>
+        <dd>The interface shows credits?</dd>
+    <dt>Press the "License" button</dt>
+        <dd>The interface shows a licence?</dd>
+</dl>
+
+Test-case name: brasero/bra-008
+This test will check that the Tools menu work
+<dl>
+    <dt>Open the Brasero Disc Burner</dt>
+        <dd>Can you open Brasero correctly?</dd>
+    <dt>Go to the top bar and click the "Tools" menu and later "Cover Editor"</dt>
+        <dd>A new interface appears with a tools panel above</dd>
+    <dt>Make a small cover, trying to use all options</dt>
+        <dd>Did you get any problem with an option in particular?</dd>
+    <dt>Close the "Cover Editor" window</dt>
+        <dd>The main Brasero interface is shown</dd>
+    <dt>Go to the top bar and click the "Tools" menu and later click on "Eject"</dt>
+        <dd>A new interface appears and ask to select a disc</dd>
+    <dt>Select a disk and press "Eject"</dt>
+    <!-- EXCEPTION HANDLING -->
+        <dd>The system ejects the disc correctly?</dd>
+    <dt>Go to the top bar and click the "Tools" menu and later click "Blank..."</dt>
+        <dd>A new interface appears called "Disc Blanking"</dd>
+    <dt>Select a disk</dt>
+    <dt>Click on "Fast blanking" and later "Blank"</dt>
+    <dt>Is the process completed successfully?</dt>
+    <dt>Go to the top bar and click the "Tools" menu and later "Check Integrity..."</dt>
+        <dd>A new interface appears called "Disc Checking"</dd>
+    <dt>Select a disk</dt>
+    <dt>You can use an MD5 file if you want, select "Use an MD5 file to check the disc"</dt>
+        <dd>Could you select the file correctly?</dd>
+    <dt>Click the "Check" button</dt>
+    <dt>Is the process completed successfully?</dt>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

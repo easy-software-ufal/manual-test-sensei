@@ -1,0 +1,234 @@
+Test-case dash/show
+<dl>
+    <dt>Press super</dt>
+        <dd>The dash should appear, with a "Search" text in the entry field and different icons for each lenses at the bottom</dd>
+    <dt>Press ctrl + tab to navigate between lenses</dt>
+        <dd>Each lens should get the focus and the view is refreshed</dd>
+    <dt>Press super</dt>
+        <dd>The dash should close</dd>
+</dl>
+Test-case dash/show-hide
+<dl>
+    <!-- Unverified Steps -->
+    <dt>Click the first item of the launcher</dt>
+        <dd>The dash should appear</dd>
+    <dt>Ensure that the content of the search is empty</dt>
+    <dt>Press escape</dt>
+        <dd>The dash should close</dd>
+    <dt>Press super to show again the dash</dt>
+    <dt>Click outside of the dash area</dt>
+        <dd>The dash should close </dd>
+</dl>
+Test-case dash/launcher-interaction
+<dl>
+    <!-- Misplaced Pre-Condition -->
+    <dt>Make sure Launcher auto-hide is enabled.</dt>
+    <dt>Have a maximized application and launcher hidden</dt>
+    <dt>Press super to get the dash opened</dt>
+        <dd>The launcher should show, and all launcher icons should be darkened</dd>
+    <dt>Hover the launcher with your mouse</dt>
+        <dd>The launcher icons should be lightened up.</dd>
+    <dt>Click on the launcher icon of an application which is not running</dt>
+        <dd>The dash should close and the new application started</dd>
+        <dd>The launcher should hide</dd>
+</dl>
+Test-case dash/panel-buttons
+<dl>
+    <dt>Click on the first item of the launcher to open the dash</dt>
+        <dd>The top panel should not show any title/menu for the current application</dd>
+    <dt>Press the maximize/restore button in the top bar</dt>
+        <dd>The dash size should change to fullscreen/desktop size and the maximize/restore button icon should change accordingly</dd>
+    <dt>Click on the minimize button</dt>
+        <dd>Nothing should happen</dd>
+    <dt>Click on the close button</dt>
+        <dd>The dash should close</dd>
+</dl>
+Test-case dash/global-search-click
+<dl>
+    <dt>Click on the first item of the launcher</dt>
+    <dt>Enter "firefox"</dt>
+        <dd>A spinning icon should appear shortly in the text search area and a firefox match should be there</dd>
+    <dt>Click on the firefox entry</dt>
+        <dd>Firefox should be launched and the dash is closed</dd>
+</dl>
+Test-case dash/global-search-enter
+<dl>
+    <dt>Press super to get the dash opened</dt>
+        <dd>Enter "firefox"</dd>
+    <dt>Press enter</dt>
+        <dd>Firefox should be launched and the dash is closed</dd>
+</dl>
+Test-case dash/global-search-files-apps
+<dl>
+    <dt>Start gedit.</dt>
+    <dt>Save a file named "foo" in your home folder.</dt>
+    <dt>Tap super to open the dash</dt>
+    <dt>Enter "f"</dt>
+        <dd>The results should contain at least the "foo" file and "Firefox"</dd>
+    <dt>Click on the cross next to "f", in the textentry</dt>
+        <dd>The "f" search should be canceled, bringing you back to the generic "Search" entry with the default elements</dd>
+</dl>
+Test-case dash/global-search-backspace
+<dl>
+    <dt>Press super to get the dash opened</dt>
+    <dt>Make a search</dt>
+    <!-- Unspecified Parameter -->
+        <dd>Some results should appear</dd>
+    <dt>Click on backspace until the search is empty</dt>
+        <dd>The search should be canceled, bringing you back to the generic "Search" entry with the default elements</dd>
+</dl>
+Test-case dash/global-switch-lenses
+<dl>
+    <dt>Press super to get the dash opened</dt>
+    <dt>Click on each lens icons at the bottom</dt>
+        <dd>Each new lenses should get the focus and the view is refreshed</dd>
+</dl>
+Test-case dash/lenses-shortcut
+<dl>
+    <dt>Press super + A</dt>
+        <dd>The dash should open in the application lens</dd>
+    <dt>Press super + F</dt>
+        <dd>The dash should open in the file lens</dd>
+    <dt>Press super + M</dt>
+        <dd>The dash should open in the music lens</dd>
+</dl>
+Test-case dash/go-to-lens
+<dl>
+    <dt>Right click on the first item of the launcher</dt>
+        <dd>You should see some entries like "Dash Home" and other lens entries</dd>
+    <dt>Click on one of them</dt>
+        <dd>The dash should open, directly heading to the corresponing lens</dd>
+    <dt>Repeat with other items of the quicklist</dt>
+</dl>
+Test-case dash/home
+<dl>
+    <!-- Conditional Test -->
+    <dt>Press super to show the home dash</dt>
+        <dd>You should see:
+            <ul>
+                <li> - Recent applications </li>
+                <li> - Recent files </li>
+                <li> - The last downloads you have done in your download folder (if any)</li>
+            </ul>
+        </dd>
+    <dt>Make a search</dt>
+        <dd>Some results from the different lenses should appear</dd>
+    <dt>Press escape</dt>
+        <dd>The search text should disappear and the home dash content should be resetted</dd>
+</dl>
+Test-case dash/drag-item-to-launcher
+<dl>
+    <dt>Tap super to show the dash</dt>
+    <dt>Click on the application lens icon</dt>
+    <dt>Drag an item which is not in the launcher to the launcher</dt>
+        <dd>All launcher icons should become colored again and an empty place should appear in the launcher</dd>
+    <dt>Drop the item in the launcher</dt>
+        <dd>A new launcher icon should appear and stick in the launcher</dd>
+</dl>
+Test-case dash/show-hide-more-results
+<dl>
+    <dt>Tap super to show the dash</dt>
+    <dt>Go to a lens having multiple results and a category with "see xx more results"</dt>
+    <dt>Next to a category showing "see xx more results", click on this label</dt>
+        <dd>The result content should expand and show more content</dd>
+    <dt>Use the mouse scrollwheel</dt>
+        <dd>This should scroll the whole windows content</dd>
+    <dt>Click on the category title as well</dt>
+        <dd>The results should collapse and show less results</dd>
+</dl>
+Test-case dash/keyboard-navigation
+<dl>
+    <dt>Tap super to show the dash</dt>
+    <dt>Go to a lens having multiple results and a category with "see xx more results"</dt>
+    <dt>Navigate between the items between the results:
+        <ul>
+            <li> - If you press the down key on your keyboard once, the category should have the focus, if you press it again, you should go to the result of this category. If you press down again, it should go to next category.</li>
+            <li> - The focus change on result (not category) should show the same hovering hint than the one with the mouse</li>
+            <li> - If you press left and right, the focus should go left or right</li>
+            <li> - If you press left and then enter once the focus is in a category title containing "see xx more results", the content of this category should expand (and using the key arrays should enable you to scroll the full view).</li>
+            <li> - If you go to a category below an expanded category and press up to go over the content of the previous category, the first item of the last line of this category should get highlighted</li>
+            <li> - If you refocus the same "show less results" and press enter, the content of this category should collapse.</li>
+            <li> - Tab should navigate yourself between categories</li>
+            <li> - If you press shift + tab, you should navigate between categories backwards</li>
+        </ul>
+    </dt>
+</dl>
+Test-case dash/keyboard-navigation-filters
+<dl>
+    <dt>Tap super to show the dash</dt>
+    <dt>Go to a lens with the "Filter Results" filter button visible</dt>
+    <dt>Tap the tab key to navigate to the filter button
+        <ul>
+            <li> - After navigating through all categories, the filter button should be focused next</li>
+        </ul>
+    </dt>
+    <dt>Press enter</dt>
+        <dd>The filter view should appear</dd>
+    <dt>Tap the tab key to navigate</dt>
+        <dd>Pressing the tab key should navigate through lens categories and filter categories</dd>
+        <dd>Once the last lens category is highlighted, pressing tab will move the focus to the first filter category and vice versa</dd>
+</dl>
+Test-case dash/state-lenses
+<dl>
+    <dt>Tap super to open the dash, click on a lens</dt>
+        <dd>Make a search, open the filters and choose some options</dd>
+    <dt>Close the dash with super</dt>
+    <dt>Reopen the dash:</dt>
+        <dd>The main dash home shouldn't contain previous search</dd>
+    <dt>Open on the previous lens</dt>
+        <dd>You should see the same search results, with the same filter enabled</dd>
+    <dt>Click on other lenses:</dt>
+</dl>
+Test-case dash/state-dash
+<dl>
+    <dt>Tap super to open the dash</dt>
+    <dt>Make a search</dt>
+    <dt>Close the dash with super</dt>
+    <dt>Reopen it</dt>
+        <dd>The "search field" should contain the previous search, with the text search field content selected</dd>
+</dl>
+Test-case dash/altf2-desktopapp
+<dl>
+    <dt>Press alt + f2</dt>
+        <dd>The runner lens should be shown with a "Run a command" search field (no filter should be there)</dd>
+    <dt>Type "ged"</dt>
+        <dd>You should see gedit in a "result" category with the gedit icon</dd>
+    <dt>Press enter</dt>
+        <dd>gedit should run and the runner is closed</dd>
+</dl>
+Test-case dash/altf2-history
+<dl>
+    <dt>Press alt + f2</dt>
+    <dt>Type "ged" click on the "gedit" result to run it</dt>
+    <dt>Press alt + f2</dt>
+</dl>
+Test-case dash/altf2-see-binary
+<dl>
+    <dt>Press alt + f2</dt>
+    <dt>Type "dpkg"</dt>
+        <dd>You should see a lot of dpkg- in a "result category" with gears icons</dd>
+</dl>
+Test-case dash/altf2-browse-directory
+<dl>
+    <dt>Press alt + f2</dt>
+    <dt>Type /</dt>
+        <dd>In the result, the / content should be shown</dd>
+    <dt>Type "bin" (so you have "/bin")</dt>
+        <dd>You should see only the /bin with a directory icon</dd>
+    <dt>Press enter</dt>
+        <dd>Nautilus (or your default file manager) should open in /bin</dd>
+</dl>
+Test-case dash/altf2-browse-directory-exec
+<dl>
+    <dt>Press alt + f2</dt>
+    <dt>Type "/bin/" (notice the ending '/')</dt>
+        <dd>All executables from the /bin directory should be proposed as result</dd>
+</dl>
+Test-case dash/altf2-browse-directory-home
+<dl>
+    <dt>Press alt + f2</dt>
+    <dt>Type "~/"</dt>
+        <dd>You should see directories of your home directory</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

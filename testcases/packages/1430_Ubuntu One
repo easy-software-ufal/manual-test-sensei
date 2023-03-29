@@ -1,0 +1,39 @@
+Test-case name: ubuntuone-client/ubo-001
+This test will check that Ubuntu One client can be installed
+<dl>
+    <dt> Open the dash and launch ubuntuone-client by pressing the super key, and then entering ‘ubuntuone’</dt>
+        <dd>ubuntuone-client should launch</dd>
+    <dt> Press the install button in the lower right hand corner</dt>
+        <dd>Did the Ubuntu One client install and launch?</dd>
+</dl>
+
+Test-case name: ubuntuone-client/ubo-002
+This test will check that Ubuntu One client can display user information
+<dl>
+    <dt> Open the dash and launch ubuntuone-client by pressing the super key, and then entering ‘ubuntuone’</dt>
+        <dd>ubuntuone-client should launch</dd>
+    <dt> Press the install button in the lower right hand corner</dt>
+        <dd>Ubuntu One client installs and launches</dd>
+    <dt> Enter your ubuntu account details and press login</dt>
+        <dd>Did the ubuntu One client load up your information?</dd>
+</dl>
+
+Test-case name: ubuntuone-client/ubo-003
+depends: ubuntuone-client/ubo-002
+This test will check that Ubuntu One client can sync files
+<dl>
+    <dt> Open the dash and launch ubuntuone-client by pressing the super key, and then entering ‘ubuntuone’</dt>
+        <dd>ubuntuone-client should launch</dd>
+    <dt> Click the folders tab</dt>
+        <dd>Ubuntu One switches to folder display</dd>
+    <dt> Click the explore button next to the 'Ubuntu One' folder</dt>
+        <dd>Nautilus should launch showing the ubuntu one folder</dd>
+    <dt> Right nautilus and select 'create new document,empty document'</dt>
+        <dd>A file named 'Untitled Document' appears in the directory with a sync symbol (2 arrows in a circle)</dd>
+    <dt> Close nautilus and wait for a notify-osd bubble to appear declaring the file sync to ubuntu one is complete (should take less than 1 min on a fast connection)</dt>
+    <dt> Refocus ubuntu one and click the explore button next to the 'Ubuntu One' folder</dt>
+        <dd>Did nautilus launch showing the ubuntu one folder, with the 'untitled document' file displaying a checkbox as it's icon (as a visual indicator it is synced)?</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

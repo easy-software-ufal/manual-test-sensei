@@ -1,0 +1,190 @@
+Test-case name: SoftwareCenter
+
+This test will check that Software Center can be open correctly
+<dl>
+    <dt>Open Ubuntu Software Center</dt>
+        <dd>Ubuntu Software Center launches</dd>
+</dl>
+
+This test will check that Software Center can install applications by Categories
+<dl>
+    <dt>Open the Ubuntu Software Center</dt>
+        <dd>The Ubuntu Software Center is launched</dd>
+    <dt>Go to the Categories panel and click on "Sound & Video"</dt>
+        <dd>A list with multimedia applications is shown</dd>
+    <dt>Click on the VLC media player</dt>
+        <dd>Two new buttons appear, "More info" and "Install"</dd>
+    <dt>Press the "Install" button</dt>
+        <dd>A new window appears asking for authentication credentials</dd>
+    <dt>Authenticate with your credentials</dt>
+        <dd>A "Progress" icon is shown in the bottom panel with a number of process</dd>
+    <dt>Wait for the application to be installed</dt>
+        <dd>The "Progress" icon disappears</dd>
+        <dd>The icon application has a green tick</dd>
+        <dd>The icon application has two buttons, "More info" and "Remove"</dd>
+    <dt>Click the "History" button at the top of the Software Center</dt>
+        <dd>The VLC media mplayer is shown in the logs</dd>
+    <dt>Press the "back" button at the left top of the Software Center</dt>
+        <dd>A list of media applications is shown and vlc is selected</dd>
+    <dt>Click the "All Software" icon at the bottom of the Software Center</dt>
+        <dd>The Software Center shows the "whats' new" section</dd>
+    <dt>Look for the VLC media player and launch it</dt>
+        <dd>Is the VLC media player opened?</dd>
+</dl>
+
+This test will check that installing applications from Software Center creates a menu item where applicable
+<dl>
+    <dt>Following VLC installation - go to Multimedia menu in your FAMILY</dt>
+        <dd>VLC has a menu entry</dd>
+</dl>
+
+This test will check that Software Center removes applications correctly
+<dl>
+    <dt>Open the Ubuntu Software Center</dt>
+        <dd>Ubuntu Software Center is launched</dd>
+    <dt>Click on the "Installed" icon</dt>
+        <dd>A list with categories is shown</dd>
+    <dt>Select "Sound & Video"</dt>
+        <dd>A sublist with multimedia applications is displayed</dd>
+    <dt>Scroll down and press the VLC icon</dt>
+        <dd>Two new buttons appear, "More info" and "Remove"</dd>
+    <dt>Press the "Remove" button</dt>
+        <dd>A new window appears asking for authentication credentials</dd>
+    <dt>Authenticate with your credentials</dt>
+        <dd>A "Progress" icon is shown in the bottom panel with a number of process</dd>
+    <dt>Wait for the application to be removed</dt>
+        <dd>The "Progress" icon disappears</dd>
+        <dd>The sublist reloads and no longer shows VLC</dd>
+    <dt>Look for VLC and try to launch it</dt>
+        <dd>The VLC media player was uninstalled successfully and is unavailable</dd>
+</dl>
+
+This test will check that the search feature works
+<dl>
+    <dt>Open Ubuntu Software Center</dt>
+        <dd>Ubuntu Software Center is launched</dd>
+    <dt>Move the cursor to the Search box at the right top of the Software Center and click on it</dt>
+        <dd>The search box gets the focus</dd>
+    <dt>Write "Vlc" and wait</dt>
+        <dd> The Software Center return matches which contains Vlc</dd>
+</dl>
+
+This tests will check that Software Center can installs applications by search feature
+<dl>
+    <dt>Open the Ubuntu Software Center</dt>
+        <dd>The Ubuntu Software Center is launched</dd>
+    <dt>Move the cursor to the Search box at the right top of the Software Center and click on it</dt>
+        <dd>The search box gets the focus</dd>
+    <dt>Write "Vlc" and wait</dt>
+        <dd> The Software Center return matches which contains Vlc</dd>
+    <dt>Click on the VLC media player</dt>
+        <dd>Two new buttons appear, "More info" and "Install"</dd>
+    <dt>Press the "Install" button</dt>
+        <dd>A new window appears asking for authentication credentials</dd>
+    <dt>Authenticate with your credentials</dt>
+        <dd>A "Progress" icon is shown in the bottom panel with a number of process</dd>
+    <dt>Wait for the application to be installed</dt>
+        <dd>The "Progress" icon disappears</dd>
+        <dd>The icon application has a green tick</dd>
+        <dd>The icon application has two buttons, "More info" and "Remove"</dd>
+    <dt>Click the "History" button at the top of the Software Center</dt>
+        <dd>The VLC media mplayer is shown in the logs</dd>
+    <dt>Press the "back" button at the left top of the Software Center</dt>
+        <dd>A list of media applications is shown and vlc is selected</dd>
+    <dt>Click the "All Software" icon at the bottom of the Software Center</dt>
+        <dd>The Software Center shows the "whats' new" section</dd>
+    <dt>Look for the VLC media player and launch it</dt>
+        <dd>VLC media player launches</dd>
+</dl>
+
+This test will check that Software Center can remove applications correctly using Search feature
+<dl>
+    <dt>Open the Ubuntu Software Center</dt>
+        <dd>The Ubuntu Software Center is launched</dd>
+    <dt>Move the cursor to the Search box at the right top of the Software Center and click on it</dt>
+        <dd>The search box gets the focus</dd>
+    <dt>Write "Vlc" and wait</dt>
+        <dd> The Software Center return matches which contains Vlc</dd>
+    <dt>Scroll down and press the VLC icon</dt>
+        <dd>Two new buttons appear, "More info" and "Remove"</dd>
+    <dt>Press the "Remove" button</dt>
+        <dd>A new window appears asking for authentication credentials</dd>
+    <dt>Authenticate with your credentials</dt>
+        <dd>A "Progress" icon is shown in the bottom panel with a number of process</dd>
+    <dt>Wait for the application to be removed</dt>
+        <dd>The "Progress" icon disappears</dd>
+        <dd>The sublist reloads and no longer shows VLC</dd>
+    <dt>Look for VLC and launch it</dt>
+        <dd>The VLC media player was uninstalled successfully?</dd>
+</dl>
+
+This tests will check that Recommendations can be turned on
+<dl>
+    <dt>Open the Ubuntu Software Center</dt>
+        <dd>The Ubuntu Software Center is launched</dd>
+    <dt>Go to the top bar and click on "View" and later on "Turn On Recommendations"</dt>
+        <dd> A window acknowledging the change appears</dd>
+    <dt>Select "Turn On Recommendations"</dt>
+        <dd>A new window asking for an Ubuntu Software Center account appears</dd>
+    <dt>Fill the required data and click "Forward"</dt>
+        <dd>A window confirming you're already logged into Ubuntu Software Center appears</dd>
+    <dt>Close the "Connect to Ubuntu Software Center" window</dt>
+        <dd>The recommended for you section reloads</dd>
+        <dd>Recommendations are shown</dd>
+</dl>
+
+This tests will check that Recommendations can be turned off
+<dl>
+    <dt>Open the Ubuntu Software Center</dt>
+        <dd>The Ubuntu Software Center is launched</dd>
+    <dt>Go to the top bar and click on "View" and later on "Turn Off Recommendations"</dt>
+        <dd>Recommendation section shows a "Turn On Recommendations" button</dd>
+</dl>
+
+This test will check that Software Sources works
+<dl>
+    <dt>Open the Ubuntu Software Center</dt>
+        <dd>The Ubuntu Software Center is launched</dd>
+    <dt>Go to the top bar and click on "Edit" and later on "software Sources.."</dt>
+    <dt>A new window appears "Software & Updates", here we are going to get a new server doing Click on "Download from" and choosing "Main Server"</dt>
+        <dd>A new window appears asking for authentication credentials</dd>
+    <dt>Authenticate with your credentials</dt>
+        <dd>Server change completes</dd>
+</dl>
+
+This test will check that Reviews work
+<dl>
+    <dt>Reviews should be appear below</dt>
+        <dd>Reviews visible</dd>
+    <dt>Try to change the language from "English" to "Any Language"</dt>
+        <dd>A new list with reviews in different language should appear</dd>
+    <dt>Try to change the order of reviews from "Most Helpful First" to "Newest First"</dt>
+        <dd>A new list with reviews should appear ordered by Newest First</dd>
+    <dt>Click on "write your own review"</dt>
+        <dd>A new window should appear for writing your own review</dd>
+    <dt>Fill all fields, summit your review and click on "Publish"</dt>
+        <dd>Did the new review publish with the correct information?</dd>
+    <dt>Pick out a review, read it, and answer the question: "Was this review helpful? Yes/No"</dt>
+        <dd>Answer is accepted</dd>
+</dl>
+
+This test will check that Menu Help Works
+<dl>
+    <dt>Press "F1" to get help directly</dt>
+        <dd>A new window should appear</dd>
+    <dt>Navigate through help topics</dt>
+        <dd>Help topics show information</dd>
+    <dt>Go to the top bar and click on "Help" and later on "Ubuntu Software Center Help"</dt>
+        <dd>The same window of the previous step shows</dd>
+    <dt>Go to the top bar and click on "Help" and later on "For Software Developers"</dt>
+        <dd>Default browser opens and redirects to <a href="http://developer.ubuntu.com">http://developer.ubuntu.com</a></dd>
+    <dt>Go to the top bar and click on "Help" and later on "Terms of Use"</dt>
+        <dd>Default browser opens and redirects to <a href="http://apps.ubuntu.com/cat/tos/">http://apps.ubuntu.com/cat/tos/</a></dd>
+    <dt>Go to the top bar and click on "Help" and later on "About"</dt>
+        <dd>A new window appears</dd>
+        <dd>Selecting "launchpad.net/software-center" opens browser and redirects to <a href="https://launchpad.net/software-center">https://launchpad.net/software-center</a></dd>
+    <dt>Click Credits</dt>
+        <dd>Credits shows in About window</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result. If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

@@ -1,0 +1,28 @@
+<dl>
+    <dt>Setup an arm64 host to boot KVM guests.</dt>
+    <ul>
+        <li><code>sudo apt install libvirt-bin qemu-efi qemu-kvm</code></li>
+        <li><code>cat > /tmp/qemu-ifup << EOF</code></li>
+        <li><code>#!/bin/sh</code></li>
+        <li><code></code></li>
+        <li><code>set -e</code></li>
+        <li><code></code></li>
+        <li><code>ip link set "\$1" up</code></li>
+        <li><code>ip link set "\$1" master virbr0</code></li>
+        <li><code>EOF</code></li>
+        <li><code>cat /tmp/qemu-ifup | sudo tee /etc/qemu-ifup</code></li>
+    </ul>
+    <dt>Boot a KVM instance in UEFI mode w/ the test ISO connected.</dt>
+    <ul>
+        <li><code>cp /usr/share/AAVMF/* .</code></li>
+        <li><code>qemu-img create -f qcow2 disk.img 18G</code></li>
+        <li><code>sudo qemu-system-aarch64 -enable-kvm -m 2048 -cpu host -smp 2 -M virt,gic_version=host -nographic -pflash AAVMF_CODE.fd -pflash AAVMF_VARS.fd -drive if=none,file=disk.img,id=hd0 -device virtio-blk-device,drive=hd0 -netdev type=tap,id=net0 -device virtio-net-device,netdev=net0,mac=ac:67:de:d2:4b:06 -drive file=TEST-ISOFILE-PATH.iso,id=cdrom,if=none,media=cdrom -device virtio-scsi-device -device scsi-cd,drive=cdrom</code></li>
+    </ul>
+    <dt>Proceed through the install and login to the installed OS after reboot.</dt>
+    <dt>Reboot. System should boot up to login prompt without delay.</dt>
+    <dt>Check dmesg for any abnormal messages or errors.</dt>
+        <dd><code>dmesg | less</code></dd>
+    <dt>If an HWE kernel option is available for this release, repeat the above steps while selecting the HWE kernel option from the boot menu.</dt>
+    <strong>
+        If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+        If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

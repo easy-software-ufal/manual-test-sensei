@@ -1,0 +1,11 @@
+1510_Lxtask
+1601_Lxterminal
+1606_lxpanel
+1607_lxappearance
+1608_lxinput
+1609_lxrandr
+1612_lxsessions-edit
+1613_lxkeymap
+1619_lubuntu software center
+1684_obconf
+lxde.txt

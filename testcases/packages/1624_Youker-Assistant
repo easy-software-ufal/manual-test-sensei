@@ -1,0 +1,54 @@
+Test-case name: Youker-Assistant
+
+<dl>
+    Testcases for "system information".
+    <dt> Choose "system information" to check the system information including "Hardware information","Desktop Information" and "User Information".</dt>
+        <!-- EXCEPTION HANDLING -->
+        <dd>Did the system information show as expected? Was it correct?</dd>
+</dl>
+
+<dl>
+    Testcases for "system customizations".
+    <dt> Choose "theme setting" under "Personalization" and select one theme in the list such as "Radiance", then click "OK" to apply the change.</dt>
+        <dd>Did the system theme change to "Radiance" style?</dd>
+    <dt>Choose "icon setting" under Personalization and select one icon theme in the list such as "unity-icon-theme", then click "OK" to apply the change.</dt>
+        <dd>Did the system icons change to "unity-icon-theme"?</dd>
+    <dt>Choose "Mouse pointer setting" under "Personalization" and select one mouse pointer theme from the drop-down list, check the mouse pointer size option as  "large size" or "small size", then click "OK" to apply the change.</dt>
+        <dd>Did the mouse pointer change to selected options? </dd>
+    <!-- EAGER STEP  -->
+    <dt>Choose "Sound effect setting" under "Personalization" and select one sound theme from the drop-down list, then click "OK" to apply the change. Select one item in the "sound event list" and click play/replace/reset to test the according functions.</dt>
+        <dd>Did the sound change take effect? </dd>
+    <dt>Choose "Boot animation setting" under "Personalization" and click "user-defined picture" to choose a local picture. Then select one item in the avaliable list and click "OK" to apply the change.</dt>
+        <dd>Reboot the system to see weather the boot animation change to the setting.</dd>
+
+    <dt>Choose "launcher setting" under "Unity" and click the  launcher options such as "auto hide","launcher icon size", "show desktop icon on launcher". Then click "OK" to apply the change.</dt>
+        <dd>Did the launcher change to selected options?</dd>
+
+    <dt>Choose "font setting" under "Unity" and set the font options such as "system default font","document font","window title font".</dt>
+        <dd>Did the font change to selected options?</dd>
+
+    <dt>Choose "touchpad setting" under "System options" and set the touchpad options.</dt>
+        <dd>Did the touchpad change to selected options?</dd>
+
+    <dt>Choose "screen test" under "System options" and click "OK" to begin screen test. Then click mouse to change background color to check pixel.</dt>
+        <dd>Did the function work as expected?</dd>
+</dl>
+
+<dl>
+    Testcases for "system cleanup".
+    <dt> Choose "One Key cleanup" tab and check cleanup options such as "Junk Cleanup","History logs Cleanup","Cookies Cleanup", "Remove unnecessary softwares". Then click "One Key Cleanup" button and input user password to start cleanup.</dt>
+        <dd>Did the cleanup finished normally?</dd>
+    <dt> Choose single cleanup function tab one by one. Check cleanup options and click the cleanup button to start cleanup.</dt>
+        <dd>The corresponding system junk should be cleanup.</dd>
+</dl>
+
+<dl>
+    Testcases for "fcitx configuration wizard".
+    <dt> Choose "Function set" tab and choose "Fcitx configuration".</dt>
+        <dd>Did the fcitx configuration wizard start?</dd>
+    <dt> Choose "active input method" option in the first page and click "next". Choose font and candidate window options in the second page and click "next". Choose hotkeys and skin options in the third page and click "apply" to make above settings take effect.  </dt>
+        <dd>Did the settings take effect?</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

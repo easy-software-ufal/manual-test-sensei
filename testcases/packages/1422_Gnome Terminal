@@ -1,0 +1,52 @@
+This test will check that basic terminal commands work in Gnome Terminal
+<dl>
+    <dt> Open the Terminal application</dt>
+    <dt> Type in sudo apt-get update and press Enter</dt>
+        <dd>You are asked for [sudo] password for USER: (where USER is your user name).</dd>
+    <dt> Enter your password and wait for the command to complete.</dt>
+        <dd>Command finishes and leaves you at an empty prompt</dd>
+    <dt> Enter "ls -al"</dt>
+        <dd>This should list all file in full in the folder you are currently in</dd>
+    <dt> Press the up arrow on your keyboard</dt>
+        <dd>Does the ls -al command you just entered appear?</dd>
+</dl>
+
+This test will check that terminal colors and zoom level can be changed
+<dl>
+    <dt>Open the Terminal application</dt>
+    <dt>Click on "Edit", select "Profile Preferences", select "Colors" tab and uncheck "Use colors from system theme" checkbox</dt>
+    <dt>Using the options contained in the "Colors" tab modify the "Text and Background Color" section, choosing some non-default colors or a different color scheme</dt>
+        <dd>The colors in your terminal match your modifications</dd>
+    <dt> Change the Zoom Level using the key combination "Ctrl++" and "Ctrl+-"</dt>
+        <dd>Did the zoom level change in terminal?</dd>
+</dl>
+
+This test will check that terminal coloring is active
+<dl>
+    <dt> Open the Terminal application</dt>
+    <dt> Type "touch text1.txt"</dt>
+    <dt> type "ls"</dt>
+    <dt>Remember the color of "text1.txt"</dt>
+    <dt> Type  "chmod 777 text1.txt"</dt>
+    <dt> Type "ls"</dt>
+        <dd>Has the color of "text1.txt" changed?</dd>
+</dl>
+
+This test will check that the terminal tab launches successfully
+<dl>
+    <dt> Open the Terminal application</dt>
+    <dt> Press "Ctrl+Alt+T"</dt>
+        <dd>Is an instance of gnome-terminal with the title 'user@hostname: ~' opened, with the current directory set to the users home directory?</dd>
+</dl>
+
+This test will check that the terminal full screen mode works
+<dl>
+    <dt> Open the Terminal application</dt>
+    <dt> From the main menu select 'View > Full Screen...'</dt>
+        <dd>Terminal goes into full screen mode</dd>
+    <dt>Press right click in terminal, from drop-down menu press "Leave Full Screen" option</dt>
+        <dd>Terminal returns to the previous windowed state</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

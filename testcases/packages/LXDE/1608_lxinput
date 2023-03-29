@@ -1,0 +1,48 @@
+This test will check that LXInput can change the mouse behavior
+<dl>
+    <dt>Click on the Lubuntu icon in your panel, then on "Preferences" and "Keyboard and Mouse"</dt>
+        <dd>LXInput opens in a new window. You see the tab "Mouse"</dd>
+    <dt>Set both "Acceleration" and "Sensitivity" to 10. Click on "OK"</dt>
+        <dd>The window closes</dd>
+    <dt>Try to use your mouse. The behavior should have changed significantly.</dt>
+    <dt>Click on the Lubuntu icon in your panel, then on "Preferences" and "Keyboard and Mouse"</dt>
+        <dd>LXInput opens in a new window. You see the tab "Mouse"</dd>
+    <dt>Set "Acceleration" to 0 and "Sensitivity" to 100. Click on "OK"</dt>
+        <dd>The window closes</dd>
+    <dt>Try to use your mouse. The behavior should have changed significantly.</dt>
+    <dt>Click on the Lubuntu icon in your panel, then on "Preferences" and "Keyboard and Mouse"</dt>
+        <dd>LXInput opens in a new window. You see the tab "Mouse"</dd>
+    <dt>Set "Sensitivity" to 20. Check "Left handed". Click on "OK"</dt>
+        <dd>The window closes</dd>
+    <dt>Try to use your mouse. The behavior should be like it was before you started the test. In addition, the mouse buttons are swapped</dt>
+    <dt><strong>Right</strong>-click on the Lubuntu icon in your panel, then on "Preferences" and "Keyboard and Mouse"</dt>
+        <dd>LXInput opens in a new window. You see the tab "Mouse"</dd>
+    <dt>Uncheck "Left handed". Click on "OK"</dt>
+</dl>
+
+This test will check that LXInput can change the keyboard behavior
+<dl>
+    <dt>Click on the Lubuntu icon in your panel, then on "Preferences" and "Keyboard and Mouse"</dt>
+        <dd>LXInput opens in a new window. You see the tab "Mouse"</dd>
+    <dt>Click on the tab "Keyboard"</dt>
+        <dd>You see the tab "Keyboard"</dd>
+    <dt>Set "Repeat Delay" to 1000 and "Repeat Interval" to 200. Click on "OK"</dt>
+        <dd>LXInput closes</dd>
+    <dt>Click on the Lubuntu icon in your panel, then on "Preferences" and "Keyboard and Mouse"</dt>
+        <dd>LXInput opens in a new window. You see the tab "Mouse"</dd>
+    <dt>Click on the tab "Keyboard"</dt>
+        <dd>You see the tab "Keyboard"</dd>
+    <dt>Make some tests in the box offered</dt>
+        <dd>The behavior of the keyboard has changed</dd>
+    <dt>Now change "Repeat Delay" to 100 and "Repeat Interval" to 10. Click on "OK"</dt>
+        <dd>LXInput closes</dd>
+    <dt>Click on the Lubuntu icon in your panel, then on "Preferences" and "Keyboard and Mouse"</dt>
+        <dd>LXInput opens in a new window. You see the tab "Mouse"</dd>
+    <dt>Click on the tab "Keyboard"</dt>
+        <dd>You see the tab "Keyboard"</dd>
+    <dt>Make some tests in the testbox offered</dt>
+        <dd>The behavior of the keyboard has changed</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

@@ -1,0 +1,24 @@
+This test will check if inkscape opens properly from FAMILY menu
+<dl>  
+    <dt>Open inkscape from graphics design sub menu</dt>
+        <dd>Inkscape opens properly form FAMILY menu</dd>
+</dl>
+This test will check if creation of blank files is possible
+<dl>   
+    <dt>Open a new file from the file sub menu</dt>
+        <dd>Blank file opens OK.</dd>
+</dl>
+This test will check if you can draw simple shaped graphics with the pen tool
+<dl> 
+    <dt>Select the pen tool</dt>
+	<dd>Draw shape on canvas</dd>
+	<dd>Shape is drawn correctly</dd>
+</dl>
+This test ill check if inkscape saves a file to .svg file format
+<dl> 
+    <dt>Select "Save As" from the file menu option</dt>
+	<dd>File saved in .svg format correctly</dd>
+</dl>    
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

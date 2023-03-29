@@ -1,0 +1,41 @@
+This test will ensure that the Openbox Configuration Manager can successfully change the theme.
+
+<dl>
+    <dt>Open the Openbox Configuration Manager</dt>
+    <dt>On the <code>Theme</code> tab, click a different theme</dt>
+        <dd>The style of open windows should be changed to reflect the theme reflected in the respective screenshot</dd>
+</dl>
+
+This test will ensure that you can change the window fonts in the Openbox Configuration Manager.
+
+<dl>
+    <dt>Open the Openbox Configuration Manager</dt>
+    <dt>Select the <code>Appearance</code> tab</dt>
+    <dt>Select the font button to the right of <code>Active window title:</code></dt>
+        <dd>A dialog box titled <code>Pick a Font</code> should pop up</dd>
+    <dt>Select a different font and font size, then press the <code>Select</code> button</dt>
+        <dd>The window title for the Openbox Configuration Manager should change to the font and font size you specified</dd>
+    <dt>Select the font button to the right of <code>Active window title:</code> again</dt>
+        <dd>A dialog box titled <code>Pick a Font</code> should pop up</dd>
+    <dt>Change the font back to what it previously was, then press the <code>Select</code> button</dt>
+        <dd>The window title for the Openbox Configuration Manager should change to the font and font size that was originally set</dd>
+</dl>
+
+This test will ensure that you can add additional virtual desktops and rename them in the Openbox Configuration Manager.
+
+<dl>
+    <dt>Open the Openbox Configuration Manager</dt>
+    <dt>Select the <code>Desktops</code> tab</dt>
+    <dt>Select the <code>+</code> button to add two (2) additional desktops for a total of four (4) desktops</dt>
+        <dd>Four (4) desktops should be present in the <code>Desktop names:</code> list and in LXPanel</dd>
+    <dt>Double-click the second <code>(Unnamed desktop)</code> entry and enter a name of your choice</dt>
+        <dd>The name of the desktop should be changed in the <code>Desktop names:</code> list and in LXPanel</dd>
+    <dt>Double-click the second <code>(Unnamed desktop)</code> entry again, press the <code>Backspace</code> key, and press <code>Enter</code> to clear the name</dt>
+        <dd>The name of the desktop should be cleared in the <code>Desktop names:</code> list and in LXPanel</dd>
+</dl>
+
+<strong>
+    If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>.
+    Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.
+</strong>

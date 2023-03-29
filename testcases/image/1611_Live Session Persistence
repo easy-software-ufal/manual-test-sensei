@@ -1,0 +1,29 @@
+Test-case Live Session Persistence
+
+Running this testcase depends on a pass for testcase 1303_Live Session and can be run in conjuction with it for FAMILY shipping the application as a default package.
+
+<em>Proceed in your native language if you wish. Instructions will remain in English</em>
+
+<dl>
+    <dt>Create a partition (on a usb stick or regular disk/image) to be used for persistence</dt>
+    <dt>Launch Startup Disk Creator</dt>
+    <dt>Select the source disc image of the build you are testing</dt>
+    <dt>Select the USB disk to use and click "Erase" (all data will be removed)</dt>
+        <dd>Provide password if requested. Pausing at this point should not cause an error</dd>
+    <dt>Select the persistence option to have documents and settings "Stored in reserved extra space"</dt>
+    <dt>Use the slider bar to set up to 4GB for persistence</dt>
+    <dt>Create a bootable USB drive by clicking "Make Startup Disk"</dt>
+        <dd>Provide password if requested. Pausing at this point should not cause an error</dd>
+    <dt>You should see a dialog when it is finished "Installation is complete.</dt>
+        <dd>You may now restart your computer with this USB thumb drive inserted to boot Ubuntu</dd>
+    <dt>Start your machine with the install media in place</dt>
+    <dt>When ubiquity starts select your language in the left column</dt>
+    <dt>Press Try FAMILY</dt>
+    <dt>Browse around to a few websites in the default browser. Save a few as bookmarks</dt>
+    <dt>Create a new text or image file in your favorite editor and save it to you home directory</dt>
+    <dt>Restart live image back into a persistent session</dt>
+        <dd>Your files, browsing history, and bookmarks should all be there</dd>
+</dl>
+<strong>
+    If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

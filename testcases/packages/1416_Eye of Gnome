@@ -1,0 +1,77 @@
+Test-case name: eog/eog-001
+This test will check that Eye Of Gnome can display images correctly
+<dl>
+    <dt> Open the dash and launch Image Viewer by pressing the super key, and then entering ‘Image Viewer’</dt>
+        <dd>Image Viewer should launch</dd>
+    <dt> Open an image file by selecting file, open and then choosing an image file</dt>
+        <dd>Is the image being displayed correctly?</dd>
+</dl>
+
+Test-case name: eog/eog-002
+This test will check that Eye Of Gnome can move images to Trash
+<dl>
+    <dt> Open the dash and launch Image Viewer by pressing the super key, and then entering ‘Image Viewer’</dt>
+        <dd>Image Viewer should launch</dd>
+    <dt> Open an image file by selecting file, open and then choosing an image file</dt>
+    <dt> Select edit, move to trash</dt>
+        <dd>Has the image been moved to Trash and the next image in the directory is shown?</dd>
+</dl>
+
+Test-case name: eog/eog-003
+This test will check that Eye Of Gnome can show previous and next images
+<dl>
+    <dt> Open the dash and launch Image Viewer by pressing the super key, and then entering ‘Image Viewer’</dt>
+        <dd>Image Viewer should launch</dd>
+    <dt> Open an image file by selecting file, open and then choosing an image file</dt>
+    <dt> Press the Previous button</dt>
+    <dt> Press the Next button</dt>
+        <dd>Is the image viewer displaying the previous and next images correctly?</dd>
+</dl>
+
+Test-case name: eog/eog-004
+depends:
+eog/eog-002
+eog/eog-003
+This test will check that Eye Of Gnome can show previous image after restoring from Trash
+<dl>
+    <dt> Open the dash and launch Image Viewer by pressing the super key, and then entering ‘Image Viewer’</dt>
+        <dd>Image Viewer should launch</dd>
+    <dt> Open an image file by selecting file, open and then choosing an image file</dt>
+    <dt> Select edit, move to trash</dt>
+    <dt> Click the trash can on the launcher</dt>
+        <dd>trash folder is launched</dd>
+    <dt> Highlight the deleted image file from earlier and select restore. Resume focus on the image viewer application and click the previous button</dt>
+        <dd>Is the restored image once again displayed?</dd>
+</dl>
+
+Test-case name: eog/eog-005
+This test will check that Eye Of Gnome can flip images horizontally and vertically
+<dl>
+    <dt> Open the dash and launch Image Viewer by pressing the super key, and then entering ‘Image Viewer’</dt>
+        <dd>Image Viewer should launch</dd>
+    <dt> Open an image file by selecting file, open and then choosing an image file</dt>
+    <dt> Select edit, flip horizontal</dt>
+        <dd>The image is flipped horizontally</dd>
+    <dt> Select edit, flip vertically</dt>
+        <dd>The image is flipped vertically</dd>
+    <dt> Select edit, flip vertically</dt>
+        <dd>The image is flipped vertically</dd>
+    <dt> Select edit, flip horizontal</dt>
+        <dd>The image is flipped horizontally</dd>
+        <dd>Is the image that was being flipped correctly and now restored to its original state?</dd>
+</dl>
+
+Test-case name: eog/eog-006
+This test will check that Eye Of Gnome can flip horizontally and vertically
+<dl>
+    <dt> Open the dash and launch Image Viewer by pressing the super key, and then entering ‘Image Viewer’</dt>
+        <dd>Image Viewer should launch</dd>
+    <dt> Open an image file by selecting file, open and then choosing an image file</dt>
+    <dt> Select edit, toolbar</dt>
+        <dd>The toolbar editor appears</dd>
+    <dt> Drag and drop the gallery icon onto the image viewer toolbar</dt>
+        <dd>Is the gallery icon now present on the toolbar?</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

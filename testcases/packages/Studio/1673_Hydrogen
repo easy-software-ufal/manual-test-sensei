@@ -1,0 +1,72 @@
+This test will check that Hydrogen is set up to use JACK.
+
+<dl>
+    <dt>Select Tools > Preferences from the menu</dt>
+        <dd>The preferences window opens</dd>
+    <dt>On the "Audio System" tab, ensure that JACK is selected on the audio driver dropdown menu</dt>
+    <dt>Click the OK button</dt>
+        <dd>The preference window closes</dd>
+</dl>
+
+This test will check that Hydrogen can be used to choose a drum kit, and create a drum beat.
+<dl>
+    <dt>Select Instruments > Import library from the menu</dt>
+        <dd>The "Sound Library import" window opens</dd>
+    <dt>On the Internet tab, choose a suitable drum kit (e.g. Roland TR-808)</dt>
+    <dt>Click on the "Download & Install" button</dt>
+        <dd>A message appears conforming that the chosen drumkit has been imported</dd>
+    <dt>Click on the "OK" button</dt>
+        <dd>The message disappears</dd>
+    <dt>Click on the "Close" button</dt>
+        <dd>The "Sound Library import" window closes</dd>
+    <dt>Click on the "Play" icon on the toolbar</dt>
+        <dd>The cursor moves over the empty pattern and repeats continuously</dd>
+    <dt>In the "Pattern 1" area of the screen, add some kicks on the kick drum line by clicking on the bar division markers (e.g. at beats 1 & 3)</dt>
+        <dd>The kick drum sounds as the cursor passes over the dots</dd>
+    <dt>Add some hits on the snare drum line by clicking on the bar division markers (e.g. at beats 2 & 4)</dt>
+        <dd>The snare drum sounds in addition to the kick drum as the cursor passes over the dots</dd>
+    <dt>Add some hits on the Closed High Hat drum line by clicking on the bar division markers (e.g. at every marker)</dt>
+        <dd>The high hat sounds in addition to the other drums as the cursor passes over the dots</dd>
+    <dt>In the "Song Editor" area, enable Pattern 1 from bars 1 to 4 by clicking in the relevant squares</dt>
+        <dd>The squares are shown in colour for Pattern 1 from Bar 1 to Bar 4</dd>
+    <dt>Double click on "Pattern 2" in the "Song Editor" area</dt>
+        <dd>The sound stops, the empty Pattern 2 is displayed in the "Pattern Editor" area, and the cursor continuously moves over the empty pattern.</dd>
+    <dt>Create a different pattern (e.g. click on every marker of a Tom Drum except the last, and the Crash cymbal on the last).</dt>
+        <dd>The new pattern sounds as the cursor cycles over the pattern</dd>
+    <dt>In the "Song Editor", click on "Pattern 2" in Bar 9 to add the new pattern to the song</dt>
+    <dt>Click on "SONG" in the toolbar</dt>
+        <dd>The sound stops, and SONG is indicated as on.</dd>
+    <dt>Click on the "Play" icon</dt>
+        <dd>"Pattern 1" plays 4 times, and then "Pattern 2" plays once, and then the Song repeats continuously.</dd>
+    <dt>Click on the BPM (Beats Per Minute) display</dt>
+        <dd>A window opens</dd>
+    <dt>Enter a new BPM value (e.g. drop the tempo to 100), and click OK.</dt>
+        <dd>The window closes, and the song tempo changes (e.g. slows down).</dd>
+    <dt>Click the "Stop" icon</dt>
+        <dd>The song stops</dd>
+</dl>
+
+This test will check that Hydrogen can save the song, and also export it as a wave file.
+
+<dl>
+    <dt>Select Project > Save As from the menu</dt>
+        <dd>The "Save Song" window opens</dd>
+    <dt>Choose a directory to save the file, and give the file a name, and click the "Save" button.</dt>
+        <dd>The "Save Song" window closes and the filename is displayed in the title bar of the Hydrogen window</dd>
+    <dt>Click on the "Play" icon</dt>
+        <dd>The song plays again</dd>
+    <dt>Click on the "Mixer" button in the toolbar</dt>
+        <dd>The "Mixer" window displays, and the meters show the dynamic sound levels.</dd>
+    <dt>Adjust the faders to get a good sound level (e.g. with no red peaks).</dt>
+    <dt>Click the "Stop" button</dt>
+        <dd>The sound stops</dd>
+    <dt>Select Project > Export Song from the menu</dt>
+        <dd>The "Export Song" window opens</dd>
+    <dt>Check that the directory and filename are OK, and click the "Export" button.</dt>
+        <dd>A wave file is created</dd>
+    <dt>Click on the "Close" button</dt>
+        <dd>The "Export Song" window closes</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

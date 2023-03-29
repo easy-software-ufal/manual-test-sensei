@@ -1,0 +1,61 @@
+This test will show lxqt-panel changes its position and appearance on the desktop.  
+
+<dl>
+    <dt> Right click on your main panel at the bottom</dt>
+        <dd> A context menu appears </dd>
+    <dt> Click on configure panel </dt>
+        <dd> A window opens showing panel and widgets as two tabs along the left side. </dd>
+    <dt> In the panel tab in the box for Alignment and position select top </dt>
+        <dd> The panel moves to the top of the screen </dd>
+    <dt> In the box that says alignment and position select center and in the box that says length slect 90%. </dt>
+        <dd>The panel moves to the center of the screen with a small margin on both the left and right hand side of the panel. </dd>
+    <dt> In the box that alignment and position click to edit the text and then press the page up key </dt> 
+        <dd> The panel has returned to 100 percent width taking up all of the screen </dd> 
+    <dt> In the box that says alignment & position select bottom and click the checkbox that says autohide </dt>
+        <dd> The panel is no longer on the top and there is a few pixel thin repsentatoin of the panel at the bottom. </dd>
+    <dt> Move the mouse cursor to the bottom of the screen </dt>
+        <dd> The panel appears back under the mouse cursor</dd> 
+</dl>
+
+This test will check that lxqt-panel can change its appearance 
+<dl>
+    <dt> Right click on your main panel </dt>
+        <dd> A context menu appears </dd>
+    <dt> Select panel settings </dt>
+        <dd> A window appears with panel settings</dd>
+    <dt> Towards the bottom of the window a box with custom styling click the font color checkbox and click the button to the right of custom color</dt>
+        <dd> A window showing several ways to select color appears. </dd>
+    <dt> In this window in the html part of custom color enter 0000fe </dt>
+        <dd> All text on the panel should turn blue </dd>
+    <dt> On the panel setting menu check the custom background color box and press the button to the right of background color. </dt>
+        <dd> A window selcting colors should appear again.</dd>
+    <dt> On the right hand side a slider will appear drag it down to a gray color.</dt>
+        <dd> The panel changes color </dd>
+
+    </dl>
+
+    This test will check that lxqt-panel can change panel applets 
+    <dl>   
+        <dt> Right click on your main panel</dt> 
+            <dd> A context menu appears </dd>
+        <dt> Click configure panel </dt> 
+            <dd> The configure panel weapon opens. </dd> 
+        <dt> On the left side select widgets on the configure panel option. </dt>
+            <dd> A menu showing all of the panel widgets is displayed. </dd>
+        <dt> On the Right hand side press the button that has a + on the button. </dt>  
+            <dd> A window titled add plugins will pop up </dd>
+        <dt> Click on the plugin CPU monitor and click add plugin</dt>
+            <dd> A plugin showing the total cpu load appears on the rightmost edge of the panel. </dd> 
+        <dt> On the add panel widgets button press close</dt>
+            <dd> The add widgets window closes. </dd>
+
+            <dt> In the configure panel window click on the date & time widget and then click on the button along the right side that when you mouse over it says configure </dt>
+                <dd> A window saying configure clock appears. </dd>
+            <dt> In the configure clock click the checkbox for show seconds, unclick the checkbox for use 12 hour style, and select the radio button for show date below time on new line. </dt>
+                <dd> The clock now shows a 24 hour format with seconds and today's date in your local timezone. </dd>
+
+
+            </dl>
+            <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+                If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
+

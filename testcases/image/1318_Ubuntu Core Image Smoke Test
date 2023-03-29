@@ -1,0 +1,14 @@
+This testcase is intended to confirm the core chroot tarball is in proper working order. To test this image on an already running system (of similar architecture), <a href="../../downloads">download the tarball</a> and execute the following in the same local directory.
+<!-- Smells: UNVERIFIED STEPS -->
+<dl>
+    <dt>From the terminal, run the following commands</dt>
+    <dt>mkdir core</dt>
+    <dt>sudo tar -C core -zxf (release)-core-(arch).tar.gz</dt>
+    <dt>sudo mount --bind /proc core/proc</dt>
+    <dt>sudo mount --bind /sys core/sys</dt>
+    <dt>sudo cp /etc/resolv.conf core/etc/</dt>
+    <dt>sudo chroot core</dt>
+    <dt>apt-get update;apt-get install (some package)</dt>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

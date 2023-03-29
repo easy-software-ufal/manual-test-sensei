@@ -1,0 +1,32 @@
+Test-case name: gimp/gmp-001
+This test will check that Gimp can open an image file
+<dl>
+    <dt>Launch Gimp</dt>
+        <dd>Gimp opens, showing three windows by default: Toolbox, Gimp main window, Layers</dd>
+    <dt>Go to File > Open..., select an image from your Home directory and press Open</dt>
+        <dd>The picture is displayed in Gimp main window</dd>
+    <dt>Go to File > Open Location..., enter an erroneous URL (e.g. http://www.ubuntu.com/wrong_image.jpg), and press Open</dt>
+        <dd>Gimp tries to retrieve the image and fails, displaying the following message: "Opening 'http://www.ubuntu.com/wrong_image.jpg' failed: Not Found"</dd>
+    <dt>Press OK to dismiss the error message, and repeat the previous step using a working URL (e.g. http://upload.wikimedia.org/wikipedia/commons/a/af/Tour_eiffel_at_sunrise_from_the_trocadero.jpg)</dt>
+        <dd>The image is downloaded, then displayed on the screen</dd>
+</dl>
+
+Test-case name: gimp/gmp-002
+This tests gimp's windows will change
+<dl>
+    <dt>Select the image window, and go to Windows > Hide Docks</dt>
+        <dd>The two dock windows (Toolbox and Layers) are hidden</dd>
+    <dt>Go to Windows > Hide Docks</dt>
+        <dd>The two dock windows are displayed back</dd>
+    <dt>Select the image window, and press the Tab key</dt>
+        <dd>The two dock windows (Toolbox and Layers) are hidden</dd>
+    <dt>Press the Tab key again</dt>
+        <dd>The two dock windows are displayed back</dd>
+    <dt>Select the image window, and go to Windows > Single-Window Mode</dt>
+        <dd>The user interface is refreshed to show only one window. This window displays the Toolbox on the left side, the Layers on the right side, and the images in the center (each image is in one tab)</dd>
+    <dt>Go to Windows menu and untick Single-Window Mode</dt>
+        <dd>The user interface is refreshed to its original look and feel, with four independent windows (Toolbox, Layers, Image1, Image2)</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

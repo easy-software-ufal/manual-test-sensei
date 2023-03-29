@@ -1,0 +1,81 @@
+This test shows the ability of blueman to (de-)activate the Bluetooth adapter
+<dl>
+    <dt>Click on the Bluetooth symbol in your system panel to activate the context menu.</dt>
+        <dd>The context menu opens.</dd>
+    <dt>Click on "Turn Bluetooth off".</dt>
+        <dd>Bluetooth is now disabled. The Bluetooth symbol has faded out.</dd>
+    <dt>Activate again the context menu. Click on "Turn Bluetooth on"</dt>
+        <dd>Bluetooth is activated again. The Bluetooth symbol has faded in.</dd>
+</dl>
+
+This test shows the ability of blueman to rename the Bluetooth adapter
+<dl>
+    <dt>Click on the Bluetooth symbol in your system panel to activate the context menu.</dt>
+        <dd>The context menu opens.</dd>
+    <dt>Click on "Adapters...".</dt>
+        <dd>A window opens, showing the properties of the Bluetooth adapter.</dd>
+    <dt>Change the name to "blueman_test". Click on close.</dt>
+        <dd>The window closes. You changed the name of the computer's Bluetooth adapter.</dd>
+</dl>
+
+This test shows the ability of blueman to (un-)hide the Bluetooth adapter. The test requires a Bluetooth device, e.g. a mobile phone
+<dl>
+    <!-- PRE CONDITION AS STEP -->
+    <dt>The test requires a Bluetooth device with search functionality for other Bluetooth devices, e.g. a mobile phone. If you do not have one, skip the test.</dt>
+    <dt>Go to the search screen of your Bluetooth device and have it ready to search for the computer's Bluetooth adapter.</dt>
+    <dt>Click on the Bluetooth symbol in your system panel to activate the context menu.</dt>
+        <dd>The context menu opens.</dd>
+    <dt>Click on "Make discoverable".</dt>
+        <dd>The context menu closes. Your computer is now discoverable for other Bluetooth devices within 60 seconds.</dd>
+    <dt>Search for the computer on your Bluetooth device.</dt>
+        <dd>The computer should appear with the chosen name "blueman_test" in the list of Bluetooth devices.</dd>
+</dl>
+
+This test shows the ability of blueman to connect to an input device. The test requires such a device, e.g. a Bluetooth mouse or keyboard
+<dl>
+    <!-- PRE CONDITION AS STEP -->
+
+    <dt>The test requires an input device, e.g. a Bluetooth mouse or keyboard. If you do not have one, skip the test.</dt>
+    <dt>Click on the Bluetooth symbol in your system panel to activate the context menu.</dt>
+        <dd>The context menu opens.</dd>
+    <dt>Click on "Set up new device...".</dt>
+        <dd>A window opens with the Bluetooth assistant.</dd>
+    <dt>Click on "forward".</dt>
+        <dd>The assistant searches for Bluetooth devices.</dd>
+    <dt>Search for your input device and select it. Click on "Forward". </dt>
+        <dd>A window with pairing options appears.</dd>
+    <dt>Select "Proceed without pairing" and click on "Forward".</dt>
+        <dd>The device is added to your computer. The "Connect" window appears.</dd>
+    <dt>Select "input device" and click on "Forward".</dt>
+        <dd>A window appears confirming the successful connection.</dd>
+    <dt>Click on "close" and try to use your input device.</dt>
+        <dd>The input device should work properly.</dd>
+</dl>
+
+This test shows the ability of blueman to connect to a storage device. The test requires such a device, e.g. a mobile phone
+<dl>
+    <!-- PRE CONDITION AS STEP -->
+
+    <dt>The test requires a storage device, e.g. a mobile phone. If you do not have one, skip the test.</dt>
+    <dt>Click on the Bluetooth symbol in your system panel to activate the context menu.</dt>
+        <dd>The context menu opens.</dd>
+    <dt>Click on "Set up new device...".</dt>
+        <dd>A window opens with the Bluetooth assistant.</dd>
+    <dt>Click on "forward".</dt>
+        <dd>The assistant searches for Bluetooth devices.</dd>
+    <dt>Search for your input device and select it. Click on "Forward". </dt>
+        <dd>A window with pairing options appears.</dd>
+    <dt>Select "Use random Passkey" and click on "Forward".</dt>
+        <dd>A random passkey is generated and shown in the assistant.</dd>
+    <dt>Accept the connection in your storage device and enter the passkey.</dt>
+        <dd>The device is added to your computer. The "Connect" window appears.</dd>
+    <dt>Select "serial port" and click on "Forward".</dt>
+        <dd>A window appears showing "Device added successfully."</dd>
+    <dt>Click on "close" and open the context menu again. Click on "Browse file on devices".</dt>
+        <dd>A window appears with a list of available Bluetooth devices.</dd>
+    <dt>Select your storage device and click on "OK". Accept the connection on your device.</dt>
+        <dd>The file manager is opening, showing the available data on the device.</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

@@ -1,0 +1,25 @@
+This test will check that Empathy can be started
+<dl>
+    <dt> Look for Empathy and launch it</dt>
+        <dd>Is Empathy launched?</dd>
+</dl>
+
+This test will check that Empathy can send messages via Google Talk
+<dl>
+    <dt> Look for Empathy and launch it</dt>
+        <dd>Empathy should launch</dd>
+        <dd>A new 'Online Accounts' window should be displayed</dd>
+    <dt> Select 'Google' in right-hand pane from the 'Online Accounts' window</dt>
+        <dd>New step with Google sign-in box appears</dd>
+    <dt> Fill in your Google credentials, click 'Sign in'</dt>
+        <dd> Google authorization page appears: "Ubuntu desktop is requesting permission ..."</dd>
+    <dt> Click 'Grant access'</dt>
+        <dd>The 'Online Accounts' window show the new Google account</dd>
+    <dt> Check contact list</dt>
+        <dd>Contact list displays your online Google contacts</dd>
+    <dt> Check that you can send and receive messages</dt>
+        <dd>Are messages being delivered and displayed correctly?</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

@@ -1,0 +1,9 @@
+This tests check whether Online Accounts’ setting program is available.
+<dl>
+    <dt>Open System Settings</dt>
+        <dd>Online Accounts icon must be available in “Personal” settings.</dd>
+    <dt>Open System Settings</dt>
+        <dd>Online Accounts dialog must appear.  "Show accounts that integrate with" must list "All Applications.  Account services must list at least these services: Facebook, Flickr, Google, and Twitter</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

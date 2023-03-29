@@ -1,0 +1,234 @@
+This test will check that gThumb can be opened either from a terminal window, from the applications menu or by right-clicking on an image file, and shutdown
+<dl>
+    <!-- EAGER STEP? -->
+    <dt>Open a terminal window, type <code>gthumb</code> at the prompt and hit the "Enter" key</dt>
+        <dd>gThumb opens</dd>
+    <dt>Click the top right "X" of the window's title bar to close the application</dt>
+        <dd>gThumb closes</dd>
+    <dt>Point your mouse pointer to the Applications Menu icon and click it</dt>
+        <dd>A menu drops down</dd>
+    <dt>Navigate to Graphics -> gThumb</dt>
+        <dd>gThumb opens</dd>
+    <dt>Navigate to File -> Quit</dt>
+        <dd>gThumb closes</dd>
+    <!-- EAGER STEP, UNSPECIFIED PARAMETER -->
+    <dt>Open the File Manager, right-click on an image file and select the "Open with gThumb" option</dt>
+        <dd>gThumb opens the right-clicked image</dd>
+</dl>
+
+This test will check that gThumb's File menu options work as expected
+<dl>
+    <dt>Open gThumb either from a terminal window or from the applications menu ensuring that it's displaying images from a directory containing multiple images</dt>
+        <dd>gThumb opens</dd>
+    <dt>Navigate to File -> New Window or alternatively hit Ctrl+N keys</dt>
+        <dd>A new gThumb window opens on top of the previous one</dd>
+    <dt>Select an image file from the browser view in gThumb window main area and navigate to File -> Save As</dt>
+        <dd>Save Image dialogue window opens</dd>
+    <dt>Select a directory and click the "Save" button</dt>
+        <dd>Dialogue window closes and the image is saved in the selected directory</dd>
+    <dt>Select an image file from the browser view in gThumb window main area and navigate to File -> Print or alternatively hit Ctrl+P keys</dt>
+        <dd>Print dialogue window opens</dd>
+    <dt>Select the output print destination and format and click the "Print" button</dt>
+        <dd>Dialogue window closes and image is printed as requested</dd>
+    <dt>Navigate to File -> Create Folder or alternatively hit Shift+Ctrl+N keys</dt>
+        <dd>Create Folder dialogue window opens</dd>
+    <dt>Type a name for the folder in text-box and click the "Create" button</dt>
+        <dd>The new folder is created under the current working directory</dd>
+    <dt>Navigate to File -> Import From</dt>
+        <dd>A drop-down menu appears to the right</dd>
+    <dt>Select one of the options to import the image(s) from</dt>
+        <dd>The import dialogue shows thumbnails of the photos available on the selected device/folder</dd>
+    <dt>Select the file(s)/folder(s) to import and click the 'Import' button</dt>
+        <dd>Selected file(s)/folder(s) are imported and displayed in the browser view in gThumb window main area</dd>
+    <dt>Select an image file from the browser view in gThumb window main area and and navigate to File -> Export To</dt>
+        <dd>A drop-down menu appears to the right</dd>
+    <!-- CONDITIONAL TEST -->
+    <dt>Select one of the options to export the image to</dt>
+        <dd>A dialogue window opens</dd>
+        <dd>Depending on the selected service an authorization prompt might be displayed prior to the opening of the dialogue window</dd>
+    <dt>Fill the text-boxes with the required data and click the "OK/Save" button</dt>
+        <dd>Selected file is exported</dd>
+    <dt>Navigate to File -> Close All Windows or File -> Quit, or alternatively hit Ctrl+Q keys</dt>
+        <dd>gThumb quits without any errors</dd>
+</dl>
+
+This test will check that gThumb's Edit menu options work as expected
+<dl>
+    <dt>Open gThumb either from a terminal window or from the applications menu ensuring that it's displaying images from a directory containing multiple images</dt>
+        <dd>gThumb opens</dd>
+    <!-- UNSPECIFIED PARAMETER -->
+    <dt>Select an image file from the browser view in gThumb window main area and navigate to Edit -> Cut or alternatively hit Ctrl+X keys</dt>
+        <dd>Selected image is copied to the system clipboard</dd>
+    <dt>Navigate to the destination folder using the folder tree and use Edit -> Paste, or press Ctrl+V, to complete the file transfer</dt>
+        <dd>Selected image is pasted into the destination folder and removed from the original folder</dd>
+    <dt>Select an image file from the browser view in gThumb window main area and navigate to Edit -> Copy or alternatively hit Ctrl+C keys</dt>
+        <dd>Selected image is copied to the system clipboard</dd>
+    <dt>Navigate to the destination folder using the folder tree and use Edit -> Paste, or press Ctrl+V, to complete the file transfer</dt>
+        <dd>A copy of the selected image is pasted into the destination folder</dd>
+    <dt>Navigate to Edit -> Select All or alternatively hit Ctrl+A keys</dt>
+        <dd>All the image files in the current directory are highlighted and selected</dd>
+    <dt>Select an image file from the browser view in gThumb window main area and navigate to Edit -> Rename or alternatively hit F2 key</dt>
+        <dd>Rename dialogue window opens</dd>
+    <dt>Rename the file by changing its value in the "Template" text-box and afterwards click the "Rename" button</dt>
+        <dd>The file is renamed accordingly</dd>
+    <dt>Select an image file from the browser view in gThumb window main area and navigate to Edit -> Duplicate or alternatively hit Shift+Ctrl+D keys</dt>
+        <dd>Selected image is duplicated in the current directory</dd>
+    <dt>Select an image file from the browser view in gThumb window main area and navigate to Edit -> Move to Trash</dt>
+        <dd>Selected image is moved from the current directory to the trash</dd>
+    <dt>Select an image file from the browser view in gThumb window main area and navigate to Edit -> Delete</dt>
+        <dd>Selected image is permanently deleted from the computer</dd>
+    <dt>Select an image file from the browser view in gThumb window main area and navigate to Edit -> Comment or alternatively hit Ctrl+M keys</dt>
+        <dd>Metada dialogue window opens</dd>
+    <dt>Fill the text-boxes with the required metadata and click the "Save and Close" button</dt>
+        <dd>Dialogue window closes and the inserted metadata is incorporated in the file</dd>
+    <dt>Navigate to Edit -> Find or alternatively hit Ctrl+F keys</dt>
+        <dd>Find dialogue window opens</dd>
+    <dt>Define the start point of the search, the filter rules and click the "Find" button</dt>
+        <dd>If there are any results that match the criteria given they are shown on the browser view in gThumb window main area and under "Catalogs" on the folder tree</dd>
+    <dt>Navigate to Edit -> Find Duplicates</dt>
+        <dd>Find Duplicates dialogue window opens</dd>
+    <dt>Define the start point of the search, the filter rules and click the "Find" button</dt>
+        <dd>If there are any duplicate files that match the criteria given they are shown on the browser view in gThumb window main area and under "Catalogs" on the folder tree</dd>
+    <dt>Navigate to Edit -> Preferences</dt>
+        <dd>gThumb Preferences dialogue window opens</dd>
+    <dt>Change any of the values/definitions on either of the presented tabs</dt>
+        <dd>gThumb definitions change accordingly</dd>
+</dl>
+
+This test will check that gThumb's View menu options work as expected
+<dl>
+    <dt>Open gThumb either from a terminal window or from the applications menu ensuring that it's displaying images from a directory containing multiple images</dt>
+        <dd>gThumb opens</dd>
+    <dt>Navigate to View -> Stop</dt>
+        <dd>gThumb stops loading the current location contents</dd>    
+    <dt>Navigate to View -> Refresh or alternatively hit Ctrl+R keys</dt>
+        <dd>The list of files in the browser view in gThumb window main area is rebuilded and updated</dd>
+    <dt>Navigate to View -> Toolbar and tick/untick its checkbox</dt>
+        <dd>gThumb's toolbar shows or hides accordingly to the choice made</dd>
+    <dt>Navigate to View -> Statusbar and tick/untick its checkbox</dt>
+        <dd>gThumb's statusbar shows or hides accordingly to the choice made</dd>
+    <dt>Navigate to View -> Sidebar and tick/untick its checkbox or alternatively hit F9 key</dt>
+        <dd>gThumb's sidebar shows or hides accordingly to the choice made</dd>
+    <dt>Navigate to View -> Filterbar and tick/untick its checkbox</dt>
+        <dd>gThumb's filterbar shows or hides accordingly to the choice made</dd>
+    <dt>Select an image file from the browser view in gThumb window main area and navigate to View -> Fullscreen or alternatively hit F11 key</dt>
+        <dd>gThumb menu, toolbar, statusbar, sidebar and filterbar are removed and the selected image goes full screen</dd>
+    <dt>Navigate to View -> Slideshow or alternatively hit F5 key</dt>
+        <dd>A slideshow presentation of the image files in the current directory starts</dd>
+    <dt>Navigate to View -> Hidden Files and tick/untick its checkbox or alternatively hit Ctrl+H keys</dt>
+        <dd>Hidden files are shown or hidden accordingly to the choice made</dd>
+    <dt>Navigate to View -> Sort by...</dt>
+        <dd>Sort By dialogue window opens</dd>
+    <dt>Click the "Sort by:" button and choose a sort criteria from the drop down list presented</dt>
+        <dd>The image files in the current directory are promptly sorted accordingly to the selected criteria</dd>
+    <dt>Navigate to View -> Filter</dt>
+        <dd>Filter dialogue window opens</dd>
+    <dt>Tick/untick the checkbox options to select what types of files to show in the browser view</dt>
+        <dd>The type of files shown in the browser view in gThumb window main area becomes more or less restrictive accordingly to the selected criteria</dd>
+    <dt>Navigate to View -> Thumbnails and tick/untick its checkbox or alternatively hit Ctrl+T keys</dt>
+        <dd>Files in the browser view in gThumb window main area are shown either as thumbnails or as generic icons accordingly to the choice made</dd>
+</dl>
+
+This test will check that gThumb's Go menu options work as expected
+<dl>
+    <!-- UNSPECIFIED PARAMETER -->
+    <dt>Open gThumb either from a terminal window or from the applications menu</dt>
+        <dd>gThumb opens</dd>
+    <dt>Change the current directory to another one in the folder tree and then navigate to Go -> Back or alternatively hit Alt+Left keys</dt>
+        <dd>gThumg returns to the previous visited location</dd>
+    <dt>Navigate to Go -> Forward or alternatively hit Alt+Right keys</dt>
+        <dd>gThumg goes to the next visited location (after going back to a folder)</dd>
+    <dt>Navigate to Go -> Up or alternatively hit Alt+Up keys</dt>
+        <dd>gThumg goes up one directory level in the folder tree</dd>
+    <dt>Navigate to Go -> Location or alternatively hit Ctrl+L keys</dt>
+        <dd>Location dialogue window opens</dd>
+    <dt>Enter a path to a folder in the Location text-box and click the "Jump to" button</dt>
+        <dd>Dialogue window closes and the current folder is the specified folder</dd>
+    <dt>Navigate to Go -> Home Folder</dt>
+        <dd>The current folder is the user Home folder</dd>
+    <dt>Navigate to Go -> Pictures</dt>
+        <dd>The current folder is the user's Pictures folder</dd>
+    <dt>Navigate to Go -> Videos</dt>
+        <dd>The current folder is the user's Videos folder</dd>
+    <dt>Navigate to Go -> Desktop</dt>
+        <dd>The current folder is the user's Desktop folder</dd>
+    <dt>Navigate to Go -> Documents</dt>
+        <dd>The current folder is the user's Documents folder</dd>
+    <dt>Navigate to Go -> File System</dt>
+        <dd>The current folder is the system's '/' folder</dd>
+    <dt>Navigate to Go -> Catalogs</dt>
+        <dd>The current folder is gThumb's Catalogs folder</dd>
+    <dt>Navigate to Go -> Selections</dt>
+        <dd>The current folder is gThumb's Selections folder</dd>
+    <dt>Navigate to Go -> Delete History</dt>
+        <dd>gThumb's recent history is deleted</dd>
+</dl>
+
+This test will check that gThumb's Bookmarks menu options work as expected
+<dl>
+    <dt>Open gThumb either from a terminal window or from the applications menu</dt>
+        <dd>gThumb opens</dd>
+    <dt>Navigate to Bookmarks -> Add Bookmark or alternatively hit Ctrl+D keys</dt>
+        <dd>The current folder is added to the bookmark list for rapid access</dd>
+    <dt>Navigate to Bookmarks -> Edit Bookmarks... or alternatively hit Ctrl+B keys</dt>
+        <dd>Bookmarks dialogue window opens</dd>
+    <dt>Edit bookmarks names and/or locations, remove a bookmark or select a specific bookmark to jump directly into and click on the corresponding action button</dt>
+        <dd>Depending on the action chosen, the bookmark is renamed and/or relocated, deleted or gThumb positions itself on the selected bookmark</dd>
+</dl>
+
+This test will check that gThumb's Help menu options work as expected
+<dl>
+    <dt>Open gThumb either from a terminal window or from the applications menu</dt>
+        <dd>gThumb opens</dd>
+    <dt>Navigate to Help -> Contents or alternatively hit F1 key</dt>
+        <dd>gThumg help dialogue window opens</dd>
+    <dt>Navigate to Help -> Keyboard Shortcuts</dt>
+        <dd>gThumg help dialogue window opens</dd>
+    <dt>Navigate to Help -> About</dt>
+        <dd>About gThumg dialogue window opens and the "Credits" and "License" buttons correctly display the associated information</dd>
+</dl>
+
+This test will check that gThumb's toolbar buttons work as expected
+<dl>
+    <dt>Open gThumb either from a terminal window or from the applications menu</dt>
+        <dd>gThumb opens</dd>
+    <dt>Change the current directory to another one in the folder tree and then click the "Back" toolbar icon</dt>
+        <dd>gThumg returns to the previous visited location</dd>
+    <dt>Click the "Forward" toolbar icon</dt>
+        <dd>gThumg goes to the next visited location (after going back to a folder)</dd>
+    <dt>Click the "Up" toolbar icon</dt>
+        <dd>gThumg goes up one directory level in the folder tree</dd>
+    <dt>Click the "X" toolbar icon</dt>
+        <dd>gThumb stops loading the current location contents</dd>
+    <dt>Select an image file from the browser view in gThumb window main area and click the "Printer" toolbar icon</dt>
+        <dd>Print dialogue window opens</dd>
+    <dt>Select the output print destination and format and click the "Print" icon</dt>
+        <dd>Dialogue window closes and image is printed as requested</dd>
+    <dt>Click the "Magnifier" toolbar icon</dt>
+        <dd>Find dialogue window opens</dd>
+    <dt>Define the start point of the search, the filter rules and click the "Find" button</dt>
+        <dd>If there are any results that match the criteria given they are shown on the browser view in gThumb window main area and under "Catalogs" on the folder tree</dd>
+    <dt>Select an image file from the browser view in gThumb window main area and click the "Fullscreen" toolbar icon</dt>
+        <dd>gThumb menu, toolbar, statusbar, sidebar and filterbar are removed and the selected image goes full screen</dd>
+    <dt>Click the "Slideshow" toolbar icon</dt>
+        <dd>A slideshow presentation of the image files in the current directory starts</dd>
+    <dt>Click the "Comment" toolbar icon</dt>
+        <dd>Metada dialogue window opens</dd>
+    <dt>Fill the text-boxes with the required metadata and click the "Save and Close" button</dt>
+        <dd>Dialogue window closes and the inserted metadata is incorporated in the file</dd>
+    <dt>Click the "Tools" toolbar icon</dt>
+        <dd>A menu drops down providing options to manipulate the orientation, format conversion, resizing, changing date, deleting and importing metada of images</dd>
+    <dt>Click the "Share" toolbar icon</dt>
+        <dd>A menu drops down providing options to export the image to Photo-Sharing Web Sites, local Web albums and Contact sheets</dd>
+        <!-- CONDITIONAL TEST -->
+        <dd>Depending on the selected service an authorization prompt might be displayed</dd>
+    <dt>Select an image file from the browser view in gThumb window main area and click the "Edit file" toolbar icon</dt>
+        <dd>A toolbar at the right of gThumb's window is displayed, providing several tools to manipulate images</dd>
+        <dd>The tools consists of a Red Eye Removal tool, resize and crop tool, tools to manipulate the orientation of images and several tools to manipulate the colors</dd>
+    <dt>Select an image file from the browser view in gThumb window main area and click the "Properties" toolbar icon</dt>
+        <dd>A status bar will display the image information</dd>
+        <dd>This information consists of the image name, file size, last modified date, file type, file full name, image dimensions and image format</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

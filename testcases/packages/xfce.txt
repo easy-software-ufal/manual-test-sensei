@@ -1,0 +1,21 @@
+1561_Xfce4 Screenshooter
+1562_Xfce4 Panel
+1563_Xfce4 Workspace Settings
+1565_Xfce4 Mouse Settings
+1566_Xfce4 Notes
+1568_exo-helper
+1571_Xfce4 Keyboard Settings
+1573_Xfce4 Dictionary
+1574_Xfce4 Settings Manager
+1575_Xfce4 Appearance Settings
+1576_Xfce4 Session and Startup Settings
+1580_Xfdesktop Settings
+1581_Xfce4 MIME Settings
+1582_Xfce4 Power Manager Settings
+1583_Xfce4 Task Manager
+1584_Xfwm4 Settings
+1585_Xfce4 Application Finder
+1586_Xfce4 Display Settings
+1589_Xfce4 Thunar Volman
+1590_Xfce4 Window Manager Tweaks
+1628_Xubuntu Post-install

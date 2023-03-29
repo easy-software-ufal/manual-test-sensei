@@ -1,0 +1,19 @@
+This test that FAMILY works with external speakers
+<!-- Smells: UNVERIFIED STEPS, PRE CONDITION AS STEP -->
+<dl>    
+    <dt>Ensure that the sound volume is turned to a reasonable level and that the sound is not muted by clicking on the Volume Control applet (the speaker icon in the notification area) and setting the volume</dt>
+    <dt>On the Unity panel, select Home Folder</dt>
+    <dt>Open the Examples folder. Open the Ubuntu_Free_Culture_Showcase folder</dt>
+    <dt>Select either of the .ogg files</dt>
+        <dd>The file opens in your default media player</dd>
+        <dd>Sound is played through the speakers without noises or distortions.</dd>
+    <dt>Adjust the volume with the Volume Control applet. Verify that the audio volume changes.</dt>
+    <dt>Right-click the Volume Control applet and check Mute</dt>
+        <dd>The audio mutes</dd>
+    <dt>Right-click the Volume Control applet and uncheck Mute</dt> 
+        <dd>The audio resumes</dd>
+</dl>
+
+<strong>
+    If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

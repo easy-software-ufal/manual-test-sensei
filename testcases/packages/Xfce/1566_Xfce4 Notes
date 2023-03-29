@@ -1,0 +1,54 @@
+This tests that xfce4 notes works
+<dl>
+    <dt>Open "Notes"</dt>
+        <dd>Notes opens and an icon appears in the indicator bar</dd>
+    <dt>Type some text</dt>
+        <dd>Text appears</dd>
+    <dt>Press Ctrl+Z</dt> 
+        <dd>The text dissapears</dd>
+    <dt>Press F2, then type 'test1', press OK</dt>
+        <dd>The title is now "Notes - test1"</dd>
+    <dt>Press Ctrl+N</dt>
+        <dd>A new note opens</dd>
+    <dt>Use the arrow icons to change between notes</dt>
+        <dd>The current note changes in response to clicking on the icons</dd>
+    <dt>Press Ctrl+W</dt>
+        <dd>The current note deletes</dd>
+    <dt>Click Notes icon(Menu) --> Always on top</dt>
+        <dd>Notes is always the top window</dd>
+    <dt>Click Notes icon(Menu) --> Always on top</dt>
+        <dd>Notes resumes being a normal window</dd>
+    <dt>Click Notes icon(Menu) --> Properties</dt>
+        <dd>The properties dialogue opens</dd>
+    <dt>Change each setting visible</dt>
+        <dd>Each change does as expected</dd>
+    <dt>Press Close to close the properties dialogue</dt>
+    <dt>Press Ctrl+Shift+N</dt>
+        <dd>A new Group (window) opens</dd>
+</dl>
+
+This tests that xfce4 notes remembers notes
+<dl>
+    <dt>Open "Notes"</dt>
+        <dd>Notes opens and an icon appears in the indicator bar</dd>
+    <dt>Type some text</dt>
+        <dd>Text appears</dd>
+    <dt>Click "X"</dt>
+    <dt>Click the indicator icon for notes</dt>
+        <dd>All your text is still there</dd>
+    <dt>Restart your computer, Then open notes</dt>
+        <dd>Your text is still there</dd>
+</dl>
+
+This tests that the xfce4 notes indicator bar menu works as expected
+<dl>
+    <dt>Open "Notes"</dt>
+        <dd>Notes opens and an icon appears in the indicator bar</dd>
+    <dt>Right-click the notes icon in the indicator bar</dt>
+        <dd>A menu opens with the options "Groups", "Properties", "About" and "Remove"</dd>
+        <dd>Check that the menu options work as expected</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
+

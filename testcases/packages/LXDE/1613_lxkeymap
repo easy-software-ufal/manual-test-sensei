@@ -1,0 +1,14 @@
+This text will check that Lxkeymap can change the keymap
+<dl>
+    <dt>Click on the lubuntu icon in your panel. Then select "Preferences" and "Lxkeymap"</dt>
+        <dd>LXSessions-edit opens in a new window</dd>
+    <dt>Enter some words into the testbox, especially addition characters</dt>
+        <dd>The input should be according to your keyboard</dd>
+    <dt>According to your language, select one keymap with "(dead acute)". Click on apply</dt>
+        <dd>The layout has changed. This can be checked at the bottom of the window with "Current keymap"</dd>
+    <dt>Try to enter some dead keys (e.g. ´ ` ^)</dt>
+        <dd>The deadkeys show up directly without additional character</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

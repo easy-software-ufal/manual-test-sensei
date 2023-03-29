@@ -1,0 +1,15 @@
+1577_Audacity
+1662_Agave
+1664_krita
+1665_inkscape
+1666_RecordMyDesktop
+1667_Qtractor
+1668_Scribus
+1669_Blender
+1670_Darktable
+1671_FontManager
+1672_Ardour
+1673_Hydrogen
+1674_Kdenlive
+1675_Qsynth
+1676_Qjackctl

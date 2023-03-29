@@ -1,0 +1,129 @@
+This test will check that Xfce4 Terminal opens from desktop
+<dl>
+    <dt>Point your mouse cursor to the desktop and press the right mouse button</dt>
+        <dd>A popup menu appears</dd>
+    <dt>Select the Open Terminal Here option</dt>
+        <dd>A terminal window opens with default settings displaying a command prompt, and the cursor is positioned at the command prompt</dd>
+</dl>
+
+This test will check that Xfce4 Terminal opens from Application Finder
+<dl>
+    <dt>Hit Alt-F2 keys</dt>
+        <dd>An Application Finder window opens</dd>
+    <dt>Type "xfce4-terminal" in the window text box</dt>
+        <dd>The Launch button is now enabled and click-able</dd>
+    <dt>Click the Launch button</dt>
+        <dd>A terminal window opens with default settings displaying a command prompt, and the cursor is positioned at the command prompt</dd>
+</dl>
+
+This test will check that Xfce4 Terminal opens with Super+T keys
+<dl>    
+    <dt>Press Super+T</dt>
+        <dd>A terminal window opens with default settings displaying a command prompt, and the cursor is positioned at the command prompt</dd>
+</dl>
+
+This test will check that Xfce4 Terminal opens a new terminal window from an already open terminal window by right clicking on it
+<dl>    
+    <dt>Open a terminal window, point your mouse cursor to it, then press the right mouse button</dt>
+        <dd>A popup menu appears</dd>
+    <dt>Select the Open Terminal option</dt>
+        <dd>A new terminal window opens, inheriting the working directory from its parent terminal</dd>
+</dl>
+
+This test will check that Xfce4 Terminal opens a new terminal window from the menubar of an already open terminal window
+<dl>    
+    <dt>Open a terminal window and click File on the menubar</dt>
+        <dd>A menu drops down</dd>
+    <dt>Select the Open Terminal option</dt>
+        <dd>A new terminal window opens, inheriting the working directory from its parent terminal</dd>
+</dl>
+
+This test will check that Xfce4 Terminal opens a new terminal window with Ctrl+Shift+N keys
+<dl>    
+    <dt>Open a terminal window and hit Ctrl+Shift+N keys</dt>
+        <dd>A new terminal window opens, inheriting the working directory from its parent terminal</dd>
+</dl>
+
+This test will check that Xfce4 Terminal adds a new tabbed terminal to a terminal window by right clicking on it
+<dl>
+    <dt>Open a terminal window and after pointing your mouse cursor to it, press the right mouse button</dt>
+        <dd>A popup menu appears</dd>
+    <dt>Select the Open Tab option</dt>
+        <dd>A new terminal tab opens, inheriting the working directory from the previously active terminal.</dd>
+</dl>
+
+This test will check that Xfce4 Terminal adds a new tabbed terminal to a terminal window from the menubar
+<dl>
+    <dt>Open a terminal window and click on File on the menubar</dt>
+        <dd>A menu drops down</dd>
+    <dt>Select the Open Tab option</dt>
+        <dd>A new terminal tab opens, inheriting the working directory from the previously active terminal.</dd>		
+</dl>
+
+
+This test will check that Xfce4 Terminal closes the terminal and terminates any subprocesses that you opened from the terminal
+<dl>
+    <dt>Open a terminal window and click on File on the menubar</dt>
+        <dd>A menu drops down</dd>
+    <dt>Select the Close Window option</dt>
+        <dd>The terminal window closes and any subprocesses that you opened from the terminal terminate</dd>
+</dl>
+
+This test will check that Xfce4 Terminal performs searches in the Terminal Contents from the menubar
+<dl>    
+    <dt>Open a terminal window and click on Terminal on the menubar</dt>
+        <dd>A menu drops down</dd>
+    <dt>Select the Find option</dt>
+        <dd>Find dialog window opens</dd>
+    <dt>Type the search pattern in the Search text box</dt>
+        <dd>The Previous and Next buttons are now enabled and click-able to perform the search for the given pattern</dd>
+</dl>
+
+This test will check that Xfce4 Terminal performs searches in the Terminal Contents with Shift+Ctrl+F keys
+<dl>    
+    <dt>Open a terminal window and Shift+Ctrl+F keys</dt>
+        <dd>The Find dialog window opens</dd>
+    <dt>Type the search pattern in the Search text box</dt>
+        <dd>The Previous and Next buttons are now enabled and click-able to perform the search for the given pattern</dd>
+</dl>
+
+This test will check that Xfce4 Terminal changes the title of the currently displayed terminal from the menubar
+<dl>    
+    <dt>Open a terminal window and click on Terminal on the menubar</dt>
+        <dd>A menu drops down</dd>
+    <dt>Select the Set Title... option</dt>
+        <dd>Set Title dialog opens</dd>
+    <dt>Type the new title in the Title text box</dt>
+        <dd>Terminal applies the change immediately</dd>
+</dl>
+
+This test will check that Xfce4 Terminal hides the menubar
+<dl>    
+    <dt>Open a terminal window and click on View on the menubar</dt>
+        <dd>A menu drops down</dd>
+    <dt>Select the Show Menubar option</dt>
+        <dd>The Terminal menubar hides</dd>
+</dl>
+
+This test will check that Xfce4 Terminal shows a hidden menubar
+<dl>
+    <dt>Open a terminal window and click on View on the menubar</dt>
+        <dd>A menu drops down</dd>
+    <dt>Select the Show Menubar option</dt>
+        <dd>The Terminal menubar hides</dd>
+    <dt>Right click the terminal window</dt>
+        <dd>A popup menu appears</dd>
+    <dt>Select Show Menubar option</dt>
+        <dd>The Terminal menubar unhides</dd>
+</dl>
+
+This test will check that Xfce4 Terminal maximizes into fullscreen
+<dl>
+    <dt>Open a terminal window then click on View on the menubar</dt>
+        <dd>A menu drops down</dd>
+    <dt>Select the Fullscreen option</dt>
+        <dd>The Terminal window maximizes into fullscreen</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

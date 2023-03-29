@@ -1,0 +1,41 @@
+﻿This test will check that Abiword can be started
+
+<dl>
+    <dt>Open Abiword</dt>
+        <dd>Abiword opens successfully</dd>
+</dl>
+
+This test will check that  Abiword can open and save .abw files
+
+<dl>
+    <dt>Open a new text document</dt>
+        <dd>A new unnamed text document appears</dd>
+    <dt>Add text and save it in .abw format.</dt>
+        <dd>After inserting some text, the "Save" icon is enabled</dd>
+    <dt>Press the save icon, enter save location and then save the file</dt>
+        <dd>The file saves correctly</dd>
+    <dt>Close the file and open the saved file again</dt>
+        <dd>The file can be opened again after closing</dd>
+    <dt>Make some changes to the file then close the window by pressing the 'x' on the top of the window.</dt>
+        <dd>A dialog box asks you to save changes</dd>
+        <dd>The Application correctly closes without error</dd>
+</dl>
+
+This test will check that Abiword can spell check
+
+<dl>
+    <dt>Enter a few spelling errors.</dt>
+        <dd>There are red wave lines under misspelled words in the document</dd>
+    <dt>Now Press F7.</dt>
+        <dd>A window titled "Spelling” appears, there now are some suggested words in the suggestions list</dd>
+    <dt>Select a word from the suggestion list and press the "Change" button.</dt>
+        <dd>The word in the document is replaced with the one you selected from the suggestion list, and it is no longer marked with a red wave line in the document</dd>
+    <dt>Press the “Change” button as many times as necessary till there are no more spelling mistakes in the document.</dt>
+        <dd>All the spelling mistakes get replaced, the words are correctly suggested</dd>
+        <dd>Spelling check complete dialogue opens</dd>
+    <dt>Press OK in dialogue</dt>
+        <dd>Dialogue closes</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

@@ -1,0 +1,21 @@
+The testcase tests the installation and basic functionality of a Frontend. You will need a MythTV backend in the network to do this testcase completely.
+
+<dl>
+    <dt>Go though the Ubiquity install as you would any other install. Most options won't matter for this testcase, but be sure to choose the following options</dt>'
+        <dd>
+            <ul>
+                <li title="Specified Setting">Do NOT name the user mythtv</li>
+                <li title="Specified Setting">Automatic (Guided) Partitioning</li>
+                <li title="Specified Setting">"Frontend"</li>
+                <li title="Specified Setting">If you have no remote, choose no remote suppport</li>
+                <li title="Specified Setting">For the security key, enter the PIN from the backend (in the backend testcase, this is set to 1234)</li>
+            </ul>
+        </dd>
+    <dt>Once installation is finished, remove the installation media and reboot.</dt>
+    <dt>Once the machine boots up, it should boot into the frontend.</dt>
+    <dt>Select "Watch TV". (this will only work if you have a backend already in the network)</dt>
+        <dd>The demo video should start playing.</dd>
+</dl>
+<strong>
+    If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

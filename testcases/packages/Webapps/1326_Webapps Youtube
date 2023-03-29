@@ -1,0 +1,15 @@
+This test checks whether Youtube integration is working properly
+<dl>
+    <dt>Open Firefox and go to http://www.youtube.com/watch?v=FFK0kjT1SW0</dt>
+        <dd>The integration popup should appear</dd>
+    <dt>Click on the button "Integrate"</dt>
+        <dd>The YouTube icon should appear in the Launcher</dd>
+    <dt>Open the Sound Menu</dt>
+        <dd>YouTube entry appears in the Sound Menu</dd>
+    <dt>Click on "Pause" for the current video</dt>
+        <dd>YouTube video pauses</dd>
+    <dt>Repeat the above steps using chromium</dt>
+        <dd>All of the expected results are the same using chromium instead of firefox</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

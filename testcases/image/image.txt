@@ -1,0 +1,137 @@
+1433_Post-installation (Xubuntu)
+1434_Desktop (Xubuntu)
+1436_Post-Installation Tests
+1437_Alternate Install (Entire Disk)
+1438_Alternate Install (Guided)
+1439_Alternate Install (Encryption)
+1440_Live LTSP
+1441_Install (No Network Connection)
+1442_Mythbuntu Frontend
+1443_Rescue Mode
+1444_Mythbuntu Backend & Frontend
+1445_Install Server iSCSI Root (virtualized KVM)
+1446_Ubiquity MemTest
+1447_Ubiquity Disk Defects
+1448_Unity Lenses
+1450_Live (netbook)
+1451_Install (entire disk with lvm and encryption)
+1452_Netboot Install (ARM Desktop)
+1453_Netboot Install (ARM Server)
+1454_Dist-Upgrade
+1455_Post-installation (Ubuntu Studio)
+1456_Install (JeOS on ESX)
+1457_Install (default + RAID1)
+1458_Install ((JeOS on KVM)
+1459_iSCSI Unauthenticated Root Installation
+1460_iSCSI Authenticated Root Installation
+1461_MAAS (Installer)
+1462_MAAS (Juju)
+1463_MAAS (Server)
+1464_ARM Headless
+1465_Netboot Install PPC
+1468_Install (upgrade)
+1469_Other Features
+1470_Install (manual partitioning re-using home partition)
+1471_Install (erase and re-install)
+1493_Install Nexus7 (ubuntu-nexus7-installer)
+1494_Nexus7 on screen keyboard
+1495_Nexus7 network manager
+1497_Install (live session)
+1498_Upgrade (image)
+1502_Xubuntu Raring Parole 0.5.0
+1503_Ubuntu Kylin Chinese Calendar
+1504_Netboot Install (Desktop)
+1513_Ubuntu Kylin Weather Indicator
+1514_Ubuntu Kylin Music Lens
+1548_Ubuntu Kylin Fcitx Tests
+1552_EC2CloudImages test
+1611_Live Session Persistence
+1625_Post-Installation Tests (UbuntuKylin)
+1628_Xubuntu Post-install
+1634_Kubuntu Localisation Support
+1635_Upgrade LTS
+1636_Upgrade LTS (Image)
+1639_UbuntuStudio Install
+1640_Install_Minimal_System
+1641_Install_Minimal_Virtual_System
+1642_Server_Upgrade_CLI
+1655_Xubuntu Core Install tasksel
+1658_Xubuntu Core Upgrade taskesel
+1660_Alternate Install (Unencrypted Home)
+1661_Alternate Install (Manual Partitioning)
+1663_Image Boot Test
+1687_Xubuntu Core Install
+1688_ARM64_Headless_KVM_Guest
+1689_Install (no Network)
+1696_Install BIOS (Server live)
+1697_Install UEFI (Server live)
+1698_Install_BIOS
+1699_Install_UEFI
+1700_Alternate Install (No Network)
+1701_Install using Calamares (entire disk)
+1702_Install using Calamares (manual partitioning)
+1710_Install RAID1 (Server live)
+1711_RaspberryPi 4 2GB Post-install
+1712_RaspberryPi Serial
+1713_RaspberryPi flash-kernel
+1714_RaspberryPi USB keyboard
+1715_Degraded RAID1 (Server live)
+1716_Install (entire disk with ZFS)
+1717_Install RST
+1718_Install UEFI SecureBoot nVidia
+1719_RaspberryPi 4 4GB Post-install
+1720_RaspberryPi 4 8GB Post-install
+1721_RaspberryPi 3B+ Post-install
+1722_RaspberryPi 3B Post-install
+1723_RaspberryPi 3A+ Post-install
+1724_RaspberryPi 2 Post-install
+1725_RaspberryPi CM3 Post-install
+1726_RaspberryPi CM3+ Post-install
+1727_RaspberryPi CM3+ Lite Post-install
+1728_PPC64EL Install using Netboot (Petitboot)
+1729_S390X Install LPAR (Server live)
+1730_S390X Install zVM (Server live)
+1732_Netinstall (arm64 server live)
+1733_Install (Safe Graphics mode)
+1734_Netinstall (amd64 server live)
+1735_Certified Devices Testing
+1736_Install Unleashed
+1737_Install Unmatched
+1738_Install Qemu
+1739_WSL Import and run
+1740_RaspberryPi 400 Post-install
+1741_RaspberryPi CM4 2GB Post-install
+1742_RaspberryPi CM4 4GB Post-install
+1743_RaspberryPi CM4 8GB Post-install
+EMPTY - 1317_Upgrade to dev - ubuntu-desktop - text mode - non interactive
+GOOD - 1304_VMWare Easy Install
+GOOD - 1412_Unity GSetting Migration
+SMELLY - 1300_Install (entire disk)
+SMELLY - 1301_Install (auto-resize)
+SMELLY - 1302_Install (manual partitioning)
+SMELLY - 1303_Live Session
+SMELLY - 1305_Install (OEM setup)
+SMELLY - 1307_Free Software Only
+SMELLY - 1309_Install (Screen Reader)
+SMELLY - 1310_Upgrade
+SMELLY - 1311_Non-English Installation Full Network Support
+SMELLY - 1312_Non-English Installation No Network
+SMELLY - 1313_Installation Broken Internet
+SMELLY - 1314_Non-English Live Session & Installation; No Network
+SMELLY - 1315_Non-English Live Session & Installation; Full Network Support
+SMELLY - 1316_Non-English Installation Full Network Support & CJK Input
+SMELLY - 1318_Ubuntu Core Image Smoke Test
+SMELLY - 1337_Install (Default)
+SMELLY - 1401_Install (Bind9)
+SMELLY - 1402_Install (Default + LVM)
+SMELLY - 1403_Install (Default + crypted LVM)
+SMELLY - 1404_Install (LAMP)
+SMELLY - 1405_Install (Mail server)
+SMELLY - 1406_Install (OpenSSH server)
+SMELLY - 1407_Install (PostgreSQL database server)
+SMELLY - 1408_Install (Print server)
+SMELLY - 1409_Install (Samba server)
+SMELLY - 1410_Install (Tomcat Java server)
+SMELLY - 1411_Install (Virtualization host)
+SMELLY - 1413_Install (Preseed)
+image.txt

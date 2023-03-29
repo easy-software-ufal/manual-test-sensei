@@ -1,0 +1,45 @@
+These tests check that Google authorization works.
+<dl>
+    <dt>Open System Settings</dt>
+        <dd>System Settings dialog will be displayed</dd>
+    <dt>Open Online Accounts</dt>
+        <dd>Online Accounts dialog will be displayed</dd>
+    <dt>Click on “Add account...” > Google</dt>
+        <dd>Credentials dialog will be displayed</dd>
+    <dt>Introduce the credentials (username and password)</dt>
+        <dd>Permissions dialog will be displayed</dd>
+    <dt>Accept permissions</dt>
+        <dd>Keyring dialog will be displayed</dd>
+    <dt>When asked, introduce the password of your ubuntu user to access the keyring</dt>
+        <dd>Google authorized account must be listed in Online Account’s left column</dd>
+    <dt>Open System Settings</dt>
+        <dd>System Settings dialog will be displayed</dd>
+    <dt>Open Online Accounts</dt>
+        <dd>Online Accounts dialog will be displayed</dd>
+    <dt>Click on authorized Google account (left column)</dt>
+        <dd>ccount is active (“ON”).  Shotwell must be listed as integrated application</dd>
+    <dt>Open System Settings</dt>
+        <dd>System Settings dialog will be displayed</dd>
+    <dt>Open Online Accounts</dt>
+        <dd>Online Accounts dialog will be displayed</dd>
+    <dt>Remove "Google" account</dt>
+    <dt>Open Firefox</dt>
+        <dd>Firefox will open properly</dd>
+    <dt>Go to http://www.gmail.com</dt>
+        <dd>Credentials dialog will be displayed</dd>
+    <dt>Intorduce your credentials</dt>
+        <dd>Online Accounts displays a new account for Google</dd>
+    <dt>Open System Settings</dt>
+        <dd>System Settings dialog will be displayed</dd>
+    <dt>Open Online Accounts</dt>
+        <dd>Online Accounts dialog will be displayed</dd>
+    <dt>Remove "Google" account</dt>
+    <dt>Open Chromium</dt>
+        <dd>Chromium will open properly</dd>
+    <dt>Go to http://www.gmail.com</dt>
+        <dd>Credentials dialog will be displayed</dd>
+    <dt>Intorduce your credentials</dt>
+        <dd>Online Accounts displays a new account for Google</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

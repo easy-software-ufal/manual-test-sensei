@@ -1,0 +1,56 @@
+This test will check that basic terminal commands work in qterminal 
+<dl>
+    <dt>Type in sudo apt-get update and press Enter</dt>
+        <dd>You are asked for [sudo] password for USER: (where USER is your user name)</dd>
+    <dt>Enter your password and wait for the command to complete</dt>
+        <dd>Command finishes and leaves you at an empty prompt</dd>
+    <dt>Enter "ls -al"</dt>
+        <dd>This should list all file in full in the home folder</dd>
+    <dt>Press the up arrow on your keyboard</dt>
+        <dd>The "ls -al" command you just entered appears</dd>
+</dl>
+This test will check that qterminal can manage multiple tabs
+<dl>
+    <dt> In the menu of qterminal click the file button and then new tab. </dt>
+       <dd> qterminal opens a new tab that does not show the previous commands and now shows the tabbar. </dd> 
+    <dt> Below the menu on the tab click the tab that says shell number 1 </dt> 
+       <dd> qterminal returns to showing the contents of everything in your home folder from the first tab</dd>
+    <dt> On the tab bar where it shows shell No. 2 press the button with the x on it</dt>
+       <dd> The tab for shell No. 2 closes.</dd>
+    <dt> On the keyboard press the keyboard shortcut control+shift+t to open a new tab</dt>
+       <dd> a new tab opens this time labeled shell number three</dd>
+</dl>
+This test will test that the drop down mode of qterminal will open and be able to be opened again.  
+<dl> 
+    <dt> Open the main LXQt menu and click system tools Qterminal drop down </dt> 
+        <dd> A qterminal window pops up towards the top of the screen  showing your bash prompt but does not have  a titlebar or window decorations </dd>
+    <dt> Click outside of this window </dt>
+        <dd> The drop down window loses focus and dissappers. </dd>
+    <dt> Press the f12 key to bring back the drop down terminal</dt>
+        <dd> The qterminal drop down window returns. </dd>
+    <dt> On the menu for qterminal open the file menu and select quit</dt>
+        <dd> A dialog box appears asking if you are sure you want to quit.</dd>
+    <dt> Click on the yes button </dt> 
+        <dd> The drop down qterminal window closes</dd> 
+</dl> 
+This test will show that qterminal will open a new window. 
+<dl>
+    <dt> In your previous non drop down qterminal window press the file menu and new window </dt>
+         <dd> A new window of qterminal opens. </dd>
+    <dt> In this new window towards the top of the title bar press the x button to close the newly opened window </dt>
+        <dd> The new window closes</dd> 
+    <dt> In the qterminal window you first opened press the keyboard shortcut control shift n </dt> 
+        <dd> A new qterminal window opens </dd> 
+</dl>
+This test will make sure qterminal can split terminals 
+<dl> 
+    <dt> In the qterimanl newly opened window press right click in the part of the terminal with the bash prompt</dt>
+       <dd> A context menu appears</dd>
+    <dt> Click on split terminal vertically. </dt>
+       <dd> A new bash prompt opens being split with two terminals vertically. </dd>
+    <dt> In the left hand of the split teriminal type man cp and hit enter</dt>
+       <dd> The left half of the screen shows the man page for cp with the right hand side showing the default bash prompt.</dd> 
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
+

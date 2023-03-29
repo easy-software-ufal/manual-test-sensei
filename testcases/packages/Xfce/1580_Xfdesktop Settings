@@ -1,0 +1,72 @@
+Testing settings window launch correctly.
+<dl>
+    <dt>Right-click on desktop and click 'Desktop Settings...'</dt>
+        <dd>Desktop Settings window opens</dd>
+</dl>
+
+Testing wallpaper changes correctly.
+<dl>
+    <dt>Under 'Background' click on a wallpaper other than the one currently selected</dt>
+        <dd>Wallpaper changes accordingly</dd>
+    <dt>If other image folders are available, navigate in Folder dropdown and select a new wallpaper</dt>
+	<dd>New wallpaper available in list</dd>
+    <dt>Select new wallpaper</dt>
+        <dd>Added background is set correctly</dd>
+    <dt>Select Style options, zoomed etc and apply</dt
+	<dd>Wallpaper changes in response to Style setting</dd>
+    <dt>Deselect apply to all workspaces</dt>
+	<dd>Yellow notice appears</dd>
+    <dt>Move Desktop settings dialogue to a new workspace</dt>
+    <dt>Select a different wallpaper</dt>
+	<dd>Wallpapers set on workspaces are different</dd>
+    <dt>Select Change the background time setting</dt>
+    <dt>Set time to in seconds, 10, select random order</dt>
+	<dd>After 10 seconds wallpaper changes</dd>
+    <dt>Deselect Change the background time setting</dt>
+        <dd>Wallpaper remains unchanged after 10 seconds</dd>
+</dl>
+
+Testing colours and gradients.
+<dl>
+    <dt>Under 'Background', ensure 'Style' is set to 'None'. Select, in turn, 'Solid colour', 'Horizontal gradient', 'Vertical gradient', and 'Transparent'</dt>
+        <dd>Ensure that each are applied correctly.</dd>
+    <dt>Change the colour(s) for each</dt>
+        <dd>They are set correctly</dd>
+</dl>
+
+Testing desktop menu.
+<dl>
+    <dt>Right click on the desktop.</dt>
+        <dd>The 'Applications' menu loads up a list of applications correctly</dd>
+    <dt>In the desktop settings, under 'Menus', untick and retick the 'Show applications menu on desktop right click' box</dt>
+        <dd>Observe in turn that it shows and hides the applications menu correctly.</dd>
+    <dt>Untick and retick the 'Show application icons in menu' box</dt>
+        <dd>It shows and hides the application icons in the desktop menu</dd>
+    <dt>Middle (scroll) click on the desktop</dt>
+        <dd>A window list appears</dd>
+    <dt>Untick and retick each of the boxes under 'Window List Menu' in the desktop settings dialog</dt>
+        <dd>Ensure that they each enable and disable their labelled functions</dd>
+</dl>
+
+Testing desktop icons.
+<dl>
+   <dt>Under the 'Icons' tab of the desktop settings manager, under 'Appearance', change icon type to 'Minimised application icons'</dt>
+       <dd>Ensure the desktop icons now represent the currently running applications</dd>
+   <dt>Now change icon type to none.</dt>
+       <dd> and observe that all desktop icons disappear. They should reappear upon reselecting 'File/launcher icons'</dd>
+   <dt>Change the icon size with the up and down buttons.</dt>
+       <dd>Observe that the icons change size correctly. Check that manually entering a value also has the required effect.</dd>
+   <dt>Click the check box 'Use custom font size'</dt>
+       <dd>Ensure that using the up or down arrows, or entering a value, changes the icon font size correctly. Unchecking the box should restore the font size to default</dd>
+   <dt>Untick and retick 'Show thumbnails'</dt>
+       <dd>Desktop thumbnails are shown and hidden correctly (may need some video or image files on the desktop to check this).</dd>
+   <dt>Tick 'Single click to activate icons'</dt>
+       <dd>Ensure that the icon applications now launch upon being clicked</dd>
+   <dt>Untick the box</dt>
+       <dd>It now functions as before (double click)</dd>
+   <dt>Tick and untick each of the checkboxes under 'Default Icons'</dt>
+       <dd>Each in turn is hidden and shown</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, and you can answer yes to the above questions, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, or you answer no to any of the above questions, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

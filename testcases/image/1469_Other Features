@@ -1,0 +1,72 @@
+<strong>To perform this test you need a an active internet connection, and a wireless card, wireless USB dongle, or mobile network card</strong>
+
+<em>Proceed in your native language if you wish. Instructions will remain in English</em>
+
+<dl>
+    <dt>Boot up the image</dt>
+        <dd>The system boots properly and loads the installer displaying Welcome dialog with language selection and 'Try FAMILY' and 'Install FAMILY' buttons</dd>
+    <dt>Click on the Install FAMILY icon</dt>
+        <dd>The 'Keyboard Layout' screen appears</dd>
+        <dd>The proposed keyboard corresponds with your keyboard</dd>
+	<dt>Select your keyboard layout and click on continue</dt>
+        <dd>The 'Preparing to install FAMILY' screen is displayed</dd>
+    <dt>On the screen Preparing to install FAMILY, note the availability of the following components</dt>
+        <dd>Available options should represent the state of your system accurately</dd>
+        <dd>
+            <ul>
+                <li>Your system have at least the amount a space indicated</li>
+                <li>(If on a 'laptop'). Is plugged to a power source</li>
+                <li>Is NOT connected to the Internet, check that you have the Network Manager icon in the Notification Area showing as disconnected</li>
+            </ul>
+        </dd>
+    <dt>Click on the continue button</dt>
+        <dd>The 'Wireless' screen is displayed</dd>
+    <dt>Select the 'Connect to this network' radio button and select a Wireless network to connect to from the list under it, and insert the Wireless network's password in the 'Password' field</dt>
+        <dd>Your and other (if there are any) wireless networks are detected</dd>
+    <dt>Check and uncheck the 'Display password' checkbox</dt>
+        <dd>By checking the 'Display password' checkbox the entered password can be seen and that by unchecking it the password is hidden behind asterisks</dd>
+    <dt>Click on the 'Connect' button</dt>
+        <dd>You should connect to the wireless network you selected</dd>
+    <dt>Click on the continue button</dt>
+        <dd>The 'Installation type' screen is displayed</dd>
+    <dt>Select the installation type you want to carry out (any installation type will work; the type of installation is not important for this test) </dt>
+    <dt>Click on the continue button </dt>
+        <dd>The 'Where are you?' screen is displayed</dd>
+    <dt>On the 'Where are you?' screen note the preselected timezone correspond with your timezone and the city indicated in the text box </dt>
+        <dd>The timezone and city displayed match your timezone and a city from your area</dd>
+    <dt>Click on the map to a different timezone of your choice</dt>
+        <dd>The the corresponding city is displayed in the text field and the new timezone is selected</dd>
+    <dt>Re-enter the name of a city from your area</dt>
+        <dd>The input field and a drop down list opens with a list of items matching the name you entered</dd>
+    <dt>Select the name of the city from your area</dt>
+        <dd>The timezone and city are updated to your new selection</dd>
+    <dt>Click on the continue button</dt>
+        <dd>The 'Who are you?' screen appears</dd>
+    <dt>Input your initial user details and password (Note admin can not be used - it is a dedicated Linux User)</dt>
+        <dd>Name, username and password are accepted. Additionally, the continue button is enabled</dd>
+    <dt>Click on the continue button</dt>
+        <dd>The 'Welcome to FAMILY' slide is displayed</dd>
+    <dt>Wait for the installation to proceed and the slide to change automatically</dt>
+        <dd>The slideshow appears correct, the installer displays installation details along the bottom and the slideshow changes slides</dd>
+    <dt>Click the left and right arrow buttons next to the slides</dt>
+        <dd>The slide changes slides in the proper direction as indicated by the click</dd>
+    <dt>Wait for the installer to finish</dt>
+        <dd>An 'Installation Complete' dialog appears</dd>
+    <dt>Click the Restart now button</dt>
+        <dd>GUI is shut down, a prompt to remove media and press Enter appears</dd>
+    <dt>Remove the disc and press enter</dt>
+        <dd>The machine has been rebooted</dd>
+    <dt>Allow the machine to reboot</dt>
+        <dd>The system boots properly and loads into FAMILY</dd>
+    <dt>Login as the user you created, or ensure that you are auto-logged in as the user created during setup if you checked the auto-login option</dt>
+        <dd>The new user's desktop is presented</dd>
+    <dt>Click on the Network Manager icon on the Status Menu</dt>
+        <dd>Verify you are already connected to the Wireless network you configured in the Wireless window during install</dd>
+    <dt>Click on the time on the Status Menu and select 'Time and date settings' </dt>
+        <dd>Verify that the time zone is the one you configured in the 'Where are you' window during install</dd>
+    <dt>Open Gedit</dt>
+        <dd>Verify that the keyboard is the one you configured in the 'Keyboard layout' window during install</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

@@ -1,0 +1,16 @@
+<!--Smell: OMISSION OF STEPS, UNVERIFIED STEPS -->
+This tests USB port connectivity by verifying the correct functioning of all different type of USB devices e.g. pen drives, mice, music players, keyboards, cameras, headphones etc.
+<dl>
+    <dt>Plug a USB device in and attempt to use it</dt>
+        <dd>The device is correctly recognised</dd>
+        <dd>The software normally used with the device functions normally</dd>
+        <dd>The device behaves as expected</dd>
+        <dd>The USB device works in every port</dd>
+        <dd>You are able to disconnect and re-connect the USB device correctly without errors</dd>
+    <dt>If the device is a USB3.0 storage device and you have a USB3.0 port, transfer a large file between the two</dt>
+        <dd>The transfer is above USB2.0 speed</dd>
+    <dt>Repeat for each USB device you have</dd>
+<dl>
+
+<strong>If you answer 'yes' to all questions, please <a href="results#add_result">submit</a> a 'passed' result.
+If you answer 'no' to any question, then please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

@@ -1,0 +1,35 @@
+﻿<strong>Test Card Reader</strong>
+
+Case ID: him-001
+<!-- Smells: UNVERIFIED STEPS -->
+<dl>
+    <dt>Insert a media card into the reader</dt>
+        <dd>The card is recognised</dd>
+    <dt>Open the file manager</dt>
+    <dt>Find the media card in the menu on the left. Right click on this and open it</dt>
+       <dd>A window opens showing the contents of the card (if any)</dd>
+    <dt>Right-click within the window and select Create Document → Create Empty File. Call the file test.txt</dt>
+        <dd>test.txt is created</dd>
+    <dt>Drag test.txt to the trash can in the left hand menu</dt>
+        <dd>test.txt is removed from the card</dd>
+    <dt>Close the card window</dt>
+    <dt>Eject the card</dt>
+        <dd>The icon is removed from the desktop</dd>
+    <dt>Repeat for every type of media supported (e.g. CF, SD, MMC, etc.)</dt> 
+</dl>
+
+
+<strong>Reconnect Card Reader and Verify Remounting</strong>
+
+Case ID: him-002
+<dl>
+    <dt>Insert a media card into the reader</dt>
+        <dd>The card is recognised</dd>
+    <dt>Click eject</dt>
+        <dd>The window disappears</dd>
+        <dd>The icon is removed from the desktop</dd>
+</dl>
+
+<strong>
+    If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

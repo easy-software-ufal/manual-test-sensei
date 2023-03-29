@@ -1,0 +1,62 @@
+This test will check that Startup Disk Creator will create a bootable USB
+<em>Test will require a USB that can be erased,and a machine able to boot from USB</em>
+
+<dl>
+    <!--SMELL: UNVERIFIED STEPS -->
+    <dt>Insert USB</dt>
+    <dt>Start Startup Disk Creator</dt>
+        <dd>Startup Disk Creator starts with <em>Source disc</em> image dialogue empty and <em>Disk to Use</em> populated with inserted USB</dd>
+    <dt>Click <em>Other</em> below source image window</dt>
+        <dd>A file manager type window opens</dd>
+    <dt>Navigate in window to suitable .iso and click <em>Open</em></dt>
+        <dd>Source Disc Image dialogue shows chosen image</dd>
+    <dt>Click <em>Erase Disk</em> button below Disk to use window</dt>
+        <dd>Confirmation of disk erasure dialogue opens</dd>
+    <dt>Click <em>Yes</em></dt>
+        <dd>Authentication dialogue opens</dd>
+    <dt>Enter password and press <em>Authenticate</em></dt>
+        <dd>Authentication dialogue closes</dd>
+    <dt>Select <em>Discarded on shutdown ...</em> option</dt>
+    <dt>Press <em>Make Startup Disk</em></dt>
+        <dd>Startup Disk Creator closes, Installing window opens, displaying percentage complete</dd>
+    <dt>Authenticate Dialogue window opens for bootloader installation</dt>
+        <dd>Installation to USB Complete dialogue opens</dd>
+    <dt>Press <em>Quit</em> in dialogue</dt>
+    <dt>Reboot system to USB</dt>
+        <dd>Live Session boots</dd>
+
+This test will check that Startup Disk Creator will create a bootable USB with Persistence
+<em>Test will require a USB that can be erased, a machine able to boot from USB and rebooting it</em>
+
+<dl>
+    <!-- UNVERIFIED STEPS, TEST CLONE -->
+    <dt>Insert USB</dt>
+    <dt>Start Startup Disk Creator</dt>
+        <dd>Startup Disk Creator starts with <em>Source disc</em> image dialogue empty and <em>Disk to Use</em> populated with inserted USB</dd>
+    <dt>Click <em>Other</em> below source image window</dt>
+        <dd>A file manager type window opens</dd>
+    <dt>Navigate in window to suitable .iso and click <em>Open</em></dt>
+        <dd>Source Disc Image dialogue shows chosen image</dd>
+    <dt>Click <em>Erase Disk</em> button below Disk to use window</dt>
+        <dd>Confirmation of disk erasure dialogue opens</dd>
+    <dt>Click <em>Yes</em></dt>
+        <dd>Authentication dialogue opens</dd>
+    <dt>Enter password and press <em>Authenticate</em></dt>
+        <dd>Authentication dialogue closes</dd>
+    <dt>Select <em>Stored in reserved extra space</em> option, set <em>How much:</em> to 1.0GB</dt>
+    <dt>Press <em>Make Startup Disk</em></dt>
+        <dd>Startup Disk Creator closes, Installing window opens, displaying percentage complete</dd>
+    <dt>Authenticate Dialogue window opens for bootloader installation</dt>
+        <dd>Installation to USB Complete dialogue opens</dd>
+    <dt>Press <em>Quit</em> in dialogue</dt>
+    <dt>Reboot system to USB</dt>
+        <dd>Live Session boots</dd>
+    <dt>Create and save a text file using your FAMILY text editor</dt>
+    <dt>Reboot with the same USB to a live session</dt>
+		<dd>Live session loads in machine</dd>
+	<dt>Check for existence of previously created file</dt>
+		<dd>Previously saved file is available</dd>	
+    <dt>Shutdown and remove USB</dt>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+            If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

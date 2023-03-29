@@ -1,0 +1,21 @@
+The goal of this test case is to check that the Easy Install option in VMWare Player works correctly with the FAMILY image. You can use any version of VMWare Player >= 4.0
+<em>VMWare Player version >= 4.0 is required.</em>
+<dl>
+    <dt>Create a new virtual machine in VMWare Player</dt>
+        <dd>The "New Virtual Machine Wizard" screen appears</dd>
+    <dt>Select the *.iso file</dt>
+        <dd>The screen displays that "This operating system will use Easy Install"</dd>
+    <dt>Click Next</dt>
+        <dd>The "Easy Install Information" screen appears</dd>
+    <dt>Enter your Full Name, username, and password and click next</dt>
+        <dd>The "Name the virtual machine" screen appears</dd>
+    <dt>Enter the virtual machine name, and storage location and click next</dt>
+        <dd>The "Specify Disk Capacity" screen appears</dd>
+    <dt>Choose your disk size and storage format and click next</dt>
+        <dd>The "Ready to create virtual machine" screen appears</dd>
+    <dt>Review your settings and click finish</dt>
+        <dd>The virtual machine is created</dd>
+    <dt>Wait for the system to boot and login providing your details</dt>
+        <dd>Login is successful</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

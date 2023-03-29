@@ -1,0 +1,45 @@
+This tests check that Facebook authorization works.
+<dl>
+    <dt>Open System Settings</dt>
+        <dd>System Settings will open</dd>
+    <dt>Open Online Accounts</dt>
+        <dd>Online Accounts will be displayed</dd>
+    <dt>Click on "Add account...">Facebook</dt>
+        <dd>Credential dialog will appear</dd>
+    <dt>Introduce the credentials (username and password)</dt>
+        <dd>Permissions dialog will appear</dd>
+    <dt>Accept permissions</dt>
+        <dd>Password dialog will appear</dd>
+    <dt>When asked, introduce the password of your ubuntu user to access the keyring</dt>
+        <dd>Facebook authorized account must be listed in Online Account’s left column</dd>
+    <dt>Open System Settings</dt>
+        <dd>System Settings dialog is displayed</dd>
+    <dt>Open Online Accounts</dt>
+        <dd>Online Accounts dialog is displayed</dd>
+    <dt>Click on authorized Facebook account (left column)</dt>
+        <dd>Account is active ("ON").  Shotwell must be listed as integrated with Facebook. Gwibber must be listed as integrated with Facebook.</dd>
+    <dt>Open System Settings</dt>
+        <dd>System Settings dialog is displayed</dd>
+    <dt>Open Online Accounts</dt>
+        <dd>Online Accounts dialog is displayed</dd>
+    <dt>Remove "Facebook" account</dt>
+    <dt>Open Firefox</dt>
+        <dd>Firefox will open properly</dd>
+    <dt>Go to http://www.facebook.com/</dt>
+        <dd>Credentials dialog will be displayed</dd>
+    <dt>Introduce your credentials</dt>
+        <dd>Online Accounts displays a new account for Facebook</dd>
+    <dt>Open System Settings</dt>
+        <dd>System Settings dialog is displayed</dd>
+    <dt>Open Online Accounts</dt>
+        <dd>Online Accounts dialog is displayed</dd>
+    <dt>Remove "Facebook" account</dt>
+    <dt>Open Chromium</dt>
+        <dd>Chromium will open properly</dd>
+    <dt>Go to http://www.facebook.com/</dt>
+        <dd>Credentials dialog will be displayed</dd>
+    <dt>Introduce your credentials</dt>
+        <dd>Online Accounts displays a new account for Facebook</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

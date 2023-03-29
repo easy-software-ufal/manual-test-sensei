@@ -1,0 +1,15 @@
+<strong>Suspend/Resume smoke test</strong>
+
+Case ID: snr-001
+<!-- Smells: UNVERIFIED STEPS, UNSPECIFIED PARAMETER -->
+<dl>
+    <dt>Open a few applications in on the desktop</dt>
+    <dt>Look at the top-right corner of your screen, you should find the session icon alongside of your user-name, click on it to get a drop-down menu</dt>
+    <dt>Now from the drop-down menu select Suspende</dt>
+    <dt>After about 10 seconds press the power button on your system to resume</dt>
+    <dt>You should be presented with a password prompt; enter your password (not requested using a live environment)</dt>
+        <dd>The desktop loads as before, at the correct resolution, your applications are still running and are be able to connect to the internet</dd>
+</dl>
+
+<strong> If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

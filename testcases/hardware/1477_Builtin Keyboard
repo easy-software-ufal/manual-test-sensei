@@ -1,0 +1,64 @@
+<strong>Gedit typing test</strong>
+Case ID: kbt-001
+This test checks that FAMILY can take a keyboard input and put it into a text document
+<!-- Smells: UNVERIFIED STEPS -->
+<dl>
+    <dt>Open Text Editor</dt>
+        <dd>The text editor opens</dd>
+    <dt>Type in a paragraph that uses every character on your keyboard</dt>
+        <dd>Every key makes a character appear</dd>
+    <dt>Attempt to close the window, then select Save</dt>
+    <dt>In the new window type in demo1.txt, Select your Home Folder and click on Save</dt>
+        <dd>The text editor closes</dd>
+    <dt>Open the file manager, go to your home folder</dt>
+        <dd>There is a file called demo1.txt
+    <dt>Select and open demo1.txt</dt>
+        <dd>Text editor opens the file</dd>
+        <dd>Every character is displayed as expected</dd>
+</dl>
+
+
+<strong>Terminal typing test</strong>
+Case ID: kbt-002
+This test checks that FAMILY can take a keyboard input and put it into a terminal session
+<!-- Smells: UNVERIFIED STEPS -->
+<dl>
+    <dt>Open Terminal</dt>
+        <dd>The Terminal opens</d>
+    <dt>Type "nano" and press Enter</dt>
+    <dt>Type in a paragraph that uses every character on your keyboard</dt>
+        <dd>Every key makes a character appear</dd>
+    <dt>Press Ctrl-x</dt>
+    <dt>Press y</dt>
+    <dt>Type in demo2.txt and press Enter</dt>
+    <dt>Open the file manager, go to your home folder</dt>
+        <dd>There is a file called demo2.txt
+    <dt>Select demo2.txt</dt>
+    <dt>Once it opens ensure that every character is displayed as expected 
+        <dd>Text editor opens the file</dd>
+        <dd>Every Character is still there</dd>
+</dl>
+
+
+<strong>Typing in LibreOffice Writer/abiword</strong>
+Case ID: kbt-003
+This test checks that ubuntu can take a keyboard input and put it into Libreoffice
+<!-- Smells: UNVERIFIED STEPS -->
+<dl>
+    <dt>Open the word processor</dt>
+        <dd>The word processor should should open</dd>
+    <dt>Type in a paragraph that uses every character of your keyboard</dt>
+        <dd>Every key should make a character appear</dd>
+    <dt>Attempt to close the window, click Save</dt>
+    <dt>In the new window type in demo3.odt select your home folder and click on Save</dt>
+        <dd>The text editor should close</dd>
+    <dt>Open the file manager, go to your home folder</dt>
+        <dd>There should be a file called demo3.txt
+    <dt>Select and open demo3.txt</dt>
+        <dd>The word processor should open the file</dd>
+        <dd>Every Character should still be there</dd>
+</dl>
+
+<strong>
+    If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

@@ -1,0 +1,120 @@
+This test will check that the Appearance Setting Dialog is visible in the Settings dialog and starts.
+<dl>
+    <dt>From the whiskermenu open "Settings".</dt>
+        <dd>"Settings" opens and the "Appearance" module appears in the Personal section.</dd>
+    <dt>Click on the "Appearance" module in "Settings".</dt>
+        <dd>The "Appearance" module is loaded into the "Settings" window replacing the "Settings".</dd>
+    <dt>Click on the "All Settings" button.</dt>
+        <dd>The "Appearance" module closes and the "Settings" re-appears.</dd>
+</dl>
+
+This test will verify that the Style tab works properly.
+<dl>
+    <dt>With the "Appearance" module open to the "Style" tab, select another style.</dt>
+        <dd>The GTK appearance of the on screen widgets changes to the new style.</dd>
+    <dt>Click on the "All Settings" button to return to the "Settings"</dt>
+    <dt>Open a terminal and install the clearlooks-phenix-theme package <code>sudo apt-get install clearlooks-phenix-theme</code> </dt>
+    <dt>Click on the "Appearance" module.</dt>
+        <dd>Clearlooks-Phenix appears as a style in the "Style" tab.</dd>
+    <dt>Click on "Clearlooks-Phenix" to select the style.</dt>
+        <dd>The GTK appearance of the on screen widgets changes to the new style.</dd>
+    <dt>Click on the "All Settings" button to return to the "Settings"</dt>
+    <dt>Open a terminal and purge the clearlooks-phenix-theme package and gtks2-engines <code>sudo apt-get purge clearlooks-phenix-theme gtk2-engines</code> </dt>
+    <dt>Click on the "Appearance" module.</dt>
+        <dd>The "Appearance" (Style tab) module re-appears with no themes selected.</dd>
+    <dt>Click on any style to select it.</dt>
+        <dd>The GTK appearance of the on screen widgets changes to the new style.</dd>
+</dl>
+
+This test will verify that the Icons tab works properly.
+<dl>
+    <dt>With the "Appearance" module loaded and the "Icons" tab visible, select another icon theme.</dt>
+        <dd>The icons on the screen change to the newly-selected icon theme.</dd>
+    <dt>Click on the "All Settings" button to return to the "Settings"</dt>
+    <dt>Open a terminal and install the tango-icon-theme package <code>sudo apt-get install tango-icon-theme</code></dt>
+    <dt>Click on "Appearance" module and go to the "Icons" tab.</dt>
+        <dd>Tango appears as an icon theme.</dd>
+    <dt>Click on Tango to select the theme.</dt>
+        <dd>The icons on the screen change to the new icon style.</dd>
+    <dt>Click the "All Settings" button to return to the "Settings".</dt>
+    <dt>Open a terminal and remove the tango-icon-theme package <code>sudo apt-get purge tango-icon-theme</code></dt>
+    <dt>Click on the "Appearance" module and go to the "Icons" tab.</dt>
+        <dd>The "Appearance" module (Icons tab) re-appears with no icon themes selected.</dd>
+    <dt>Click on any icon theme to select it.</dt>
+        <dd>The icons on the screen change to the newly-selected icon theme.</dd>
+</dl>
+
+This test will verify that the Fonts tab works properly.
+<dl>
+    <dt>With the "Appearance" module loaded and the "Fonts" tab visible, change the "Default Font".</dt>
+        <dd>The on-screen fonts change accordingly.</dd>
+    <dt>Uncheck the "Enable anit-aliasing" checkbox.</dt>
+        <dd>The on-screen fonts change (they appear blockier).</dd>
+    <dt>Re-check the "Enable anti-aliasing" checkbox.</dt>
+        <dd>The fonts change again (appear smoother).</dd>
+    <dt>Change the "Hinting" to none.</dt>
+        <dd>There should be a slight change to the appearance of the fonts.</dd>
+    <dt>Change the "Hinting" to Medium.</dt>
+        <dd>There should be a slight change to the appearance of the fonts.</dd>
+    <dt>Change the "Hinting" to Full</dt>
+        <dd>There should be a very slight change to the appearance of the fonts.</dd>
+    <dt>Change the "Hinting" back to Slight</dt>
+        <dd>There should be a very slight change to the appearance of the fonts.</dd>
+    <dt>Change the "Sub-pixel order" to None.</dt>
+        <dd>There should be a slight change to the appearance of the fonts.</dd>
+    <dt>Change the "Sub-pixel order" to BGR.</dt>
+        <dd>There should be a slight change to the appearance of the fonts.</dd>
+    <dt>Change the "Sub-pixel order" to Vertical RGB.</dt>
+        <dd>There should be a slight change to the appearance of the fonts.</dd>
+    <dt>Change the "Sub-pixel order" to Vertical BGR.</dt>
+        <dd>There should be a slight change to the appearance of the fonts.</dd>
+    <dt>Change the "Sub-pixel order" back to RGB.</dt>
+        <dd>There should be a slight change to the appearance of the fonts.</dd>
+    <dt>Change the "DPI" value to 120.</dt>
+        <dd>The fonts should increase in size.</dd>
+    <dt>Change the "DPI" value back to 96.</dt>
+        <dd>The fonts should return to their default size.</dd>
+</dl>
+
+This test will verify that the Settings tab works properly.
+<dl>
+    <dt>With the "Appearance" module loaded and the "Settings" tab visible, load a GTK-compliant application (e.g. Globaltime Preferences).</dt>
+        <dd>Globaltime Preferences loads.</dd>
+    <dt>Change the "Toolbar Style" to Text.</dt>
+        <dd>The Globaltime Preferences toolbar changes to text.</dd>
+    <dt>Change the "Toolbar Style" to Text under icons.</dt>
+        <dd>The Globaltime Preferences toolbar changes to both icons and text with the text below the icon.</dd>
+    <dt>Change the "Toolbar Style" back to Icons.</dt>
+        <dd>The Globaltime Preferences toolbar changes the default icons look.</dd>
+    <dt>Uncheck the "Show images on buttons" checkbox.</dt>
+        <dd>The images disappear from the Help, All Settings, and Close button on the Appearance dialog.</dd>
+    <dt>Re-check the "Show images on buttons" checkbox.</dt>
+        <dd>The images re-appear on the Help, All Settings, and Close button on the Appearance dialog.</dd>
+    <dt>Uncheck the "Show images in menus" checkbox.</dt>
+        <dd>The icon images disappear from the main menu.</dd>
+    <dt>Re-check the "Show images in menus" checkbox.</dt>
+        <dd>The icon images re-appear on the main menu.</dd>
+    <dt>Check the "Enable editable accelerators" checkbox. In xfce4-terminal, hover your mouse over the Edit->Select All option and press Ctrl+a.</dt>
+        <dd>The menu accelerator change to Ctrl+a.</dd>
+    <dt>In xfce4-terminal, hover your mouse over the Edit->Select All option and press Shift+Ctrl+a.</dt>
+        <dd>The accelerator changes back to the default Shift+Ctrl+a.</dd>
+    <dt>Uncheck the "Enable editable accelerators" checkbox. Open xfce4-terminal, hover your mouse over the Edit->Select All option and press Ctrl+a.</dt>
+        <dd>The menu accelerator should not change.</dd>
+    <dt>Check the "Enable event sounds" checkbox and minimize/maximize a window.</dt>
+        <dd>A sound should play.</dd>
+</dl>
+
+This test will verify that the Help works properly.
+<dl>
+    <dt>With an active internet connection and the "Appearance" module loaded, click the Help button and then on "Read Online".</dt>
+        <dd>The appropriate online help file loads in the default browser.</dd>
+</dl>
+
+This test will verify that command line invocation works.
+<dl>
+    <dt>From a terminal window, run <code>xfce4-appearance-settings</code></dt>
+        <dd>The Appearance settings open standalone (not as part of the Settings).</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

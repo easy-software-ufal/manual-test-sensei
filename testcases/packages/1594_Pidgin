@@ -1,0 +1,46 @@
+This test will check that Pidgin opens and closes correctly <em>test assumes Pidgin is being opened in a new install</em>
+<dl>
+    <dt>Open Pidgin from the menu</dt>
+        <dd>Accounts dialogue and Buddy List opens, Buddly List minimised to panel</dd>
+        <!-- EAGER STEP -->
+    <dt>Focus on Buddy List, press Ctrl+Q</dt>
+        <dd>Both dialogues close</dd>
+</dl>
+This test will check that Pidgin will correctly set up an IRC account
+<dl>
+    <!-- EAGER STEP -->
+    <dt>Open Pidgin from the menu, press Add in Accounts dialogue</dt>
+        <dd>Add Account dialogue opens</dd>
+    <dt>Select Protocol from Login Options</dt>
+        <dd>List of available protocols shows</dd>
+    <dt>Select IRC from protocols</dt>
+        <dd>Dialogue changes to show IRC options</dd>
+    <dt>Type username in Username box, then select password box</dt>
+        <dd>Username remains in box</dd>
+    <dt>Type password into box, then press Add</dt>
+        <dd>Add Account box closes</dd>
+        <dd>Account dialogue now shows the new protocol and is enabled</dd>
+        <dd>Buddy List attempts to connect</dd>	
+        <dd>Conversation window opens at Nickserv</dd>
+</dl>
+This test will check that Pidgin will join a channel correctly
+<dl>
+    <!-- EAGER STEP -->
+    <dt>Focus on Conversation window, select Conversation from menu</dt>
+        <dd>Menu options show</dd>
+    <dt>Press Join a chat</dt>
+        <dd>Join a Chat dialogue appears</dd>
+    <dt>Type #ubuntu-quality in Channel box and press Join</dt>
+        <dd>#ubuntu-quality tab appears in Conversation window</dd>
+    <dt>Type "Testing pidgin" into chat box and press enter</dt>
+        <dd>Text appears in window</dd>
+    <dt>Type /part and enter</dt>
+        <dd>Conversation window shows <b>You have parted the channel</b></dd>
+    <dt>Press Ctrl+W</dt>
+        <dd>#ubuntu-quality tab closes</dd>
+    <dt>Focus on Buddy List and Press Ctrl+Q</dt>
+        <dd>All Pidgin windows close</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

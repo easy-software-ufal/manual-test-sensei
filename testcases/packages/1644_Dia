@@ -1,0 +1,28 @@
+This test will check that Dia can open an image file
+<dl>
+    <dt>Launch Dia</dt>
+        <dd>Dia opens, showing one window by default</dd>
+    <!-- EAGER STEP -->
+    <dt>Go to File > Open..., select an image and press Open</dt>
+        <dd>The picture is displayed in Dia main window</dd>
+</dl>
+
+This tests that Dia can be used to create a Flow Chart
+<dl>
+    <!-- EAGER STEP -->
+    <dt>Goto File > New...,</dt>
+        <dd>Dia creates an empty .dia file to work on</dd>
+    <dt>Click the "Box" button in the toolbox </dt>
+        <dd>The Box button is in selected state now</dd>
+    <dt>Draw a box on the canvas</dt>
+        <dd>A box is displayed on the file</dd>
+    <dt>Select the box and resize it by dragging the corner</dt>
+        <dd>The box is resized</dd>
+    <dt>Goto File > Save</dt>
+        <dd>Dia opens the "Save" window. Give a name to the file and press "save" button. The image is saved now</dd>
+    <dt>Goto File > Export</dt>
+        <dd>Dia opens the "Export" window. Give a name to the file, extension as ".svg" and press "save" button. The image is exported as a SVG image now</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

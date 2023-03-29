@@ -1,0 +1,64 @@
+This test will check that Lubuntu Software Center can add and discard a program in the Apps Basket
+<dl>
+    <dt>Click on the Lubuntu icon in your panel. Select "System Tools" and "Lubuntu Software Center"</dt>
+        <dd>Lubuntu Software Center opens in a new window</dd>
+    <dt>Click on "Education"</dt>
+        <dd>A list opens, showing the entries for education</dd>
+    <dt>Look for "anki" in the upcoming list. Select its entry and click on button "Information"</dt>
+        <dd>Lubuntu Software Centers shows a description and general information about the program</dd>
+    <dt>Click on button "Add to the app basket"</dt>
+        <dd>The button "Apps Basket" now shows a one in brackets "(1)"</dd>
+    <dt>Click on the button "Apps Basket(1)"</dt>
+        <dd>Lubuntu Software Center shows a list with packages to be installed, anki and dependent packages in this case</dd>
+    <dt>Click on button "Discard"</dt>
+        <dd>The list empties</dd>
+</dl>
+
+This test will check that Lubuntu Software Center can install a new program
+<dl>
+    <dt>Click on button "Get Software"</dt>
+        <dd>The list of educational programs appears again</dd>
+    <dt>Click on the left arrow button (next to "Get Software" button)</dt>
+        <dd>The category view appears again</dd>
+    <dt>Click on "Search a package" field. Fill in "gedit" and hit enter. You may have to widen the window to make the search box visible.</dt>
+        <dd>A list with search results appears</dd>
+    <dt>Select entry "GEdit" and click on button "Add to the apps basket"</dt>
+        <dd>The button fades out. The application is added to your basket</dd>
+    <dt>Click on the button "Apps Basket(1)"</dt>
+        <dd>Lubuntu Software Center shows a list with packages to be installed, GEdit and dependent packages in this case</dd>
+    <dt>Click on button "Install packages"</dt>
+        <dd>A window opens, showing the progress of installation. After installation, you see again the "Apps basket", now empty</dd>
+</dl>
+
+This test will check that Lubuntu Software Center can run in expert mode
+<dl>
+    <dt>Click on the "gear" button</dt>
+        <dd>A window opens, showing the option of Lubuntu Software Center</dd>
+    <dt>Next to "Expert Mode" click on the switch</dt>
+        <dd>The switch changes from "OFF" to "ON"</dd>
+    <dt>Click on "Apply"</dt>
+        <dd>The window closes. You are back in Lubuntu Software Center</dd>
+    <dt>Click on button "Get Software"</dt>
+        <dd>The list of educational programs appears again</dd>
+    <dt>Click on the left arrow button (next to "Get Software" button)</dt>
+        <dd>The category view appears again</dd>
+    <dt>Click on "Search a package" field. Fill in "texlive" and hit enter</dt>
+        <dd>A list with search results appears</dd>
+    <dt>Click on the "gear" button</dt>
+        <dd>A window opens, showing the option of Lubuntu Software Center</dd>
+    <dt>Next to "Expert Mode" click on the switch</dt>
+        <dd>The switch changes from "ON" to "OFF"</dd>
+    <dt>Click on "Apply"</dt>
+        <dd>The window closes. You are back in Lubuntu Software Center. The list with search results is now empty</dd>
+</dl>
+
+This test will check that Lubuntu Software Center can list installed applications
+<dl>
+    <dt>Click on button "Installed Software"</dt>
+        <dd>The list of installed applications appears</dd>
+    <dt>Click on "Search a package" field. Fill in "openbox" and hit enter</dt>
+        <dd>A list with search results appears</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

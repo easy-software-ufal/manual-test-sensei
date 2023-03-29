@@ -1,0 +1,104 @@
+1306_Kernel (smoke)
+1308_software-properties (smoke)
+1414_Deja-Dup
+1415_Empathy
+1416_Eye of Gnome
+1417_Evince
+1418_Fileroller
+1419_Firefox
+1420_Gedit
+1421_Gnome Screenshot
+1422_Gnome Terminal
+1423_LibreOffice
+1424_Nautilus
+1425_Network Manager
+1426_Orca
+1427_Rhythmbox
+1428_Shotwell
+1429_Totem
+1430_Ubuntu One
+1496_Thunderbird
+1506_Software Center
+1507_Gwibber Social Client
+1508_Simple Scan
+1509_Abiword
+1511_Pcmanfm
+1515_Mesa (smoke)
+1516_Brasero
+1517_Privacy
+1549_Transmission
+1550_alsa-utils (smoke)
+1557_Mousepad
+1558_Xfce4 Terminal
+1559_Catfish
+1560_Xchat
+1564_Gimp
+1567_GNOME Mines
+1569_Thunar
+1570_Gnumeric
+1572_xMir
+1578_Parole
+1579_Bulk renamer
+1587_Gigolo
+1588_gThumb
+1591_Blueman
+1592_GNOME Sudoku
+1593_pavucontrol
+1594_Pidgin
+1595_Time Administration
+1596_Update Manager
+1597_Users Settings
+1598_Leafpad
+1599_Orage
+1600_Ristretto
+1602_Xpad
+1603_LightDM GTK+ Greeter
+1604_Gnome Calculator
+1605_synaptic
+1610_Xfce4 Assistive Technologies
+1614_Xfburn
+1615_Chromium
+1616_Xfce4-mixer tests
+1617_gmusicbrowser
+1620_ChineseCalendar
+1621_Fcitx
+1622_IndicatorChinaWeather
+1623_UbuntuKylin DashScope
+1624_Youker-Assistant
+1627_Mugshot
+1629_Xubuntu Power
+1630_light-locker
+1631_Xubuntu GTK3 Indicators
+1632_Whiskermenu
+1633_light-locker-settings
+1637_Audacious
+1638_MenuLibre
+1643_Musescore
+1644_Dia
+1645_tuxpaint
+1646_Vym
+1647_vlc
+1648_xterm
+1649_gpicview
+1650_hardinfo
+1651_klettres
+1652_kolourpaint4
+1653_mypaint
+1654_krecipes
+1656_StartupDiskCreator
+1657_Gnome-system-monitor
+1677_GDebi
+1679_software-properties-gtk
+1681_Thunar additional tests 1512120
+1682_Thunar additional tests 1514912
+1685_Xubuntu_gnome_screensaver
+1686_Xubuntu_xscreensaver
+LXDE
+LXQt
+Online Accounts
+SMELLY - 1336_Pulseaudio (smoke)
+Studio
+Unity
+Webapps
+Xfce
+packages.txt

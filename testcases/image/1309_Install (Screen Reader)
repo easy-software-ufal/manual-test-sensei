@@ -1,0 +1,40 @@
+This is an installation using the Screen-Reader as done by a visually blind individual. Please cover your monitor, lay it face down or turn it off during this installation. You will require speakers or headphones to hear the screen-reader. As you press Enter to continue on each page, it can take several minutes to advance to the next installer page.
+
+<em>Proceed in your native language if you wish. Instructions will remain in English</em>
+<!-- UNVERIFIED STEPS, UNSPECIFIED WAIT TIME, UNSPECIFIED PARAMETER -->
+<dl>
+    <dt>Boot up the image</dt>
+    <dt>Wait to hear the drums</dt>
+    <dt>Press Alt+Super+S to start the screen-reader</dt>
+    <dt>Press Alt+Tab to change to the installer</dt>
+    <dt>Press Up or Down arrow to select your language(default is English)</dt>
+    <dt>Press Tab once to "Try FAMILY"</dt>
+    <dt>Press Enter</dt>
+    <dt>Wait for the Desktop to begin the installation. </dt>
+    <dt>Press Super+1 to begin the installation. Super is the left windows key</dt>
+    <dt>Use up-arrow and down-arrow to select the language you want to the installation to use </dt>
+    <dt>Press Enter</dt>
+    <dt>Use up-arrow and down-arrow to hear the options and spacebar to select them</dt>
+    <dt>Press Enter</dt>
+    <dt>Use up-arrow and down-arrow to hear and select partitioning options </dt>
+    <dt>Press Enter</dt>
+    <dt>Press up-arrow and down-arrow to select the drive to install FAMILY on </dt>
+    <dt>Press Tab three times </dt>
+    <dt>Press Enter</dt>
+    <dt>Press Tab </dt>
+    <dt>Select country either by typing in the name of the country or city or timezone (WARNING: time zones are not read by the screen-reader; the default should be fine)</dt>
+    <dt>Press Tab until you are on Continue</dt>
+    <dt>Press Enter</dt>
+    <dt>Check your keyboard layout is correct or alter </dt>
+    <dt>Press Enter</dt>
+    <dt>Input your initial user details and password /!\ Note admin can not be used - it is a dedicated Linux User </dt>
+    <dt>After entering "Confirm your password" </dt>
+    <dt>Press Tab</dt>
+    <dt>Press up-arrow for auto-login </dt>
+    <dt>Press Enter to begin the installation</dt>
+    <dt>Once the installer tells you it is finished, Restart the system now by pressing Enter</dt>
+    <dt>Wait a few seconds for the cd drive to quit spinning, remove the disc and press Enter</dt>
+    <dt>After restarting, at the desktop, you must restart again. This will start the screen-reader. It will then start at login</dt>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

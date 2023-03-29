@@ -1,0 +1,252 @@
+Server basic RAID1 install
+
+<em>Proceed in your native language if you wish. Instructions will remain in English</em>
+
+<dl>
+    <!-- Unverified Steps, Eager Test (nested test), Misplaced Step, Misplaced Pre-Condition -->
+    <dt>NB: A more exhaustive set of test instructions to be used in KVM environments can be found on the <a href="https://wiki.ubuntu.com/BootDegradedRaid#Implementation">BootDegradedRaid wiki page</a></dt>
+    <dt>Boot CD and run the CD self-check (then reboot)</dt>
+    <dt>Select Install Ubuntu Server or ""Install to Hard Disk""</dt>
+    <dt>Choose your language, country and keyboard layout</dt>
+    <dt>Set hostname: default - ubuntu</dt>
+    <dt>Confirm time zone detection.</dt>
+    <dt>Partitioning method: "Manual".</dt>
+        <dd>RAID1 array for /</dd>
+        <dd>RAID1 array for swap</dd>
+        <dd>RAID1 array for /home (testing non-rootfs raid)</dd>
+    <dt>Select "Yes" to the "boot degraded?" question</dt>
+    <dt>User account: enter username and password</dt>
+    <dt>No software selection.</dt>
+    <dt>Reboot and login.</dt>
+    <dt>Make sure that the root and home file systems are mounted from md devices:</dt>
+        <dd>sudo mount</dd>
+    <dt>Make sure that the swap partition is mounted from a md device:</dt>
+        <dd>sudo cat /proc/swaps</dd>
+    <dt>Make sure that the raid arrays are working:</dt>
+        <dd>cat /proc/mdstat</dd>
+    <dt>Make sure that grub has been installed on both disks:</dt>
+        <dd>sudo apt-get install -y binutils</dd>
+        <dd>for i in $(sudo mdadm -Q --detail $(df -P /boot | grep ^/dev/ | cut -d" " -f1) | grep " /dev/" | awk '{print $NF}' | sed -e 's/[0-9]$//'); do sudo dd if=$i bs=512 count=1 2>/dev/null | strings -a | grep -q GRUB && echo $i: ok || echo $i: FAIL; done</dd>
+    <dt>Make sure that the BOOT_DEGRADED setting is "TRUE" in /etc/initramfs-tools/conf.d/mdadm:</dt>
+        <dd>cat /etc/initramfs-tools/conf.d/mdadm</dd>
+        <!-- is this eager test? -->
+    <dt>Test booting from a cold-degraded array:</dt>
+        <dd>Power off the system</dd>
+        <dd>Disconnect one of the disk (disk 2) - disk 1 connected, disk2 disconnected.</dd>
+        <dd>Power on the system</dd>
+        <dd>Check that system boots correctly from the degraded RAID1 array on a single disk (note that you may have to wait up to 5 minutes for mdadm to time out and boot into degraded mode):</dd>
+        <dd>cat /proc/mdstat</dd>
+        <dd>Power off the system</dd>
+        <dd>/!\ If you simply disconnect the first disk (disk1) and reconnect the second disk (disk2) - disk 1 disconnected, disk 2 connected - you risk disk corruption; see bug 557429)</dd>
+        <dd>Reconnect the second disk (disk2) - both disks now connected.</dd>
+        <dd>Power on the system</dd>
+        <dd>Check that the system boots correctly (there should be no error or delay)</dd>
+        <dd>Check the status of the raid arrays:</dd>
+        <dd>cat /proc/mdstat</dd>
+        <dd>All arrays should have been assembled completely again, possibly still syncing.</dd>
+        <dd>You may have to add any missing devices back to the RAIDs manually. This is not a bug (see bug 791454)! A manual addition would be:</dd>
+        <dd>sudo mdadm --add /dev/mdX /dev/MISSING-DEVICE</dd>
+        <dd>Note that this may fail with a message requiring you to zero the superblock first, this is a result of an added check in mdadm 3.2, and should only happen on precise or later (see bug 943397).</dd>
+        <dd>make sure that all disk arrays are synchronized before proceeding, if the array is doing a full re-sync, it may take a few minutes, use</dd>
+        <dd>cat /proc/mdstat</dd>
+        <dd>Poweroff the system.</dd>
+        <dd>Disconnect the first disk (disk1) - disk 1 disconnected, disk 2 connected.</dd>
+        <dd>Poweron the system.</dd>
+        <dd>Check that system boots correctly from the degraded RAID1 array on a single disk:</dd>
+        <dd>cat /proc/mdstat</dd>
+    <dt>Test automatic syncing of degraded array:</dt>
+        <dd>Power off the system</dd>
+        <dd>Reconnect the first disk (so both are now connected)</dd>
+        <dd>Power on the system</dd>
+        <!-- Undefined Wait -->
+    <dt>Wait for both drives to be back in sync:</dt>
+        <dd>cat /proc/mdstat</dd>
+    <dt>Change "Do you want to boot degraded?" answer to "No":</dt>
+        <dd>sudo dpkg-reconfigure mdadm</dd>
+    <dt>Make sure that the BOOT_DEGRADED setting is "FALSE" in /etc/initramfs-tools/conf.d/mdadm:</dt>
+        <dd>cat /etc/initramfs-tools/conf.d/mdadm</dd>
+    <dt>Test booting from a cold-degraded array:</dt>
+        <dd>Power off the system</dd>
+        <dd>Disconnect one of the disk (disk 2) - disk 1 connected, disk2 disconnected.</dd>
+        <dd>Power on the system</dd>
+        <dd>Check that on boot a question to enable and boot from a degraded array is asked.</dd>
+        <dd>Say yes</dd>
+        <dd>Check that system boots correctly from the degraded RAID1 array:</dd>
+        <dd>cat /proc/mdstat</dd>
+        <dd>Power off the system</dd>
+        <dd>Disconnect the first disk (disk1) and reconnect the second disk (disk2) - disk 1 disconnected, disk 2 connected.</dd>
+        <dd>Power on the system.</dd>
+        <dd>Check that on boot a question to enable and boot from a degraded array is asked.</dd>
+        <dd>Say yes</dd>
+        <dd>Check that system boots correctly from the degraded RAID1 array:</dd>
+        <dd>cat /proc/mdstat</dd>
+    <dt>Re-add/sync the arrays again</dt>
+        <dd>Power off the system</dd>
+        <dd>Reconnect the first disk (so both are now connected)</dd>
+        <dd>Power on the system</dd>
+        <dd>Add the missing drives back to the RAIDs:</dd>
+        <dd>sudo mdadm -a /dev/mdX /dev/MISSING-DEVICE</dd>
+    <dt>Test booting from a hot-degraded array:</dt>
+        <dd>Remove (unplug/fail) one disk from the running system.</dd>
+        <dd>Check if users/admin get a notification message and beep about the failing raid.</dd>
+        <dd>Reboot, verify that system comes up degraded without failure. (BOOT_DEGRADED setting bogus, Bug #539597)</dd>
+</dl>
+
+Server with LUKS on RAID1 install
+
+<dl>
+    <!-- Test Clone -->
+    <dt>Boot CD and run the CD self-check (then reboot)</dt>
+    <dt>Select Install to hard disk</dt>
+    <dt>Choose your language, country and keyboard layout</dt>
+    <dt>Set hostname: default - ubuntu</dt>
+    <dt>Partition disks: Custom partition scheme.</dt>
+        <dd>RAID1 array for /boot</dd>
+        <dd>RAID1 array with LUKS on it for /</dd>
+        <dd>RAID1 array for swap (should it get encrypted automatically?)</dd>
+        <dd>RAID1 array with LUKS on it for /home</dd>
+    <dt>Select "Yes" to the "boot degraded?" question</dt>
+    <dt>Select your time zone and set the system clock to UTC</dt>
+    <dt>User account: enter username and password</dt>
+    <dt>No software selection.</dt>
+    <dt>Reboot and login.</dt>
+    <dt>Make sure that the root and home file systems are mounted from luks devices:</dt>
+        <dd>sudo mount</dd>
+    <dt>Make sure that the swap partition is mounted from a md device (and encrypted?):</dt>
+        <dd>sudo cat /proc/swaps</dd>
+    <dt>Make sure that the luks devices and /boot use md devices:</dt>
+        <dd>sudo dmsetup deps</dd>
+    <dt>Make sure that the raid arrays are working:</dt>
+        <dd>cat /proc/mdstat</dd>
+    <dt>Make sure that grub has been installed on both disks:</dt>
+        <dd>sudo apt-get install -y binutils</dd>
+        <dd>for i in $(sudo mdadm -Q --detail $(df -P /boot | grep ^/dev/ | cut -d" " -f1) | grep " /dev/" | awk '{print $NF}' | sed -e 's/[0-9]$//'); do sudo dd if=$i bs=512 count=1 2>/dev/null | strings -a | grep -q GRUB && echo $i: ok || echo $i: FAIL; done</dd>
+    <dt>Make sure that the BOOT_DEGRADED setting is "TRUE" in /etc/initramfs-tools/conf.d/mdadm:</dt>
+        <dd>cat /etc/initramfs-tools/conf.d/mdadm</dd>
+    <dt>Test booting from a cold-degraded array:</dt>
+        <dd>Power off the system</dd>
+        <dd>Disconnect one of the disk (disk 2) - disk 1 connected, disk2 disconnected.</dd>
+        <dd>Power on the system</dd>
+        <dd>Check that system boots correctly from the degraded RAID1 array on a single disk (note that you may have to wait up to 5 minutes for mdadm to time out and boot into degraded mode):</dd>
+        <dd>cat /proc/mdstat</dd>
+        <dd>Power off the system</dd>
+        <dd>Disconnect the first disk (disk1) and reconnect the second disk (disk2) - disk 1 disconnected, disk 2 connected. This results in booting the other half of the array, to see if this array segmentation is detected correctly afterwards. (see Bug #557429)</dd>
+        <dd>Power on the system.</dd>
+        <dd>Check that system boots correctly from the degraded RAID1 array on a single disk:</dd>
+        <dd>cat /proc/mdstat</dd>
+    <dt>Test automatic re-syncing of degraded array:</dt>
+        <dd>Power off the system</dd>
+        <dd>Reconnect the first disk (so both are now connected)</dd>
+        <dd>Power on the system</dd>
+    <dt>Wait for both drives to be back in sync:</dt>
+        <dd>cat /proc/mdstat</dd>
+    <dt>Change "Do you want to boot degraded?" answer to "No":</dt>
+        <dd>sudo dpkg-reconfigure mdadm</dd>
+    <dt>Make sure that the BOOT_DEGRADED setting is "FALSE" in /etc/initramfs-tools/conf.d/mdadm:</dt>
+        <dd>cat /etc/initramfs-tools/conf.d/mdadm</dd>
+    <dt>Test booting from a cold-degraded array:</dt>
+        <dd>Power off the system</dd>
+        <dd>Disconnect one of the disk (disk 2) - disk 1 connected, disk2 disconnected.</dd>
+        <dd>Power on the system</dd>
+        <dd>Check that on boot a question to enable and boot from a degraded array is asked.</dd>
+        <dd>Say yes</dd>
+        <dd>Check that system boots correctly from the degraded RAID1 array:</dd>
+        <dd>cat /proc/mdstat</dd>
+        <dd>Power off the system</dd>
+        <dd>Disconnect the first disk (disk1) and reconnect the second disk (disk2) - disk 1 disconnected, disk 2 connected.</dd>
+        <dd>Power on the system.</dd>
+        <dd>Check that on boot a question to enable and boot from a degraded array is asked.</dd>
+        <dd>Say yes</dd>
+        <dd>Check that system boots correctly from the degraded RAID1 array:</dd>
+        <dd>cat /proc/mdstat</dd>
+    <dt>Re-add/sync the arrays again</dt>
+        <dd>Poweroff the system</dd>
+        <dd>Reconnect the first disk (so both are now connected)</dd>
+        <dd>Poweron the system</dd>
+        <dd>Add the missing drives back to the RAIDs:</dd>
+        <dd>sudo mdadm -a /dev/mdX /dev/MISSING-DEVICE</dd>
+    <dt>Test booting from a hot-degraded array:</dt>
+        <dd>Remove (unplug/fail) one disk from the running system.</dd>
+        <dd>Check if users/admin get a notification message and beep about the failing raid.</dd>
+        <dd>Reboot, verify that system comes up degraded without failure. (BOOT_DEGRADED setting bogus, Bug #539597)</dd>
+</dl>
+
+Server with LVM on LUKS on RAID1 install
+
+<dl>
+    <dt>Boot CD and run the CD self-check (then reboot)</dt>
+    <dt>Select Install to hard disk</dt>
+    <dt>Choose your language, country and keyboard layout</dt>
+    <dt>Set hostname: default - ubuntu</dt>
+    <dt>Partition disks: Custom partition scheme.</dt>
+        <dd>RAID1 array for /boot</dd>
+        <dd>RAID1 array with LUKS on it, with LVM on it, for /, /swap and /home</dd>
+    <dt>Select "Yes" to the "boot degraded?" question</dt>
+    <dt>Select your time zone and set the system clock to UTC</dt>
+    <dt>User account: enter username and password</dt>
+    <dt>No software selection.</dt>
+    <dt>Reboot and login.</dt>
+    <dt>Make sure that the root and home file systems are mounted from mapper devices:</dt>
+        <dd>sudo mount</dd>
+    <dt>Make sure that the swap partition is mounted from a mapper device:</dt>
+        <dd>sudo cat /proc/swaps</dd>
+    <dt>Make sure that lvm uses luks, and luks is using a md device:</dt>
+        <dd>sudo dmsetup deps</dd>
+    <dt>Make sure that the raid arrays are working:</dt>
+        <dd>cat /proc/mdstat</dd>
+    <dt>Make sure that grub has been installed on both disks:</dt>
+        <dd>sudo apt-get install -y binutils</dd>
+        <dd>for i in $(sudo mdadm -Q --detail $(df -P /boot | grep ^/dev/ | cut -d" " -f1) | grep " /dev/" | awk '{print $NF}' | sed -e 's/[0-9]$//'); do sudo dd if=$i bs=512 count=1 2>/dev/null | strings -a | grep -q GRUB && echo $i: ok || echo $i: FAIL; done</dd>
+    <dt>Make sure that the BOOT_DEGRADED setting is "TRUE" in /etc/initramfs-tools/conf.d/mdadm:</dt>
+        <dd>cat /etc/initramfs-tools/conf.d/mdadm</dd>
+    <dt>Test booting from a cold-degraded array:</dt>
+        <dd>Poweroff the system</dd>
+        <dd>Disconnect one of the disk (disk 2) - disk 1 connected, disk2 disconnected.</dd>
+        <dd>Poweron the system</dd>
+        <dd>Check that system boots correctly from the degraded RAID1 array on a single disk (note that you may have to wait up to 5 minutes for mdadm to time out and boot into degraded mode):</dd>
+        <dd>cat /proc/mdstat</dd>
+        <dd>Poweroff the system</dd>
+        <dd>Disconnect the first disk (disk1) and reconnect the second disk (disk2) - disk 1 disconnected, disk 2 connected.</dd>
+        <dd>Poweron the system.</dd>
+        <dd>Check that system boots correctly from the degraded RAID1 array on a single disk:</dd>
+        <dd>cat /proc/mdstat</dd>
+    <dt>Test automatic syncing of degraded array:</dt>
+        <dd>Poweroff the system</dd>
+        <dd>Reconnect the first disk (so both are now connected)</dd>
+        <dd>Poweron the system</dd>
+        <!-- undefined wait -->
+    <dt>Wait for both drives to be back in sync:</dt>
+        <dd>cat /proc/mdstat</dd>
+    <dt>Change "Do you want to boot degraded?" answer to "No":</dt>
+        <dd>sudo dpkg-reconfigure mdadm</dd>
+    <dt>Make sure that the BOOT_DEGRADED setting is "FALSE" in /etc/initramfs-tools/conf.d/mdadm:</dt>
+        <dd>cat /etc/initramfs-tools/conf.d/mdadm</dd>
+    <dt>Test booting from a cold-degraded array:</dt>
+        <dd>Poweroff the system</dd>
+        <dd>Disconnect one of the disk (disk 2) - disk 1 connected, disk2 disconnected.</dd>
+        <dd>Poweron the system</dd>
+        <dd>Check that on boot a question to enable and boot from a degraded array is asked.</dd>
+        <dd>Say yes</dd>
+        <dd>Check that system boots correctly from the degraded RAID1 array:</dd>
+        <dd>cat /proc/mdstat</dd>
+        <dd>Poweroff the system</dd>
+        <dd>Disconnect the first disk (disk1) and reconnect the second disk (disk2) - disk 1 disconnected, disk 2 connected.</dd>
+        <dd>Poweron the system.</dd>
+        <dd>Check that on boot a question to enable and boot from a degraded array is asked.</dd>
+        <dd>Say yes</dd>
+        <dd>Check that system boots correctly from the degraded RAID1 array:</dd>
+        <dd>cat /proc/mdstat</dd>
+    <dt>Re-add/sync the arrays again</dt>
+        <dd>Poweroff the system</dd>
+        <dd>Reconnect the first disk (so both are now connected)</dd>
+        <dd>Poweron the system</dd>
+        <dd>Add the missing drives back to the RAIDs:</dd>
+        <dd>sudo mdadm -a /dev/mdX /dev/MISSING-DEVICE</dd>
+    <dt>Test booting from a hot-degraded array:</dt>
+        <dd>Remove (unplug/fail) one disk from the running system.</dd>
+        <dd>Check if users/admin get a notification message and beep about the failing raid.</dd>
+        <dd>Reboot, verify that system comes up degraded without failure. (BOOT_DEGRADED setting bogus, Bug #539597)</dd>
+</dl>
+<strong>
+    If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

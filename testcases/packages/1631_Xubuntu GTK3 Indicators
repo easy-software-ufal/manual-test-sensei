@@ -1,0 +1,90 @@
+This test will check that sound indicator works correctly
+
+<em>Requires media to be available for media application and for sound to be working</em>
+
+<dl>
+    <dt>Click sound indicator in panel</dt>
+        <dd>Sound menu appears</dd>
+    <dt>Select and click available media application</dt>
+        <dd>Selected application opens</dd>
+    <dt>Click play in indicator menu</dt>
+        <dd>Music plays in selected source</dd>
+    <dt>Change volume on indicator menu</dt>
+        <dd>Notification of volume changes appears</dd>
+        <dd>Volume of playing application changes</dd>
+    <dt>Press Forward</dt>
+        <dd>Track playing in source moves forward to next</dd>
+    <dt>Press Back</dt>
+        <dd>Track playing in source moves backward to previous</dd>
+    <dt>Press Pause</dt>
+        <dd>Track playing in source pauses</dd>
+    <dt>If choose playlist is available, select new playlist</dt>
+        <dd>Playlist changes, previous playing track stops, first track in new playlist plays</dd>
+<em>If more than one media application is available in indicator, complete the above test for each application</em>
+<dt>Press Sound Settings</dt>
+    <dd>pavucontrol opens</dd>
+</dl>
+
+This test will check that messages indicator works correctly
+
+<em>If server connection is <strong>not</strong> available prior to the following test, this is not cause to fail the test</em>
+<em>indicator-messages is not available until an application that appears in the indicator has been run and the install rebooted - if this is not available please do not test</em>
+
+<dl>
+    <dt>Click messages indicator in panel</dt>
+        <dd>Message menu appears</dd>
+    <dt>Select Pidgin from the menu</dt>
+        <dd>Pidgin starts and connects to server <em>if suitable settings are available</em></dd>
+<em>If connected to server, complete the following test</em>
+<dt>From messaging menu, select a different online status</dt>
+    <dd>Pidgin reflects the new online status</dd>
+</dl>
+
+This test will check that Network indicator works correctly
+
+<em>Internet connectivity will be lost during this test</em>
+
+<dl>
+    <dt>Click network indicator in panel</dt>
+        <dd>Network menu appears</dd>
+    <dt>Click Edit</dt>
+        <dd>Network Connections dialogue opens</dd>
+    <dt>Click Information</dt>
+        <dd>Connection Information dialogue opens</dd>
+    <dt>Click Enable Networking</dt>
+        <dd>Networking is disabled, notification of being offline</dd>
+    <dt>Click Enable Networking</dt>
+        <dd>Networking is enabled, notification of available connection</dd>
+    <dt>Click VPN Connections</dt>
+        <dd>Network Connections dialogue brought to front</dd>
+    <dt>Click Disconnect</dt>
+        <dd>Notification of being offline</dd>
+    <dt>Click your available connection</dt>
+        <dd>Notification of available connection</dd>
+</dl>
+
+This test will check that power indicator works correctly
+
+<em>The power indicator menu will look different depending on whether you're testing a laptop or a desktop.</em>
+
+<dl>
+    <dt>Click power indicator (battery icon) in panel</dt>
+        <dd>Power menu appears</dd>
+    <dt>Select "Power manager settings..."</dt>
+        <dd>The Xfce Power Manager dialogue opens at the General tab</dd>
+    <dt>Close the Xfce Power Manager dialogue</dt>
+<em>If testing a laptop, complete the following tests.</em>    
+    <dt>Click the power indicator in the panel</dt>
+        <dd>Power menu appears</dd>
+    <dt>Click on the battery status indication</dt>
+        <dd>The Xfce Power Manager dialogue opens at the Devices tab</dd>
+    <dt>Close the Xfce Power Manager dialogue</dt>
+    <dt>Click the power indicator in the panel</dt>
+        <dd>Power menu appears</dd>
+    <dt>Move the Display Brightness slider</dt>
+        <dd>The laptop display dims/brighens</dd>
+</dl>
+
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

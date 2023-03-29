@@ -1,0 +1,33 @@
+This test will check that lxqt-runner can launch applications. 
+
+<dl>
+    <dt> Press alt+f2  as the default shortcut to launch lxqt-runner</dt>
+        <dd> lxqt-runner launches and is focused above all other windows. </dd>
+    <dt> type qter into lxqt-runner. </dt>
+        <dd> lxqt-runner offer to launch qterminal as both a drop down temrinal and and Qterminal by itself</dd> 
+    <dt> Use the primary mouse button to click on the x button on lxqt-runner </dt>
+        <dd> lxqt-runner closes returning your desktop to the previous state.</dd>
+    <dt> press alt+f2 again to bring lxqt-runner back up again</dt>
+        <dd> lxqt-runner reappears with qter and showing the two main options for lxqt-runner. </dd>
+    <dt> Press the down arrow key to select the non drop down version of qterminal </dt>
+        <dd> The drop down qterminal option not selected in lxqt-runner and qterminal is selected.</dd> 
+    <dt> Press the enter button to launch qterminal. </dt> 
+        <dd> lxqt-runner closes and a window of qterminal opens. </dd>
+</dl>
+
+This test will check lxqt-runner can use customized commands and save the history for your customized commands.
+
+<dl>
+    <dt> Press alt+f2 to open lxqt-runner and type pcmanfm-qt /etc</dt>
+        <dd> lxqt-runner closes  pcmanfm-qt opens to the /etc directory</dd> 
+    <dt> type pcmanfm-qt into the lxqt-runner </dt>
+        <dd> lxqt-runner offers an option for pcmanfm-qt and an option to run pcmanfm-qt /etc from the directory</dd>
+    <dt> Click file close for pcmanfm-qt </dt>
+        <dd>  the pcmanfm-qt window closes </dd>     
+    <dt> click on the provided optoin for pcmanfm-qt /etc </dt>
+        <dd> pcmanfm-qt opens back to the /etc directory</dd> 
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
+

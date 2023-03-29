@@ -1,0 +1,60 @@
+<strong>The following tests require that you have several types of removable media on hand</strong>
+
+<em>Not having all media mentioned in test is <strong>not</strong> a case for failure. Please specify if media type is unavailable during test in the Comments section</em>
+
+This test will check that Volume Management is enabled and configurable
+<dl>
+    <dt>Open File Manager</dt>
+        <dd>File Manager opens</dd>
+    <dt>Select Edit->Preferences</dt>
+        <dd>The File Manager Preferences dialog opens</dd>
+    <dt>Click the 'Advanced' tab</dt>
+    <dt>Verify that 'Enable Volume Management' is checked, if not, check it.</dt>
+    <dt>Click the 'Configure' link</dt>
+        <dd>The Removable Drives and Media dialog opens</dd>
+</dl>
+
+This test will check that Storage options work as expected
+<dl>
+    <dt>Make sure that the 'Storage' tab is selected</dt>
+    <dt>Uncheck all the options under 'Removable Storage'</dt>
+    <dt>Plug in an external hard drive or USB flash drive</dt>
+        <dd>The drive appears in the File Manager side pane but is unmounted</dd>
+    <dt>Insert a CD or DVD containing data files into an appropriate drive</dt>
+        <dd>The disc appears in the File Manager side pane but is unmounted</dd>
+    <dt>Right-click on both of those media in File Manager and select 'Eject'</dt>
+        <dd>They disappear from the side pane</dd>
+    <dt>In the Removable Drives and Media dialog, check both 'Mount removable drives when hot-plugged' and 'Mount removable media when inserted'</dt>
+    <dt>Insert the USB drive and optical disc again</dt>
+        <dd>Both media appear in the side pane of File Manager and are automatically mounted but no contents are displayed in the File Manager window</dd>
+    <dt>Eject both media again</dt>
+        <dd>They disappear from the side pane</dd>
+    <dt>In the Volume Manager, check 'Browse removable media when inserted'</dt>
+    <dt>Insert the USB drive and optical disc again</dt>
+        <dd>Both media appear in the side pane, they are automatically mounted and their contents are displayed in the File Manager window</dd>
+    <dt>Eject both media</dt>
+    <dt>Check the 'Burn a CD or DVD when a blank disc is inserted' option under 'Blank CDs and DVDs'</dt>
+        <dd>The two 'Command' fields become active and are pre-populated with an 'xfburn' command</dd>
+    <dt>Insert a blank recordable CD or DVD into an RW optical drive</dt>
+        <dd>A dialog appears asking for confirmation to burn the disc</dd>
+    <dt>Close the dialog and eject the disc</dt>
+</dl>
+
+This test will check that the Multimedia options work as expected
+<dl>
+    <dt>Click the 'Multimedia' tab</dt>
+        <dd>Options for Audio CDs, Video CDs/DVDs and Portable Music Players are displayed</dd>
+        <dd>Note: portable music player formats vary too greatly to allow a standardized test to be included here </dd>
+    <dt>Ensure that both the Audio and Video options are checked and that there is a default command for Parole in the 'Command:' fields</dt>
+    <dt>Ensure that the 'Mount removable media when inserted' option is checked under the 'Storage' tab</dt>
+    <dt>Insert pre-recorded audio and video discs in an optical drive</dt>
+        <dd>The discs play automatically after they are inserted</dd>
+    <dt>Eject the discs</dt>
+    <dt>Uncheck the options to play when inserted and insert the discs again</dt>
+        <dd>The discs will not play automatically but will behave according to the current settings under the Storage tab for removable media</dd>
+</dl>
+
+The last four tabs, 'Cameras', 'PDAs', 'Printers' and 'Input Devices' do not require testing
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

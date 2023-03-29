@@ -1,0 +1,50 @@
+This test will check that Gnome Calculator can be opened either from a terminal window or from the applications menu, and shutdown
+<dl>
+    <!-- EAGER STEPS  -->
+    <dt>Open a terminal window, type <code>gnome-calculator</code> at the prompt and hit the "Enter" key</dt>
+        <dd>Calculator opens</dd>
+    <dt>Click the top right "X" of the window's title bar to close the application</dt>
+        <dd>Calculator closes</dd>
+    <dt>Open Gnome Calculator from your FAMILY menu</dt>
+        <dd>Calculator opens</dd>
+</dl>
+
+This test will check that Gnome Calculator's Application menu options work as expected
+<dl>
+    <dt>Navigate to Mode -> Basic</dt>
+        <dd>Calculator's GUI changes to provide buttons suitable for basic equations</dd>
+        <dd>Equations are entered in standard mathematical form. For example to add 7 and 2 enter the following: 7+2</dd>
+    <dt>Navigate to Mode -> Advanced</dt>
+        <dd>Calculator's GUI changes to provide buttons suitable for advanced mathematics such as Trigonometry</dd>
+        <!-- OMISSION OF STEPS -->
+        <dd>Trigonometry calculations can be performed using the sin, cos, and tan functions. For example sin 45</dd>
+    <dt>Navigate to Mode -> Financial</dt>
+        <dd>Calculator's GUI changes to provide buttons suitable for financial equations</dd>
+        <dd>Financial functions cannot be performed using the keyboard and the following buttons are available: Ctrm, Ddb, Fv, Gpm, Pmt, Pv, Rate, Sln, Syd and Term</dd>
+    <dt>Navigate to Mode -> Programming</dt>
+        <dd>Calculator's GUI changes to provide buttons suitable for computer programmers</dd>
+        <dd>When in programming mode there is a drop down menu for binary (Ctrl+B keys), octal (Ctrl+O keys) and hexadecimal (Ctrl+H keys) and the 'á' button opens a dialogue to convert characters to character codes</dd>
+    <dt>Navigate to Edit -> Preferences</dt>
+        <dd>Preferences dialogue window opens</dd>
+    <dt>Click the 'Number format' drop-down list and select one of the given options</dt>
+        <dd>The format used to display results change accordingly to the selection made</dd>
+    <dt>Decrease/increase the value of decimal places to show</dt>
+        <dd>The number of decimal places, if trailing zeroes and if thousands separators are shown, change accordingly</dd>
+    <dt>Tick the 'Show trailing zeroes' option</dt>
+        <dd>The format used to display results shows trailing zeroes</dd>
+    <dt>Tick the 'Show thousands separators' option</dt>
+        <dd>The format used to display results shows digit grouping</dd>
+    <dt>Click the 'Angle units' drop-down list and select one of the given options</dt>
+        <dd>The unit used to display results, when performing trigonometry calculations, change accordingly to the selection made</dd>
+    <dt>Click the 'Word size' drop-down list and select one of the given options</dt>
+        <dd>The results when performing boolean algebra calculations, using the AND, OR and XOR operators, change accordingly to the selection made</dd>
+    <dt>Navigate to Help -> About Calculator</dt>
+        <dd>About gnome-calculator dialogue window opens and the "Credits" and "License" buttons correctly display the associated information</dd>
+    <dt>Navigate to Help -> Contents</dt>
+        <dd>Calculator Help dialogue window opens</dd>
+    <dt>Navigate to Edit -> Quit</dt>
+        <dd>Calculator closes</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

@@ -1,0 +1,19 @@
+﻿<strong>Verify Screen Functionality</strong>
+Case ID: his-001
+
+This tests that ubuntu works with a built-in screen
+<!-- Smells: UNVERIFIED STEPS -->
+<dl>
+    <dt>Boot the computer</dt>
+        <dd>The login screen loads normally</dd>
+    <dt>Log into the computer</dt>
+        <dd>The desktop wallpaper and panels are displayed as normal</dd>
+    <dt>Open the settings manager, then open the display settings (might be called "monitor" or "display")</dt>
+    <dt>Change the screen resolution by selecting a different resolution from the Resolution dropdown list.</dt>
+    <dt>Press 'Apply'. Verify that the new resolution is set correctly and that the screen is still visible. </dt>
+        <dd>The new resolution is set correctly and the screen is still visible</dd>
+</dl>
+
+<strong>
+    If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

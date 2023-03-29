@@ -1,0 +1,15 @@
+<dl>
+    <dt>Start your machine, check the grub options</dt>
+        <dd>The Grub background should be customized by the UbuntuKylin and the grub menu item of installed system should be displayed as ”UbuntuKylin”?</dd>
+    <dt>View the boot animation while the UbuntuKylin System is starting up</dt>
+        <dd>The boot animation should be customized by the UbuntuKylin Team </dd>		
+    <dt>Log in the system and check the default wallpaper as well as the theme.</dt>
+        <dd>The default wallpaper and theme should be customized as the UbuntuKylin style</dd>
+        <dd>The title in left top corner of the desktop is ”UbuntuKylin Desktop”</dd>
+    <dt>Click the indicator icon on the right top corner and select "About this Computer" menu item.</dt>
+        <dd>The system logo and version in “Overview” page have been changed to the ones of UbuntuKylin</dd>
+    <dt>Click the button of Dash, enter the application names to check whether they are preinstalled: Chinese Calendar, Weather Indicator, Youker Assistant, Fcitx and Chromium.</dt>
+        <dd>All the above applications should be preinstalled and could be started normally</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

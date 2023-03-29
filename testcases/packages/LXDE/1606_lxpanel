@@ -1,0 +1,44 @@
+This test will check  that LXPanel can change the geometry
+<dl>
+    <dt>Right click on your main panel at the bottom</dt>
+        <dd>A context menu appears</dd>
+    <dt>Click on "Panel Settings"</dt>
+        <dd>A window opens, showing the Panel properties</dd>
+    <dt> In tab "Geometry", change the properties to Edge: Top, Alignment: Center, Width: 80 %, Height: 30 Pixels. Click on "Close"</dt>
+        <dd>The window closes. The panel is now situated at the top of the screen with its new properties</dd>
+</dl>
+
+This test will check that LXPanel can change the Appearance
+<dl>
+    <dt>Right click on your main panel</dt>
+        <dd>A context menu appears</dd>
+    <dt>Click on "Panel Settings"</dt>
+        <dd>A window opens, showing the Panel properties</dd>
+    <dt>In tab "Appearance", check "solid color", uncheck "Custom Color" and check "Size" and set it to 14. Click on "Close"</dt>
+        <dd>The window closes. The panel has changed color and font properties</dd>
+</dl>
+
+This test will check that LXPanel can change the panel applets
+<dl>
+    <dt>Right click on your main panel</dt>
+        <dd>A context menu appears</dd>
+    <dt>Click on "Panel Settings"</dt>
+        <dd>A window opens, showing the Panel properties</dd>
+    <dt>In tab "Panel Applets", click on button "Add"</dt>
+        <dd>A window opens, showing possible applets</dd>
+    <dt>Select "CPU Usage Monitor" and click on  "Add"</dt>
+        <dd>The window closes. In your panel you see at the right side a monitor, showing the CPU usage</dd>
+    <dt>Click on button "Remove"</dt>
+        <dd>In the panel, the monitor disappears</dd>
+</dl>
+
+This test will check that LXPanel can minimize automatically
+<dl>
+    <dt>In Preferences window, click on on tab "Advanced" and check "Minimize panel when not in use". Click on "OK"</dt>
+        <dd>The window closes. The panel is hidden</dd>
+    <dt>Hover to the top of the screen, where the panel has been</dt>
+        <dd>The panel appears again</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

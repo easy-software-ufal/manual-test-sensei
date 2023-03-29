@@ -1,0 +1,19 @@
+GOOD - 1479_Touchpad
+SMELLY - 1467_External Microphone
+SMELLY - 1472_Headphones
+SMELLY - 1473_Recording Internal Microphone
+SMELLY - 1474_Speakers
+SMELLY - 1475_Firewire
+SMELLY - 1476_USB Ports
+SMELLY - 1477_Builtin Keyboard
+SMELLY - 1478_Hotkeys
+SMELLY - 1480_USB Mouse
+SMELLY - 1481_Wired Networking
+SMELLY - 1482_Wireless Networking
+SMELLY - 1483_Builtin Webcam
+SMELLY - 1484_Internal Data Card Reader
+SMELLY - 1486_Suspend & Resume
+SMELLY - 1487_Builtin Screen
+SMELLY - 1488_External Screen
+SMELLY - 1618_System Config Printer
+hardware.txt

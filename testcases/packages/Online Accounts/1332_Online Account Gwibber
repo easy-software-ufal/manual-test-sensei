@@ -1,0 +1,47 @@
+These tests check that Gwibber integration works.
+<dl>
+    <dt>Open System Settings</dt>
+        <dd>System Settings will open</dd>
+    <dt>Open Online Accounts</dt>
+        <dd>Online Accounts will be displayed</dd>
+    <dt>Remove all accounts</dt>
+    <dt>Create a Twitter account
+        <ul>
+            <dt>Introduce the credentials (username and password)</dt>
+            <dt>Accept permissions</dt>
+            <dt>When asked, introduce the password of your ubuntu user to access the keyring</dt>
+        </ul>
+    </dt>
+    <dt>Open Gwibber</dt>
+        <dd>Gwibber must display Twitter’s timeline</dd>
+    <dt>Open System Settings</dt>
+        <dd>System Settings will open</dd>
+    <dt>Open Online Accounts</dt>
+        <dd>Online Accounts will be displayed</dd>
+    <dt>Remove all accounts</dt>
+    <dt>Create a Facebook account
+        <ul>
+            <dt>Introduce the credentials (username and password)</dt>
+            <dt>Accept permissions</dt>
+            <dt>When asked, introduce the password of your ubuntu user to access the keyring</dt>
+        </ul>
+    </dt>
+    <dt>Open Gwibber</dt>
+        <dd>Gwibber must display Facebook’s timeline</dd>
+    <dt>Open System Settings</dt>
+        <dd>System Settings will open</dd>
+    <dt>Open Online Accounts</dt>
+        <dd>Online Accounts will be displayed</dd>
+    <dt>Remove all accounts</dt>
+    <dt>Create a Flickr account
+        <ul>
+            <dt>Introduce the credentials (username and password)</dt>
+            <dt>Accept permissions</dt>
+            <dt>When asked, introduce the password of your ubuntu user to access the keyring</dt>
+        </ul>
+    </dt>
+    <dt>Open Gwibber</dt>
+        <dd>Gwibber must display links to Flickr's latest images</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

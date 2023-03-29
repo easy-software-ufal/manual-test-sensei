@@ -1,0 +1,85 @@
+This test will check that LXTerminal opens a new terminal window from a already open terminal window by right clicking on it.
+<dl>
+    <dt>Open a terminal window, point your mouse cursor to it then press the right mouse button</dt>
+        <dd>A pop-up menu appears</dd>
+    <dt>Select "New Window"</dt>
+        <dd>A new terminal window opens, inheriting the working directory from its parent terminal</dd>
+    <dt>Close the terminal by clicking on the "X" of the window</dt>
+        <dd>The terminal window closes</dd>
+</dl>
+
+This test will check that LXTerminal opens a new terminal window from the menu bar of a already open terminal window.
+<dl>
+    <dt>Click "File" on the menu bar</dt>
+        <dd>A menu drops down</dd>
+    <dt>Select "New Window"</dt>
+        <dd>A new terminal window opens, inheriting the working directory from its parent terminal</dd>
+    <dt>Close the terminal by clicking on the "X" of the window</dt>
+        <dd>The terminal window closes</dd>
+</dl>
+
+This test will check that LXTerminal opens a new terminal window with Ctrl+Shift+N keys
+<dl>
+    <dt>Hit Ctrl+Shift+N keys</dt>
+        <dd>A new terminal window opens, inheriting the working directory from its parent terminal</dd>
+    <dt>Close the terminal by clicking on the "X" of the window</dt>
+        <dd>The terminal window closes</dd>
+</dl>
+
+This test will check that LXTerminal adds a new tabbed terminal to a terminal window by right clicking.
+<dl>
+    <dt>Press the right mouse button within the terminal window</dt>
+        <dd>A popup menu appears</dd>
+    <dt>Select "New Tab"</dt>
+        <dd>A new terminal tab opens, inheriting the working directory from the previously active terminal</dd>
+</dl>
+
+This test will check that LXTerminal adds a new tabbed terminal to a terminal window from the menubar.
+<dl>
+    <dt>Click on File on the menu bar</dt>
+        <dd>A menu drops down</dd>
+    <dt>Select "New Tab"</dt>
+        <dd>A new terminal tab opens, inheriting the working directory from the previously active terminal</dd>		
+</dl>
+
+This test will check that basic terminal commands work in LXTerminal
+<dl>
+    <dt>Type in sudo apt-get update and press Enter</dt>
+        <dd>You are asked for [sudo] password for USER: (where USER is your user name)</dd>
+    <dt>Enter your password and wait for the command to complete</dt>
+        <dd>Command finishes and leaves you at an empty prompt</dd>
+    <dt>Enter "ls -al"</dt>
+        <dd>This should list all file in full in the home folder</dd>
+    <dt>Press the up arrow on your keyboard</dt>
+        <dd>The "ls -al" command you just entered appears</dd>
+</dl>
+
+This test will check that LXTerminal changes the title of the currently displayed terminal from the menu bar
+<dl>
+    <dt>In the menu bar, click on "Tabs", then on "Name Tab"</dt>
+        <dd>Set Title dialog opens</dd>
+    <dt>Type the title "qa-lubuntu" and click "OK"</dt>
+        <dd>The terminal shows the name "qa-lubuntu"</dd>
+</dl>
+
+This test will check that LXTerminal maximizes into full screen
+<dl>
+    <dt>Hit F11 on your keyboard</dt>
+        <dd>LXTerminal changes to full screen</dd>
+    <dt>Hit F11 again</dt>
+        <dd>LXTerminal changes back to window mode</dd>
+</dl>
+
+This test will check that LXTerminal can change the appearance of the terminal
+<dl>
+    <dt>In the menu bar, click on "Edit" and then "Preferences"</dt>
+        <dd>A window opens, showing the style properties of the terminal</dd>
+    <dt>Click on the name of the "Terminal Font"</dt>
+        <dd>A window opens, showing the font properties</dd>
+    <dt>Change the properties to Ubuntu Mono Regular 12. Click on "OK"</dt>
+        <dd>The font properties window closes</dd>
+    <dt>In the style properties window, click on "OK"</dt>
+        <dd>The window closes. You now see the chosen font applied to the terminal</dd>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

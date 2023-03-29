@@ -1,0 +1,164 @@
+Test-case name: ristretto
+
+This test will check that Ristretto can start and shutdown.
+<dl>
+    <dt>Open "Ristretto Image Viewer"</dt>
+        <dd>Ristretto starts up and the main window is visible on the screen.</dd>
+    <dt>Select File->Quit to exit the application</dt>
+        <dd>The application quits without any errors</dd>
+    <!-- OMISSION OF STEP -->
+    <dt>From an open terminal window, start Ristretto by typing "ristretto" (no quotes) and press the Enter key.</dt>
+        <dd>Ristretto starts up and the main window is visible on the screen.</dd>
+    <dt>Click the X on the window title bar to close the application</dt>
+        <dd>The application quits without any errors</dd>
+    <!-- CONDITIONAL TEST -->
+    <dt>From within the File Manager, right-click on an image file and Select "Open with Ristretto". If that option does not exist, select "Open With..." and either Select Ristretto from the list or choose the "Open With Other Application" and select Ristretto from the list.</dt>
+        <dd>Ristretto starts and opens the image that you right-clicked on.</dd>
+</dl>
+
+This test will verify that the File menu options work properly.
+<dl>
+    <!-- PRE CONDITION AS STEP -->
+    <dt>Ensure that ristretto is loaded. Select File->Open, select and image, and select "Open".</dt>
+        <dd>The image opens and is displayed in ristretto's main window. In addition, if other images exist in the folder that the opened image was in, their thumbnails show up in the thumbnail bar to the left of the image.</dd>
+    <dt>Select File->Save Copy and save a copy of the file in another directory.</dt>
+        <dd>A copy of the file is saved properly. In addition, the original file remains in the main Ristretto window.</dd>
+    <dt>Select File->Recently Used and open the file copy that you just saved.</dt>
+        <dd>The file copy is now displayed in the main window. In addition, the thumbnail bar will now show any images that may exist in that new folder.</dd>
+    <dt>Select File->Properties.</dt>
+        <dd>A properties dialog box appears.</dd>
+    <dt>Select File->Close.</dt>
+        <dd>The file unloads and Ristretto is left with a blank main window and no thumbnail bar.</dd>
+</dl>
+
+This test will verify that the Edit menu options work properly.
+<dl>
+    <dt>Ensure that Ristretto is loaded and that it is displaying an image from a directory where multiple images exist. Select Open->With and choose an application to open the image with (e.g. gimp).</dt>
+        <dd>The image is opened in the application that you selected.</dd>
+    <dt>Select Edit->Sorting->Sort By Date.</dt>
+        <dd>The images in the thumbnail bar are re-ordered based on date.</dd>
+    <dt>Select Edit->Sorting->Sort by filename</dt>
+        <dd>The images in the thumbnail bar are re-ordered based on fiename.</dd>
+    <dt>***Ensure that you have a backup of the image currently in the main window. Select Edit->Delete and answer "Yes" to the prompt.</dt>
+        <dd>The image is deleted from the directory, removed from the main window and located in the Trash.</dd>
+    <dt>Select Edit->Clear private data and choose "Everything" when prompted.</dt>
+        <dd>Check to see that the recently used list has been cleared (File->Recently used).</dd>
+    <dt>Select Edit->Preferences.</dt>
+        <dd>Ensure that the Preferences dialog box pop ups and is editable.</dd>
+</dl>
+
+This test will verify that the View menu options work properly.
+<dl>
+    <dt>Ensure that Ristretto is loaded and an image is displayed in the main window. Toggle View->Show Toolbar.</dt>
+        <dd>The toolbar toggles on or off with each selection.</dd>
+    <dt>Toggle View->Show Status Bar.</dt>
+        <dd>The status bar toggles on or off with each selection.</dd>
+    <dt>Toggle View->Show Thumbnail Bar.</dt>
+        <dd>The thumbnail bar toggles on or off with each selection.</dd>
+    <dt>Change View->Thumbnail Bar Position among the 4 different options.</dt>
+        <dd>The thumbnail bar position changes accordingly.</dd>
+    <dt>Change View->Thumbnail Size among the different size options.</dt>
+        <dd>The size of the thumbnails change accordingly.</dd>
+    <dt>Change View->Zoom among the different options.</dt>
+        <dd>The image zooms accordingly.</dd>
+    <dt>Change View->Rotation among the different options.</dt>
+        <dd>The image rotates accordingly.</dd>
+    <dt>Select View->Fullscreen.</dt>
+        <dd>The image is properly displayed fullscreen and returns to normal window mode when the Escape key or F11 is pressed.</dd>
+    <dt>Select View->Set As Wallpaper, select your desktop management system, the wallpaper settings, and press OK.</dt>
+        <dd>The image is properly displayed as the background.</dd>
+</dl>
+
+This test will verify that the Go menu options work properly.
+<dl>
+    <dt>Ensure that Ristretto is loaded and displaying images from a directory containing multiple images. Select Go-> Forward</dt>
+        <dd>The next image in the Thumbnail bar is displayed in the main window.</dd>
+    <dt>Select Go->Back.</dt>
+        <dd>The previous image in the Thumbnail bar is displayed in the main window.</dd>
+    <dt>Select Go->Last.</dt>
+        <dd>The last image in the Thumbnail bar is displayed in the main window.</dd>
+    <dt>Select Go->First.</dt>
+        <dd>The first image in the Thumbnail bar is displayed in the main window.</dd>
+    <dt>Select Go->Play.</dt>
+        <dd>The images in the main window are displayed in a slideshow format based on the settings in Edit->Preferences->Slideshow.</dd>
+    <dt>Select Go->Pause.</dt>
+        <dd>The slideshow pauses.</dd>
+</dl>
+
+This test case will verify that the Help menu options work properly.
+<dl>
+    <dt>Ensure that Ristretto is loaded and that you have an active internet connection. Select Help->Contents then "Read Online".</dt>
+        <dd>The Ristretto online documentation appears in your default browser.</dd>
+    <dt>Select Help->About.</dt>
+        <dd>The About ristretto dialog opens and the "Credits" and "License" buttons correctly display the associated information.</dd>
+</dl>
+
+This test case will verify that the toolbar buttons work properly.
+<dl>
+    <dt>Ensure that Ristretto is properly loaded. Click on the "Open an image" toolbar item and open an image.</dt>
+        <dd>The image opens and is displayed in ristretto's main window. In addition, if other images exist in the folder that the opened image was in, their thumbnails show up in the thumbnail bar to the left of the image.</dd>
+    <dt>Click on the "Save a copy of this image" toolbar icon and save a copy of the file in another directory.</dt>
+        <dd>A copy of the file is saved properly. In addition, the original file remains in the main Ristretto window.</dd>
+    <dt>***Ensure that you have a backup of the image currently in the main window. Click on the "Delete this image from disk" toolbar icon.</dt>
+        <dd>The image is deleted from the directory, removed from the main window and located in the Trash.</dd>
+    <dt>Click on the "Edit this image" toolbar icon and choose an application to open the image with (e.g. gimp).</dt>
+        <dd>The image is opened in the application that you selected.</dd>
+    <dt>Click the "Previous image" toolbar icon.</dt>
+        <dd>The previous image in the Thumbnail bar is displayed in the main window. The thumbnail bar scrolls to keep the current image visible.</dd>
+    <dt>Click the "Play slideshow" toolbar icon.</dt>
+        <dd>The images in the main window are displayed in a slideshow format based on the settings in Edit->Preferences->Slideshow.</dd>
+    <dt>Click on the "Pause slideshow" toolbar icon.</dt>
+        <dd>The slideshow pauses.</dd>
+    <dt>Click on the "Next image" toolbar icon.</dt>
+        <dd>The next image in the Thumbnail bar is displayed in the main window. The thumbnail bar scrolls to keep the current image visible.</dd>
+    <dt>Click on the "Zoom in" toolbar icon.</dt>
+        <dd>The image zooms in.</dd>
+    <dt>Click on the "Zoom out" toolbar icon.</dt>
+        <dd>The image zooms out.</dd>
+    <dt>Click the "Zoom to 100%" toolbar icon.</dt>
+        <dd>The image displays at 100% of its size.</dd>
+    <dt>Click the "Zoom to fit window" toolbar icon.</dt>
+        <dd>The image resizes to fit in the main window.</dd>
+    <dt>Click the "Switch to fullscreen" toolbar icon.</dt>
+        <dd>The image is properly displayed fullscreen and returns to normal window mode when the Escape key or F11 is pressed.</dd>
+</dl>
+
+This test case will verify that the thumbnail bar works properly.
+<dl>
+    <dt>Ensure that Ristretto is loaded and displaying images from a directory containing multiple images. Click on an image in the thumbnail bar.</dt>
+        <dd>The image appears in the main window.</dd>
+    <dt>Click and drag the thumbnail scrollbar.</dt>
+        <dd>The contents of the thumbnail bar move up and down to show the available images.</dd>
+</dl>
+
+This test case will verify that the adjustable settings in the Preferences dialog box work properly.
+<dl>
+    <dt>Ensure that Ristretto is loaded and displaying images from a directory containing multiple images. Go to Edit->Preferences->Display tab, select the "Override background color" checkbox and select a background color.</dt>
+        <dd>The main window background changes to the correct color.</dd>
+    <dt>(Note: you will need an image with a resolution greater than your screen resolution). Go to Edit->Preferences->Display tab and select the "Limit rendering quality" checkbox.</dt>
+        <dd>The image quality changes.</dd>
+    <dt>Go to Edit->Preferences->Fullscreen tab, and uncheck the "Hide thumbnail bar when fullscreen checkbox. View an image fullscreen.</dt>
+        <dd>The thumbnail bar is visible in fullscreen mode.</dd>
+    <dt>Go to Edit->Preferences->Fullscreen tab, and check the "Show fullscreen clock" checkbox. View an image fullscreen.</dt>
+        <dd>The fullscreen image also displays an analog clock with the current time.</dd>
+    <dt>Go to Edit->Preferences->Slideshow tab, and change the "Timeout" value. View a slideshow.</dt>
+        <dd>The images in the slideshow cycle based on the "Timeout" value that you just set.</dd>
+    <dt>Go to Edit->Preferences->Control tab, and check the "Invert zoom direction" checkbox. While pressing the Ctrl key, zoom in turning the mouse scroll-wheel backward and zoom out turning the mouse scroll-wheel forward.</dt>
+        <dd>The zoom direction is reversed.</dd>
+    <dt>Go to Edit->Preferences->Behaviour tab, and uncheck the "Maximize window on startup when opening an image" checkbox. Shutdown ristretto. Right-click on an image in the File Manager and open with Ristretto.</dt>
+        <dd>Ristretto opens and the window is not maximized.</dd>
+    <dt>Go to Edit->Preferences->Behaviour tab, and uncheck the "Wrap around images" checkbox. Go to the last image on the thumbnail bar.</dt>
+        <dd>The "Next image" toolbar icon is greyed out and you are unable to wrap around to the first image.</dd>
+    <dt></dt>
+</dl>
+
+This test case will verify that the status bar is displaying image information.
+<dl>
+    <dt>Ensure that Ristretto is loaded and displaying images from a directory containing multiple images.</dt>
+        <dd>The status bar will display the image name, resolution, and zoom percentage.</dd>
+    <dt>Select another image from the Thumbnail bar.</dt>
+        <dd>The status bar will change to display the image name, resolution, and zoom percentage of the new image.</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

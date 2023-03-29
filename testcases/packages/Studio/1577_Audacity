@@ -1,0 +1,306 @@
+This test will check that Audacity Transport Toolbar Works
+<dl>
+    <dt>Go to File menu and then Click on "Open..."</dt>
+        <dd>A new window should appear, pick up an audio file and open it.</dd>
+        <dd>Can you see the file information on the desk?</dd>
+    <dt>Go to Audacity Transport Toolbar, once there...</dt>
+    <dt>Click on Play icon</dt>
+        <dd>Did the audio file start to sound?</dd>
+    <dt>Click on Pause icon</dt>
+        <dd>Was the audio file paused?</dd>
+    <dt>Click on Play icon again</dt>
+    <dt>Click on Stop icon</dt>
+        <dd>Was the audio file stopped completely?</dd>
+    <dt>Click on Record icon</dt>
+        <dd>A new entry should appear in the desk</dd>
+        <dd>Record your voice, stopped and play it. Can you hear yourself?</dd>
+</dl>
+
+This test will check that Audacity Device Toolbar Works
+<dl>
+    <dt>All options are in default mode</dt>
+        <dd>Output and Input devices are in default.</dd>
+    <dt>Go to Audio Host</dt>
+        <dd>ALSA by default and if you have another Audio Hosts pick it.</dd>
+    <dt>Go to Output Device</dt>
+        <dd>Could you select a different device (pulse, hdmi or anything else)?</dd>
+    <dt>Go to Input Device</dt>
+        <dd>Could you select a different device (pulse, sysdefault or anything else)?</dd>
+    <dt>Go to Input Channels</dt>
+        <dd>Could you select a different channel?</dd>
+</dl>
+
+This test will check that Audacity Tools Toolbar Works
+<dl>
+    <dt>Click on "Selection Tool"</dt>
+    <dt>Select a segment of the song and click on "Play" button</dt>
+        <dd>Did you only listen the audio segment?</dd>
+    <dt>Click on "Time Shift Tool"</dt>
+        <dd>You should be available to move the track in the time line.</dd>
+    <dt>Click on "Zoom Tool"</dt>
+        <dd>Right click must increase the zoom</dd>
+        <dd>Left click must zoom out</dd>
+    <dt>Make zoom enough until see the track as a dotted line and click on "Draw Tool"</dt>
+        <dd>you might move the points in the dotted line, doing click on each point</dd>
+    <dt>Click on "Multitool Mode"</dt>
+        <dd>Can you use all tools at the same time? zoom, selection, time.</dd>
+</dl>
+
+This test will check that Audacity Edit Toolbar Works
+<dl>
+    <dt>Use the "Selection Tool" to select a segment and then click on "Cut"</dt>
+        <dd>The select segment should disappear</dd>
+    <dt>Use the "Selection Tool" to select a segment and then click on "Copy", now select a different segment and click on "Paste"</dt>
+        <dd>Did Audacity make a successful copy of the segment?</dd>
+    <dt>Use the "Selection Tool" to select a segment and then click on "Trim Audio"</dt>
+        <dd>You should see only your selection</dd>
+    <dt>To restore the track, do click on "Undo"</dt>
+        <dd>Does the restore work?</dd>
+    <dt>Click on "Redo"</dt>
+        <dd>the changes that you made must appear again.</dd>
+    <dt>Click on "Silence Audio"</dt>
+        <dd>The select segment appears like a line, right?</dd>
+    <dt>Click on "Zoom In"</dt>
+        <dd>Is the Zoom working?</dd>
+    <dt>Click on "Zoom Out"</dt>
+        <dd>Is the Zoom working?</dd>
+</dl>
+
+This test will check that Transcription Toolbar works
+<dl>
+    <dt>Use the "Selection Tool" in the "Toolbar" to select a segment and then click on "Play-at-speed"</dt>
+        <dd>Does it play only the select segment?</dd>
+    <dt>Move the "Playback Speed" and click on "Play-at-speed" again</dt>
+    <dt>Can you feel the difference in the speed?</dt>
+</dl>
+
+This test will check that Mixer Toolbar works
+<dl>
+    <dt>Open an audio file, play it and move the "Output Volume"</dt>
+        <dd>Can you feel the change?</dd>
+    <dt>Record an audio file and change the input volume several times.</dt>
+        <dd>Can you feel the change</dd>
+</dl>
+
+This test will check that Meter Toolbar works
+<dl>
+    <dt>Open an audio file and play it</dt>
+        <dd>Can you see the "Output Level" moving?</dd>
+    <dt>Click on "Disable Meter"</dt>
+        <dd>Is the Meter disable?</dd>
+    <dt>Click on "Enable Meter"</dt>
+        <dd>The Meter would be available again</dd>
+    <dt>Click on "Vertical Stereo"</dt>
+        <dd>The output level appears vertical, right?</dd>
+        <dd>You can back to the horizontal mode, doing click on "Horizontal Stereo"</dd>
+    <dt>Click on "Preferences..."</dt>
+        <dd>A nezw window appears where you can change the refresh rather, Can you do it? (30 by default)</dd>
+    <dt>Open Audacity again and click on "Record"</dt>
+        <dd>Do you see the Input Level Meter working?</dd>
+    <dt>Click on "Enable Meter"</dt>
+        <dd>The Meter would be available again</dd>
+    <dt>Click on "Vertical Stereo"</dt>
+        <dd>The input level appears vertical, right?</dd>
+        <dd>You can back to the horizontal mode, doing click on "Horizontal Stereo"</dd>
+    <dt>Click on "Preferences..."</dt>
+        <dd>A new window appears where you can change the refresh rather, Can you do it? (30 by default)</dd>
+</dl>
+
+This test will check that File Menu Works
+<dl>
+    <dt>Click on "New"</dt>
+        <dd>A new instance of Audacity appears</dd>
+        <dd>you should have the same result using the key combination "Ctrl+N"</dd>
+    <dt>Click on "Open..."</dt>
+        <dd>A new interface appears, choose a file, Can Audacity open it?</dd>
+        <dd>you should have the same result using the key combination "Ctrl+O"</dd>
+    <dt>Click on "Close"</dt>
+        <dd>If this is your first time, a new message appears telling you about to save your changes.</dd>
+        <dd>Can you close the file correctly?</dd>
+        <dd>you should have the same result using the key combination "Ctrl+W"</dd>
+    <dt>Click on "Save Project"</dt>
+        <dd>If this is your first time, it'll send a message about your file, and it creates a file.aup</dd>
+        <dd>Choose a location for your file.aup and click on "Save"</dd>
+        <dd>you should have the same result using the key combination "Ctrl+S"</dd>
+    <dt>Click on "Save Project As..."</dt>
+        <dd>If this is your first time, it'll send a message about your file, and it creates a file.aup</dd>
+        <dd>Choose a location for your file.aup and click on "Save"</dd>
+    <dt>Click on "Exit"</dt>
+        <dd>Was Audacity close correctly?</dd>
+        <dd>you should have the same result using the key combination "Ctrl+Q"</dd>
+    <dt>Open Audacity again and click on "Recent Files"</dt>
+        <dd>Can you see the last file?</dd>
+        <dd>If you do click on "Clear" all files will be delete, Could you do it?</dd>
+    <dt>Click on "Check Dependencies..."</dt>
+        <dd>A new window appears to check the dependencies of your project and if you project is self-contained, a message appears.</dd>
+    <dt>Click on "Export"</dt>
+        <dd>A new interface should appear, select a new format, location and then click on "Save"</dd>
+        <dd>Could you export the file in the correct location?</dd>
+        <dd>you should have the same result using the key combination "Shift+Ctrl+E"</dd>
+    <dt>Select a segment of a track opened previously and click on "Export Selection..."</dt>
+        <dd>A new interface should appear, select a new format, location and then click on "Save"</dd>
+        <dd>Could you export the segment in the correct location?</dd>
+    <dt>Click on "Page Setup..."</dt>
+        <dd>A new window should appear, select the paper size and orientation that you like and click on "OK"</dd>
+    <dt>Click on "Print..."</dt>
+        <dd>A new interface appears, choose your settings and click on "OK"</dd>
+        <dd>Could you print the file?</dd>
+</dl>
+
+This test will check that View Menu Works
+<dl>
+    <dt>Open Audacity and import/open a new file.</dt>
+    <dt>Go to "Zoom In"</dt>
+        <dd>you should have the same result using the key combination "Ctrl+1"</dd>
+    <dt>Go to "Zoom Normal"</dt>
+        <dd>you should have the same result using the key combination "Ctrl+2"</dd>
+    <dt>Go to "Zoom Out"</dt>
+        <dd>you should have the same result using the key combination "Ctrl+3"</dd>
+    <dt>Go to "Fit in Window"</dt>
+        <dd>you should have the same result using the key combination "Ctrl+F"</dd>
+    <dt>Go to"Fit Vertically"</dt>
+        <dd>you should have the same result using the key combination "Shift+Ctrl+F"</dd>
+    <dt>Select a segment on the track and click on "Zoom to Selection"</dt>
+        <dd>Could you notice the zoom?</dd>
+        <dd>you should have the same result using the key combination "Ctrl+E"</dd>
+    <dt>Click on "History"</dt>
+        <dd>A new interface appears showing you the full history, can you see a line like: "Imported /home/user/location_of_the_file"</dd>
+        <dd>Click on "OK" and the interface disappears.</dd>
+    <dt>Click on "Mixer Board"</dt>
+        <dd>A new window should appear, you can change the track mode to mute or solo from this window.</dd>
+    <dt>Go to "Toolbars" and check that you can enable and disable all bars</dt>
+        <dd>Did you get some problem with any bar?</dd>
+        <dd>Click on "Reset Toolbars" and everything come back to default mode.</dd>
+</dl>
+
+This test will check that Menu Transport Works
+<dl>
+    <dt>Open Audacity and an Audio file.</dt>
+    <dt>Go to Transport and click on "Play", "Pause" and "Stop"</dt>
+        <dd>Did you get the same result than using the Transport toolbar?</dd>
+    <dt>Click on "Loop Play"</dt>
+        <dd>The song start to play and the Transport Toolbar icon of Play change of form, did you see it?</dd>
+        <dd>you should have the same result using the key combination "Shift+Space"</dd>
+    <dt>Click on "Record"</dt>
+        <dd>you should have the same result using the key combination "R"</dd>
+    <dt>Click on "Time Record..."</dt>
+        <dd>A new interface appears where you can modify the start and end dates</dd>
+        <dd>you should have the same result using the key combination "Shift+T"</dd>
+    <dt>Click on "Append Record..."</dt>
+        <dd>Audacity starts to record with the "Time Record" preferences, Can you record an audio file?</dd>
+        <dd>you should have the same result using the key combination "Shift+R"</dd>
+    <dt>Click on "Sounds Activation Level..."</dt>
+        <dd>A new interface appears, called "Sounds Activated Record", Can you change the Activation Level?</dd>
+</dl>
+
+This test will check that Menu Tracks Works
+<dl>
+    <dt>Open Audacity and an Audio file.</dt>
+    <dt>Click on "Add New" and later on "Audio Track"</dt>
+        <dd>Could you add a new "Audio Track"?</dd>
+    <dt>Click on "Add New" and later on "Stereo Track"</dt>
+        <dd>Could you add a new "Stereo Track"?</dd>
+    <dt>Click on "Add New" and later on "Label Track"</dt>
+        <dd>Could you add a new "Label Track"?</dd>
+    <dt>Click on "Add New" and later on "Time Track"</dt>
+        <dd>Could you add a new "Label Track"?</dd>
+    <dt>Click on "Resample"</dt>
+        <dd>A new window appears, select a new sample rate. Does the color in the desk change to dark-grey?</dd>
+    <dt>Click on "Remove Tracks"</dt>
+        <dd>The desk should be clean, right?</dd>
+    <dt>Click on "Mute All Tracks"</dt>
+        <dd>The track appears in grey color and when you play it, there is not any sound.</dd>
+    <dt>Click on "Unmute All Tracks"</dt>
+        <dd>The track appears in blue color and when you play it, there is sound.</dd>
+    <dt>Click on "Edit Labels"</dt>
+        <dd>Double click on "Label" and write a name. Could you change the name?</dd>
+        <dd>Click on "Insert After" and "Insert Before", Can you see these entries?</dd>
+        <dd>Click on "Export", select a folder and save it as a txt file. Did it work?</dd>
+        <dd>Click on "OK", a new entry should appear in the desk.</dd>
+</dl>
+
+This test will check that Menu Generate Works
+<dl>
+    <dt>Open Audacity and an Audio file.</dt>
+    <dt>Click on "Chirp..."</dt>
+        <dd>A new window appears, Can you change the values? (Waveform, Frequency, Amplitude and Interpolation)</dd>
+        <dd>Click on "OK", Can you see the difference in the audio chart?</dd>
+    <dt>Click on "DTFM Tones..."</dt>
+        <dd>A new window appears called "DTFM Tone Generator", Can you change the values? (DTFM sequence, Amplitude, Tone/Silence ratio)</dd>
+        <dd>Click on "OK", Can you see the difference in the audio chart?</dd>
+    <dt>Click on "Noise..."</dt>
+        <dd>Select a noise type, amplitude and then click on OK</dd>
+        <dd>Can you see the difference in the audio chart?</dd>
+    <dt>Click on "Silence..."</dt>
+        <dd>Select a new "Duration" and click on "OK"</dd>
+        <dd>Can you see the difference in the audio chart?</dd>
+    <dt>Click on "Tone..."</dt>
+        <dd>Change the default values and click on "OK"</dd>
+        <dd>Can you see the difference in the audio chart?</dd>
+    <dt>Click on "Click Track..."</dt>
+        <dd>A new interface appears, select values and click on "OK"</dd>
+        <dd>A new entry should appear in the desk, Can you see it?</dd>
+    <dt>Click on "Pluck..."</dt>
+        <dd>A new window appears, select values and click on "OK"</dd>
+        <dd>A new entry should appear in the desk, Can you see it?</dd>
+    <dt>Click on "Risset Drum..."</dt>
+        <dd>A new interface appears, called "Risset Drum...", select values and click on "OK"</dd>
+        <dd>A new entry should appear in the desk, Can you see it?</dd>
+</dl>
+
+This test will check that Menu Analyse Works
+<dl>
+    <dt>Open Audacity and an Audio file.</dt>
+    <dt>Click on "Contrast..."</dt>
+        <dd></dd>
+    <dt>Click on "Plot Spectrum..."</dt>
+        <dd>A new interface appears called "Frequency Analysis"</dd>
+        <dd>Can you see the frequency chart?</dd>
+        <dd>Try to change the Algorithm, the chart is updated. Did you see it?</dd>
+        <dd>Try to change the Size, the chart is updated. Did you see it?</dd>
+        <dd>Click on "Close" and the interface disappears</dd>
+    <dt>Click on "Find Clipping..."</dt>
+        <dd>A new interface appear called "Find Clipping", select a number for "start and stop threshold" (3 by default)</dd>
+        <dd>Click on OK, a new entry in the desk should appear called "Clipping", Can you see the points?, Can you move them?, Can you change their labels?</dd>
+    <dt>Click on "Beat Finder..."</dt>
+        <dd>A new window must appear, Can you change the Threshold percentage? (65 by default)</dd>
+        <dd>Click on OK and a new entry in the desk appears, Can you see the points with a B Label?, Can you move them?, Can you change their labels?</dd>
+    <dt>Click on "Regular Interval Labels..."</dt>
+        <dd>A new window should appear, Can you move the values?</dd>
+        <dd>Click on OK and a new entry in the desk appears, Can you see the points with Labels?, Can you move them?, Can you change their labels?</dd>
+    <dt>Click on "Simple Data Export..."</dt>
+        <dd>A new interface appears, Select values and change the file name and output folder. (sample-data and Home directory by default).</dd>
+        <dd>Click on OK. Could you create the file in the directory?</dd>
+    <dt>Click on "Silence Finder..."</dt>
+        <dd>A new window should appear, Can you move the values?</dd>
+        <dd>Click on OK and a new entry in the desk appears, Can you see the points with a S Label?, Can you move them?, Can you change their labels?</dd>
+    <dt>Click on "Sound Finder..."</dt>
+        <dd>A new interface should appear, Can you move the values?</dd>
+        <dd>Click on OK and a new entry in the desk appears, Can you see the points with a number Label?, Can you move them?, Can you change their labels?</dd>
+</dl>
+
+This test will check that Menu Help Works
+<dl>
+    <dt>Click on "About Audacity"</dt>
+        <dd>A new window should appear with three taps (Audacity, build information and GPL License)</dd>
+    <dt>Try to navigate for all information there</dt>
+        <dd>is there a issue with the content?</dd>
+        <dd>Click on "OK... Audacious!" must close the window</dd>
+    <dt>Click on "Quick Help"</dt>
+        <dd>you should be redirect to the help page in your browser <a href="http://apps.ubuntu.com/cat/tos/">http://apps.ubuntu.com/cat/tos/</a>, do you?</dd>
+    <dt>Click on "Manual"</dt>
+        <dd>you should be redirect to the manual page in your browser <a href="http://apps.ubuntu.com/cat/tos/">http://apps.ubuntu.com/cat/tos/</a>, do you?</dd>
+    <dt>Click on "Screenshot Tools..."</dt>
+        <dd>A new interface should appear called "Screen Capture Frame"</dd>
+    <dt>Choose a different location for your captures (/home/your_home by default)</dt>
+        <dd>Make a capture and check that it is in the right location</dd>
+    <dt>Go to "Screenshot Tools..." again, change others features and make a new capture</dt>
+        <dd>Can you see the new changes?</dd>
+    <dt>Click on "Audio Device Info..."</dt>
+        <dd>A new windows appears with all information about your audio advices</dd>
+    <dt>Click on "Show Log..."</dt>
+        <dd>A new windows appears with the log information</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

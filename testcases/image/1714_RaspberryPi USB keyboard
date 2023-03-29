@@ -1,0 +1,19 @@
+Follow the installation steps at <a href="https://ubuntu.com/download/iot/installation-media">IoT installation media</a>
+<em>This test requires that you have a USB keyboard with a USB hub and a USB keyboard without a USB hub.</em>
+<dl>
+Once logged in, verify that:
+        <dt>A connected USB keyboard with a USB hub works:
+            <ul>
+                <li>when connected to a USB2 (black) port</li>
+                <li>when connected to a USB3 (blue) port</li>
+            </ul>
+        </dt>
+        <dt>A connected USB keyboard without a USB hub works:
+            <ul>
+                <li>when connected to a USB2 (black) port</li>
+                <li>when connected to a USB3 (blue) port</li>
+            </ul>
+        </dt>
+<strong>
+    If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

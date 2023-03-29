@@ -1,0 +1,56 @@
+This test will check that LXRandR can change the screen resolution
+<dl>
+    <dt>Click on the Lubuntu icon in your panel, then on "Preferences" and "Monitor Settings"</dt>
+        <dd>LXRandR opens in a new window</dd>
+    <dt>Set the resolution to "800x600" and refresh rate to "Auto". Click on Apply</dt>
+        <dd>The screen resolution changes and click ok on popup appears with the dialog asking "is everything OK? Confirm within 15 seconds otherwise previous state will be restored." </dd>
+    <dt>LXRandR stays open and press the cancel button to make sure it closes.</dt>    
+    <dt>Click on the Lubuntu icon in your panel, then on "Preferences" and "Monitor Settings"</dt>
+        <dd>LXRandR opens in a new window</dd>
+    <dt>Set the resolution to "Auto" and refresh rate to "Auto". Click on Apply</dt>
+        <dd>The screen resolution changes back to your former resolution and LXRandR stays open.</dd>
+</dl>
+This test will check that LXRandR allows users to revert to the orginal screen resolution if they make a mistake.
+<dl>
+    <dt> In the window with LXRandR you left open click change resolution and select 800x600 and click apply. </dt>
+        <dd> The monitor will popup asking  "is everything OK? Confirm within 15 seconds otherwise previous state will be restored." </dd>
+    <dt> At this dialog box do nothing until 15 seconds pass to check that the resolution automatically reverts.</dt>
+        <dd> The screen should revert to the resolution that it sets when set in auto.</dd>
+    <dt> In the same LXRandR window click on resolution and select 1024x768. </dt>
+        <dd> The resolution should change to 1024x768 and a popup should appear stating  "is everything OK? Confirm within 15 seconds otherwise previous state will be restored." </dd>
+    <dt>Press the enter key on your keyboard and the resolution should return to your to resolution set in Auto</dt>
+        <dd>The The screen resolution resets to the default value and LXRandR remains open.</dd>
+</dl>
+
+This test will check that LXRandR will save a users resolution between sessions. 
+<strong> The following test will involve logging out of the lubuntu session so make sure to save any open work.</strong>
+<dl>
+    <dt> In the field for resolution select 1024x768 hit apply </dt>
+        <dd>a popup should appeare asking   "is everything OK? Confirm within 15 seconds otherwise previous state will be restored." </dd>
+    <dt> on the keyboard press the tab key twice  and press  enter to apply the new resolution</dt>
+        <dd> The resolution should change to 1024x768</dd>
+    <dt> click the button on the left side of LXRandR that says save. </dt>
+        <dd> A box should popup saying configuration saved</dd>
+    <dt> Now to check that LXRandR saved settings go to the lxde menu and select logout</dt>
+        <dd> You should return to the lightdm greeter and have a login screen</dd>
+    <dt> Enter your password and log back into the Lubuntu session</dt>
+        <dd> The monitor should have the same resolution as before you logged out</dd>
+</dl>
+
+<strong>The following tests require a second monitor. If you do not have one, skip the tests.</strong>
+
+This test will check that LXRandR can handle 2 monitors
+<dl>
+    <dt>Plug in your monitor.</dt>
+    <dt>Click on the Lubuntu icon in your panel, then on "Preferences" and "Monitor Settings"</dt>
+        <dd>LXRandR opens in a new window. </dd>
+    <dt> Unchek "Turn on" for your laptop (or first) monitor. Click on apply.</dt>
+        <dd>LXRandR closes. Only the external monitor is operating</dd>
+    <dt>Click on the Lubuntu icon in your panel, then on "Preferences" and "Monitor Settings"</dt>
+        <dd>LXRandR opens in a new window</dd>
+    <dt>Uncheck "Turn On" for your external monitor. Click on Apply</dt>
+        <dd>LXRandR closes. Only the laptop (or first) monitor is operating</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

@@ -1,0 +1,32 @@
+<dl>
+    <dt>Click on <em>Menu</em> --> <em>System Tools</em> --> <em>Task Manager</em>.</dt>
+        <dd>Task Manager session starts.</dd>
+    <dt>Click on <em>More Details</em>.</dt>
+        <dd>Additional information should appear. <em>You may have to resize the window</em>.</dd>
+    <dt>Click <em>View</em> and select <em>Show root tasks</em>.</dt>
+        <dd>Root tasks should now appear.</dd>
+    <dt>Click <em>View</em> and select <em>Show other tasks</em>.</dt>
+        <dd>Other tasks should now appear (e.g. whoopsie).</dd>
+    <dt>Click <em>View</em> and unselect <em>Show memory used by cache as free</em>.</dt>
+        <dd>Reported memory usage should increase.</dd>
+    <dt>To check the readings against system, launch <em>LxTerminal</em> (Menu -->System Tools  --> LxTerminal) and issue the command <em>top</em>. Please note that <em>top</em> reports in Kib, so there is a factor 1.024 difference between kB and Kib. </dt>
+        <dd>A listing of running processes will appear in the terminal window. <strong> If this does not happen, see the test for LxTerminal to file a bug against it </strong>.</dd>
+    <dt>Click on the title bar <em>Command</em>.</dt>
+        <dd>The sort order should be changed in alpha-numeric sort order on each click.</dd>
+    <dt> Repeat with <em>user</em>, <em>RSS</em>, <em>VMSize</em>, <em>PID</em>, <em>State</em>, <em>Prio</em> and <em>PPID</em>.</dt>
+        <dd>The sort order is changed each time.</dd>
+    <dt> Launch <em>LxTerminal</em> (Menu --> Accessories --> LxTerminal). </dt>
+        <dd> LxTerminal Launches. <strong> If LxTerminal does NOT start, see the test for LxTerminal to file a bug against it</strong>.</dd>
+    <dt>Type in <em>top</em> and press <em>Enter</em>.</dt>
+        <dd>A listing of running processes will appear in the terminal window. <strong> If this does not happen, see the test for LxTerminal to file a bug against it </strong>.</dd>
+    <dt>Click on the title bar <em>Command</em> in order to sort by command name and look through the listing for <em>top</em>, once found right click on it.</dt>
+        <dd>A menu offering options should appear.</dd>
+    <dt>Select <em> Kill</em></dt>
+        <dd>A window will appear asking to confirm.</dd>
+    <dt> Click on <em>Yes</em>.</dt>
+        <dd>Process <strong>top</strong> no longer appears as a running task. (It will also not be seen running in the LxTerminal window).</dd>
+</dl>
+<strong>
+    If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>.
+    Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

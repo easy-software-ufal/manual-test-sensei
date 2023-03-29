@@ -1,0 +1,136 @@
+Test-case alttab/general
+<dl>
+    <dt>Open two different applications, focus application A</dt>
+    <dt>Press alt + tab, keep alt pressed</dt>
+        <dd>You should see an alt tab dialog appearing after few milliseconds, showing icons for "show desktop", application A and application B. The application B icon should be highlighted</dd>
+    <dt>Press tab continually</dt>
+        <dd>The highlight should cycle through the available icons, having the window title displayed below the icon</dd>
+</dl>
+Test-case alttab/switch
+<dl>
+    <dt>Open two different applications, focus application A</dt>
+    <dt>Press alt + tab, hold alt until the window show "application B" icon</dt>
+    <dt>Release alt</dt>
+        <dd>application B should get raised and focused</dd>
+</dl>
+Test-case alttab/switch-minimized
+<dl>
+    <dt>Open two different applications, minimize application B, focus application A</dt>
+    <dt>Press alt + tab, keep alt pressed until application B icon is highlighted</dt>
+    <dt>Release alt</dt>
+        <dd>Application B should get restored, raised and focused</dd>
+</dl>
+Test-case alttab/switch-quick
+<dl>
+    <dt>Open two different applications, focus application A</dt>
+    <dt>Press alt + tab quickly</dt>
+        <dd>The alt-tab window should not appear</dd>
+        <dd>Application B should get raised and focused</dd>
+</dl>
+Test-case alttab/switch-same-window
+<dl>
+    <dt>Open an application (one window only for this application)</dt>
+    <dt>Press alt + tab, hold alt and press tab until highlighting the currently focused application</dt>
+    <dt>Release alt</dt>
+        <dd>Nothing should happen</dd>
+</dl>
+Test-case alttab/windows-tab
+<dl>
+    <dt>Open an application with multiple windows</dt>
+    <dt>Press alt + tab until you highlight this application, hold alt</dt>
+        <dd>After a short delay, all windows in the current workspace for this application should be shown</dd>
+    <dt>Tap tab</dt>
+        <dd>The highlight should go over the next window</dd>
+        <dd>The title of each window should be displayed at the bottom</dd>
+    <dt>Continue tapping tab</dt>
+        <dd>It will then cycle to the next application (and application to application)</dd>
+</dl>
+Test-case alttab/windows-tab-release
+<dl>
+    <dt>Open an application with multiple windows</dt>
+    <dt>Press alt + tab until you highlight this application, hold alt</dt>
+        <dd>After a short delay, all windows in the current workspace for this application should be shown</dd>
+    <dt>Tap tab to highlight the next window</dt>
+    <dt>Release alt</dt>
+        <dd>The selected window should be focused</dd>
+</dl>
+Test-case alttab/windows-tab-down-up
+<dl>
+    <dt>Open an application with multiple windows</dt>
+    <dt>Press alt + tab until you highlight this application, hold alt</dt>
+    <dt>Press the down key</dt>
+        <dd>all windows in the current workspace for this application should be shown</dd>
+    <dt>Tap tab to highlight the next window</dt>
+    <dt>Press the up key</dt>
+        <dd>all intances of the current applications should disappear and you should be back to the initial alt-tab visual representation</dd>
+</dl>
+Test-case alttab/windows-tab-release-minimized
+<dl>
+    <dt>Open an application with multiple windows (some of them should be minimized)</dt>
+    <dt>Press alt + tab until you highlight this application, hold alt</dt>
+        <dd>After a short delay, all windows for this application should be shown (even minimized ones)</dd>
+    <dt>Continue tapping tab to highlight on a minimized window</dt>
+    <dt>Release alt</dt>
+        <dd>The selected window should be restored and focused</dd>
+</dl>
+Test-case alttab/windows-keyabovetab
+<dl>
+    <dt>Open an application with multiple windows, one being focused</dt>
+    <dt>Press alt + key-above-tab, hold alt</dt>
+        <dd>The alt + tab window should be presented, showing the application windows directly</dd>
+    <dt>Continue tapping key-above-tab</dt>
+        <dd>You should cycle only between the windows of this application</dd>
+</dl>
+Test-case alttab/windows-keyabovetab-quick
+<dl>
+    <dt>Open an application with multiple windows, this one being focused</dt>
+    <dt>Press alt + key-above-tab quickly</dt>
+        <dd>The focus should go over the next window from the same application</dd>
+</dl>
+Test-case alttab/windows-focus-sameapp
+<dl>
+    <dt>Open an application with multiple windows, this one being focused</dt>
+    <dt>Focus another window of the same application</dt>
+    <dt>Press alt + tab quickly</dt>
+        <dd>The focus should go over the previous window of the same application</dd>
+</dl>
+Test-case alttab/windows-focus-betweenapps-multiple-one
+<dl>
+    <dt>Start Firefox, create two windows (File > New Window)</dt>
+    <dt>Start GEdit, make sure GEdit window is the active one</dt>
+    <dt>Use alt + tab to switch to Firefox</dt>
+        <dd>The most recently focused Firefox window is raised</dd>
+    <dt>Close the window having the focus</dt>
+        <dd>The focus should go to the GEdit window</dd>
+</dl>
+Test-case alttab/preview-local
+<dl>
+    <dt>Start Firefox on one workspace</dt>
+    <dt>Switch to a different workspace, start GEdit</dt>
+    <dt>Press alt + tab to browse through available applications</dt>
+        <dd>The alt tab dialog should only show applications on the current workspace</dd>
+        <dd>Firefox should not be present</dd>
+        <dd>Most probably only the Desktop and GEdit icons should be visible</dd>
+</dl>
+Test-case alttab/preview-multiplewindows-local
+<dl>
+    <dt>Start Firefox, create two windows (File > New Window)</dt>
+    <dt>Move one Firefox window to a different workspace</dt>
+    <dt>Press alt + tab until you highlight the Firefox application, hold alt</dt>
+        <dd>No window preview should be visible - just a single Firefox icon</dd>
+        <dd>The other Firefox window should not be visible in the alt tab dialog</dd>
+</dl>
+Test-case alttab/preview-global
+<dl>
+    <dt>Start Firefox on one workspace</dt>
+    <dt>Switch to a different workspace, start GEdit</dt>
+    <dt>Press ctrl + alt + tab, keeping ctrl and alt keys pressed</dt>
+        <dd>The alt tab dialog should show all applications running on all workspaces</dd>
+        <dd>The Firefox application icon should also be visible</dd>
+    <dt>While still holding ctrl + alt, tap the tab key until you focus on the Firefox application icon</dt>
+    <dt>Release the ctrl and alt keys</dt>
+        <dd>Unity should switch to the workspace where Firefox is running</dd>
+        <dd>The Firefox window should get focus</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

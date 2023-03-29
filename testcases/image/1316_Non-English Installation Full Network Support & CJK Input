@@ -1,0 +1,107 @@
+The goal of this test case is to check that localization support is functional during the installation, that language packs are downloaded and installed correctly from the Internet and that the input methods for either Chinese, Japanese or Korean are working.
+<!-- Smell: EAGER TEST, CONDITIONAL TEST LOGIC -->
+<dl>
+    <dt>Boot up the image.  When you see the aubergine screen with an icon at the bottom, press any key to get the menu</dt>
+        <dd>Language list will appear</dd>
+    <dt>Use arrow keys to select 中文(简体) (Simplified Chinese), 中文(繁體) (Traditional Chinese), 日本語 (Japanese) or 한국어 (Korean) as language and press Enter</dt>
+        <dd>Language list will close.</dd>
+        <dd>The installer is localized from this screen onwards</dd>
+    <dt>Click on the Install FAMILY button</dt>
+        <dd>
+            <ul>
+                <li>In Simplified Chinese "安装 FAMILY"</li>
+                <li>In Traditional Chinese "安裝 FAMILY"</li>
+                <li>In Japanese "FAMILY をインストール"</li>
+                <li>In Korean "Ubuntu 설치"</li>
+            </ul>
+        </dd>
+	<dt>Check if your keyboard layout is correct or alter and click Continue.</dt>
+        <dd>
+            <ul>
+                <li>In Simplified Chinese "继续"</li>
+                <li>In Traditional Chinese "繼續"</li>
+                <li>In Japanese "続ける"</li>
+                <li>In Korean "계속"</li>
+            </ul>
+        </dd>	
+    <dt>The 'Preparing to install FAMILY' screen is displayed, click on the Continue button</dt>
+        <dd>
+            <ul>
+                <li>In Simplified Chinese "继续"</li>
+                <li>In Traditional Chinese "繼續"</li>
+                <li>In Japanese "続ける"</li>
+                <li>In Korean "계속"</li>
+            </ul>
+        </dd>
+        <dd>The 'Installation type' screen is displayed</dd>
+    <dt>On the 'Installation type' screen, select Erase disk and install Ubuntu, and click Install Now.</dt>
+        <dd>
+            <ul>
+                <li>In Simplified Chinese "清空并使用整个硬盘" (Erase and use the entire disk) and "现在安装(I)" (Install Now)</li>
+                <li>In Traditional Chinese "消除並使用整個磁碟" (Erase and use the entire disk) and "立刻安裝(I)" (Install Now)</li>
+                <li>In Japanese "ディスクを削除してUbuntuをインストール" (Erase and use the entire disk) and "インストール(I)" (Install Now)</li>
+                <li>In Korean "디스크를 지우고 Ubuntu 설치" (Erase and use the entire disk) and "지금 설치(I)" (Install Now)</li>
+            </ul>
+        </dd>
+    <dt>Select your timezone and click Continue.</dt>
+        <dd>
+            <ul>
+                <li>In Simplified Chinese "继续"</li>
+                <li>In Traditional Chinese "繼續"</li>
+                <li>In Japanese "続ける"</li>
+                <li>In Korean "계속"</li>
+            </ul>
+        </dd>
+    <dt>Input your initial user details and password. /!\ Note admin can not be used. It is a dedicated Linux User.</dt>
+    <dt>Tick Log in automatically and click on Continue.</dt>
+        <dd>
+            <ul>
+                <li>In Simplified Chinese "自动登录" (Log in automatically) and "继续"</li>
+                <li>In Traditional Chinese "自動登入" (Log in automatically) and "繼續" (Forward)</li>
+                <li>In Japanese "自動的にログインする" (Log in automatically) and "続ける" (Continue)</li>
+                <li>In Korean "자동으로 로그인" (Log in automatically) and "계속" (Forward)</li>
+            </ul>
+        </dd>
+    <dt>Check that the installer's slides are localized.</dt>
+    <dt>Once the installer has finished click the Restart now button.</dt>
+    <dt>Remove the disc and press Enter.</dt>
+    <dt>Allow the machine to reboot.</dt>
+    <dt>Verify that your system is localized. For any language, the system has to be fully localized. /!\ Note: the translation coverage of some languages might not be complete.</dt>
+    <dt>Verify that the input method works correctly.</dt>
+        <dd>
+            <ul>
+                <li>Simplified Chinese:
+                <ul>
+                    <li>Open dash and type gedit into the search box. Click on the editor (文本编辑器) icon.</li>
+                    <li>Click on the keyboard icon on the top panel area and select SunPinyin as the input method to switch to.</li>
+                    <li>Type renlei in the new gedit document, press Space, and see if it turns out to be 人类</li>
+                </ul>
+                </li>
+                <li>Traditional Chinese:
+                <ul>
+                    <li>Open dash and type gedit into the search box. Click on the editor (文字编辑器) icon.</li>
+                    <li>Click on the keyboard icon on the top panel area and select Chewing (酷音) as the input method to switch to. </li>
+                    <li>Type bp6xo4 in the new gedit document (or if you have a keyboard with Bopomofo, type ㄖㄣˊㄌㄟˋ), press Enter, and see if it turns out to be 人類</li>
+                </ul>
+                </li>
+                <li>Japanese:
+                <ul>
+                    <li>Open dash and type gedit into the search box. Click on the editor (テキストエディター) icon.</li>
+                    <li>Click on the keyboard icon on the notification area, select 日本語 - Anthy as the input method to switch to. </li>
+                    <li>Type nihon in the new gedit document, press Enter and see if it turns out to be にほん</li>
+                    <li>Type nihon again, then press space and see if it turns out to be 日本 or 二本. Keep pressing space to cycle between the presented options, if necessary</li>
+                </ul>
+                </li>
+                <li>Korean:
+                <ul>
+                    <li>Open dash and type gedit into the search box. Click on the editor (텍스트 편집기) icon.</li>
+                    <li>Click on the keyboard icon on the notification area, select Hangul (한국어) as the input method to switch to.</li>
+                    <li>Type gks rmf in the new gedit document and see if it turns out to be 한 글</li>
+                </ul>
+                </li>
+            </ul>
+        </dd>
+    <dt>Check that the calendar shows the regional settings correctly.</dt>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

@@ -1,0 +1,55 @@
+This test will check that applications launch correctly from the menu
+
+<dl>
+    <dt>Select Archive Manager from Accessories menu and click</dt>
+        <dd>Archive Manager opens</dd>
+    <dt>In whiskermenu search box type <em>ter</em></dt>
+        <dd>Terminal Emulator appears in dialogue</dd>
+    <dt>Click Terminal Emulator</dt>
+        <dd>Terminal Emulator opens</dd>
+</dl>
+
+This test will check that Favourites can be added/removed and that Recently Used is populated
+
+<dl>
+    <!-- NON DETERMINISTIC STEP -->
+    <dt>Highlight any application from the menu, right click and <em>Add to Favourites</em></dt>
+    <dt>Select Favourites in menu</dt>
+        <dd>Chosen application appears in Favourites</dd>
+    <dt>In Favourites, right click and <em>Remove From Favourites</em></dt>
+        <dd>Chosen application is removed from favourites</dd>
+    <dt>Select Recently Used</dt>
+        <dd>Recently Used applications appear in menu</dd>
+</dl>
+
+This test will check that applications can be pinned to Desktop and Panel from whiskermenu
+
+<dl>
+    <dt>Select any application, right click and <em>Add to Desktop</em></dt>
+        <dd>Selected application appears on Desktop</dd>
+    <dt>Select any application, right click and <em>Add to Panel</em></dt>
+        <dd>Selected application appears on Panel</dd>
+</dl>
+
+This test will check that Favourites menu can be sorted alphabetically
+
+<dl>
+    <!-- NON DETERMINISTIC STEP -->
+    <dt>Select and add a number of applications from the menu to Favourites</dt>
+        <dd>New applications appear in Favourites menu</dd>
+    <dt>Right click on any application and <em>Sort Alphabetically A-Z</em></dt>
+        <dd>Order of applications is sorted A-Z</dd>
+    <dt>Right click on any application and <em>Sort Alphabetically Z-A</em></dt>
+        <dd>Order of applications is sorted Z-A</dd>
+</dl>
+
+This test will check that Recently Used list can be cleared
+
+<dl>
+    <dt>Select Recently Used menu, right click on any application and <em>Clear Recently Used</em></dt>
+        <dd>Recently Used menu is cleared</dd>
+</dl>
+
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

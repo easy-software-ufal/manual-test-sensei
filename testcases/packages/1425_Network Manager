@@ -1,0 +1,181 @@
+This test will check that Network Manager can establish an ethernet connection
+<dl>
+    <dt> Plug in the cable in ethernet port</dt>
+        <dd>NetworkManager's icon swirls and then changes to "ethernet connection up" icon (2 arrows, 1 pointing up and 1 pointing down by default)</dd>
+    <dt> Wait till notification appears</dt>
+        <dd>Notification on established connection appears</dd>
+    <dt> Click on the applet, select 'Connection Information'</dt>
+        <dd>'Connection Information' dialog appears</dd>
+        <dd>Does the information presented in the dialog make sense in your environment?</dd>
+</dl>
+
+This test will check that Network Manager can establish a WPA/WPA2 encrypted Wi-Fi connection
+<dl>
+    <dt> Please ensure you have a Wi-Fi card with installed drivers, switched on and a WPA/WPA2 encrypted Wi-Fi AP available</dt>
+    <dt> Open the applet and select WPA/WPA2 encrypted network</dt>
+        <dd>NetworkManager's icon swirls. 'Enter password' window appears</dd>
+    <dt> Enter AP password</dt>
+        <dd>NetworkManager's icon changes to "encrypted wireless connection up" icon (4 half-circles with a small lock on the bottom-right corner icon by default)</dd>
+    <dt> Wait till notification appears</dt>
+        <dd>Notification on established connection appears</dd>
+    <dt> Click on the applet, select 'Connection Information'</dt>
+        <dd>'Connection Information' dialog appears</dd>
+        <dd>Does the information presented in the dialog make sense in your environment?</dd>
+</dl>
+
+This test will check that Network Manager can establish a WEP encrypted Wi-Fi connection
+<dl>
+    <dt> Please ensure you have a Wi-Fi card with installed drivers, switched on and a WEP encrypted Wi-Fi AP available</dt>
+    <dt> Open the applet and select WEP encrypted network</dt>
+        <dd>NetworkManager's icon swirls. 'Enter password' window appears</dd>
+    <dt> Enter AP password</dt>
+        <dd>NetworkManager's icon changes to "encrypted wireless connection up" icon (4 half-circles with a small lock on the bottom-right corner icon by default)</dd>
+    <dt> Wait till notification appears</dt>
+        <dd>Notification on established connection appears</dd>
+    <dt> Click on the applet, select 'Connection Information'</dt>
+        <dd>'Connection Information' dialog appears</dd>
+        <dd>Does the information presented in the dialog make sense in your environment?</dd>
+</dl>
+
+This test will check that Network Manager can establish an unencrypted Wi-Fi connection
+<dl>
+    <dt> Please ensure you have a Wi-Fi card with installed drivers, switched on and an unencrypted Wi-Fi AP available</dt>
+    <dt> Open the applet and select an unencrypted network</dt>
+        <dd>NetworkManager's icon swirls and then changes to "unencrypted wireless connection up" icon (4 half-circles icon by default)</dd>
+    <dt> Wait till notification appears</dt>
+        <dd>Notification on established connection appears</dd>
+    <dt> Click on the applet, select 'Connection Information'</dt>
+        <dd>'Connection Information' dialog appears</dd>
+        <dd>Does the information presented in the dialog make sense in your environment?</dd>
+</dl>
+
+This test will check that Network Manager can establish a 3G connection
+<dl>
+    <dt> Please ensure you have a 3G card/dongle with installed drivers, switched on and a good 3G signal from your service provider</dt>
+    <dt> Plug in the 3G dongle</dt>
+        <dd>NetworkManager's icon swirls and then changes to "unencrypted wireless connection up" icon (4 half-circles icon by default)</dd>
+    <dt> Wait till notification appears</dt>
+        <dd>Notification on established connection appears</dd>
+    <dt> Click on the applet, select 'Connection Information'</dt>
+        <dd>'Connection Information' dialog appears</dd>
+        <dd>Does the information presented in the dialog make sense in your environment?</dd>
+</dl>
+
+This test will check that Network Manager can establish a connection to Cisco VPN
+<dl>
+    <dt> Please ensure you have a Cisco VPN to connect to.</dt>
+    <dt> Install the network-manager-vpnc package, make sure both network-manager-vpnc and network-manager-vpnc-gnome get installed.</dt>
+    <dt> Right-click on the NetworkManager icon</dt>
+    <dt> Click Edit Connections...</dt>
+    <dt> Click the VPN tab.</dt>
+    <dt> Click Add, then select the correct type of VPNplugin.</dt>
+    <dt> Create settings for your VPN connection</dt>
+    <dt> When done, close the connection manager window.</dt>
+    <dt> Click on the NetworkManager icon</dt>
+    <dt> Click on your VPN profile under "VPN Connections"</dt>
+    <dt> Enter credentials if prompted.</dt>
+        <dd>The NetworkManager icon will "swirl", then you should see a small lock at the bottom right corner of the normal connection icon (half-circles or arrows).</dd>
+        <dd>Are you now able to access resources restricted to your VPN?</dd>
+</dl>
+
+This test will check that Network Manager can export and import Cisco VPN connections
+<dl>
+    <dt> Please ensure you have a Cisco VPN to connect to.</dt>
+    <dt> Right-click on the NetworkManager icon</dt>
+    <dt> Click Edit Connections...</dt>
+    <dt> Click the VPN tab.</dt>
+    <dt> Select a VPN profile and click Export.</dt>
+    <dt> Verify that you can properly export a profile to a file on your hard drive.</dt>
+    <dt> Click Import.</dt>
+        <dd>Does the profile import properly?</dd>
+</dl>
+
+This test will check that Network Manager can establish a connection to OpenVPN
+<dl>
+    <dt> Please ensure you have an OpenVPN server to connect to.</dt>
+    <dt> Install the network-manager-openvpn package, make sure both network-manager-openvpn and network-manager-openvpn-gnome get installed.</dt>
+    <dt> Right-click on the NetworkManager icon</dt>
+    <dt> Click Edit Connections...</dt>
+    <dt> Click the VPN tab.</dt>
+    <dt> Click Add, then select the correct type of VPNplugin.</dt>
+    <dt> Create settings for your VPN connection</dt>
+    <dt> When done, close the connection manager window.</dt>
+    <dt> Click on the NetworkManager icon</dt>
+    <dt> Click on your VPN profile under "VPN Connections"</dt>
+    <dt> Enter credentials if prompted.</dt>
+        <dd>The NetworkManager icon will "swirl", then you should see a small lock at the bottom right corner of the normal connection icon (half-circles or arrows).</dd>
+        <dd>Are you able to access the resources provided by your VPN?</dd>
+</dl>
+
+This test will check that Network Manager can export and import OpenVPN connections
+<dl>
+    <dt> Please ensure you have an OpenVPN server to connect to.</dt>
+    <dt> Right-click on the NetworkManager icon</dt>
+    <dt> Click Edit Connections...</dt>
+    <dt> Click the VPN tab.</dt>
+    <dt> Select a VPN profile and click Export.</dt>
+    <dt> Verify that you can properly export a profile to a file on your hard drive.</dt>
+    <dt> Click Import.</dt>
+        <dd>Does the profile import properly?</dd>
+</dl>
+
+This test will check that Network Manager can establish a connection to PPTP VPN
+<dl>
+    <dt> Please ensure you have a PPTP VPN gateway to connect to.</dt>
+    <dt> Install the network-manager-pptp package, make sure both network-manager-pptp and network-manager-pptp-gnome get installed.</dt>
+    <dt> Right-click on the NetworkManager icon</dt>
+    <dt> Click Edit Connections...</dt>
+    <dt> Click the VPN tab.</dt>
+    <dt> Click Add, then select the correct type of VPNplugin.</dt>
+    <dt> Create settings for your VPN connection</dt>
+    <dt> When done, close the connection manager window.</dt>
+    <dt> Click on the NetworkManager icon</dt>
+    <dt> Click on your VPN profile under "VPN Connections"</dt>
+    <dt> Enter credentials if prompted.</dt>
+        <dd>The NetworkManager icon will "swirl", then you should see a small lock at the bottom right corner of the normal connection icon (half-circles or arrows).</dd>
+        <dd>Are you able to access the resources provided by your VPN?</dd>
+</dl>
+
+This test will check that Network Manager can export and import PPTP connections
+<dl>
+    <dt> Please ensure you have a PPTP VPN gateway to connect to.</dt>
+    <dt> Right-click on the NetworkManager icon</dt>
+    <dt> Click Edit Connections...</dt>
+    <dt> Click the VPN tab.</dt>
+    <dt> Select a VPN profile and click Export.</dt>
+    <dt> Verify that you can properly export a profile to a file on your hard drive.</dt>
+    <dt> Click Import.</dt>
+        <dd>Does the profile import properly?</dd>
+</dl>
+
+This test will check that Network Manager can establish a connection to OpenConnect VPN
+<dl>
+    <dt> Please ensure you have a Cisco AnyConnect VPN gateway to connect to.</dt>
+    <dt> Install the network-manager-openconnect package, make sure both network-manager-openconnect and network-manager-openconnect-gnome get installed.</dt>
+    <dt> Right-click on the NetworkManager icon</dt>
+    <dt> Click Edit Connections...</dt>
+    <dt> Click the VPN tab.</dt>
+    <dt> Click Add, then select the correct type of VPNplugin.</dt>
+    <dt> Create settings for your VPN connection</dt>
+    <dt> When done, close the connection manager window.</dt>
+    <dt> Click on the NetworkManager icon</dt>
+    <dt> Click on your VPN profile under "VPN Connections"</dt>
+    <dt> Enter credentials if prompted.</dt>
+        <dd>The NetworkManager icon will "swirl", then you should see a small lock at the bottom right corner of the normal connection icon (half-circles or arrows).</dd>
+        <dd>Are you able to access the resources provided by your VPN?</dd>
+</dl>
+
+This test will check that Network Manager can export and import OpenConnect VPN connections
+<dl>
+    <dt> Please ensure you have a Cisco AnyConnect VPN gateway to connect to.</dt>
+    <dt> Right-click on the NetworkManager icon</dt>
+    <dt> Click Edit Connections</dt>
+    <dt> Click the VPN tab.</dt>
+    <dt> Select a VPN profile and click Export</dt>
+    <dt> Verify that you can properly export a profile to a file on your hard drive.</dt>
+    <dt> Click Import.</dt>
+        <dd>Does the profile import properly?</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

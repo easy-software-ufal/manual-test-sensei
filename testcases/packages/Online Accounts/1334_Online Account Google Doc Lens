@@ -1,0 +1,31 @@
+These tests check that the Google Docs Lens works.
+<dl>
+    <dt>Open the Dash</dt>
+        <dd>Dash must show the Google Docs search icon at the bottom</dd>
+    <dt>Open System Settings</dt>
+        <dd>System Settings will open</dd>
+    <dt>Open Online Accounts</dt>
+        <dd>Online Accounts will be displayed</dd>
+    <dt>Remove all accounts</dt>
+    <dt>Create a Google account
+        <ul>
+            <dt>Introduce the credentials (username and password)</dt>
+            <dt>Accept permissions</dt>
+            <dt>When asked, introduce the password of your ubuntu user to access the keyring</dt>
+        </ul>
+    </dt>
+    <dt>Wait a minute</dt>
+    <dt>Open the Dash</dt>
+    <dt>Go to Google Docs search (click on the icon, at the bottom)</dt>
+    <dt>Search the title of an existing document</dt>
+        <dd>Dash must show the document in the results</dd>
+    <dt>Open the Dash</dt>
+        <dd>The dash will open correctly</dd>
+    <dt>Go to Google Docs search (click on the icon, at the bottom)</dt>
+    <dt>Click on “Filters”</dt>
+        <dd>"Filters" dialog will be displayed</dd>
+    <dt>Click on the different filters (text documents, spreadsheets, drawings, PDF files)</dt>
+        <dd>Dash must filter the latest documents correctly</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

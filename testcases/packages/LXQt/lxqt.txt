@@ -1,0 +1,4 @@
+1677_lxqt-runner
+1680_lxqt-panel
+1683_qterminal
+lxqt.txt

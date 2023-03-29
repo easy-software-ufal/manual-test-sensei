@@ -1,0 +1,30 @@
+<strong>Test Automatic Connectivity</strong>
+
+Case ID: hcn-001
+
+Using Unity
+<!-- Smells: UNVERIFIED STEPS -->
+<dl>
+    <dt>Ensure that Network Manager is running and that no networks are currently connected</dt>
+    <dt>Open Terminal</dt>
+    <dt>Connect the network adapter to a network with a DHCP server. (However you connect to your wired network)</dt>
+    <dt>After approximately 30 seconds, run <code>ifconfig</code> in the terminal. Note the interface name (e.g. "eth0")</dt>
+        <dd>The cabled device is present and has recieved an IP address</dd>
+    <dt>Run <code>route -n</code> . Note the IP address in the Gateway column. (not "0.0.0.0")</dt>
+    <dt>Run <code>ping -c 5 [gateway]</code> where [gateway] is the IP address of the Gateway, above</dt> 
+        <dd>The command reports "5 packets transmitted, 5 packets received"</dd>
+
+<strong>Verify Manual Connectivity</strong>
+
+Case ID: hcn-003
+<!-- Smells: UNVERIFIED STEPS -->
+<dl>
+    <dt>Open Terminal</dt>
+    <dt>Run <code>sudo ifconfig [interface] [staticIP]</code> where [interface] is the interface name (e.g. eth0) and [staticIP] is a valid unused IP address on the current network. (If you are on a home network try using the previously used IP address, (still listed on the terminal) (Consult your network administrator if you do not know such an address)</dt>
+    <dt>Run <code>ifconfig</code>. Verify that the network device is again listed (e.g. eth0) and has the IP address listed([staticIP]) as given above.</dt>
+    <dt>Run <code>ping -c 5 [gateway]</code> where [gateway] is the IP address of the Gateway, above</dt> 
+        <dd>The command reports "5 packets transmitted, 5 packets received".\</dd>
+
+<strong>
+    If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

@@ -1,0 +1,19 @@
+This testcase is intended to check to ensure your settings migrate properly to the new control center. Please DON'T install from the ppa until you have completed the initial steps of verifying and changing settings.
+<dl>
+    <dt>Open the dash and launch 'appearance'</dt>
+        <dd>Appearance applet launches</dd>
+    <dt>Click the behaviour tab and change the settings to a non-default setting (remember the setting chosen!)</dt>
+        <dd>Settings update successfully</dd>
+    <dt>Open the dash and launch 'keyboard'</dt>
+        <dd>Keyboard applet launches</dd>
+    <dt>Click the shortcuts tab and change some shortcuts to non-default settings (remember the settings chosen!) </dt>
+        <dd>Settings update successfully</dd>
+    <dt>Follow the <a href="../../downloads">installation instructions</a> to install the new packages from the ppa</dt>
+        <dd>Packages update properly</dd>
+    <dt>Restart your sessions (log out and login again)</dt>
+        <dd>Session restarts properly</dd>
+    <dt>Open the keyboard and appearance applets</dt>
+        <dd>All settings chosen above are remembered</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

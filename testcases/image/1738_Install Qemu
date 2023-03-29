@@ -1,0 +1,22 @@
+The scope of this test is to ensure that riscv64+unleashed and riscv64+unmatched images boot in qemu.
+
+<dl>
+    <dt>Boot with qemu</dt>
+        <dd>Follow instructions from <a href="https://wiki.ubuntu.com/RISC-V">wiki</a> on how to boot with QEMU</dd>
+    <dt>Login and change password</dt>
+        <dd>Login using ubuntu for both username and password</dd>
+	<dd>Reenter ubuntu password again</dd>
+	<dd>Set new password</dd>
+	<dd>Confirm the new password</dd>
+    <dt>Perform generic testing</dt>
+        <dd>Check that apt update works</dd>
+	<dd>Run any command that is not installed, check that command-not-found recommends things to install</dd>
+	<dd>I.e. hello</dd>
+	<dd>Install a package and check that it works, i.e. hello</dd>
+    <dt>Poweroff</dt>
+        <dd>Console messages should reach poweroff target</dd>
+	<dd>There should be final kernel dmsg powering off</dd>
+	<dd>Press "CTRL+a c" and type quit</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

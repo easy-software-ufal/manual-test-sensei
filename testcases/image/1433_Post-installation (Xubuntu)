@@ -1,0 +1,25 @@
+<dl>
+    <dt>Log in with the Xubuntu session</dt>
+        <dd>The screen resolution is as expected</dd>
+    <dt>Open Ubuntu Software Center and install applications you would like to use</dt>
+        <dd>The applications are installed correctly and appear in the applications menu</dd>
+    <dt>If you have a USB drive, plug it in</dt>
+        <dd>The USB drive is mounted and you can open files from it</dd>
+    <dt>If you have a DVD or an audio CD, insert it</dt>
+        <dd>The disk is mounted and you can open and/or play files/tracks from it</dd>
+    <dt>Log out, shutdown or restart</dt>
+        <dd>The session is terminated properly</dd>
+    <dt>Open a text editor and write some text</dt>
+        <dd>The keyboard layout is as expected</dd>
+    <dt>If you set up networking and are physically connected to the Internet, open Firefox and load xubuntu.org</dt>
+        <dd>Confirm that the page loads</dd>
+</dl>
+<strong>Panel icons</strong>
+<dl>
+    <dt>Move the mouse to the very bottom of the screen</dt>
+        <dd>The launcher panel pops up</dd>
+    <dt>Click the Application Finder icon and run any application from it</dt>
+        <dd>Application Finder opens and the application opens as expected</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

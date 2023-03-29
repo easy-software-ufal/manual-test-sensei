@@ -1,0 +1,35 @@
+These tests check that Flickr and Facebook integration with Shotwell works.
+<dl>
+    <dt>Open Shotwell</dt>
+        <dd>Shotwell opens properly and images are displayed</dd>
+    <dt>Select an image</dt>
+        <dd>Image will be selected</dd>
+    <dt>Go to "File>"Publish..."</dt>
+        <dd>Facebook must be available in the menu "Publish photos to"</dd>
+    <dt>Open Shotwell</dt>
+        <dd>Shotwell opens properly and images are displayed</dd>
+    <dt>Select an image</dt>
+        <dd>Image will be selected</dd>
+    <dt>Go to "File>"Publish..."</dt>
+        <dd>Facebook must be available in the menu "Publish photos to"</dd>
+    <dt>Select “Publish photos to Facebook”</dt>
+        <dd>Login dialog will be displayed</dd>
+    <dt>Click to "Login" into Facebook</dt>
+        <dd>Publish photos dialog will be displayed</dd>
+    <dt>Click on "Publish"</dt>
+        <dd>The photo must be published in Facebook</dd>
+    <dt>Open Shotwell</dt>
+        <dd>Shotwell opens properly and images are displayed</dd>
+    <dt>Select an image</dt>
+        <dd>Image will be selected</dd>
+    <dt>Go to "File>"Publish..."</dt>
+        <dd>File Menu dialog will be displayed</dd>
+    <dt>Select “Publish photos to Flickr”</dt>
+        <dd>Login dialog will be displayed</dd>
+    <dt>Click to "Login" into Flickr</dt>
+        <dd>Publish photos dialog will be displayed</dd>
+    <dt>Click on "Publish"</dt>
+        <dd>The photo must be published in Flickr</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

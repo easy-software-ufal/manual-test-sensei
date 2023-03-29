@@ -1,0 +1,23 @@
+This test will check if RecordMyDesktop starts from the FAMILY menu	
+<dl>  
+    <dt>Open RecordMyDekstop from Video Production sub menu</dt>
+        <dd>RecordMyDesktop opens properly from FAMILY menu</dd>
+</dl>
+This test will check if the screen selection works properly
+<dl>   
+    <dt>Drag the red marker from one corner of the screen inside the program to the opposite corner</dt>
+        <dd>Screen selection works OK.</dd>
+</dl>
+This test will check if Recording button works
+<dl> 
+    <dt>Press the Record button</dt>
+	<dd>Recording starts properly</dd>
+</dl>
+This test will check if RecordMyDesktop saves a file to .ogv file format
+<dl> 
+    <dt>Select "Save As" from the main program screen</dt>
+	<dd>File saved in .ogv format correctly</dd>
+</dl>    
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

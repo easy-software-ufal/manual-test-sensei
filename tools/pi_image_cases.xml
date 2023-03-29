@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!--
+Hopefully the layout of this file should be fairly self-explanatory,
+so you may just wish to read the content to get a feel for it, but to
+avoid any ambiguity, here's the long explanation in case it isn't:
+
+The namespace used for all the custom tags is "com.ubuntu.tests" which
+is aliased to the "ut:" shortname at the top, so wherever you see a tag
+with a "ut:" prefix, it's part of the configuration. All unprefixed tags
+are HTML to include in the output.
+
++ The outermost element must be "ut:configuration"
+|
+|-+ Directly under "ut:configuration" there must be one, and only one,
+|   "ut:template" element. This contains the HTML used for all generated
+|   test cases. Within the HTML you must include a *single* "ut:tests"
+|   element which indicates the place within the template to include
+|   the various tests for a given case.
+|
+|-+ Directly under "ut:configuration", there must be one or more
+| | "ut:test" elements. These define the individual tests to be carried
+| | out by testers. Each "ut:test" element must have an "id" attribute
+| | which uniquely identifies it; the identifier is any arbitrary string
+| | and is not directly used in the output.
+| |
+| |-+ Each "ut:test" element must contain a single "ut:action" element,
+| |   which contains the HTML describing the test to carry out
+| |   (e.g. "click this button and fill out a form")
+| |
+| \-+ Each "ut:test" element must also contain a single "ut:expected"
+|     element, which contains the HTML describing the expected outcome
+|     of the test (e.g. "a sheet of paper is printed").
+|
+\-+ Directly under "ut:configuration", there must be one or more "ut:case"
+  | elements. Each of these defines a single test-case file to be written
+  | to the output directory. Each "ut:case" element must have an "id"
+  | attribute which uniquely identifies it; the identifier will be used
+  | as the output filename for that case.
+  |
+  |-+ Each "ut:case" element must contain one or more "ut:include"
+  |   elements. Each "ut:include" element must have a "ref" attribute
+  |   naming the "id" attribute of the "ut:test" element to include
+  |   in that case. Each test will be included in the output in the
+  |   order specified.
+  |
+  \-+ Each "ut:case" element may contain zero or more "ut:define"
+      elements. Each "ut:define" element must have a "name" attribute. The
+      content of the "ut:define" element is HTML that will be substituted
+      wherever a "ut:var" element (see below) exists with a matching
+      "name" attribute. The name is an arbitrary string and is not otherwise
+      used in the output.
+
+As the last item above hints, within any section of HTML you may include
+a "ut:var" element. The (mandatory) "name" attribute names the variable
+to substitute in that position. Variables are created with "ut:define"
+elements which may exist directly under "ut:configuration" (in which
+case they apply universally), within a "ut:case" element (in which case
+they apply to all tests included in that case), or within a "ut:include"
+element (in which case they apply to just that included test).
+
+If a variable with the same name is defined in multiple contexts,
+e.g. within a "ut:case" and a "ut:include" within that case, the "inner"
+definition overrides the outer.
+-->
+
+<ut:configuration xmlns:ut="com.ubuntu.tests">
+  <ut:template>
+    <p>This test case is to be carried out on a <ut:var name="model" />.</p>
+    <p>Follow the installation steps at <a
+      href="https://ubuntu.com/download/iot/installation-media">
+      IoT installation media</a>
+    </p>
+    <ut:var name="post-install" />
+    <dl>
+      <ut:tests />
+    </dl>
+    <p>If <strong>all</strong> actions produce the expected results listed,
+      please <a href="results#add_result">submit</a> a 'passed' result.</p>
+    <p>If <strong>any</strong> action fails, or produces an unexpected result,
+      please <a href="results#add_result">submit</a> a 'failed' result and <a
+      href="../../buginstructions">file a bug</a>. Please be sure to include
+      the bug number when you <a href="results#add_result">submit</a> your
+      result.</p>
+  </ut:template>
+
+  <ut:define name="post-install"></ut:define>
+
+  <ut:test id="uboot-video">
+    <ut:action>
+      Immediately after the "rainbow" splash screen, U-Boot starts. Press a key
+      to interrupt the sequence, then type "boot" to continue it.
+    </ut:action>
+    <ut:expected>
+      Check that the U-Boot prompt (including a two-second wait) appears on
+      the primary monitor connected to the Pi, that the keyboard will interrupt
+      the sequence, and that boot successfully concludes after resumption.
+    </ut:expected>
+  </ut:test>
+
+  <ut:test id="uboot-serial">
+    <ut:action>
+      During the boot sequence, U-Boot starts interacting via serial (GPIO14
+      and GPIO15, pins 8 and 10 respectively, on the 40-pin GPIO header). Press
+      a key to interrupt the sequence, then type "boot" to continue it.
+    </ut:action>
+    <ut:expected>
+      Check that the U-Boot prompt (including a two-second wait) appears on
+      the attached serial console, that the keyboard will interrupt
+      the sequence, and that boot successfully concludes after resumption.
+    </ut:expected>
+  </ut:test>
+
+  <ut:test id="flash-kernel">
+    <ut:action>
+      Run <code>sudo flash-kernel</code>
+    </ut:action>
+    <ut:expected>
+      Exit code is clean (0) and no error messages are reported
+    </ut:expected>
+  </ut:test>
+
+  <ut:test id="reboot">
+    <ut:action>
+      Run <code>sudo reboot</code>
+    </ut:action>
+    <ut:expected>
+      System reboots successfully to a login prompt
+    </ut:expected>
+  </ut:test>
+
+  <ut:test id="shutdown">
+    <ut:action>
+      Run <code>sudo shutdown -h now</code>
+    </ut:action>
+    <ut:expected>
+      System shuts down in a reasonable time (less than a minute)
+    </ut:expected>
+  </ut:test>
+
+  <ut:test id="usb-file-transfer">
+    <ut:action>
+      Perform a large (300-600MB) file copy to USB storage
+      <ul>
+        <li>Generate a large (500MB) file: <code>dd if=/dev/urandom of=rubbish
+          bs=1M count=500</code></li>
+        <li>Insert a USB stick (appropriately sized) into a spare USB port</li>
+        <li>Make a mount directory: <code>sudo mkdir /mnt/stick</code></li>
+        <li>Mount the stick: <code>sudo mount /dev/sda1 /mnt/stick</code>
+          (modify mount-point as necessary; check <code>sudo dmesg</code>
+          output if unsure)</li>
+        <li>Copy the file: <code>sudo cp rubbish /mnt/stick/</code></li>
+        <li>Unmount the stick: <code>sudo umount /mnt/stick</code></li>
+        <li>Remove the stick from the USB port</li>
+        <li>Re-insert the stick into the USB port</li>
+        <li>Re-mount the stick: <code>sudo mount /dev/sda1 /mnt/stick</code>
+          (again, adjust mount-point as necessary)</li>
+        <li>Compare the copied file to that on the stick: <code>cmp rubbish
+          /mnt/stick/rubbish</code></li>
+      </ul>
+    </ut:action>
+    <ut:expected>
+      <code>cmp</code> returns 0 and outputs nothing indicating the files are
+      identical
+    </ut:expected>
+  </ut:test>
+
+  <ut:test id="usb-keyboard">
+    <ut:action>
+      Connect a USB keyboard to one of the <ut:var name="usb" /> ports
+    </ut:action>
+    <ut:expected>
+      Verify that keys typed on the keyboard appear on the console
+    </ut:expected>
+  </ut:test>
+
+  <ut:test id="ram-free">
+    <ut:action>
+      Check output of <code>free -h</code>
+    </ut:action>
+    <ut:expected>
+      Reported &quot;Mem&quot; under &quot;total&quot; is consistent with a
+      <ut:var name="model" />. It should be in the region of <ut:var name="mem"
+      />.
+    </ut:expected>
+  </ut:test>
+
+  <ut:test id="dual-monitor">
+    <ut:action>
+      Boot with a monitor attached to both HDMI ports
+    </ut:action>
+    <ut:expected>
+      Verify that you see output on both monitors
+    </ut:expected>
+  </ut:test>
+
+  <ut:test id="ethernet">
+    <ut:action>
+      Check auto-configuration of ethernet
+      <ul>
+        <li>Run <code>ip addr</code></li>
+        <li>Check that a valid IP address is recorded on the <ut:var
+           name="intf" /> interface</li>
+        <li>Check <code>ping google.com</code> successfully pings a few times
+          (<tt>Ctrl+C</tt> to cancel)</li>
+      </ul>
+    </ut:action>
+    <ut:expected>
+      The &quot;<ut:var name="intf" />&quot; interface should have a DHCP
+      assigned IP address and you should be able to ping google.com
+    </ut:expected>
+  </ut:test>
+
+  <ut:test id="wifi">
+    <ut:action>
+      Configure wifi via netplan
+      <ul>
+        <li>Place the following in <code>/etc/netplan/wifi.yaml</code>
+        (substituting the SSID and password as necessary):</li>
+        <li><pre>
+      network:
+        version: 2
+          wifis:
+            <ut:var name="intf" />:
+              dhcp4: true
+              access-points:
+                my-ssid-here:
+                  password: my-password-here</pre>
+        </li>
+        <li>Run <code>sudo netplan apply</code></li>
+        <li>Wait a few seconds (to allow DHCP to complete), then run <code>ip
+          addr</code></li>
+        <li>Check that a valid IP address is recorded on the <ut:var
+          name="intf" /> interface</li>
+        <li>Check <code>ping google.com</code> successfully pings a few times
+          (<tt>Ctrl+C</tt> to cancel)</li>
+      </ul>
+    </ut:action>
+    <ut:expected>
+      The &quot;<ut:var name="intf" />&quot; interface should have a DHCP
+      assigned IP address and you should be able to ping google.com
+    </ut:expected>
+  </ut:test>
+
+  <ut:test id="audio">
+    <ut:action>
+      With <ut:var name="device" />, and an available MP3 file:
+      <ul>
+        <li>Install mpg321 and amixer with <code>sudo apt install mpg321
+          alsa-utils</code></li>
+        <li>Find the correct hardware output for the <ut:var name="output" />:
+          <code>cat /proc/asound/cards</code> and note the number at the start
+          of the line for the <ut:var name="output" /> (usually 0 and possibly
+          1 for any connected monitor(s), and 1 or possibly 2 for the headphone
+          jack)</li>
+        <li>Attempt to play your MP3 file with: <code>mpg321 -o alsa -a
+          hw:<em>num</em>,0 <em>music.mp3</em></code> substituting
+          <em>num</em> for the number found during the previous step, and
+          <em>music.mp3</em> for your choice of MP3 file, e.g. <code>mpg321 -o
+          alsa -a hw:0,0 &quot;Jeff Wayne - War of the
+          Worlds.mp3&quot;</code></li>
+        <li>Use <tt>Ctrl+C</tt> to end playback early, if you wish</li>
+        <li>If you cannot hear anything, first check that the mixer's volume is
+          not set too low; run <code>alsamixer</code>, and adjust the volume
+          (<tt>J</tt> for down, <tt>K</tt> for up) before exiting
+          (<tt>Esc</tt>) and retrying playback</li>
+      </ul>
+    </ut:action>
+    <ut:expected>Audio can be heard through the device</ut:expected>
+  </ut:test>
+
+  <ut:case id="1711_RaspberryPi 4 2GB Post-install">
+    <ut:define name="model">Raspberry Pi 4 2GB</ut:define>
+    <ut:include ref="uboot-video" />
+    <ut:include ref="uboot-serial" />
+    <ut:include ref="flash-kernel" />
+    <ut:include ref="reboot" />
+    <ut:include ref="shutdown" />
+    <ut:include ref="ram-free"><ut:define name="mem">1.6-1.8GB</ut:define></ut:include>
+    <ut:include ref="usb-file-transfer" />
+    <ut:include ref="usb-keyboard"><ut:define name="usb">USB2 (black)</ut:define></ut:include>
+    <ut:include ref="usb-keyboard"><ut:define name="usb">USB3 (blue)</ut:define></ut:include>
+    <ut:include ref="audio">
+      <ut:define name="device">an HDMI monitor that supports audio plugged into
+      the HDMI0 output</ut:define>
+      <ut:define name="output">HDMI0 port</ut:define>
+    </ut:include>
+    <ut:include ref="audio">
+      <ut:define name="device">an HDMI monitor that supports audio plugged into
+      the HDMI1 output</ut:define>
+      <ut:define name="output">HDMI1 port</ut:define>
+    </ut:include>
+    <ut:include ref="audio">
+      <ut:define name="device">a pair of headphones with a 3.5mm jack</ut:define>
+      <ut:define name="output">headphone jack</ut:define>
+    </ut:include>
+    <ut:include ref="ethernet"><ut:define name="intf">eth0</ut:define></ut:include>
+    <ut:include ref="wifi"><ut:define name="intf">wlan0</ut:define></ut:include>
+  </ut:case>
+
+  <ut:case id="1719_RaspberryPi 4 4GB Post-install">
+    <ut:define name="model">Raspberry Pi 4 4GB</ut:define>
+    <ut:include ref="uboot-video" />
+    <ut:include ref="uboot-serial" />
+    <ut:include ref="flash-kernel" />
+    <ut:include ref="reboot" />
+    <ut:include ref="shutdown" />
+    <ut:include ref="ram-free"><ut:define name="mem">3.6-3.8GB</ut:define></ut:include>
+    <ut:include ref="usb-file-transfer" />
+    <ut:include ref="usb-keyboard"><ut:define name="usb">USB2 (black)</ut:define></ut:include>
+    <ut:include ref="usb-keyboard"><ut:define name="usb">USB3 (blue)</ut:define></ut:include>
+    <ut:include ref="audio">
+      <ut:define name="device">an HDMI monitor that supports audio plugged into
+      the HDMI0 output</ut:define>
+      <ut:define name="output">HDMI0 port</ut:define>
+    </ut:include>
+    <ut:include ref="audio">
+      <ut:define name="device">an HDMI monitor that supports audio plugged into
+      the HDMI1 output</ut:define>
+      <ut:define name="output">HDMI1 port</ut:define>
+    </ut:include>
+    <ut:include ref="audio">
+      <ut:define name="device">a pair of headphones with a 3.5mm jack</ut:define>
+      <ut:define name="output">headphone jack</ut:define>
+    </ut:include>
+    <ut:include ref="ethernet"><ut:define name="intf">eth0</ut:define></ut:include>
+    <ut:include ref="wifi"><ut:define name="intf">wlan0</ut:define></ut:include>
+  </ut:case>
+
+  <ut:case id="1720_RaspberryPi 4 8GB Post-install">
+    <ut:define name="model">Raspberry Pi 4 8GB</ut:define>
+    <ut:include ref="uboot-video" />
+    <ut:include ref="uboot-serial" />
+    <ut:include ref="flash-kernel" />
+    <ut:include ref="reboot" />
+    <ut:include ref="shutdown" />
+    <ut:include ref="ram-free"><ut:define name="mem">7.6-7.8GB</ut:define></ut:include>
+    <ut:include ref="usb-file-transfer" />
+    <ut:include ref="usb-keyboard"><ut:define name="usb">USB2 (black)</ut:define></ut:include>
+    <ut:include ref="usb-keyboard"><ut:define name="usb">USB3 (blue)</ut:define></ut:include>
+    <ut:include ref="audio">
+      <ut:define name="device">an HDMI monitor that supports audio plugged into
+      the HDMI0 output</ut:define>
+      <ut:define name="output">HDMI0 port</ut:define>
+    </ut:include>
+    <ut:include ref="audio">
+      <ut:define name="device">an HDMI monitor that supports audio plugged into
+      the HDMI1 output</ut:define>
+      <ut:define name="output">HDMI1 port</ut:define>
+    </ut:include>
+    <ut:include ref="audio">
+      <ut:define name="device">a pair of headphones with a 3.5mm jack</ut:define>
+      <ut:define name="output">headphone jack</ut:define>
+    </ut:include>
+    <ut:include ref="ethernet"><ut:define name="intf">eth0</ut:define></ut:include>
+    <ut:include ref="wifi"><ut:define name="intf">wlan0</ut:define></ut:include>
+  </ut:case>
+
+  <ut:case id="1721_RaspberryPi 3B+ Post-install">
+    <ut:define name="model">Raspberry Pi 3B+</ut:define>
+    <ut:include ref="uboot-video" />
+    <ut:include ref="uboot-serial" />
+    <ut:include ref="flash-kernel" />
+    <ut:include ref="reboot" />
+    <ut:include ref="shutdown" />
+    <ut:include ref="ram-free"><ut:define name="mem">800-1000MB</ut:define></ut:include>
+    <ut:include ref="usb-file-transfer" />
+    <ut:include ref="usb-keyboard"><ut:define name="usb">USB2</ut:define></ut:include>
+    <ut:include ref="audio">
+      <ut:define name="device">an HDMI monitor that supports audio</ut:define>
+      <ut:define name="output">HDMI port</ut:define>
+    </ut:include>
+    <ut:include ref="audio">
+      <ut:define name="device">a pair of headphones with a 3.5mm jack</ut:define>
+      <ut:define name="output">headphone jack</ut:define>
+    </ut:include>
+    <ut:include ref="ethernet"><ut:define name="intf">eth0</ut:define></ut:include>
+    <ut:include ref="wifi"><ut:define name="intf">wlan0</ut:define></ut:include>
+  </ut:case>
+
+  <ut:case id="1722_RaspberryPi 3B Post-install">
+    <ut:define name="model">Raspberry Pi 3B</ut:define>
+    <ut:include ref="uboot-video" />
+    <ut:include ref="uboot-serial" />
+    <ut:include ref="flash-kernel" />
+    <ut:include ref="reboot" />
+    <ut:include ref="shutdown" />
+    <ut:include ref="ram-free"><ut:define name="mem">800-1000MB</ut:define></ut:include>
+    <ut:include ref="usb-file-transfer" />
+    <ut:include ref="usb-keyboard"><ut:define name="usb">USB2</ut:define></ut:include>
+    <ut:include ref="audio">
+      <ut:define name="device">an HDMI monitor that supports audio</ut:define>
+      <ut:define name="output">HDMI port</ut:define>
+    </ut:include>
+    <ut:include ref="audio">
+      <ut:define name="device">a pair of headphones with a 3.5mm jack</ut:define>
+      <ut:define name="output">headphone jack</ut:define>
+    </ut:include>
+    <ut:include ref="ethernet"><ut:define name="intf">eth0</ut:define></ut:include>
+    <ut:include ref="wifi"><ut:define name="intf">wlan0</ut:define></ut:include>
+  </ut:case>
+
+  <ut:case id="1723_RaspberryPi 3A+ Post-install">
+    <ut:define name="model">Raspberry Pi 3A+</ut:define>
+    <ut:include ref="uboot-video" />
+    <ut:include ref="uboot-serial" />
+    <ut:include ref="flash-kernel" />
+    <ut:include ref="reboot" />
+    <ut:include ref="shutdown" />
+    <ut:include ref="ram-free"><ut:define name="mem">300-500MB</ut:define></ut:include>
+    <ut:include ref="usb-file-transfer" />
+    <ut:include ref="usb-keyboard"><ut:define name="usb">USB2</ut:define></ut:include>
+    <ut:include ref="audio">
+      <ut:define name="device">an HDMI monitor that supports audio</ut:define>
+      <ut:define name="output">HDMI port</ut:define>
+    </ut:include>
+    <ut:include ref="audio">
+      <ut:define name="device">a pair of headphones with a 3.5mm jack</ut:define>
+      <ut:define name="output">headphone jack</ut:define>
+    </ut:include>
+    <ut:include ref="wifi"><ut:define name="intf">wlan0</ut:define></ut:include>
+  </ut:case>
+
+  <ut:case id="1724_RaspberryPi 2 Post-install">
+    <ut:define name="model">Raspberry Pi 2</ut:define>
+    <ut:include ref="uboot-video" />
+    <ut:include ref="uboot-serial" />
+    <ut:include ref="flash-kernel" />
+    <ut:include ref="reboot" />
+    <ut:include ref="shutdown" />
+    <ut:include ref="ram-free"><ut:define name="mem">800-1000MB</ut:define></ut:include>
+    <ut:include ref="usb-file-transfer" />
+    <ut:include ref="usb-keyboard"><ut:define name="usb">USB2</ut:define></ut:include>
+    <ut:include ref="audio">
+      <ut:define name="device">an HDMI monitor that supports audio</ut:define>
+      <ut:define name="output">HDMI port</ut:define>
+    </ut:include>
+    <ut:include ref="audio">
+      <ut:define name="device">a pair of headphones with a 3.5mm jack</ut:define>
+      <ut:define name="output">headphone jack</ut:define>
+    </ut:include>
+    <ut:include ref="ethernet"><ut:define name="intf">eth0</ut:define></ut:include>
+  </ut:case>
+
+  <ut:case id="1725_RaspberryPi CM3 Post-install">
+    <ut:define name="model">Raspberry Pi Compute Module 3</ut:define>
+    <ut:include ref="uboot-video" />
+    <ut:include ref="uboot-serial" />
+    <ut:include ref="flash-kernel" />
+    <ut:include ref="reboot" />
+    <ut:include ref="shutdown" />
+    <ut:include ref="ram-free"><ut:define name="mem">800-1000MB</ut:define></ut:include>
+    <ut:include ref="usb-file-transfer" />
+    <ut:include ref="usb-keyboard"><ut:define name="usb">USB2</ut:define></ut:include>
+    <ut:include ref="audio">
+      <ut:define name="device">an HDMI monitor that supports audio</ut:define>
+      <ut:define name="output">HDMI port</ut:define>
+    </ut:include>
+  </ut:case>
+
+  <ut:case id="1726_RaspberryPi CM3+ Post-install">
+    <ut:define name="model">Raspberry Pi Compute Module 3+</ut:define>
+    <ut:include ref="uboot-video" />
+    <ut:include ref="uboot-serial" />
+    <ut:include ref="flash-kernel" />
+    <ut:include ref="reboot" />
+    <ut:include ref="shutdown" />
+    <ut:include ref="ram-free"><ut:define name="mem">800-1000MB</ut:define></ut:include>
+    <ut:include ref="usb-file-transfer" />
+    <ut:include ref="usb-keyboard"><ut:define name="usb">USB2</ut:define></ut:include>
+    <ut:include ref="audio">
+      <ut:define name="device">an HDMI monitor that supports audio</ut:define>
+      <ut:define name="output">HDMI port</ut:define>
+    </ut:include>
+  </ut:case>
+
+  <ut:case id="1727_RaspberryPi CM3+ Lite Post-install">
+    <ut:define name="model">Raspberry Pi Compute Module 3+ Lite</ut:define>
+    <ut:include ref="uboot-video" />
+    <ut:include ref="uboot-serial" />
+    <ut:include ref="flash-kernel" />
+    <ut:include ref="reboot" />
+    <ut:include ref="shutdown" />
+    <ut:include ref="ram-free"><ut:define name="mem">800-1000MB</ut:define></ut:include>
+    <ut:include ref="usb-file-transfer" />
+    <ut:include ref="usb-keyboard"><ut:define name="usb">USB2</ut:define></ut:include>
+    <ut:include ref="audio">
+      <ut:define name="device">an HDMI monitor that supports audio</ut:define>
+      <ut:define name="output">HDMI port</ut:define>
+    </ut:include>
+  </ut:case>
+
+  <ut:case id="1740_RaspberryPi 400 Post-install">
+    <ut:define name="model">Raspberry Pi 400</ut:define>
+    <ut:include ref="uboot-video" />
+    <ut:include ref="uboot-serial" />
+    <ut:include ref="flash-kernel" />
+    <ut:include ref="reboot" />
+    <ut:include ref="shutdown" />
+    <ut:include ref="ram-free"><ut:define name="mem">3.6-3.8GB</ut:define></ut:include>
+    <ut:include ref="usb-file-transfer" />
+    <ut:include ref="audio">
+      <ut:define name="device">an HDMI monitor that supports audio plugged into
+      the HDMI0 output</ut:define>
+      <ut:define name="output">HDMI0 port</ut:define>
+    </ut:include>
+    <ut:include ref="audio">
+      <ut:define name="device">an HDMI monitor that supports audio plugged into
+      the HDMI1 output</ut:define>
+      <ut:define name="output">HDMI1 port</ut:define>
+    </ut:include>
+    <ut:include ref="ethernet"><ut:define name="intf">eth0</ut:define></ut:include>
+    <ut:include ref="wifi"><ut:define name="intf">wlan0</ut:define></ut:include>
+  </ut:case>
+
+  <ut:case id="1741_RaspberryPi CM4 2GB Post-install">
+    <ut:define name="model">Raspberry Pi Compute Module 4 2GB</ut:define>
+    <ut:define name="post-install">
+      <p>Before booting your CM4 with the new image, edit config.txt on the boot
+      (1st) partition and uncomment the <code>#dtoverlay=dwc2,dr_mode=host</code>
+      line to ensure the USB ports on the IO board operate correctly</p>
+    </ut:define>
+    <ut:include ref="uboot-video" />
+    <ut:include ref="uboot-serial" />
+    <ut:include ref="flash-kernel" />
+    <ut:include ref="reboot" />
+    <ut:include ref="shutdown" />
+    <ut:include ref="ram-free"><ut:define name="mem">1.6-1.8GB</ut:define></ut:include>
+    <ut:include ref="usb-file-transfer" />
+    <ut:include ref="audio">
+      <ut:define name="device">an HDMI monitor that supports audio plugged into
+      the HDMI0 output</ut:define>
+      <ut:define name="output">HDMI0 port</ut:define>
+    </ut:include>
+    <ut:include ref="audio">
+      <ut:define name="device">an HDMI monitor that supports audio plugged into
+      the HDMI1 output</ut:define>
+      <ut:define name="output">HDMI1 port</ut:define>
+    </ut:include>
+    <ut:include ref="ethernet"><ut:define name="intf">eth0</ut:define></ut:include>
+    <ut:include ref="wifi"><ut:define name="intf">wlan0</ut:define></ut:include>
+  </ut:case>
+
+  <ut:case id="1742_RaspberryPi CM4 4GB Post-install">
+    <ut:define name="model">Raspberry Pi Compute Module 4 4GB</ut:define>
+    <ut:define name="post-install">
+      <p>Before booting your CM4 with the new image, edit config.txt on the boot
+      (1st) partition and uncomment the <code>#dtoverlay=dwc2,dr_mode=host</code>
+      line to ensure the USB ports on the IO board operate correctly</p>
+    </ut:define>
+    <ut:include ref="uboot-video" />
+    <ut:include ref="uboot-serial" />
+    <ut:include ref="flash-kernel" />
+    <ut:include ref="reboot" />
+    <ut:include ref="shutdown" />
+    <ut:include ref="ram-free"><ut:define name="mem">3.6-3.8GB</ut:define></ut:include>
+    <ut:include ref="usb-file-transfer" />
+    <ut:include ref="audio">
+      <ut:define name="device">an HDMI monitor that supports audio plugged into
+      the HDMI0 output</ut:define>
+      <ut:define name="output">HDMI0 port</ut:define>
+    </ut:include>
+    <ut:include ref="audio">
+      <ut:define name="device">an HDMI monitor that supports audio plugged into
+      the HDMI1 output</ut:define>
+      <ut:define name="output">HDMI1 port</ut:define>
+    </ut:include>
+    <ut:include ref="ethernet"><ut:define name="intf">eth0</ut:define></ut:include>
+    <ut:include ref="wifi"><ut:define name="intf">wlan0</ut:define></ut:include>
+  </ut:case>
+
+  <ut:case id="1743_RaspberryPi CM4 8GB Post-install">
+    <ut:define name="model">Raspberry Pi Compute Module 4 8GB</ut:define>
+    <ut:define name="post-install">
+      <p>Before booting your CM4 with the new image, edit config.txt on the boot
+      (1st) partition and uncomment the <code>#dtoverlay=dwc2,dr_mode=host</code>
+      line to ensure the USB ports on the IO board operate correctly</p>
+    </ut:define>
+    <ut:include ref="uboot-video" />
+    <ut:include ref="uboot-serial" />
+    <ut:include ref="flash-kernel" />
+    <ut:include ref="reboot" />
+    <ut:include ref="shutdown" />
+    <ut:include ref="ram-free"><ut:define name="mem">7.6-7.8GB</ut:define></ut:include>
+    <ut:include ref="usb-file-transfer" />
+    <ut:include ref="audio">
+      <ut:define name="device">an HDMI monitor that supports audio plugged into
+      the HDMI0 output</ut:define>
+      <ut:define name="output">HDMI0 port</ut:define>
+    </ut:include>
+    <ut:include ref="audio">
+      <ut:define name="device">an HDMI monitor that supports audio plugged into
+      the HDMI1 output</ut:define>
+      <ut:define name="output">HDMI1 port</ut:define>
+    </ut:include>
+    <ut:include ref="ethernet"><ut:define name="intf">eth0</ut:define></ut:include>
+    <ut:include ref="wifi"><ut:define name="intf">wlan0</ut:define></ut:include>
+  </ut:case>
+</ut:configuration>

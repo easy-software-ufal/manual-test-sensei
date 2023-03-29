@@ -1,0 +1,347 @@
+Test-case name: libreoffice/lbc-001
+This test will check that LibreOffice Calc can be started
+<dl>
+    <dt> Open the dash and launch LibreOffice Calc by pressing the super key, and then entering ‘calc’</dt>
+        <dd>Did LibreOffice Calc launch?</dd>
+</dl>
+
+Test-case name: libreoffice/lbc-002
+This test will check that LibreOffice Impress can be started
+<dl>
+    <dt> Open the dash and launch LibreOffice Impress by pressing the super key, and then entering ‘impress’</dt>
+        <dd>Did LibreOffice Impress launch?</dd>
+</dl>
+
+Test-case name: libreoffice/lbc-003
+This test will check that LibreOffice Math can be started
+<dl>
+    <dt> Open the dash and launch LibreOffice equation editor by pressing the super key, and then entering ‘math’</dt>
+        <dd>Did LibreOffice Math launch?</dd>
+</dl>
+
+Test-case name: libreoffice/lbc-004
+This test will check that LibreOffice Writer can be started
+<dl>
+    <dt> Open the dash and launch LibreOffice Writer by pressing the super key, and then entering ‘writer’</dt>
+        <dd>Did LibreOffice Writer launch?</dd>
+</dl>
+
+Test-case name: libreoffice/lbc-005
+This test will check that LibreOffice Draw can be started
+<dl>
+    <dt> Open the dash and launch LibreOffice Draw by pressing the super key, and then entering ‘draw’</dt>
+        <dd>Did LibreOffice Draw launch?</dd>
+</dl>
+
+Test-case name: libreoffice/lbc-006
+This test will check that LibreOffice Writer can open and save ODF files
+<dl>
+    <dt> Open a new text document</dt>
+        <dd>A new unnamed text document appears.</dd>
+    <dt> Add text and save it in ODF format</dt>
+        <dd>After inserting some text, the "Save" icon is enabled.</dd>
+    <dt> Open the saved file again.</dt>
+        <dd>The save dialog lets you save the file.</dd>
+    <dt> Close the file and open the saved file again</dt>
+        <dd>Can the file be opened again after closing properly?</dd>
+</dl>
+
+Test-case name: libreoffice/lbc-007
+This test will check that LibreOffice Writer can check spelling
+<dl>
+    <dt> Download the test document: http://cgit.freedesktop.org/libreoffice/contrib/test-files/plain/writer/litmus/language-test-en.odt</dt>
+    <dt> Open the test file with libreoffice</dt>
+        <dd>There are Red and Blue wave lines under misspelled words and those containing grammar  mistakes over the whole document.</dd>
+    <dt> Press F7</dt>
+        <dd>The window titled with "Spelling and Grammar: [Language'" pops up; In the spell and grammar check window, the "Text language" is set to the same of document language type; All buttons are available to click; There should be some suggestion words in the suggestions list.</dd>
+    <dt> Select a word from the suggestion list and press "Change" button</dt>
+        <dd>The word in the document is replaced with the one you selected from the suggestion list, and it should be no longer marked with a red wave line in the document.</dd>
+    <dt> Press Change many times to get through the entire document</dt>
+        <dd>Did all the correction of misspelling and grammar mistakes work smoothly and finally after the overall change did the entire document no longer contain wave lines any more?</dd>
+</dl>
+
+Test-case name: libreoffice/lbc-008
+This test will check that LibreOffice Writer can hypenate words
+<dl>
+    <dt> Download the test document: http://cgit.freedesktop.org/libreoffice/contrib/test-files/plain/writer/litmus/language-test-en.odt?id=2bdb4b89359632865b359435b20807b9fbc0889f</dt>
+    <dt> Open the test file with libreoffice</dt>
+    <dt> Select from menu Tools-Language-Hyphenation...</dt>
+        <dd>The hyphenation dialog should pop up</dd>
+    <dt> Press button in the dialog "Hyphenate"</dt>
+        <dd>The corresponding word is split across two lines separated by a hyphen. Next word to be hyphenated is shown in the dialog box.</dd>
+    <dt> Press button in the dialog "Skip"</dt>
+        <dd>The corresponding word should not be split across two lines.</dd>
+    <dt> Press "Hyphenate" several times until the check finished</dt>
+    <dt> Select from menu Tools-Language-Hyphenation...</dt>
+    <dt> Press button "Remove" several times until the check finished</dt>
+        <dd>All of the hyphenated words are changed back without hyphens</dd>
+    <dt> Select from menu Tools-Language-Hyphenation...</dt>
+    <dt> Press button in the dialog "Hyphenate All"</dt>
+        <dd>Did all words needing to be hyphenated, split by hyphens at one time?</dd>
+</dl>
+
+Test-case name: libreoffice/lbc-009
+This test will check that LibreOffice Calc can save and open files
+<dl>
+    <dt> Open a new Calc document.</dt>
+        <dd>A new blank spreadsheet is opened.</dd>
+    <dt> Add numeric values, date values, calculations, cell references, different formatting.</dt>
+        <dd>After editing the first cell, the "Save" icon is available.</dd>
+    <dt> Add content in your language, specially characters and formatting typical of your language.</dt>
+        <dd>The "Save" dialog lets you save the file.</dd>
+    <dt> Test and save it in ODF format.</dt>
+    <dt> Open the saved file again.</dt>
+        <dd>Can the file be opened properly again after closing?</dd>
+</dl>
+
+Test-case name: libreoffice/lbc-010
+This test will check that LibreOffice Impress can display special characters
+<dl>
+    <dt> Open a OpenDocument presentation (.odp) file containing special characters in your language</dt>
+        <dd>The presentation (OpenDocument and PowerPoint) should run as an on-screen presentation, displaying all the pages with transitions and animations.</dd>
+    <dt> Choose Presentation-Presentation.</dt>
+        <dd>Special characters in your language should display correctly</dd>
+    <dt> Do the same with an MS PowerPoint file.</dt>
+        <dd>Was the content not altered?</dd>
+</dl>
+
+Test-case name: libreoffice/lbc-011
+This test will check that LibreOffice Base can create new databases
+<dl>
+    <dt> Open a new database file (New - Database) and check [Create a database' then click on Next button.</dt>
+        <dd>The database wizard open: all strings in the dialog box and window are correctly localized.</dd>
+    <dt> Check [Yes, I want the wizard to register the database' and [Open the database for edition' and click on Finish.</dt>
+    <dt> Enter a name for the database (using special characters in your language) in the dialog box and click OK.</dt>
+        <dd>Does the database application appear?</dd>
+</dl>
+
+Test-case name: libreoffice/lbc-012
+This test will check that LibreOffice Base can create new tables and fields
+<dl>
+    <dt> Click on the Table icon in the database panel.</dt>
+    <dt> Click on [Create a table in Design mode...' in the [Tasks' panel.</dt>
+    <dt> Enter the name, address and telephone number as field names.</dt>
+    <dt> Call this table "Table1" as a reference for the following tests.</dt>
+    <dt> Click on the [Save' icon - enter the table name (containing special characters) - click on Yes to create a primary key.</dt>
+    <dt> Click [Index Design' - Click on Close.</dt>
+    <dt> Close the window.</dt>
+        <dd>Is Table1 properly created? Did the designer work without error?</dd>
+</dl>
+
+Test-case name: libreoffice/lbc-013
+This test will check that LibreOffice Math can create new formulas
+<dl>
+    <dt> Call the menu 'File - New - Formula' the formula editor.</dt>
+        <dd>Is the module called and two parts (formula and input window) displayed and are all menu items, tool tips and context menus translated?</dd>
+</dl>
+
+Test-case name: libreoffice/lbc-014
+This test will check that LibreOffice Math can save and open formulas
+<dl>
+    <dt> Enter different formula values, for example: lllint from{1} to{x} (1 over sum from {k > j} (d_(j)+arccot(nroot{32 }X^{11})))+1</dt>
+        <dd>There should be a mathematical formula in Math.</dd>
+    <dt> Click in the upper window in the formula.</dt>
+        <dd>The cursor goes to the input window when the Formula window, the individual sections of the formula are marked.</dd>
+    <dt> Save the formula from.</dt>
+        <dd>The formula is saved, the editor closes.</dd>
+    <dt> Complete the formula and open it again.</dt>
+        <dd>Can the formula be opened once?</dd>
+</dl>
+
+Test-case name: libreoffice/lbc-015
+This test will check that LibreOffice Draw can open and save files
+<dl>
+    <dt> Open a new Draw document.</dt>
+        <dd>A new file is opened.</dd>
+    <dt> Add a few different forms, including text boxes, font, etc. Work</dt>
+        <dd>You can insert various shapes without problems.</dd>
+    <dt> Using Edit - Undo different steps to reverse. Position using Edit - Redo restores previously deleted items.</dt>
+        <dd>You can undo steps previously made. The Edit dialog shows the undo steps correctly translated. Even the restoration works without difficulty and is displayed correctly under Edit.</dd>
+    <dt> Save the drawing as an ODF file (in. Odg) from.</dt>
+        <dd>The Save As dialog opens and lets you save the document.</dd>
+    <dt> Open the saved document.</dt>
+        <dd>Can the document be opened again after closing properly?</dd>
+</dl>
+
+Test-case name: libreoffice/lbc-016
+This test will check that LibreOffice Writer can convert Word documents to ODF
+<dl>
+    <dt> Open a Word document format .doc or .docx and save it in ODF format.</dt>
+        <dd>The file can be opened and saved correctly in the revised format.</dd>
+    <dt> Then open the document again.</dt>
+        <dd>After the closing and opening, do the contents look the same in the different file formats?</dd>
+</dl>
+
+Test-case name: libreoffice/lbc-017
+This test will check that LibreOffice Writer can convert ODF to Word files
+<dl>
+    <dt> Open an ODF file and save it as .doc file format.</dt>
+        <dd>Can the file be opened and saved in the revised format? You will see a warning message regarding the revised format, is the warning message translated into your language? After closing and reopening, do the contents remain the same?</dd>
+</dl>
+
+Test-case name: libreoffice/lbc-018
+This test will check that LibreOffice Writer can export to PDF
+<dl>
+    <dt> Open an ODF file and export is as PDF file format via menu "File - Export as PDF...". Change the tab "General" setting to "PDF/A-1a".</dt>
+        <dd>This will open the PDF Options dialog. The required settings can be made, the file can be exported.</dd>
+    <dt> Open the exported file in one (or more) PDF viewer(s).</dt>
+        <dd>Can the exported file be opened in your PDF viewer? Does it appear properly?</dd>
+</dl>
+
+Test-case name: libreoffice/lbc-019
+This test will check that LibreOffice Calc can display Word files correctly
+<dl>
+    <dt> Open a Word document (in. Docx or. Doc) written in your own language character</dt>
+        <dd>Can the file be opened in the revised format, in which the contents look the same as you expected?</dd>
+</dl>
+
+Test-case name: libreoffice/lbc-020
+This test will check that LibreOffice Writer can open and save ODF files in revised format
+<dl>
+    <dt> Open an ODF file and save it as .doc .docx file formats.</dt>
+        <dd>Can the file be opened and saved in the revised format? You will see a warning message regarding the revised format, is the warning message translated into your language? After closing and reopening, do the contents remain the same?</dd>
+</dl>
+
+Test-case name: libreoffice/lbc-021
+This test will check that LibreOffice Writer can export to PDF/A-1a
+<dl>
+    <dt> Open an ODF file and export is as PDF file format via menu "File - Export as PDF...". Change the tab "General" setting to "PDF/A-1a".</dt>
+        <dd>This will open the PDF Options dialog. The required settings can be made, the file can be exported.</dd>
+    <dt> Open the exported file in one (or more) PDF viewer(s).</dt>
+        <dd>Can the exported file be opened in your PDF viewer? For the exported file using the second method, does it also display properly in a PDF viewer?</dd>
+</dl>
+
+Test-case name: libreoffice/lbc-022
+This test will check that LibreOffice Calc can be convert Excel files to ODF format
+<dl>
+    <dt> Open a document in Excel format (.xls or .xlsx) and save it in ODF format.</dt>
+        <dd>The file can be opened and saved in the revised format.</dd>
+    <dt> Then reopen the document.</dt>
+        <dd>After closing and reopening do the contents remain the same?</dd>
+</dl>
+
+Test-case name: libreoffice/lbc-023
+This test will check that LibreOffice Calc can be convert ODF to Excel format
+<dl>
+    <dt> Open an ODF file and save it as .xls file format.</dt>
+        <dd>Can the file be opened and saved in the revised format? You will see a warning message regarding the revised format, is the warning message translated into your language? After closing and reopening, do the contents remain the same?</dd>
+</dl>
+
+Test-case name: libreoffice/lbc-024
+This test will check that LibreOffice Calc can be export to PDF/A-1a format
+<dl>
+    <dt> Open an ODF file and export is as PDF file format via menu "File - Export as PDF...". Change the tab "General" setting to "PDF/A-1a".</dt>
+        <dd>This will open the PDF Options dialog. The required settings can be made, the file can be exported.</dd>
+    <dt> Open the exported file in one (or more) PDF viewer(s).</dt>
+        <dd>Can the exported file be opened in your PDF viewer? For the exported file using the second method, does it also display properly in a PDF viewer?</dd>
+</dl>
+
+Test-case name: libreoffice/lbc-025
+This test will check that LibreOffice Calc can be copy and paste contents
+<dl>
+    <dt> Download the attachment: https://bugs.freedesktop.org/attachment.cgi?id=52470</dt>
+    <dt> Open the attached test data source.ods</dt>
+    <dt> Select the chart in Sheet1 and 'Edit' - 'Copy'</dt>
+    <dt> Create a new spreadsheet file</dt>
+    <dt> 'Edit' - 'Paste' (vp.1)</dt>
+        <dd>The chart can be pasted without problem</dd>
+    <dt> Double click the pasted chart (vp.2)</dt>
+        <dd>Can you get into the edit mode without data loss?</dd>
+</dl>
+
+Test-case name: libreoffice/lbc-026
+This test will check that LibreOffice Calc can be open and save Excel documents
+<dl>
+    <dt> Open an Excel document containing special characters in your own language (in. xls or. xlsx).</dt>
+        <dd>The document opens.</dd>
+    <dt> Save it as ODF file (in. Ods) from.</dt>
+        <dd>The document can be saved in the changed format.</dd>
+    <dt> Open the document again.</dt>
+        <dd>After closing and reopening does the content looks the same?</dd>
+</dl>
+
+Test-case name: libreoffice/lbc-027
+This test will check that LibreOffice Calc can be open and save documents in revised format
+<dl>
+    <dt> Open an ODF file and save it as .xls file format.</dt>
+        <dd>Can the file be opened and saved in the revised format? You will see a warning message regarding the revised format, is the warning message translated into your language? After closing and reopening, do the contents remain the same?</dd>
+</dl>
+
+Test-case name: libreoffice/lbc-028
+This test will check that LibreOffice Impress can export to PDF
+<dl>
+    <dt> Open an ODF file and export is as PDF file format via menu "File - Export as PDF...". Change the tab "General" setting to "PDF/A-1a".</dt>
+        <dd>This will open the PDF Options dialog. The required settings can be made, the file can be exported.</dd>
+    <dt> Open the exported file in one (or more) PDF viewer(s).</dt>
+        <dd>Can the exported file be opened in your PDF viewer? For the exported file using the second method, does it also display properly in a PDF viewer?</dd>
+</dl>
+
+Test-case name: libreoffice/lbc-029
+This test will check that LibreOffice Impress can open and save Powerpoint files
+<dl>
+    <dt> Open an MS .ppt file format in your language (containing special characters in your language)</dt>
+        <dd>The PowerPoint file should open correctly in LibreOffice.</dd>
+        <dd>The layout, the display of characters, bullets and numbering should display correctly.</dd>
+    <dt> Save to OpenDocument file format (.odp)</dt>
+        <dd>File should be saved without problem and reopened the same way.</dd>
+    <dt> Reopen the document.</dt>
+        <dd>Is the content not altered?</dd>
+</dl>
+
+Test-case name: libreoffice/lbc-030
+This test will check that LibreOffice Impress can convert ODF to Powerpoint
+<dl>
+    <dt> Open an OpenDocument presentation (.odp) file containing special characters in your language</dt>
+        <dd>The file should save correctly.</dd>
+    <dt> Save the file to MS PowerPoint (.ppt) file format.</dt>
+        <dd>When reopening the file, the content should display correctly in PowerPoint application or the viewer.</dd>
+    <dt> Reopen the file in PowerPoint or in PowerPoint viewer.</dt>
+        <dd>Is the content not altered?</dd>
+</dl>
+
+Test-case name: libreoffice/lbc-031
+This test will check that LibreOffice Impress can convert Powerpoint to ODF
+<dl>
+    <dt> Open an MS .ppt file format in your language (containing special characters in your language)</dt>
+        <dd>The PowerPoint file should open correctly in LibreOffice; The layout, the display of characters, bullets and numbering should display correctly.</dd>
+    <dt> Save to OpenDocument file format (.odp)</dt>
+        <dd>File should be saved without problem and reopened the same way.</dd>
+    <dt> Reopen the document.</dt>
+        <dd>IS the content not altered?</dd>
+</dl>
+
+Test-case name: libreoffice/lbc-032
+This test will check that LibreOffice Base can create new tables
+<dl>
+    <dt> Click on the Table icon in the database panel.</dt>
+    <dt> Click on [Create a table in Design mode...' in the [Tasks' panel.</dt>
+    <dt> Enter the name, address and telephone number as field names.</dt>
+    <dt> Call this table "Table1" as a reference for the following tests.</dt>
+    <dt> Click on the [Save' icon - enter the table name (containing special characters) - click on Yes to create a primary key.</dt>
+    <dt> Click [Index Design' - Click on Close.</dt>
+    <dt> Close the window.</dt>
+        <dd>Is the table created without any error?</dd>
+</dl>
+
+Test-case name: libreoffice/lbc-033
+This test will check that LibreOffice Base can open created tables
+<dl>
+    <dt> Double click on the icon for the database table created during the Base-1 test</dt>
+    <dt> Enter several records containing special characters in your language and click on the "Save the current record" icon.</dt>
+        <dd>Do all the strings display correctly and specially those containing special characters?</dd>
+</dl>
+
+Test-case name: libreoffice/lbc-034
+This test will check that LibreOffice Base can export to PDF
+<dl>
+    <dt> Open an ODF document (in. Odg) and export this as PDF file:</dt>
+    <dt> Over the symbol "Direct Export as PDF"</dt>
+        <dd>This opens the Export dialog. The document can be exported.</dd>
+    <dt> On the menu item "File - Export as PDF ...". Change the tab "General" setting on "PDF/A-1a".</dt>
+        <dd>It will open the PDF Options dialog. the desired Settings can be made, the file can be exported. The message that the document is displayed in PDF / A mode.</dd>
+    <dt> Open the exported file in one (or more) PDF viewer (s).</dt>
+        <dd>Can the exported file be opened in PDF viewer?</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

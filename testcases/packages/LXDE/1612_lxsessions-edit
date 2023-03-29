@@ -1,0 +1,22 @@
+This text will check that LXSessions-edit can add and remove an application to desktop session.
+<dl>
+    <dt>Click on the Lubuntu icon in your panel. Then select "Preferences" and "Default applications for LXSession"</dt>
+        <dd>A popup is present telling you that the database is updating, then a larger window should be present with the Launching applications tab being the default tab.</dd>
+    <dt>Select the Autostart tab.</dt>
+        <dd>The Autostart section should show up</dd>
+    <dt>Check "Enabled" to the left of "Blueman Applet" under "Known Applications" and close LXSession Configuration.</dt>
+        <dd>The window closes</dd>
+    <dt>Log out and log in again.</dt>
+        <dd>In the notification area of your panel you should now see the bluetooth symbol of blueman. <strong>Note: Please file bugs regarding blueman <a href="https://github.com/blueman-project/blueman/issues/new">against it in GitHub</a></strong></dd><!-- GitHub is where bugs are reported upstream, and Launchpad doesn't allow you to report a bug against blueman, so this is the best option. -->
+    <dt>Click on the Lubuntu icon in your panel. Then select "Preferences" and "Default applications for LXSession"</dt>
+        <dd>A popup is present telling you that the database is updating, then a larger window should be present with the Launching applications tab being the default tab.</dd>
+    <dt>Select the Autostart tab.</dt>
+        <dd>The Autostart section should show up</dd>
+    <dt>Uncheck "Enabled" to the left of "Blueman Applet" under "Known Applications" and close LXSession Configuration.</dt>
+        <dd>The window closes</dd>
+    <dt>Log out and log in again</dt>
+        <dd>The bluetooth symbol has disappeared and blueman is not started automatically at login</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

@@ -1,0 +1,21 @@
+This will test the xfwm4 workspace settings
+<dl>
+    <dt>Open Settings, then "Workspaces"</dt>
+        <dd>Xfwm4 workspace settings opens</dd>
+    <dt>Use the arrows to change the number of workspaces</dt>
+        <dd>The number of workspaces increases, both in the list below and in the indicator bar</dd>
+    <dt>Double click one of the workspace names</dt>
+        <dd>You are now able to type a name for the workspace</dd>
+    <dt>Type a name for the workspace, then press Enter</dt>
+        <dd>The workspace name changes in the list</dd>
+    <dt>Hover the cursor over the indicator icon of the workspace you just named</dt>
+        <dd>The test "Click to switch to [Workspace Name]" appears</dd>
+    <dt>Press "Help"</dt>
+        <dd>This takes you to an online manual</dd>
+    <dt>Click the "Margins" tab</dt>
+    <dt>Change the size of each margin, then open a program in each workspace</dt>
+        <dd>The programs don't open in the areas specified as margins</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

@@ -1,0 +1,84 @@
+This test will check that LXAppearance can change the widget
+<dl>
+    <dt>Click on the Lubuntu symbol in the panel. Then go to "Preferences" and click on "Customize Look and Feel"</dt>
+        <dd>A window opens, showing the tab "Widgets"</dd>
+    <dt>Click on Widget "Clearlooks"</dt>
+        <dd>The window appearance changes</dd>
+    <dt>Click now on "lubuntu-default"</dt>
+        <dd>The window appearance changes back</dd>
+</dl>
+
+This test will check that LXAppearance can change colors individually
+<dl>
+    <dt>Click on the tab "Color"</dt>
+        <dd>The tab "Color" shows up</dd>
+    <dt>Check "Use customized color scheme"</dt>
+        <dd>The options in the tab unfade</dd>
+    <dt>Click on the color of "Normal windows" and "Background"</dt>
+        <dd> A window opens, showing a color selector</dd>
+    <dt>For color name enter "#E39000". Click on "OK"</dt>
+        <dd>The window closes. You see again the window of LXAppearance which now have a orange background color</dd>
+    <dt>Click on the color of "Normal windows" and "Foreground"</dt>
+        <dd> A window opens, showing a color selector</dd>
+    <dt>For color name enter "#0000FF". Click on "OK"</dt>
+        <dd>The window closes. You see again the window of LXAppearance which now have a blue text color</dd>
+    <dt>Click on "Apply"</dt>
+        <dd>Other opened windows appear in the same selected colors</dd>
+    <dt>Uncheck "Use customized color scheme". Click on "Apply"</dt>
+        <dd>The options in the tab fade</dd>
+</dl>
+
+This test will check that LXAppearance can change the icon themes
+<dl>
+    <dt>Click on the tab "Icon Theme"</dt>
+        <dd>The tab "Icon Theme" shows up</dd>
+    <dt>Choose theme "GNOME". Click on "Apply"</dt>
+        <dd>The theme is applied the your system. Check your panel to see different symbols as well</dd>
+    <dt>Choose theme "Lubuntu". Click on "Apply"</dt>
+        <dd>The icons change back to Lubuntu standard theme</dd>
+</dl>
+
+This test will check that you can change the appearance of the mouse cursor
+<dl>
+    <dt>Click on the tab "Mouse Cursor"</dt>
+        <dd>The tab "Mouse Cursor" shows up</dd>
+    <dt>Select "DMZ black" and click on "Apply"</dt>
+        <dd>The color of the mouse cursor does NOT change. This requires a new login</dd>
+    <dt>Log off and log in again</dt>
+        <dd>The color of the mouse cursor has changed.</dd>
+</dl>
+
+This test will check that LXAppearance can change the window borders
+<dl>
+    <dt>Click on the Lubuntu symbol in the panel. Then go to "Preferences" and click on "Customize Look and Feel"</dt>
+        <dd>A window opens, showing the tab "Widgets"</dd>
+    <dt>Click on the tab "Window Border"</dt>
+        <dd>The tab "Window Border" shows up</dd>
+    <dt>Select theme "Clearlooks". Click on "Apply"</dt>
+        <dd>The window appearance changes</dd>
+    <dt>Select the theme "Lubuntu-default". Click on "Apply"</dt>
+        <dd>The theme changes back</dd>
+</dl>
+
+This test will check that LXAppearance can change the font properties
+<dl>
+    <dt>Click on the tab "Font"</dt>
+        <dd>The tab "Font" shows up</dd>
+    <dt>Uncheck  "Enable antialiasing" and "Enable hinting". Click on "Apply"</dt>
+        <dd>The font appearance deteriorates remarkably</dd>
+    <dt>Check  "Enable antialiasing" and "Enable hinting". Click on "Apply"</dt>
+        <dd>The font appearance changes back</dd>
+</dl>
+
+This test will check that LXAppearance can change additional properties
+<dl>
+    <dt>Click on the tab "Other"</dt>
+        <dd>The tab "Other" shows up</dd>
+    <dt>Uncheck "Show images on buttons" and "Show images in menus". Click on "Apply"</dt>
+        <dd>The symbols in the buttons (e.g. "Apply" in the current window) have disappeared</dd>
+    <dt>Click on the Lubuntu Icon in your panel</dt>
+        <dd>The symbols have disappeared in the menu as well</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

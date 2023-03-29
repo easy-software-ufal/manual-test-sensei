@@ -1,0 +1,81 @@
+This test will check that Users Settings will open and close correctly
+<dl>
+    <dt>Select Users and Groups from Settings</dt>
+        <dd>Users Settings opens at User screen</dd>
+    <dt>Press Close</dt>
+        <dd>Dialogue closes</dd>
+</dl>
+
+This test will check that users can be added, password being generated - logout and login will be required for this test
+<dl>
+    <dt>Open Users Settings, press Add</dt>
+        <dd>Authenticate dialogue opens</dd>
+    <dt>Enter password and press Authenticate</dt>
+        <dd>Create New User dialogue opens</dd>
+    <dt>Supply a Name and Username</dt>
+        <dd>OK button becomes available</dd>
+    <dt>Press OK</dt>
+        <dd>New User dialogue closes</dd>
+        <dd>Change User Password dialogue opens</dd>
+    <dt>Select Generate random password</dt>
+        <dd>Random password generated</dd>
+    <dt>Press OK</dt>
+        <dd>Dialogue closes</dd>
+        <dd>User is created and shows in user list</dd>
+</dl>
+
+This test will check that Users settings can be amended
+<dl>
+    <dt>Select new user and press Change next to user name in right of panel</dt>
+        <dd>Change User Name dialogue opens</dd>
+    <dt>Change user name and press OK</dt>
+        <dd>Dialogues reflect user name change</dd>
+    <dt>Press change next to account type</dt>
+        <dd>Change User Type dialogue opens</dd>
+    <dt>Change user to Administrator and press OK</dt>
+        <dd>Authenticate dialogue opens</dd>
+    <dt>Supply your password</dt>
+        <dd>Authenticate dialogue closes, User type dialogue closes, Account type reflects change</dd>
+    <dt>Select change next to Password</dt>
+        <dd>Password dialogue opens</dd>
+    <dt>Change password manually and supply confirmation, press OK</dt>
+        <dd>Password dialogue closes</dd>
+    <dt>Click Advanced Settings, supply password if required</dt>
+        <dd>Change Advanced User setting dialogue opens at Contact Information tab</dd>
+    <dt>Select User Privileges tab</dt>
+        <dd>Dialogue changes</dd>
+    <dt>Change a privilege</dt>
+        <dd>Tick either appears in box or disappears - depending on what was changed</dd>
+    <dt>Press OK</dt>
+        <dd>Dialogues closes</dd>
+    <dt>Click Manage groups</dt>
+        <dd>Groups settings dialogue opens</dd>
+    <dt>Select a group and press Properties</dt>
+        <dd>Group properties dialogue opens</dd>
+    <dt>Change permission for <b>test account only</b></dt>
+        <dd>Permission for property changes</dd>
+    <dt>Supply password as required</dt>
+        <dd>Dialogue closes</dd>
+    <dt>Press close in groups settings</dt>
+        <dd>Dialogue closes</dd>
+</dl>
+
+This test will check that Users can be deleted
+<dl>
+    <dt>Select <b>test user previously created</b></dt>
+    <dt>Press Delete</dt>
+        <dd>Remove home folder for test user shows</dd>
+    <dt>Select Delete Files</dt>
+        <dd>Dialogue closes, test user removed from list</dd>
+</dl>
+
+This test will check that Help opens correctly
+<dl>
+    <dt>Press Help</dt>
+        <dd>User Administration Tool Manual opens</dd>
+    <dt>Press X in top right</dt>
+        <dd>Manual closes</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

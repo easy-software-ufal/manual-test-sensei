@@ -1,0 +1,105 @@
+This test will check that the Printers configuration tool opens correctly
+<!-- Smells: UNVERIFIED STEPS -->
+<dl>
+    <dt>Disconnect any locally connected printers from your computer</dt>
+    <dt>Open 'Printers' from your FAMILY menu or enter system-config-printer from a terminal</dt>
+        <dd>The 'Printers - localhost' dialog opens with the message "There are no printers configured yet"</dd>
+        <dd>The status bar at the bottom of the dialog says "Connected to localhost"</dd>
+</dl>
+
+This test will check that a new printer will be recognized automatically
+<dl>
+    <dt>With the 'Printers - localhost' dialog still open, turn on your printer and connect it to the computer</dt>
+        <dd>The printer is automatically recognized and appears in the dialog window</dd>
+</dl>
+        
+This test will check that the printer prints
+<dl>
+    <dt>Double-click on the printer icon</dt>
+        <dd>The 'Printer Properties' dialog opens at the Settings page</dd>
+    <dt>Click the 'Print Test Page' button</dt>
+        <dd>A dialog appears and displays "Test page submitted as job x"</dd>
+        <dd>The test page prints</dd>
+</dl>
+
+<!-- Smells: UNVERIFIED STEPS -->
+This test will check that a new printer can be added
+<dl>
+    <dt>From the menu, select Server->New->Printer</dt>
+        <dd>The 'New Printer' dialog appears</dd>
+    <dt>Under 'Devices', select the existing printer name</dt>
+        <dd>A 'Connection' drop down list appears</dd>
+    <dt>Select the appropriate connection type for your printer (probably already highlighted)</dt>
+    <dt>Click the 'Forward' button</dt>
+        <dd>A 'Searching for drivers' dialog appears</dd>
+        <dd>Depending on the printer, an 'Installable Options' dialog may appear.</dd>
+    <dt>Select the appropriate options and click the 'Forward' button</dt>
+        <dd>A 'Describe Printer' dialog appears</dd>
+    <dt>Enter a unique name and description for the printer and click 'Apply'</dt>
+        <dd>The option to print a test page appears</dd>
+    <dt>Click the 'Print Test Page' button</dt>
+        <dd>A dialog appears and displays "Test page submitted as job x"</dd>
+        <dd>The test page prints</dd>
+</dl>
+
+<!-- Smells: UNVERIFIED STEPS -->
+This test will check that the default printer can be changed
+<dl>
+    <dt>Right-click on the printer icon that does not show a green check mark</dt>
+        <dd>A popup menu appears</dd>
+    <dt>Select 'Set As Default'</dt>
+        <dd>The 'Set Default Printer' dialog appears</dd>
+    <dt>Select the 'Set as my personal default printer' option and click OK</dt>
+        <dd>A yellow star appears on the printer icon and the green check mark still shows on the other printer icon</dd>
+    <dt>Right-click on the same printer icon and select 'Set As Default'</dt>
+        <dd>The 'Set Default Printer' dialog appears</dd>
+    <dt>Select the 'Set as the system-wide default printer' option</dt>
+    <dt>Leave the 'Clear my personal default setting' checked</dt>
+    <dt>Click OK</dt>
+        <dd>The yellow star is replaced by a green check mark on the printer icon indicating that this is now the system-wide default printer</dd>
+</dl>
+
+<!-- Smells: UNVERIFIED STEPS -->
+This test will check that printers can be deleted
+<dl>
+    <dt>Right-click on one of the printer icons and select 'Delete' from the menu</dt>
+        <dd>A "Really delete printer 'name'?" confirmation appears</dd>
+    <dt>Click the 'Delete' button</dt>
+        <dd>The printer icon disappears</dd>
+    <dt>Repeat with the other printer</dt>
+        <dd>The printer icon disappears and the dialog now indicates 'There are no printers configured yet.'</dd>
+</dl>
+
+<!-- Smells: UNVERIFIED STEPS, PRE CONDITION AS STEP, OPTIONAL TEST -->
+This test will check that a printer can be shared from another computer
+Note: this test is optional and requires a second computer running a *buntu flavor
+<dl>
+    <dt>Connect the printer to the other computer which will act as the "server"</dt>
+    <dt>Open 'Printers' from the FAMILY menu on that computer</dt>
+        <!-- <dd> Printers app is supposed to open</dd>     -->
+    <dt>From the menu, select Server->Settings</dt>
+        <dd>The 'Server Settings' dialog opens</dd>
+    <dt>Confirm that 'Publish shared printers connected to this system' is checked</dt>
+    <dt>Click OK</dt>
+        <dd>The 'Server Settings' dialog closes</dd>
+    <dt>Right-click on the printer icon</dt>
+        <dd>A popup menu appears</dd>
+    <dt>Confirm that both 'Enabled' and 'Shared' are checked</dt>
+    <dt>Watch the 'Printers - localhost' dialog on the client computer</dt>
+        <dd>An icon for the shared printer icon should automatically appear</dd>
+    <dt>Double-click the printer icon on the client computer</dt>
+        <dd>The 'Printer Properties' dialog opens</dd>
+    <dt>Click the 'Print Test Page' button</dt>
+        <dd>A test page prints to the printer from the server computer</dd>
+</dl>
+
+This test will check that the Help system works
+<dl>
+    <dt>From the menu, select Help->Troubleshoot or press F1</dt>
+        <dd>The 'Printing troubleshooter' dialog opens</dd>
+    <dt>Follow the prompts to do some basic troubleshooting to the point where you can print a test page</dt>
+        <dd>The troubleshooting screens appear as expected and a test page prints</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
