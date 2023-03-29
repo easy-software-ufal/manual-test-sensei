@@ -1,3 +1,5 @@
+# This is an auxiliary tool to identify all the files on the repo.
+
 import glob
 from rich import print
 import os

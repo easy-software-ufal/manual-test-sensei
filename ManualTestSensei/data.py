@@ -48,13 +48,13 @@ def smells_loader_closure():
     return smells_loader
 
 
-def smells_loader_closure_v2():
-    df = pd.read_csv('dirs.txt', header=None)
-    df.columns = [FILE_COL]
-    df = df.loc[df[FILE_COL].apply(lambda x: Path(x).exists())]
-    df[FILE_COL] = df[FILE_COL].apply(lambda x: Path(x))
-    print(df)
-    return df.reset_index(drop=True)
+# def smells_loader_closure_v2():
+#     df = pd.read_csv('dirs.txt', header=None)
+#     df.columns = [FILE_COL]
+#     df = df.loc[df[FILE_COL].apply(lambda x: Path(x).exists())]
+#     df[FILE_COL] = df[FILE_COL].apply(lambda x: Path(x))
+#     print(df)
+#     return df.reset_index(drop=True)
 
 
 smells_loader = smells_loader_closure()

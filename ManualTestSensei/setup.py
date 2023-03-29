@@ -11,7 +11,7 @@ setup(
     name='manual_test_smells',
     version='0.0.2',
     packages=find_packages(),
-    install_requires=['spacy==3.5',
+    install_requires=['spacy==3.4.1',
                         'pandas',
                         'rich',
                         'scipy',

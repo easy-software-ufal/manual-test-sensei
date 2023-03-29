@@ -5,6 +5,5 @@
 *.htm
 testcases/page.htm
 testcases/results.csv
-*.csv
 manual_test_smells.egg-info
 testcases/file.log

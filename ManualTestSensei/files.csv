@@ -1,0 +1,305 @@
+DIRETÓRIO,,NUMERO E NOME DO ARQUIVO,Qnt. de TESTES,ANALISADO?,SMELL?,QUAL SMELL?
+../testcases/image/,,1433_Post-installation (Xubuntu),,NÃO,,
+../testcases/image/,,1434_Desktop (Xubuntu),13,SIM,SIM,"US, UP, AT, ES, OS"
+../testcases/image/,,1436_Post-Installation Tests,,NÃO,,
+../testcases/image/,,1437_Alternate Install (Entire Disk),,NÃO,,
+../testcases/image/,,1438_Alternate Install (Guided),,NÃO,,
+../testcases/image/,,1439_Alternate Install (Encryption),,NÃO,,
+../testcases/image/,,1440_Live LTSP,,NÃO,,
+../testcases/image/,,1441_Install (No Network Connection),,NÃO,,
+../testcases/image/,,1442_Mythbuntu Frontend,,NÃO,,
+../testcases/image/,,1443_Rescue Mode,,NÃO,,
+../testcases/image/,,1444_Mythbuntu Backend & Frontend,1,SIM,SIM,"MPC, US"
+../testcases/image/,,1445_Install Server iSCSI Root (virtualized KVM),2,SIM,SIM,"MPC, US"
+../testcases/image/,,1446_Ubiquity MemTest,1,SIM,SIM,"US, AT, AI"
+../testcases/image/,,1447_Ubiquity Disk Defects,,NÃO,,
+../testcases/image/,,1448_Unity Lenses,,NÃO,,
+../testcases/image/,,1450_Live (netbook),1,SIM,SIM,MPC
+../testcases/image/,,1451_Install (entire disk with lvm and encryption),1,SIM,SIM,"CT, US, UWT, AT, UP"
+../testcases/image/,,1452_Netboot Install (ARM Desktop),1,SIM,SIM,"US, UP"
+../testcases/image/,,1453_Netboot Install (ARM Server),1,SIM,SIM,"US, UP, TC"
+../testcases/image/,,1454_Dist-Upgrade,1,SIM,SIM,"AT, MPC, EH"
+../testcases/image/,,1455_Post-installation (Ubuntu Studio),,NÃO,,
+../testcases/image/,,1456_Install (JeOS on ESX),,NÃO,,
+../testcases/image/,,1457_Install (default + RAID1),3,SIM,SIM,"US, ET, MS, MPC, TC, UT"
+../testcases/image/,,1458_Install ((JeOS on KVM),,NÃO,,
+../testcases/image/,,1459_iSCSI Unauthenticated Root Installation,,NÃO,,
+../testcases/image/,,1460_iSCSI Authenticated Root Installation,,NÃO,,
+../testcases/image/,,1461_MAAS (Installer),,NÃO,,
+../testcases/image/,,1462_MAAS (Juju),,NÃO,,
+../testcases/image/,,1463_MAAS (Server),,NÃO,,
+../testcases/image/,,1464_ARM Headless,,NÃO,,
+../testcases/image/,,1465_Netboot Install PPC,,NÃO,,
+../testcases/image/,,1468_Install (upgrade),,NÃO,,
+../testcases/image/,,1469_Other Features,,NÃO,,
+../testcases/image/,,1470_Install (manual partitioning re-using home partition),,NÃO,,
+../testcases/image/,,1471_Install (erase and re-install),,NÃO,,
+../testcases/image/,,1493_Install Nexus7 (ubuntu-nexus7-installer),,NÃO,,
+../testcases/image/,,1494_Nexus7 on screen keyboard,,NÃO,,
+../testcases/image/,,1495_Nexus7 network manager,,NÃO,,
+../testcases/image/,,1497_Install (live session),,NÃO,,
+../testcases/image/,,1498_Upgrade (image),,NÃO,,
+../testcases/image/,,1502_Xubuntu Raring Parole 0.5.0,,NÃO,,
+../testcases/image/,,1503_Ubuntu Kylin Chinese Calendar,,NÃO,,
+../testcases/image/,,1504_Netboot Install (Desktop),,NÃO,,
+../testcases/image/,,1513_Ubuntu Kylin Weather Indicator,,NÃO,,
+../testcases/image/,,1514_Ubuntu Kylin Music Lens,,NÃO,,
+../testcases/image/,,1548_Ubuntu Kylin Fcitx Tests,,NÃO,,
+../testcases/image/,,1552_EC2CloudImages test,,NÃO,,
+../testcases/image/,,1611_Live Session Persistence,,NÃO,,
+../testcases/image/,,1625_Post-Installation Tests (UbuntuKylin),,NÃO,,
+../testcases/image/,,1628_Xubuntu Post-install,,NÃO,,
+../testcases/image/,,1634_Kubuntu Localisation Support,,NÃO,,
+../testcases/image/,,1635_Upgrade LTS,,NÃO,,
+../testcases/image/,,1636_Upgrade LTS (Image),,NÃO,,
+../testcases/image/,,1639_UbuntuStudio Install,,NÃO,,
+../testcases/image/,,1640_Install_Minimal_System,,NÃO,,
+../testcases/image/,,1641_Install_Minimal_Virtual_System,,NÃO,,
+../testcases/image/,,1642_Server_Upgrade_CLI,,NÃO,,
+../testcases/image/,,1655_Xubuntu Core Install tasksel,,NÃO,,
+../testcases/image/,,1658_Xubuntu Core Upgrade taskesel,,NÃO,,
+../testcases/image/,,1660_Alternate Install (Unencrypted Home),,NÃO,,
+../testcases/image/,,1661_Alternate Install (Manual Partitioning),,NÃO,,
+../testcases/image/,,1663_Image Boot Test,,NÃO,,
+../testcases/image/,,1687_Xubuntu Core Install,,NÃO,,
+../testcases/image/,,1688_ARM64_Headless_KVM_Guest,,NÃO,,
+../testcases/image/,,1689_Install (no Network),,NÃO,,
+../testcases/image/,,1696_Install BIOS (Server live),,NÃO,,
+../testcases/image/,,1697_Install UEFI (Server live),,NÃO,,
+../testcases/image/,,1698_Install_BIOS,,NÃO,,
+../testcases/image/,,1699_Install_UEFI,,NÃO,,
+../testcases/image/,,1700_Alternate Install (No Network),,NÃO,,
+../testcases/image/,,1701_Install using Calamares (entire disk),,NÃO,,
+../testcases/image/,,1702_Install using Calamares (manual partitioning),,NÃO,,
+../testcases/image/,,1710_Install RAID1 (Server live),,NÃO,,
+../testcases/image/,,1711_RaspberryPi 4 2GB Post-install,,NÃO,,
+../testcases/image/,,1712_RaspberryPi Serial,,NÃO,,
+../testcases/image/,,1713_RaspberryPi flash-kernel,,NÃO,,
+../testcases/image/,,1714_RaspberryPi USB keyboard,,NÃO,,
+../testcases/image/,,1715_Degraded RAID1 (Server live),,NÃO,,
+../testcases/image/,,1716_Install (entire disk with ZFS),,NÃO,,
+../testcases/image/,,1717_Install RST,,NÃO,,
+../testcases/image/,,1718_Install UEFI SecureBoot nVidia,,NÃO,,
+../testcases/image/,,1719_RaspberryPi 4 4GB Post-install,,NÃO,,
+../testcases/image/,,1720_RaspberryPi 4 8GB Post-install,,NÃO,,
+../testcases/image/,,1721_RaspberryPi 3B+ Post-install,,NÃO,,
+../testcases/image/,,1722_RaspberryPi 3B Post-install,,NÃO,,
+../testcases/image/,,1723_RaspberryPi 3A+ Post-install,,NÃO,,
+../testcases/image/,,1724_RaspberryPi 2 Post-install,,NÃO,,
+../testcases/image/,,1725_RaspberryPi CM3 Post-install,,NÃO,,
+../testcases/image/,,1726_RaspberryPi CM3+ Post-install,,NÃO,,
+../testcases/image/,,1727_RaspberryPi CM3+ Lite Post-install,,NÃO,,
+../testcases/image/,,1728_PPC64EL Install using Netboot (Petitboot),,NÃO,,
+../testcases/image/,,1729_S390X Install LPAR (Server live),,NÃO,,
+../testcases/image/,,1730_S390X Install zVM (Server live),,NÃO,,
+../testcases/image/,,1732_Netinstall (arm64 server live),,NÃO,,
+../testcases/image/,,1733_Install (Safe Graphics mode),,NÃO,,
+../testcases/image/,,1734_Netinstall (amd64 server live),,NÃO,,
+../testcases/image/,,1735_Certified Devices Testing,,NÃO,,
+../testcases/image/,,1736_Install Unleashed,,NÃO,,
+../testcases/image/,,1737_Install Unmatched,,NÃO,,
+../testcases/image/,,1738_Install Qemu,,NÃO,,
+../testcases/image/,,1739_WSL Import and run,,NÃO,,
+../testcases/image/,,1740_RaspberryPi 400 Post-install,,NÃO,,
+../testcases/image/,,1741_RaspberryPi CM4 2GB Post-install,,NÃO,,
+../testcases/image/,,1742_RaspberryPi CM4 4GB Post-install,,NÃO,,
+../testcases/image/,,1743_RaspberryPi CM4 8GB Post-install,,NÃO,,
+../testcases/image/,,1317_Upgrade to dev - ubuntu-desktop - text mode - non interactive,0,SIM,NÃO,--
+../testcases/image/,,1304_VMWare Easy Install,1,SIM,NÃO,--
+../testcases/image/,,1412_Unity GSetting Migration,1,SIM,NÃO,--
+../testcases/image/,,1300_Install (entire disk),1,SIM,SIM,"AT, UWT, CT"
+../testcases/image/,,1301_Install (auto-resize),1,SIM,SIM,"ET, US, CT"
+../testcases/image/,,1302_Install (manual partitioning),1,SIM,SIM,"AT, ET, CT"
+../testcases/image/,,1303_Live Session,2,SIM,SIM,UP
+../testcases/image/,,1305_Install (OEM setup),1,SIM,SIM,"AT, CT, ET"
+../testcases/image/,,1307_Free Software Only,1,SIM,SIM,"AT, CT, ET"
+../testcases/image/,,1309_Install (Screen Reader),1,SIM,SIM,"US, UWT, UP"
+../testcases/image/,,1310_Upgrade,1,SIM,SIM,"CT, ET"
+../testcases/image/,,1311_Non-English Installation Full Network Support,1,SIM,SIM,"ET, CT"
+../testcases/image/,,1312_Non-English Installation No Network,1,SIM,SIM,"ET, CT"
+../testcases/image/,,1313_Installation Broken Internet,1,SIM,SIM,"ET,CT"
+../testcases/image/,,1314_Non-English Live Session & Installation; No Network,1,SIM,SIM,"US, ET, CT"
+../testcases/image/,,1315_Non-English Live Session & Installation; Full Network Support,1,SIM,SIM,US
+../testcases/image/,,1316_Non-English Installation Full Network Support & CJK Input,1,SIM,SIM,"ET, CT"
+../testcases/image/,,1318_Ubuntu Core Image Smoke Test,1,SIM,SIM,US
+../testcases/image/,,1337_Install (Default),1,SIM,SIM,"US, UWT"
+../testcases/image/,,1401_Install (Bind9),1,SIM,SIM,"ET, US, CT"
+../testcases/image/,,1402_Install (Default + LVM),1,SIM,SIM,"US, ERAS"
+../testcases/image/,,1403_Install (Default + crypted LVM),1,SIM,SIM,"US, ERAS"
+../testcases/image/,,1404_Install (LAMP),1,SIM,SIM,"US, ERAS, NT, UP"
+../testcases/image/,,1405_Install (Mail server),1,SIM,SIM,"US, ERAS"
+../testcases/image/,,1406_Install (OpenSSH server),1,SIM,SIM,"US, CT"
+../testcases/image/,,1407_Install (PostgreSQL database server),1,SIM,SIM,US
+../testcases/image/,,1408_Install (Print server),1,SIM,SIM,US
+../testcases/image/,,1409_Install (Samba server),1,SIM,SIM,US
+../testcases/image/,,1410_Install (Tomcat Java server),2,SIM,SIM,OS
+../testcases/image/,,1411_Install (Virtualization host),1,SIM,SIM,US
+../testcases/image/,,1413_Install (Preseed),1,SIM,SIM,US
+../testcases/hardware/,,1479_Touchpad,1,SIM,NÃO,---
+../testcases/hardware/,,1467_External Microphone,1,SIM,SIM,US
+../testcases/hardware/,,1472_Headphones,1,SIM,SIM,"PCAS, US"
+../testcases/hardware/,,1473_Recording Internal Microphone,1,SIM,SIM,"PCAS, US"
+../testcases/hardware/,,1474_Speakers,1,SIM,SIM,"PCAS, US"
+../testcases/hardware/,,1475_Firewire,1,SIM,SIM,US
+../testcases/hardware/,,1476_USB Ports,1,SIM,SIM,"US, OS"
+../testcases/hardware/,,1477_Builtin Keyboard,3,SIM,SIM,US
+../testcases/hardware/,,1478_Hotkeys,5,SIM,SIM,US
+../testcases/hardware/,,1480_USB Mouse,2,SIM,SIM,US
+../testcases/hardware/,,1481_Wired Networking,2,SIM,SIM,US
+../testcases/hardware/,,1482_Wireless Networking,2,SIM,SIM,"US, ERAS"
+../testcases/hardware/,,1483_Builtin Webcam,1,SIM,SIM,"PCAS, US"
+../testcases/hardware/,,1484_Internal Data Card Reader,2,SIM,SIM,US
+../testcases/hardware/,,1486_Suspend & Resume,1,SIM,SIM,"US, UP"
+../testcases/hardware/,,1487_Builtin Screen,1,SIM,SIM,US
+../testcases/hardware/,,1488_External Screen,1,SIM,SIM,US
+../testcases/hardware/,,1618_System Config Printer,8,SIM,SIM,"PCAS, US"
+../testcases/packages/Studio/,,1577_Audacity,,NÃO,,
+../testcases/packages/Studio/,,1662_Agave,,NÃO,,
+../testcases/packages/Studio/,,1664_krita,3,SIM,SIM,"OS, SAER"
+../testcases/packages/Studio/,,1665_inkscape,4,SIM,SIM,"US, SAER"
+../testcases/packages/Studio/,,1666_RecordMyDesktop,4,SIM,NÃO,--
+../testcases/packages/Studio/,,1667_Qtractor,7,SIM,SIM,US
+../testcases/packages/Studio/,,1668_Scribus,3,SIM,SIM,"US, ES"
+../testcases/packages/Studio/,,1669_Blender,4,SIM,SIM,"US, NDS, ES"
+../testcases/packages/Studio/,,1670_Darktable,3,SIM,SIM,"US, PCAS"
+../testcases/packages/Studio/,,1671_FontManager,,NÃO,,
+../testcases/packages/Studio/,,1672_Ardour,,NÃO,,
+../testcases/packages/Studio/,,1673_Hydrogen,,NÃO,,
+../testcases/packages/Studio/,,1674_Kdenlive,,NÃO,,
+../testcases/packages/Studio/,,1675_Qsynth,,NÃO,,
+../testcases/packages/Studio/,,1676_Qjackctl,,NÃO,,
+../testcases/packages/Unity/,,1392_Unity Alt-tab,,NÃO,,
+../testcases/packages/Unity/,,1393_Unity Dash,,SIM,SIM,"US, MPC, CT, UP"
+../testcases/packages/Unity/,,1394_Unity HUD,,NÃO,,
+../testcases/packages/Unity/,,1395_Unity Launcher,,NÃO,,
+../testcases/packages/Unity/,,1396_Unity multimonitor multi-launchers,,NÃO,,
+../testcases/packages/Unity/,,1397_Unity Panel,,NÃO,,
+../testcases/packages/Unity/,,1398_Unity Software Center,,NÃO,,
+../testcases/packages/Unity/,,1399_Unity Startup,,NÃO,,
+../testcases/packages/Unity/,,1400_Unity Window Management,,NÃO,,
+../testcases/packages/Unity/,,1412_Unity GSetting Migration,,NÃO,,
+../testcases/packages/Unity/,,1448_Unity Lenses,,NÃO,,
+../testcases/packages/Unity/,,1505_Unity Smart Scopes,,NÃO,,
+../testcases/packages/Unity/,,1512_Unity Lens Music,,NÃO,,
+../testcases/packages/Webapps/,,1321_Webapps Browser extensions,,NÃO,,
+../testcases/packages/Webapps/,,1323_Webapps Launchpad,,NÃO,,
+../testcases/packages/Webapps/,,1324_Webapps BBC,1,SIM,NÃO,
+../testcases/packages/Webapps/,,1325_Webapps Gmail,1,SIM,NÃO,
+../testcases/packages/Webapps/,,1326_Webapps Youtube,,NÃO,,
+../testcases/packages/Xfce/,,1561_Xfce4 Screenshooter,,NÃO,,
+../testcases/packages/Xfce/,,1562_Xfce4 Panel,,NÃO,,
+../testcases/packages/Xfce/,,1563_Xfce4 Workspace Settings,,NÃO,,
+../testcases/packages/Xfce/,,1565_Xfce4 Mouse Settings,,NÃO,,
+../testcases/packages/Xfce/,,1566_Xfce4 Notes,,NÃO,,
+../testcases/packages/Xfce/,,1568_exo-helper,,NÃO,,
+../testcases/packages/Xfce/,,1571_Xfce4 Keyboard Settings,,NÃO,,
+../testcases/packages/Xfce/,,1573_Xfce4 Dictionary,,NÃO,,
+../testcases/packages/Xfce/,,1574_Xfce4 Settings Manager,,NÃO,,
+../testcases/packages/Xfce/,,1575_Xfce4 Appearance Settings,,NÃO,,
+../testcases/packages/Xfce/,,1576_Xfce4 Session and Startup Settings,,NÃO,,
+../testcases/packages/Xfce/,,1580_Xfdesktop Settings,,NÃO,,
+../testcases/packages/Xfce/,,1581_Xfce4 MIME Settings,,NÃO,,
+../testcases/packages/Xfce/,,1582_Xfce4 Power Manager Settings,,NÃO,,
+../testcases/packages/Xfce/,,1583_Xfce4 Task Manager,,NÃO,,
+../testcases/packages/Xfce/,,1584_Xfwm4 Settings,2,SIM,SIM,"US, ET?"
+../testcases/packages/Xfce/,,1585_Xfce4 Application Finder,,NÃO,,
+../testcases/packages/Xfce/,,1586_Xfce4 Display Settings,,NÃO,,
+../testcases/packages/Xfce/,,1589_Xfce4 Thunar Volman,,NÃO,,
+../testcases/packages/Xfce/,,1590_Xfce4 Window Manager Tweaks,,NÃO,,
+../testcases/packages/Xfce/,,1628_Xubuntu Post-install,,NÃO,,
+../testcases/packages/,,1306_Kernel (smoke),,NÃO,,
+../testcases/packages/,,1308_software-properties (smoke),,NÃO,,
+../testcases/packages/,,1414_Deja-Dup,,NÃO,,
+../testcases/packages/,,1415_Empathy,,NÃO,,
+../testcases/packages/,,1416_Eye of Gnome,,NÃO,,
+../testcases/packages/,,1417_Evince,,NÃO,,
+../testcases/packages/,,1418_Fileroller,,NÃO,,
+../testcases/packages/,,1419_Firefox,,NÃO,,
+../testcases/packages/,,1420_Gedit,,NÃO,,
+../testcases/packages/,,1421_Gnome Screenshot,,NÃO,,
+../testcases/packages/,,1422_Gnome Terminal,,NÃO,,
+../testcases/packages/,,1423_LibreOffice,,NÃO,,
+../testcases/packages/,,1424_Nautilus,,NÃO,,
+../testcases/packages/,,1425_Network Manager,,NÃO,,
+../testcases/packages/,,1426_Orca,,NÃO,,
+../testcases/packages/,,1427_Rhythmbox,,NÃO,,
+../testcases/packages/,,1428_Shotwell,,NÃO,,
+../testcases/packages/,,1429_Totem,,NÃO,,
+../testcases/packages/,,1430_Ubuntu One,,NÃO,,
+../testcases/packages/,,1496_Thunderbird,,NÃO,,
+../testcases/packages/,,1506_Software Center,,NÃO,,
+../testcases/packages/,,1507_Gwibber Social Client,,NÃO,,
+../testcases/packages/,,1508_Simple Scan,8,NÃO,,"EH, UP"
+../testcases/packages/,,1509_Abiword,,NÃO,,
+../testcases/packages/,,1511_Pcmanfm,,NÃO,,
+../testcases/packages/,,1515_Mesa (smoke),,NÃO,,
+../testcases/packages/,,1516_Brasero,8,SIM,SIM,"US, CT, EH"
+../testcases/packages/,,1517_Privacy,,NÃO,,
+../testcases/packages/,,1549_Transmission,3,SIM,SIM,"UP, US"
+../testcases/packages/,,1550_alsa-utils (smoke),1,SIM,NÃO,
+../testcases/packages/,,1557_Mousepad,,NÃO,,
+../testcases/packages/,,1558_Xfce4 Terminal,,NÃO,,
+../testcases/packages/,,1559_Catfish,4,SIM,SIM,UWT
+../testcases/packages/,,1560_Xchat,6,SIM,NÃO,
+../testcases/packages/,,1564_Gimp,2,SIM,NÃO,
+../testcases/packages/,,1567_GNOME Mines,3,SIM,SIM,US
+../testcases/packages/,,1569_Thunar,6,SIM,SIM,"PCAS, US"
+../testcases/packages/,,1570_Gnumeric,9,SIM,SIM,UP
+../testcases/packages/,,1572_xMir,5,SIM,SIM,"ET, CT"
+../testcases/packages/,,1578_Parole,,NÃO,,
+../testcases/packages/,,1579_Bulk renamer,,NÃO,,
+../testcases/packages/,,1587_Gigolo,8,SIM,SIM,UP
+../testcases/packages/,,1588_gThumb,5,SIM,SIM,"ES, UP, CT"
+../testcases/packages/,,1591_Blueman,4,SIM,SIM,PCAS
+../testcases/packages/,,1592_GNOME Sudoku,,NÃO,,
+../testcases/packages/,,1593_pavucontrol,2,SIM,SIM,"UP, CT"
+../testcases/packages/,,1594_Pidgin,3,SIM,SIM,ES
+../testcases/packages/,,1595_Time Administration,5,SIM,SIM,
+../testcases/packages/,,1596_Update Manager,,NÃO,,
+../testcases/packages/,,1597_Users Settings,,NÃO,,
+../testcases/packages/,,1598_Leafpad,,NÃO,,
+../testcases/packages/,,1599_Orage,,NÃO,,
+../testcases/packages/,,1600_Ristretto,10,SIM,SIM,"OS, PCAS, CT"
+../testcases/packages/,,1602_Xpad,,NÃO,,
+../testcases/packages/,,1603_LightDM GTK+ Greeter,,NÃO,,
+../testcases/packages/,,1604_Gnome Calculator,2,SIM,SIM,OS
+../testcases/packages/,,1605_synaptic,8,SIM,NÃO,
+../testcases/packages/,,1610_Xfce4 Assistive Technologies,3,SIM,SIM,OS
+../testcases/packages/,,1614_Xfburn,6,SIM,SIM,"ET, US"
+../testcases/packages/,,1615_Chromium,5,SIM,SIM,ES
+../testcases/packages/,,1616_Xfce4-mixer tests,,NÃO,,
+../testcases/packages/,,1617_gmusicbrowser,6,SIM,SIM,"CT, US"
+../testcases/packages/,,1620_ChineseCalendar,4,SIM,SIM,"EH, ET"
+../testcases/packages/,,1621_Fcitx,1,SIM,SIM,"EH, ES"
+../testcases/packages/,,1622_IndicatorChinaWeather,,NÃO,,
+../testcases/packages/,,1623_UbuntuKylin DashScope,,NÃO,,
+../testcases/packages/,,1624_Youker-Assistant,4,SIM,SIM,"EH, ES"
+../testcases/packages/,,1627_Mugshot,,NÃO,,
+../testcases/packages/,,1629_Xubuntu Power,,NÃO,,
+../testcases/packages/,,1630_light-locker,,NÃO,,
+../testcases/packages/,,1631_Xubuntu GTK3 Indicators,,NÃO,,
+../testcases/packages/,,1632_Whiskermenu,5,SIM,SIM,NDS(up)
+../testcases/packages/,,1633_light-locker-settings,,NÃO,,
+../testcases/packages/,,1637_Audacious,5,SIM,SIM,"US, ES, NDS"
+../testcases/packages/,,1638_MenuLibre,,NÃO,,
+../testcases/packages/,,1643_Musescore,,NÃO,,
+../testcases/packages/,,1644_Dia,2,SIM,SIM,ES
+../testcases/packages/,,1645_tuxpaint,1,SIM,SIM,ET
+../testcases/packages/,,1646_Vym,2,SIM,SIM,ES
+../testcases/packages/,,1647_vlc,5,SIM,SIM,ES
+../testcases/packages/,,1648_xterm,1,SIM,SIM,NDER(up)
+../testcases/packages/,,1649_gpicview,,NÃO,,
+../testcases/packages/,,1650_hardinfo,,NÃO,,
+../testcases/packages/,,1651_klettres,,NÃO,,
+../testcases/packages/,,1652_kolourpaint4,1,SIM,SIM,ES
+../testcases/packages/,,1653_mypaint,2,SIM,SIM,ES
+../testcases/packages/,,1654_krecipes,1,SIM,SIM,ES
+../testcases/packages/,,1656_StartupDiskCreator,2,SIM,SIM,"US, TC"
+../testcases/packages/,,1657_Gnome-system-monitor,,NÃO,,
+../testcases/packages/,,1677_GDebi,2,SIM,SIM,"SAER, US"
+../testcases/packages/,,1679_software-properties-gtk,,NÃO,,
+../testcases/packages/,,1681_Thunar additional tests 1512120,1,SIM,SIM,US
+../testcases/packages/,,1682_Thunar additional tests 1514912,,NÃO,,
+../testcases/packages/,,1685_Xubuntu_gnome_screensaver,,NÃO,,
+../testcases/packages/,,1686_Xubuntu_xscreensaver,1,SIM,SIM,US
+../testcases/packages/,,1336_Pulseaudio (smoke),,SIM,SIM,

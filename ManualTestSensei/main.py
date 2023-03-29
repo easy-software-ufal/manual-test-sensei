@@ -1,7 +1,7 @@
 import logging.config
 
 from data import get_tests
-from testcases import matchers
+import matchers
 
 logging.config.fileConfig(fname='log.config', disable_existing_loggers=False)
 log = logging.getLogger(__name__)

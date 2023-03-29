@@ -83,7 +83,7 @@ smart-open==5.2.1
     # via
     #   pathy
     #   spacy
-spacy==3.5
+spacy==3.4.1
     # via manual-test-smells (setup.py)
 spacy-legacy==3.0.12
     # via spacy

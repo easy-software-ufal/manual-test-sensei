@@ -1,4 +1,4 @@
-from testcases.keywords import Keywords
+from keywords import Keywords
 
 verifications = Keywords().keywords['verifications']
 
