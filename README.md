@@ -1,4 +1,4 @@
-# Manual Test Sensei 🥷
+# Manual Test Sensei 🐱‍👤
 Manual Test Sensei is a tool for detecting "test smells" in manual testing. Test smells are patterns of poor testing practices that can lead to ineffective or incomplete testing. By identifying and addressing these issues, Manual Test Sensei can help improve the quality and effectiveness of manual testing.
 
 The smells identified by our Sensei are based on the paper [Hunting for smells in natural language tests](https://ieeexplore.ieee.org/document/6606682/), by _Hauptmann et al._, on the [Open Test Smells Catalog](https://easy.github.io/testsmells/index.html), and on the tool creators' expertise on the subject.
