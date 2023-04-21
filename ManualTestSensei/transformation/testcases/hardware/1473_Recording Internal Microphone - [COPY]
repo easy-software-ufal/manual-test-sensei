@@ -1,0 +1,18 @@
+Tests FAMILY's ability to use an internal microphone.
+<!-- Smells: UNVERIFIED STEPS, PCAT -->
+<dl>
+    <dt>Check that no external microphones are connected to the computer.</dt>
+    <dt>Right click on the Volume Control icon on the right side of the top panel</dt>
+    <dt>Open Sound Preferences or Sound Setting.</dt>
+    <dt>Go to the Input tab and ensure that the Input volume of the microphone is set to an appropriate level and is not muted.</dt>
+    <dt>Press the Super (Windows) Key or click on the Ubuntu logo on the unity panel, and search Sound Recorder.</dt>
+    <dt>Click the Record button (the red circle).</dt>
+    <dt>Talk briefly into the microphone.</dt>
+    <dt>Click the Stop button (the gray square).</dt>
+    <dt>Click the Play button (the right-facing triangle)</dt> 
+        <dd>Your voice is played back and no words are dropped</dd>
+</dl>
+
+<strong>
+    If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

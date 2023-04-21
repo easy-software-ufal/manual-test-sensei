@@ -1,0 +1,92 @@
+This test will check that simple-scan can be started.
+
+<dl>
+    <dt>Open simple-scan.</dt>
+        <dd>Did simple-Scan launch?</dd>
+        <dd>Did simple-scan detect your scanner?</dd>
+        <dd>If simple-scan did not detect your scanner did you get an error message displaying "No scanners detected"?</dd>
+</dl>
+
+This test will check that simple-scan can scan and then save files.
+
+<dl>
+    <!-- UNSPECIFIED PARAMETER -->
+    <dt>Put a document into the scanner and Click "Scan".</dt>
+        <dd>Has the document Scanned?</dd>
+        <dd>Has the Scanned Document been displayed on screen?</dd>
+    <dt>Save the file.</dt>
+        <dd>Did the file save correctly?</dd>
+        <dd>Did the file save as jpg?</dd>
+    <dt>Navigate to Scanned Document.jpg (by default this should be in /home/USERNAME/Documents/)</dt>
+        <dd>Did the file open correctly as a jpg?</dd>
+</dl>
+
+This test will check that simple-scan can scan and then save pdf files.
+
+<dl>
+    <dt>Put a document into the scanner and Click "Scan".</dt>
+        <dd>Has the document Scanned?</dd>
+        <dd>Has the Scanned Document been displayed on screen?</dd>
+    <dt>Save the file and change the extension from Scanned Document.jpg to Scanned Document.pdf</dt>
+        <dd>Did the file save correctly?</dd>
+        <dd>Did the file save as pdf?</dd>
+    <dt>Navigate to Scanned Document.pdf (by default this should be in /home/USERNAME/Documents/) </dt>
+        <dd>Did the file open correctly as a pdf?</dd>
+</dl>
+
+This test will check that simple-scan can scan change image rotation.
+
+<dl>
+    <dt>Put a document into the scanner and Click "Scan" then click the orange arrow pointing towards the right.</dt>
+        <dd>Did the image rotate 90 degrees to the right (clockwise)?</dd>
+    <dt>click the orange arrow pointing towards the right again.</dt>
+        <dd>Did the image rotate another 90 degrees to the right (clockwise)?</dd>
+    <dt>Put a document into the scanner and Click "Scan" then click the orange arrow pointing towards the left.</dt>
+        <dd>Did the image rotate 90 to the left (counter-clockwise)?</dd>
+    <dt>Click the orange arrow pointing towards the left again.</dt>
+        <dd>Did the image rotate another 90 degrees to the left (counter-clockwise)?</dd>
+    <dt>Right click on the scan click "rotate right".</dt>
+        <dd>Did the image rotate 90 degrees to the right (clockwise)?</dd>
+    <dt>Right click on the scan click "rotate Left".</dt>
+        <dd>Did the image rotate 90 degrees to the left (counter-clockwise)?</dd>
+</dl>
+
+This test will check that simple-scan can Stop a scan.
+
+<dl>
+    <!-- EXCEPTION HANDLING -->
+    <dt>Put a document into the scanner and Click "Scan". After the scan begins, click "Stop the current scan"</dt>
+        <dd>Did simple-scan stop the current scan?</dd>
+</dl>
+
+This test will check that simple-scan can Crop a scan.
+
+<dl>
+    <dt>Put a document into the scanner and Click "Scan" click Crop.</dt>
+        <dd>Did simple-scan display a movable box on the scan?</dd>
+        <dd>By moving the mouse to the center of the box can you replace the box to an area you would like to crop?</dd>
+        <dd> move the mouse to a corner of the box can you resize the area you would like to crop?</dd>
+    <dt>right click on the scan scroll to crop and change the crop to A6, A5, A4, letter, legal or 4x6</dt>
+        <dd>Did the cropped area change to the size you selected?</dd>
+    <dt>Click save and name it "Scanned Document(cropped).jpg" then navigate to Scanned Document(cropped).jpg (by default this should be in /home/USERNAME/Documents/)</dt>
+        <dd>Did the image save as a cropped image?</dd>
+</dl>
+
+This test will check that simple-scan can Save multiple images.
+
+<dl>
+    <dt>Put a document into the scanner and Click "Scan" once image has scanned put another document into the scanner and click "Scan" one more.</dt>
+        <dd>Did both appear side by side on screen?</dd>
+    <dt>Click save and name it "Scanned Document(multi).jpg" then navigate to Scanned Document(multi).jpg (by default this should be in /home/USERNAME/Documents/)</dt>
+        <dd>Did both images save as separate images named "Scanned Document(multi) 1.jpg" and "Scanned Document(multi) 2.jpg"?</dd>
+</dl>
+
+This test will check that simple-scan can delete a scan.
+
+<dl>
+    <dt>>Put a document into the scanner and Click "Scan" then right click on the scan and choose "Delete".</dt>
+        <dd>Did the scan delete correctly?</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
