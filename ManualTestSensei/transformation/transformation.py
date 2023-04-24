@@ -6,4 +6,20 @@ def misplaced_precondition(testRow):
     #resolve o erro
     pass
 
-def misplaced_
+def misplaced_action():
+    pass
+
+def misplaced_result():
+    pass
+
+def ambiguous_test():
+    pass
+
+def conditional_test_logic():
+    pass
+
+def unverified_action():
+    pass
+
+def eager_step():
+    pass

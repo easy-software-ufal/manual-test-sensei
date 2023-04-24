@@ -4,12 +4,19 @@ from pathlib import Path, PureWindowsPath
 
 
 def create_copy(filteredDataFrame):
-    pathFiles = filteredDataFrame["Test file"].unique()
-    for file in pathFiles:
+    def update_df_with_copy_location(copied_paths:dict):
+        df
+
+    
+    path_files = filteredDataFrame["Test file"].unique()
+    copied_paths = {}
+    for file in path_files:
         path = Path(file)
+        breakpoint()
         os.makedirs(os.path.dirname(file[3:]), exist_ok=True)
-        # breakpoint()
         new_file_path = shutil.copy(Path("../",file), file[3:] + " - [COPY]")
+        copied_paths[path] = Path(new_file_path)
+
         #df.insert(df.loc[1],"Copy path", new_file_path) INSERT NAO FUNCIONA
 
 
@@ -18,18 +25,13 @@ def create_copy(filteredDataFrame):
 #3. fazer a transformação
 #4. profit
 
-def getFilteredDataframe(smellName):
+def get_filtered_df_by_smell_name(smellName):
     filteredDataFrame = df.loc[df['Smell'] == smellName]
     return filteredDataFrame
 
-def refactorMisplacedPrecondition(testRow):
-    #acessa o arquivo
-    #encontra o erro
-    #resolve o erro
-    pass
-
 
 def get_csv_path():
+    """Searches for .csv files and returns the first one that has 'results' on the name."""
     csvs = sorted(Path('../').glob('*.csv'))
     csvs = [s for s, s in enumerate(csvs) if 'results' in str(s)]
     file = str(csvs[0].resolve())
@@ -38,7 +40,7 @@ def get_csv_path():
 if __name__ == "__main__":
     file = get_csv_path()
     df = pd.read_csv(file)
-    mprecondition = getFilteredDataframe("Misplaced Precondition")
+    mprecondition = get_filtered_df_by_smell_name("Misplaced Precondition")
 
     create_copy(mprecondition)
     # breakpoint()
