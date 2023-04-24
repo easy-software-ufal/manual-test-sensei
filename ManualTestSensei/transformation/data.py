@@ -45,7 +45,7 @@ def get_csv_path():
     return file
 
 
-def data_closure():
+def data_closure() -> pd.DataFrame:
     def create_copy_from_smell_name(df, smell_name) -> pd.DataFrame:
         filtered_df = get_filtered_df_by_smell_name(df, smell_name)
         df = create_copy(df, filtered_df)
