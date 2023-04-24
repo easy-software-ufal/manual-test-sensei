@@ -7,7 +7,11 @@ from transformation import SMELL_NAMES
 
 def create_copy(df:pd.DataFrame, filteredDataFrame):
     def update_df_with_copy_location(df:pd.DataFrame,copied_paths:dict) -> pd.DataFrame:
-        df['Copy Path'] = df['Test file'].map(copied_paths, 'ignore')
+        df_zero = df
+        try:
+            df['Copy Path'] = df['Test file'].map(copied_paths, 'ignore').fillna(df_zero['Copy Path'])
+        except:
+            df['Copy Path'] = df['Test file'].map(copied_paths, 'ignore')
         # breakpoint()
         return df
 
@@ -53,9 +57,8 @@ def data_closure():
     log.debug('CSV found')
     for smell_name in SMELL_NAMES:
         df = create_copy_from_smell_name(df, smell_name)
-        breakpoint()
 
-    # breakpoint()
+    return df
     #maybe this gets troubled about the DF. check the DF.
 
 
