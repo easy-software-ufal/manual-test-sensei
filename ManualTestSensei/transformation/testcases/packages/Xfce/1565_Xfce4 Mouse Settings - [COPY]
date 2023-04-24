@@ -1,0 +1,87 @@
+This tests that xfce4 mouse settings will open
+<dl>
+    <dt>Navigate to the settings menu</dt>
+    <dt>Open "Mouse and Touchpad"</dt>
+        <dd>xfce4 mouse settings opens</dd>
+</dl>
+
+This tests that Devices of xfce4 mouse settings works
+<dl>
+    <dt>Click the "Devices" tab</dt>
+    <dt>Click the "Device:" drop down list</dt>
+        <dd>A menu rolls down</dd>
+    <dt>Select one of the devices</dt>
+    <dt>Untick "Enable this device"</dt>
+        <dd>The selected device no longer responds</dd>
+    <dt>Press Enter to re-tick "Enable the device"</dt>
+        <dd>The device responds again</dd>	
+    <dt>Click the "Left-handed" radio button</dt>
+        <dd>The mouse buttons reverse</dd>
+    <dt>Click the "Right-handed" radio button</dt>
+        <dd>The mouse buttons return to normal</dd>
+    <dt>Tick "Reverse scroll direction"</dt>
+        <dd>Both forward/back and side-to-side scrolling reverse</dd>
+    <dt>Untick "Reverse scroll direction"</dt>
+        <dd>Both forward/back and side-to-side scrolling are returned to normal</dd>
+    <dt>Adjust the "Acceleration" bar</dt>
+        <dd>The cursor accelerates slower or faster depending on how you move the bar</dd>
+    <dt>Adjust the "Sensitivity" bar</dt>
+        <dd>The cursor becomes more or less sensitive depending on how you move the bar</dd>
+    <dt>Click "Reset to defaults"</dt>
+        <dd>All settings in the tab reset to default</dd>
+    <dt>Repeat for each device</dt>
+</dl>
+
+
+This tests that Behaviour of xfce4 mouse settings works
+<dl>
+    <dt>Click the "Behavior" tab</dt>
+    <dt>Adjust the "Threshold" bar, then drag and drop something</dt>
+        <dd>The distance before something starts draging increases and decreases</dd>
+    <dt>Adjust the "Time" bar, then double click something</dt>
+        <dd>The maximum time between clicks increases and decreases</dd>
+    <dt>Adjust the "Distance" bar, then double click something, moving the mouse slightly between clicks</dt>
+        <dd>The distance the mouse can move between clicks and it still be a double click changes</dd>
+</dl>
+
+This tests that Themes of xfce4 mouse settings works
+<dl>
+    <dt>Click the "Themes" tab</dt>
+    <dt>Click a Theme</dt>
+        <dd>A preview of each cursor appears under the  heading "Preview"</dd>
+    <dt>Change the "Cursor size"</dt>
+    <dt>Move the cursor outside the current window</dt>
+        <dd>The cursor is in the new theme and size</dd>
+    <dt>Repeat for each cursor theme</dt>
+</dl>
+
+<em>The following test is optional, depending on hardware</em>
+
+This tests that the touchpad settings work
+
+<dl>
+    <dt>Click the "Devices" tab</dt>
+    <dt>Click the "Touchpad" tab</dt>
+    <dt>Tick "Disable touchpad while typing", type somewhere</dt>
+        <dd>The touchpad disables while you type</dd>
+    <dt>Untick "Disable touchpad while typing", type somewhere</dt>
+        <dd>The touchpad no longer disables while you type</dd>
+    <dt>Untick "Tap touchpad to click", tap on the touchpad</dt>
+        <dd>Tapping on the touchpad does nothing</dd>
+    <dt>Tick "Tap touchpad to click", tap on the touchpad</dt>
+        <dd>Tapping on the touchpad does the same as clicking</dd>
+    <dt>Click the radio button "Disabled", try scrolling on something</dt>
+        <dd>Nothing happens</dd>
+    <dt>Click the radio button "Edge scrolling", try scrolling on something</dt>
+        <dd>Scrolling only works when you scroll with the very edge of the touchpad</dd>
+    <dt>Click the radio button "Two-finger scrolling", try scrolling on something</dt>
+        <dd>Scrolling only works when you scroll with two fingers pressed to the touchpad</dd>
+    <dt>Tick "Enable horizontal scrolling", horizonatally scroll something</dt>
+        <dd>The touchpad scrolls horizontally</dd>
+    <dt>Untick "Enable horizontal scrolling", horizonatally scroll something</dt>
+        <dd>The touchpad doesn't scroll horizontally</dd>
+    <dt>Repeat for each touchpad device</dt>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

@@ -1,0 +1,25 @@
+This test will check that vym can create a new mind map file, add new branch and delete the branch
+<dl>
+    <dt>Launch vym</dt>
+    <dd>vym opens, showing one window by default</dd>
+    <!-- EAGER STEP -->
+    <dt>Right Click the box "New Map" on the canvas. Select "Add > Add branch as child"</dt>
+        <dd>A new child branch is created</dd>
+    <dt>Type a string in the box of the new branch and press Enter </dt>
+        <dd>The new branch sets the new string</dd>
+    <dt>Right click on the new branch. select "Remove > Delete Selection"</dt>
+        <dd>The new branch is deleted </dd>
+</dl>
+
+This test will check that vym can be used to export a mind map file
+<dl>
+    <!-- EAGER STEP -->
+    <dt>Goto Map > Save...,</dt>
+        <dd>Vym opens the "Save" window. Give a name to the file and press "save" button. The mind map is saved now</dd>
+    <dt>Goto Map > Export > SVG... </dt>
+        <dd>Vym opens the "Export" window. Give a name to the file, extension as ".svg" and press "save" button. The mind map is exported as a SVG image now</dd>
+
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

@@ -1,0 +1,36 @@
+Test-case name: dejadup/dej-001
+This test will check that Dejadup can backup and restore files
+<dl>
+    <dt> Create a test folder in your home directory with one test text file.</dt>
+    <dt> Open the dash and launch backup by pressing the super key, and then entering ‘backup’</dt>
+        <dd>Backup should launch</dd>
+    <dt> Click 'Just show my backup settings'</dt>
+        <dd>Tabs list in the sidebar appears, Overview tab is selected by default</dd>
+    <dt> Click 'Folders' tab. Remove all folders from 'Folders to backup' list, then add your test folder containing the test document file</dt>
+        <dd>'Folders to backup' list contains your test folder</dd>
+    <dt> Click 'Storage' tab and select a valid backup location</dt>
+        <dd>Backup location and folder are specified</dd>
+    <dt> Click 'Overview' tab and click 'Back Up Now' button</dt>
+        <dd>A 'Back Up' window launches and starts scanning and backing up your folder</dd>
+    <dt> If 'Back Up' window requests a password, select 'Allow restoring without a password' radio button and click 'Continue'</dt>
+        <dd>Back up process is resumed</dd>
+    <dt> Wait for the backup to end, then delete your test folder from your home directory</dt>
+        <dd>test folder is deleted</dd>
+    <dt> Focus the backup tool window again and click 'Restore'</dt>
+        <dd>Restore window pops up, 'Restore from Where?' step is opened</dd>
+    <dt> Select the folder to restore from and click 'Forward'.</dt>
+        <dd>'Checking For Backups' step appears. After the progress is complete 'Restore from When?' step appears</dd>
+    <dt> Select today's date and click 'Forward'.</dt>
+        <dd>'Restore to Where?' step is opened</dd>
+    <dt> Set the radio button to 'Restore files to original locations' and click 'Forward'.</dt>
+        <dd>'Summary' step is opened</dd>
+    <dt> Check that correct settings are displayed and click 'Restore'</dt>
+        <dd>'Restoring' step with a progress bar is opened. After the process is complete, 'Restore Finished' step is opened</dd>
+    <dt> Click 'Close' button on 'Restore is Finished' step.</dt>
+        <dd>Wizard window closes</dd>
+    <dt> Open Nautilus and check that test folder and files are created correctly</dt>
+        <dd>Was your test folder and the test file contained within it restored correctly to your home folder?</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

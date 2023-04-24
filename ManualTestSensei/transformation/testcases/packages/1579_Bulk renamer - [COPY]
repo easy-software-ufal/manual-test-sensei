@@ -1,0 +1,29 @@
+This test will check that Bulk Renamer can be run separately from the file manager (Thunar), by running a command at a terminal window
+<dl>
+    <dt>Open a terminal window, type "Thunar -B" at the prompt and hit the 'Enter' key</dt>
+        <dd>Bulk Rename application window should open</dd>
+    <dt>Point your mouse cursor to the '+' at the top left of the window and click it</dt>
+        <dd>Open files dialog window should open</dd>
+    <dt>Select two or more files and click the 'Open' button</dt>
+        <dd>Selected files should appear in the application window main area</dd>
+    <dt>Use some criterion to rename the selected files and press the 'Rename files' button</dt>
+        <dd>Selected files should be renamed accordingly</dd>
+</dl>
+
+This test will check that Bulk Renamer can be run from within the file manager by selecting two or more files in the main area
+<dl>
+    <dt>Hit Super+F keys</dt>
+        <dd>The file manager should open</dd>
+    <dt>Select two or more files in the file manager's main area and hit the F2 key</dt>
+        <dd>Bulk Rename application window should open with the selected files in the window main area</dd>
+    <dt>Use some criterion to rename the selected files and press the 'Rename files' button</dt>
+        <dd>Selected files should be renamed accordingly</dd>
+    <dt>Reproduce the steps to open the file manager, select two or more files in the file manager's main area and click on the 'Edit' option in the file managers's main menu</dt>
+        <dd>A drop-down menu should appear</dd>
+    <dt>Select the 'Rename' option</dt>
+        <dd>Bulk Rename application window should open with the selected files in the window main area</dd>
+    <dt>Use some criterion to rename the selected files and press the 'Rename files' button</dt>
+        <dd>Selected files should be renamed accordingly</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

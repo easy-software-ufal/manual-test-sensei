@@ -1,0 +1,65 @@
+The goal of this test case is to check that localization support is functional during the installation, that language packs are installed correctly for those languages in the ISO. During the lang-packs installation, Internet breaks, and the installer handles it gracefully. After the installation is complete and the new system rebooted an informational message is shown prompting users to connect to the Internet to fully install language support.
+
+<em>Proceed in your native language if you wish. Instructions will remain in English</em>
+<!-- Smells: EAGER TEST, CONDITIONAL TEST LOGIC -->
+<dl>
+    <dt>Boot up the image.  When you see the aubergine screen with an icon at the bottom, press any key to get the menu</dt>
+        <dd>Language list will appear</dd>
+    <dt>Use arrow keys to select language and press Enter</dt>
+        <dd>Language list will close.</dd>
+        <dd>The installer is localized from this screen onwards</dd>
+    <dt>Boot up the iso using a CD/DVD or USB Key to a Live Session</dt>
+        <dd>The system boots properly and loads the installer displaying Welcome dialog with language selection and 'Try FAMILY' and 'Install FAMILY' buttons</dd>
+    <dt>Click on the Install FAMILY icon</dt>
+        <dd>The 'Keyboard Layout' screen appears</dd>
+        <!-- Smells: EAGER TEST -->
+        <dd>The proposed keyboard corresponds with your keyboard</dd>
+	<dt>Select your keyboard layout and click on continue</dt>
+        <dd>The 'Preparing to install FAMILY' screen is displayed</dd>
+    <dt>On the screen Preparing to install FAMILY, note the availability of the following components</dt>
+        <dd>Available options should represent the state of your system accurately</dd>
+        <dd>
+            <ul>
+                <!-- Smells: EAGER TEST, CONDITIONAL TEST LOGIC -->
+                <li>(If network is available) Download updates while installing FAMILY</li>
+                <li>(If on a 'laptop') Is plugged to a power source</li>
+                <li>Install third-party software ... option available</li>
+            </ul>
+        </dd>
+    <dt>Click on the continue button</dt>
+        <dd>The 'Installation type' screen is displayed</dd>
+    <dt>Note the state of the 'Erase disk and install FAMILY' radio button</dt>
+        <dd>The 'Erase disk and install FAMILY' radio button should be checked</dd>
+    <dt>Click on the continue button (if there is only one hard disk in the system, the button should read 'Install now')</dt>
+        <dd>If there is only one hard disk, the installer should skip to the "Where are you?' screen. Otherwise, the 'Installation type' screen is displayed</dd>
+    <dt>If there is only one hard disk, skip to step 10 (On the 'Where are you?' screen...). Otherwise, on the 'Installation type' screen verify that the drive selected on the Select drive list corresponds to the drive on the chart (e.g /dev/sda)</dt>
+        <dd>Selected drive is displayed on the chart</dd>
+    <dt>Verify that the full drive space is allocated</dt>
+        <dd>Full drive space is allocated for installation</dd>
+    <dt>Click on Install Now button</dt>
+        <dd>The 'Where are you?' screen is displayed</dd>
+    <dt>Select your timezone, and click on the continue button</dt>
+        <dd>The 'Who are you?' screen appears</dd>
+    <dt>Input your initial user details and password (Note admin can not be used - it is a dedicated Linux User)</dt>
+        <dd>Name, username and password are accepted. Additionally, the continue button is enabled</dd>
+    <dt>Click on the continue button</dt>
+        <dd>The 'Welcome to FAMILY ' slide is displayed</dd>
+        <!-- Smells: EAGER TEST -->
+        <dd>The installer's slideshow slides are localized</dd>
+    <dt>When the installer is installing the language packs, disconnect the Internet</dt>
+    <dt>Wait for the installer to finish</dt>
+        <dd>An 'Installation Complete' dialog appears</dd>
+    <dt>Click the Restart now button</dt>
+        <dd>GUI is shut down, a prompt to remove media and press Enter appears</dd>
+    <dt>Remove the disc and press enter</dt>
+        <dd>The machine has been rebooted</dd>
+    <dt>Allow the machine to reboot</dt>
+        <dd>The system boots properly and loads into FAMILY</dd>
+    <dt>Verify that your system is localized</dt>
+        <!-- Smells: EAGER TEST -->
+        <dd>If you aren't using Bengali (bn), German (de), English (en), Spanish (es), French(fr), Portuguese (pt) or Xhosa (xh) a pop up appears showing saying your language support is not complete</dd>
+        <dd>For any language, the system has to be fully localized. Note: the translation coverage of some languages might not be complete</dd>
+        <dd>If you are using one of the above languages the calendar shows the regional settings correctly</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

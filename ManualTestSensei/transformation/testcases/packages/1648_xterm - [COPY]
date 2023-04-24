@@ -1,0 +1,13 @@
+This test will check that Xterm can execute commands
+<dl>
+    <dt>Launch Xterm</dt>
+        <dd>Xterm opens, showing a command prompt screen by default</dd>
+    <dt>Enter 'ls' command in the prompt</dt>
+    <!-- NON-DETERMINISTIC EXPECTED RESULT -->
+        <dd>The result for 'ls' command is displayed</dd>
+    <dt>Enter 'exit' command in the prompt</dt>
+        <dd>The Xterm window is closed</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

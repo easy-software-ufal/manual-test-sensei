@@ -1,0 +1,37 @@
+The scope of this test is to ensure that riscv64+unmatched image boots from SD card on SiFive Hifive Unmatched board
+
+<dl>
+    <dt>Flash downloaded image onto SD card</dt>
+        <dd>You can use Gnome Disks app to restore img.xz onto the SD card</dd>
+	<dd> Alternatively you can use xz -d to decompress, and then dd to copy the image to the SD card</dd>
+    <dt>Connect networking, serial console to the board</dt>
+        <dd>Ethernet cable for networking</dd>
+	<dd>MicroUSB cable for serial console</dd>
+    <dt>Check the board switches to ensure they are in sdcard mode</dt>	
+        <dd>MSEL2 to the inside of the board, the rest to the outside</dd>
+    <dt>Connect to the serial console</dt>
+        <dd>sudo screen /dev/ttyUSB1 115200</dd>
+    <dt>Power on the board</dt>
+        <dd>You should see U-BOOT menu</dd>
+	<dd>It should then boot default entry after a delay</dd>
+	<dd>After a while cloud-init will run</dd>
+	<dd>Then serial login will appear, but will not work</dd>
+	<dd>Then cloud-init will finally finish (~250s)</dd>
+	<dd>Then one will be able to login</dd>
+    <dt>Login and change password</dt>
+        <dd>Login using ubuntu for both username and password</dd>
+	<dd>Reenter ubuntu password again</dd>
+	<dd>Set new password</dd>
+	<dd>Confirm the new password</dd>
+    <dt>Perform generic testing</dt>
+        <dd>Check that apt update works</dd>
+	<dd>Run any command that is not installed, check that command-not-found recommends things to install</dd>
+	<dd>I.e. hello</dd>
+	<dd>Install a package and check that it works, i.e. hello</dd>
+    <dt>Poweroff</dt>
+        <dd>Console messages should reach poweroff target</dd>
+	<dd>There should be final kernel dmsg powering off</dd>
+	<dd>Manually turn power-off from the board</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

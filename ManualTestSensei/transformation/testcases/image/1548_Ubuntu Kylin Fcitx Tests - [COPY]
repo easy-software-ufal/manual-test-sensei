@@ -1,0 +1,16 @@
+Test-case name: Fcitx
+This test will check basic functions and settings of Fcitx input method.
+<dl>
+    <dt>Open gedit from dash or terminal. Use Ctrl + Space to switch input method from English to Fcitx.</dt>
+        <dd>Did the input method changed to Fcitx?</dd>
+    <dt>In the gedit window, type some Chinese words into the opened file</dt>
+        <dd>Were the Chinese words input correctly with Fcitx?</dd>
+    <dt>Right click the "Fcitx" icon in the float bar of fcitx and select "Google pinyin" item under "Input Method".</dt>
+        <dd>Did the input method changed into "Google pinyin"? Is the Chinese words input OK? </dd>
+    <dt>Right click the "Fcitx" icon in the float bar of fcitx and select "Wubi pinyin" item under "Input Method".</dt>
+        <dd>Did the input method changed into "Wubi pinyin"? Is the Chinese words input OK? </dd>
+    <dt>Open Dash and use Ctrl + Space to switch input method from English to Fcitx.</dt>
+        <dd>Did the input method changed to Fcitx? Is the Chinese words input OK in Dash?</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

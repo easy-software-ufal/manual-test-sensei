@@ -1,0 +1,40 @@
+This test will check that Display Settings open and close correctly
+<dl>
+    <dt>Open Settings from the menu, then select Display</dt>
+        <dd>Display Settings open, available monitors shown in left pane</dd>
+    <dt>Press X in top right corner</dt>
+        <dd>Display closes</dd>
+</dl>
+
+This test will check that Display settings are applied correctly
+<dl>
+    <dt>From Resolution drop down, choose a different monitor resolution</dt>
+        <dd>Monitor refreshes with new resolution</dd>
+        <dd>Keep resolution dialogue appears</dd>
+    <dt>Select Keep this resolution</dt>
+        <dd>Dialogue disappears</dd>
+        <dd>Resolution remains as set</dd>
+    <dt>Reset resolution to default as required, press Keep this configuration when prompted</dt>
+        <dd>Monitor refreshes with new resolution</dd>
+    <dt>Repeat tests for (where appropriate) Refresh rate, Rotation and Reflection</dt>
+        <dd>Settings are applied correctly as appropriate</dd>
+    <dt>Press Close</dt>
+        <dd>Display manager closes</dd>
+</dl>
+
+<strong>Optional:This test will check that Multiple Monitor setup works correctly</strong>
+
+<dl>
+    <dt>Open Settings from menu, then select Display</dt>
+        <dd>Display Settings open, available monitors shown in left pane</dd>
+        <dd>Monitor notification is correct for available monitors</dd>
+    <dt>From Resolution drop down, choose a different monitor resolution</dt>
+        <dd>Monitor refreshes with new resolution</dd>
+        <dd>Keep resolution dialogue appears</dd>
+    <dt>Select Keep this resolution</dt>
+        <dd>Dialogue disappears</dd>
+        <dd>Resolution remains as set</dd>
+</dl>  
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

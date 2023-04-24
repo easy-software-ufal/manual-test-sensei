@@ -1,0 +1,33 @@
+This testcase is intended to test for issues surrounding one specific bug.
+
+For this test - Thunar window fails to refresh correctly when renaming files. 
+<!-- smells: unverified steps -->
+<dl>
+    <dt>Open Thunar, create a folder in a location of your choosing</dt>
+    <dt>Open a terminal at this location and run the following 2 commands in sequence</dt>
+    <dt><code>for i in $(seq 1 10); do touch "$i.txt"; done</code></dt>
+        <dd>10 files are created in your folder, named 1.txt through 10.txt</dd>
+    <dt><code>while true; do for i in $(seq 1 10); do mv "$i.txt" "$i.txt.txt"; done; sleep 1; for i in $(seq 1 10); do mv "$i.txt.txt" "$i.txt"; done; sleep 1; done</code></dt>
+        <dd>The files change name once every second</dd>
+    <dt>Watch the files in the thunar window as they change. Do so until you have allowed thunar to run for approximately 30 cycles. Note which of the issues stated below you have observed</dt>
+    <dt>To stop the filename changes press <code>Ctrl+C</code></dt>
+</dl>
+
+What you might see while completing this testcase:
+1 - filenames appear to not change
+2 - files appear to disappear from the window
+3 - Thunar crashes
+
+Please use the Comment box on your tracker report to let us know which issues you saw while testing
+
+<strong>Please report this fail against bug number 1512120</strong> 
+
+<strong>Please report which version of Xubuntu you are using</strong>
+
+<em>Note: if you find the refresh speed causes you issues, change the sleep 1 command to suit you. If you do - please let us know in the comment box on the tracker</em>
+
+<strong>
+    If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>.
+    Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.
+</strong>

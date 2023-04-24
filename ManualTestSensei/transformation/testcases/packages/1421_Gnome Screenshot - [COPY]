@@ -1,0 +1,39 @@
+Test-case name: gnomescreenshot/gns-001
+This test will check that Gnome Screenshot can save screenshot of the whole screen
+<dl>
+    <dt> Open gnome-screenshot using the dash, and typing 'screenshot'</dt>
+    <dt> Select Grab the whole desktop</dt>
+    <dt> Click on Take Screenshot</dt>
+    <dt> Name it shot1.png</dt>
+    <dt> Select your home folder for the image to be saved to</dt>
+    <dt> Click Save</dt>
+        <dd>Is the screenshot image saved to your home directory? Is it a valid image file containing your screen?</dd>
+</dl>
+
+Test-case name: gnomescreenshot/gns-002
+This test will check that Gnome Screenshot can save screenshot of selected window
+<dl>
+    <dt> Open gnome-screenshot using the dash, and typing 'screenshot'</dt>
+    <dt> Select Grab the current window</dt>
+    <dt> Click on Take Screenshot</dt>
+    <dt> Name it shot2.png</dt>
+    <dt> Select your home folder for the image to be saved to</dt>
+    <dt> Click Save</dt>
+        <dd>Is the screenshot image saved to your home directory? Is it a valid image file containing your selected window?</dd>
+</dl>
+
+Test-case name: gnomescreenshot/gns-003
+This test will check that Gnome Screenshot can save screenshot of selected window
+<dl>
+    <dt> Open gnome-screenshot using the dash, and typing 'screenshot'</dt>
+    <dt> Select Grab the current window</dt>
+    <dt> Select Drop shadow from the Apply effect drop down menu</dt>
+    <dt> Click on Take Screenshot</dt>
+    <dt> Name it shot2.png</dt>
+    <dt> Select your home folder for the image to be saved to</dt>
+    <dt> Click Save</dt>
+        <dd>Is the screenshot image saved to your home directory? Is it a valid image file containing your selected window, with the drop shadow effect?</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

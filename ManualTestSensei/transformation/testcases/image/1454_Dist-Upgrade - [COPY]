@@ -1,0 +1,17 @@
+<!-- Aimless Test, Misplaced Pre-Condition, Exception Handling -->
+<dl>
+    <dt><a href="http://cdimage.ubuntu.com/releases/quantal/beta-1/">Install the specific release</a> you wish to dist-upgrade from</dt>
+    <dt>Install all updates available for the release you want to upgrade by running update-manager. Click Check if any update is availabe, and click Install to install them</dt>
+    <dt>Watch it update, noting any errors</dt>
+    <dt>Reboot into your new system:</dt>
+        <dd>
+            <ul>
+                <li>Any errors encountered during the upgrade?</li>
+                <li>Any errors encountered after rebooting to new desktop?</li>
+                <li>Does your hardware still work properly?</li>
+                <li>Are you experiencing any application or background service crashes?</li>
+            </ul>
+        </dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

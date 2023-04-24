@@ -1,0 +1,59 @@
+This test will require logging in and out, suspend (where avilable), restart and shutdown. In addition extra languages should be installed <strong>prior</strong> to running the testcase.
+
+This test will check that you can change a session correctly
+<dl>
+    <dt>Logout of existing session</dt>
+        <dd>Greeter screen appears</dd>
+    <dt>From session menu (gear icon), choose any session</dt>
+    <dt>In user dialogue, choose user, enter password as required and press Log In</dt>
+        <dd>The selected session starts</dd>
+    <dt>Logout of the session, change session to another session and repeat login steps</dt>
+        <dd>The other session starts</dd>
+    <dt>Logout</dt>
+        <dd>Greeter screen shows</dd>
+</dl>
+
+This test will check that localisation changes are applied correctly
+<dl>
+    <dt>From Localisation menu (flag icon) choose one of the available languages</dt>
+    <dt>In user dialogue, choose user, enter password as required and press Log In</dt>
+        <dd>Session starts with the expected language</dd>
+    <dt>Logout of session, change language and repeat login steps</dt>
+        <dd>Session starts with new language</dd>
+    <dt>Logout</dt>
+        <dd>Greeter screen shows</dd>
+</dl>
+
+This test will check that Accessibility options are applied correctly
+<dl>
+    <dt>From Accessibility options - select both Large Font and High Contrast</dt>
+    <dt>In user dialogue, choose user, enter password as required and press Log In</dt>
+        <dd>Session starts with the expected font options</dd>
+    <dt>Logout</dt>
+    <dt>From Accessibility options - deselect both Large Font and High Contrast</dt>
+    <dt>In user dialogue, choose user, enter password as required and press Log In</dt>
+        <dd>Session starts with the expected font options</dd>
+    <dt>Logout</dt>
+</dl>
+
+This test will check that System Power options work correctly
+<dl>
+    <dt>From System Power options select Restart</dt>
+        <dd>Dialogue appears with Cancel or Restart Option</dd>
+    <dt>Press Restart</dt>
+        <dd>Machine restarts</dd>
+    <dt>From System Power options select Shutdown</dt>
+        <dd>Dialogue appears with Cancel or Shut Down Option</dd>
+    <dt>Press Shut Down</dt>
+        <dd>Machine shuts down</dd>
+    <dt>Restart machine</dt>
+    <dt>From System Power options select Suspend if available</dt>
+        <dd>Dialogue appears with Cancel or Suspend Option</dd>
+    <dt>Press Suspend</dt>
+        <dd>Machine suspends</dd>
+    <dt>Press any key</dt>
+        <dd>Machine restarts from suspend</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

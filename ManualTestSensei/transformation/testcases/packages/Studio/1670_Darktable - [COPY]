@@ -1,0 +1,24 @@
+This test will check if Darktable opens properly from the STUDIO menu.
+<dl>
+    <dt>Open the Darktable application from the PHOTOGRAPHY subsection within the GRAPHIC DESIGN subsection in Main Menu.</dt>
+        <dd>Darktable opens properly.</dd>
+</dl>
+This test will check if Darktable properly import photos to its library.
+<dl>
+    <dt>In the left-hand panel, unfold the "Import" panel and press the "Folder" button.</dt> 
+    <dt>Chose a folder containing RAW photos and press "Open"</dt>
+        <dd>Darktable properly imports RAW photos to library.</dd>
+</dl>
+This test will check if Darktable properly exports photos to 8-bit JPG.
+<dl>
+    <dt>Make sure you are in "Lighttable" mode.</dt> 
+    <dt>Select a few photos.</dt>
+    <dt>In the right-hand panel unfold the "Export Selected" menu</dt>
+    <dt>In the "Target Storage" tab chose "file on disk" and pick a location to save the exported photos to.</dt>
+    <dt>In the "File Format" tab, pick JPEG(8-bit) and set the quality to 95.</dt>
+    <dt>With no further settings, press "Export"</dt>
+        <dd>Photos are exported in JPG to given location</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

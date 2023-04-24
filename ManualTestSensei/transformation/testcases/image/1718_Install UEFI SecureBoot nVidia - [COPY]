@@ -1,0 +1,94 @@
+The scope of this test is to ensure that the image boots in UEFI, that the
+resulting installation can boot in UEFI as well, regardless of network
+availability and that nVidia proprietary drivers are installed and loaded.
+
+<em>Proceed in your native language if you wish. Instructions will remain in English</em>
+
+<dl>
+    <dt>Unplug network cable</dt>
+        <dd>No networking should be available to the system</dd>
+    <dt>Boot up the image in UEFI mode with <b>Secure Boot enabled</b></dt>
+        <dd>The system boots properly and loads the installer displaying the Welcome dialog with language selection and 'Try FAMILY' and 'Install FAMILY' buttons</dd>
+    <dt>Click on the Install FAMILY icon</dt>	
+        <dd>The 'Keyboard Layout' screen appears</dd>
+        <dd>The proposed keyboard corresponds with your keyboard</dd>
+	<dt>Select your keyboard layout and click on continue</dt>
+        <dd>The 'Preparing to install FAMILY' screen is displayed</dd>
+    <dt>On the screen Preparing to install FAMILY, note the availability of the following components</dt>
+        <dd>Available options should represent the state of your system accurately</dd>
+        <dd>
+            <ul>
+                <li>Download updates while installing FAMILY should be blank</li>
+                <li>(If on a 'laptop') Is plugged to a power source</li>
+                <li>Install third-party software ... option available</li>
+            </ul>
+        </dd>
+    <dt>Check 'Install third-party software...'</dt>
+        <dd>A checkbox 'Configure Secure Boot' with 2 password fields are displayed</dd>
+    <dt>Check the checkbox, enter a passphrase and confirm it, then click on the continue button</dt>
+        <dd>The 'Installation type' screen is displayed</dd>
+    <dt>Select any installation type and click on the continue button</dt>
+        <dd>Write changes dialogue appears</dd>
+    <dt>Click continue</dt>
+        <dd>If there is only one hard disk, the installer skips to the "Where are you?' screen. Otherwise, the 'Installation type' screen is displayed</dd>
+    <dt>If there is only one hard disk, skip to step 10 (On the 'Where are you?' screen...). Otherwise, on the 'Installation type' screen verify that the drive selected on the Select drive list corresponds to the drive on the chart (e.g /dev/sda)</dt>
+        <dd>Selected drive is displayed on the chart</dd>
+    <dt>Verify that the full drive space is allocated</dt>
+        <dd>Full drive space is allocated for installation</dd>
+    <dt>Click on the Install Now button</dt>
+        <dd>The 'Where are you?' screen is displayed, which should not necessarily match your timezone.</dd>
+    <dt>Select your timezone, and click on the continue button</dt>
+        <dd>The 'Who are you?' screen appears</dd>
+    <dt>Input your initial user details and password <em>admin can not be used - it is a dedicated Linux User</em></dt>
+        <dd>Name, username and password are accepted. Login options and home folder encryption choices shown</dd>
+        <dd>Continue button becomes available</dd>
+    <dt>Press continue</dt>
+        <dd>The 'Welcome to FAMILY ' slide is displayed</dd>
+        <dd>The slideshow is entirely in your language</dd> 
+    <dt>Wait for the installer to finish</dt>
+        <dd>An 'Installation Complete' dialog appears</dd>
+    <dt>Click the Restart now button</dt>
+        <dd>GUI is shut down, a prompt to remove media and press Enter appears</dd>
+    <dt>Remove the disc and press enter</dt>
+        <dd>The machine is rebooted</dd>
+    <dt>Allow the machine to reboot</dt>
+        <dd>A blue screen titled 'Perform MOK management' is displayed</dd>
+    <dt>In the list of commands select 'Enroll MOK'</dt>
+        <dd>The 'Enroll MOK' screen is displayed</dd>
+    <dt>Select 'Continue'</dt>
+        <dd>The 'Enroll the key(s)' screen is displayed</dd>
+    <dt>Select 'Yes' and enter the password you set in the 'Preparing to install FAMILY' page of the installer</dt>
+        <dd>If the password is correct, the screen 'Perform MOK management' is displayed again</dd>
+    <dt>Select 'Reboot' and allow the machine to reboot</dt>
+        <dd>The system boots properly and loads into FAMILY showing username selected at the 'Who are you?' step</dd>
+    <dt>Login</dt>
+        <dd>The session starts</dd>
+    <dt>Open a terminal, run the following commands and verify their output (the output depends on your hardware)</dt>
+        <dd><code>
+$ nvidia-smi
+Thu Apr 23 11:40:22 2020       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 440.64       Driver Version: 440.64       CUDA Version: 10.2     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  GeForce MX150       Off  | 00000000:01:00.0 Off |                  N/A |
+| N/A   48C    P0    N/A /  N/A |      0MiB /  2002MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+
+$ prime-supported
+yes
+        </code></dd>
+    <dt>Run 'nvidia-settings'</dt>
+        <dd>Verify that settings are displayed and you can configure the card</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

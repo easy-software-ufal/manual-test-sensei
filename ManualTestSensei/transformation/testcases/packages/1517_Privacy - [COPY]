@@ -1,0 +1,180 @@
+Test-case name: privacy/privacy-001
+This test will test whether the program loads correctly.
+<dl>
+    <dt>In the Unity menu, type "privacy" and click on the "Privacy" application.</dt>
+        <dd>The "Privacy" settings window should display inside the Settings Window.</dd>
+        <dd>Five tabs should be visible: "Search Results," "Recent Items," "Files," "Applications," and "Diagnostics."</dd>
+        <dd>The displayed tab should be "Search Results"</dd>
+        <dd>Underneath the tab notebook should be a toggle ("ON/OFF") switch with a bold label "Record Activity" in front of it</dd>
+        <dd>Is the text overall displayed clearly and visibly?</dd>
+    <dt>Press the top-left "X" button to close the program.</dt>
+        <dd>The window should close successfully.</dd>
+    <dt>If you have a "System Settings" icon on your Unity dash, click on it. If not, search in the Unity menu</dt>
+    <dt>Click on the "Privacy" icon.</dt>
+        <dd>The window should show privacy settings.</dd>
+    <dt>In the navigation up at the top, click on "All Settings."</dt>
+        <dd>The privacy settings should close (Including "Record Activity") and you should be back at the "All Settings" page.</dd>
+    <dt>Open the privacy settings again (in any fashion) to continue with the testing.</dt>
+</dl>
+
+Test-case name: privacy/privacy-002
+This test will test whether clicking on the tabs displays the correct content.
+<dl>
+    <dt>Click on the "Search Results" tab.</dt>
+        <dd>Is it displaying correctly and clearly?</dd>
+    <dt>Click on the "Recent Items" tab.</dt>
+        <dd>Have the contents of the window changed? (has the notebook changed to a new page?)</dd>
+        <dd>Is it displaying correctly and clearly?</dd>
+    <dt>Click on the "Files" tab.</dt>
+        <dd>Have the contents of the window changed? (has the notebook changed to a new page?)</dd>
+        <dd>Is it displaying correctly and clearly?</dd>
+    <dt>Click on the "Applications" tab.</dt>
+        <dd>Have the contents of the window changed? (has the notebook changed to a new page?)</dd>
+        <dd>Is it displaying correctly and clearly?</dd>
+    <dt>Click on the "Diagnostics" tab.</dt>
+        <dd>Have the contents of the window changed? (has the notebook changed to a new page?)</dd>
+        <dd>Is it displaying correctly and clearly?</dd>
+    <dt>Click on the "Search Results" tab again</dt>
+        <dd>Has the "Search results" page rendered again?</dd>
+</dl>
+
+Test-case name: privacy/privacy-003
+This test will check the functionality the "Search Results" tab.
+<dl>
+    <dt>Click the toggle switch to the right of "Include online search results" to
+        the "OFF" position.</dt>
+    <dt>Click on the unity menu, and type a search; "Big Buck Bunny" for instance.</dt>
+        <dd>Were online search results omitted? In other words, were the only results system application and files?</dd>
+    <dt>Switch "Include online search results" to "ON." Open the unity menu. If you need to retype the search, do so.</dt>
+        <dd>Were online results displayed?</dd>
+</dl>
+
+Test-case name: privacy/privacy-004
+This test will check the functionality of the "Recent Items" tab.
+<dl>
+    <dt>Click on the spin button to the right of "Forget activities"</dt>
+        <dd>There should be 5 categories: "The past (hour/day/week)", "All" and "Advanced."</dd>
+    <dt>Select "The past (hour/day/week)" or "All" from the spinbutton.</dt>
+        <dd>Nothing should display change except for the spinbutton.</dd>
+    <dt>Click on "Advanced."</dt>
+        <dd>Did a "From:" date field and a "To:" date field appear above the "Delete history" button?</dd>
+    <dt>With the "Advanced" item still selected, choose a "From:" date and a "To:" date so that the "From:" date is greater than the "To:" Date or today's date, or both. Note that to select you need to double-click on a date.</dt>
+        <dd>Did the "From:" date reset to a valid date (before today or the "To:" Date?)</dd>
+    <dt>Do the same with the "To" field, but choose a date less than the "From:" date or today's date, or both.</dt>
+        <dd>Did the "To:" date reset to a valid date (before today after the "From:" Date?)</dd>
+    <dt>Edit and save some documents to appear in recent history.</dt>
+    <dt>In the "Forget activities:" spin button, select "All". Click "Delete History"</dt>
+        <dd>Did a message box pop up?</dd>
+        <dd>Did the message appear normal?</dd>
+    <dt>Click "Cancel"</dt>
+    <dt>Open the Unity menu.</dt>
+        <dd>Are your recent document still there?</dd>
+    <dt>In the privacy window press "Delete history" again and this time press "Yes".</dt>
+    <dt>Open the Unity menu.</dt>
+        <dd>Your recent documents should be deleted.</dd>
+</dl>
+
+Test-case name: privacy/privacy-005
+This test will check the functionality of the "Files" tab.
+<dl>
+    <dt>Check several combinations of the check boxes under "Don't record activity for the following type of files:"</dt>
+        <dd>The items should be checked.</dd>
+    <dt>Underneath the "Don't record activity in the following folders:" box should be a "+" and "-" button. Click on the "+" button</dt>
+        <dd>A file dialog should appear.</dd>
+        <dd>You should not be able to interact with anything in the main window while the file dialog is active</dd>
+    <dt>Select a folder and press "Cancel."</dt>
+        <dd>The box should be blank.</dd>
+    <dt>This time click on "+" and select a folder. Click "OK"</dt>
+        <dd>The folder should be added to the box with the relative path in bold.</dd>
+        <dd>The absolute path should be underneath an icon.</dd>
+    <dt>Click on "+" again, select the same folder you just added, and press "OK"</dt>
+        <dd>The folder you just added should appear only once.</dd>
+    <dt>Click on "+" again, select a different folder from the one you just added, and press "OK"</dt>
+        <dd>The layout should look similar to the first folder you added.</dd>
+    <dt> Press "+" again.</dt>
+    <dt> Press the CTRL + H keys on your keyboard to display hidden directories (directories that begin with a ".").</dt>
+    <dt>Select one of these hidden directories and press "OK"</dt>
+        <dd>The hidden directory should appear in the list.</dd>
+    <dt>Click on one of the folder items. Press "-"</dt>
+        <dd>The folder you selected should disappear from the list.</dd>
+        <dd>The next folder in the list should be selected automatically.</dd>
+    <dt>Click on the other folders you added to the list. Press "-"</dt>
+        <dd>The items should not be seen in the list once you delete them.</dd>
+    <dt>Add four or more folders to the list to ensure they'll go past what's visible.</dt>
+        <dd>A scroll bar should appear on the right. Does the list still display correctly?</dd>
+    <dt>Delete all the documents you added.</dt>
+</dl>
+
+Test-case name: privacy/privacy-006
+This test will check the functionality of the "Applications" tab.
+<dl>
+    <dt>Near the bottom should be a "+" button and a "-" button. Click on the "+" button.</dt>
+        <dd>A pop-up should appear listing all the applications on your computer.</dd>
+        <dd>You should not be able to interact with anything in the main window while the application dialog is active</dd>
+        <dd>Are any applications missing? Feel free to do a quick glance of your favorite applications instead of the entire list.</dd>
+    <dt>Click on the column titles to sort ascending and descending.</dt>
+        <dd>Do the applications resort accordingly?</dd>
+    <dt>Click on an application item in the list and press "Cancel"</dt>
+        <dd>Nothing should be added to the main window's list.</dd>
+    <dt>Click on the "+" button again. Select an application and press "OK"</dt>
+        <dd>The pop-up window should close.</dd>
+        <dd>The application should appear in the main window's list.</dd>
+    <dt>Click on the "+" button again.</dt>
+        <dd>The application you just added shouldn't be in the pop-up window list.</dd>
+    <dt>Select another application and press "OK."</dt>
+        <dd>The application you selected should be in the list and look similar to the first application you added.</dd>
+    <dt>Select one of the applications listed. Click the "-" button.</dt>
+        <dd>The item you selected should be removed from the list.</dd>
+        <dd>The only item remaining should be automatically selected.</dd>
+    <dt>Delete the last remaining item.</dt>
+        <dd>The item you selected should be removed from the list.</dd>
+    <dt>Add seven or more applications to the list to ensure they go past what's viewable.</dt>
+        <dd>A scroll bar should appear on the right.</dd>
+        <dd>Does the list still display correctly?</dd>
+    <dt>Delete all the applications you just added.</dt>
+</dl>
+
+Test-case name: privacy/privacy-007
+This test will check the functionality of the "Diagnostics" tab.
+<dl>
+    <dt>Look at the content of the "Diagnostics" page.</dt>
+        <dd>Unless you opened the "privacy" application as root the "Send error reports to Canonical" checkbox should be disabled.</dd>
+    <dt>Click on the "privacy policy" button</dt>
+        <dd>Firefox (or your default web browser) should open with the privacy policy listed.</dd>
+    <dt>Click the "Unlock" button on the right side of the window.</dt>
+        <dd>A system dialog should appear asking for super-user password.</dd>
+    <dt>Enter your password (if you have admin access).</dt>
+        <dd>The "Unlock" button should now say "Lock"</dd>
+        <dd>The "Send error reports to Canonical" checkbox should be enabled.</dd>
+    <dt>Wait for about 20 minutes.</dt>
+        <dd>The "Lock" button should say "Unlock"</dd>
+        <dd>and the "Send error reports to Canonical" checkbox should be disabled.</dd>
+    <dt>Click "Unlock" again, enter your password, and then click "Lock"</dt>
+        <dd>The "Lock" button should say "Unlock"</dd>
+        <dd>and the "Send error reports to Canonical" checkbox should be disabled.</dd>
+</dl>
+
+Test-case name: privacy/privacy-008
+This test will check whether the settings are saved.
+<dl>
+    <dt>Modify all fields possible and close the window.</dt>
+    <dt>Open the "Privacy" window again.</dt>
+        <dd>Are the settings restored as you set them?</dd>
+    <dt>Modify the fields again, close the window, and log out.</dt>
+    <dt>Log back in again and open the privacy settings.</dt>
+        <dd>Are the settings restored as you set them?</dd>
+</dl>
+
+Test-case name: privacy/privacy-009
+This test will cover any test cases not appropriate for the categories above.
+<dl>
+    <dt>Click the "Record Activity" toggle button at the bottom of the privacy window.</dt>
+        <dd>The button should toggle be switched to "OFF" if it's in the "ON" position.</dd>
+    <dt>Ensure the "Record Activity" toggle button is set to "OFF"</dt>
+    <dt>Observe your activity for a few minutes (e.g. chat in IRC, run some applications, create some documents)</dt>
+        <dd>Unity should not be showing any new activity.</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
+

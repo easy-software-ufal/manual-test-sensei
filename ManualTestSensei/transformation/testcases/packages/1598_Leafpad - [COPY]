@@ -1,0 +1,48 @@
+This test will check that leafpad can edit and save a document
+<dl>
+    <dt>Start to write in leafpad: "Ubuntu is a term roughly translating to human kindness."</dt>
+        <dd>The sentence should appear in leafpad</dd>
+    <dt>Click on "Options", then on "Line numbers"</dt>
+        <dd>A numbering appears left of the lines in your document</dd>
+    <dt>Click on "File" in menu bar and then "Save"</dt>
+        <dd>A save dialog appears</dd>
+    <dt>Choose your home folder to save the file as "ubuntu.txt". Click on "Save"</dt>
+        <dd>The save window closes. You are back in your document</dd>
+</dl>
+
+This test will check that leafpad can search in a document.
+<dl>
+    <dt>Click on "Search" in menu bar and then "Find..."</dt>
+        <dd>A window opens with a find dialogue</dd>
+    <dt>Type in "human". Click on "Find"</dt>
+        <dd>The window closes. The word "human" in your document is now highlighted</dd>
+</dl>
+
+This test will check that leafpad can change the font type.
+<dl>
+    <dt>Click on "Options", then on "Font..."</dt>
+        <dd>A window opens, showing the current font type</dd>
+    <dt>Select "Ubuntu Mono" in family and "Bold" in style. Press "OK"</dt>
+        <dd>The font of your document has changed</dd>
+    <dt>Click again on "Options", then on "Font..."</dt>
+        <dd>A window opens, showing the current font type</dd>
+    <dt>Select "Ubuntu" in family and "Regular" in style. Press "OK"</dt>
+        <dd>The font of your document has changed</dd>
+</dl>
+
+This test will check that leafpad can print a document
+<dl>
+    <dt>Click on "File", then on "Print Preview"</dt>
+        <dd>A window opens, showing a print preview</dd>
+    <dt>Close the print preview</dt>
+        <dd>The window closes, you are back to your text file</dd>
+    <dt>Click on "File". then on "Print..."</dt>
+        <dd>The printing dialogue opens</dd>
+    <dt>Select "Print to File" as printer and enter "ubuntu.pdf" as filename. Select your home folder as location. Then click on "Print"</dt>
+        <dd>The printing dialogue closes</dd>
+    <dt>Open your file manager and open the created file "ubuntu.pdf"</dt>
+        <dd>The pdf shows the same document as seen in the print preview</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

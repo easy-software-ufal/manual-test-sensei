@@ -1,0 +1,43 @@
+<em>This testcase requires suspending/resuming</em>
+
+This test will check that light-locker-settings can set the amount of delay after the screensaver is activated for the screen to lock
+<dl>    
+    <dt>Open Light Locker Settings from the Settings dialog</dt>
+        <dd>The Light Locker Settings dialog opens</dd>
+    <dt>Click the Open button on the "Your screensaver settings are managed by Xfce Power Manager" infobar</dt>
+        <dd>The Xfce Power Manager dialog opens</dd>
+    <dt>Click the "Display" tab</dt>
+        <dd>The Display power management settings screen appears</dd>
+    <dt>Change the "Blank after" slider to 1 minute</dt>
+    <dt>Click "Close"</dt>
+    <dt>In the Light Locker Settings dialog, set the "Enable light-locker" switch to ON</dt>
+    <dt>Change "Automatically lock the session" to "When the screensaver is activated"</dt>
+    <dt>Change the "Delay locking after screensaver" slider to 10 seconds</dt>
+    <dt>Click "Apply"</dt>
+        <dd>After 1 minute of no activity, your screen will go blank</dd>
+    <dt>Move your mouse as soon as the screen blanks</dt>
+        <dd>Your screen is restored</dd>
+    <dt>Wait another minute</dt>
+        <dd>Your screen will go blank</dd>
+    <dt>Wait 10 more seconds and then move your mouse</dt>
+        <dd>The Unlock dialag appears</dd>
+    <dt>Enter your password to unlock the session</dt>
+</dl>
+
+This test will check that light-locker-settings will lock the screen when resuming from suspend
+<dl>
+    <dt>Verify that the "Lock on suspend" switch is set to OFF</dt>
+    <dt>Click "Apply" (if necessary)</dt>
+    <dt>Suspend your session from the menu</dt>
+    <dt>Resume from suspend</dt>
+        <dd>The screen is restored immediately</dd>
+    <dt>Set the "Lock on suspend" switch to ON</dt>
+    <dt>Click "Apply"</dt>
+    <dt>Suspend your session from the menu</dt>
+    <dt>Resume from suspend</dt>
+        <dd>The Unlock dialog appears</dd>
+</dl>
+
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

@@ -1,0 +1,58 @@
+This test will check that the MIME Type Editor can open
+<dl>
+    <dt>Locate "MIME Type Editor" under "System" in the Settings dialog and click on it</dt>
+        <dd>The MIME Type Editor dialog opens</dd>
+</dl>
+
+This test will check that the MIME Type list can be filtered and sorted
+<dl>
+    <dt>Enter some text in the "Filter:" field (e.g., "image")</dt>
+        <dd>The MIME Type list is filtered incrementally with partial matches as you type more characters</dd>
+    <dt>Click the X icon at the right side of the "Filter:" field</dt>
+        <dd>The filter criterion is cleared and the application again displays all available MIME types</dd>
+    <dt>Click on the "Default Application" column heading</dt>
+        <dd>The list is sorted alphabetically by application name</dd>
+    <dt>Click on the "MIME Type" column heading</dt>
+        <dd>The list is sorted alphabetically by MIME Type</dd>
+</dl>
+
+This test will check that application associations can be set and changed
+<dl>
+    <dt>Enter "log" in the "Filter:" field</dt>
+        <dd>The list of MIME types is filtered to those names containing "log"</dd>
+    <dt>Locate the "text/x-log" entry and click on it</dt>
+        <dd>Its associated default application shows Mousepad</dd>
+    <dt>Click on "Mousepad"</dt>
+        <dd>A drop-down list appears displaying two recommended applications, Mousepad and LibreOffice Writer</dd>
+    <dt>Select LibreOffice Writer</dt>
+        <dd>LibreOffice Writer now appears as the "Default Application", the "Status" changes to "User Set", and the typeface of the entire row changes to bold</dd>
+    <dt>Open the File Manager and navigate to the /var/log folder</dt>
+    <dt>Double-click on any file with a .log extension</dt>
+        <dd>The file opens with LibreOffice Writer</dd>
+    <dt>Close LibreOffice Writer</dt>
+    <dt>In the MIME Type Editor, click again on the "Default Application" field of the "text/x-log" entry</dt>
+        <dd>The drop-down menu appears</dd>
+    <dt>Click "Reset to Default"</dt>
+    <dt>Click the 'Reset to Default' button on the 'Question' dialog to confirm</dt>
+        <dd>"Status" changes back to "Default", "Default Application" again shows "Mousepad" and the typeface is un-bolded</dd>
+    <dt>Locate the same .log file in File Manager and double-click on it</dt>
+        <dd>The file opens in Mousepad</dd>
+    <dt>Close Mousepad</dt>
+    <dt>Close MIME Type Editor</dt>
+</dl>
+
+This test will check that MIME Type Editor will correctly display a file association changed with another application
+<dl>
+    <dt>Right-click on the same .log file in File Manager and select "Open with LibreOffice Writer" from the Properties drop-down</dt>
+        <dd>The file opens in LibreOffice Writer</dd>
+    <dt>Open MIME Type Editor and locate the "text/x-log" MIME Type entry</dt>
+        <dd>The "Status" shows "User Set" and the "Default Application" shows "LibreOffice Writer"</dd>
+    <dt>Click on "LibreOffice Writer", select "Reset to Default" and confirm your choice</dt>
+        <dd>The "text/x-log" entry is set back to its default of Mousepad</dd>
+    <dt>Close MIME Type Editor</dt>
+    <dt>Close LibreOffice Writer</dt>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
+    

@@ -1,0 +1,67 @@
+<em>Proceed in your native language if you wish. Instructions will remain in English</em>
+<!-- Smells: AIMLESS TEST, CONDITIONAL TEST LOGIC, EAGER TEST -->
+<dl>
+    <dt>Boot up the image.  When you see the aubergine screen with an icon at the bottom, press any key to get the menu</dt>
+        <dd>Language list will appear</dd>
+    <dt>Use arrow keys to select language and press Enter</dt>
+        <dd>Language list will close</dd>
+    <dt>Press F6 and use the down arrow to get to Free software only and press Enter</dt>
+        <dd>An X will appear by Free software only</dd>
+    <dt>Press ESC to dismiss the menu</dt>
+        <dd>Menu window will be dismissed</dd>
+    <dt>Select Install FAMILY option and press Enter</dt>
+        <dd>The system boots properly and loads the installer displaying Welcome dialog with language selection</dd>
+    <dt>Select language and click continue</dt>
+        <dd>The 'Keyboard Layout' screen appears</dd>
+        <dd>The proposed keyboard corresponds with your keyboard</dd>
+	<dt>Select your keyboard layout and click on continue</dt>
+        <dd>The 'Preparing to install FAMILY' window is displayed</dd>
+    <dt>On the screen Preparing to install FAMILY, note the availability of the following components</dt>
+        <dd>Available options should represent the state of your system accurately</dd>
+        <dd>
+            <!-- Smell: CONDITIONAL TEST LOGIC -->
+            <ul>
+                <li>(If network is available) Download updates while installing FAMILY</li>
+                <li>(If on a 'laptop') Is plugged to a power source</li>
+            </ul>
+        </dd>
+    <dt>Click on the continue button</dt>
+        <dd>The 'Installation type' screen is displayed</dd>
+    <dt>Note the state of the 'Check Erase Disk and install FAMILY' radio button</dt>
+        <dd>The 'Check Erase Disk and install FAMILY' radio button is selected</dd>
+    <dt>Click on the continue button</dt>
+        <dd>The 'Erase Disk and install FAMILY' screen is displayed</dd>
+    <dt>Verify that the drive selected on the Select drive list correspond to the drive on the chart (e.g /dev/sda)</dt>
+        <dd>Selected drive is displayed on the chart</dd>
+    <dt>Verify that the full drive space is allocated</dt>
+        <dd>Full drive space is allocated for installation</dd>
+    <dt>Click on Install Now button</dt>
+        <dd>The 'Where are you?' screen is displayed</dd>
+    <dt>If your system is connected to the network, note the preselected timezone correspond with your timezone and the city indicated in the text box </dt>
+        <dd>The timezone and city displayed match your timezone and a city from your area</dd>
+    <dt>Select your timezone, and click on the continue button</dt>
+        <dd>The 'Who are you?' screen appears</dd>
+    <dt>Input your initial user details and password (Note admin can not be used - it is a dedicated Linux User)</dt>
+        <dd>Name, username and password are accepted. Additionally, the continue button is enabled</dd>
+<!-- Smell: EAGER TEST -->
+    <dt>Click on the continue button</dt>
+        <dd>The 'Welcome to FAMILY ' slide is displayed</dd>
+        <dd>The slideshow is entirely in your language</dd> 
+    <dt>Wait for the installer to finish</dt>
+        <dd>An 'Installation Complete' dialog appears</dd>
+    <dt>Click the Restart now button</dt>
+        <dd>GUI is shut down, a prompt to remove media and press Enter appears</dd>
+    <dt>Remove the disc and press enter</dt>
+        <dd>The machine has been rebooted</dd>
+    <dt>Allow the machine to reboot</dt>
+        <dd>The system boots properly and loads into FAMILY</dd>
+    <dt>Login as the user you created, or ensure that you are auto-logged in as the user created during setup if you checked the auto-login option</dt>
+        <dd>The new user's desktop is presented</dd>
+    <dt>Open dash and type Terminal into search box.  Click on Terminal icon.</dt>
+        <dd>TheTerminal window will appear</dd>
+    <dt>Verify that neither the restricted nor multiverse archives have been enabled by typing <pre>grep "restricted\|multiverse" /etc/apt/sources.list | grep -v "^#"</pre></dt>
+        <dd>No result returned (username command prompt line will appear again)</dd>
+    <dt>Verify that the linux-restricted-modules package has not been installed by typing <pre>dpkg -l linux-restricted-* |  grep -vE "^[a-z]n"</pre></dt>
+        <dd>No packages printed (some lines of text will appear, but after +=====etc sequence username command prompt line will appear)</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result. If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

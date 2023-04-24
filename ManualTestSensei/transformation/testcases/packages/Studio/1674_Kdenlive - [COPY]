@@ -1,0 +1,23 @@
+This is a template for a test that will check that Kdenlive works.
+This text should be a short description of the test.
+<strong>Write here any prerequisites before starting the test.
+</strong>
+<dl>
+    <dt>Action 1</dt>
+        <dd>Expected result 1</dd>
+    <dt>Example Action: Click on "File" and "Open Files"</dt>
+        <dd>Example Result: A window opens, asking for a file to select</dd>
+    <dt>Keep adding actions in "dt" fields</dt>
+        <dd>Keep adding expected results in "dd" fields</dd>
+</dl>
+
+Add another test for Kdenlive here.
+<strong>Add another prerequisite here.
+</strong>
+<dl>
+    <dt>More actions</dt>
+        <dd>More expected results. Note: Make sure you keep the following "strong" text at the end</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

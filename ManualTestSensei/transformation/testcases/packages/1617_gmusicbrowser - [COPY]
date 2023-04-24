@@ -1,0 +1,67 @@
+Manual testcase for Gmusicbrowser
+<dl>
+    <dt>Open gmusicbrowser</dt>
+        <dd>gmusicbrowser launches</dd>
+</dl>
+The following tests expect you to be on the Songtree view (launched by default on first launch) unless otherwise specified.
+This test ensures you are able to set up a collection
+<dl>
+    <!-- unverified step -->
+    <dt>Click on the Settings icon (top-right corner) and select Library -> Add music</dt>
+    <dt>Select a directory with media files inside and click "OK"</dt>
+        <dd>Songs are added to the library and become visible in the Songtree view, grouped according to the tags in the media files</dd>
+</dl>
+This test ensures you are able to update your collection
+<dl>
+    <dt>Add more music to the folder you selected for your library</dt>
+    <dt>Click on the Settings icon (top-right corner) and select Library -> Rescan collection</dt>
+        <dd>Songs are added to the library and become visible in the Songtree view, grouped according to the tags in the media files</dd>
+</dl>
+This test ensures you are able to add new folders containing music your collection
+<dl>
+    <dt>Click on the Settings icon (top-right corner) and select Settings</dt>
+    <dt>In the Library tab, click "Add folder" and select another folder (than the one that's already in the listview above) that contains music</dt>
+    <dt>Hit the "scan now" button below</dt>
+        <dd>Songs are added to the library and become visible in the Songtree view, grouped according to the tags in the media files</dd>
+</dl>
+This test ensures you are able to play and queue media files
+Please note that you will need additional codecs to play certain media files, including MP3 -files. Please install the package 'xubuntu-restricted-extras' before reporting a bug if any media file can't be played.
+<dl>
+    <dt>Double-click a track</dt>
+        <dd>The track is played</dd>
+    <dt>Click the "Queue" tab on the left sidebar</dt>
+    <dt>Drag-and-drop a track to the queue area or double-middle-click a song in the list</dt>
+        <dd>After the current track has finished playing, the next track from the queue starts playing</dd>
+</dl>
+This test ensures you are able to search from your collection
+<dl>
+    <dt>Type a search term in the search box in the top-right search box</dt>
+        <dd>The tracks in the Songtree view are filtered based on your search</dd>
+    <dt>Click the "X" icon on the search box or press Esc</dt>
+        <dd>The Songtree view is reverted back to showing all of your collection</dd>
+</dl>
+This test ensures you are able to switch the display mode correctly
+<dl>
+    <dt>Click one of the four icons left of the search-box (from left to right: Simple list, Songtree, Mosaic, Fullscreen)</dt>
+        <dd>The view changes according to your selection</dd>
+</dl>
+This test ensures you are able to sort your collection
+<dl>
+    <dt>Go to the Songtree-view</dt>
+    <dt>Right-click the header-row and go to the "Sort by" submenu and create a custom sort-mode</dt>
+        <dd>The tracks in the Songtree view are sorted based on your sort-mode</dd>
+</dl>
+This test ensures the installed plugins are working as expected
+Please note that in order for these plugins to work correctly, you need to be connected to the internet.
+<dl>
+    <!-- conditonal test -->
+    <dt>Click on the "Lyrics" tab on the left sidebar</dt>
+        <dd>If the tracks have lyrics and they are found from the various lyrics online sites that gmusicbrowser queries subsequently, the lyrics are shown</dd>
+    <dt>Click on the "Album" tab on the left sidebar</dt>
+        <dd>If information about the album is found from the web-based allmusic-service, an album-review and additional information is shown. Otherwise, the text "No results found"  is shown.</dd>
+    <dt>Click on the "Artist" tab on the left sidebar</dt>
+        <dd>If information about the artist is found from the web-based last.fm-service, artist biography information, events or similar artists is shown. Otherwise, the text "No results found" is shown.</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

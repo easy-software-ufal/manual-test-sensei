@@ -1,0 +1,136 @@
+This test will check that Window Manager opens and closes correctly
+<dl>
+<!-- good -->
+    <dt>Open Window Manager from Settings dialogue</dt>
+        <dd>Window Manager opens to Style tab</dd>
+    <dt>Press X in top right corner of window manager</dt>
+        <dd>Window Manager closes</dd>
+</dl>
+
+This test will check that Themes are applied correctly
+<dl>
+    <dt>Open Window Manager from Settings dialogue</dt>
+        <dd>Window Manager opens to Style tab, theme set to default</dd>
+    <dt>Change theme</dt>
+        <dd>Window theme changes to new style</dd>
+    <dt>Change theme back to default</dt>
+        <dd>Default theme is applied</dd>
+</dl>
+
+This test will check that Window title and button customisation's are applied correctly
+<dl>
+    <dt>Change Title font from default</dt>
+        <dd>Window title font changes</dd>
+    <dt>Change Title alignment from default</dt>
+        <dd>Title alignment changes</dd>
+    <dt>Change Title font and alignment back to default</dt>
+        <dd>Title font and alignment change</dd>
+    <dt>Click and drag buttons in Button layout</dt>
+        <dd>Buttons move in Window title bar</dd>
+    <dt>Return buttons to default position</dt>
+        <dd>Buttons return to default positions</dd>
+    <dt>Move an Active button to the Hidden area</dt>
+        <dd>Button disappears from Window title bar</dd>
+    <dt>Move button from Hidden area to Active</dt>
+        <dd>Button appears in Window title bar</dd>
+    <dt>Return buttons to default positions</dt>
+        <dd>Buttons return to default positions</dd>
+</dl>
+
+This test will check that Focus changes are applied correctly
+<dl>
+    <dt>Select Focus Tab</dt>
+        <dd>Window changes to Focus tab, Click to focus, New window focus, Raise on click selected by default</dd> 
+    <dt>Select Focus follows mouse</dt>
+        <dd>Focus follow mouse button selected</dd>
+    <dt>Open any other application</dt>
+        <dd>Chosen application opens</dd>
+    <dt>Move between application windows without clicking</dt>
+        <dd>Focus moves between applications following mouse</dd>
+    <dt>Move Focus delay slider</dt>
+        <dd>Speed at which focus is applied changes</dd>
+    <dt>Deselect all focus options, leaving focus model at Click to focus</dt>
+        <dd>All ticks removed from boxes</dd>
+        <!-- is this eager test? -->
+    <dt>Open the file manager with Super +f</dt>
+        <dd>The file manager opens, focus stays with Window Manager</dd>
+        <dd>Window Manager is not raised above the file manager</dd>
+    <dt>Click Window Manager title bar</dt>
+        <dd>Window Manager is raised</dd>
+    <dt>Select Raise on click</dt>
+        <dd>Tick appears in box</dd>
+    <dt>Click inside the file manager</dt>
+        <dd>The file manager gains focus and is raised above other windows</dd>
+    <dt>Deselect Raise on click, select Raise on focus</dt>
+        <dd>Tick appears in Raise on focus, removed from Raise on click</dd>
+    <dt>Click in the file manager</dt>
+        <dd>The file manager gains focus</dd>
+    <dt>Deselect Raise on focus, select New Window focus</dt>
+        <dd>Tick appears in New window focus, tick removed from Raise on focus</dd>
+    <dt>Open the file manager</dt>
+        <dd>The file manager opens raised and with focus</dd>
+    <dt>Reset settings to default</dt>
+        <dd>Ticks appear in New window focus and Raise on Click</dd>
+</dl>
+
+This test will check that Advanced options are applied correctly
+
+<em>Note that Wrap work spaces does not function in a virtualbox vm - this is not cause to fail the test</em>
+<dl>
+<!-- unverified steps -->
+    <dt>Select Advanced tab</dt>
+        <dd>Window changes to advanced tab, Snap windows to screen border and Wrap workspaces when dragging selected by default</dd>
+    <dt>Left click on window title bar</dt>
+        <dd>Cursor changes to a 'hand'</dd>
+    <dt>Drag window to screen border</dt>
+        <dd>Window snaps to screen border</dd>
+    <dt>Select Snap windows to other windows, press Super +T</dt>
+        <dd>Tick appears in Window Manager dialogue</dd>
+        <dd>Terminal opens</dd>
+    <dt>Grab Terminal by left clicking on title bar, move terminal until closes with Window Manager edge</dt>
+        <dd>Terminal snaps to Window Manager</dd>
+    <dt>Select both windows snapping options</dt>
+        <dd>Ticks removed from dialogue window</dd>
+        <dd>Windows no longer snap to either screen border or application borders</dd>
+    <dt>Select both windows snapping options</dt>
+        <dd>Ticks appear from dialogue window</dd>
+    <dt>Change edge resistance using slider</dt>
+    <dt>Move window close to screen border</dt>
+        <dd>Distance at which window snaps changes</dd>
+    <dt>Move window close to another window</dt>
+        <dd>Distance at which window snaps changes</dd>
+    <dt>Select Terminal and press X in top right</dt>
+        <dd>Terminal closes</dd>
+    <dt>Left click on Window manager title bar and move to screen border</dt>
+        <dd>Window Manager wraps to next workspace</dd>
+    <dt>Select Wrap works space when pointer reaches screen edge</dt>
+        <dd>Tick appears in dialogue</dd>
+    <dt>Move mouser cursor to screen edge</dt>
+        <dd>Mouse wraps to next workspace</dd>
+    <dt>Return to previous workspace</dt>
+        <dd>Window Manager visible</dd>
+    <dt>Change edge resistance using slider</dt>
+    <dt>Repeat wrap tests for both mouse cursor and window</dt>
+        <dd>Distance at which wrap occurs changes</dd>
+    <dt>Select both Box move and resize options</dt>
+        <dd>Ticks appear in 2 boxes</dd>
+    <dt>Move cursor to top right corner of Window Manager</dt>
+        <dd>Cursor changes to resize icon</dd>
+    <dt>Resize window</dt>
+        <dd>Window content not visible in resize border</dd>
+    <dt>Grab window by title bar and move window</dt>
+        <dd>Window content not visible in moving border</dd>
+    <dt>Select both Box move and resize options</dt>
+        <dd>Ticks removed in 2 boxes</dd>
+    <dt>Repeat resize and move tests</dt>
+        <dd>Window content visible during both tests</dd>
+    <dt>Select Double click action</dt>
+        <dd>Action choice menu appears</dd>
+    <dt>Change action</dt>
+        <dd>Menu disappears, chosen option appears in bar</dd>
+    <dt>Double click on title bar</dt>
+        <dd>Action takes place</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

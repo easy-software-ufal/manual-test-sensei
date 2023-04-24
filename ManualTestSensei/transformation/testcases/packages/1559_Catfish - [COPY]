@@ -1,0 +1,83 @@
+<em>Testcase assumes that the test is run completely</em>
+
+This test will check that Catfish opens
+<dl>
+    <dt>Open Catfish from Whiskermenu</dt>
+        <dd>Catfish opens with empty search box</dd>
+</dl>
+
+This test will check that Update Search Index works
+<dl>
+    <dt>Open a terminal at the Desktop</dt>
+        <dd>Terminal opens at ~/Desktop$</dd>
+    <dt>Type <code>touch test Test .Test</code> and enter</dt>
+        <dd>New files named test and Test appear on Desktop</dd>
+    <dt>Click the gear icon to the far right of the search box</dt>
+        <dd>Menu appears</dd>
+    <dt>Click Update Search Index</dt>
+        <dd>Update Search Index opens</dd>
+    <dt>Click Unlock</dt>
+        <dd>Password Entry box opens</dd>
+    <dt>Enter your password and Enter</dt>
+        <dd>Password box closes</dd>
+        <dd>Update Search Index box shows index being updated</dd>
+    <dt>When Search Index reports Locate database updated successfully, click Close</dt>
+        <dd>Search Index box closes</dd>
+</dl>
+
+This test will check that Catfish will search for files, hidden files and use case sensitivity
+<dl>
+    <dt>Type test in Search Term box and enter</dt>
+        <dd>Results appear for both Test and test files on Desktop</dd>
+    <dt>Click on Folder icon to left of search term box</dt>
+        <dd>Folder list appears</dd>
+    <dt>Click on Desktop</dt>
+        <dd>Folder name changes to Desktop</dd>
+    <dt>Click the gear icon to the far right of the search box</dt>
+        <dd>Menu appears</dd>
+    <dt>Click Exact Match in menu</dt>
+        <dd>Test disappears from results.</dd>
+    <dt>Type Test in Search Term box and enter</dt>
+        <dd>Result appears for Test file on Desktop</dd>
+    <dt>Click gear icon to right of search box</dt>
+        <dd>Menu appears</dd>
+    <dt>Click Hidden Files in menu</dt>
+        <dd>Results appear for Test and .Test files on Desktop</dd>
+    <dt>Click the gear icon</dt>
+        <dd>Menu closes</dd>
+    <dt>Close Catfish with X in the top right corner</dt>
+        <dd>Catfish closes</dd>
+</dl>
+
+This test will check the thumbnail capability of Catfish
+<dl>
+    <dt>Launch the xfce screenshooter</dt>
+        <dd>Screenshot dialogue opens</dd>
+    <dt>Capture a screenshot and save it to the Desktop, not changing the default filename</dt>
+        <dd>A thumbnail of the image should now appear in the Desktop</dd>
+    <dt>Open WhiskerMenu and launch Catfish</dt>
+        <dd>Catfish opens with empty search box</dd>
+    <dt>Click the gear icon to the far right of the search box</dt>
+        <dd>Menu appears</dd>
+    <dt>Click Update Search Index</dt>
+        <dd>Update Search Index opens</dd>
+    <dt>Click Unlock</dt>
+        <dd>Password Entry box opens</dd>
+    <dt>Enter your password and Enter</dt>
+        <dd>Password box closes</dd>
+        <dd>Update Search Index box shows index being updated</dd>
+        <!-- HOW TO KNOW HOW MUCH TIME WE SHOULD WAIT? UNSPECIFIED WAIT TIME -->
+    <dt>When Search Index reports Locate database updated successfully, click Close</dt>
+        <dd>Search Index box closes</dd>
+    <dt>Search for "screenshot"</dt>
+        <dd>List showing your recent screenshot appears</dd>
+    <dt>Next click the gear icon, then click the second icon in the gear menu</dt>
+        <dd>List should now show the thumbnail of your screenshot</dd>
+    <dt>Click the gear icon</dt>
+        <dd>Menu closes</dd>
+    <dt>Close Catfish with X in the top right corner</dt>
+        <dd>Catfish closes</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

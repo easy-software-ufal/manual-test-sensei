@@ -1,0 +1,16 @@
+<em>This testcase only tests that an ISO boots to a livesession desktop</em>
+<em>Proceed in your native language if you wish. Instructions will remain in English</em>
+
+Test-case Live Session Start
+<dl>
+    <dt>Boot up the image</dt>
+        <dd>FAMILY boot screen is displayed</dd>
+    <dt>When ubiquity starts select your language in the left column</dt>
+        <dd>Language is selected, all labels are changed to translated versions</dd>
+    <dt>Press "Try FAMILY" and wait for the Live session to start</dt>
+        <dd>The default desktop is displayed</dd>
+</dl>
+
+<strong>
+    If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

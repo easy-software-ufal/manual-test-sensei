@@ -1,0 +1,111 @@
+Test-case name: server_upgrade_cli_NEVER
+This will test protection from do-release-upgrade
+<dl>
+    <dt>Login into the system locally, or via SSH</dt>
+    <dt>In the terminal: sudo apt-get update && sudo apt-get upgrade</dt>
+        <dd>APT will update</dd>
+        <dd>If asked to install files, type <em>Y</em></dd>
+        <dd>New version files install</dd>
+    <dt>Check release-upgrade setting: grep '^Prompt=' /etc/update-manager/release-upgrades</dt>
+        <dd>Return: Prompt=normal</dd>
+        <dd>If Prompt=normal then: sudo sed -i 's/Prompt=never/Prompt=never/'</dd>
+        <dd>If Prompt=lts then: sudo sed -i 's/Prompt=lts/Prompt=never/'</dd>
+    <dt>Check release-setting again: grep '^Prompt=' /etc/update-manager/release-upgrades</dt>
+        <dd>Return: Prompt=normal</dd>
+        <dd> If sed command fails, edit manually, changing to: Prompt=never</dd>
+    <dt>Start the upgrade: sudo do-release-upgrade</dt>
+        <dd>Checking for new Ubuntu release</dd>
+        <dd>No new release be found</dd>
+        <dd>Return to the command prompt</dd>
+</dl>
+
+Test-case name: server_upgrade_cli_NORMAL
+This will test the next sequential release
+<dl>
+    <dt>Login into the system locally, or via SSH</dt>
+    <dt>In the terminal: sudo apt-get update && sudo apt-get upgrade</dt>
+        <dd>APT will update</dd>
+        <dd>If asked to install files, type <em>Y</em></dd>
+        <dd>New version files install</dd>
+    <dt>Check release-upgrade setting: grep '^Prompt=' /etc/update-manager/release-upgrades</dt>
+        <dd>Return: Prompt=normal</dd>
+        <dd>If Prompt=never then: sudo sed -i 's/Prompt=never/Prompt=normal/'</dd>
+        <dd>If Prompt=lts then: sudo sed -i 's/Prompt=lts/Prompt=normal/'</dd>
+    <dt>Re-Check release-setting: grep '^Prompt=' /etc/update-manager/release-upgrades</dt>
+        <dd>Return: Prompt=normal</dd>
+        <dd> If sed command fails, edit manually, changing to: Prompt=normal</dd>
+    <dt>Check current release: lsb_release -r</dt>
+        <dd>Note the release version</dd>
+    <dt>Start the upgrade: sudo do-release-upgrade</dt>
+        <dd>APT will check release data and update package list</dd>
+        <dd>If a new release is found, APT will add repositories and upgrade</dd>
+    <dt>When asked to start the upgrade, type <em>Y</em></dt>
+    <dt>When asked, restart services during package upgrades without asking, select <em>Yes</em></dt>
+    <dt>When asked, remove obsolete packages, type <em>Y</em></dt>
+    <dt>Login into the system</dt>
+    <dt>Check release version: lsb_release -r</dt>
+        <dd>Compare results to step(5), will be the next sequential release.</dd>
+</dl>
+
+Test-case name: server_upgrade_cli_LTS
+This will test upgrading LTS to LTS
+<dl>
+    <dt>Login into the system locally, or via SSH</dt>
+    <dt>In the terminal: sudo apt-get update && sudo apt-get upgrade</dt>
+        <dd>APT will update</dd>
+        <dd>If asked to install files, type <em>Y</em></dd>
+        <dd>New version files install</dd>
+    <dt>Check release-upgrade setting: grep '^Prompt=' /etc/update-manager/release-upgrades</dt>
+        <dd>Return: Prompt=normal</dd>
+        <dd>If Prompt=normal then: sudo sed -i 's/Prompt=normal/Prompt=lts/'</dd>
+        <dd>If Prompt=never then: sudo sed -i 's/Prompt=never/Prompt=lts/'</dd>
+    <dt>Re-Check release-setting: grep '^Prompt=' /etc/update-manager/release-upgrades</dt>
+        <dd>Return: Prompt=normal</dd>
+        <dd> If sed command fails, edit manually, changing to: Prompt=LTS</dd>
+    <dt>Check current release: lsb_release -r</dt>
+        <dd>Note the release version</dd>
+    <dt>Start the upgrade: sudo do-release-upgrade</dt>
+        <dd>APT will check release data and update package list</dd>
+        <dd>If a new release is found, APT will add repositories and upgrade</dd>
+    <dt>When asked to start the upgrade, type <em>Y</em></dt>
+    <dt>When asked, restart services during package upgrades without asking, select <em>Yes</em></dt>
+    <dt>When asked, Remove obsolete packages, type <em>Y</em></dt>
+    <dt>To finished the upgrade, restart required, type <em>Y</em></dt>
+        <dd>The system will reboot.</dd>
+    <dt>Login into the system</dt>
+    <dt>Check the release version: lsb_release -r</dt>
+        <dd>Compare results to step(5), will be the next sequential LTS release.</dd>
+</dl>
+
+Test-case name: server_upgrade_cli_DEV
+This will test upgrading to a development release
+<dl>
+    <dt>Login into the system locally, or via SSH</dt>
+    <dt>In the terminal: sudo apt-get update && sudo apt-get upgrade</dt>
+        <dd>APT will update</dd>
+        <dd>If asked to install files, type <em>Y</em></dd>
+        <dd>New version files install</dd>
+    <dt>Check release-upgrade setting: grep '^Prompt=' /etc/update-manager/release-upgrades</dt>
+        <dd>Return: Prompt=normal</dd>
+        <dd>If Prompt=never then: sudo sed -i 's/Prompt=never/Prompt=normal/'</dd>
+        <dd>If Prompt=LTS then: sudo sed -i 's/Prompt=lts/Prompt=normal/'</dd>
+    <dt>Re-Check release-setting: grep '^Prompt=' /etc/update-manager/release-upgrades</dt>
+        <dd>Return: Prompt=normal</dd>
+        <dd> If sed command fails, edit manually, changing to: Prompt=LTS</dd>
+    <dt>Check current release: lsb_release -r></dt>
+        <dd>Note the release version</dd>
+    <dt>Start the upgrade: sudo do-release-upgrade -d</dt>
+        <dd>APT will check release data and update package list</dd>
+        <dd>If a new release is found, APT will add new repositories and start the upgrade</dd>
+    <dt>When asked to start the upgrade, type <em>Y</em></dt>
+        <dd>The installation will continue</dd>
+    <dt>When asked, restart services during package upgrades without asking, select <em>Yes</em></dt>
+    <dt>When asked, remove obsolete packages, type <em>Y</em></dt>
+    <dt>To finished the upgrade, restart required, type <em>Y</em></dt>
+        <dd>The system will reboot.</dd>
+    <dt>Login into the system</dt>
+    <dt>Check the release version: lsb_release -r</dt>
+        <dd>Compare results to step(5), will be the next development release.</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

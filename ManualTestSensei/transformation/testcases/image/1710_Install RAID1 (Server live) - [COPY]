@@ -1,0 +1,38 @@
+Scope of this test is to verify that the system is installed and you can login into it.
+
+<em>Proceed in your native language if you wish. Instructions will remain in English</em>
+
+<dl>
+    <dt>Boot up the image in UEFI mode in a system or VM with at least two disks attached.</dt>
+    <dt>Choose the desired language</dt>
+    <dt>On the network configuration screen, just select Done (it should be selected by default)</dt>
+    <dt>On the filesystem setup screen, select "Manual"</dt>
+    <dt>
+        Create a partition on two drives. For each drive:
+        <dl>
+            <dt>If it already has partitions, select "Reformat" from the menu</dt>
+            <dt>Select "Add partition" from the menu</dt>
+            <dt>Leave size blank and select "Leave unformatted" for the format</dt>
+            <dt>Click Done</dt>
+       </dl>
+    </dt>
+    <dt>
+	Create the RAID device and mount it as /:
+        <dl>
+            <dt>Select the "Create software RAID (md)" button</dt>
+            <dt>Select the two partitions you created to be part of the RAID (they should be the only available options, unless the machine has more than two disks)</dt>
+            <dt>Select create</dt>
+	    <dt>Select the md0 device and choose "Format" from the menu</dt>
+            <dt>The default should be to format as ext4 and mount at /. Select Done</dt>
+        </dl>
+    </dt>
+    <dt>The Done button should now be enabled. Select it</dt>
+    <dt>In the confirmation dialog, select "Continue" (it should <b>not</b> be selected by default)</dt>
+    <dt>Fill out the user information, making sure to import your SSH keys from somewhere</dt>
+    <dt>Wait for the install to complete</dt>
+    <dt>Remove the installation media (CDROM or USB key)</dt>
+    <dt>Reboot the system</dt>
+    <dt>Ensure that you can log into the system with the username and password you provided</dt>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

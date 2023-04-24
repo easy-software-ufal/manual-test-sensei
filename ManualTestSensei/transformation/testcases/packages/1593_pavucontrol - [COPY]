@@ -1,0 +1,56 @@
+This test will check that pavucontrol opens and closes without error
+<dl>
+    <dt>Open pavucontrol with your FAMILY option</dt>
+        <dd>pavucontrol opens to Playback tab</dd>
+    <dt>Press X in top corner</dt>
+        <dd>pavucontrol closes</dd>
+</dl>
+
+<strong>Audio playback is a prerequisite of the following 3 tests</strong>
+
+This test will check that Playback options work correctly
+<dl>
+    
+    <dt>Open pavucontrol, hover mouse over playback stream volume levels, using mouse wheel change volume</dt>
+        <dd>Volume of audio decreases and increases in response to volume change</dd>
+    <!-- press what?? unspecified parameter -->
+    <dt>Select the padlock icon next to sound output and press</dt>
+        <dd>Padlock raises</dd>
+    <dt>Select one audio channel and using mouse wheel change volume</dt>
+        <dd>Volume changes in one channel only</dd>
+    <dt>Reset both volume channels to default and press the padlock icon</dt>
+        <dd>Sound returns to being the same in both channels, padlock shows as depressed</dd>
+    <dt>If more than one sound output is available, press on sound output and change</dt>
+        <dd>Name changes to match new sound output option</dd>
+        <dd>Audio is heard through new output</dd>
+    <dt>Reset sound output to default</dt>
+        <dd>Name changes to match default sound output option</dd>
+        <dd>Audio is heard through new output</dd>
+</dl>
+This test will check that pavucontrol applies Output Devices options correctly
+<dl>
+    <dt>Open pavucontrol and select Output Devices tab</dt>
+        <dd>Dialogue changes to show available hardware</dd>
+    <dt>Select stream and change output level with mouse</dt>
+        <dd>Audio volume changes in response</dd>
+        <!-- CONDITIONAL TEST -->
+    <dt><b>If more than one hardware device is available</b>, set output in Playback tab</dt>
+    <dt>Select stream and change output level for new hardware device with mouse</dt>
+        <dd>Audio volume changes in response</dd>
+</dl>
+This test will check that Configuration options work correctly
+<dl>
+    <dt>Open pavucontrol and select Configuration tab</dt>
+        <dd>Dialogue changes to show available hardware</dd>
+    <dt><b>If more than one hardware device is available</b>, select default device Profile</dt>
+        <dd>Drop down menu appears</dd>
+    <dt>Select Off</dt>
+        <dd>Audio playback stops</dd>
+    <dt>Set playback through other hardware device</dt>
+        <dd>Audio playback resumes</dd>
+    <dt>Reset devices to default</dt>
+        <dd>Audio playback resumes through default hardware device</dd> 
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

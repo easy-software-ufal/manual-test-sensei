@@ -1,0 +1,73 @@
+<strong>It is possible that for a launcher to hide when being tested in a live session that you will need to logout/in to see changes</strong>
+
+This test will check that a new launcher can be added and moved to an existing menu
+<dl>
+    <dt>Right click on menu</dt>
+    <dt>Select Edit Applications</dt>
+        <dd>MenuLibre opens</dd>
+    <dt>Click + in the toolbar</dt>
+    <dt>Select Add Launcher</dt>
+        <dd>New launcher appears in the left column of MenuLibre</dd>
+    <dt>At bottom of Menu Browser click arrows to move new launcher</dt>
+        <dd>New launcher moves up and down in menu hierarchy in response</dd>
+    <dt>Move New launcher to below Accessories</dt>
+    <dt>Click arrow to side of Accessories to open that menu directory</dt>
+    <dt>Select New launcher, click up arrow</dt>
+        <dd>New launcher moves inside Accessories</dd>
+    <dt>In entry editor, select the Command entry</dt>
+    <dt>Enter xfce4-terminal in Command area</dt>
+    <dt>Click into Categories area</dt>
+    <dt>Click + at bottom of categories area</dt>
+        <dd>Select a category appears</dd>
+    <dt>Double click on <em>Select a category</em></dt>
+        <dd>Category list appears</dd>
+    <dt>Select Other - GTK</dt>
+        <dd>Category area reflects new category</dd>
+    <dt>Save launcher using toolbar button</dt>
+    <dt>Open menu, navigate to Accessories</dt>
+        <dd>New launcher appears in Accessories menu</dd>
+    <dt>Click new launcher</dt>
+        <dd>Terminal opens</dd>
+    <dt>In Menu Editor - hover over launcher title and click</dt>
+    <dt>Enter new name for launcher and press enter</dt>
+        <dd>New name is set</dd>
+    <dt>Save launcher using toolbar button</dt>
+    <dt>Open menu, navigate to Accessories</dt>
+        <dd>Menu entry reflects the new name</dd>
+</dl>
+
+This test will check that a launcher can be hidden from the menu
+<dl>
+    <dt>In MenuLibre select previously created launcher</dt>
+    <dt>In Entry editor, click <em>Hide from menus</em></dt>
+        <dd>Button shows ON</dd>
+    <dt>Save launcher using toolbar button</dt>
+    <dt>Open menu, navigate to Accessories</dt>
+        <dd>Launcher is now not shown in menu</dd>
+    <dt>Reverse the previous step to disable hiding and save launcher</dt>
+</dl>
+
+This test will check that a new menu level directory can be added
+<dl>
+    <dt>Press + in toolbar and select Add Directory</dt>
+        <dd>New directory appears in menu browser</dd>
+    <dt>In Menu Editor - hover over directory title and click</dt>
+    <dt>Enter new name for directory and press enter</dt>
+        <dd>New name is set</dd>
+    <dt>Save new directory from toolbar</dt>
+    <dt>Open menu</dt>
+        <dd>New directory is <em>not</em> shown in menu</dd>
+</dl>
+
+This test will check that an empty directory will be visible in menu with a valid menu entry
+<dl>
+    <dt>Select the previously created new directory</dt>
+    <dt>Using + key in toolbar add a new launcher</dt>
+        <dd>New launcher appears in new directory</dd>
+    <dt>Using previous instructions, create a valid launcher for xfce4-terminal</dt>
+    <dt>Save new launcher</dt>
+    <dt>Open menu, navigate to new directory</dt>
+        <dd>Menu entry now appears</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

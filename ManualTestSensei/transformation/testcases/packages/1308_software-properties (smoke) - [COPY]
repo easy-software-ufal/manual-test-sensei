@@ -1,0 +1,9 @@
+Where applicable, please answer the following questions:
+<dl>
+    <dt>Is your graphics card recognized? Is the driver listed?</dt>
+    <dt>Is your networking card recognized? Is the driver listed?</dt>
+    <dt>If you enable the drivers, does your hardware work?</dt>
+    <dt>Does the gui work properly and function well?</dt>
+</dl>
+<strong>If you answer 'yes' to all questions, please <a href="results#add_result">submit</a> a 'passed' result.
+    If you answer 'no' to any question, then please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

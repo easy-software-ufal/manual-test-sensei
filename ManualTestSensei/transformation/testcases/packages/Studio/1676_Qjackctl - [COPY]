@@ -1,0 +1,92 @@
+This test checks that Qjackctl can be set up.
+
+<strong>Setting up Jack for low latency monitoring can take some experimentation, and can place a strain on the CPU and cause xruns (clicks and pops) when recording. When unsure of the capabilities of your computer, choose conservative settings for these tests.
+</strong>
+
+<dl>
+    <dt>Click on the Setup button</dt>
+        <dd>The "Setup - JACK Audio Connection Kit" window opens</dd>
+    <dt>In the Settings tab, make sure the Realtime option is ticked</dt>
+    <dt>Select the appropriate audio driver (if you have a firewire audio device , choose firewire. Otherwise leave it set to ALSA)</dt>
+    <dt>Select the appropriate audio interface from interface dropdown menu</dt>
+    <dt>Select the appropriate Sample Rate from the dropdown menu. For example, use 44,100 Hz for CD quality, or 48,000 if recommended for the audio card being used. A higher sample rate will give lower latency, but push the CPU harder & possibly cause xruns.</dt>
+    <dt>Select a suitable Frames/Period from interface dropdown menu. For low latency monitoring choose somewhere between 64-256. If unsure, be conservative and leave the default setting (1024)</dt>
+    <dt>Choose an appropriate Periods/Buffer setting. If using a USB audio device, choose 3 for a more stable low latency setting, otherwise choose 2</dt>
+    <dt>Click the OK button to apply the settings</dt>
+        <dd>The "Setup - JACK Audio Connection Kit" window closes</dd>
+    <dt>Click the Start button</dt>
+        <dd>Jack eventually reports that it has "Started", and if the settings chosen were suitable, there should be no errors (xruns - which would be shown in red)</dd>
+</dl>
+
+This test confirms that Jack can keep two Studio applications in syncronisation.
+<strong>Keep Qjackctl running (Started) after the previous test.
+</strong>
+<dl>
+    <dt>Start Ardour4</dt>
+        <dd>The "Welcome to Ardour" window opens</dd>
+    <dt>Click the Forward button</dt>
+        <dd>The "Default folder for new sessions" window opens</dd>
+    <dt>Choose a location to store files and click the Forward button</dt>
+        <dd>The "Monitoring Choices" window opens</dd>
+    <dt>Unless there is an external device connected that can be used for monitoring, choose the "Ask Ardour to playback..." option and click the Forward button.</dt>
+        <dd>The "Monitoring Section" window opens</dd>
+    <dt>For simplicity, choose the "Use a Master Bus directly" option and click the Forward button.</dt>
+        <dd>The "Ardour is ready for use" window opens</dd>
+    <dt>Click the "Apply" button</dt>
+        <dd>The "Session Setup" window opens</dd>
+    <dt>Give the session a name, and click the Open button</dt>
+        <dd>The "Audio/MIDI Setup" window opens</dd>
+    <dt>From the "Audio System" dropdown list, choose JACK and click "Connect to Jack", and then once Ardour reports that it is connected to Jack, click the OK button</dt>
+        <dd>The Ardour application opens</dd>
+    <dt>Start Hydrogen</dt>
+        <dd>The Hydrogen application opens</dd>
+    <dt>In Ardour, choose Session > Properties from the menu</dt>
+        <dd>The Session Properties window opens</dd>
+    <dt>On the Timecode tab, ensure that the "Ardour is JACK Time Master ..." option is ticked.</dt>
+    <dt>Click on "Internal" button on Ardour's toolbar</dt>
+        <dd>The button changes to "JACK" (meaning that JACK will now follow Ardour as timemaster)</dd>
+    <dt>In Hydrogen, choose Tools > Preferences from the menu.</dt>
+        <dd>The "Preferences" window opens</dd>
+    <dt>In the "Audio System" tab, choose JACK from the dropdown menu, click the OK button, and click OK again to restart Hydrogen</dt>
+        <dd>Hydrogen restarts and two timemaster buttons show up on the Toolbar</dd>
+    <dt>Make sure that J.TRANS (Jack Transport) is enabled</dt>
+    <dt>Click the "Play" icon on the Hydrogen transport</dt>
+        <dd>The Hydrogen transport begins to move, and the Ardour one moves in syncronisation</dd>
+    <dt>Click the "Stop" button in Ardour</dt>
+        <dd>Both the Hydrogen and Ardour transports stop moving</dd>
+</dl>
+
+This test confirms that Jack can patch different sources/instruments to Ardour (e.g. Hydrogen & Guitarix).
+<strong>Keep Qjackctl, Ardour & Hydrogen running from the previous test.
+</strong>
+<dl>
+    <dt>Start Guitarix</dt>
+        <dd>Guitarix starts</dd>
+    <dt>In Ardour, choose Track > "Add Track or Bus" from the menu</dt>
+        <dd>The "Add Track or Bus" window opens</dd>
+    <dt>Give the track the name "Guitar"</dt>
+        <dd>The Guitar track is added to the main view</dd>
+    <dt>In Ardour, choose Track > "Add Track or Bus" from the menu</dt>
+        <dd>The "Add Track or Bus" window opens</dd>
+    <dt>Give the track the name "Drums"</dt>
+        <dd>The Drums track is added to the main view</dd>
+    <dt>Choose Window > Mixer from the menu</dt>
+        <dd>The "Mixer" window opens showing the two added tracks and the Master bus</dd>
+    <dt>On the Guitar track, click on the "Input to Guitar" button and choose "Routing Grid" from the popup menu</dt>
+        <dd>The Routing Grid shows for the Guitar input</dd>
+    <dt>On the "Other" tab, click on the Matrix so that the "gx_head_amp" output is connected to Guitar in</dt>
+        <dd>A green dot is displayed to represent the connection</dd>
+    <dt>Close the matrix for the Guitar track</dt>
+        <dd>The Guitar Matrix window closes</dd>
+    <dt>On the Drum track, click on the "Input to Drum" button and choose "Routing Grid" from the popup menu</dt>
+        <dd>The Routing Grid shows for the Drum input</dd>
+    <dt>On the "Other" tab, click on the Matrix so that the "Hydrogen out" outputs are connected to the "Drum in" inputs</dt>
+        <dd>A green dot is displayed to represent the connection</dd>
+    <dt>Close the matrix for the Drum track</dt>
+        <dd>The Guitar Matrix window closes</dd>
+    <dt>In Qjackctl (JACK Audio Connection Kit), click on the Connect button</dt>
+        <dd>The "Connections" window opens and the connections shown should mirror those connection made within Ardour</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

@@ -1,0 +1,82 @@
+Test-case name: thunderbird/tb-001
+This test will check that Thunderbird can receive and send email
+<dl>
+    <dt>Open Thunderbird</dt>
+        <dd>Did Thunderbird launch?</dd>
+</dl>
+
+Test-case name: thunderbird/tb-002
+This test will check that Thunderbird can receive and send messages
+<em>Note that errors might be caused by issues related to username, password, server configuration, mail provider, network or ISP</em>
+<dl>
+    <dt>The first time opening Thunderbird, a "Welcome to Thunderbird" window could appear with a commercial offer to create a personalized email domain</dt>
+    <dt>To skip this you can click "Skip this and configure my existing email</dt>
+    <dt>Set up an existing account using the "Mail Account Setup" window</dt>
+    <dt>Enter your name, email address and password</dt>
+        <dd> Thunderbird should automatically find the server configuration in the Mozilla ISP database (major providers). Otherwise click the "Manual config" button and set up your account manually</dd>
+    <dt>Click on your inbox, retrieve your mail by clicking on the "Get Mail" button in the top panel</dt>
+    <dt>Send an email to your own account</dt>
+    <dt>Retrieve your mail again</dt>
+        <dd>Do all of these actions complete with no errors?</dd>
+</dl>
+
+Test-case name: thunderbird/tb-003
+This test will check that Thunderbird can create Address Books, Contacts and Mailing Lists
+<dl>
+    <dt>Click on "Address Book" in the top panel</dt>
+        <dd>The Address Book should come up.</dd>
+    <dt>Create a new address book (File > New > Address Book)</dt>
+    <dt>Create a few new contacts (File > New > Address Book Contact)</dt>
+    <dt>Create a new mailing list (File > New > Mailing List)</dt>
+    <dt>Drag and drop one contact to a mailing list</dt>
+    <dt>Drag and drop multiple contacts to a mailing list</dt>
+        <dd>Do all of these actions complete with no errors?</dd>
+</dl>
+
+Test-case name: thunderbird/tb-004
+This test will check that Thunderbird can filter incoming messages
+<dl>
+    <dt>In Thunderbird, on the left panel right-click on your account and select "New Folder"</dt>
+    <dt>Name the folder "TestMe"</dt>
+    <dt>Create a new email filter (Filter Name: TestMe, Match All of the Following, From contains "youremail", Preform these actions: Copy Message to "TestMe" folder)</dt>
+    <dt>Send yourself an email or test the filter on your inbox</dt>
+        <dd>A copy of all emails you send yourself should be in the TestMe folder</dd>
+        <dd>Do all of these actions complete with no errors?</dd>
+</dl>
+
+Test-case name: thunderbird/tb-005
+This test will check that Thunderbird can send messages using mailto: links found on web sites
+<dl>
+    <dt>Clicking <a href="mailto:someone@example.com">here</a> should open a new email in Thunderbird with someone@example.com as the recipient.</dt>
+    <dt>Clicking <a href="mailto:someone@example.com?subject=Just%20Testing">here</a> should open a new email in Thunderbird with someone@example.com as the recipient and "Just Testing" as the subject</dt>
+    <dt>Clicking <a href="mailto:someone@example.com?subject=Just%20Testing&body=Thank you for using Ubuntu%0Ahttp%3A%2F%2Fwww.ubuntu.com%2F">here</a> should open a new email in Thunderbird with someone@example.com as the recipient, "Just Testing" as the Subject and should put two lines of text in the email body.</dt>
+        <dd>Do all of these actions complete with no errors?</dd>
+</dl>
+
+Test-case name: thunderbird/tb-006
+This drag and drop test will check that attachments interact properly with the desktop
+<dl>
+    <dt>Send an email to yourself with an attachment. To add the attachment drag the file from your file browser to the message window</dt>
+        <dd>The email should now indicate that you have attached a file</dd>
+    <dt>Check your mail and open the email with the attachment. Drag the attachment from the message to the desktop.</dt>
+        <dd>The file browser should now contain a copy of the attached file. If this creates a link instead of a file or give an error while copying, you may be experiencing <a href=https://bugs.launchpad.net/thunderbird/+bug/381017>Bug #381017</a></dd>
+        <dd>Do all of these actions complete with no errors?</dd>
+</dl>
+
+Test-case name: thunderbird/tb-007
+This drag and drop test will check that LDAP address book contacts can be searched and copied locally
+<dl>
+    <dt>Click on "Address Book" in the top panel</dt>
+        <dd>The Address Book should come up</dd>
+    <dt>Create a new LDAP Directory</dt>
+    <dt>Give it a name and provide the address of a server. If unsure, try using a public server such as use public Debian directory - Name: Debian - Server: db.debian.org - Base DN: dc=debian,dc=org</dt>
+    <dt>Select the Debian LDAP directory and search for "al"</dt>
+        <dd>Search results should show up</dd>
+    <dt>Drag one contact from the LDAP directory (hold Ctrl) and drop it on a local address book</dt>
+        <dd>The contact should now be copied to the local address book</dd>
+    <dt>Select multiple contacts in the LDAP directory. Drag multiple contacts (hold Ctrl) from the directory to a local address book</dt>
+        <dd>The contacts should now be copied to the local address book</dd>
+        <dd>Do all of these actions complete with no errors?</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result. If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

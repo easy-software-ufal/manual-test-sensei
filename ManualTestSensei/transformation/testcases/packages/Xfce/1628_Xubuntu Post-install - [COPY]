@@ -1,0 +1,24 @@
+These tests are to be undertaken following a successful install of Xubuntu.
+
+Network connections
+<dl>
+    <dt>If you have access to several methods to connect to Internet, connect to them all</dt>
+        <dd>You are able to connect as expected</dd>
+</dl>
+
+If you have other partitions...
+<dl>
+    <dt>Open Thunar</dt>
+        <dd>Confirm they are listed in <b>Thunar</b></dd>
+        <dd>Confirm you are able to read files from it</dd>
+</dl>
+
+If you have USB drive available
+<dl>
+    <dt>If you have a USB drive, plug it in</dt>
+        <dd>The USB drive is mounted, Thunar opens and you can open files from USB</dd>
+</dl>
+
+<strong>
+    If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

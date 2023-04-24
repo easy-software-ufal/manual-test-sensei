@@ -1,0 +1,84 @@
+This test will check that the Task Manager can open
+<dl>
+    <dt>Locate "Task Manager" under "System" on the Whiskermenu and click on it</dt>
+        <dd>The Task Manager application opens and displays a list of all tasks that are currently running</dd>
+</dl>
+
+This test will check that the Task Manager is updating tracked statistics in real time
+<dl>
+    <dt>Locate the two rectangular grids</dt>
+        <dd>Two graphs are displayed moving across the grids</dd>
+    <dt>Hover over each graph with your mouse</dt>
+        <dd>Current CPU and memory utilization are displayed in a popup</dd>
+        <dd>Both readouts update in real time</dd>
+    <dt>Watch the "CPU" column in the task list</dt>
+        <dd>One or more tasks show a fluctuating utilization percentage</dd>
+    <dt>Check the status bar at the bottom of the window</dt>
+        <dd>Four tracked statistics are displayed: Processes, CPU, Memory, Swap</dd>
+        <dd>The numbers update in real time</dd>
+    <dt>Hover over the Task Manager icon on the panel</dt>
+        <dd>The same four statistics are displayed in a popup and are updating in real time</dd>
+</dl>
+
+This test will check the "Execute" menu option
+<dl>
+    <dt>Click arrow to the right of the Gear icon</dt>
+        <dd>A drop-down menu opens</dd>
+    <dt>Click "Run Program"</dt>
+        <dd>The Application Finder dialog opens displaying just a search term field</dd>
+    <dt>Enter "ter" in the search term field and click the 'Launch' button
+        <dd>A red icon appears next to the search term indicating no matching application could be found</dd>
+    <dt>Click the arrow at the right side of the field or press the down arrow on the keyboard</dt>
+        <dd>The Application Finder dialog expands to show a list of applications containing the string "ter"</dd>
+        <dd>Note: the match might be found in the application's description instead of its name</dd>
+    <dt>Type an "m" at the end of the search term making it "term"</dt>
+        <dd>The list of matching applications is refined to just show "Terminal Emulator"</dd>
+    <dt>Click on "Terminal Emulator" and then click the 'Launch' button</dt>
+        <dd>The Terminal Emulator window opens, the number of Processes shown on the status bar increments and "Xfce Terminal" appears in the Task list</dd>
+    <dt>Close the Terminal Emulator</dt>
+        <dd>The number of Processes shown on the status bar decrements and "Xfce Terminal" disappears from the Task list</dd>
+    <dt>Click arrow to the right of the Gear Icon and select Application Finder</dt>
+        <dd>The Application Finder dialog opens in expanded mode</dd>
+    <dt>Close the Application Finder dialog</dt>
+    <dt>Click arrow to the right of the Gear Icon and select Terminal Emulator</dt>
+        <dd>The Terminal Emulator opens</dd>
+</dl>
+
+This test will check that actions can be performed on running tasks
+<dl>
+    <dt>Ensure that the Terminal Emulator session that was started in the last test is still open</dt>
+    <dt>Locate "Xfce Terminal" in the list of running tasks and right-click on it</dt>
+        <dd>A drop-down menu opens</dd>
+    <dt>Click Priority->Very High on the menus</dt>
+        <dd>An error message pops up saying you don't have the required privileges</dd>
+    <dt>Close the error message and right-click on the task again</dt>
+        <dd>Click "Stop"</dd>
+    <dt>Switch to the Terminal window and type something</dt>
+        <dd>Nothing happens because the session is stopped</dd>
+    <dt>Back in Task Manager, right-click on the task again</dt>
+    <dt>Click "Continue"</dt>
+    <dt>Switch to the Terminal window and type something again</dt>
+        <dd>The Terminal session is responsive again</dd>
+    <dt>Back in Task Manager, right-click on the task once more</dt>
+    <dt>Click "Kill"</dt>
+        <dd>A confirmation dialog appears</dd>
+    <dt>Click 'Yes'</dt>
+        <dd>The Terminal session is closed</dd>
+</dl>
+
+This test will check the setting of Preferences
+<dl>
+    <dt>Click arrow to the right of the Task Manager Settings icon</dt>
+        <dd>A drop-down menu appears</dd>
+    <dt>Click each of the options and observe the following results</dt>
+        <dd>"Show all processes" shows even more running processes but may not increment the number of processes displayed on the status bar</dd>
+        <dd>"More precision" - CPU, Memory and Swap utilization percentages are displayed to two decimal places (although not when hovering over the panel icon)</dd>
+        <dd>"Full command line" displays the full file path of many tasks in the list</dd>
+        <dd>"Show status icon" determines whether an icon is shown on the panel when Task Manager is running</dd>
+        <dd>"Refresh rate" increases or decreases the frequency of statistics updates</dd>
+        <dd>The rest of the options display additional columns of information in the task list window</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
+    

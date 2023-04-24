@@ -1,0 +1,69 @@
+<em>Proceed in your native language if you wish. Instructions will remain in English</em>
+
+<dl>
+    <!-- Conditional Test Logic, Unspecific Parameter, Undefined Wait, Aimless Test, Unverified Steps -->
+    <dt>Boot up the image</dt>
+        <dd>The system boots properly and loads the installer displaying Welcome dialog with language selection and 'Try FAMILY' and 'Install FAMILY' buttons</dd>
+    <dt>Click on the release notes hyperlink to confirm that a browser launches and you are taken to the release notes web page.</dt>
+    <dt>Click on the Install FAMILY button</dt>
+		<dd>The 'Keyboard Layout' screen appears</dd>
+        <dd>The proposed keyboard corresponds with your keyboard</dd>
+	<dt>Select your keyboard layout and click on continue</dt>
+        <dd>The 'Updates and other software' screen is displayed</dd>
+    <dt>On the screen 'Updates and other software', note the availability of the following components</dt>
+        <dd>Available options should represent the state of your system accurately</dd>
+        <dd>
+            <ul>
+                <li>(If network is available) Download updates while installing FAMILY</li>
+                <li>(If on a 'laptop') Is plugged to a power source</li>
+                <li>Install third-party software ... option available</li>
+            </ul>
+        </dd>
+    <dt>Click on the continue button</dt>
+        <dd>The 'Installation type' screen is displayed</dd>
+    <dt>Note the state of the 'Erase disk and install FAMILY' radio button</dt>
+        <dd>The 'Erase disk and install FAMILY' radio button is selected and the 'Advanced features' button is active</dd>
+        <dt>Click on the 'Advanced features...' button</dt>
+        <dd>The 'Advanced features' dialog is displayed</dd>
+    <dt>Check 'Use LVM with the new FAMILY Installation' and 'Encrypt the new FAMILY Installation for security'</dt>
+        <dd>'Encrypt the new FAMILY Installation for security' and 'Use LVM with the new FAMILY Installation' is checked</dd>
+    <dt>Click on the 'OK' button</dt>
+        <dd>The dialog closes and 'LVM and encryption selected' is displayed next to the 'Advanced features...' button </dd>
+    <dt>Click on the 'Install Now' button</dt>
+        <dd>The 'Choose a security key' screen is displayed with the 'Install now' button greyed out</dd>
+    <dt>Enter a security key and type a different key into the 'confirm the security key' input box</dt>
+        <dd>The installer displays 'Passwords do not match'</dd>
+    <dt>Enter a security key and type the same key into the 'confirm the security key' input box</dt>
+        <dd>The passwords are accepted and the 'Install Now' button can be clicked</dd>
+    <dt>Check 'Overwrite empty disk space' and click the 'Install Now' button</dt>
+        <dd>The screen advances</dd>
+    <dt>If there is only one hard disk, skip to step 14 (On the 'Where are you?' screen...). Otherwise, on the 'Installation type' screen verify that the drive selected on the Select drive list corresponds to the drive on the chart (e.g /dev/sda)</dt>
+        <!-- Which drive? - Unspecified Parameter -->
+        <dd>Selected drive is displayed on the chart</dd>
+    <dt>Verify that the full drive space is allocated</dt>
+        <dd>Full drive space is allocated for installation</dd>
+    <dt>Click on the Install Now button</dt>
+        <dd>The 'Where are you?' screen is displayed</dd>
+    <dt>If your system is connected to the network, note the preselected timezone correspond with your timezone and the city indicated in the text box </dt>
+        <dd>The timezone and city displayed match your timezone and the main city from your area</dd>
+    <dt>Select your timezone, and click on the continue button</dt>
+        <dd>The 'Who are you?' screen appears</dd>
+    <dt>Input your initial user details and password (Note admin can not be used - it is a dedicated Linux User)</dt>
+        <dd>Name, username and password are accepted. Additionally, the continue button is enabled</dd>
+    <dt>Click on the continue button</dt>
+        <dd>The 'Welcome to FAMILY ' slide is displayed</dd>
+        <dd>The slideshow is entirely in your language</dd> 
+        <!-- undefined wait -->
+    <dt>Wait for the installer to finish</dt>
+        <dd>An 'Installation Complete' dialog appears</dd>
+    <dt>Click the Restart now button</dt>
+        <dd>GUI is shut down, a prompt to remove media and press Enter appears</dd>
+    <dt>Remove the disc and press enter</dt>
+        <dd>The machine is rebooted</dd>
+    <dt>Allow the machine to reboot</dt>
+        <dd>The system boots properly</dd>
+        <dd>A field is displayed to enter your password to decrypt the disk</dd>
+        <dd>The system loads into FAMILY upon entering the right password</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

@@ -1,0 +1,16 @@
+This test will check that gpicview can open an image file
+<dl>
+    <dt>Launch gpicview</dt>
+        <dd>Image Viewer opens, showing one window by default</dd>
+    <dt>Click on "Open File" button at the bottom > select an image and press Open</dt>
+        <dd>The picture is displayed in Image Viewer main window</dd>
+</dl>
+
+This tests will that gpicview can delete an image file
+<dl>
+    <dt>Click on "Delete File" button at the bottom</dt>
+        <dd>The picture is deleted</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

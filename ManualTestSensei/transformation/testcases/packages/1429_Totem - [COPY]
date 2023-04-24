@@ -1,0 +1,142 @@
+Test-case name: totem/tot-001
+This test will check that Totem can playback video
+<dl>
+    <dt> Open Totem</dt>
+        <dd>Movie player should launch</dd>
+    <dt> Press the F9 button</dt>
+        <dd>The sidebar should open and you must see the playlist</dd>
+    <dt> Select the add icon (+) from the dropdown list and go to (/usr/share/example-content/Ubuntu_Free_Culture_Showcase) once there select the video (how fast.ogg)</dt>
+        <dd>Video should begin playing in the window</dd>
+    <dt> Press the pause button</dt>
+        <dd>Video should pause and the button becomes a play button</dd>
+    <dt> Press the play button</dt>
+        <dd>Video should begin playing</dd>
+    <dt>Go to the top bar and click the "Movie" menu and later "Properties"</dt>
+        <dd>A new panel should appear with information about the video (Video information, Sound information...)</dd>
+        <dd>Do you get the same result using the key combination Ctrl+P ?</dd>
+    <dt>Go to the top bar and click the "View" menu and later "Subtitles"</dt>
+        <dd>A new window should appear, select a subtitle file</dd>
+        <dd>Can you see the subtitles on the video?</dd>
+    <dt>Go to the top bar and click the "Edit" menu and later "Create Screenshot Gallery..."</dt>
+        <dd>A new interface will appear called "Save Gallery"</dd>
+        <dd>Can you create a folder?</dd>
+    <dt>Go to the top bar and click the "Edit" menu and later "Take Screenshot"</dt>
+        <dd>A new image file will appear in your Pictures folder</dd>
+        <dd>Do you get the same result using the key combination Ctrl+S ?</dd>
+    <dt> Press the full screen button</dt>
+        <dd>Video should go to fullscreen and continue playing</dd>
+        <dd>Did you get the same effect pressing "F11"</dd>
+    <dt> Move the Volume control (up/down)</dt>
+        <dd> Did you feel the change of volume?</dd>
+    <dt> Press the full screen button</dt>
+        <dd>Video should go to fullscreen and continue playing</dd>
+    <dt> Hover your mouse along the button of the screen</dt>
+        <dd>The controls menu should display</dd>
+    <dt> Move your mouse to the middle of the screen</dt>
+        <dd>The controls menu should disappear</dd>
+    <dt> Press Escape</dt>
+        <dd>The video should return to normal size</dd>
+        <dd>Did the video respond properly to the commands given?</dd>
+</dl>
+
+Test-case name: totem/tot-002
+This test will check that the plugins Work
+<dl>
+    <dt>Open the Totem</dt>
+        <dd>Can you open Totem correctly?</dd>
+    <dt>Go to the top bar and click on "Edit" and later on "Plugins"</dt>
+        <dd>A new "Configure Plugins" window appears</dd>
+    <dt>Select a plugin and mark it</dt>
+    <dt>Click the "About" button</dt>
+        <dd>A new window appears with information about the plugin and its developers</dd>
+    <dt>Select "Close"</dt>
+        <dd>The changes were applied successfully?</dd>
+</dl>
+
+
+Test-case name: totem/tot-003
+This test will check that the Preferences Work
+<dl>
+    <dt>Open Totem</dt>
+        <dd>Can you open totem correctly?</dd>
+    <dt>Go to the top bar and click the "Edit" menu and later "Preferences"</dt>
+        <dd>A new interface called "Preferences" must appear</dd>
+    <dt>Go to the "General" tab</dt>
+    <dt>Click on "Start playing files from last position"</dt>
+        <dd>Can you see the changes on the video?</dd>
+    <dt>Click on "Load subtitle files when movie is loaded"</dt>
+        <dd>Can you see the changes on the video?</dd>
+    <dt>Change the Text Subtitles Font</dt>
+        <dd>Can you see the changes on the video?</dd>
+    <dt>Change the Text Subtitles Encoding</dt>
+        <dd>Can you see the changes on the video?</dd>
+    <dt>Click on "Load chapter files when movie is loaded"</dt>
+        <dd>Can you see the changes on the video?</dd>
+    <dt>Go to the "Display" tab</dt>
+    <dt>Change the Display settings</dt>
+        <dd>Can you see the changes on the video?</dd>
+        <em>we're going to change the Visual Effects settings</em>
+        <dt>Click on "Show visual effects when an audio file is played"</dt>
+        <dt>Change the "Type of visualization"</dt>
+            <dd>Can you see the changes on the video?</dd>
+        <dt>Change the "Visualization size"(Normal, Large, Extra Large)</dt>
+            <dd>Can you see the changes on the video?</dd>
+        <dt>Change the Color Balance (Brightness, Contrast, Saturation and Hue)</dt>
+            <dd>Can you see the changes on the video?</dd>
+        <dt>Click on "Reset to Defaults"</dt>
+            <dd>All changes were changed?</dd>
+        <dt>Go to the "Audio" tab</dt>
+        <dt>Change the audio output type</dt>
+            <dd>Can you feel any difference?</dd>
+</dl>
+
+Test-case name: totem/tot-004
+This testcase will check that videos mode work, we're going to need at least three videos
+<dl>
+    <dt>Open Totem</dt>
+        <dd>Can you open totem correctly?</dd>
+    <dt>Open a video</dt>
+        <dd>Can you see the video correctly?</dd>
+    <dt>Go to the top bar and click the "Edit" menu and later "Repeat Mode"</dt>
+        <dd>A mark will appear next to "Repeat Mode", can you see it?</dd>
+        <dd>The video will be repeat until you stop it.</dd>
+    <dt>Click on "Repeat Mode" to turn it off</dt>
+        <dd>The mark should disappear</dd>
+    <dt>We're going to open three videos for this test</dt>
+    <dt>Go to the top bar and click the "Edit" menu and later "Shuffle Mode"</dt>
+        <dd>A mark will appear next to "Shuffle Mode", can you see it?</dd>
+        <dd>Do you see the videos on mode shuffle?</dd>
+    <dt>Click on "Shuffle Mode" to turn it off</dt>
+        <dd>The mark should disappear</dd>
+    <dt>Go to the top bar and click the "Edit" menu and later "Clear Playlist"</dt>
+        <dd>The videos have disappeared?</dd>
+</dl>
+
+Test-case name: totem/tot-005
+This test will check that the Help menu works
+<dl>
+    <dt>Open the Totem Disc Burner</dt>
+        <dd>Can you open Totem correctly?</dd>
+    <dt>Press "F1"</dt>
+        <dd>A new "Totem Movie Player Manual" window appears</dd>
+    <dt>Navigate main topics</dt>
+        <dd>Is there any issue with the content?</dd>
+    <dt>Close the "Totem Movie Player Manual" window</dt>
+        <dd>The main Totem window is displayed</dd>
+    <dt>Go to the top bar and click the "Help" menu and later "Contents"</dt>
+        <dd>The same content which was displayed in the previous step is shown</dd>
+    <dt>Close the "Totem Help" window</dt>
+        <dd>The main Totem window is displayed</dd>
+    <dt>Go to the top bar and click the "Help" menu and later "About"</dt>
+        <dd>A new "About Totem" window appears</dd>
+    <dt>Press the "Totem Homepage" link</dt>
+        <dd>Firefox open a valid url?</dd>
+    <dt>Go back to the "About Totem" window</dt>
+    <dt>Press the "Credits" button</dt>
+        <dd>The interface shows credits?</dd>
+    <dt>Press the "License" button</dt>
+        <dd>The interface shows a license?</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

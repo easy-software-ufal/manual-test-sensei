@@ -1,0 +1,29 @@
+This test will check if scribus opens properly from the STUDIO menu.
+<dl>
+    <dt>Open the Scribus application from GRAPHIC DESIGN subsection in Main Menu.</dt>
+        <dd>Scribus opens properly.</dd>
+</dl>
+This test will check if scribus properly creates documents from the startup prompt.
+<dl>
+    <dt>Create New Document on startup.</dt> 
+    <dt>Pick a few options in the prompt and press ok.</dt>
+        <dd>Scribus properly creates a new document with the right options.</dd>
+    <dt>Insert Text in the New Document.</dt>
+    <dt>Pick the text-frame tool to draw a text-frame and input text.</dt>
+        <dd>Text is input.</dd>
+    <dt>Insert Image in the New Document.</dt>
+    <dt>Pick the image-frame tool to draw an image frame and input an image.</dt>
+        <dd>Image is input.</dd>
+</dl>
+This test will check if scribus properly saves and re-opens documents.
+<dl>
+    <dt>Create a new document, add an image, add text, save using "Save-as" from the file-menu</dt> 
+    <dt>Name the file and press save</dt>
+        <dd>Scribus properly saves a new files.</dd>
+    <dt>Close the document and reopen it with the file-menu</dt>
+    <dt>Pick the previously saved file in the prompt</dt>
+        <dd>Document opens-up and displays as expected.</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

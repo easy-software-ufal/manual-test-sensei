@@ -1,0 +1,12 @@
+<dl>
+    <dt>Tap the network manager indicator in the upper right-hand corner</dt>
+        <dd>If you have a local wifi access point, you should see it in the list</dd>
+    <dt>Tap your wifi access point to connect to it</dt>
+        <dd>If a passphrase or key is needed to associate with your access point, you will need to enter it now</dd>
+    <dt>Wait for the network manager indicator animation to stop and show a successful connection</dt>
+    <dt>Tap the icon for Firefox in the launcher</dt>
+    <dt>Browse to some web pages (ex. http://www.ubuntu.com)</dt>
+        <dd>The webpages should all load properly</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

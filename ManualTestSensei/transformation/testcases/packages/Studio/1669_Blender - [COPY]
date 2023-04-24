@@ -1,0 +1,38 @@
+This test will check if Blender opens properly from the STUDIO menu.
+<dl>
+    <dt>Open Blender from the STUDIO menu.</dt>
+    <dt>Open the Blender application from GRAPHIC DESIGN subsection in Main Menu.</dt>
+        <dd>Blender opens properly.</dd>
+</dl>
+This test will check if Blender properly saves and re-opens documents.
+<dl>
+    <dt>Start up Blender</dt> 
+    <dt>Add a few mesh-objects to the scene.</dt>
+        <dd>Objects are placed on the cursor in the 3d view</dd>
+    <dt>Open File-menu, and select "save as..."</dt>
+    <dt>Name the file, pick a location and press "Save As Blender File"</dt>
+        <dd>File is saved.</dd>
+    <dt>Open File-menu and select "Open..."</dt>
+    <dt>Pick the previously saved file and press "Open Blender File</dt>
+        <dd>File is opened</dd>
+</dl>
+This test will check if Blender properly synchronizes with JACK.
+<dl>
+    <dt>Start Blender, open user preferences, set audio to JACK, save user preferences, quit Blender.</dt>
+    <dt>Start QJackCtl</dt> 
+    <dt>Start Blender</dt> 
+    <dt>Set Blender sync-mode to AV-sync, and press play in Blender</dt>
+        <dd>Jack starts running</dd>
+    <dt>Focus QjackCtl window</dt>
+    <dt>Press "Pause" in QJackCtl</dt>
+        <dd>Blender stops</dd>
+</dl>
+This test will check if Blender properly executes a simple render.
+<dl>
+    <dt>Start Blender</dt> 
+    <dt>Press F12</dt>
+        <dd>Blender Renders the start-up scene.</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

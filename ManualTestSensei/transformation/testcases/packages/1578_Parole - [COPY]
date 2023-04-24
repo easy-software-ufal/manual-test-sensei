@@ -1,0 +1,26 @@
+<em>If necessary, when running this test in a virtual machine, set Display to No Xv in Tools, Preferences Display tab</em>
+
+<em>Part of this test case is optional. Skipping that part is no cause to fail the test</em>
+
+This tests that Parole can open many different files.
+<dl>
+    <dt>Launch Parole</dt>
+        <dd>Parole opens</dd>
+    <dt>Download an audio file <em>https://samples.mplayerhq.hu/flac/When%20I%20Grow%20Up.flac</em></dt>
+    <dt>Open then play this file with Parole</dt>
+        <dd>File plays</dd>
+        <dd>If a required codec is missing, an installation prompt appears and installs the missing codec.  Afterwards, media playback begins</dd>
+    <dt>Press Ctrl+L to play file from a location</dt>
+    <dt>Copy <em>https://download.blender.org/durian/trailer/sintel_trailer-480p.ogv</em> into dialogue, press Open</dt>
+        <dd>File plays</dd>
+</dl>
+<em>This part of the test case is optional</em>
+<dl>
+    <dt>If you have a media file with subtitles, play this file</dt>
+        <dd>Subtitles work and show up correctly</dd>
+    <dt>Insert then play some CDs and DVDs</dt>
+        <dd>CDs and DVDs play (note: to play encrypted DVDs, you will need to have libdvdcss2 installed)</dd>
+        <dd>Chapters and tracks for CDs/DVDs are shown in the playlist</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result. If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

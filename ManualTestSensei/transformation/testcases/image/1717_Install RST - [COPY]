@@ -1,0 +1,68 @@
+The scope of this test is to ensure that on UEFI systems RST is detected
+properly, that FAMILY can be installed once disabled, and that the resulting
+installation can boot in UEFI as well, regardless of network availability.
+
+<em>Proceed in your native language if you wish. Instructions will remain in English</em>
+
+<dl>
+   <dt>Boot up the image in UEFI mode</dt>
+   <dt>In GRUB boot menu, select UEFI Firmware settings</dt>
+   <dt>Check hardware settings for the hard-drive and if set to ACPI mode, change it to "RAID" or "RST"</dt>
+   <dt>Save and exit the firmware</dt>
+   <dt>Boot up the image in UEFI mode</dt>
+        <dd>The system boots properly and loads the installer displaying the Welcome dialog with language selection and 'Try FAMILY' and 'Install FAMILY' buttons</dd>
+    <dt>Click on the 'Install FAMILY' icon</dt>
+        <dd>The 'Keyboard Layout' screen appears</dd>
+        <dd>The proposed keyboard corresponds with your keyboard</dd>
+	<dt>Select your keyboard layout and click on continue</dt>
+        <dd>The 'Turn off RST' screen is displayed and there is no way to continue the installation</dd>
+    <dt>Scan the QR code with a phone</dt>
+        <dd>Verify that the page help.ubuntu.com/rst opens with detailed information about RST and how to disable it.</dd>
+    <dt>Follow the instructions on the page OR disable RST from UEFI firmware</dt>
+    <dt>Boot up the image in UEFI mode</dt>
+        <dd>The system boots properly and loads the installer displaying the Welcome dialog with language selection and 'Try FAMILY' and 'Install FAMILY' buttons</dd>
+    <dt>Click on the 'Install FAMILY' icon</dt>
+        <dd>The 'Keyboard Layout' screen appears</dd>
+        <dd>The proposed keyboard corresponds with your keyboard</dd>
+	<dt>Select your keyboard layout and click on continue</dt>
+         <dd>The 'Preparing to install FAMILY' screen is displayed</dd>
+    <dt>On the screen 'Preparing to install FAMILY', note the availability of the following components</dt>
+        <dd>Available options should represent the state of your system accurately</dd>
+        <dd>
+            <ul>
+                <li>Download updates while installing FAMILY should be blank</li>
+                <li>(If on a 'laptop') Is plugged to a power source</li>
+                <li>Install third-party software ... option available</li>
+            </ul>
+        </dd>
+    <dt>Click on the continue button</dt>
+        <dd>The 'Installation type' screen is displayed</dd>
+    <dt>Select any installation type and click on the continue button</dt>
+        <dd>Write changes dialogue appears</dd>
+    <dt>Click continue</dt>
+        <dd>If there is only one hard disk, the installer skips to the "Where are you?' screen. Otherwise, the 'Installation type' screen is displayed</dd>
+    <dt>If there is only one hard disk, skip to step 10 (On the 'Where are you?' screen...). Otherwise, on the 'Installation type' screen verify that the drive selected on the Select drive list corresponds to the drive on the chart (e.g /dev/sda)</dt>
+        <dd>Selected drive is displayed on the chart</dd>
+    <dt>Verify that the full drive space is allocated</dt>
+        <dd>Full drive space is allocated for installation</dd>
+    <dt>Click on the Install Now button</dt>
+        <dd>The 'Where are you?' screen is displayed, which should not necessarily match your timezone.</dd>
+    <dt>Select your timezone, and click on the continue button</dt>
+        <dd>The 'Who are you?' screen appears</dd>
+    <dt>Input your initial user details and password <em>admin can not be used - it is a dedicated Linux User</em></dt>
+        <dd>Name, username and password are accepted. Login options and home folder encryption choices shown</dd>
+        <dd>Continue button becomes available</dd>
+    <dt>Press continue</dt>
+        <dd>The 'Welcome to FAMILY' slide is displayed</dd>
+        <dd>The slideshow is entirely in your language</dd>
+    <dt>Wait for the installer to finish</dt>
+        <dd>An 'Installation Complete' dialog appears</dd>
+    <dt>Click the Restart now button</dt>
+        <dd>GUI is shut down, a prompt to remove media and press Enter appears</dd>
+    <dt>Remove the disc and press enter</dt>
+        <dd>The machine is rebooted</dd>
+    <dt>Allow the machine to reboot</dt>
+        <dd>The system boots properly and loads into FAMILY showing username selected at step 14</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

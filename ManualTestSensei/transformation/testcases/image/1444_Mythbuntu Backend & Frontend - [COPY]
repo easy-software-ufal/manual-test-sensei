@@ -1,0 +1,68 @@
+The testcase tests the installation and basic functionality of a Primary Backend with Frontend.
+
+<dl>
+    <!-- UNVERIFIED STEPS, MISPLACED PRE-CONDITION -->
+    <dt>Go though the Ubiquity install as you would any other install. Most options won't matter for this testcase, but be sure to choose the following options</dt>
+        <dd>
+            <ul>
+                <li title="Specified Setting">Do NOT name the user mythtv</li>
+                <li title="Specified Setting">Automatic (Guided) Partitioning</li>
+                <li title="Specified Setting">"Primary Backend w/ Frontend"</li>
+                <li title="Specified Setting">"MythTV service" checkbox is checked</li>
+                <li title="Specified Setting">If you have no remote, choose no remote suppport</li>
+            </ul>
+        </dd>
+    <dt>Once installation is finished, remove the installation media and reboot.</dt>
+    <dt>Once the installed system boots, it will boot into the MythTV frontend. Exit the frontend by hitting escape and selecting "yes, exit now"</dt>
+    <dt>Download a demo file. I recommend a MP4 trailer (for example, the 480p MP4 trailer at http://www.sintel.org/download ).</dt>
+    <dt>Once downloaded, move this file to the /srv/ directory (it must be outside your home directory)</dt>
+    <dt>Change ownership on the test file to mythtv:mythtv</dt>
+    <dt>Open the Applications menu and choose system and then "Mythtv backend setup".</dt>
+    <dt>Say yes to stop the running mythtv-backend service</dt>
+    <dt>Once in mythtv-setup, go to "1. General"</dt>
+    <dt>On the first screen, edit the following options</dt>
+        <dd>
+            <ul>
+                <li title="Specified Setting">IP Address (Under Local Backend): [use the machine's IP address (not 127.0.0.1)]</li>
+                <li title="Specified Setting">Security PIN (required): 1234</li>
+                <li title="Specified Setting">IP Address (Under Master Backend): [use the machine's IP address (not 127.0.0.1)]</li>
+            </ul>
+        </dd>
+    <dt>Hit next until you get back to the main menu</dt>
+    <dt>Go to "2. Capture cards" and select "(New capture card)"</dt>
+    <dt>Setup the new card using the following options</dt>
+        <dd>
+            <ul>
+                <li title="Specified Setting">Card Type: Import test recorder</li>
+                <li title="Specified Setting">File path: file:/srv/sintel_trailer-480p.mp4</li>
+            </ul>
+        </dd>
+        <dd>When you put in the file path, it should detect the "File info" and "File size"</dd>
+    <dt>Hit Finish, then escape to go back to the main menu</dt>
+    <dt>Go to "4. Video sources" and select "(New video source)"</dt>
+    <dt>Setup the video source with the following options</dt>
+        <dd>
+            <ul>
+                <li title="Specified Setting">Video source name: NoGrabber</li>
+                <li title="Specified Setting">Listings grabber: No grabber</li>
+            </ul>
+        </dd>
+    <dt>Hit Finish, then escape to go back to the main menu</dt>
+    <dt>Go to "5. Input connections", and select the only option in there (the DEMO recorder)</dt>
+    <dt>Setup as follows</dt>
+        <dd>
+            <ul>
+                <li title="Specified Setting">Video source: NoGrabber</li>
+            </ul>
+        </dd>
+    <dt>Hit Next, then finish, then escape to go back to the main menu.</dt>
+    <dt>Hit escape and exit the backend setup.</dt>
+        <dd>You may get a warning that the tuner is set to start on a channel that doesn't exist. This can be safely ignored since we are using a test recorder.</dd>
+    <dt>Select yes to start the backend</dt>
+    <dt>Select no when prompted to run mythfilldatabase</dt>
+    <dt>Start the frontend via Applications > Multimedia > MythTV Frontend </dt>
+    <dt>Select "Watch TV". </dt>
+        <dd>The demo video should start playing.</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

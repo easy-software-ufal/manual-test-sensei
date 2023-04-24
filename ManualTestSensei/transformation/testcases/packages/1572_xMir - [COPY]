@@ -1,0 +1,210 @@
+Smoke Tests for xMir
+<dl>
+    <dt>Does your system continue to boot properly?</dt>
+    <dt>Can you login and logout of a desktop session?</dt>
+    <dt>Does unity function correctly? Can you open and close the dash, use the launcher, and keyboard shortcuts?</dt>
+    <dt>Do your input devices all work? Mouse, keyboard, etc?</dt>
+    <dt>Do your output devices all work? Monitors, tv, etc?</dt>
+    <dt>Are you able to run an opengl accelerated application (try running glxgears)?</dt>
+    <dt>Do applications load (try running simple apps like gedit, as well as complex ones like libreoffice)?</dt>
+    <dt>Can you connect an external monitor?</dt>
+    <dt>Does hotplugging work?</dt>
+    <dt>Does user switching work?</dt>
+    <dt>Overall, does everything function the same as when running under xserver?</dt>
+</dl>
+
+Multimonitor tests for xMir
+Scenario 1 : clean boot at “built-in display”, post boot connect/disconnect of 2nd display
+<!-- EAGER TEST, CONDITIONAL TEST-->
+<dl>
+    <dt>Preparations</dt>
+        <dd>Ensure preconditions</dd>
+        <dd>System Settings... -> Displays is in its default configuration</dd>
+        <dd>2nd monitor is not connected on boot</dd>
+
+        <dt>Test 1.1</dt>
+            <dd>boot to single screen</dd>
+            <dd>open System Settings... -> Displays</dd>
+            <dd>open some window (e.g. terminal)</dd>
+            <dd>connect switched on monitor</dd>
+            <dd>verify display is an extension of desktop in the expected orientation, e.g. drag terminal to the other screen</dd>
+
+            <dt>Test 1.2</dt>
+                <dd>assumes expected outcome of Test 1.1 post condition</dd>
+                <dd>Disconnect the monitor</dd>
+                <dd>verify the display adjusts to return active windows to “built-in display”</dd>
+
+                <dt>Test 1.3</dt>
+                    <dd>assumes expected Test 1.2 post condition</dd>
+                    <dd>Reconnect the monitor</dd>
+                    <dd>verify that the windows return to their original layout</dd>
+
+                    <dt>Test 1.4</dt>
+                        <dd>assumes Test 1.3 postcondition</dd>
+                        <dd>On System Settings... -> Displays select “Mirror displays” on</dd>
+                        <dd>verify the screens adjusted to mirrored mode</dd>
+
+                        <dt>Test 1.5</dt>
+                            <dd>assumes expected outcome of Test 1.4 postcondition</dd>
+                            <dd>Disconnect the monitor</dd>
+                            <dd>Reconnect the monitor</dd>
+                            <dd>verify that the screens return to mirror mode layout</dd>
+
+                        </dl>
+
+                        Scenario 2 : clean boot 2nd display already connected
+                        <dl>
+
+                            <dt>Preparations</dt>
+                                <dd>Ensure preconditions</dd>
+                                <dd>System Settings... -> Displays is in its default configuration, e.g. “Mirror displays” is off</dd>
+                                <dd>2nd monitor is already connected and on prior to boot</dd>
+
+                                <dt>Test 2.1</dt>
+                                    <dd>boot to multimonitor already connected</dd>
+                                    <dd>open window to drag</dd>
+                                    <dd>verify that desktop comes up in extended mode</dd>
+
+                                    <dt>Test 2.2</dt>
+                                        <dd>assumes expected outcome of Test 2.1 post condition</dd>
+                                        <dd>open System Settings... -> Displays select “Mirror displays” on</dd>
+                                        <dd>verify system reconfigures to mirrored screens</dd>
+                                        <dd>reboot</dd>
+                                        <dd>verify that system reboots into mirrored screens</dd>
+
+                                        <dt>Test 2.3</dt>
+                                            <dd>assumes expected Test 2.2 post condition</dd>
+                                            <dd>open System Settings... -> Displays select “Mirror displays” off</dd>
+                                            <dd>verify that the system reconfigures to extended desktop</dd>
+                                            <dd>reboot</dd>
+                                            <dd>verify that the system reboots into extended desktop</dd>
+</dl>
+
+Scenario 3 : turning off “built-in display”
+<dl>
+    <dt>Preparations</dt>
+        <dd>Ensure preconditions</dd>
+        <dd>System Settings... -> Displays is in its default configuration</dd>
+        <dd>2nd monitor is already connected and on prior to boot</dd>
+
+        <dt>Test 3.1</dt>
+            <dd>boot to multimonitor already connected</dd>
+            <dd>open System Settings... -> Displays toggle on/off button for “built-in display” to OFF</dd>
+            <dd>verify the second display remains active as a single screen/desktop</dd>
+
+            <dt>Test 3.2</dt>
+                <dd>assumes expected outcome of Test 3.1 post condition</dd>
+                <dd>Open some windows (e.g. terminal)</dd>
+                <dd>disconnect display</dd>
+                <dd>verify the desktop returns to the “built-in display”</dd>
+
+                <dt>Test 3.3</dt>
+                    <dd>assumes expected outcome of Test 3.2 post condition</dd>
+                    <dd>reconnect the display</dd>
+                    <dd>verify that the desktop now appears on the second display and the “built-in display” is dark</dd>
+
+                    <dt>Test 3.4</dt>
+                        <dd>assumes expected Test 3.3 postcondition</dd>
+                        <dd>reboot with the second display connected</dd>
+                        <dd>after login, verify that the desktop appears on the second display & the “built-in display” remains dark</dd>
+
+                        <dt>Test 3.5</dt>
+                            <dd>assumes expected Test 3.4 postcondition</dd>
+                            <dd>open System Settings... -> Displays toggle on/off button for “built-in display” to ON</dd>
+                            <dd>verify that the desktop appears extended on both the second display & the “built-in display”</dd>
+</dl>
+
+Scenario 4 : resolution change for “built-in display” & second display
+<dl>
+    <dt>Preparations</dt>
+        <dd>Ensure preconditions</dd>
+        <dd>System Settings... -> Displays is in its default configuration</dd>
+
+        <dt>Test 4.1</dt>
+            <dd>boot to multimonitor (or if booted to single screen, connect 2nd monitor)</dd>
+            <dd>open System Settings... -> Displays, note the current resolution (referred to as res1)</dd>
+            <dd>change resolution down for “built in display”, note it, refer to as res2</dd>
+            <dd>open some windows (e.g. terminal & file browser), have windows on each screen open</dd>
+            <dd>disconnect switched on monitor</dd>
+            <dd>verify “built in monitor” returned to original resolution, res1</dd>
+
+            <dt>Test 4.2</dt>
+                <dd>assumes expected outcome of Test 4.1 post condition</dd>
+                <dd>Reconnect the monitor</dd>
+                <dd>verify the “built-in display” adjusts resolution back to res2</dd>
+
+                <dt>Test 4.3</dt>
+                    <dd>assumes expected Test 4.2 post condition</dd>
+                    <dd>Disconnect monitor, change resolution of “built in monitor” down (preferably to a 3rd resolution setting not yet used), refer to as res3</dd>
+                    <dd>Reconnect the monitor</dd>
+                    <dd>verify that the “built in monitor” returned to resolution setting selected in res 2</dd>
+                    <dd>Disconnect the monitor</dd>
+                    <dd>verify that the “built in monitor” returned to res3</dd>
+
+                    <dt>Test 4.4</dt>
+                        <dd>Assumes expected outcome of Test 4.3 postcondition</dd>
+                        <dd>Reconnect monitor</dd>
+                        <dd>through System Settings... -> Displays, select the second monitor & change resolution down, note it, refer to as res4</dd>
+                        <dd>disconnect monitor, let it settle</dd>
+                        <dd>reconnect monitor</dd>
+                        <dd>verify the screens adjusted to res 2 for “built-in” & res 4 for second monitor</dd>
+
+                    </dl>
+
+                    Scenario 5 : retation changes for display orientations
+                    <dl>
+                        <dt>Preparations</dt>
+                            <dd>Ensure preconditions</dd>
+                            <dd>System Settings... -> Displays is in its default configuration</dd>
+
+                            <dt>Test 5.1</dt>
+                                <dd>boot to multimonitor (or if booted to single screen, connect 2nd monitor)</dd>
+                                <dd>the system should be in extended desktop mode</dd>
+                                <dd>open System Settings... -> Displays, change the “Rotation” for the “built-in display” to be clockwise</dd>
+                                <dd>verify “built in monitor” turned 90 degrees clockwise</dd>
+
+                                <dt>Test 5.2</dt>
+                                    <dd>assumes expected outcome of Test 5.1 post condition</dd>
+                                    <dd>open System Settings... -> Displays, change the “Rotation” for the “built-in display” to be normal</dd>
+                                    <dd>verify the “built-in display” adjusts resolution back to normal</dd>
+
+                                    <dt>Test 5.3</dt>
+                                        <dd>assumes expected Test 5.2 post condition</dd>
+                                        <dd>open System Settings... -> Displays, change the “Rotation” for the “built-in display” to be 180 degrees</dd>
+                                        <dd>verify that the “built in monitor” rotated 180 degrees</dd>
+
+                                        <dt>Test 5.4</dt>
+                                            <dd>assumes expected outcome of Test 5.3 postcondition</dd>
+                                            <dd>return the orientation of the primary screen to normal, via System Settings... -> Displays, change the “Rotation” for the “built-in display” to be normal</dd>
+                                            <dd>set mirror mode, via System Settings... -> Displays select tick box on “Mirror displays”</dd>
+                                            <dd>then rotate, System Settings... -> Displays, change the “Rotation” for the “built-in display” to be 180 degrees</dd>
+                                            <dd>verify the both “built-in display” and 2nd display rotate 180</dd>
+
+                                            <dt>Test 5.5</dt>
+                                                <dd>assumes expected Test 5.4 postcondition</dd>
+                                                <dd>return rotation to normal, open System Settings... -> Displays, change the “Rotation” for mirrored displays to normal</dd>
+                                                <dd>unmirror, System Settings... -> Displays, unselect tick box for “Mirror displays”</dd>
+                                                <dd>select the 2nd monitor in the System Settings... -> Displays and change the Rotation clockwise</dd>
+                                                <dd>verify that the “built in monitor” did not rotate, and the second display rotates 90 degrees</dd>
+</dl>
+
+Scenario 6 : relative display position
+<dl>
+    <dt>Preparations</dt>
+        <dd>Ensure preconditions</dd>
+        <dd>System Settings... -> Displays is in its default configuration</dd>
+
+        <dt>Test 6.1</dt>
+            <dd>boot to multimonitor (or if booted to single screen, connect 2nd monitor)</dd>
+            <dd>open System Settings... -> Displays to see the reflected virtual relationship of the “built-in display” to the second display</dd>
+            <dd>verify with the mouse by exiting the relative side of “built-in display” the mouse appears/enters the second display as reflected in the Displays dialog box</dd>
+
+            <dt>Test 6.2</dt>
+                <dd>assumes expected Test 6.1 post condition</dd>
+                <dd>in System Settings... -> Displays, select & grab the secondary display to move its relative position to the “built-in” display (effectively swap their position left-right of each other)</dd>
+                <dd>verify with the mouse by exiting the relative side of “built-in display” the mouse appears/enters the second display as reflected in the Displays dialog box</dd>
+
+            </dl>
+
+            <strong>If all actions produce the expected results listed, and you can answer yes to the above questions, please <a href="results#add_result">submit</a> a 'passed' result.
+                If an action fails, or produces an unexpected result, or you answer no to any of the above questions, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

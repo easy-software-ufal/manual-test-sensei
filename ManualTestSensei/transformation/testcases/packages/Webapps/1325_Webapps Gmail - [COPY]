@@ -1,0 +1,18 @@
+This test checks whether gmail integration is working properly
+<dl>
+    <!-- good -->
+    <dt>Open Firefox and go to http://www.gmail.com</dt>
+        <dd>Gmail loads</dd>
+    <dt>Login with your username and password</dt>
+        <dd>Gmail loads and the integration popup should appear</dd>
+    <dt>Click on the button "Integrate".</dt>
+        <dd>The Gmail icon should appear in the Launcher.</dd>
+    <dt>Open the Messaging Menu</dt>
+        <dd>Gmail should be integrated:A Gmail entry must appear in the Messaging Menu,Gmail folders must appear in the Messaging Menu,Folders in the Messaging Menu must display the number of unread messages,The number of unread messages must be the same than in Gmail,The number of unread messages in Inbox folder must appear in the Launcher icon.</dd>
+    <dt>Click on Gmail > Compose new message.</dt>
+        <dd>Gmail displays the window to compose a new message.</dd>
+    <dt>Repeat the above steps using chromium</dt>
+        <dd>All of the expected results are the same using chromium instead of firefox</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

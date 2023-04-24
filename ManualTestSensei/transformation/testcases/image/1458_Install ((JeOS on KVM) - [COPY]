@@ -1,0 +1,29 @@
+<em>Proceed in your native language if you wish. Instructions will remain in English</em>
+
+<dl>
+    <dt>Boot the CD from KVM</dt>
+    <dt>Press F4 and select Install a minimal virtual machine</dt>
+    <dt>Choose your language, country and keyboard layout</dt>
+    <dt>Set default hostname: ubuntu</dt>
+    <dt>Partition disks: Guided use entire disk</dt>
+    <dt>Select your time zone and set the system clock to UTC</dt>
+    <dt>User account: enter username and password</dt>
+    <dt>No software selection.</dt>
+    <dt>Boot the newly created guest</dt>
+    <dt>Log in</dt>
+    <dt>Check that the uname -r returns a -generic kernel</dt>
+        <dd>uname -r</dd>
+    <dt>Check that the linux-virtual package is installed for the release or the correct hardware enablement stack:</dt>
+        <dd>dpkg -l | grep linux-virtual</dd>
+    <dt>Ping outside network</dt>
+    <dt>Check with the mount command that virtual disk are mounted read-write</dt>
+    <dt>Check that the ubuntu-standard package is not installed:</dt>
+        <dd>dpkg -l ubuntu-standard</dd>
+    <dt>Check that the size of the kernel modules are below 40M:</dt>
+        <dd>du -sh /lib/modules/</dd>
+    <dt>Check that the size of the installed system is below 800M:</dt>
+        <dd>df -h</dd>
+</dl>
+<strong>
+    If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

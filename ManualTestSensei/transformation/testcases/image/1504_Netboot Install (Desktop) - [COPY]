@@ -1,0 +1,48 @@
+<em>Proceed in your native language if you wish. Instructions will remain in English</em>
+
+<dl>
+    <dt>Boot using the installation media</dt>
+        <dd>The installer loads</dd>
+    <dt>Select <strong>install</strong></dt>
+    <dt>Select your language and press Enter</dt>
+    <dt>Select your country and press Enter</dt>
+        <dd>The detect keyboard layout screen appears</dd>
+    <dt>If you know your layout choose <strong>No</strong> and select it from the list, otherwise choose <strong>yes</strong> and follow the prompts to detect the layout.</dt>
+        <dd>The install starts to detect hardware and the best server to use then shows the <strong>select hostname</strong> screen.</dd>
+    <dt>Type a hostname then press enter.</dt>
+        <dd>The select server window appears.</dd>
+    <dt>Either enter the server info manually or select the recommended server and press enter</dt>
+    <dt>Choose a mirror to use and press enter</dt>
+    <dt>If you have a http proxy type its details now, otherwise just press enter</dt>
+        <dd>The installer starts loading additional components</dd>
+    <dt>Type your full name (using capitals) then press Enter</dt>
+        <dd>The select username page loads with a capital-less version of your first name</dd>
+    <dt>Choose a username the press enter</dt>
+    <dt>Type then confirm a password that is below 8 character long</dt>
+        <dd>A warning that you have chosen a weak password appears</dd>
+    <dt>Select "No" then type and confirm the password you want to use</dt>
+    <dt>Choose to not encrypt the home directory</dt>
+        <dd>The installer detects your timezone correctly</dd>
+    <dt>Press Yes to confirm your timezone</dt>
+        <dd>The <strong>partition disks</strong> page loads</dd>
+    <dt>Select "Guided - use entire disk"</dt>
+    <dt>Select the disk you would like to use</dt>
+    <dt>Agree to the changes to be made</dt>
+        <dd>The installation begins (this might take a long time on older hardware or slow internet)</dd>
+    <dt>Select to not install updates. The base installation finishes</dt>
+        <dd>The Software selection screen appears</dd>
+    <dt>Select the desktop FAMILY (or any other for particular installations) with space bar and press enter </dt>
+    <dt>At the GRUB installation prompt, select the value appropiate to your system (in general, the default works)</dt>
+    <dt>Click on the Continue button</dt>
+        <dd>The installer prompts "Is the system clock set to UTC?"</dd>
+    <dt>Select Yes or No, depending on your setup (select No if your clock is set to localtime)</dt>
+    <dt>Click on the Continue button</dt>
+        <dd>The installer prompts to restart and to remove the installation media</dd> 
+    <dt>Remove they installation media and click on the continue button</dt>
+        <dd>The system restarts and run the choosen FAMILY environement</dd>
+
+    </dl>
+
+    <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+        If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
+

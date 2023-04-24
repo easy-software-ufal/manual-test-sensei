@@ -1,0 +1,22 @@
+Scope of this test is to verify that the system is installed and you can login into it.
+
+<em>Proceed in your native language if you wish. Instructions will remain in English</em>
+
+<dl>
+    <dt>Boot up the image in BIOS mode</dt>
+    <dt>Choose the desired language</dt>
+    <dt>On the network configuration screen, just select Done (it should be selected by default)</dt>
+    <dt>On the filesystem setup screen, select "Use An Entire Disk" (it should be selected by default)</dt>
+    <dt>Choose a disk to install to</dt>
+    <dt>On the file system summary screen select Done (it should be selected by default)</dt>
+    <dt>In the confirmation dialog, select "Continue" (it should <b>not</b> be selected by default)</dt>
+    <dt>Fill out the user information, making sure to import your SSH keys from somewhere</dt>
+    <dt>Wait for the install to complete</dt>
+    <dt>Remove the installation media (CDROM or USB key)</dt>
+    <dt>Reboot the system</dt>
+    <dt>Ensure that you can log into the system with the username and password you provided</dt>
+    <dt>Ensure that you can run commands with sudo</dt>
+    <dt>Check that the correct SSH keys have been imported by SSHing into the machine or looking in ~/.ssh./</dt>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

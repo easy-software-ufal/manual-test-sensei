@@ -1,0 +1,36 @@
+These instructions test that the Gnome System Monitor app is able to clearly display system resource usage and is able to end a running process
+If the gnome-system-monitor is not installed, install it with <code>apt-get install gnome-system-monitor</code>
+<dl>
+    <dt>Launch the application</dt>
+        <dd>The application launches</dd>
+Application by default, shows the processes tab that shows a list of processes ran by the login user
+    <dt>If not shown, click the processes tab</dt>
+        <dd>The application lists the name of processes that are running,</dd>
+        <dd>resources they are using(cpu%, system memory)</dd>
+        <dd>user that is running each process</dd>
+        <dd>and, ID of the process</dd>
+Application shows CPU consumption in %, amount of RAM and swap memory used, and network activity in realtime in graphical view
+    <dt>Click the resources tab</dt>
+        <dd>The application now shows, in graphical view,</dd>
+        <dd>% of cpu being used(in realtime),</dd>
+        <dd>system memory used</dd>
+        <dd>and network activity(packets transmitted and received</dd>
+Check disk space usage
+    <dt>Click the filesystem tab</dt>
+        <dd>The application now shows the amount of disk space used,</dd>
+        <dd>space available,</dd>
+        <dd>name of the device,</dd>
+        <dd>and filesystem type</dd>
+Closing a process
+    <dt>Open any application of choice (web browser or PDF viewer)</dt>
+        <dd>The name of the newly open application appears in the processes tab</dd>
+    <dt>Right click the name of the newly opened application</dt>
+        <dd>A drop-down action menu should appear</dd>
+    <dt>Select "End"</dt>
+        <dd>Confirmation dialog appears</dd>
+    <dt>Click "End Process"</dt>
+	<dd>The application closes</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+            If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

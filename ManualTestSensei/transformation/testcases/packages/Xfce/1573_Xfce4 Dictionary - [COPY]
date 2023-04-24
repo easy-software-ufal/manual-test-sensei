@@ -1,0 +1,107 @@
+This test will check that Xfce4 Dictionary can open and use a Dictionary Server
+<dl>
+    <dt>Locate "Dictionary" under "Office" on the menu and click on it</dt>
+        <dd>The Dictionary dialog opens</dd>
+    <dt>Confirm that the "Search with:" option is set to 'Dictionary Server', type a word in the Search term field and press Enter</dt>
+        <dd>Definitions for that word appear in the window</dd>
+        <dd>You will probably see returns from more than one dictionary. The number of definitions found will be shown on the status bar at the bottom of the window</dd>
+</dl>
+
+This test will check that the Spell Checker works
+<dl>
+    <dt>Select the 'Spell Checker' option on the "Search with:" line</dt>
+        <dd>The 'Find' icon to the right of the search term field changes from a magnifying glass to "ABC"</dd>
+    <dt>Type a word in the search term field and press Enter</dt>
+        <dd>The window displays "Spell Checker Results:" for that word</dd>
+        <dd>The suggestions indicate the correct language locale for this installation (e.g., "en_US")</dd>
+</dl>
+
+This test will check the Speed Reader option
+<dl>
+    <dt>Click the 'Speed Reader' icon</dt>
+        <dd>The Speed Reader dialog opens</dd>
+    <dt>Click the 'Start' button</dt>
+        <dd>The Speed Reader-Running window opens and the sample text is played at the default speed</dd>
+    <dt>Close the Speed Reader-Running window</dt>
+    <dt>Click the 'Speed Reader' icon again</dt>
+    <dt>Change the "Words per Minute:" to 100</dt>
+    <dt>Change the "Word Grouping:" to 5</dt>
+    <dt>Change the "Font Size:" to 26 and press OK</dt>
+    <dt>Check the "Mark Paragraphs" option</dt>
+    <dt>Click the 'Start' button</dt>
+        <dd>The sample text plays at the new speed, five words at a time, with a 26 pt font, and with a paragraph break after the first sentence</dd>
+    <dt>Close the Speed Reader-Running window</dt>
+    <dt>Click the 'Speed Reader' icon again</dt>
+    <dt>Locate the three icons to the right of the text box and click the one with the X</dt>
+        <dd>The sample text is cleared</dd>
+    <dt>Click the icon that looks like a folder</dt>
+        <dd>The Choose a file to load dialog opens</dd>
+    <dt>Find a plain text file, select it and click the 'Open' button</dt>
+        <dd>The contents of that file appear in the Speed Reader text box</dd>
+    <dt>Click the 'Start' button</dt>
+        <dd>The text from the pasted file plays at the correct settings</dd>
+    <dt>Click the 'Stop' button</dt>
+        <dd>The play stops and returns you to the Speed Reader dialog</dd>
+    <dt>Open another application and copy some text from it into the clipboard</dt>
+    <dt>Back in the Speed Reader dialog, click the icon that looks like a clipboard</dt>
+        <dd>The text from the system clipboard appears in the text box</dd>
+    <dt>Click the 'Start' button to play that text</dt>
+        <dd>The pasted text from the clipboard plays at the correct settings</dd>
+    <dt>Close the Speed Reader-Running dialog</dt>
+    <dt>Close the Speed Reader dialog</dt>
+</dl>
+
+These tests will check the customization of Preferences
+<dl>
+    <dt>From the main Dictionary dialog, click "File" on the menu</dt>
+        <dd>The File menu drop-down opens</dd>
+    <dt>Click "Preferences"</dt>
+        <dd>The Dictionary preferences dialog opens</dd>
+    <dt>Under the 'General' tab, check "Spell Checker" under the "Default search method:"</dt>
+    <dt>Click the 'Close' button</dt>
+    <dt>Verify that the "Search with:" option is still set to the default of 'Dictionary Server'</dt>
+    <dt>Click the 'Quit' button</dt>
+    <dt>Re-launch the Dictionary application</dt>
+        <dd>The default "Search with:" option now shows 'Spell Checker'</dd>
+    <dt>Click File->Preferences</dt>
+    <dt>Select the 'Dictionary Server' tab</dt>
+    <dt>From the "Dictionary:" drop-down, select "!(use all, stop after first match)"</dt>
+    <dt>Click the 'Close' button</dt>
+    <dt>Make sure 'Dictionary Server' is the selected "Search with:" mode and then enter a search term</dt>
+        <dd>The returned definitions only come from a single dictionary</dd>
+    <dt>Click File->Preferences again</dt>
+    <dt>Select the 'Web Service' tab</dt>
+        <dd>Several choices for a Web search URL are shown</dd>
+    <dt>Click the 'Dictionary.com' button and click 'Close'</dt>
+        <dd>The "Web Service" option on the "Search with:" bar is no longer grayed out</dd>
+    <dt>Check the "Web Service" option</dt>
+        <dd>The 'Find' icon to the right of the search term field now shows a globe</dd>
+    <dt>Enter the same search term you used in the previous step</dt>
+        <dd>The default web browser opens to Dictionary.com showing the definition of the word you entered in the search field</dd>
+</dl>
+
+This test will check the functionality of the Xfce4-Dict plugin
+<dl>
+    <dt>Make sure that the Dictionary application is closed</dt>
+    <dt>Right-click on an empty area of the panel</dt>
+    <dt>Click Panel->Add New Items</dt>
+    <dt>Select "Dictionary" and click the 'Add' button</dt>
+        <dd>The Dictionary icon appears on the panel</dd>
+    <dt>Close the Add New Items dialog</dt>
+    <dt>Left-click on the Dictionary panel icon</dt>
+        <dd>The Dictionary application opens</dd>
+    <dt>Close it</dt>
+    <dt>Right-click on the Dictionary panel icon</dt>
+        <dd>A drop-down menu appears</dd>
+    <dt>Click "Properties"</dt>
+        <dd>The Dictionary Preferences dialog opens</dd>
+    <dt>Close it</dt>
+    <dt>Open a web page in your browser and select a word on that page</dt>
+    <dt>Drag that selected word and drop it on the Dictionary panel icon</dt>
+        <dd>The Dictionary application opens and returns that word from whichever "Search with:" mode you had selected as the default (i.e., Dictionary Server, Web Server or Spell Checker)</dd>
+    <dt>Close Dictionary</dt>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
+    

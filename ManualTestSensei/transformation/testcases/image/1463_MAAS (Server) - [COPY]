@@ -1,0 +1,20 @@
+This will test that the MAAS server offers an option to periodically update cloud images.
+<dl>
+    <dt>Open the main page to the MAAS server</dt>
+    <dt>Find the option in the MAAS server preferences to periodically update cloud images.</dt>
+    <dt>Set it to automatically update</dt>
+        <dd>Did you find the option to periodically update cloud images?</dd>
+        <dd>Were the cloud images updated according to the schedule?</dd>
+</dl>
+
+This will test that the MAAS server offers an option to cache archives locally.
+<dl>
+    <dt>Open the main page to the MAAS server</dt>
+    <dt>Find the option in the MAAS server preferences to cache archives locally</dt>
+    <dt>Enable the option</dt>
+        <dd>Did you find the option to cache archives locally?</dd>
+        <dd>Verify archives are cached locally and nodes are using it to receive updates.</dd>
+</dl>
+<strong>
+    If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

@@ -1,0 +1,45 @@
+This test will check if Qsynth opens properly from the FAMILY menu
+<dl>
+    <dt>Open Qsynth from the INSTRUMENT sub-menu in the AUDIO section of the FAMILY menu.</dt>
+        <dd>Qsynth opens and starts JACK.</dd>
+    <dt>Open QjackCtl from the AUDIO section of the FAMILY menu to verify that Jack is started.</dt>
+        <dd>QjackCtl GUI opens and the audio-server is already running.</dd>
+    <dt>In the QjackCtl GUI, click on the "Connect" Button.</dt>
+        <dd>The "Connection" windows opens.</dd>
+    <dt>Click on the "Audio" tab of the window that opens.</dt>
+        <dd>The Audio-tab is displayed and Qsynth has an entry in the Readable clients section, that is connected to the entry named "system" in the writable client section.</dd>
+</dl>
+
+This test will check if Qsynth can load sound-fonts.
+<strong>Make sure you followed the steps above first.
+</strong>
+<dl>
+    <dt>In the Qsynth window, locate the "Setup" button and press it.</dt>
+        <dd>The setup window opens.</dd>
+    <dt>In the setup window, locate the "Soundfonts"-tab and click on it.</dt>
+        <dd>The "Soundfonts"-tab displays with an "open" button on the right-hand side of it.</dd>
+    <dt>Press the "Open" button.</dt>
+        <dd>A file browsing dialog opens up at the location /usr/share/sounds/sf2/ displaying a file called "FluidR3_GM.sf2".</dd>
+    <dt>Select the file "FluidR3_GM.sf2" and press "Open".</dt>
+        <dd>"FluidR3_GM.sf2" is loaded and listed in the "Soundfonts"-tab of Qsynth setup window.</dd>
+    <dt>Click the "OK" button in the Qsynth Setup window.</dt>
+        <dd>The setup window closes.</dd>
+</dl>
+
+This test will check if Qsynth can output sound with the loaded SoundFont.
+<strong>Make sure you followed the steps above first.
+</strong>
+<dl>
+    <dt>Start the program "Virtual MIDI keyboard" from the MIDI UTILITIES sub-menu of the AUDIO section in the FAMILY menu.</dt>
+        <dd>"Virtual MIDI keyboard" opens.</dd>
+    <dt>In the QjackCtl GUI, press the "Connect" button.</dt>
+    <dt>In the "connections" windows that opens up, locate the "ALSA"-tab and click on it.</dt>
+    <dt>In the "Readable Clients" section, select the entry with "Virtual Keyboard" in the name. In the "Writable Clients" section, select the entry with "FLUID Synth" in the name.</dt>
+    <dt>Still in the "ALSA"-tab of the connections window in the QjackCtl GUI, with both previously selected readable/writable entries highlighted, press the button labeled "Connect".</dt>
+        <dd>A line is drawn between the "Virtual Keyboard" entry and the "Fluid Synth" entry.</dd>
+    <dt>Focus the "Virtual Keyboard" window, and click on a note key.</dt>
+        <dd>Sound is being played back.</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

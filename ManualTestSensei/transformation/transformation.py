@@ -1,6 +1,8 @@
 
-
-def misplaced_precondition(testRow):
+SMELL_NAMES = ['Conditional Test Logic', 'Eager Action', 'Misplaced Action',
+       'Ambiguous Test', 'Unverified Action', 'Misplaced Verification',
+       'Misplaced Precondition']
+def misplaced_precondition(df):
     #acessa o arquivo
     #encontra o erro
     #resolve o erro
@@ -9,7 +11,7 @@ def misplaced_precondition(testRow):
 def misplaced_action():
     pass
 
-def misplaced_result():
+def misplaced_verification():
     pass
 
 def ambiguous_test():
@@ -21,5 +23,5 @@ def conditional_test_logic():
 def unverified_action():
     pass
 
-def eager_step():
+def eager_action():
     pass

@@ -1,0 +1,92 @@
+﻿This test will check that Xchat will open correctly
+<dl>
+    <dt>Open Xchat</dt>
+        <dd>Xchat should launch to Network List window</dd>
+</dl>
+
+This test will check that XChat let you specify Nicks, Names
+<dl>
+    <dt>Double click existing nick in Nick name and enter your nick</dt>
+        <dd>Your choice is saved</dd>
+    <dt>Repeat for Second and Third choice</dt>
+        <dd>All your choices are saved</dd>
+    <dt> Double click existing name in User Name and enter your name(or choice)</dt>
+        <dd>Your chosen name is saved</dd>
+    <dt>Repeat for Real name</dt>
+        <dd>Your chosen name is saved</dd>
+</dl>
+
+This test will check that XChat will use specified Network, Network Settings and accept Favorite channels
+<dl>
+    <dt>Select Freenode from Network list </dt>
+        <dd>Freenode is highlighted</dd>
+    <dt>Click in Skip network list on startup</dt>
+        <dd>Box is populated with a tickmark</dd>
+    <dt>Click Edit button</dt>
+        <dd> Edit Freenode window opens</dd>
+    <dt>Click in Connect to selected server only</dt>
+        <dd>Box is populated with a tickmark</dd>
+    <dt>Click in Auto connect to this network at startup</dt>
+        <dd>Box is populated with a tickmark</dd>
+    <dt>Click the ... button next to text box for Favorite channels</dt>
+        <dd>Favorite Channels (Auto-Join List) window opens</dd>
+    <dt>Click Add button</dt>
+        <dd>Channel dialog appears highlighted</dd>
+    <dt>Enter channel name in #channel syntax and enter</dt>
+        <dd>Your chosen channel is added to the list</dd>
+    <dt>Click Ok</dt>
+        <dd>Favorite Channels window closes, your channel is added to Favourite Channel list</dd>
+    <dt>Select Server Password text box</dt>
+        <dd>Cursor apppears in text box</dd>
+    <dt>Enter your freenode password</dt>
+        <dd>Symbols appear in password box as you type</dd>
+    <dt>Click Close button</dt>
+        <dd>Edit Freenode window closes</dd>
+</dl>
+
+This test will check that Xchat connects to your chosen network and channel(s) with your chosen nickname
+<dl>
+    <dt>Click Connect button</dt>
+        <dd>Xchat opens a new window connected to your chosen channel(s)</dd>
+        <dd>Xchat Connection Complete window opens</dd>
+    <dt>Click in Always show this dialog after connecting box</dt>
+        <dd>Tickmark is removed from the box</dd>
+    <dt>Click OK</dt>
+        <dd>Connection Complete window closes</dd>
+    <dt>Type message in XChat window for channel</dt>
+        <dd>Message appears in channel</dd>
+</dl>
+
+This test checks some of xchat's more advanced features
+<dl>
+    <dt>Click your nickname</dt>
+        <dd>A dialogue windows that allows you to change your nickname appears</dd>
+    <dt>Type a new nickname, the click OK</dt>
+        <dd>Your nickname is changed, in the nickname box, the list of people online and all servers and channels</dd>
+    <dt>In the message box, type "teh".</dt>
+        <dd>Xchat should automatically change this to "the"</dd>
+    <dt>Click settings -> preferences -> colors, change one that you know what does</dt>
+        <dd>The color is changed as you set it</dd>
+    <dt>In the message box, type "/away"</dt>
+        <dd>You will now appear in grey in the list of people online</dd>
+    <dt>In the message box, type "/quit"</dt>
+        <dd>You should be disconnected from the current server</dd>
+</dl>
+
+This test checks that XChat closes properly, and will reopen with the settings previously applied
+<dl>
+    <dt>Click X in top right (or left depending on Desktop Environment)</dt>
+        <dd>Quit XChat window appears</dd>
+    <dt>Select Don't ask next time</dt>
+        <dd>Tickmark appears in box</dd>
+    <dt>Click Quit button</dt>
+        <dd>XChat closes without error</dd>
+    <dt>Open Xchat</dt>
+        <dd>Xchat opens, connects to server, opens to channel in autojoin list</dd>
+    <dt>Click X in top right (or left depending on Desktop Environment)</dt>
+        <dd>XChat closes with no further prompts</dd>
+</dl>
+
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

@@ -1,0 +1,116 @@
+Test-case more_suggestions-amazon
+<dl>
+    <dt>Press super to open the dash home</dt>
+        <dd>The dash should appear, with a "Search" text in the entry field and different icons for each lenses at the bottom</dd>
+    <dt>Enter on the search field something you will expect to find on Amazon, for example: Kindle</dt>
+    <dt>Click the arrow next to the search field</dt>
+        <dd>The dash will show the Categories filter</dd>
+    <dt>Click the More suggestions category</dt>
+        <dd>The More suggestions section of the dash will show your entered value as a result</dd>
+    <dt>Right click on a result</dt>
+        <dd>A preview of the result is created</dd>
+    <dt>Left click the result</dt>
+        <dd>The browser will be opened on the store page for your entered value of the Amazon store</dd>
+</dl>
+
+
+Test-case info-weather
+<dl>
+    <dt>Press super to open the dash home</dt>
+        <dd>The dash should appear, with a "Search" text in the entry field and different icons for each lenses at the bottom</dd>
+    <dt>Enter on the search field something you will expect to find on http://www.worldweatheronline.com, for example: Desamparados, San Jose</dt>
+    <dt>Click the arrow next to the search field</dt>
+        <dd>The dash will show the Categories filter</dd>
+    <dt>Click the Info category.</dt>
+        <dd>The Info section of the dash will show your entered value as a result</dd>
+    <dt>Right click on a result</dt>
+        <dd>A preview of the result is created</dd>
+    <dt>Left click the result</dt>
+        <dd>The browser will be opened on the worldweatheronline web site, on the page showing weather for your entered value.</dd>
+</dl>
+
+Test-case reference-dictionary
+<dl>
+    <dt>Press super to open the dash home</dt>
+        <dd>The dash should appear, with a "Search" text in the entry field and different icons for each lenses at the bottom</dd>
+    <dt>Enter on the search field something you will expect to find on http://www.wordnik.com/, for example: test.</dt>
+    <dt>Click the arrow next to the search field</dt>
+        <dd>The dash will show the Categories filter</dd>
+    <dt>Click the Reference category.</dt>
+        <dd>The Reference section of the dash will show the definition of your entered value as a result.</dd>
+        <dd>The Reference section of the dash will show the synonyms of your entered value as a result. For example for test, synonym's like criterion, standard, experiment, etc</dd>
+        <dd>The Reference section of the dash will show the antonyms of your entered value as a result.</dd>
+    <dt>Right click on a result</dt>
+        <dd>A preview of the result is created</dd>
+    <dt>Left click the result</dt>
+        <dd>The browser will be opened on the wordnik web site, on the page with the definition/synonym/antonym for your entered value.</dd>
+</dl>
+
+Test-case more_suggestions-ddg_related
+
+<dl>
+    <dt>Press super to open the dash home</dt>
+        <dd>The dash should appear, with a "Search" text in the entry field and different icons for each lenses at the bottom</dd>
+    <dt> Enter on the search field something you for which you will expect to find related topics in Duckduckgo, for example: apple</dt>
+    <dt>Click the arrow next to the search field</dt>
+        <dd>The dash will show the Categories filter</dd>
+    <dt>Click the more suggestions category.</dt>
+        <dd>The More suggestions section of the dash will show topics related to your entered value as results.</dd>
+    <dt>Right click on a result</dt>
+        <dd>A preview of the result is created</dd>
+    <dt>Left click the result</dt>
+        <dd>The browser will be opened on the duckduckgo web site, on the page showing results for the related topic you clicked</dd>
+</dl>
+
+Test-case reference-wikipedia
+
+<dl>
+    <dt>Press super to open the dash home</dt>
+        <dd>The dash should appear, with a "Search" text in the entry field and different icons for each lenses at the bottom</dd>
+    <dt> Enter on the search field something you will expect to find on Wikipedia, for example: ubuntu.</dt>
+    <dt>Click the arrow next to the search field</dt>
+        <dd>The dash will show the Categories filter</dd>
+    <dt>Click the Reference category.</dt>
+        <dd>The Reference section of the dash will show your entered value as a result.</dd>
+    <dt>Right click on a result</dt>
+        <dd>A preview of the result is created</dd>
+    <dt>Left click the result</dt>
+        <dd>The browser will be opened on the Wikipedia web site, on the page showing results for your entered value</dd>
+</dl>
+
+Test-case more_suggestions-u1ms
+
+<dl>
+    <dt>Press super to open the dash home</dt>
+        <dd>The dash should appear, with a "Search" text in the entry field and different icons for each lenses at the bottom</dd>
+    <dt> Enter on the search field the name of a music artist, Hendrix.</dt>
+    <dt>Click the arrow next to the search field</dt>
+        <dd>The dash will show the Categories filter</dd>
+    <dt>Click the more More suggestions category.</dt>
+        <dd>The More suggestions section of the dash will show albums from the artist .</dd>
+    <dt>Right click on a result</dt>
+        <dd>A preview of the result is created</dd>
+    <dt>Left click the result</dt>
+        <dd>The browser will be opened on the Ubuntu One Music Store web site, on the page of the album you clicked.</dd>
+</dl>
+
+Test-case Filters
+
+<dl>
+    <dt>Press super to open the dash home</dt>
+        <dd>The dash should appear, with a "Search" text in the entry field and different icons for each lenses at the bottom</dd>
+    <dt>Click the arrow next to the search field</dt>
+        <dd>The dash will show the Categories filter</dd>
+</dl>
+
+Test-case Sources
+
+<dl>
+    <dt>Press super to open the dash home</dt>
+        <dd>The dash should appear, with a "Search" text in the entry field and different icons for each lenses at the bottom</dd>
+    <dt>Click the arrow next to the search field</dt>
+        <dd>The dash will show the Sources filter</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
