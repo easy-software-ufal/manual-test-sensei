@@ -1,6 +1,7 @@
 Test-case multimonitor/multi-launchers
+In the Diplays settings, ensure that Launcher placement is set to "All displays"
 <dl>
-    <dt>In the Diplays settings, ensure that Launcher placement is set to "All displays"</dt>
+    
     <dt>Ensure you have not any other opened application than checkbox-unity</dt>
         <dd>You should see one Launcher on every screen</dd>
 </dl>
@@ -58,8 +59,9 @@ Test-case multimonitor/launch-application-per-monitor
         <dd>Ensure the application is always opened on the monitor where your cursor is</dd>
 </dl>
 Test-case multimonitor/sticky-edge
+In the Diplays settings, ensure that Sticky edges are enabled
 <dl>
-    <dt>In the Diplays settings, ensure that Sticky edges are enabled</dt>
+    
     <dt>Move your mouse cursor to the right edge of the leftmost monitor adjacent to your enabled second screen</dt>
     <dt>Try moving your cursor over to the screen to the right</dt>
         <dd>There should be a feeling of resistance when trying to push on the edge of the screen</dd>
@@ -74,15 +76,17 @@ Test-case multimonitor/sticky-edge-hold
         <dd>If not much force is applied and the movement is slow, the mouse cursor should stay on the screen</dd>
 </dl>
 Test-case multimonitor/sticky-edge-disabled
+In the Diplays settings, ensure that Sticky edges are disabled
 <dl>
-    <dt>In the Diplays settings, ensure that Sticky edges are disabled</dt>
+    
     <dt>Move your mouse cursor to the right edge of the leftmost monitor adjacent to your enabled second screen</dt>
     <dt>Try moving your cursor over to the screen to the right</dt>
         <dd>There should be no feeling of resistance on the edge, the cursor should move to the other screen with ease</dd>
 </dl>
 Test-case multimonitor/single-launcher
+In the Diplays settings, ensure that Launcher placement is set to a single screen
 <dl>
-    <dt>In the Diplays settings, ensure that Launcher placement is set to a single screen</dt>
+    
     <dt>Ensure you have not any other opened application than checkbox-unity</dt>
         <dd>You should see only one Launcher on the previously selected screen</dd>
 </dl>

@@ -48,8 +48,9 @@ This test will verify that the Edit menu options work properly.
 </dl>
 
 This test will verify that the View menu options work properly.
+Ensure that Ristretto is loaded and an image is displayed in the main window. Toggle View->Show Toolbar.
 <dl>
-    <dt>Ensure that Ristretto is loaded and an image is displayed in the main window. Toggle View->Show Toolbar.</dt>
+    
         <dd>The toolbar toggles on or off with each selection.</dd>
     <dt>Toggle View->Show Status Bar.</dt>
         <dd>The status bar toggles on or off with each selection.</dd>

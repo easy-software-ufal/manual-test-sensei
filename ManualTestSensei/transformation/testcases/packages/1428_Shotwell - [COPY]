@@ -12,8 +12,9 @@ This test will check that Shotwell can import images from camera
         <dd>Shotwell displays the picture you imported</dd>
 </dl>
 This test will check that Shotwell can edit images
+Ensure shotwell is still loaded and displaying your import picture. Double click the picture thumbnail
 <dl>
-    <dt>Ensure shotwell is still loaded and displaying your import picture. Double click the picture thumbnail</dt>
+    
         <dd>The image is enlarged and editing buttons exist below the image: Rotate, Crop, Red-eye, Adjust, Enhance</dd>
     <dt>Click rotate button four times</dt>
         <dd>The image turns 90 degrees after each click and return to its original orientation upon completion</dd>
