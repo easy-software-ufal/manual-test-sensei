@@ -54,6 +54,11 @@ def data_closure() -> pd.DataFrame:
         filtered_df = get_filtered_df_by_smell_name(df, smell_name)
         df = create_copy(df, filtered_df)
         return df
+    def remove_duplicates(df):
+        return df.drop_duplicates(subset=['Test file', 'Smell', 'Sentence' ], keep='first')
+    def remove_NaN_values(df):
+        index_to_drop = df.loc[~df['Sentence'].apply(lambda x: isinstance(x, str))].index
+        return df.drop(index_to_drop)
 
     log.debug('Searching CSV')
     file = get_csv_path()
@@ -61,8 +66,8 @@ def data_closure() -> pd.DataFrame:
     log.debug('CSV found')
     for smell_name in SMELL_NAMES:
         df = create_copy_from_smell_name(df, smell_name)
-
-    df.to_csv('file_name.csv')
+    df = remove_duplicates(df)
+    df = remove_NaN_values(df)
     return df
     #maybe this gets troubled about the DF. check the DF.
 

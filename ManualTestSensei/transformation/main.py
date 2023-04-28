@@ -7,6 +7,7 @@ log = logging.getLogger(__name__)
 if __name__ == '__main__':
     log.info('Initializing transformations...')
     df = data.data_closure()
-    #breakpoint()
+    breakpoint()
+    
     df = transformation.transformation_closure(df)
     
