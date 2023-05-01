@@ -36,8 +36,9 @@ Test-case launcher/auto-hide
 </dl>
 
 Test-case launcher/auto-hide-behavior
+Make sure auto-hide is enabled.
 <dl>
-    <dt>Make sure auto-hide is enabled.</dt>
+    
     <dt>Move the mouse on the edge and:
         <ul>
             <li> - continue pushing to the left (as if you want to put the mouse offscreen) until the launcher reveal</li>
@@ -165,8 +166,9 @@ Test-case launcher/quicklist-close
 </dl>
 
 Test-case launcher/quicklist-open
+Ensure System Settings is not running
 <dl>
-    <dt>Ensure System Settings is not running</dt>
+    
     <dt>Right-click on its launcher icon and click on the "System Settings" entry</dt>
         <dd>System Settings should start</dd>
     <dt>Focus another window</dt>

@@ -3,7 +3,11 @@ import pandas as pd
 from pathlib import Path, PureWindowsPath
 import logging
 log = logging.getLogger(__name__)
-from transformation import SMELL_NAMES
+#from transformation import SMELL_NAMES
+
+SMELL_NAMES = ['Conditional Test Logic', 'Eager Action', 'Misplaced Action',
+       'Ambiguous Test', 'Unverified Action', 'Misplaced Verification',
+       'Misplaced Precondition']
 
 def create_copy(df:pd.DataFrame, filteredDataFrame):
     def update_df_with_copy_location(df:pd.DataFrame,copied_paths:dict) -> pd.DataFrame:
@@ -48,6 +52,11 @@ def data_closure() -> pd.DataFrame:
         filtered_df = get_filtered_df_by_smell_name(df, smell_name)
         df = create_copy(df, filtered_df)
         return df
+    def remove_duplicates(df):
+        return df.drop_duplicates(subset=['Test file', 'Smell', 'Sentence' ], keep='first')
+    def remove_NaN_values(df):
+        index_to_drop = df.loc[~df['Sentence'].apply(lambda x: isinstance(x, str))].index
+        return df.drop(index_to_drop)
 
     log.debug('Searching CSV')
     file = get_csv_path()
@@ -55,18 +64,19 @@ def data_closure() -> pd.DataFrame:
     log.debug('CSV found')
     for smell_name in SMELL_NAMES:
         df = create_copy_from_smell_name(df, smell_name)
-
+    df = remove_duplicates(df)
+    df = remove_NaN_values(df)
     return df
 
 
-if __name__ == '__main__':
-    file = get_csv_path()
-    df = pd.read_csv(file)
-    log.info('CSV found')
-    mprecondition = get_filtered_df_by_smell_name(df,'Misplaced Precondition')
+# if __name__ == '__main__':
+#     file = get_csv_path()
+#     df = pd.read_csv(file)
+#     log.info('CSV found')
+#     mprecondition = get_filtered_df_by_smell_name(df,'Misplaced Precondition')
 
-    create_copy(df, mprecondition)
-    # breakpoint()
-    # for i in mprecondition.iterrows():
-    #     print(i)
-    breakpoint()
+#     create_copy(df, mprecondition)
+#     # breakpoint()
+#     # for i in mprecondition.iterrows():
+#     #     print(i)
+#     breakpoint()

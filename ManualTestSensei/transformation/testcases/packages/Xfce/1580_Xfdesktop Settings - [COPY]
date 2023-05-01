@@ -27,8 +27,9 @@ Testing wallpaper changes correctly.
 </dl>
 
 Testing colours and gradients.
+Under 'Background', ensure 'Style' is set to 'None'. Select, in turn, 'Solid colour', 'Horizontal gradient', 'Vertical gradient', and 'Transparent'
 <dl>
-    <dt>Under 'Background', ensure 'Style' is set to 'None'. Select, in turn, 'Solid colour', 'Horizontal gradient', 'Vertical gradient', and 'Transparent'</dt>
+    
         <dd>Ensure that each are applied correctly.</dd>
     <dt>Change the colour(s) for each</dt>
         <dd>They are set correctly</dd>

@@ -15,8 +15,9 @@ This test will check that Volume Management is enabled and configurable
 </dl>
 
 This test will check that Storage options work as expected
+Make sure that the 'Storage' tab is selected
 <dl>
-    <dt>Make sure that the 'Storage' tab is selected</dt>
+    
     <dt>Uncheck all the options under 'Removable Storage'</dt>
     <dt>Plug in an external hard drive or USB flash drive</dt>
         <dd>The drive appears in the File Manager side pane but is unmounted</dd>

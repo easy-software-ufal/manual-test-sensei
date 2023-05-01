@@ -3,8 +3,9 @@
 Case ID: hwn-001
 Using Unity
 <!-- Smells: UNVERIFIED STEPS -->
+Ensure that Network Manager is running and that no networks are currently connected
 <dl>
-    <dt>Ensure that Network Manager is running and that no networks are currently connected</dt>
+    
     <dt>Open Terminal</dt>
     <dt>Ensure wireless is enabled</dt>
     <dt>After approximately 30 seconds, open the network manager</dt>

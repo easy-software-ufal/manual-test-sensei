@@ -1,7 +1,8 @@
 This will test FAMILY's ability to play sound through headphones.
 <!-- Smells: UNVERIFIED STEPS, PRE CONDITION AS STEP -->
+Ensure that the sound volume is turned to a reasonable level and that the sound is not muted by clicking on the Volume Control applet (the speaker icon in the notification area) and setting the volume
 <dl>
-    <dt>Ensure that the sound volume is turned to a reasonable level and that the sound is not muted by clicking on the Volume Control applet (the speaker icon in the notification area) and setting the volume</dt>
+    
     <dt>Select home folder on the unity panel</dt>
     <dt>Open the Examples folder, Open the Ubuntu_Free_Culture_Showcase folder</dt>
     <dt>Select either of the .ogg files</dt>
