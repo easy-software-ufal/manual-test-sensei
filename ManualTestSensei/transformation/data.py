@@ -16,14 +16,12 @@ def create_copy(df:pd.DataFrame, filteredDataFrame):
             df['Copy Path'] = df['Test file'].map(copied_paths, 'ignore').fillna(df_zero['Copy Path'])
         except:
             df['Copy Path'] = df['Test file'].map(copied_paths, 'ignore')
-        # breakpoint()
         return df
 
     path_files = filteredDataFrame['Test file'].unique()
     copied_paths = {}
     for file in path_files:
         path = Path(file)
-        # breakpoint()
         os.makedirs(os.path.dirname(file[3:]), exist_ok=True)
         new_file_path = shutil.copy(Path('../',file), file[3:] + ' - [COPY]')
         copied_paths[file] = Path(new_file_path)
@@ -69,7 +67,6 @@ def data_closure() -> pd.DataFrame:
     df = remove_duplicates(df)
     df = remove_NaN_values(df)
     return df
-    #maybe this gets troubled about the DF. check the DF.
 
 
 # if __name__ == '__main__':
