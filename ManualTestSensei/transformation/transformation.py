@@ -1,7 +1,6 @@
 import os, re
 from data import get_filtered_df_by_smell_name
-#SMELL_NAMES = ['Misplaced Precondition', 'Unverified Action', 'Misplaced Action']
-SMELL_NAMES = ['Misplaced Action']
+SMELL_NAMES = ['Misplaced Precondition', 'Unverified Action', 'Misplaced Action']
 
 def transformation_closure(df):
     def sentence_not_found(start_pos):
@@ -61,12 +60,10 @@ def transformation_closure(df):
         filtered_df = get_filtered_df_by_smell_name(df,'Misplaced Action')
         for _, row in filtered_df.iterrows():
             if os.path.exists(row['Copy Path']) and os.path.isfile(row['Copy Path']):
-                # open the file for reading and writing
                 with open(row['Copy Path'], 'r+') as file:
-                    # read the entire contents of the file into a string
                     contents = file.read()
-                    # find the start and end positions of the block of text to move
-                    start_pos = contents.find('<dd>' + row['Sentence'] + '</dd>') #this is where the smell will be
+
+                    start_pos = contents.find('<dd>' + row['Sentence'] + '</dd>') 
                     if sentence_not_found(start_pos):
                         continue
                     
@@ -88,12 +85,11 @@ def transformation_closure(df):
                     prev_dt_end_pos = contents.find("</dt>", prev_dt) + len("</dt>")
                     temp = contents[:prev_dt_end_pos] + re.sub(r'\s+', '', contents[prev_dt_end_pos:])
                     dd_pos = temp.find("<dd>", prev_dt_end_pos-1)
-                    breakpoint()
+                    
                     if prev_dt_end_pos != dd_pos:
                         contents = contents[:prev_dt_end_pos] + "\n\t\t<dd>[FILL VERIFICATION]</dd>" + contents[prev_dt_end_pos:]
                     # go back to the beginning of the file and overwrite its contents
                     file.seek(0)
-                    #breakpoint()
                     file.truncate(0)
                     file.write(contents)
 
@@ -110,8 +106,8 @@ def transformation_closure(df):
         pass
     
     switcher = {
-    # 'Misplaced Precondition': misplaced_precondition(df),
-    # 'Unverified Action': unverified_action(df),
+    'Misplaced Precondition': misplaced_precondition(df),
+    'Unverified Action': unverified_action(df),
     'Misplaced Action': misplaced_action(df)
     }
     for smell_name in SMELL_NAMES:
