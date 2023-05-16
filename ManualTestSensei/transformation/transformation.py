@@ -1,6 +1,6 @@
 import os, re
 from data import get_filtered_df_by_smell_name
-SMELL_NAMES = ['Misplaced Precondition', 'Unverified Action', 'Misplaced Action']
+SMELL_NAMES = ['Misplaced Precondition', 'Unverified Action', 'Misplaced Action', 'Misplaced Verification']
 
 def transformation_closure(df):
     def sentence_not_found(start_pos):
@@ -94,7 +94,21 @@ def transformation_closure(df):
                     file.write(contents)
 
     def misplaced_verification(df):
-        pass
+        filtered_df = get_filtered_df_by_smell_name(df,'Misplaced Verification')
+        for _, row in filtered_df.iterrows():
+            if os.path.exists(row['Copy Path']) and os.path.isfile(row['Copy Path']):
+                with open(row['Copy Path'], 'r+') as file:
+                    contents = file.read()
+                    start_pos = contents.find('<dt>' + row['Sentence'] + '</dt>') 
+                    if sentence_not_found(start_pos):
+                        continue
+                    
+                    end_pos = start_pos + len('<dt>' + row['Sentence'] + '</dt>')
+                    contents = contents[:start_pos] + "\t<dd>" + row['Sentence'] + '</dd>' + contents[end_pos:]
+                    file.seek(0)
+                    file.truncate(0)
+                    file.write(contents)
+
 
     def ambiguous_test(df):
         pass
@@ -108,7 +122,8 @@ def transformation_closure(df):
     switcher = {
     'Misplaced Precondition': misplaced_precondition(df),
     'Unverified Action': unverified_action(df),
-    'Misplaced Action': misplaced_action(df)
+    'Misplaced Action': misplaced_action(df),
+    'Misplaced Verification': misplaced_verification(df)
     }
     for smell_name in SMELL_NAMES:
         switcher.get(smell_name)
