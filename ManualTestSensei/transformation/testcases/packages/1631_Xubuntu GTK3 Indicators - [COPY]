@@ -73,6 +73,7 @@ This test will check that power indicator works correctly
     <dt>Select "Power manager settings..."</dt>
         <dd>The Xfce Power Manager dialogue opens at the General tab</dd>
     <dt>Close the Xfce Power Manager dialogue</dt>
+		<dd>[FILL VERIFICATION]</dd>
 <em>If testing a laptop, complete the following tests.</em>    
     <dt>Click the power indicator in the panel</dt>
         <dd>Power menu appears</dd>

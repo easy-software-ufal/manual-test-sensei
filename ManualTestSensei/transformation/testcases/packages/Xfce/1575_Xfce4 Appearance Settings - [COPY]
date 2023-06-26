@@ -13,6 +13,7 @@ This test will verify that the Style tab works properly.
     <dt>With the "Appearance" module open to the "Style" tab, select another style.</dt>
         <dd>The GTK appearance of the on screen widgets changes to the new style.</dd>
     <dt>Click on the "All Settings" button to return to the "Settings"</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Open a terminal and install the clearlooks-phenix-theme package <code>sudo apt-get install clearlooks-phenix-theme</code> </dt>
     <dt>Click on the "Appearance" module.</dt>
         <dd>Clearlooks-Phenix appears as a style in the "Style" tab.</dd>
@@ -37,6 +38,7 @@ This test will verify that the Icons tab works properly.
     <dt>Click on Tango to select the theme.</dt>
         <dd>The icons on the screen change to the new icon style.</dd>
     <dt>Click the "All Settings" button to return to the "Settings".</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Open a terminal and remove the tango-icon-theme package <code>sudo apt-get purge tango-icon-theme</code></dt>
     <dt>Click on the "Appearance" module and go to the "Icons" tab.</dt>
         <dd>The "Appearance" module (Icons tab) re-appears with no icon themes selected.</dd>
@@ -50,7 +52,7 @@ This test will verify that the Fonts tab works properly.
         <dd>The on-screen fonts change accordingly.</dd>
     <dt>Uncheck the "Enable anit-aliasing" checkbox.</dt>
         <dd>The on-screen fonts change (they appear blockier).</dd>
-    <dt>Re-check the "Enable anti-aliasing" checkbox.</dt>
+    	<dd>Re-check the "Enable anti-aliasing" checkbox.</dd>
         <dd>The fonts change again (appear smoother).</dd>
     <dt>Change the "Hinting" to none.</dt>
         <dd>There should be a slight change to the appearance of the fonts.</dd>
@@ -88,19 +90,19 @@ This test will verify that the Settings tab works properly.
         <dd>The Globaltime Preferences toolbar changes the default icons look.</dd>
     <dt>Uncheck the "Show images on buttons" checkbox.</dt>
         <dd>The images disappear from the Help, All Settings, and Close button on the Appearance dialog.</dd>
-    <dt>Re-check the "Show images on buttons" checkbox.</dt>
+    	<dd>Re-check the "Show images on buttons" checkbox.</dd>
         <dd>The images re-appear on the Help, All Settings, and Close button on the Appearance dialog.</dd>
     <dt>Uncheck the "Show images in menus" checkbox.</dt>
         <dd>The icon images disappear from the main menu.</dd>
-    <dt>Re-check the "Show images in menus" checkbox.</dt>
+    	<dd>Re-check the "Show images in menus" checkbox.</dd>
         <dd>The icon images re-appear on the main menu.</dd>
-    <dt>Check the "Enable editable accelerators" checkbox. In xfce4-terminal, hover your mouse over the Edit->Select All option and press Ctrl+a.</dt>
+    	<dd>Check the "Enable editable accelerators" checkbox. In xfce4-terminal, hover your mouse over the Edit->Select All option and press Ctrl+a.</dd>
         <dd>The menu accelerator change to Ctrl+a.</dd>
     <dt>In xfce4-terminal, hover your mouse over the Edit->Select All option and press Shift+Ctrl+a.</dt>
         <dd>The accelerator changes back to the default Shift+Ctrl+a.</dd>
     <dt>Uncheck the "Enable editable accelerators" checkbox. Open xfce4-terminal, hover your mouse over the Edit->Select All option and press Ctrl+a.</dt>
         <dd>The menu accelerator should not change.</dd>
-    <dt>Check the "Enable event sounds" checkbox and minimize/maximize a window.</dt>
+    	<dd>Check the "Enable event sounds" checkbox and minimize/maximize a window.</dd>
         <dd>A sound should play.</dd>
 </dl>
 

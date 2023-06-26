@@ -23,7 +23,10 @@ This test will check that gThumb's File menu options work as expected
     <dt>Navigate to File -> New Window or alternatively hit Ctrl+N keys</dt>
         <dd>A new gThumb window opens on top of the previous one</dd>
     <dt>Select an image file from the browser view in gThumb window main area and navigate to File -> Save As</dt>
-        <dd>Save Image dialogue window opens</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Save Image dialogue window opens</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select a directory and click the "Save" button</dt>
         <dd>Dialogue window closes and the image is saved in the selected directory</dd>
     <dt>Select an image file from the browser view in gThumb window main area and navigate to File -> Print or alternatively hit Ctrl+P keys</dt>
@@ -31,7 +34,10 @@ This test will check that gThumb's File menu options work as expected
     <dt>Select the output print destination and format and click the "Print" button</dt>
         <dd>Dialogue window closes and image is printed as requested</dd>
     <dt>Navigate to File -> Create Folder or alternatively hit Shift+Ctrl+N keys</dt>
-        <dd>Create Folder dialogue window opens</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Create Folder dialogue window opens</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Type a name for the folder in text-box and click the "Create" button</dt>
         <dd>The new folder is created under the current working directory</dd>
     <dt>Navigate to File -> Import From</dt>
@@ -82,11 +88,17 @@ This test will check that gThumb's Edit menu options work as expected
     <dt>Fill the text-boxes with the required metadata and click the "Save and Close" button</dt>
         <dd>Dialogue window closes and the inserted metadata is incorporated in the file</dd>
     <dt>Navigate to Edit -> Find or alternatively hit Ctrl+F keys</dt>
-        <dd>Find dialogue window opens</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Find dialogue window opens</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Define the start point of the search, the filter rules and click the "Find" button</dt>
         <dd>If there are any results that match the criteria given they are shown on the browser view in gThumb window main area and under "Catalogs" on the folder tree</dd>
     <dt>Navigate to Edit -> Find Duplicates</dt>
-        <dd>Find Duplicates dialogue window opens</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Find Duplicates dialogue window opens</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Define the start point of the search, the filter rules and click the "Find" button</dt>
         <dd>If there are any duplicate files that match the criteria given they are shown on the browser view in gThumb window main area and under "Catalogs" on the folder tree</dd>
     <dt>Navigate to Edit -> Preferences</dt>

@@ -17,9 +17,11 @@ Testing wallpaper changes correctly.
     <dt>Deselect apply to all workspaces</dt>
 	<dd>Yellow notice appears</dd>
     <dt>Move Desktop settings dialogue to a new workspace</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select a different wallpaper</dt>
 	<dd>Wallpapers set on workspaces are different</dd>
     <dt>Select Change the background time setting</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Set time to in seconds, 10, select random order</dt>
 	<dd>After 10 seconds wallpaper changes</dd>
     <dt>Deselect Change the background time setting</dt>
@@ -30,7 +32,9 @@ Testing colours and gradients.
 Under 'Background', ensure 'Style' is set to 'None'. Select, in turn, 'Solid colour', 'Horizontal gradient', 'Vertical gradient', and 'Transparent'
 <dl>
     
-        <dd>Ensure that each are applied correctly.</dd>
+        
+	<dt>Ensure that each are applied correctly.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Change the colour(s) for each</dt>
         <dd>They are set correctly</dd>
 </dl>
@@ -46,23 +50,35 @@ Testing desktop menu.
     <dt>Middle (scroll) click on the desktop</dt>
         <dd>A window list appears</dd>
     <dt>Untick and retick each of the boxes under 'Window List Menu' in the desktop settings dialog</dt>
-        <dd>Ensure that they each enable and disable their labelled functions</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Ensure that they each enable and disable their labelled functions</dt>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 
 Testing desktop icons.
 <dl>
    <dt>Under the 'Icons' tab of the desktop settings manager, under 'Appearance', change icon type to 'Minimised application icons'</dt>
-       <dd>Ensure the desktop icons now represent the currently running applications</dd>
+		<dd>[FILL VERIFICATION]</dd>
+       
+	<dt>Ensure the desktop icons now represent the currently running applications</dt>
+		<dd>[FILL VERIFICATION]</dd>
    <dt>Now change icon type to none.</dt>
        <dd> and observe that all desktop icons disappear. They should reappear upon reselecting 'File/launcher icons'</dd>
    <dt>Change the icon size with the up and down buttons.</dt>
        <dd>Observe that the icons change size correctly. Check that manually entering a value also has the required effect.</dd>
-   <dt>Click the check box 'Use custom font size'</dt>
-       <dd>Ensure that using the up or down arrows, or entering a value, changes the icon font size correctly. Unchecking the box should restore the font size to default</dd>
+   	<dd>Click the check box 'Use custom font size'</dd>
+		<dd>[FILL VERIFICATION]</dd>
+       
+	<dt>Ensure that using the up or down arrows, or entering a value, changes the icon font size correctly. Unchecking the box should restore the font size to default</dt>
+		<dd>[FILL VERIFICATION]</dd>
    <dt>Untick and retick 'Show thumbnails'</dt>
        <dd>Desktop thumbnails are shown and hidden correctly (may need some video or image files on the desktop to check this).</dd>
    <dt>Tick 'Single click to activate icons'</dt>
-       <dd>Ensure that the icon applications now launch upon being clicked</dd>
+		<dd>[FILL VERIFICATION]</dd>
+       
+	<dt>Ensure that the icon applications now launch upon being clicked</dt>
+		<dd>[FILL VERIFICATION]</dd>
    <dt>Untick the box</dt>
        <dd>It now functions as before (double click)</dd>
    <dt>Tick and untick each of the checkboxes under 'Default Icons'</dt>

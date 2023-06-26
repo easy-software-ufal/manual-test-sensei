@@ -26,6 +26,7 @@ This test will check the Facebook integration
     <dt>Click on the same message</dt>
         <dd>Additional elements disappear</dd>
     <dt>Click one more time on the same message</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Write "ping" into the "Reply" input field, press "Send" and drag up to the top of the timeline</dt>
         <dd>A message containing "ping" is shown at the top of the timeline</dd>
     <dt>Click on the "Post" button</dt>
@@ -35,7 +36,9 @@ This test will check the Facebook integration
     <dt>Click the "Top" button</dt>
         <dd>The text previously written is shown into the top of the timeline on your Facebook account</dd>
     <dt>Make someone write in your wall</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click on the mention message in the timeline window</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Write a reply into the "Reply" input field and press "Send"</dt>
         <dd>The timeline window shown the message used to reply</dd>
     <dt>Click on some random message</dt>
@@ -43,9 +46,11 @@ This test will check the Facebook integration
     <dt>Click the star button on the left</dt>
         <dd>The "# people liked this" increments one"</dd>
     <dt>Go to the Online Accounts application</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select "Remove Account" to delete the Facebook account</dt>
         <dd>A confirmation dialog is shown</dd>
     <dt>Select "Remove"</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Go back to Gwibber</dt>
         <dd>Is the Gwibber Timeline window blank?</dd>
 </dl>
@@ -78,6 +83,7 @@ This test will check the Twitter integration
     <dt>Click the "Top" button</dt>
         <dd>The text previously written is shown into the top of the timeline on your Twitter account</dd>
     <dt>Make someone mention you</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click on the mention message in the timeline window</dt>
     <dt>Write a reply into the "Reply" input field and press "Send"</dt>
         <dd>The timeline window shown the message and auto-completes your friend's nickname</dd>

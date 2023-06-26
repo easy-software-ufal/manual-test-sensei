@@ -6,9 +6,13 @@ installation can boot in UEFI as well, regardless of network availability.
 
 <dl>
    <dt>Boot up the image in UEFI mode</dt>
+		<dd>[FILL VERIFICATION]</dd>
    <dt>In GRUB boot menu, select UEFI Firmware settings</dt>
-   <dt>Check hardware settings for the hard-drive and if set to ACPI mode, change it to "RAID" or "RST"</dt>
+		<dd>[FILL VERIFICATION]</dd>
+   	<dd>Check hardware settings for the hard-drive and if set to ACPI mode, change it to "RAID" or "RST"</dd>
+		<dd>[FILL VERIFICATION]</dd>
    <dt>Save and exit the firmware</dt>
+		<dd>[FILL VERIFICATION]</dd>
    <dt>Boot up the image in UEFI mode</dt>
         <dd>The system boots properly and loads the installer displaying the Welcome dialog with language selection and 'Try FAMILY' and 'Install FAMILY' buttons</dd>
     <dt>Click on the 'Install FAMILY' icon</dt>
@@ -19,6 +23,7 @@ installation can boot in UEFI as well, regardless of network availability.
     <dt>Scan the QR code with a phone</dt>
         <dd>Verify that the page help.ubuntu.com/rst opens with detailed information about RST and how to disable it.</dd>
     <dt>Follow the instructions on the page OR disable RST from UEFI firmware</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Boot up the image in UEFI mode</dt>
         <dd>The system boots properly and loads the installer displaying the Welcome dialog with language selection and 'Try FAMILY' and 'Install FAMILY' buttons</dd>
     <dt>Click on the 'Install FAMILY' icon</dt>
@@ -38,12 +43,15 @@ installation can boot in UEFI as well, regardless of network availability.
     <dt>Click on the continue button</dt>
         <dd>The 'Installation type' screen is displayed</dd>
     <dt>Select any installation type and click on the continue button</dt>
-        <dd>Write changes dialogue appears</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Write changes dialogue appears</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click continue</dt>
         <dd>If there is only one hard disk, the installer skips to the "Where are you?' screen. Otherwise, the 'Installation type' screen is displayed</dd>
-    <dt>If there is only one hard disk, skip to step 10 (On the 'Where are you?' screen...). Otherwise, on the 'Installation type' screen verify that the drive selected on the Select drive list corresponds to the drive on the chart (e.g /dev/sda)</dt>
+    	<dd>If there is only one hard disk, skip to step 10 (On the 'Where are you?' screen...). Otherwise, on the 'Installation type' screen verify that the drive selected on the Select drive list corresponds to the drive on the chart (e.g /dev/sda)</dd>
         <dd>Selected drive is displayed on the chart</dd>
-    <dt>Verify that the full drive space is allocated</dt>
+    	<dd>Verify that the full drive space is allocated</dd>
         <dd>Full drive space is allocated for installation</dd>
     <dt>Click on the Install Now button</dt>
         <dd>The 'Where are you?' screen is displayed, which should not necessarily match your timezone.</dd>

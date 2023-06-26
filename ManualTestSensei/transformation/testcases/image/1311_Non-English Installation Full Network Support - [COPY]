@@ -29,9 +29,9 @@ The goal of this test case is to check that localization support is functional d
         <dd>The 'Erase disk and install FAMILY' radio button is selected</dd>
     <dt>Click on the continue button (if there is only one hard disk in the system, the button should read 'Install now')</dt>
         <dd>If there is only one hard disk, the installer skips to the "Where are you?' screen. Otherwise, the 'Installation type' screen is displayed</dd>
-    <dt>If there is only one hard disk, skip to step 10 (On the 'Where are you?' screen...). Otherwise, on the 'Installation type' screen verify that the drive selected on the Select drive list corresponds to the drive on the chart (e.g /dev/sda)</dt>
+    	<dd>If there is only one hard disk, skip to step 10 (On the 'Where are you?' screen...). Otherwise, on the 'Installation type' screen verify that the drive selected on the Select drive list corresponds to the drive on the chart (e.g /dev/sda)</dd>
         <dd>Selected drive is displayed on the chart</dd>
-    <dt>Verify that the full drive space is allocated</dt>
+    	<dd>Verify that the full drive space is allocated</dd>
         <dd>Full drive space is allocated for installation</dd>
     <dt>Click on Install Now button</dt>
         <dd>The 'Where are you?' screen is displayed</dd>
@@ -53,10 +53,13 @@ The goal of this test case is to check that localization support is functional d
         <dd>The machine has been rebooted</dd>
     <dt>Allow the machine to reboot</dt>
         <dd>The system boots properly and loads into FAMILY</dd>
-    <dt>Verify that your system is localized</dt>
-        <dd>For any language, the system has to be fully localized. Note: the translation coverage of some languages might not be complete</dd>
+    	<dd>Verify that your system is localized</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
         <!-- Smell: EAGER TEST -->
         <dd>The calendar shows the regional settings correctly</dd>
+	<dt>For any language, the system has to be fully localized. Note: the translation coverage of some languages might not be complete</dt>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

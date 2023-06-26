@@ -14,13 +14,16 @@ This test ensures you are able to set up a collection
 This test ensures you are able to update your collection
 <dl>
     <dt>Add more music to the folder you selected for your library</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click on the Settings icon (top-right corner) and select Library -> Rescan collection</dt>
         <dd>Songs are added to the library and become visible in the Songtree view, grouped according to the tags in the media files</dd>
 </dl>
 This test ensures you are able to add new folders containing music your collection
 <dl>
     <dt>Click on the Settings icon (top-right corner) and select Settings</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>In the Library tab, click "Add folder" and select another folder (than the one that's already in the listview above) that contains music</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Hit the "scan now" button below</dt>
         <dd>Songs are added to the library and become visible in the Songtree view, grouped according to the tags in the media files</dd>
 </dl>
@@ -30,6 +33,7 @@ Please note that you will need additional codecs to play certain media files, in
     <dt>Double-click a track</dt>
         <dd>The track is played</dd>
     <dt>Click the "Queue" tab on the left sidebar</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Drag-and-drop a track to the queue area or double-middle-click a song in the list</dt>
         <dd>After the current track has finished playing, the next track from the queue starts playing</dd>
 </dl>
@@ -48,6 +52,7 @@ This test ensures you are able to switch the display mode correctly
 This test ensures you are able to sort your collection
 <dl>
     <dt>Go to the Songtree-view</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Right-click the header-row and go to the "Sort by" submenu and create a custom sort-mode</dt>
         <dd>The tracks in the Songtree view are sorted based on your sort-mode</dd>
 </dl>

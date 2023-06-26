@@ -5,17 +5,23 @@ This test will check if Darktable opens properly from the STUDIO menu.
 </dl>
 This test will check if Darktable properly import photos to its library.
 <dl>
-    <dt>In the left-hand panel, unfold the "Import" panel and press the "Folder" button.</dt> 
+    <dt>In the left-hand panel, unfold the "Import" panel and press the "Folder" button.</dt>
+		<dd>[FILL VERIFICATION]</dd> 
     <dt>Chose a folder containing RAW photos and press "Open"</dt>
         <dd>Darktable properly imports RAW photos to library.</dd>
 </dl>
 This test will check if Darktable properly exports photos to 8-bit JPG.
 <dl>
-    <dt>Make sure you are in "Lighttable" mode.</dt> 
+    <dt>Make sure you are in "Lighttable" mode.</dt>
+		<dd>[FILL VERIFICATION]</dd> 
     <dt>Select a few photos.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>In the right-hand panel unfold the "Export Selected" menu</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>In the "Target Storage" tab chose "file on disk" and pick a location to save the exported photos to.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>In the "File Format" tab, pick JPEG(8-bit) and set the quality to 95.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>With no further settings, press "Export"</dt>
         <dd>Photos are exported in JPG to given location</dd>
 </dl>

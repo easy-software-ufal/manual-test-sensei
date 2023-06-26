@@ -22,7 +22,9 @@ This test shows the ability of blueman to (un-)hide the Bluetooth adapter. The t
 <dl>
     <!-- PRE CONDITION AS STEP -->
     <dt>The test requires a Bluetooth device with search functionality for other Bluetooth devices, e.g. a mobile phone. If you do not have one, skip the test.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Go to the search screen of your Bluetooth device and have it ready to search for the computer's Bluetooth adapter.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click on the Bluetooth symbol in your system panel to activate the context menu.</dt>
         <dd>The context menu opens.</dd>
     <dt>Click on "Make discoverable".</dt>
@@ -36,6 +38,7 @@ This test shows the ability of blueman to connect to an input device. The test r
     <!-- PRE CONDITION AS STEP -->
 
     <dt>The test requires an input device, e.g. a Bluetooth mouse or keyboard. If you do not have one, skip the test.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click on the Bluetooth symbol in your system panel to activate the context menu.</dt>
         <dd>The context menu opens.</dd>
     <dt>Click on "Set up new device...".</dt>
@@ -57,6 +60,7 @@ This test shows the ability of blueman to connect to a storage device. The test 
     <!-- PRE CONDITION AS STEP -->
 
     <dt>The test requires a storage device, e.g. a mobile phone. If you do not have one, skip the test.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click on the Bluetooth symbol in your system panel to activate the context menu.</dt>
         <dd>The context menu opens.</dd>
     <dt>Click on "Set up new device...".</dt>

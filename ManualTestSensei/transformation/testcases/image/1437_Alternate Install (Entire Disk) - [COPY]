@@ -21,7 +21,7 @@
         <dd>You should be asked if you wish to encrypt your home directory</dd>
     <dt>Select No for encrypted home directory and press Enter</dt>
         <dd>You should see confirmation of your time zone</dd>
-    <dt>Verify that the pre-selected time zone is correct or select your time zone and press Enter</dt>
+    	<dd>Verify that the pre-selected time zone is correct or select your time zone and press Enter</dd>
         <dd>You will be presented with formatting options</dd>
     <dt>Select Guided - use entire disk and press Enter</dt>
         <dd>You should see an option to select a disk to install on</dd>
@@ -37,11 +37,11 @@
         <dd>You should be requested to remove the CD / USB key</dd>
     <dt>Remove the CD / USB key and press Enter</dt>
         <dd>This should then reboot the machine</dd>
-    <dt>Log in and check the desktop is installed</dt>
+    	<dd>Log in and check the desktop is installed</dd>
         <dd>You should be able to log in and the desktop should be displayed</dd>
     <dt>Ask the machine to reboot</dt>
         <dd>Machine should reboot</dd>
-    <dt>Login and check the system installed correctly</dt>
+    	<dd>Login and check the system installed correctly</dd>
         <dd>Menus should be displayed</dd>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.

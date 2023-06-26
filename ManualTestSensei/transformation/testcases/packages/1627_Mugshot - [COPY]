@@ -40,9 +40,15 @@ This test will check that Mugshot profile image can also be chosen from picture 
     <dt>Click the image button on the top left of Mughshot GUI</dt>
         <dd>A context menu will open bellow the image button</dd>
     <dt>Choose the "Browse..." option</dt>
-        <dd>Select a photo... dialog opens</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Select a photo... dialog opens</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Navigate to the directory containing the wanted picture, select it and click the 'Apply' button</dt>
-        <dd>Select a photo... dialog closes and the selected photo shows as label in the image button</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Select a photo... dialog closes and the selected photo shows as label in the image button</dt>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 
 This test will check that Mugshot profile image is shown in the login dialogue. To do this you are asked to log out.
@@ -55,6 +61,7 @@ This test will check that Mugshot profile image is shown in the login dialogue. 
         <dd>You're logged out, and presented with the log in screen</dd>
         <dd>The image in the log in screen is changed according to the image you chose in Mugshot</dd>
     <dt>Log in again</dt>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 
 This test will check that Mugshot Help button work as expected

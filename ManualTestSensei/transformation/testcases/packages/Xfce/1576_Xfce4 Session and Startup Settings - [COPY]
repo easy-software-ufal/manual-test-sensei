@@ -89,7 +89,10 @@ This test will check that Applications added the Autostart list start correctly.
     <dt>Go to Application Autostart tab</dt>
         <dd>Dialogue changes to show current Autostart applications</dd>
     <dt>Press Add button</dt>
-        <dd>Add application dialogue appears</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Add application dialogue appears</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>In Name box type Test, select Description box</dt>
         <dd>Test shows in Name box</dd>
     <dt>In description box type LibreOffice Writer test, select Command box</dt>
@@ -99,7 +102,10 @@ This test will check that Applications added the Autostart list start correctly.
     <dt>Navigate to /usr/bin/LibreOffice Writer, select and click OK</dt>
         <dd>Command selection dialogue closes, command box populated with command</dd>
     <dt>Click OK</dt>
-        <dd>Add application dialogue closes</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Add application dialogue closes</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Move to the bottom of the application list</dt>
         <dd>New item shown as Test(LibreOffice Writer Test) with box populated with a tick</dd>
     <dt>Close Session and startup, logout and then login once more</dt>

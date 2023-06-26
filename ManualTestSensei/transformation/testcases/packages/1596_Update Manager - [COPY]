@@ -14,6 +14,7 @@ This test will check that Update Manager opens Software Sources correctly
 This test will check that Technical Description is available (depends on updates being available)
 <dl>
     <dt>Select update from list</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Press Technical Description</dt>
         <dd>Description pane drops down</dd>
 </dl>

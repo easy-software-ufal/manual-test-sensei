@@ -1,7 +1,9 @@
 Test-case softwarecenter/install-app
 <dl>
     <dt>Open the Software Center</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Search and select any graphical application that has not been yet installed</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Press Install to install the application</dt>
         <dd>A standard authentication dialog should pop out</dd>
         <dd>The icon for the installing application should appear on the Launcher</dd>

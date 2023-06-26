@@ -31,34 +31,47 @@ This test will check that a new score can be created, notes entered and the file
     <dt>Click on the "Create New Score" icon (File > New from the menu)</dt>
         <dd>The "Create New Score" window opens</dd>
     <dt>Enter a title for the new piece (e.g. "Test")</dt>
-    <dt>Check that "create new score from scratch" is selected</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    	<dd>Check that "create new score from scratch" is selected</dd>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click "Next"</dt>
         <dd>A list of instruments to choose from appears</dd>
     <dt>Click on an instrument from the list so that it is highlighted</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click on "Add"</dt>
         <dd>The chosen instrument now appears in the "Staves" box to the right of the instrument list</dd>
     <dt>Click "Next"</dt>
         <dd>The "Select Key Signature" step now appears</dd>
     <dt>Choose a Key Signature (e.g. G major)</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click "Next"</dt>
         <dd>The "Create Time Signature" step now appears</dd>
     <dt>Choose a Time Signature (e.g. 3/4)</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Choose 2 measures</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click Finish</dt>
         <dd>An empty score appears with your chosen title, Key Signature & Time Signature</dd>
     <dt>Click "Note Input Mode" icon (or press "N" on the keyboard)</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click somewhere on the staff to enter a note</dt>
         <dd>If the "enable sound while editing" icon is highlighted, you hear the note sound as it appears on the staff</dd>
     <dt>Continue filling the staff with a variety of notes</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click the "Rewind to Start Position" icon</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click the "Play" icon (or the space-bar on the keyboard)</dt>
         <dd>You hear your new piece play</dd>
     <dt>Click the "Save Score to File" icon (File > Save from the menu)</dt>
     <dt>Type in a name for your file and choose a location to save it</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click "Save"</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Close the tab for your new file by clicking the "X"</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click the "Load Score from File" icon (File > Open from the menu)</dt>
     <dt>Find and Choose your file</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click "Open"</dt>
         <dd>Your file opens again and appears as it was when you saved it</dd>
 </dl>
@@ -70,12 +83,17 @@ If you don't have a physical midi keyboard, install/use vkeybd instead, and have
     <dt>From the menu, choose Create > Measures> Append Measures (or press Shift+Ctrl+B)</dt>
     <dt>Choose 2 measures</dt>
     <dt>Click "OK"</dt>
-    <dt>Check midi entry is enabled by clicking the "Enable Midi Input" icon until it is highlighted</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    	<dd>Check midi entry is enabled by clicking the "Enable Midi Input" icon until it is highlighted</dd>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click on one of the 2 new empty measures to indicate where to start note entry</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click on "N" to begin note entry</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Press some notes on your midi keyboard</dt>
         <dd>Notes appear on the score</dd>
     <dt>Fill the score with notes from the midi keyboard</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click the "Rewind to Start Position" icon</dt>
     <dt>Click the "Play" icon</dt>
         <dd>You hear your entered notes being played</dd>

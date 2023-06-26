@@ -43,7 +43,10 @@ This test will check that Configuration options work correctly
     <dt>Open pavucontrol and select Configuration tab</dt>
         <dd>Dialogue changes to show available hardware</dd>
     <dt><b>If more than one hardware device is available</b>, select default device Profile</dt>
-        <dd>Drop down menu appears</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Drop down menu appears</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select Off</dt>
         <dd>Audio playback stops</dd>
     <dt>Set playback through other hardware device</dt>

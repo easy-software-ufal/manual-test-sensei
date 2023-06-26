@@ -39,7 +39,7 @@ This test will check that the Ubuntu Server system is installed and you can logi
         <dd>The 'Partition disks' screen is displayed requesting to select the disk to partition</dd>
     <dt>Select the desired disk</dt>
         <dd>The installer starts the partitioning of the disk and the 'Partition disks' screen is displayed requesting for confirmation before writing the changes to the disk</dd>
-    <dt>Verify that everything is right and select "Yes"</dt>
+    	<dd>Verify that everything is right and select "Yes"</dd>
         <dd>The installer proceeds with the partitioning of the disk and starts installing the base system</dd>
         <dd>The 'Configure the package manager' screen is displayed requesting to enter a 'HTTP proxy'</dd>
     <dt>Leave it blank and press "Enter"</dt>

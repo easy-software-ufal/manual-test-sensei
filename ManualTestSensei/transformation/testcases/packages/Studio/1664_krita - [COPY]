@@ -1,8 +1,10 @@
 This test will check if krita opens properly from the menu
 <dl>
     <dt>Open Krita from menu</dt>
-        <dd>Open the krita application from GRAPHIC DESIGN subsection in Main Menu.</dd>
+        
         <dd>Krita opens properly.</dd>
+	<dt>Open the krita application from GRAPHIC DESIGN subsection in Main Menu.</dt>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 
 This test will check if krita opens blank files correctly

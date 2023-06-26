@@ -24,7 +24,7 @@
     <dt>Select the drive you wish to partition and use the 'Add', 'Change', and 'Delete' buttons to create your desired scheme</dt>
         <dd>The screen updates showing your desired partitions and mount points</dd>
 <em>Make sure that your scheme also includes a separate /home partition</em>
-    <dt>Once your partitioning scheme is laid out click on Install Now</dt>
+    	<dd>Once your partitioning scheme is laid out click on Install Now</dd>
         <dd>The partitions and disk layouts are created. Then, the 'Where are you?' screen is displayed</dd>
     <dt>If your system is connected to the network, note the preselected timezone correspond with your timezone and the city indicated in the text box </dt>
         <dd>The timezone and city displayed match your timezone and a city from your area</dd>
@@ -46,7 +46,8 @@
         <dd>The new user's desktop is presented</dd>
     <dt>Open a terminal using your FAMILY commands or GUI to do so, in terminal enter <code>df -h</code> and press enter</dt>
 		<dd>Terminal echoes the output of the df command</dd>
-    <dt>Check that / and /home use different partitions</dt>
+    	<dd>Check that / and /home use different partitions</dd>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.<br />

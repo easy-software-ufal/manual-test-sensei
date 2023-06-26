@@ -7,10 +7,13 @@ Ensure that Network Manager is running and that no networks are currently connec
 <dl>
     
     <dt>Open Terminal</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Ensure wireless is enabled</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>After approximately 30 seconds, open the network manager</dt>
         <dd>Your wireless network is visible</dd>
     <dt>Connect to your wireless network</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Run ifconfig in the terminal</dt>
         <dd>A new network interface (e.g. "wlan0") is present and has received an IP address</dd>
     <dt>Run <code>route -n</code> . Note the IP address in the Gateway column. (not "0.0.0.0")</dt>

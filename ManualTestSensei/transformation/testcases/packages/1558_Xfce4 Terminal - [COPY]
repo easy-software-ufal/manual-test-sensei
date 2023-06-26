@@ -74,7 +74,10 @@ This test will check that Xfce4 Terminal performs searches in the Terminal Conte
     <dt>Open a terminal window and click on Terminal on the menubar</dt>
         <dd>A menu drops down</dd>
     <dt>Select the Find option</dt>
-        <dd>Find dialog window opens</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Find dialog window opens</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Type the search pattern in the Search text box</dt>
         <dd>The Previous and Next buttons are now enabled and click-able to perform the search for the given pattern</dd>
 </dl>

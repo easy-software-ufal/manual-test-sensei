@@ -6,12 +6,16 @@
     <dt>Press enter over the "Start FAMILY" text</dt>
         <dd>The system should boot to the live desktop</dd>
     <dt>On the desktop, click the "Start FAMILY XX.YY" icon to open the installer</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select your language/localization in the dropdown menu and click "Next"</dt>
         <dd>The installer should be localized in your language</dd>
     <dt>Select your timezone and click "Next"</dt>
         <dd>A map should appear allowing you to select your timezone, and if the internet is connected, should already be accurate</dd>
     <dt>Select your keyboard layout and click "Next"</dt>
-        <dd>Test the keyboard layout in the given box, which should be set correctly</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Test the keyboard layout in the given box, which should be set correctly</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select the "Manual Partitioning" radio box and click "Next"</dt>
         <dd>A screen showing your disk with allo your partitions saying Select a partition to install on appears. </dd>
     <dt>Select the drive you wish to partition and use the 'Create' 'Edit' and 'Delete' buttons.</dt>

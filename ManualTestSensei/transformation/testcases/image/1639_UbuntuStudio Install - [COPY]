@@ -24,11 +24,12 @@
     <dt>Click on the continue button</dt>
         <dd>The 'Installation type' screen is displayed</dd>
     <dt>Select Erase disk and install FAMILY</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click on the continue button (if there is only one hard disk in the system, the button should read 'Install now')</dt>
         <dd>If there is only one hard disk, the installer skips to the "Where are you?' screen. Otherwise, the 'Installation type' screen is displayed</dd>
-    <dt>If there is only one hard disk, skip to step 10 (On the 'Where are you?' screen...). Otherwise, on the 'Installation type' screen verify that the drive selected on the Select drive list corresponds to the drive on the chart (e.g /dev/sda)</dt>
+    	<dd>If there is only one hard disk, skip to step 10 (On the 'Where are you?' screen...). Otherwise, on the 'Installation type' screen verify that the drive selected on the Select drive list corresponds to the drive on the chart (e.g /dev/sda)</dd>
         <dd>Selected drive i displayed on the chart</dd>
-    <dt>Verify that the full drive space is allocated</dt>
+    	<dd>Verify that the full drive space is allocated</dd>
         <dd>Full drive space is allocated for installation</dd>
     <dt>Click on the Install Now button</dt>
         <dd>The 'Where are you?' screen is displayed</dd>

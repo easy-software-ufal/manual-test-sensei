@@ -31,18 +31,22 @@
         <dd>Base system installs</dd>
         <dd>You should see a request for http proxy information</dd>
     <dt>Press Enter to leave proxy configuration empty</dt>
-        <dd>Wait for a while - The install may seem like it has locked at a percentage but is actually working in the background. You can check and see if it is working by switching to tty4 (Alt + F4).</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Wait for a while - The install may seem like it has locked at a percentage but is actually working in the background. You can check and see if it is working by switching to tty4 (Alt + F4).</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select Yes to install grub boot loader to master boot record and press Enter</dt>
         <dd>You should see a request to confirm date and time</dd>
     <dt>Select Yes to set your clock to UTC and press Enter</dt>
         <dd>You should be requested to remove the CD / USB key</dd>
     <dt>Remove the CD / USB key and press Enter</dt>
         <dd>This should then reboot the machine</dd>
-    <dt>Log in and check the desktop is installed</dt>
+    	<dd>Log in and check the desktop is installed</dd>
         <dd>You should be able to log in and the desktop should be displayed</dd>
     <dt>Ask the machine to reboot</dt>
         <dd>Machine should reboot</dd>
-    <dt>Login and check the system installed correctly</dt>
+    	<dd>Login and check the system installed correctly</dd>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

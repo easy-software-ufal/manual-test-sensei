@@ -13,13 +13,21 @@ The testcase tests the installation and basic functionality of a Primary Backend
             </ul>
         </dd>
     <dt>Once installation is finished, remove the installation media and reboot.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Once the installed system boots, it will boot into the MythTV frontend. Exit the frontend by hitting escape and selecting "yes, exit now"</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Download a demo file. I recommend a MP4 trailer (for example, the 480p MP4 trailer at http://www.sintel.org/download ).</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Once downloaded, move this file to the /srv/ directory (it must be outside your home directory)</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Change ownership on the test file to mythtv:mythtv</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Open the Applications menu and choose system and then "Mythtv backend setup".</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Say yes to stop the running mythtv-backend service</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Once in mythtv-setup, go to "1. General"</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>On the first screen, edit the following options</dt>
         <dd>
             <ul>
@@ -29,7 +37,9 @@ The testcase tests the installation and basic functionality of a Primary Backend
             </ul>
         </dd>
     <dt>Hit next until you get back to the main menu</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Go to "2. Capture cards" and select "(New capture card)"</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Setup the new card using the following options</dt>
         <dd>
             <ul>
@@ -39,7 +49,9 @@ The testcase tests the installation and basic functionality of a Primary Backend
         </dd>
         <dd>When you put in the file path, it should detect the "File info" and "File size"</dd>
     <dt>Hit Finish, then escape to go back to the main menu</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Go to "4. Video sources" and select "(New video source)"</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Setup the video source with the following options</dt>
         <dd>
             <ul>
@@ -49,6 +61,7 @@ The testcase tests the installation and basic functionality of a Primary Backend
         </dd>
     <dt>Hit Finish, then escape to go back to the main menu</dt>
     <dt>Go to "5. Input connections", and select the only option in there (the DEMO recorder)</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Setup as follows</dt>
         <dd>
             <ul>
@@ -56,10 +69,13 @@ The testcase tests the installation and basic functionality of a Primary Backend
             </ul>
         </dd>
     <dt>Hit Next, then finish, then escape to go back to the main menu.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Hit escape and exit the backend setup.</dt>
         <dd>You may get a warning that the tuner is set to start on a channel that doesn't exist. This can be safely ignored since we are using a test recorder.</dd>
     <dt>Select yes to start the backend</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select no when prompted to run mythfilldatabase</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Start the frontend via Applications > Multimedia > MythTV Frontend </dt>
     <dt>Select "Watch TV". </dt>
         <dd>The demo video should start playing.</dd>

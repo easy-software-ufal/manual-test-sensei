@@ -1,5 +1,6 @@
 <dl>
     <dt>Launch Parole from the menu</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Play files in multiple formats</dt>
         <dd>All files play (including those that needed new codecs)</dd>
         <dd>If a required codec is missing, an installation prompt should appear and install the missing codec.  Afterwards, media playback should begin.</dd>

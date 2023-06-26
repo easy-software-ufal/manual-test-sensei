@@ -11,6 +11,8 @@ log = logging.getLogger(__name__)
 try:
     if sys.argv[1] == 'english':
         model = 'en_core_web_trf'
+    elif sys.argv[1] == 'small':
+        model = 'en_core_web_sm'
 except IndexError:
     model = 'en_core_web_lg'  # Development only
 

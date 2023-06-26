@@ -8,10 +8,12 @@
     <dt>Press "Try FAMILY" and wait for the Live session to start</dt>
         <dd>The default desktop is displayed</dd>
     <dt>Use the desktop and open some applications to try FAMILY before installing</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Go to the Install FAMILY icon (usually on the desktop) and install from the Live session</dt>		
         <dd>The 'Keyboard Layout' screen appears</dd>
         <dd>The proposed keyboard corresponds with your keyboard</dd>
 	<dt>Select your keyboard layout and click on continue</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>On the screen Preparing to install FAMILY, note the availability of the following components</dt>
         <dd>Available options should represent the state of your system accurately</dd>
         <dd>
@@ -27,9 +29,9 @@
         <dd>The 'Erase disk and install FAMILY' radio button should be checked</dd>
     <dt>Click on the continue button (if there is only one hard disk in the system, the button should read 'Install now')</dt>
         <dd>If there is only one hard disk, the installer should skip to the "Where are you?' screen. Otherwise, the 'Installation type' screen is displayed</dd>
-    <dt>If there is only one hard disk, skip to step 10 (On the 'Where are you?' screen...). Otherwise, on the 'Installation type' screen verify that the drive selected on the Select drive list corresponds to the drive on the chart (e.g /dev/sda)</dt>
+    	<dd>If there is only one hard disk, skip to step 10 (On the 'Where are you?' screen...). Otherwise, on the 'Installation type' screen verify that the drive selected on the Select drive list corresponds to the drive on the chart (e.g /dev/sda)</dd>
         <dd>Selected drive is displayed on the chart</dd>
-    <dt>Verify that the full drive space is allocated</dt>
+    	<dd>Verify that the full drive space is allocated</dd>
         <dd>Full drive space is allocated for installation</dd>
     <dt>Click on Install Now button</dt>
         <dd>The 'Where are you?' screen is displayed</dd>

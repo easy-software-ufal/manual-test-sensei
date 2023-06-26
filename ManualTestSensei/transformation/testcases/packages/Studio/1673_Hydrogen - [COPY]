@@ -4,6 +4,7 @@ This test will check that Hydrogen is set up to use JACK.
     <dt>Select Tools > Preferences from the menu</dt>
         <dd>The preferences window opens</dd>
     <dt>On the "Audio System" tab, ensure that JACK is selected on the audio driver dropdown menu</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click the OK button</dt>
         <dd>The preference window closes</dd>
 </dl>
@@ -13,6 +14,7 @@ This test will check that Hydrogen can be used to choose a drum kit, and create 
     <dt>Select Instruments > Import library from the menu</dt>
         <dd>The "Sound Library import" window opens</dd>
     <dt>On the Internet tab, choose a suitable drum kit (e.g. Roland TR-808)</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click on the "Download & Install" button</dt>
         <dd>A message appears conforming that the chosen drumkit has been imported</dd>
     <dt>Click on the "OK" button</dt>
@@ -34,6 +36,7 @@ This test will check that Hydrogen can be used to choose a drum kit, and create 
     <dt>Create a different pattern (e.g. click on every marker of a Tom Drum except the last, and the Crash cymbal on the last).</dt>
         <dd>The new pattern sounds as the cursor cycles over the pattern</dd>
     <dt>In the "Song Editor", click on "Pattern 2" in Bar 9 to add the new pattern to the song</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click on "SONG" in the toolbar</dt>
         <dd>The sound stops, and SONG is indicated as on.</dd>
     <dt>Click on the "Play" icon</dt>
@@ -58,11 +61,12 @@ This test will check that Hydrogen can save the song, and also export it as a wa
     <dt>Click on the "Mixer" button in the toolbar</dt>
         <dd>The "Mixer" window displays, and the meters show the dynamic sound levels.</dd>
     <dt>Adjust the faders to get a good sound level (e.g. with no red peaks).</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click the "Stop" button</dt>
         <dd>The sound stops</dd>
     <dt>Select Project > Export Song from the menu</dt>
         <dd>The "Export Song" window opens</dd>
-    <dt>Check that the directory and filename are OK, and click the "Export" button.</dt>
+    	<dd>Check that the directory and filename are OK, and click the "Export" button.</dd>
         <dd>A wave file is created</dd>
     <dt>Click on the "Close" button</dt>
         <dd>The "Export Song" window closes</dd>

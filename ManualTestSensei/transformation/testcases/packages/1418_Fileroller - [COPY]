@@ -11,7 +11,7 @@ This test will check that File Roller can archive and extract files
         <dd>'Add Files' file open dialog is displayed</dd>
     <dt>Select any files and/or folders to be added to the archive, click 'Add' button</dt>
         <dd>Selected files and/or folders are displayed in the archive contents list</dd>
-    <dt>Close file-roller, open nautilus and navigate to the folder where the archive has been created</dt>
+    	<dd>Close file-roller, open nautilus and navigate to the folder where the archive has been created</dd>
         <dd>Archive is present in the folder</dd>
     <dt>Open the archive using file-roller</dt>
         <dd>Archive contents is displayed correctly in file-roller</dd>

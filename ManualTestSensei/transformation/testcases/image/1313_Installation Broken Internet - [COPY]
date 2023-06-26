@@ -32,9 +32,9 @@ The goal of this test case is to check that localization support is functional d
         <dd>The 'Erase disk and install FAMILY' radio button should be checked</dd>
     <dt>Click on the continue button (if there is only one hard disk in the system, the button should read 'Install now')</dt>
         <dd>If there is only one hard disk, the installer should skip to the "Where are you?' screen. Otherwise, the 'Installation type' screen is displayed</dd>
-    <dt>If there is only one hard disk, skip to step 10 (On the 'Where are you?' screen...). Otherwise, on the 'Installation type' screen verify that the drive selected on the Select drive list corresponds to the drive on the chart (e.g /dev/sda)</dt>
+    	<dd>If there is only one hard disk, skip to step 10 (On the 'Where are you?' screen...). Otherwise, on the 'Installation type' screen verify that the drive selected on the Select drive list corresponds to the drive on the chart (e.g /dev/sda)</dd>
         <dd>Selected drive is displayed on the chart</dd>
-    <dt>Verify that the full drive space is allocated</dt>
+    	<dd>Verify that the full drive space is allocated</dd>
         <dd>Full drive space is allocated for installation</dd>
     <dt>Click on Install Now button</dt>
         <dd>The 'Where are you?' screen is displayed</dd>
@@ -47,6 +47,7 @@ The goal of this test case is to check that localization support is functional d
         <!-- Smells: EAGER TEST -->
         <dd>The installer's slideshow slides are localized</dd>
     <dt>When the installer is installing the language packs, disconnect the Internet</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Wait for the installer to finish</dt>
         <dd>An 'Installation Complete' dialog appears</dd>
     <dt>Click the Restart now button</dt>
@@ -55,11 +56,14 @@ The goal of this test case is to check that localization support is functional d
         <dd>The machine has been rebooted</dd>
     <dt>Allow the machine to reboot</dt>
         <dd>The system boots properly and loads into FAMILY</dd>
-    <dt>Verify that your system is localized</dt>
+    	<dd>Verify that your system is localized</dd>
+		<dd>[FILL VERIFICATION]</dd>
         <!-- Smells: EAGER TEST -->
         <dd>If you aren't using Bengali (bn), German (de), English (en), Spanish (es), French(fr), Portuguese (pt) or Xhosa (xh) a pop up appears showing saying your language support is not complete</dd>
-        <dd>For any language, the system has to be fully localized. Note: the translation coverage of some languages might not be complete</dd>
+        
         <dd>If you are using one of the above languages the calendar shows the regional settings correctly</dd>
+	<dt>For any language, the system has to be fully localized. Note: the translation coverage of some languages might not be complete</dt>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

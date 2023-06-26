@@ -47,6 +47,7 @@ This test will check that the plugins Work
     <dt>Go to the top bar and click on "Edit" and later on "Plugins"</dt>
         <dd>A new "Configure Plugins" window appears</dd>
     <dt>Select a plugin and mark it</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click the "About" button</dt>
         <dd>A new window appears with information about the plugin and its developers</dd>
     <dt>Select "Close"</dt>
@@ -62,6 +63,7 @@ This test will check that the Preferences Work
     <dt>Go to the top bar and click the "Edit" menu and later "Preferences"</dt>
         <dd>A new interface called "Preferences" must appear</dd>
     <dt>Go to the "General" tab</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click on "Start playing files from last position"</dt>
         <dd>Can you see the changes on the video?</dd>
     <dt>Click on "Load subtitle files when movie is loaded"</dt>
@@ -73,10 +75,12 @@ This test will check that the Preferences Work
     <dt>Click on "Load chapter files when movie is loaded"</dt>
         <dd>Can you see the changes on the video?</dd>
     <dt>Go to the "Display" tab</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Change the Display settings</dt>
         <dd>Can you see the changes on the video?</dd>
         <em>we're going to change the Visual Effects settings</em>
         <dt>Click on "Show visual effects when an audio file is played"</dt>
+		<dd>[FILL VERIFICATION]</dd>
         <dt>Change the "Type of visualization"</dt>
             <dd>Can you see the changes on the video?</dd>
         <dt>Change the "Visualization size"(Normal, Large, Extra Large)</dt>
@@ -86,6 +90,7 @@ This test will check that the Preferences Work
         <dt>Click on "Reset to Defaults"</dt>
             <dd>All changes were changed?</dd>
         <dt>Go to the "Audio" tab</dt>
+		<dd>[FILL VERIFICATION]</dd>
         <dt>Change the audio output type</dt>
             <dd>Can you feel any difference?</dd>
 </dl>
@@ -103,6 +108,7 @@ This testcase will check that videos mode work, we're going to need at least thr
     <dt>Click on "Repeat Mode" to turn it off</dt>
         <dd>The mark should disappear</dd>
     <dt>We're going to open three videos for this test</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Go to the top bar and click the "Edit" menu and later "Shuffle Mode"</dt>
         <dd>A mark will appear next to "Shuffle Mode", can you see it?</dd>
         <dd>Do you see the videos on mode shuffle?</dd>
@@ -132,6 +138,7 @@ This test will check that the Help menu works
     <dt>Press the "Totem Homepage" link</dt>
         <dd>Firefox open a valid url?</dd>
     <dt>Go back to the "About Totem" window</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Press the "Credits" button</dt>
         <dd>The interface shows credits?</dd>
     <dt>Press the "License" button</dt>

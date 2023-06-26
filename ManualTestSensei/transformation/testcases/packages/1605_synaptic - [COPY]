@@ -52,7 +52,7 @@ This test will check that synaptic can install a new package and show its proper
         <dd>The window closes</dd>
     <dt>In menu bar, click on "Package" and then on "Properties"</dt>
         <dd>A window opens, showing the details of the package</dd>
-    <dt>Check the different properties. Then click on "Close"</dt>
+    	<dd>Check the different properties. Then click on "Close"</dd>
         <dd>The window closes</dd>
 </dl>
 
@@ -114,7 +114,7 @@ This test will check that synaptic can activate and deactivate a repository
 <dl>
     <dt>In menu bar click on "Settings", then on "Repositories"</dt>
         <dd>A window opens, showing "Software & Updates"</dd>
-    <dt>Select tab "Other Software" and check the box "Canonical Partners". Then click "Close"</dt>
+    	<dd>Select tab "Other Software" and check the box "Canonical Partners". Then click "Close"</dd>
         <dd>The window closes</dd>
     <dt>Now click on button "Reload"</dt>
         <dd>The software list are updated</dd>

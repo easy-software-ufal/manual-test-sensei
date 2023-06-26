@@ -1,6 +1,7 @@
 Test-case panel/appmenu_desktop
 <dl>
     <dt>Click on the desktop</dt>
+		<dd>[FILL VERIFICATION]</dd>
         <dd>"Ubuntu Desktop" (or any localized string) appears in the panel</dd>
     <dt>Move the mouse over the panel</dt>
         <dd>"Ubuntu Desktop" label fades out and Desktop menubar items appear</dd>
@@ -9,6 +10,7 @@ Test-case panel/appmenu_desktop
 Test-case panel/appmenu_mouse_click
 <dl>
     <dt>Start Gedit</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Move the mouse over the panel</dt>
         <dd>Gedit menubar items appear</dd>
     <dt>Click on "Search"</dt>
@@ -20,6 +22,7 @@ Test-case panel/appmenu_mouse_click
 Test-case panel/appmenu_mouse_click2
 <dl>
     <dt>Start Firefox</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Move the mouse over the panel and click on "File"</dt>
         <dd>"File" menu appears</dd>
     <dt>Without moving the mouse, left-click again</dt>
@@ -77,6 +80,7 @@ Test-case panel/appmenu_keyboard_desktop_mnemonic
 Test-case panel/titlebar_not_maximized
 <dl>
     <dt>Start Nautilus</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Make sure it is not maximized</dt>
         <dd>Panel does not show window buttons</dd>
         <dd>Panel shows application title (Same text as the tooltip for Nautilus launcher icon)</dd>
@@ -89,6 +93,7 @@ Test-case panel/titlebar_maximized
 <dl>
     <dt>Start Nautilus</dt>
     <dt>Maximize the window</dt>
+		<dd>[FILL VERIFICATION]</dd>
         <dd>Panel does not show window buttons</dd>
         <dd>Panel shows the window title</dd>
     <dt>Move the mouse over the panel</dt>
@@ -99,6 +104,7 @@ Test-case panel/titlebar_maximized
         <dd>Panel does not show window buttons</dd>
         <dd>Panel shows the window title</dd>
     <dt>Maximize window again</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click on the "close" window button</dt>
         <dd>Nautilus window closes</dd>
 </dl>
@@ -114,6 +120,7 @@ Test-case panel/titlebar_maximized2
 Test-case panel/titlebar_multi_windows
 <dl>
     <dt>Have a maximized window and a restored one in the same workspace</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Focus the restored window and move the mouse over the panel</dt>
         <dd>Panel does not show window buttons</dd>
         <dd>Titlebar and menubar are those of the focused window</dd>

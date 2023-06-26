@@ -10,11 +10,13 @@ This test will test whether the program loads correctly.
     <dt>Press the top-left "X" button to close the program.</dt>
         <dd>The window should close successfully.</dd>
     <dt>If you have a "System Settings" icon on your Unity dash, click on it. If not, search in the Unity menu</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click on the "Privacy" icon.</dt>
         <dd>The window should show privacy settings.</dd>
     <dt>In the navigation up at the top, click on "All Settings."</dt>
         <dd>The privacy settings should close (Including "Record Activity") and you should be back at the "All Settings" page.</dd>
     <dt>Open the privacy settings again (in any fashion) to continue with the testing.</dt>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 
 Test-case name: privacy/privacy-002
@@ -63,13 +65,16 @@ This test will check the functionality of the "Recent Items" tab.
     <dt>Do the same with the "To" field, but choose a date less than the "From:" date or today's date, or both.</dt>
         <dd>Did the "To:" date reset to a valid date (before today after the "From:" Date?)</dd>
     <dt>Edit and save some documents to appear in recent history.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>In the "Forget activities:" spin button, select "All". Click "Delete History"</dt>
         <dd>Did a message box pop up?</dd>
         <dd>Did the message appear normal?</dd>
     <dt>Click "Cancel"</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Open the Unity menu.</dt>
         <dd>Are your recent document still there?</dd>
     <dt>In the privacy window press "Delete history" again and this time press "Yes".</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Open the Unity menu.</dt>
         <dd>Your recent documents should be deleted.</dd>
 </dl>
@@ -77,7 +82,7 @@ This test will check the functionality of the "Recent Items" tab.
 Test-case name: privacy/privacy-005
 This test will check the functionality of the "Files" tab.
 <dl>
-    <dt>Check several combinations of the check boxes under "Don't record activity for the following type of files:"</dt>
+    	<dd>Check several combinations of the check boxes under "Don't record activity for the following type of files:"</dd>
         <dd>The items should be checked.</dd>
     <dt>Underneath the "Don't record activity in the following folders:" box should be a "+" and "-" button. Click on the "+" button</dt>
         <dd>A file dialog should appear.</dd>
@@ -103,6 +108,7 @@ This test will check the functionality of the "Files" tab.
     <dt>Add four or more folders to the list to ensure they'll go past what's visible.</dt>
         <dd>A scroll bar should appear on the right. Does the list still display correctly?</dd>
     <dt>Delete all the documents you added.</dt>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 
 Test-case name: privacy/privacy-006
@@ -111,7 +117,9 @@ This test will check the functionality of the "Applications" tab.
     <dt>Near the bottom should be a "+" button and a "-" button. Click on the "+" button.</dt>
         <dd>A pop-up should appear listing all the applications on your computer.</dd>
         <dd>You should not be able to interact with anything in the main window while the application dialog is active</dd>
-        <dd>Are any applications missing? Feel free to do a quick glance of your favorite applications instead of the entire list.</dd>
+        
+	<dt>Are any applications missing? Feel free to do a quick glance of your favorite applications instead of the entire list.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click on the column titles to sort ascending and descending.</dt>
         <dd>Do the applications resort accordingly?</dd>
     <dt>Click on an application item in the list and press "Cancel"</dt>
@@ -132,6 +140,7 @@ This test will check the functionality of the "Applications" tab.
         <dd>A scroll bar should appear on the right.</dd>
         <dd>Does the list still display correctly?</dd>
     <dt>Delete all the applications you just added.</dt>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 
 Test-case name: privacy/privacy-007
@@ -158,9 +167,11 @@ Test-case name: privacy/privacy-008
 This test will check whether the settings are saved.
 <dl>
     <dt>Modify all fields possible and close the window.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Open the "Privacy" window again.</dt>
         <dd>Are the settings restored as you set them?</dd>
     <dt>Modify the fields again, close the window, and log out.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Log back in again and open the privacy settings.</dt>
         <dd>Are the settings restored as you set them?</dd>
 </dl>
@@ -171,7 +182,8 @@ This test will cover any test cases not appropriate for the categories above.
     <dt>Click the "Record Activity" toggle button at the bottom of the privacy window.</dt>
         <dd>The button should toggle be switched to "OFF" if it's in the "ON" position.</dd>
     <dt>Ensure the "Record Activity" toggle button is set to "OFF"</dt>
-    <dt>Observe your activity for a few minutes (e.g. chat in IRC, run some applications, create some documents)</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    	<dd>Observe your activity for a few minutes (e.g. chat in IRC, run some applications, create some documents)</dd>
         <dd>Unity should not be showing any new activity.</dd>
 </dl>
 

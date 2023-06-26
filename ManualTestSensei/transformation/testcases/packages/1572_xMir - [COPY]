@@ -1,16 +1,27 @@
 Smoke Tests for xMir
 <dl>
-    <dt>Does your system continue to boot properly?</dt>
-    <dt>Can you login and logout of a desktop session?</dt>
+    	<dd>Does your system continue to boot properly?</dd>
+		<dd>[FILL VERIFICATION]</dd>
+    	<dd>Can you login and logout of a desktop session?</dd>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Does unity function correctly? Can you open and close the dash, use the launcher, and keyboard shortcuts?</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Do your input devices all work? Mouse, keyboard, etc?</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Do your output devices all work? Monitors, tv, etc?</dt>
-    <dt>Are you able to run an opengl accelerated application (try running glxgears)?</dt>
-    <dt>Do applications load (try running simple apps like gedit, as well as complex ones like libreoffice)?</dt>
-    <dt>Can you connect an external monitor?</dt>
-    <dt>Does hotplugging work?</dt>
-    <dt>Does user switching work?</dt>
-    <dt>Overall, does everything function the same as when running under xserver?</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    	<dd>Are you able to run an opengl accelerated application (try running glxgears)?</dd>
+		<dd>[FILL VERIFICATION]</dd>
+    	<dd>Do applications load (try running simple apps like gedit, as well as complex ones like libreoffice)?</dd>
+		<dd>[FILL VERIFICATION]</dd>
+    	<dd>Can you connect an external monitor?</dd>
+		<dd>[FILL VERIFICATION]</dd>
+    	<dd>Does hotplugging work?</dd>
+		<dd>[FILL VERIFICATION]</dd>
+    	<dd>Does user switching work?</dd>
+		<dd>[FILL VERIFICATION]</dd>
+    	<dd>Overall, does everything function the same as when running under xserver?</dd>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 
 Multimonitor tests for xMir
@@ -18,26 +29,36 @@ Scenario 1 : clean boot at “built-in display”, post boot connect/disconnect 
 <!-- EAGER TEST, CONDITIONAL TEST-->
 <dl>
     <dt>Preparations</dt>
-        <dd>Ensure preconditions</dd>
+        
         <dd>System Settings... -> Displays is in its default configuration</dd>
         <dd>2nd monitor is not connected on boot</dd>
+	<dt>Ensure preconditions</dt>
+		<dd>[FILL VERIFICATION]</dd>
 
         <dt>Test 1.1</dt>
             <dd>boot to single screen</dd>
             <dd>open System Settings... -> Displays</dd>
-            <dd>open some window (e.g. terminal)</dd>
-            <dd>connect switched on monitor</dd>
+            
+            
             <dd>verify display is an extension of desktop in the expected orientation, e.g. drag terminal to the other screen</dd>
+	<dt>connect switched on monitor</dt>
+		<dd>[FILL VERIFICATION]</dd>
+	<dt>open some window (e.g. terminal)</dt>
+		<dd>[FILL VERIFICATION]</dd>
 
             <dt>Test 1.2</dt>
                 <dd>assumes expected outcome of Test 1.1 post condition</dd>
-                <dd>Disconnect the monitor</dd>
+                
                 <dd>verify the display adjusts to return active windows to “built-in display”</dd>
+	<dt>Disconnect the monitor</dt>
+		<dd>[FILL VERIFICATION]</dd>
 
                 <dt>Test 1.3</dt>
                     <dd>assumes expected Test 1.2 post condition</dd>
-                    <dd>Reconnect the monitor</dd>
+                    
                     <dd>verify that the windows return to their original layout</dd>
+	<dt>Reconnect the monitor</dt>
+		<dd>[FILL VERIFICATION]</dd>
 
                     <dt>Test 1.4</dt>
                         <dd>assumes Test 1.3 postcondition</dd>
@@ -94,19 +115,25 @@ Scenario 3 : turning off “built-in display”
 
             <dt>Test 3.2</dt>
                 <dd>assumes expected outcome of Test 3.1 post condition</dd>
-                <dd>Open some windows (e.g. terminal)</dd>
+                
                 <dd>disconnect display</dd>
                 <dd>verify the desktop returns to the “built-in display”</dd>
+	<dt>Open some windows (e.g. terminal)</dt>
+		<dd>[FILL VERIFICATION]</dd>
 
                 <dt>Test 3.3</dt>
                     <dd>assumes expected outcome of Test 3.2 post condition</dd>
-                    <dd>reconnect the display</dd>
+                    
                     <dd>verify that the desktop now appears on the second display and the “built-in display” is dark</dd>
+	<dt>reconnect the display</dt>
+		<dd>[FILL VERIFICATION]</dd>
 
                     <dt>Test 3.4</dt>
                         <dd>assumes expected Test 3.3 postcondition</dd>
-                        <dd>reboot with the second display connected</dd>
+                        
                         <dd>after login, verify that the desktop appears on the second display & the “built-in display” remains dark</dd>
+	<dt>reboot with the second display connected</dt>
+		<dd>[FILL VERIFICATION]</dd>
 
                         <dt>Test 3.5</dt>
                             <dd>assumes expected Test 3.4 postcondition</dd>
@@ -123,10 +150,14 @@ Scenario 4 : resolution change for “built-in display” & second display
         <dt>Test 4.1</dt>
             <dd>boot to multimonitor (or if booted to single screen, connect 2nd monitor)</dd>
             <dd>open System Settings... -> Displays, note the current resolution (referred to as res1)</dd>
-            <dd>change resolution down for “built in display”, note it, refer to as res2</dd>
-            <dd>open some windows (e.g. terminal & file browser), have windows on each screen open</dd>
+            
+            
             <dd>disconnect switched on monitor</dd>
             <dd>verify “built in monitor” returned to original resolution, res1</dd>
+	<dt>open some windows (e.g. terminal & file browser), have windows on each screen open</dt>
+		<dd>[FILL VERIFICATION]</dd>
+	<dt>change resolution down for “built in display”, note it, refer to as res2</dt>
+		<dd>[FILL VERIFICATION]</dd>
 
             <dt>Test 4.2</dt>
                 <dd>assumes expected outcome of Test 4.1 post condition</dd>
@@ -146,8 +177,10 @@ Scenario 4 : resolution change for “built-in display” & second display
                         <dd>Reconnect monitor</dd>
                         <dd>through System Settings... -> Displays, select the second monitor & change resolution down, note it, refer to as res4</dd>
                         <dd>disconnect monitor, let it settle</dd>
-                        <dd>reconnect monitor</dd>
+                        
                         <dd>verify the screens adjusted to res 2 for “built-in” & res 4 for second monitor</dd>
+	<dt>reconnect monitor</dt>
+		<dd>[FILL VERIFICATION]</dd>
 
                     </dl>
 

@@ -2,6 +2,7 @@
 This test will check installation of xubuntu minimal with tasksel
 <dl> 
     <dt>Boot the image</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select Install and press Enter</dt>
         <dd>Select Language screen displays</dd>
     <dt>Select your language</dt>
@@ -11,7 +12,10 @@ This test will check installation of xubuntu minimal with tasksel
     <dt>Select the layout you wish to use on the keyboard and press Enter</dt>
         <dd>The default for your location and language should already be selected</dd>
     <dt>Add a hostname for the machine and press Enter</dt>
-        <dd>Choose a mirror dialogue displays</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Choose a mirror dialogue displays</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select an Ubuntu mirror</dt>
         <dd>HTTP Proxy screen displays</dd>
     <dt>Either enter proxy information and continue, or continue leaving blank</dt>
@@ -27,24 +31,27 @@ This test will check installation of xubuntu minimal with tasksel
         <dd>You should be asked if you wish to encrypt your home directory</dd>
     <dt>Select No for encrypted home directory and press Enter</dt>
         <dd>You should see confirmation of your time zone</dd>
-    <dt>Verify that the pre-selected time zone is correct or select your time zone and press Enter</dt>
+    	<dd>Verify that the pre-selected time zone is correct or select your time zone and press Enter</dd>
         <dd>You will be presented with formatting options</dd>
     <dt>Select Guided - use entire disk and press Enter</dt>
         <dd>You should see an option to select a disk to install on</dd>
     <dt>Select the disk to use and press Enter</dt>
         <dd>You should be asked to confirm the action</dd>
     <dt>Select Yes to accept the changes and press Enter</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <em>The install may seem like it has locked at a percentage but is actually working in the background. You can check and see if it is working by switching to tty4</em>
     <dt>Select to not install updates. The base installation finishes</dt>
         <dd>The Software selection screen appears</dd>
     <dt>Select Xubuntu minimal installation with the space bar and press enter </dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select Yes to install grub boot loader to master boot record and press Enter</dt>
         <dd>You should see a request to confirm date and time</dd>
     <dt>Select Yes to setting your clock to utc and press Enter</dt>
         <dd>You should be requested to remove the CD / USB key</dd>
     <dt>Remove the CD / USB key and press Enter</dt>
         <dd>This should then reboot the machine</dd>
-    <dt>Log in and check the desktop is installed</dt>
+    	<dd>Log in and check the desktop is installed</dd>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.

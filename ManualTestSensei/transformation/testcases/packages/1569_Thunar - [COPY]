@@ -15,6 +15,7 @@ This test will check that a device, when plugged in, triggers a Device entry, mo
         <dd>Main Thunar window shows expected contents and location selector shows path</dd>
     <!-- UNVERIFIED STEP -->
     <dt>Right click device in Device Pane</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select unmount from menu</dt>
         <dd>Main Thunar window reverts to /home/USER</dd>
         <dd>Device still available in Device pane</dd>
@@ -27,12 +28,16 @@ These tests will check items in the File menu
 <dl>
     <!-- PRE CONDITION AS STEP -->
     <dt>This test requires the previous test to have run</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Press Ctrl+T</dt>
         <dd>A new tab showing /home/USER opens</dd>
     <dt>Press Ctrl+N</dt>
         <dd>A new Thunar window opens showing /home/USER</dd>
     <dt>Press Shift+Ctrl+N</dt>
-        <dd>Create New Folder dialogue opens</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Create New Folder dialogue opens</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Type Test and click Create</dt>
         <dd>New folder is created and selected</dd>
     <dt>From File Menu - select Create Document</dt>
@@ -50,7 +55,10 @@ These tests will check items in the File menu
         <dd>LibreOffice Writer closes</dd>
     <dt>SelectFile -> Send to Desktop (create link)</dt>
     <dt>Select Desktop in Places pane in Thunar</dt>
-        <dd>Link to file test shows</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Link to file test shows</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select USER in Places pane</dt>
         <dd>Window shows contents of /home/USER</dd>
     <dt>Press Ctrl+W</dt>
@@ -62,8 +70,11 @@ These tests will check items in the File menu
 These Tests will check items in the Edit menu
 <dl>
     <dt>This test requires that Thunar is open at /home/USER and previous test has been run</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select the test file previously created</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Press Ctrl+X</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select Desktop from the Places sidebar</dt>
         <dd>Thunar window changes to show Desktop contents</dd>
     <dt>Press Ctrl+V</dt>
@@ -71,7 +82,9 @@ These Tests will check items in the Edit menu
     <dt>Click Replace in Confirm dialogue</dt>
         <dd>Dialogues disappear, existing symbolic link on Desktop replaced by file test</dd>
     <dt>Select test file on Desktop</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Press Ctrl+C</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select USER from places sidebar</dt>
         <dd>Thunar window shows contents of /home/USER</dd>
     <dt>Focus mouse pointer in main window and press Ctrl+V</dt>
@@ -99,6 +112,7 @@ These Tests will check items in the Edit menu
     <dt>Select file test, go to Edit -> Select Duplicate</dt>
         <dd>New file copy of test appears in window</dd>
     <dt>Select copy of test</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select Edit -> Rename and select</dt>
         <dd>Rename dialogue box appears</dd>
     <dt>Type tested in box and click Rename</dt>

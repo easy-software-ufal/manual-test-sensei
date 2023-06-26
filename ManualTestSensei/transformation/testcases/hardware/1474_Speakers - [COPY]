@@ -4,12 +4,15 @@ Ensure that the sound volume is turned to a reasonable level and that the sound 
 <dl>    
     
     <dt>On the Unity panel, select Home Folder</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Open the Examples folder. Open the Ubuntu_Free_Culture_Showcase folder</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select either of the .ogg files</dt>
         <dd>The file opens in your default media player</dd>
         <dd>Sound is played through the speakers without noises or distortions.</dd>
-    <dt>Adjust the volume with the Volume Control applet. Verify that the audio volume changes.</dt>
-    <dt>Right-click the Volume Control applet and check Mute</dt>
+    	<dd>Adjust the volume with the Volume Control applet. Verify that the audio volume changes.</dd>
+		<dd>[FILL VERIFICATION]</dd>
+    	<dd>Right-click the Volume Control applet and check Mute</dd>
         <dd>The audio mutes</dd>
     <dt>Right-click the Volume Control applet and uncheck Mute</dt> 
         <dd>The audio resumes</dd>

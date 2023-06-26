@@ -13,6 +13,7 @@ This will test the xfwm4 workspace settings
     <dt>Press "Help"</dt>
         <dd>This takes you to an online manual</dd>
     <dt>Click the "Margins" tab</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Change the size of each margin, then open a program in each workspace</dt>
         <dd>The programs don't open in the areas specified as margins</dd>
 </dl>

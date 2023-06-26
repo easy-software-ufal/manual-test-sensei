@@ -8,6 +8,7 @@ This test checks that FAMILY can take a keyboard input and put it into a text do
     <dt>Type in a paragraph that uses every character on your keyboard</dt>
         <dd>Every key makes a character appear</dd>
     <dt>Attempt to close the window, then select Save</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>In the new window type in demo1.txt, Select your Home Folder and click on Save</dt>
         <dd>The text editor closes</dd>
     <dt>Open the file manager, go to your home folder</dt>
@@ -26,14 +27,19 @@ This test checks that FAMILY can take a keyboard input and put it into a termina
     <dt>Open Terminal</dt>
         <dd>The Terminal opens</d>
     <dt>Type "nano" and press Enter</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Type in a paragraph that uses every character on your keyboard</dt>
         <dd>Every key makes a character appear</dd>
     <dt>Press Ctrl-x</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Press y</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Type in demo2.txt and press Enter</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Open the file manager, go to your home folder</dt>
         <dd>There is a file called demo2.txt
     <dt>Select demo2.txt</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Once it opens ensure that every character is displayed as expected 
         <dd>Text editor opens the file</dd>
         <dd>Every Character is still there</dd>
@@ -50,6 +56,7 @@ This test checks that ubuntu can take a keyboard input and put it into Libreoffi
     <dt>Type in a paragraph that uses every character of your keyboard</dt>
         <dd>Every key should make a character appear</dd>
     <dt>Attempt to close the window, click Save</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>In the new window type in demo3.odt select your home folder and click on Save</dt>
         <dd>The text editor should close</dd>
     <dt>Open the file manager, go to your home folder</dt>

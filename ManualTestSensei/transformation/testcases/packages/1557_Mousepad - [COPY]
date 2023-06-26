@@ -11,12 +11,19 @@ This test will check that Mousepad can save and open saved files
     <dt>Type in "The quick brown fox jumps over the lazy dog"</dt>
         <dd>Text appears in window</dd>
     <dt>Click File -> Save</dt>
-        <dd>Save As window opens</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Save As window opens</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Type "test" in Name: box</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select any folder to save file to</dt>
         <dd>Chosen file name and target folder remain as selected</dd>
     <dt>Click Save button</dt>
-        <dd>Save as dialogue closes</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Save as dialogue closes</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Close Mousepad with File -> Close Window</dt>
         <dd>Mousepad closes</dd>
     <dt>Open File Manager, navigate to saved file and double click to open in Mousepad</dt>
@@ -44,21 +51,28 @@ This test will check that Mousepad can find and replace text, including case sen
     <dt>Press Ctrl+R</dt>
         <dd>Replace dialogue opens</dd>
     <dt>Type "fox" in the Search for: box</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Type "cat" in the Replace with: box</dt>
-    <dt>Check the Replace all in: option</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    	<dd>Check the Replace all in: option</dd>
         <dd>1 occurence is found and the Replace button changes to say Replace All</dd>
     <dt>Click Replace All</dt>
         <dd>Replace dialogue does not close</dd>
         <dd>Text now reads "The quick brown cat jumps over the lazy dog"</dd>
     <dt>Type "the" in the Search for: box</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Type "a" in the Replace with: box</dt>
-    <dt>Check the Case sensitive option and click the Replace All button</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    	<dd>Check the Case sensitive option and click the Replace All button</dd>
         <dd>Replace dialogue does not close</dd>
         <dd>Text now reads "The quick brown cat jumps over a lazy dog"</dd>
     <dt>Click Close button in Replace dialogue</dt>
         <dd>Replace dialogue closes</dd>
     <dt>Close Mousepad with File -> Close Window</dt>
-        <dd>Save before closing dialogue appears</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Save before closing dialogue appears</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click Save</dt>
         <dd>Mousepad saves the changes made to the file and closes</dd>
     <dt>Find the saved file and double click to open in Mousepad</dt>

@@ -27,18 +27,23 @@ This test will check that application associations can be set and changed
     <dt>Select LibreOffice Writer</dt>
         <dd>LibreOffice Writer now appears as the "Default Application", the "Status" changes to "User Set", and the typeface of the entire row changes to bold</dd>
     <dt>Open the File Manager and navigate to the /var/log folder</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Double-click on any file with a .log extension</dt>
         <dd>The file opens with LibreOffice Writer</dd>
     <dt>Close LibreOffice Writer</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>In the MIME Type Editor, click again on the "Default Application" field of the "text/x-log" entry</dt>
         <dd>The drop-down menu appears</dd>
     <dt>Click "Reset to Default"</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click the 'Reset to Default' button on the 'Question' dialog to confirm</dt>
         <dd>"Status" changes back to "Default", "Default Application" again shows "Mousepad" and the typeface is un-bolded</dd>
     <dt>Locate the same .log file in File Manager and double-click on it</dt>
         <dd>The file opens in Mousepad</dd>
     <dt>Close Mousepad</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Close MIME Type Editor</dt>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 
 This test will check that MIME Type Editor will correctly display a file association changed with another application

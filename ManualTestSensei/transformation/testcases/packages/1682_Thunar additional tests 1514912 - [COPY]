@@ -7,10 +7,13 @@ For this test - Thunar crashes on moving/copying/renaming files.
 This test will check for issues with renaming files.
 <dl>
     <dt>Open Thunar and create folder A - the location is completely up to you</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Create a new file inside the folder - the name is completely up to you</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Rename this file a few times - has Thunar crashed? If not continue renaming this file until you see the crash</dt>
         <dd>Close and ignore the Apport window</dd>
     <dt>Restart Thunar.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt> Continue renaming your file until Thunar crashes once more</dt>
 
     Things to note in your tracker report comment box:
@@ -22,12 +25,18 @@ This test will check for issues with renaming files.
 
     <dl>
         <dt>Open Thunar and inside your previously created folder A - create a new one B</dt>
+		<dd>[FILL VERIFICATION]</dd>
         <dt>Create enough files inside folder A to allow for moving some, without leaving folder A empty</dt>
+		<dd>[FILL VERIFICATION]</dd>
         <dt>Move some of your files from A to B</dt>
+		<dd>[FILL VERIFICATION]</dd>
         <dt>Move them back to A</dt>
+		<dd>[FILL VERIFICATION]</dd>
         <dt>Continue moving files back and forth between folder A and B</dt>
+		<dd>[FILL VERIFICATION]</dd>
         <dt> When Thunar crashes, again ignore the Apport warning and restart Thunar</dt>
         <dt>Continue moving some of the files back and forth between folder A and B until Thunar crashes</dt>
+		<dd>[FILL VERIFICATION]</dd>
     </dl>
 
     This test will check for issues with moving files amongst folders - in seperate Thunar instances

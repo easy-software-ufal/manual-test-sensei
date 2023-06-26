@@ -6,6 +6,7 @@
 <dl>
     <!-- UNVERIFIED STEPS -->
     <dt>Open /tmp in File Manager</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Right-click the downloaded .deb file and select GDebi Package Installer</dt>
         <dd>vrms should open in GDebi and the "Description" tag should be active with a description of vrms</dd>
     <dt>Click the "Install Package" button</dt>
@@ -38,9 +39,10 @@
         <dd>Apt should prompt you to remove vrms, type "y" then Return, then apt should successfully remove vrms</dd>
     <!-- UNVERIFIED STEPS -->
     <dt>Change directories into /tmp</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Run the following command to install vrms: sudo -H gdebi vrms_PACKAGEVERSION_all.deb</dt>
         <dd>GDebi should prompt you to install vrms, type "y" then Return, then GDebi should successfully install vrms</dd>
-    <dt>Run the following command to check the version of GDebi: gdebi --version</dt>
+    	<dd>Run the following command to check the version of GDebi: gdebi --version</dd>
         <dd>This should output the version of GDebi</dd>
 </dl>
 <strong>

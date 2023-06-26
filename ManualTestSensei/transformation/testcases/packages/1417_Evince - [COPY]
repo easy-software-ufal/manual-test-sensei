@@ -12,11 +12,13 @@ This test will check that Evince functions normally
 <dl>
     <dt>Open a pdf by selecting file --> open then choosing a pdf file</dt>
     <dt>Make sure that Evince is not in fullscreen mode</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Press F11</dt>
         <dd>Evince enters fullscreen mode</dd>
     <dt>Press F11 again</dt>
         <dd>Evince exits fullscreen mode and restores the window size and position correctly</dd>
     <dt>Make sure sidebar is displayed</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Press F9</dt>
         <dd>Evince hides the sidebar</dd>
     <dt>Press F9</dt>

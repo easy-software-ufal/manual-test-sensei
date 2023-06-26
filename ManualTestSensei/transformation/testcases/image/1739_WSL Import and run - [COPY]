@@ -86,6 +86,7 @@ ubuntu
 	</dd>
 
 	<dt>Exit WSL. Type CTRL+D twice until you're back to the PowerShell prompt.</dt>
+		<dd>[FILL VERIFICATION]</dd>
 
 	<dt>Start a WSL	session directly with the newly created user.
 <pre>

@@ -24,12 +24,15 @@ The scope of this test is to ensure that the image boots in BIOS and that the re
     <dt>Click on the continue button</dt>
         <dd>The 'Installation type' screen is displayed</dd>
     <dt>Select any installation type and click ont he continue button</dt>
-        <dd>Write changes dialogue appears</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Write changes dialogue appears</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click continue</dt>
         <dd>If there is only one hard disk, the installer skips to the "Where are you?' screen. Otherwise, the 'Installation type' screen is displayed</dd>
-    <dt>If there is only one hard disk, skip to step 10 (On the 'Where are you?' screen...). Otherwise, on the 'Installation type' screen verify that the drive selected on the Select drive list corresponds to the drive on the chart (e.g /dev/sda)</dt>
+    	<dd>If there is only one hard disk, skip to step 10 (On the 'Where are you?' screen...). Otherwise, on the 'Installation type' screen verify that the drive selected on the Select drive list corresponds to the drive on the chart (e.g /dev/sda)</dd>
         <dd>Selected drive is displayed on the chart</dd>
-    <dt>Verify that the full drive space is allocated</dt>
+    	<dd>Verify that the full drive space is allocated</dd>
         <dd>Full drive space is allocated for installation</dd>
     <dt>Click on the Install Now button</dt>
         <dd>The 'Where are you?' screen is displayed, which should not necessarily match your timezone.</dd>

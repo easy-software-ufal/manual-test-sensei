@@ -11,7 +11,10 @@ This test will check that users can be added, password being generated - logout 
     <dt>Open Users Settings, press Add</dt>
         <dd>Authenticate dialogue opens</dd>
     <dt>Enter password and press Authenticate</dt>
-        <dd>Create New User dialogue opens</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Create New User dialogue opens</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Supply a Name and Username</dt>
         <dd>OK button becomes available</dd>
     <dt>Press OK</dt>
@@ -41,7 +44,10 @@ This test will check that Users settings can be amended
     <dt>Change password manually and supply confirmation, press OK</dt>
         <dd>Password dialogue closes</dd>
     <dt>Click Advanced Settings, supply password if required</dt>
-        <dd>Change Advanced User setting dialogue opens at Contact Information tab</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Change Advanced User setting dialogue opens at Contact Information tab</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select User Privileges tab</dt>
         <dd>Dialogue changes</dd>
     <dt>Change a privilege</dt>
@@ -64,7 +70,10 @@ This test will check that Users can be deleted
 <dl>
     <dt>Select <b>test user previously created</b></dt>
     <dt>Press Delete</dt>
-        <dd>Remove home folder for test user shows</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Remove home folder for test user shows</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select Delete Files</dt>
         <dd>Dialogue closes, test user removed from list</dd>
 </dl>

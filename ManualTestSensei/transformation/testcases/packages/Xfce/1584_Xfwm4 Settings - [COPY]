@@ -95,6 +95,7 @@ This test will check that Advanced options are applied correctly
     <dt>Select both windows snapping options</dt>
         <dd>Ticks appear from dialogue window</dd>
     <dt>Change edge resistance using slider</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Move window close to screen border</dt>
         <dd>Distance at which window snaps changes</dd>
     <dt>Move window close to another window</dt>

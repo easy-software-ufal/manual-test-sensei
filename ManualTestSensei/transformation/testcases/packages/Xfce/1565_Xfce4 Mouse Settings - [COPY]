@@ -1,6 +1,7 @@
 This tests that xfce4 mouse settings will open
 <dl>
     <dt>Navigate to the settings menu</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Open "Mouse and Touchpad"</dt>
         <dd>xfce4 mouse settings opens</dd>
 </dl>
@@ -8,9 +9,11 @@ This tests that xfce4 mouse settings will open
 This tests that Devices of xfce4 mouse settings works
 <dl>
     <dt>Click the "Devices" tab</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click the "Device:" drop down list</dt>
         <dd>A menu rolls down</dd>
     <dt>Select one of the devices</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Untick "Enable this device"</dt>
         <dd>The selected device no longer responds</dd>
     <dt>Press Enter to re-tick "Enable the device"</dt>
@@ -30,12 +33,14 @@ This tests that Devices of xfce4 mouse settings works
     <dt>Click "Reset to defaults"</dt>
         <dd>All settings in the tab reset to default</dd>
     <dt>Repeat for each device</dt>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 
 
 This tests that Behaviour of xfce4 mouse settings works
 <dl>
     <dt>Click the "Behavior" tab</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Adjust the "Threshold" bar, then drag and drop something</dt>
         <dd>The distance before something starts draging increases and decreases</dd>
     <dt>Adjust the "Time" bar, then double click something</dt>
@@ -47,12 +52,15 @@ This tests that Behaviour of xfce4 mouse settings works
 This tests that Themes of xfce4 mouse settings works
 <dl>
     <dt>Click the "Themes" tab</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click a Theme</dt>
         <dd>A preview of each cursor appears under the  heading "Preview"</dd>
     <dt>Change the "Cursor size"</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Move the cursor outside the current window</dt>
         <dd>The cursor is in the new theme and size</dd>
     <dt>Repeat for each cursor theme</dt>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 
 <em>The following test is optional, depending on hardware</em>
@@ -62,6 +70,7 @@ This tests that the touchpad settings work
 <dl>
     <dt>Click the "Devices" tab</dt>
     <dt>Click the "Touchpad" tab</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Tick "Disable touchpad while typing", type somewhere</dt>
         <dd>The touchpad disables while you type</dd>
     <dt>Untick "Disable touchpad while typing", type somewhere</dt>
@@ -81,6 +90,7 @@ This tests that the touchpad settings work
     <dt>Untick "Enable horizontal scrolling", horizonatally scroll something</dt>
         <dd>The touchpad doesn't scroll horizontally</dd>
     <dt>Repeat for each touchpad device</dt>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.

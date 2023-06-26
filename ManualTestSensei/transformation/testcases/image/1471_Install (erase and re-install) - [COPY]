@@ -51,7 +51,7 @@
         <dd>The system boots properly and loads the installer displaying Welcome dialog with language selection and 'Try FAMILY' and 'Install FAMILY' buttons</dd>
     <dt>Click on the Install FAMILY icon</dt>
         <dd>The 'Preparing to install FAMILY' screen is displayed</dd>
-    <dt>On the screen Preparing to install FAMILY, note the state of each check mark for the following components</dt>
+    	<dd>On the screen Preparing to install FAMILY, note the state of each check mark for the following components</dd>
         <dd>
             <ul>
                 <li>Your system have at least the amount a space indicated</li>
@@ -63,6 +63,7 @@
     <dt>Click on the continue button</dt>
         <dd>The 'Installation type' screen is displayed</dd>
     <dt>Select 'Erase FAMILY and Reinstall'</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>If your system is connected to the network, note the preselected timezone corresponds with your timezone and the city indicated in the text box </dt>
         <dd>The timezone and city displayed match your timezone and a city from your area</dd>
     <dt>Click on the continue button</dt>

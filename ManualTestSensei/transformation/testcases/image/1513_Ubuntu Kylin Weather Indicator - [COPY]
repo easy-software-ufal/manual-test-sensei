@@ -9,7 +9,7 @@ This test will check the Indicator China Weather can display the right weather i
         <dd>Does the application show the 6 day weather forecast?</dd>
     <dt>To show temperature beside the indicator icon, click "Configure..." menu, then Click "Show temperature beside icon" checkbox and click "OK(O)" button</dt>
         <dd>Did the app display temperature beside the icon?</dd>
-    <dt>Check the configured update time interval for the weather information</dt>
+    	<dd>Check the configured update time interval for the weather information</dd>
         <dd>Did the weather information update according to the configuration?</dd>
     <dt>Add multi-locale and change locale from one to another</dt>
         <dd>Did the information change corresponding to the change of locale?</dd>

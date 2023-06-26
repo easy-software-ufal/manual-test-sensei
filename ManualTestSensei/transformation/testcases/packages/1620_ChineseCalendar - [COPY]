@@ -2,7 +2,7 @@ Test-case name: ChineseCalendar/chi-001
 <dl>
     <!-- EXCEPTION HANDLING -->
     This test will check that Chinese Calendar can display calendar and the main window may hide.
-    <dt>Find the indicator icon of Chinese Calendar to check whether it autostart</dt>
+    	<dd>Find the indicator icon of Chinese Calendar to check whether it autostart</dd>
         <dd>Did Chinese Calendar autostart?</dd>
     <dt>Click the indicator icon of Chinese Calendar and select "Hide/Show" menu item</dt>
         <dd>Did the Chinese calendar main window display?</dd>

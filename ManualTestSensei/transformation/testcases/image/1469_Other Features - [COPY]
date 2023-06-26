@@ -23,13 +23,14 @@
         <dd>The 'Wireless' screen is displayed</dd>
     <dt>Select the 'Connect to this network' radio button and select a Wireless network to connect to from the list under it, and insert the Wireless network's password in the 'Password' field</dt>
         <dd>Your and other (if there are any) wireless networks are detected</dd>
-    <dt>Check and uncheck the 'Display password' checkbox</dt>
+    	<dd>Check and uncheck the 'Display password' checkbox</dd>
         <dd>By checking the 'Display password' checkbox the entered password can be seen and that by unchecking it the password is hidden behind asterisks</dd>
     <dt>Click on the 'Connect' button</dt>
         <dd>You should connect to the wireless network you selected</dd>
     <dt>Click on the continue button</dt>
         <dd>The 'Installation type' screen is displayed</dd>
     <dt>Select the installation type you want to carry out (any installation type will work; the type of installation is not important for this test) </dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click on the continue button </dt>
         <dd>The 'Where are you?' screen is displayed</dd>
     <dt>On the 'Where are you?' screen note the preselected timezone correspond with your timezone and the city indicated in the text box </dt>

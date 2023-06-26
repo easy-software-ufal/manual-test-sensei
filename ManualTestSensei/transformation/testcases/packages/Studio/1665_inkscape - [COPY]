@@ -11,8 +11,10 @@ This test will check if creation of blank files is possible
 This test will check if you can draw simple shaped graphics with the pen tool
 <dl> 
     <dt>Select the pen tool</dt>
-	<dd>Draw shape on canvas</dd>
+	
 	<dd>Shape is drawn correctly</dd>
+	<dt>Draw shape on canvas</dt>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 This test ill check if inkscape saves a file to .svg file format
 <dl> 

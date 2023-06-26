@@ -7,7 +7,7 @@ Test-case unity/startup
 Test-case unity/i18n
 The following test requires a non-english language to be running
 <dl>
-    <dt>Look at different text parts of the interface and check they are translated</dt>
+    	<dd>Look at different text parts of the interface and check they are translated</dd>
         <dd>Everything is properly translated</dd>
 </dl>
 

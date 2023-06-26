@@ -1,6 +1,6 @@
 This test will check that Shotwell can import images from camera
 <dl>
-    <dt>Plug in your camera using a USB cable. Your camera may need to be switched on, check the camera manual</dt>
+    	<dd>Plug in your camera using a USB cable. Your camera may need to be switched on, check the camera manual</dd>
         <dd>A window appears telling you that it has detected media that contains digital photos</dd>
     <dt>Select ‘shotwell’ in the dropdown and click ok</dt>
         <dd>Shotwell loads and display thumbnails of the photos on your camera</dd>
@@ -15,7 +15,9 @@ This test will check that Shotwell can edit images
 Ensure shotwell is still loaded and displaying your import picture. Double click the picture thumbnail
 <dl>
     
-        <dd>The image is enlarged and editing buttons exist below the image: Rotate, Crop, Red-eye, Adjust, Enhance</dd>
+        
+	<dt>The image is enlarged and editing buttons exist below the image: Rotate, Crop, Red-eye, Adjust, Enhance</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click rotate button four times</dt>
         <dd>The image turns 90 degrees after each click and return to its original orientation upon completion</dd>
     <dt>Click the Crop button</dt>

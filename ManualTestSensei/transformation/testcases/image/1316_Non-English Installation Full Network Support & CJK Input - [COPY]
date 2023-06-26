@@ -15,7 +15,7 @@ The goal of this test case is to check that localization support is functional d
                 <li>In Korean "Ubuntu 설치"</li>
             </ul>
         </dd>
-	<dt>Check if your keyboard layout is correct or alter and click Continue.</dt>
+		<dd>Check if your keyboard layout is correct or alter and click Continue.</dd>
         <dd>
             <ul>
                 <li>In Simplified Chinese "继续"</li>
@@ -53,6 +53,7 @@ The goal of this test case is to check that localization support is functional d
             </ul>
         </dd>
     <dt>Input your initial user details and password. /!\ Note admin can not be used. It is a dedicated Linux User.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Tick Log in automatically and click on Continue.</dt>
         <dd>
             <ul>
@@ -62,12 +63,17 @@ The goal of this test case is to check that localization support is functional d
                 <li>In Korean "자동으로 로그인" (Log in automatically) and "계속" (Forward)</li>
             </ul>
         </dd>
-    <dt>Check that the installer's slides are localized.</dt>
-    <dt>Once the installer has finished click the Restart now button.</dt>
+    	<dd>Check that the installer's slides are localized.</dd>
+		<dd>[FILL VERIFICATION]</dd>
+    	<dd>Once the installer has finished click the Restart now button.</dd>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Remove the disc and press Enter.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Allow the machine to reboot.</dt>
-    <dt>Verify that your system is localized. For any language, the system has to be fully localized. /!\ Note: the translation coverage of some languages might not be complete.</dt>
-    <dt>Verify that the input method works correctly.</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    	<dd>Verify that your system is localized. For any language, the system has to be fully localized. /!\ Note: the translation coverage of some languages might not be complete.</dd>
+		<dd>[FILL VERIFICATION]</dd>
+    	<dd>Verify that the input method works correctly.</dd>
         <dd>
             <ul>
                 <li>Simplified Chinese:
@@ -101,7 +107,8 @@ The goal of this test case is to check that localization support is functional d
                 </li>
             </ul>
         </dd>
-    <dt>Check that the calendar shows the regional settings correctly.</dt>
+    	<dd>Check that the calendar shows the regional settings correctly.</dd>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

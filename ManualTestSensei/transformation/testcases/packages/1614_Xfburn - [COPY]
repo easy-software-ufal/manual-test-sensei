@@ -24,8 +24,10 @@ This test will check that "New Audio Composition" Works
     <dt>Click on "Clear" button</dt>
         <dd>All files are remove</dd>
     <dt>Add again new files, press the "Add" button (+)</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <!-- UNVERIFIED STEPS -->
     <dt>Click on "Proceed to Burn"</dt>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 
 This test will check that "Data Composition" Works
@@ -37,7 +39,10 @@ This test will check that "Data Composition" Works
         <dd>If this is your first time a message appears about adding your home directory</dd>
         <dd>A new window asking for files appears</dd>
     <dt>Click on "Create Directory"</dt>
-        <dd>Give a name to the directory and add files to it as you did in the previous step</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Give a name to the directory and add files to it as you did in the previous step</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select several files</dt>
         <dd>The files are added to the project</dd>
         <dd>All information about the files is displayed: Contents, Size, Local Path</dd>
@@ -49,6 +54,7 @@ This test will check that "Data Composition" Works
         <dd>All files are remove</dd>
     <dt>Add again new files, press the "Add" button (+)</dt>
     <dt>Go to "Volume Name" and write a new name</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click on "Proceed to Burn"</dt>
 </dl>
 
@@ -67,11 +73,17 @@ This test will check that the "Edit" menu works
     <dt>Go to the top bar and click on the "Edit" menu and later on "Preferences"</dt>
         <dd>A new window named "Preferences" appears</dd>
     <dt>Click on "General"</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select a new "Temporaly Directory"</dt>
         <dd>Your new directory appears on the list</dd>
     <dt>Click on "Devices"</dt>
-        <dd>Change the size of the FIFO buffer</dd>
-        <dd>Click on "Scan for devices" if your devices are not in the list</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+        
+	<dt>Click on "Scan for devices" if your devices are not in the list</dt>
+		<dd>[FILL VERIFICATION]</dd>
+	<dt>Change the size of the FIFO buffer</dt>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 
 This test will check that the Help menu works

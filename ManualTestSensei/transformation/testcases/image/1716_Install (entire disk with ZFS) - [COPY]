@@ -4,6 +4,7 @@
     <dt>Boot up the image</dt>
         <dd>The system boots properly and loads the installer displaying Welcome dialog with language selection and 'Try FAMILY' and 'Install FAMILY' buttons</dd>
     <dt>Click on the release notes hyperlink to confirm that a browser launches and you are taken to the release notes web page.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click on the Install FAMILY button</dt>
 		<dd>The 'Keyboard Layout' screen appears</dd>
         <dd>The proposed keyboard corresponds with your keyboard</dd>
@@ -24,15 +25,15 @@
         <dd>The 'Erase disk and install FAMILY' radio button is selected and the 'Advanced features' button is active</dd>
         <dt>Click on the 'Advanced features...' button</dt>
         <dd>The 'Advanced features' dialog is displayed</dd>
-    <dt>Check 'Erase disk and use ZFS'</dt>
+    	<dd>Check 'Erase disk and use ZFS'</dd>
         <dd>'Erase disk and use ZFS'</dd>
     <dt>Click on the 'OK' button</dt>
         <dd>The dialog closes and 'Erase disk and use ZFS'</dd>
     <dt>Click on the 'Install Now' button</dt>
         <dd>The screen advances</dd>
-    <dt>If there is only one hard disk, skip to step 14 (On the 'Where are you?' screen...). Otherwise, on the 'Installation type' screen verify that the drive selected on the Select drive list corresponds to the drive on the chart (e.g /dev/sda)</dt>
+    	<dd>If there is only one hard disk, skip to step 14 (On the 'Where are you?' screen...). Otherwise, on the 'Installation type' screen verify that the drive selected on the Select drive list corresponds to the drive on the chart (e.g /dev/sda)</dd>
         <dd>Selected drive is displayed on the chart</dd>
-    <dt>Verify that the full drive space is allocated</dt>
+    	<dd>Verify that the full drive space is allocated</dd>
         <dd>Full drive space is allocated for installation</dd>
     <dt>Click on the Install Now button</dt>
         <dd>The 'Where are you?' screen is displayed</dd>

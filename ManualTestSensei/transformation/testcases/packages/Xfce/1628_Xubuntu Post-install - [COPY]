@@ -10,7 +10,9 @@ If you have other partitions...
 <dl>
     <dt>Open Thunar</dt>
         <dd>Confirm they are listed in <b>Thunar</b></dd>
-        <dd>Confirm you are able to read files from it</dd>
+        
+	<dt>Confirm you are able to read files from it</dt>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 
 If you have USB drive available

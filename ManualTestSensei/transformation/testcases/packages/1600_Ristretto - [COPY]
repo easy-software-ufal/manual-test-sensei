@@ -44,7 +44,8 @@ This test will verify that the Edit menu options work properly.
     <dt>Select Edit->Clear private data and choose "Everything" when prompted.</dt>
         <dd>Check to see that the recently used list has been cleared (File->Recently used).</dd>
     <dt>Select Edit->Preferences.</dt>
-        <dd>Ensure that the Preferences dialog box pop ups and is editable.</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
 </dl>
 
 This test will verify that the View menu options work properly.
@@ -52,6 +53,8 @@ Ensure that Ristretto is loaded and an image is displayed in the main window. To
 <dl>
     
         <dd>The toolbar toggles on or off with each selection.</dd>
+	<dt>Ensure that the Preferences dialog box pop ups and is editable.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Toggle View->Show Status Bar.</dt>
         <dd>The status bar toggles on or off with each selection.</dd>
     <dt>Toggle View->Show Thumbnail Bar.</dt>
@@ -140,11 +143,11 @@ This test case will verify that the adjustable settings in the Preferences dialo
         <dd>The image quality changes.</dd>
     <dt>Go to Edit->Preferences->Fullscreen tab, and uncheck the "Hide thumbnail bar when fullscreen checkbox. View an image fullscreen.</dt>
         <dd>The thumbnail bar is visible in fullscreen mode.</dd>
-    <dt>Go to Edit->Preferences->Fullscreen tab, and check the "Show fullscreen clock" checkbox. View an image fullscreen.</dt>
+    	<dd>Go to Edit->Preferences->Fullscreen tab, and check the "Show fullscreen clock" checkbox. View an image fullscreen.</dd>
         <dd>The fullscreen image also displays an analog clock with the current time.</dd>
     <dt>Go to Edit->Preferences->Slideshow tab, and change the "Timeout" value. View a slideshow.</dt>
         <dd>The images in the slideshow cycle based on the "Timeout" value that you just set.</dd>
-    <dt>Go to Edit->Preferences->Control tab, and check the "Invert zoom direction" checkbox. While pressing the Ctrl key, zoom in turning the mouse scroll-wheel backward and zoom out turning the mouse scroll-wheel forward.</dt>
+    	<dd>Go to Edit->Preferences->Control tab, and check the "Invert zoom direction" checkbox. While pressing the Ctrl key, zoom in turning the mouse scroll-wheel backward and zoom out turning the mouse scroll-wheel forward.</dd>
         <dd>The zoom direction is reversed.</dd>
     <dt>Go to Edit->Preferences->Behaviour tab, and uncheck the "Maximize window on startup when opening an image" checkbox. Shutdown ristretto. Right-click on an image in the File Manager and open with Ristretto.</dt>
         <dd>Ristretto opens and the window is not maximized.</dd>

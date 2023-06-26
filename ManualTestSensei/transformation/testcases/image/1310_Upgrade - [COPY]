@@ -4,10 +4,15 @@ To execute this test, a pre-existing Ubuntu (or derivative) installation is need
 <!-- Smells: UNVERIFIED STEPS, EAGER TEST, QUESTIONING EXPECTED RESULT -->
 <dl>
     <dt>Install all updates available for the release you want to upgrade by running update-manager, then click "Install now" to install the updates.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Ensure the upgrade process is looking for any new version by running 'Software & Updates' or clicking "Settings ..." in update-manager. Select the updates tab, and make sure the 'Notify me of a new Ubuntu version' option has the 'For any new version' selection</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Run update-manager -d -c from a terminal</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click the upgrade version button</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Watch it upgrade, noting any errors</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Reboot into your new system:</dt>
         <dd>
             <ul>

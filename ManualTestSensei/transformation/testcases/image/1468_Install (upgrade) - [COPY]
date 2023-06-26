@@ -18,8 +18,10 @@
             </ul>
         </dd>
     <dt>Click on the continue button</dt>
+		<dd>[FILL VERIFICATION]</dd>
         <dd>The 'Installation type' screen is displayed</dd>
     <dt>Select 'Erase disk and install FAMILY' </dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click on the Install now  button</dt>
         <dd> Then, the 'Where are you?' screen is displayed</dd>
     <dt>If your system is connected to the network, note the preselected timezone correspond with your timezone and the city indicated in the text box </dt>
@@ -44,7 +46,7 @@
         <dd>The system boots properly and loads the installer displaying Welcome dialog with language selection and 'Try FAMILY' and 'Install FAMILY' buttons</dd>
     <dt>Click on the Install FAMILY icon</dt>
         <dd>The 'Preparing to install FAMILY' screen is displayed</dd>
-    <dt>On the screen Preparing to install FAMILY, note the state of each check mark for the following components</dt>
+    	<dd>On the screen Preparing to install FAMILY, note the state of each check mark for the following components</dd>
         <dd>
             <ul>
                 <li>Your system have at least the amount a space indicated</li>
@@ -56,12 +58,14 @@
     <dt>Click on the Install now  button</dt>
         <dd>The 'Installation type' screen is displayed</dd>
     <dt>Select 'Upgrade FAMILY 'previous release' to FAMILY 'current release'</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click on the continue button</dt>
     <dt>If your system is connected to the network, note the preselected timezone corresponds with your timezone and the city indicated in the text box </dt>
         <dd>The timezone and city displayed match your timezone and a city from your area</dd>
     <dt>Click on the continue button</dt>
         <dd>The 'Keyboard Layout' screen appears</dd>
     <dt>Note the Keyboard layout and variant, and type some characters in the test area</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click on continue</dt>
         <dd>The 'Who are you?' screen appears</dd>
     <dt>Input your initial user details and password (Note admin can not be used - it is a dedicated Linux User)</dt>
@@ -80,7 +84,7 @@
         <dd>The system boots properly and loads into FAMILY</dd>
     <dt>Login as the user you created, or ensure that you are auto-logged in as the user created during setup if you checked the auto-login option</dt>
         <dd>The user's desktop is presented</dd>
-    <dt>Open the Terminal pressing CTRL+ALT+T type "lsb_release -r" without the quotes and verify that FAMILY upgraded to the latest release</dt>
+    	<dd>Open the Terminal pressing CTRL+ALT+T type "lsb_release -r" without the quotes and verify that FAMILY upgraded to the latest release</dd>
         <dd>You should verify the system upgraded correclty to the latest FAMILY release testing that the default applications installed work correclty</dd>
 </dl>
 

@@ -10,7 +10,10 @@ This test will check that Pidgin will correctly set up an IRC account
 <dl>
     <!-- EAGER STEP -->
     <dt>Open Pidgin from the menu, press Add in Accounts dialogue</dt>
-        <dd>Add Account dialogue opens</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Add Account dialogue opens</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select Protocol from Login Options</dt>
         <dd>List of available protocols shows</dd>
     <dt>Select IRC from protocols</dt>
@@ -29,7 +32,10 @@ This test will check that Pidgin will join a channel correctly
     <dt>Focus on Conversation window, select Conversation from menu</dt>
         <dd>Menu options show</dd>
     <dt>Press Join a chat</dt>
-        <dd>Join a Chat dialogue appears</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Join a Chat dialogue appears</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Type #ubuntu-quality in Channel box and press Join</dt>
         <dd>#ubuntu-quality tab appears in Conversation window</dd>
     <dt>Type "Testing pidgin" into chat box and press enter</dt>

@@ -21,16 +21,20 @@ To execute this test, a pre-existing ubuntu (or derivative) installation <strong
                 <li>Install third-party software ... option available</li>
             </ul>
         </dd>
-    <dt>Check the box 'Download updates while installing' if a network is available </dt>
+    	<dd>Check the box 'Download updates while installing' if a network is available </dd>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click on the Continue button</dt>
         <dd>'Installation type' screen is displayed</dd>
     <dt>Select the 'Upgrade FAMILY' option </dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click 'Install Now' button </dt>
         <dd>'Where are you?' screen is displayed</dd>
-    <dt>If connected, verify that your timezone is proposed correctly </dt>
+    	<dd>If connected, verify that your timezone is proposed correctly </dd>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click on the Continue button</dt>
         <dd>'Who are you?' screen is displayed</dd>
     <dt>Insert all the requested fields and choose if you want autologin or encrypted home</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click on the Continue button</dt>
         <dd>The 'Welcome to FAMILY' slide is displayed</dd>
     <dt>Wait for the installer to finish</dt>
@@ -48,7 +52,8 @@ To execute this test, a pre-existing ubuntu (or derivative) installation <strong
                 <dd>For a <em>normal to LTS</em> upgrade, terminal will show Prompt=lts</dd>
                 <dd>For a <em>LTS to normal</em> upgrade, terminal will show Prompt=normal</dd>
                 <dd>For a <em>LTS to LTS</em> upgrade, terminal will show Prompt=normal</dd>
-            <dt>Verify that your pre-upgrade files and installed applications are still present</dt>
+            	<dd>Verify that your pre-upgrade files and installed applications are still present</dd>
+		<dd>[FILL VERIFICATION]</dd>
         </dl>
 
         <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.

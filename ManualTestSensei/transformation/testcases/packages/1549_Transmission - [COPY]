@@ -37,6 +37,7 @@ This test will check that the Torrent menu Works
     <dt>Select a torrent and click on "Open Folder"</dt>
         <dd>A new window should appear and you will be in the torrent folder</dd>
     <dt>Select a torrent and stop it</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select the same torrent and click on "Start"</dt>
         <dd>The torrent starts correctly</dd>
     <dt>Click on "Pause"</dt>
@@ -47,11 +48,12 @@ This test will check that the Torrent menu Works
         <dd>No issues are encounted</dd>
     <!-- UNVERIFIED STEP -->
     <dt>Add at least three torrents</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click on "Queue" and try the options (Move to Top, Move Up, Move Down and Move to Bottom)</dt>
         <dd>No issues are encounted</dd>
     <dt>Click on "Set Location"</dt>
         <dd>A new interface appears and you can select a new folder</dd>
-    <dt>Click on "Verify Local Data"</dt>
+    	<dd>Click on "Verify Local Data"</dd>
         <dd>The torrent verifies</dd>
     <dt>Click on "Remove"</dt>
         <dd>The torrent removes correctly</dd>
@@ -93,6 +95,7 @@ This test will check that the Help menu works
     <dt>Press the "transmission Homepage" link</dt>
         <dd>Your web browser opens a valid URL</dd>
     <dt>Go back to the "About transmission" window</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Press the "Credits" button</dt>
         <dd>The interface shows credits</dd>
     <dt>Press the "License" button</dt>

@@ -30,7 +30,9 @@ This tests the main functionality of GNOME Mines
     <dt>Modify the three values to your desired sizes</dt>
         <dd>A new game starts in a grid that is the size you chose</dd>
     <dt>Click "Play Again"</dt>
-    <dt>Click a tile, if no mine appears then continue test, if mine appears, restart and attempt again</dt>       
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Click a tile, if no mine appears then continue test, if mine appears, restart and attempt again</dt>
+		<dd>[FILL VERIFICATION]</dd>       
     <dt>Click to another window</dt>
         <dd>The timer stops and the tiles are hidden by the word "Paused"</dd>
         <dd>The Pause button changes to a Resume</dd>
@@ -60,6 +62,7 @@ This tests the menu functionality of GNOME Mines
     <dt>Click Help --> Contents</dt>
         <dd>A manual opens</dd>
     <dt>Close the manual</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click Help --> About</dt>
         <dd>The game pauses</dd>
         <dd>An about pop-up appears</dd>

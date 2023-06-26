@@ -7,7 +7,10 @@ This test will check that Xfce4 Panel allows to insert plugins into the panel
     <dt>Point the mouse pointer to the 'Panel' option</dt>
         <dd>A drop-down menu appears</dd>
     <dt>Select the 'Add New Items...' option</dt>
-        <dd>Add New Items window appears</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Add New Items window appears</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select a plugin in the list and click the Add button</dt>
         <dd>The selected panel plugin appears at the end of the selected panel</dd>
     <dt>Select an item from the dialog, drag it and drop it in the panel</dt>
@@ -91,6 +94,7 @@ This test will check that Xfce4 Panel allows to change the color, background ima
 This test will check that Xfce4 Panel allows to automatically hide and show panels when the mouse hovers over them
 <dl>
     <dt>Click the Display tab</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Next to the 'Automatically hide the panel' option under the "General" section, select Always and click the 'Close' button</dt>
         <dd>Selected panel is automatically hidden</dd>
     <dt>Hover your mouse over the location of the hidden panel</dt>
@@ -98,12 +102,15 @@ This test will check that Xfce4 Panel allows to automatically hide and show pane
     <dt>Move your mouse away from the panel</dt>
         <dd>The panel automatically hides</dd>
     <dt>Open the Panel dialog again</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Next to the 'Automatically hide the panel' option, select Intelligently and click the 'Close' button</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Open any application and maximize its window</dt>
         <dd>The panel hides</dd>
     <dt>Unmaximize the application window</dt>
         <dd>The panel reappears</dd>
     <dt>Reset the panel hide option to Never</dt>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 This test will check the panel backup/restore tool
 <dl>

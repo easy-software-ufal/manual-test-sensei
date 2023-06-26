@@ -7,11 +7,17 @@ This test checks that Qjackctl can be set up.
     <dt>Click on the Setup button</dt>
         <dd>The "Setup - JACK Audio Connection Kit" window opens</dd>
     <dt>In the Settings tab, make sure the Realtime option is ticked</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select the appropriate audio driver (if you have a firewire audio device , choose firewire. Otherwise leave it set to ALSA)</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select the appropriate audio interface from interface dropdown menu</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select the appropriate Sample Rate from the dropdown menu. For example, use 44,100 Hz for CD quality, or 48,000 if recommended for the audio card being used. A higher sample rate will give lower latency, but push the CPU harder & possibly cause xruns.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select a suitable Frames/Period from interface dropdown menu. For low latency monitoring choose somewhere between 64-256. If unsure, be conservative and leave the default setting (1024)</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Choose an appropriate Periods/Buffer setting. If using a USB audio device, choose 3 for a more stable low latency setting, otherwise choose 2</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click the OK button to apply the settings</dt>
         <dd>The "Setup - JACK Audio Connection Kit" window closes</dd>
     <dt>Click the Start button</dt>
@@ -43,6 +49,7 @@ This test confirms that Jack can keep two Studio applications in syncronisation.
     <dt>In Ardour, choose Session > Properties from the menu</dt>
         <dd>The Session Properties window opens</dd>
     <dt>On the Timecode tab, ensure that the "Ardour is JACK Time Master ..." option is ticked.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click on "Internal" button on Ardour's toolbar</dt>
         <dd>The button changes to "JACK" (meaning that JACK will now follow Ardour as timemaster)</dd>
     <dt>In Hydrogen, choose Tools > Preferences from the menu.</dt>
@@ -50,6 +57,7 @@ This test confirms that Jack can keep two Studio applications in syncronisation.
     <dt>In the "Audio System" tab, choose JACK from the dropdown menu, click the OK button, and click OK again to restart Hydrogen</dt>
         <dd>Hydrogen restarts and two timemaster buttons show up on the Toolbar</dd>
     <dt>Make sure that J.TRANS (Jack Transport) is enabled</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click the "Play" icon on the Hydrogen transport</dt>
         <dd>The Hydrogen transport begins to move, and the Ardour one moves in syncronisation</dd>
     <dt>Click the "Stop" button in Ardour</dt>

@@ -6,7 +6,9 @@ Tests that FAMILY correctly recognises firewire devices.
     <dt>Right-click the drive icon and select Unmount Volume.</dt>
         <dd>The drive icon disappears</dd>
     <dt>Disconnect the Firewire external hard drive from the computer</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Repeat for each Firewire port on the computer</dt>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 
 <strong>

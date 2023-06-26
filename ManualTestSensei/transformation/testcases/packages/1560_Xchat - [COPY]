@@ -76,7 +76,10 @@ This test checks some of xchat's more advanced features
 This test checks that XChat closes properly, and will reopen with the settings previously applied
 <dl>
     <dt>Click X in top right (or left depending on Desktop Environment)</dt>
-        <dd>Quit XChat window appears</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Quit XChat window appears</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select Don't ask next time</dt>
         <dd>Tickmark appears in box</dd>
     <dt>Click Quit button</dt>

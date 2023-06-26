@@ -9,6 +9,7 @@ This will test that you can bootstrap a Juju environment using a MAAS server. In
 This will test that you can successfully deploy to MAAS nodes using Juju
 <dl>
     <dt>Bootstrap a new environment using juju pointing to a MAAS server.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Run juju deploy $someservice</dt>
         <dd>Can you use juju deploy $someservice and have it deployed in the MAAS node?</dd>
 </dl>

@@ -14,7 +14,9 @@ This test will check that basic terminal commands work in Gnome Terminal
 This test will check that terminal colors and zoom level can be changed
 <dl>
     <dt>Open the Terminal application</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click on "Edit", select "Profile Preferences", select "Colors" tab and uncheck "Use colors from system theme" checkbox</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Using the options contained in the "Colors" tab modify the "Text and Background Color" section, choosing some non-default colors or a different color scheme</dt>
         <dd>The colors in your terminal match your modifications</dd>
     <dt> Change the Zoom Level using the key combination "Ctrl++" and "Ctrl+-"</dt>
@@ -27,6 +29,7 @@ This test will check that terminal coloring is active
     <dt> Type "touch text1.txt"</dt>
     <dt> type "ls"</dt>
     <dt>Remember the color of "text1.txt"</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt> Type  "chmod 777 text1.txt"</dt>
     <dt> Type "ls"</dt>
         <dd>Has the color of "text1.txt" changed?</dd>

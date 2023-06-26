@@ -29,13 +29,13 @@
         </dd>
     <dt>Click on the continue button</dt>
         <dd>The 'Installation type' screen is displayed</dd>
-    <dt>Note the state of the 'Check Erase Disk and install FAMILY' radio button</dt>
+    	<dd>Note the state of the 'Check Erase Disk and install FAMILY' radio button</dd>
         <dd>The 'Check Erase Disk and install FAMILY' radio button is selected</dd>
     <dt>Click on the continue button</dt>
         <dd>The 'Erase Disk and install FAMILY' is displayed</dd>
-    <dt>Verify that the drive selected on the Select drive list correspond to the drive on the chart (e.g /dev/sda)</dt>
+    	<dd>Verify that the drive selected on the Select drive list correspond to the drive on the chart (e.g /dev/sda)</dd>
         <dd>Selected drive is displayed on the chart</dd>
-    <dt>Verify that the full drive space is allocated</dt>
+    	<dd>Verify that the full drive space is allocated</dd>
         <dd>Full drive space is allocated for installation</dd>
     <dt>Click on Install Now button</dt>
         <dd>The 'Where are you?' screen is displayed</dd>

@@ -7,6 +7,7 @@
         <dd>The system boots properly and loads the installer displaying the Welcome dialog with language selection and 'Try FAMILY' and 'Install FAMILY' buttons</dd>
         <dd>The system ready sound plays within 60 seconds of the installer starting</dd>
     <dt>Click on the release notes hyperlink to confirm that a browser launches and you are taken to the release notes web page.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click on the Install FAMILY button</dt>
         <dd>The 'Keyboard Layout' screen appears</dd>
         <dd>The proposed keyboard corresponds with your keyboard</dd>
@@ -26,12 +27,15 @@
     <dt>Select Erase disk and install FAMILY</dt>
         <dd>Installation screen expands to include encryption and LVM options</dd>
     <dt>Click on the continue button (if there is only one hard disk in the system, the button should read 'Install now')</dt>
-        <dd>Write changes dialogue appears</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Write changes dialogue appears</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click continue</dt>
         <dd>If there is only one hard disk, the installer skips to the "Where are you?' screen. Otherwise, the 'Installation type' screen is displayed</dd>
     <dt>If there is only one hard disk, skip to step 13 (On the 'Where are you?' screen...). Otherwise, on the 'Installation type' page, select a drive in the 'Select drive' list.</dt>
         <dd>Verify that the selected drive corresponds to the drive on the chart</dd>
-    <dt>Verify that the full drive space is allocated</dt>
+    	<dd>Verify that the full drive space is allocated</dd>
         <dd>Full drive space is allocated for installation</dd>
     <dt>Click on the Install Now button</dt>
         <dd>The 'Where are you?' screen is displayed</dd>

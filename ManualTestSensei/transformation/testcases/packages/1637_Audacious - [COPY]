@@ -43,11 +43,14 @@ This test will check that Audacious can play midi files.
     <dt>Click on AMIDI-Plug (MIDI Player) and then the "Preferences" button</dt>
         <dd>A window opens showing the AMID-Plug Settings</dd>
     <dt>On the AMIDI Plug tab, select the FluidSynth Backend</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click the "FluidSynth backend" tab, and then click the "+" button on the top right</dt>
         <dd>A window opens, asking for a file to be selected</dd>
     <!-- UNVERIFIED STEPS  -->
     <dt>Select a soundfont file and click on "Open"</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click on "OK" to close the AMIDI-Plug Settings, and then "Close" the Preferences window</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click on "File" and "Open Files"</dt>
         <dd>A window opens, asking for a file to select</dd>
     <dt>Select a midi file and click on "Open"</dt>
@@ -59,6 +62,7 @@ This test will check that Audacious can play midi files.
 This test will check that the library is working.
 <dl>
     <dt>Copy the audio file(s) to the Music folder in your home directory, e.g. /home/USER/Music</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>In the menu bar, click on "File", then on "Search Library"</dt>
         <dd>The "Search Tool" opens within Audacious</dd>
     <dt>In the "Search Tool", click on the refresh button in the lower right corner</dt>

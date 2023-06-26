@@ -23,17 +23,20 @@ availability and that nVidia proprietary drivers are installed and loaded.
                 <li>Install third-party software ... option available</li>
             </ul>
         </dd>
-    <dt>Check 'Install third-party software...'</dt>
+    	<dd>Check 'Install third-party software...'</dd>
         <dd>A checkbox 'Configure Secure Boot' with 2 password fields are displayed</dd>
-    <dt>Check the checkbox, enter a passphrase and confirm it, then click on the continue button</dt>
+    	<dd>Check the checkbox, enter a passphrase and confirm it, then click on the continue button</dd>
         <dd>The 'Installation type' screen is displayed</dd>
     <dt>Select any installation type and click on the continue button</dt>
-        <dd>Write changes dialogue appears</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Write changes dialogue appears</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click continue</dt>
         <dd>If there is only one hard disk, the installer skips to the "Where are you?' screen. Otherwise, the 'Installation type' screen is displayed</dd>
-    <dt>If there is only one hard disk, skip to step 10 (On the 'Where are you?' screen...). Otherwise, on the 'Installation type' screen verify that the drive selected on the Select drive list corresponds to the drive on the chart (e.g /dev/sda)</dt>
+    	<dd>If there is only one hard disk, skip to step 10 (On the 'Where are you?' screen...). Otherwise, on the 'Installation type' screen verify that the drive selected on the Select drive list corresponds to the drive on the chart (e.g /dev/sda)</dd>
         <dd>Selected drive is displayed on the chart</dd>
-    <dt>Verify that the full drive space is allocated</dt>
+    	<dd>Verify that the full drive space is allocated</dd>
         <dd>Full drive space is allocated for installation</dd>
     <dt>Click on the Install Now button</dt>
         <dd>The 'Where are you?' screen is displayed, which should not necessarily match your timezone.</dd>
@@ -63,7 +66,7 @@ availability and that nVidia proprietary drivers are installed and loaded.
         <dd>The system boots properly and loads into FAMILY showing username selected at the 'Who are you?' step</dd>
     <dt>Login</dt>
         <dd>The session starts</dd>
-    <dt>Open a terminal, run the following commands and verify their output (the output depends on your hardware)</dt>
+    	<dd>Open a terminal, run the following commands and verify their output (the output depends on your hardware)</dd>
         <dd><code>
 $ nvidia-smi
 Thu Apr 23 11:40:22 2020       

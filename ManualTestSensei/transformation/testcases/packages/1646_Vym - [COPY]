@@ -15,9 +15,15 @@ This test will check that vym can be used to export a mind map file
 <dl>
     <!-- EAGER STEP -->
     <dt>Goto Map > Save...,</dt>
-        <dd>Vym opens the "Save" window. Give a name to the file and press "save" button. The mind map is saved now</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Vym opens the "Save" window. Give a name to the file and press "save" button. The mind map is saved now</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Goto Map > Export > SVG... </dt>
-        <dd>Vym opens the "Export" window. Give a name to the file, extension as ".svg" and press "save" button. The mind map is exported as a SVG image now</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Vym opens the "Export" window. Give a name to the file, extension as ".svg" and press "save" button. The mind map is exported as a SVG image now</dt>
+		<dd>[FILL VERIFICATION]</dd>
 
 </dl>
 

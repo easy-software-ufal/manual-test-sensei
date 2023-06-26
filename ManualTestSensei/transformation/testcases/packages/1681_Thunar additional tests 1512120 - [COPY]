@@ -4,12 +4,15 @@ For this test - Thunar window fails to refresh correctly when renaming files.
 <!-- smells: unverified steps -->
 <dl>
     <dt>Open Thunar, create a folder in a location of your choosing</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Open a terminal at this location and run the following 2 commands in sequence</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt><code>for i in $(seq 1 10); do touch "$i.txt"; done</code></dt>
         <dd>10 files are created in your folder, named 1.txt through 10.txt</dd>
     <dt><code>while true; do for i in $(seq 1 10); do mv "$i.txt" "$i.txt.txt"; done; sleep 1; for i in $(seq 1 10); do mv "$i.txt.txt" "$i.txt"; done; sleep 1; done</code></dt>
         <dd>The files change name once every second</dd>
     <dt>Watch the files in the thunar window as they change. Do so until you have allowed thunar to run for approximately 30 cycles. Note which of the issues stated below you have observed</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>To stop the filename changes press <code>Ctrl+C</code></dt>
 </dl>
 

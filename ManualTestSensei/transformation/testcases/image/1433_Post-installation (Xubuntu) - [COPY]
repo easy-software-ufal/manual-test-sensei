@@ -12,7 +12,10 @@
     <dt>Open a text editor and write some text</dt>
         <dd>The keyboard layout is as expected</dd>
     <dt>If you set up networking and are physically connected to the Internet, open Firefox and load xubuntu.org</dt>
-        <dd>Confirm that the page loads</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Confirm that the page loads</dt>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 <strong>Panel icons</strong>
 <dl>

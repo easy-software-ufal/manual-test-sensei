@@ -14,7 +14,7 @@ This test will check that XPad can change the pad properties.
 <dl>
     <dt>Right-click on the XPad symbol in the notification area, then on "Preferences"</dt>
         <dd>A window appears, showing the XPad preferences</dd>
-    <dt>Change the properties. Check "Use this font” and click on the font name</dt>
+    	<dd>Change the properties. Check "Use this font” and click on the font name</dd>
         <dd>A window opens, showing the font properties</dd>
     <dt>Select Serif regular 11. Click on "OK"</dt>
         <dd>The font window closes</dd>

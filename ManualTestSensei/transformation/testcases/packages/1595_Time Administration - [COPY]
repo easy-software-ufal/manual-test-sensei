@@ -1,6 +1,7 @@
 This test will check that Time Administration opens and closes without error
 <dl>
     <dt>From the main menu, select Settings Manager->Time and Date, or</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>From a Terminal Emulator session, enter "time-admin"</dt>
         <dd>The 'Time and Date Settings' dialog opens</dd>
     <dt>Click the 'Close' button</dt>
@@ -10,6 +11,7 @@ This test will check that Time Administration opens and closes without error
 This test will check that the time zone can be changed
 <dl>
     <dt>Open 'Time and Date' again</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click the 'Unlock' button</dt>
         <dd>The Authenticate dialog opens and prompts for the administrative password</dd>
     <dt>Enter your password and click the 'Authenticate' button</dt>
@@ -28,15 +30,18 @@ This test will check that the time zone can be changed
         <dd>The time displayed on the panel clock is also updated but this could take up to a minute</dd>
 
     <dt>Click on 'Time zone:' again and change it back to the correct zone.</dt>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 
 This test will check that the time can be set manually
 <dl>
     <!-- PRE CONDITION AS STEP -->
-    <dt>In the 'Time and Date Settings' dialog confirm that 'Configuration:' is set to 'Manual'</dt>
+    	<dd>In the 'Time and Date Settings' dialog confirm that 'Configuration:' is set to 'Manual'</dd>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Move the clock ahead by 10 minutes by clicking the '+' button or directly entering a number in the minutes field</dt>
         <dd>After some delay, the clock on the panel displays the new, incorrect time</dd>
     <dt>Leave the time set 10 minutes fast for the next test</dt>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 
 This test will check that time can be synchronized with Internet servers
@@ -61,8 +66,11 @@ This test will check that the Help file opens and is current
     <dt>Click the 'Help' button</dt>
         <dd>The Time Administration help file opens</dd>
     <dt>Scroll through the file to make sure the screens and settings match the installed version</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Close the Help file</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Close Time and Date Settings</dt>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.

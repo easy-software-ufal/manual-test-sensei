@@ -4,6 +4,7 @@
     <dt>Boot the pc using the installation media (hold down <strong>c</strong> on Macs to boot from a cd).</dt>
         <dd>The installer loads</dd>
     <dt>Select your language and press Enter</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select your country and press Enter</dt>
         <dd>The detect keyboard layout screen appears</dd>
     <dt>If you know your layout choose <strong>No</strong> and select it from the list, otherwise choose <strong>yes</strong> and follow the prompts to detect the layout.</dt>
@@ -11,24 +12,31 @@
     <dt>Type a hostname then press enter</dt>
         <dd>The select server window appears</dd>
     <dt>Either enter the server info manually or select the recommended server and press enter</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Choose a mirror to use and press enter</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>If you have a http proxy type its details now, otherwise just press enter.</dt>
         <dd>The installer starts loading additional components.</dd>
     <dt>Type your full name (using capitals) then press Enter.</dt>
         <dd>The select username page loads with a capital-less version of your first name.</dd>
     <dt>Choose a username the press enter.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Type then confirm your password</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Choose to not encrypt the home directory.</dt>
         <dd>The installer detects your timezone correctly.</dd>
     <dt>Press Enter to confirm your timezone</dt>
         <dd>The <strong>partition disks</strong> page loads</dd>
     <dt>Select "Guided - use entire disk"</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select the disk you would like to use</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Agree to the changes to be made.</dt>
         <dd>The installation begins (this might take a long time on the older hardware)</dd>
     <dt>Select to not install updates</dt>
         <dd>The installer prompts "Is the system clock set to UTC?"</dd>
     <dt>Select yes or no, depending on your setup (select no if your clock is set to localtime)</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select continue.</dt>
         <dd>The system restarts</dd>
     <dt>Remove the installation media</dt>

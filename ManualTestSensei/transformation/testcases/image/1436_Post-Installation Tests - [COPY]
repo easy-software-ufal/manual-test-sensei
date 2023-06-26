@@ -2,6 +2,7 @@
     <dt>Login as the user you created, or ensure that you are auto-logged in as the user created during setup if you checked the auto-login option</dt>
         <dd>The new user's desktop is presented</dd>
     <dt>Execute the following commands on the command line:</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt><pre>lsb_release -rd</pre></dt>
         <dd>Both the description and the release presented matches the version of FAMILY you installed</dd>
     <dt><pre>arch</pre></dt>
@@ -10,7 +11,7 @@
         <dd>The partition scheme displayed matches the partition scheme you chose during installation</dd>
     <dt><pre>sudo apt-get update</pre></dt>
         <dd>Apt hits each of the package mirrors and updates all of them without error</dd>
-    <dt>Launch 'software-updater' (precise and earlier version are called update-manager) and install any updates presented</dt>
+    	<dd>Launch 'software-updater' (precise and earlier version are called update-manager) and install any updates presented</dd>
         <dd>The updates are downloaded and installed without error</dd>
     <dt>Launch 'firefox' and navigate to http://www.ubuntu.com</dt>
         <dd>The ubuntu homepage is loaded and displays properly</dd>

@@ -3,7 +3,10 @@ This test will check that Gnumeric will open, create a new file and close withou
     <dt>Open Gnumeric from your Menu</dt>
         <dd>Gnumeric opens</dd>
     <dt>Press Ctrl+S</dt>
-        <dd>Save the current workbook dialogue opens</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Save the current workbook dialogue opens</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>File name set to Book1, Set Destination to Desktop, press Save</dt>
         <dd>Gnumeric window name changes to Book1.Gnumeric</dd>
         <dd>Book1.Gnumeric shows on Desktop</dd>
@@ -23,7 +26,10 @@ This test will check that Gnumeric accepts input and Save As
     <dt>Enter some data in cells</dt>
         <dd>Data entered appears in cells as typed</dd>
     <dt>Press Shift+Ctrl+S</dt>
-        <dd>Save as dialogue appears, original file name and path highlighted</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Save as dialogue appears, original file name and path highlighted</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Change filename to Book2, press Save</dt>
         <dd>Gnumeric window name changes to Book2.Gnumeric</dd>
         <dd>Book2.Gnumeric shows on Desktop</dd>

@@ -12,7 +12,9 @@ The testcase tests the installation and basic functionality of a Frontend. You w
             </ul>
         </dd>
     <dt>Once installation is finished, remove the installation media and reboot.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Once the machine boots up, it should boot into the frontend.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select "Watch TV". (this will only work if you have a backend already in the network)</dt>
         <dd>The demo video should start playing.</dd>
 </dl>

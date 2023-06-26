@@ -1,7 +1,9 @@
 Test-case music-lens/open-lens
 <dl>
     <dt>Tap super to show the dash</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click on the music lens icon</dt>
+		<dd>[FILL VERIFICATION]</dd>
         <dd>the search entry should show "search music" and you should have two categories, filled with the indexed music
             <ul>
                 <li>tracks</li>
@@ -17,6 +19,7 @@ Test-case music-lens/search-lens
     <dt>Make a search</dt>
         <dd>it should impact the result on each category. A search for a popular group like "u2" should show some online result in an additional category</dd>
     <dt>Open the filter by clicking on "Filter Results"</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Change the filters for each of filter type</dt>
         <dd>It should change the results, at least on one category</dd>
 </dl>
@@ -40,8 +43,11 @@ Test-case music-lens/preview-music
 Test-case music-lens/purchase-album
 <dl>
     <dt>Sign in with Ubuntu One on your desktop.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>On the folders tab of the Ubuntu One Control Panel, sync locally the Purchased Music.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Sign in to https://pay.ubuntu.com/, click the link with your user name and enable automatic payments. (This requires that you have completed a payment before)</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click the Dash icon.</dt>
         <dd>The Dash will appear showing the home lens.</dd>
     <dt>Click the Music lens icon in the bottom of the dash.</dt>
@@ -53,7 +59,9 @@ Test-case music-lens/purchase-album
     <dt>Click the Download button.</dt>
         <dd>The Ubuntu One payment confirmation will appear in the Dash. It will show your Ubuntu One email address and your preferred payment method.</dd>
     <dt>Enter your Ubuntu One password.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>(You will be charged for this album. If you were not planning to actually buy the album, don't continue with the test)</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click the Purchase button. </dt>
         <dd>A notification will appear: Authorizing Purchase.</dd>
         <dd>The dash will show: Performing purchase.</dd>
@@ -65,7 +73,9 @@ Test-case music-lens/purchase-album
 Test-case music-lens/download-without-credentials
 <dl>
     <dt>Go to https://one.ubuntu.com/ and sign in.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>If you have signed in with Ubuntu One on your desktop, go to the Devices tab of your Ubuntu One Control Panel and Remove the device.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click the Dash icon.</dt>
         <dd>The Dash will appear showing the home lens.</dd>
     <dt>Click the Music lens icon in the bottom of the dash.</dt>
@@ -77,9 +87,13 @@ Test-case music-lens/download-without-credentials
     <dt>Click the Download button.</dt>
         <dd>The dash will show the following error message: It seems you don't have an Ubuntu One account, or you are not logged in. To continue, please login and visit the Ubuntu One online store.</dd>
     <dt>Click the Continue link.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>The browser will be opened and you will be taken to the Ubuntu single sign on page.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Enter your Email adress.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Enter your Password.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click the Log in button.</dt>
         <dd>The browser will show the page for the album you clicked on the Music Store of the Ubuntu One website.</dd>
 </dl>
@@ -88,6 +102,7 @@ Test-case music-lens/download-without-automatic-payments
 <dl>
     <dt>Sign in with Ubuntu One on your desktop.</dt>
     <dt>If you have automatic payments enabled, sign in to https://pay.ubuntu.com/, click the link with your user name and disable automatic payments.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click the Dash icon.</dt>
         <dd>The Dash will appear showing the home lens.</dd>
     <dt>Click the Music lens icon in the bottom of the dash.</dt>

@@ -11,6 +11,7 @@ This tests that Parole can open many different files.
         <dd>File plays</dd>
         <dd>If a required codec is missing, an installation prompt appears and installs the missing codec.  Afterwards, media playback begins</dd>
     <dt>Press Ctrl+L to play file from a location</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Copy <em>https://download.blender.org/durian/trailer/sintel_trailer-480p.ogv</em> into dialogue, press Open</dt>
         <dd>File plays</dd>
 </dl>

@@ -1,9 +1,10 @@
 This test will enable the menu bar
 <dl>
     <dt>Do you use an Ubuntu flavour (Kubuntu, Xubuntu, Lubuntu)? If no, skip this test. The unity desktop provides the menu in its top panel by hovering over it</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Right click next to your opened tabs</dt>
         <dd>A context menu appears</dd>
-    <dt>If there is no check mark next to "menu bar", click on "menu bar"</dt>
+    	<dd>If there is no check mark next to "menu bar", click on "menu bar"</dd>
         <dd>The menu bar appears</dd>
 </dl>
 

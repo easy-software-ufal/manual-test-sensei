@@ -61,7 +61,9 @@ This test will check that Audio project menu Works
     <dt>Select one file and click "Split the select track" (the razor icon)</dt>
         <dd>A new window should appear called "Split Track"</dd>
     <dt>Select the method called "Split track for each silence"</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click "Slice" to split the file</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>If the track has no silences</dt>
         <dd>A new window appears showing "The track wasn't split" "No silence could be detected"</dd>
     <dt>If the track has silences</dt>
@@ -73,6 +75,7 @@ This test will check that Audio project menu Works
     <dt>Select one file, and click the pause icon which stand for "Add a 2 second pause after the track"</dt>
         <dd>A new entry appears called "Pause" below the track selected, is this track 2 seconds length?</dd>
     <dt>Right click on the new entry and select "Remove"</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <!-- UNVERIFIED STEPS -->
     <dt>Once you have added files, select one of those and click on "Add a 2 second pause after the track"</dt>
         <dd>A new entry must appear called "Pause" below our track selected, has this track 2seconds of Length?</dd>
@@ -120,6 +123,7 @@ Test-case name: brasero/bra-003
 This test will check that the Video project menu works
 <dl>
     <dt>Open the Brasero Disc Burner</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click "Video project"</dt>
         <dd>A "New Video Disc Project" window is shown</dd>
     <dt>Press the "Add" button (+)</dt>
@@ -150,7 +154,9 @@ This test will check that the Copy disc feature works
         <dd>All burners are displayed</dd>
         <dd>If you don't have a CD/DVD writer, the window shows an option to create an image (iso/toc/cue)</dd>
     <dt>Click on "Burn" or "Create Image"</dt>
-    <dt>Is the process completed successfully?</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    	<dd>Is the process completed successfully?</dd>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 
 
@@ -170,6 +176,7 @@ This test will check that Burn image feature works
         <!-- CONDITIONAL TEST -->
         <dd>If you don't have a disc, the "write to" section will be gray out</dd>
     <dt>Click the "Burn" or "Create Image" button</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Is the process completed successfully?</dt>
 </dl>
 
@@ -212,6 +219,7 @@ This test will check that the Help menu works
     <dt>Press the "Brasero Homepage" link</dt>
         <dd>Firefox open a valid url?</dd>
     <dt>Go back to the "About Brasero" window</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Press the "Credits" button</dt>
         <dd>The interface shows credits?</dd>
     <dt>Press the "License" button</dt>
@@ -237,14 +245,17 @@ This test will check that the Tools menu work
     <dt>Go to the top bar and click the "Tools" menu and later click "Blank..."</dt>
         <dd>A new interface appears called "Disc Blanking"</dd>
     <dt>Select a disk</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click on "Fast blanking" and later "Blank"</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Is the process completed successfully?</dt>
-    <dt>Go to the top bar and click the "Tools" menu and later "Check Integrity..."</dt>
+    	<dd>Go to the top bar and click the "Tools" menu and later "Check Integrity..."</dd>
         <dd>A new interface appears called "Disc Checking"</dd>
     <dt>Select a disk</dt>
-    <dt>You can use an MD5 file if you want, select "Use an MD5 file to check the disc"</dt>
+    	<dd>You can use an MD5 file if you want, select "Use an MD5 file to check the disc"</dd>
         <dd>Could you select the file correctly?</dd>
-    <dt>Click the "Check" button</dt>
+    	<dd>Click the "Check" button</dd>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Is the process completed successfully?</dt>
 </dl>
 

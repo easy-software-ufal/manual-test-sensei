@@ -3,6 +3,7 @@ Test-case more_suggestions-amazon
     <dt>Press super to open the dash home</dt>
         <dd>The dash should appear, with a "Search" text in the entry field and different icons for each lenses at the bottom</dd>
     <dt>Enter on the search field something you will expect to find on Amazon, for example: Kindle</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click the arrow next to the search field</dt>
         <dd>The dash will show the Categories filter</dd>
     <dt>Click the More suggestions category</dt>
@@ -19,6 +20,7 @@ Test-case info-weather
     <dt>Press super to open the dash home</dt>
         <dd>The dash should appear, with a "Search" text in the entry field and different icons for each lenses at the bottom</dd>
     <dt>Enter on the search field something you will expect to find on http://www.worldweatheronline.com, for example: Desamparados, San Jose</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click the arrow next to the search field</dt>
         <dd>The dash will show the Categories filter</dd>
     <dt>Click the Info category.</dt>
@@ -34,6 +36,7 @@ Test-case reference-dictionary
     <dt>Press super to open the dash home</dt>
         <dd>The dash should appear, with a "Search" text in the entry field and different icons for each lenses at the bottom</dd>
     <dt>Enter on the search field something you will expect to find on http://www.wordnik.com/, for example: test.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click the arrow next to the search field</dt>
         <dd>The dash will show the Categories filter</dd>
     <dt>Click the Reference category.</dt>

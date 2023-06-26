@@ -290,9 +290,15 @@ This test will check that you deploy a node for MAAS
     <dt> Select hostname ubuntu as default</dt>
         <dd>A menu asking for listing or creating a new MAAS server is displayed</dd>
     <dt> Select "Specify MAAS by name or address "</dt>
-        <dd>Enter the ip address of the configured MAAS server</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Enter the ip address of the configured MAAS server</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt> Specify hostname box appears</dt>
-        <dd>Leave blank or enter a name</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Leave blank or enter a name</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt> The pc should shut down</dt>
     <dt> Note, if you used virtualbox, please ensure 'network' boot is enabled and is set as the top. For a physical machine, please ensure pxe boot is enabled</dt>
         <dd>The node should be deployed and eventually shown on the http://IP/MAAS screen. The total nodes in the system should now read 1</dd>

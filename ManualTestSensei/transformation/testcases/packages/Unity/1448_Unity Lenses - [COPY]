@@ -1,7 +1,9 @@
 Test-case dash/application-lens
 <dl>
     <dt>Tap super to show the dash</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click on the application lens icon</dt>
+		<dd>[FILL VERIFICATION]</dd>
         <dd>The search entry should show "search applications" and you should have three categories:
             <ul>
                 <li> - recently used apps </li>
@@ -18,6 +20,7 @@ Test-case dash/application-lens-search
     <dt>Make a search</dt>
         <dd>Results should appear in each category</dd>
     <dt>Open the filter by clicking on "Filter Results"</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Change the filters for each filter type</dt>
         <dd>Search results should change, at least on one category</dd>
 </dl>
@@ -26,6 +29,7 @@ Test-case dash/file-lens
 <dl>
     <dt>Tap super to show the dash</dt>
     <dt>Click on the file lens icon</dt>
+		<dd>[FILL VERIFICATION]</dd>
         <dd>The search entry should show "search files" and you should have three categories:
             <ul>
                 <li> - recent (if you opened at least one file on your computer) </li>
@@ -63,6 +67,7 @@ Test-case dash/lens-preview-video
 <dl>
     <dt>Tap super to show the dash</dt>
     <dt>Click on the videos lens icon</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Right click on a file</dt>
         <dd>A lens preview should appear showing a preview of the file (the file icon), with right and left buttons to scroll between previews, and some details on the filename and the time and date information. Further several buttons;  open, and show in folder should exist below the preview</dd>
     <dt>Click the open/play button</dt>
@@ -80,6 +85,7 @@ Test-case dash/lens-preview-application
         <dd>A password prompt displays (if password is not cached) and the program is uninstalled </dd>
     <dt>Tap super to show the dash</dt>
     <dt>Open the applications lens</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Search for the application you uninstalled and right click on it</dt>
         <dd>A lens preview should appear showing a preview of the application (potentially a screenshot), with right and left buttons to scroll between previews, and some details on the application, including the review from the software center. Further two buttons; developer site and a download button should exist below the preview</dd>
     <dt>Click the download button</dt>

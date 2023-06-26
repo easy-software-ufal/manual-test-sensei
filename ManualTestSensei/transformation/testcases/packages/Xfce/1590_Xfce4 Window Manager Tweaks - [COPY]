@@ -1,6 +1,7 @@
 This test will check that Window Manager Tweaks opens and close correctly
 <dl>
     <dt>Open Window Manager Tweaks from Settings menu</dt>
+		<dd>[FILL VERIFICATION]</dd>
         <dd>Dialogue opens</dd>
     <dt>Press Close</dt>
         <dd>Dialogue closes</dd>
@@ -10,8 +11,11 @@ This test will check options in Cycling tab
 <dl>
     <dt>Open Window Manager Tweaks from Settings menu</dt>
     <dt>Open any application and minimise it</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Change to another workspace, open another application</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Change back to previous workspace</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Press Alt+Tab repeatedly</dt>
         <dd>Applications available are cycled through</dd>
     <dt>Focus on Window Manager Tweaks and select Cycle through windows on all workspaces</dt>

@@ -146,6 +146,7 @@ This test will check that Software Sources works
     <dt>Open the Ubuntu Software Center</dt>
         <dd>The Ubuntu Software Center is launched</dd>
     <dt>Go to the top bar and click on "Edit" and later on "software Sources.."</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>A new window appears "Software & Updates", here we are going to get a new server doing Click on "Download from" and choosing "Main Server"</dt>
         <dd>A new window appears asking for authentication credentials</dd>
     <dt>Authenticate with your credentials</dt>
@@ -173,7 +174,10 @@ This test will check that Menu Help Works
     <dt>Press "F1" to get help directly</dt>
         <dd>A new window should appear</dd>
     <dt>Navigate through help topics</dt>
-        <dd>Help topics show information</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Help topics show information</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Go to the top bar and click on "Help" and later on "Ubuntu Software Center Help"</dt>
         <dd>The same window of the previous step shows</dd>
     <dt>Go to the top bar and click on "Help" and later on "For Software Developers"</dt>

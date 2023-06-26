@@ -4,26 +4,39 @@ Scope of this test is to verify that a system installed on a degraded raid still
 
 <dl>
     <dt>Boot up the image in UEFI mode in a system or VM with at least two disks attached.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Choose the desired language</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>On the network configuration screen, just select Done (it should be selected by default)</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>On the filesystem setup screen, select "Manual"</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>
         Create a partition on two drives. For each drive:
         <dl>
             <dt>If it already has partitions, select "Reformat" from the menu</dt>
+		<dd>[FILL VERIFICATION]</dd>
             <dt>Select "Add partition" from the menu</dt>
+		<dd>[FILL VERIFICATION]</dd>
             <dt>Leave size blank and select "Leave unformatted" for the format</dt>
+		<dd>[FILL VERIFICATION]</dd>
             <dt>Click Done</dt>
+		<dd>[FILL VERIFICATION]</dd>
        </dl>
     </dt>
     <dt>
 	Create the RAID device and mount it as /:
         <dl>
             <dt>Select the "Create software RAID (md)" button</dt>
+		<dd>[FILL VERIFICATION]</dd>
             <dt>Select the two partitions you created to be part of the RAID (they should be the only available options, unless the machine has more than two disks)</dt>
+		<dd>[FILL VERIFICATION]</dd>
             <dt>Select create</dt>
+		<dd>[FILL VERIFICATION]</dd>
 	    <dt>Select the md0 device and choose "Format" from the menu</dt>
+		<dd>[FILL VERIFICATION]</dd>
             <dt>The default should be to format as ext4 and mount at /. Select Done</dt>
+		<dd>[FILL VERIFICATION]</dd>
         </dl>
     </dt>
     <dt>The Done button should now be enabled. Select it</dt>

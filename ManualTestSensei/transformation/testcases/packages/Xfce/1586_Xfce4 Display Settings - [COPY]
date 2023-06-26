@@ -10,7 +10,9 @@ This test will check that Display settings are applied correctly
 <dl>
     <dt>From Resolution drop down, choose a different monitor resolution</dt>
         <dd>Monitor refreshes with new resolution</dd>
-        <dd>Keep resolution dialogue appears</dd>
+        
+	<dt>Keep resolution dialogue appears</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select Keep this resolution</dt>
         <dd>Dialogue disappears</dd>
         <dd>Resolution remains as set</dd>

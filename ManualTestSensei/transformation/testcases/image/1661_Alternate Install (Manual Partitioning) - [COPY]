@@ -19,31 +19,37 @@
         <dd>You should be asked if you wish to encrypt your home directory</dd>
     <dt>Select No to encrypting your home directory and press Enter</dt>
         <dd>You should see confirmation of your time zone</dd>
-    <dt>Verify that the pre-selected time zone is correct or select your time zone and press Enter</dt>
+    	<dd>Verify that the pre-selected time zone is correct or select your time zone and press Enter</dd>
         <dd>You will be presented with formatting options</dd>
     <dt>Select Manual and press Enter</dt>
         <dd>You should see an option to select a disk to install on</dd>
     <dt>Select the disk to use and press Enter</dt>
         <dd>You should be asked to create a new partition table</dd>
     <dt>Select Yes to create the new partition table</dt>
-        <dd>Select the partition and set up the scheme you prefer and the additional options you may want</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Select the partition and set up the scheme you prefer and the additional options you may want</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Once you have your required partitioning scheme laid out, select Finish partitioning and write changes to disk</dt>
        <dd>You should see a request to confirm writing the changes to disk</dd>
     <dt>Select Yes to accept the changes and press Enter</dt>
         <dd>You should see a request for http proxy information</dd>
     <dt>Input http proxy info or press Enter</dt>
-        <dd>Wait for a while - The install may seem like it has locked at a percentage but is actually working in the background. You can check and see if it is working by switching to tty4 (alt + f4).</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Wait for a while - The install may seem like it has locked at a percentage but is actually working in the background. You can check and see if it is working by switching to tty4 (alt + f4).</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select Yes to install grub boot loader to master boot record and press Enter</dt>
         <dd>You should see a request to confirm date and time</dd>
     <dt>Select Yes to setting your clock to UTC and press Enter</dt>
         <dd>You should be requested to remove the CD / USB key</dd>
     <dt>Remove the CD / USB key and press Enter</dt>
         <dd>This should then reboot the machine</dd>
-    <dt>Log in and check the desktop is installed</dt>
+    	<dd>Log in and check the desktop is installed</dd>
         <dd>You should be able to log in and the desktop should be displayed</dd>
     <dt>Ask the machine to reboot</dt>
         <dd>Machine should reboot</dd>
-    <dt>Login and check the system installed correctly</dt>
+    	<dd>Login and check the system installed correctly</dd>
         <dd>Menus should be displayed</dd>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.

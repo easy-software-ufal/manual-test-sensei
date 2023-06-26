@@ -2,7 +2,6 @@ import shutil, os
 import pandas as pd
 from pathlib import Path, PureWindowsPath
 import logging
-log = logging.getLogger(__name__)
 #from transformation import SMELL_NAMES
 
 SMELL_NAMES = ['Conditional Test Logic', 'Eager Action', 'Misplaced Action',
@@ -22,8 +21,15 @@ def create_copy(df:pd.DataFrame, filteredDataFrame):
     copied_paths = {}
     for file in path_files:
         path = Path(file)
-        os.makedirs(os.path.dirname(file[3:]), exist_ok=True)
-        new_file_path = shutil.copy(Path('../',file), file[3:] + ' - [COPY]')
+        if __name__ == 'main': #rodando dentro da pasta transforamtion
+            breakpoint()
+            os.makedirs(os.path.dirname(file[3:]), exist_ok=True)
+            new_file_path = shutil.copy(Path('../',file), file[3:] + ' - [COPY]')
+        else:
+            os.makedirs(os.path.dirname(Path('transformation\\',file[3:])), exist_ok=True)
+            # breakpoint()
+            new_file_path = shutil.copy(src=Path('.',file), dst=(Path('.\\transformation\\',file[3:] + ' - [COPY]')))
+
         copied_paths[file] = Path(new_file_path)
 
     return update_df_with_copy_location(df, copied_paths)
@@ -41,13 +47,19 @@ def get_filtered_df_by_smell_name(df, smellName):
 
 def get_csv_path():
     '''Searches for .csv files and returns the first one that has 'results' on the name.'''
-    csvs = sorted(Path('../').glob('*.csv'))
-    csvs = [s for s, s in enumerate(csvs) if 'results' in str(s)]
-    file = str(csvs[0].resolve())
+    try:
+        csvs = sorted(Path('../').glob('*.csv'))
+        csvs = [s for s, s in enumerate(csvs) if 'results' in str(s)]
+        file = str(csvs[0].resolve())
+    except IndexError:
+        csvs = sorted(Path('.').glob('*.csv'))
+        csvs = [s for s, s in enumerate(csvs) if 'results' in str(s)]
+        file = str(csvs[0].resolve())
     return file
 
 
 def data_closure() -> pd.DataFrame:
+    log = logging.getLogger(__name__)
     def create_copy_from_smell_name(df, smell_name) -> pd.DataFrame:
         filtered_df = get_filtered_df_by_smell_name(df, smell_name)
         df = create_copy(df, filtered_df)
@@ -58,25 +70,25 @@ def data_closure() -> pd.DataFrame:
         index_to_drop = df.loc[~df['Sentence'].apply(lambda x: isinstance(x, str))].index
         return df.drop(index_to_drop)
 
-    log.debug('Searching CSV')
+    log.info('Searching CSV')
     file = get_csv_path()
     df = pd.read_csv(file)
-    log.debug('CSV found')
+    log.info(f'CSV found: {file}')
     for smell_name in SMELL_NAMES:
         df = create_copy_from_smell_name(df, smell_name)
     df = remove_duplicates(df)
     df = remove_NaN_values(df)
+    log.info('CSV Data loaded.')
     return df
 
 
-# if __name__ == '__main__':
-#     file = get_csv_path()
-#     df = pd.read_csv(file)
-#     log.info('CSV found')
-#     mprecondition = get_filtered_df_by_smell_name(df,'Misplaced Precondition')
+if __name__ == '__main__':
+    file = get_csv_path()
+    df = pd.read_csv(file)
+    mprecondition = get_filtered_df_by_smell_name(df,'Misplaced Precondition')
 
-#     create_copy(df, mprecondition)
-#     # breakpoint()
-#     # for i in mprecondition.iterrows():
-#     #     print(i)
-#     breakpoint()
+    create_copy(df, mprecondition)
+    # breakpoint()
+    # for i in mprecondition.iterrows():
+    #     print(i)
+    breakpoint()

@@ -56,13 +56,17 @@ Test-case multimonitor/launch-application-per-monitor
     <dt>Press Super + number to start an application</dt>
         <dd>The application should be opened on the monitor where your cursor is</dd>
     <dt>Repeat the same with the cursor on the other monitor</dt>
-        <dd>Ensure the application is always opened on the monitor where your cursor is</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Ensure the application is always opened on the monitor where your cursor is</dt>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 Test-case multimonitor/sticky-edge
 In the Diplays settings, ensure that Sticky edges are enabled
 <dl>
     
     <dt>Move your mouse cursor to the right edge of the leftmost monitor adjacent to your enabled second screen</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Try moving your cursor over to the screen to the right</dt>
         <dd>There should be a feeling of resistance when trying to push on the edge of the screen</dd>
         <dd>After applying some force, the cursor should move over to the desired screen</dd>
@@ -70,6 +74,7 @@ In the Diplays settings, ensure that Sticky edges are enabled
 Test-case multimonitor/sticky-edge-hold
 <dl>
     <dt>In the Diplays settings, ensure that Sticky edges are enabled</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Move your mouse cursor to the right edge of the leftmost monitor adjacent to your enabled second screen</dt>
     <dt>Try pushing the mouse cursor very slowly onto the edge</dt>
         <dd>You should feel the mouse cursor resisting on the edge</dd>

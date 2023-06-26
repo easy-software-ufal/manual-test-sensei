@@ -29,7 +29,10 @@ This test will check that Orage's Edit menu options work as expected and Orage's
     <dt>Navigate to Edit -> Preferences</dt>
         <dd>Preferences dialogue window opens with the "Main settings" tab selected</dd>
     <dt>Click the "Timezone" button</dt>
-        <dd>Pick timezone dialogue window opens</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Pick timezone dialogue window opens</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select a timezone and click the "OK" button</dt>
         <dd>The default timezone for Orage is set accordingly to the choice made</dd>
     <dt>Increase the value of months under the "Archive threshold" option</dt>

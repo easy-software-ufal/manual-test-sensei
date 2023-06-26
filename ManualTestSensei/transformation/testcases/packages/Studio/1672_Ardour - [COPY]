@@ -31,6 +31,7 @@ This test confirms that Ardour can record audio from an audio input (e.g. a micr
     <dt>Select "Add Track/Bus" from the "Session" menu</dt>
         <dd>The "Add Track or Bus" window opens</dd>
     <dt>Ensure that the options are set to add one audio track, either "mono" or "stereo" depending on your audio source, and the Recording Mode is "Normal".</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click the "Add" button</dt>
         <dd>The "Add Track or Bus" window closes and the the Audio track appears in the editor window</dd>
     <dt>Click on the red dot on the "Audio" track to arm it for recording</dt>
@@ -44,6 +45,7 @@ This test confirms that Ardour can record audio from an audio input (e.g. a micr
     <dt>Choose Routing Grid from the menu</dt>
         <dd>The Audio input routing grid opens</dd>
     <dt>Ensure that the correct audio source is connected to the system capture input</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click the "X" on the routing grid to close the window</dt>
         <dd>The Routing Grid closes</dd>
     <dt>Make some noise/music on the audio input</dt>

@@ -8,7 +8,10 @@ This text should be a short description of the test.
     <dt>Example Action: Click on "File" and "Open Files"</dt>
         <dd>Example Result: A window opens, asking for a file to select</dd>
     <dt>Keep adding actions in "dt" fields</dt>
-        <dd>Keep adding expected results in "dd" fields</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Keep adding expected results in "dd" fields</dt>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 
 Add another test for Kdenlive here.
@@ -16,7 +19,10 @@ Add another test for Kdenlive here.
 </strong>
 <dl>
     <dt>More actions</dt>
-        <dd>More expected results. Note: Make sure you keep the following "strong" text at the end</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>More expected results. Note: Make sure you keep the following "strong" text at the end</dt>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.

@@ -7,7 +7,7 @@ The scope of this test is to ensure that riscv64+unleashed image boots from SD c
     <dt>Connect networking, serial console to the board</dt>
         <dd>Ethernet cable for networking</dd>
 	<dd>MicroUSB cable for serial console</dd>
-    <dt>Check the board switches to ensure they are in sdcard mode</dt>	
+    	<dd>Check the board switches to ensure they are in sdcard mode</dd>	
         <dd>MSEL=1011 (MSEL2 to the outside of the board, the rest to the inside)</dd>
     <dt>Connect to the serial console</dt>
         <dd>sudo screen /dev/ttyUSB1 115200</dd>
@@ -19,15 +19,25 @@ The scope of this test is to ensure that riscv64+unleashed image boots from SD c
 	<dd>Then cloud-init will finally finish (~250s)</dd>
 	<dd>Then one will be able to login</dd>
     <dt>Login and change password</dt>
-        <dd>Login using ubuntu for both username and password</dd>
+        
 	<dd>Reenter ubuntu password again</dd>
-	<dd>Set new password</dd>
-	<dd>Confirm the new password</dd>
+	
+	
+	<dt>Confirm the new password</dt>
+		<dd>[FILL VERIFICATION]</dd>
+	<dt>Set new password</dt>
+		<dd>[FILL VERIFICATION]</dd>
+	<dt>Login using ubuntu for both username and password</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Perform generic testing</dt>
         <dd>Check that apt update works</dd>
-	<dd>Run any command that is not installed, check that command-not-found recommends things to install</dd>
+	
 	<dd>I.e. hello</dd>
-	<dd>Install a package and check that it works, i.e. hello</dd>
+	
+	<dt>Install a package and check that it works, i.e. hello</dt>
+		<dd>[FILL VERIFICATION]</dd>
+	<dt>Run any command that is not installed, check that command-not-found recommends things to install</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Poweroff</dt>
         <dd>Console messages should reach poweroff target</dd>
 	<dd>There should be final kernel dmsg powering off</dd>

@@ -5,9 +5,12 @@ This test will check if Font Manager opens properly from the STUDIO menu.
 </dl>
 This test will check if Font Manager properly imports fonts to the system.
 <dl>
-    <dt>Locate the button on the bottom left-hand of the window with gears and press it</dt> 
+    <dt>Locate the button on the bottom left-hand of the window with gears and press it</dt>
+		<dd>[FILL VERIFICATION]</dd> 
     <dt>Select "Install Fonts"</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Locate the font files that should be installed and press OK</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>In the pop window that appears, chose "Reload Now"</dt>
         <dd>Font Manager Reloads</dd>
     <dt>Open any application that uses fonts such as Inkscape, LibreOffice Writer or GIMP, search for the font you just installed</dt>
@@ -15,10 +18,12 @@ This test will check if Font Manager properly imports fonts to the system.
 </dl>
 This test will check if Font Manager properly deactivates fonts from the system, without deleting them.
 <dl>
-    <dt>Select a Font Family in the family window.</dt> 
+    <dt>Select a Font Family in the family window.</dt>
+		<dd>[FILL VERIFICATION]</dd> 
     <dt>On the right-hand of the window, press the "Minus" symbol ("-")</dt>
         <dd>Font name is struck through.</dd>
     <dt>Open any application that uses fonts such as Inkscape, LibreOffice Writer or GIMP, search for the font you just deactivated</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Search for newly disabled font.</dt>
         <dd>Font is unavailable</dd>
 </dl>

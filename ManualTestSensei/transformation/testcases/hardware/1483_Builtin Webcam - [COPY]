@@ -8,6 +8,7 @@ Ensure the universe and multiverse repositories are enabled
     
     <dt>Open Terminal</dd>
     <dt>Run "sudo apt-get install cheese"</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Run "cheese"</dt>
         <dd>The camera image is displayed properly</dd>
 </dl>

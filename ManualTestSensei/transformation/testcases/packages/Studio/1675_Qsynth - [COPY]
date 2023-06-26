@@ -2,7 +2,7 @@ This test will check if Qsynth opens properly from the FAMILY menu
 <dl>
     <dt>Open Qsynth from the INSTRUMENT sub-menu in the AUDIO section of the FAMILY menu.</dt>
         <dd>Qsynth opens and starts JACK.</dd>
-    <dt>Open QjackCtl from the AUDIO section of the FAMILY menu to verify that Jack is started.</dt>
+    	<dd>Open QjackCtl from the AUDIO section of the FAMILY menu to verify that Jack is started.</dd>
         <dd>QjackCtl GUI opens and the audio-server is already running.</dd>
     <dt>In the QjackCtl GUI, click on the "Connect" Button.</dt>
         <dd>The "Connection" windows opens.</dd>
@@ -33,8 +33,11 @@ This test will check if Qsynth can output sound with the loaded SoundFont.
     <dt>Start the program "Virtual MIDI keyboard" from the MIDI UTILITIES sub-menu of the AUDIO section in the FAMILY menu.</dt>
         <dd>"Virtual MIDI keyboard" opens.</dd>
     <dt>In the QjackCtl GUI, press the "Connect" button.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>In the "connections" windows that opens up, locate the "ALSA"-tab and click on it.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>In the "Readable Clients" section, select the entry with "Virtual Keyboard" in the name. In the "Writable Clients" section, select the entry with "FLUID Synth" in the name.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Still in the "ALSA"-tab of the connections window in the QjackCtl GUI, with both previously selected readable/writable entries highlighted, press the button labeled "Connect".</dt>
         <dd>A line is drawn between the "Virtual Keyboard" entry and the "Fluid Synth" entry.</dd>
     <dt>Focus the "Virtual Keyboard" window, and click on a note key.</dt>

@@ -10,7 +10,9 @@ If you have other partitions...
 <dl>
     <dt>Open the file manager</dt>
         <dd>Confirm they are listed in the file manager</dd>
-        <dd>Confirm you are able to read files from it</dd>
+        
+	<dt>Confirm you are able to read files from it</dt>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 
 If you have a USB drive available
@@ -48,7 +50,9 @@ Test Lock/new User use/Unlock
     <dt>Open any application then lock desktop</dt>
         <dd>Desktop locks</dd>
     <dt>Login as new user</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Logout from new user</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Login to normal user, unlocking</dt>
         <dd>Desktop shows previously started application</dd>
 </dl>
