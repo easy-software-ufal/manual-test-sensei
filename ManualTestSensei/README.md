@@ -20,6 +20,8 @@ To run the program, you must install some packages. Run this:
 After downloading everything, you must download spacy's model.
 
 `python -m spacy download en_core_web_trf`
+`python -m spacy download en_core_web_lg`
+
 
 After this, you are done.
 
