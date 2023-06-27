@@ -37976,3 +37976,6 @@
 26-Jun-23 22:43:38 - data - DEBUG - Running spacy through text
 26-Jun-23 22:43:38 - data - DEBUG - Running spacy through text
 26-Jun-23 22:43:38 - data - DEBUG - Running spacy through text
+26-Jun-23 22:57:13 - __main__ - INFO - Starting transformation...
+26-Jun-23 22:57:13 - transformation.transformation_main - INFO - Initializing transformations...
+26-Jun-23 22:57:13 - transformation.transformation_data - INFO - Searching CSV

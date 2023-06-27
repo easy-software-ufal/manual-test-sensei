@@ -49,11 +49,12 @@ def get_csv_path():
     '''Searches for .csv files and returns the first one that has 'results' on the name.'''
     try:
         csvs = sorted(Path('../').glob('*.csv'))
+        # breakpoint()
         csvs = [s for s, s in enumerate(csvs) if 'results' in str(s)]
         file = str(csvs[0].resolve())
     except IndexError:
         csvs = sorted(Path('.').glob('*.csv'))
-        csvs = [s for s, s in enumerate(csvs) if 'results' in str(s)]
+        csvs = [s for s, s in enumerate(csvs) if 'results' in str(s)][-1:]
         file = str(csvs[0].resolve())
     return file
 
