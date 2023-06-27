@@ -9,9 +9,11 @@ log = logging.getLogger(__name__)
 # TODO: Turn it into a singleton
 
 try:
-    if sys.argv[1] == 'english':
+    if sys.argv[1] == 'english' or sys.argv[1] == 'trf':
         model = 'en_core_web_trf'
-    elif sys.argv[1] == 'small':
+    elif sys.argv[1] == 'small' or sys.argv[1] == 'en_core_web_sm':
+        model = 'en_core_web_sm'
+    else:
         model = 'en_core_web_sm'
 except IndexError:
     model = 'en_core_web_lg'  # Development only
