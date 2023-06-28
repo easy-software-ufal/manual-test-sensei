@@ -1,9 +1,5 @@
-# try:
 from . import transformation_data
 from . import transformator
-# except:
-#     import transformation_data
-#     import transformator
 
 import logging, logging.config
 

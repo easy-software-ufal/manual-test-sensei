@@ -26,9 +26,10 @@ def create_copy(df:pd.DataFrame, filteredDataFrame):
             os.makedirs(os.path.dirname(file[3:]), exist_ok=True)
             new_file_path = shutil.copy(Path('../',file), file[3:] + ' - [COPY]')
         else:
-            os.makedirs(os.path.dirname(Path('transformation\\',file[3:])), exist_ok=True)
+            os.makedirs(os.path.dirname(Path('transformation//',file[3:])), exist_ok=True)
             # breakpoint()
-            new_file_path = shutil.copy(src=Path('.',file), dst=(Path('.\\transformation\\',file[3:] + ' - [COPY]')))
+            #breakpoint()
+            new_file_path = shutil.copy(src=Path('.',file), dst=(Path('.//transformation',file[3:] + ' - [COPY]')))
 
         copied_paths[file] = Path(new_file_path)
 
@@ -89,7 +90,4 @@ if __name__ == '__main__':
     mprecondition = get_filtered_df_by_smell_name(df,'Misplaced Precondition')
 
     create_copy(df, mprecondition)
-    # breakpoint()
-    # for i in mprecondition.iterrows():
-    #     print(i)
     breakpoint()
