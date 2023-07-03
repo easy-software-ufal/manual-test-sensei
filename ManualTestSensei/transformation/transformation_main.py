@@ -1,5 +1,9 @@
-from . import transformation_data
-from . import transformator
+try:
+    from . import transformation_data
+    from . import transformator
+except ImportError:
+    import transformation_data
+    import transformator
 
 import logging, logging.config
 

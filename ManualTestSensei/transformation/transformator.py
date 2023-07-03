@@ -1,5 +1,8 @@
 import os, re, logging
-from . import transformation_data
+try:
+    from . import transformation_data
+except ImportError:
+    import transformation_data
 #SMELL_NAMES = ['Misplaced Precondition', 'Unverified Action', 'Misplaced Action', 'Misplaced Verification']
 SMELL_NAMES = ['Misplaced Precondition']
 skipped_tests = 0

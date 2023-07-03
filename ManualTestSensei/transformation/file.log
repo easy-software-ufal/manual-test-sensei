@@ -181,3 +181,46 @@
 27-Apr-23 20:04:47 - __main__ - INFO - Initializing transformations...
 27-Apr-23 20:04:47 - data - DEBUG - Searching CSV
 27-Apr-23 20:04:47 - data - DEBUG - CSV found
+03-Jul-23 17:21:19 - __main__ - INFO - Initializing transformations...
+03-Jul-23 17:21:19 - transformation_data - INFO - Searching CSV
+03-Jul-23 17:21:19 - transformation_data - INFO - CSV found: E:\Programming\manual-test-sensei\ManualTestSensei\results-20230427-155909-en_core_web_lg.csv
+03-Jul-23 17:28:12 - __main__ - INFO - Initializing transformations...
+03-Jul-23 17:28:12 - transformation_data - INFO - Searching CSV
+03-Jul-23 17:28:12 - transformation_data - INFO - CSV found: E:\Programming\manual-test-sensei\ManualTestSensei\results-20230427-155909-en_core_web_lg.csv
+03-Jul-23 17:28:34 - __main__ - INFO - Initializing transformations...
+03-Jul-23 17:28:34 - transformation_data - INFO - Searching CSV
+03-Jul-23 17:28:35 - transformation_data - INFO - CSV found: E:\Programming\manual-test-sensei\ManualTestSensei\results-20230427-155909-en_core_web_lg.csv
+03-Jul-23 17:31:05 - __main__ - INFO - Initializing transformations...
+03-Jul-23 17:31:05 - transformation_data - INFO - Searching CSV
+03-Jul-23 17:31:05 - transformation_data - INFO - CSV found: E:\Programming\manual-test-sensei\ManualTestSensei\results-20230427-155909-en_core_web_lg.csv
+03-Jul-23 17:32:03 - __main__ - INFO - Initializing transformations...
+03-Jul-23 17:32:03 - transformation_data - INFO - Searching CSV
+03-Jul-23 17:32:03 - transformation_data - INFO - CSV found: E:\Programming\manual-test-sensei\ManualTestSensei\results-20230427-155909-en_core_web_lg.csv
+03-Jul-23 17:35:53 - __main__ - INFO - Initializing transformations...
+03-Jul-23 17:35:53 - transformation_data - INFO - Searching CSV
+03-Jul-23 17:35:53 - transformation_data - INFO - CSV found: E:\Programming\manual-test-sensei\ManualTestSensei\results-20230427-155909-en_core_web_lg.csv
+03-Jul-23 17:49:10 - __main__ - INFO - Initializing transformations...
+03-Jul-23 17:49:10 - transformation_data - INFO - Searching CSV
+03-Jul-23 17:49:10 - transformation_data - INFO - CSV found: E:\Programming\manual-test-sensei\ManualTestSensei\results-20230427-155909-en_core_web_lg.csv
+03-Jul-23 17:49:11 - transformation_data - INFO - CSV Data loaded.
+03-Jul-23 17:49:11 - transformator - DEBUG - MisPre
+03-Jul-23 17:50:03 - __main__ - INFO - Initializing transformations...
+03-Jul-23 17:50:03 - transformation_data - INFO - Searching CSV
+03-Jul-23 17:50:03 - transformation_data - INFO - CSV found: E:\Programming\manual-test-sensei\ManualTestSensei\results-20230626-182925-en_core_web_sm.csv
+03-Jul-23 17:50:03 - transformation_data - INFO - CSV Data loaded.
+03-Jul-23 17:50:03 - transformator - DEBUG - MisPre
+03-Jul-23 17:52:14 - __main__ - INFO - Initializing transformations...
+03-Jul-23 17:52:14 - transformation_data - INFO - Searching CSV
+03-Jul-23 17:52:14 - transformation_data - INFO - CSV found: E:\Programming\manual-test-sensei\ManualTestSensei\results-20230626-182925-en_core_web_sm.csv
+03-Jul-23 17:52:14 - transformation_data - INFO - CSV Data loaded.
+03-Jul-23 17:52:14 - transformator - DEBUG - MisPre
+03-Jul-23 17:52:30 - __main__ - INFO - Initializing transformations...
+03-Jul-23 17:52:30 - transformation_data - INFO - Searching CSV
+03-Jul-23 17:52:30 - transformation_data - INFO - CSV found: E:\Programming\manual-test-sensei\ManualTestSensei\results-20230626-204516-en_core_web_sm.csv
+03-Jul-23 17:52:30 - transformation_data - INFO - CSV Data loaded.
+03-Jul-23 17:52:30 - transformator - DEBUG - MisPre
+03-Jul-23 17:52:42 - __main__ - INFO - Initializing transformations...
+03-Jul-23 17:52:42 - transformation_data - INFO - Searching CSV
+03-Jul-23 17:52:42 - transformation_data - INFO - CSV found: E:\Programming\manual-test-sensei\ManualTestSensei\results-20230626-204516-en_core_web_sm.csv
+03-Jul-23 17:52:42 - transformation_data - INFO - CSV Data loaded.
+03-Jul-23 17:52:42 - transformator - DEBUG - MisPre

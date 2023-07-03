@@ -1,3 +1,4 @@
+import sys
 import shutil, os
 import pandas as pd
 from pathlib import Path, PureWindowsPath
@@ -26,10 +27,14 @@ def create_copy(df:pd.DataFrame, filteredDataFrame):
             os.makedirs(os.path.dirname(file[3:]), exist_ok=True)
             new_file_path = shutil.copy(Path('../',file), file[3:] + ' - [COPY]')
         else:
-            os.makedirs(os.path.dirname(Path('transformation//',file[3:])), exist_ok=True)
-            #breakpoint()
-            new_file_path = shutil.copy(src=Path('.',file), dst=(Path('.//transformation',file[3:] + ' - [COPY]')))
-
+            if sys.platform.startswith('linux'):
+                os.makedirs(os.path.dirname(Path('transformed_testcases//',file[3:])), exist_ok=True)
+                #breakpoint()
+                new_file_path = shutil.copy(src=Path('.',file), dst=(Path('.//transformed_testcases',file[3:] + ' - [COPY]')))
+            else:
+                os.makedirs(os.path.dirname(Path('transformed_testcases\\',file[3:])), exist_ok=True)
+                # breakpoint()
+                new_file_path = shutil.copy(src=Path('..',file), dst=(Path('.\\transformed_testcases',file[3:] + ' - [COPY]')))
         copied_paths[file] = Path(new_file_path)
 
     return update_df_with_copy_location(df, copied_paths)
@@ -50,7 +55,7 @@ def get_csv_path():
     try:
         csvs = sorted(Path('../').glob('*.csv'))
         # breakpoint()
-        csvs = [s for s, s in enumerate(csvs) if 'results' in str(s)]
+        csvs = [s for s, s in enumerate(csvs) if 'results' in str(s)][-1:]
         file = str(csvs[0].resolve())
     except IndexError:
         csvs = sorted(Path('.').glob('*.csv'))
