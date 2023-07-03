@@ -2,11 +2,12 @@ import sys
 import logging.config
 import argparse
 import spacy
+import pandas as pd
 from collections import namedtuple
 import detector_main
-from transformation import transformation_main as transformation
-
-
+from transformation import transformation_main
+from transformation import transformation_data
+from transformation import transformator
 
 logging.config.fileConfig(fname='log.config', disable_existing_loggers=False)
 log = logging.getLogger(__name__)
@@ -14,19 +15,26 @@ log = logging.getLogger(__name__)
 Test = namedtuple('Test', ['file', 'header', 'steps'])
 Step = namedtuple('Step', ['action', 'reactions'])
 
+def no_test_left_to_transform(df):
+    return len(df) == transformator.skipped_tests
+
 def run_code(mode):
     # log.info(f'spaCy model: {model_name[0]}')
     #nlp = create_pipeline(str(model_name[0]))
+    
     if mode == 'all' or mode == 'detect' or mode == 'd':
         detector_main.detection_runner(log)
 
     if mode == 'all' or mode == 'transform' or mode =='t':
         log.info('Starting transformation...')
-        transformation.transformation_runner(log)
+        while True:
+            file = transformation_data.get_csv_path()
+            df = pd.read_csv(file)
+            transformation_main.transformation_runner(log)
+            detector_main.detection_runner(log)
+            if no_test_left_to_transform(df):
+                break
         log.info('FINISHED TRANSFORMATION.')
-
-
-    # breakpoint()
 
 
 # def create_pipeline(model_name):

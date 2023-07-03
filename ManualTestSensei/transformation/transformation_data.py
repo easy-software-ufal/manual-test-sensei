@@ -2,11 +2,12 @@ import shutil, os
 import pandas as pd
 from pathlib import Path, PureWindowsPath
 import logging
-#from transformation import SMELL_NAMES
 
-SMELL_NAMES = ['Conditional Test Logic', 'Eager Action', 'Misplaced Action',
-       'Ambiguous Test', 'Unverified Action', 'Misplaced Verification',
-       'Misplaced Precondition']
+#SMELL_NAMES = ['Conditional Test Logic', 'Eager Action', 'Misplaced Action',
+       #'Ambiguous Test', 'Unverified Action', 'Misplaced Verification',
+       #'Misplaced Precondition']
+
+SMELL_NAMES = ['Misplaced Precondition']
 
 def create_copy(df:pd.DataFrame, filteredDataFrame):
     def update_df_with_copy_location(df:pd.DataFrame,copied_paths:dict) -> pd.DataFrame:
@@ -22,12 +23,10 @@ def create_copy(df:pd.DataFrame, filteredDataFrame):
     for file in path_files:
         path = Path(file)
         if __name__ == 'main': #rodando dentro da pasta transforamtion
-            breakpoint()
             os.makedirs(os.path.dirname(file[3:]), exist_ok=True)
             new_file_path = shutil.copy(Path('../',file), file[3:] + ' - [COPY]')
         else:
             os.makedirs(os.path.dirname(Path('transformation//',file[3:])), exist_ok=True)
-            # breakpoint()
             #breakpoint()
             new_file_path = shutil.copy(src=Path('.',file), dst=(Path('.//transformation',file[3:] + ' - [COPY]')))
 
@@ -84,10 +83,10 @@ def data_closure() -> pd.DataFrame:
     return df
 
 
-if __name__ == '__main__':
-    file = get_csv_path()
-    df = pd.read_csv(file)
-    mprecondition = get_filtered_df_by_smell_name(df,'Misplaced Precondition')
+# if __name__ == '__main__':
+#     file = get_csv_path()
+#     df = pd.read_csv(file)
+#     mprecondition = get_filtered_df_by_smell_name(df,'Misplaced Precondition')
 
-    create_copy(df, mprecondition)
-    breakpoint()
+#     create_copy(df, mprecondition)
+#     breakpoint()

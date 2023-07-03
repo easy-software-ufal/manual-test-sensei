@@ -55,13 +55,13 @@ def find_misplaced_precondition(index: int, test: abc.Container):
         The first action step declares the SUT state (e.g. 'wifi is turned off')
     """
     matcher = MatchersFactory.misplaced_precondition_matcher()
+    #breakpoint()
     step = test.steps[0]
     action_matches = matcher(step.action)
     for match_id, token_ids in action_matches:
         words = [step.action[token_id] for token_id in sorted(token_ids)]
         resultsWritter().write(
             [test.file, index, 'Misplaced Precondition', 'SUT state', 'action', words, step.action])
-
 
 def find_misplaced_step(index: int, test: abc.Container):
     """

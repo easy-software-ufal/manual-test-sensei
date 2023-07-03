@@ -1,14 +1,17 @@
 import os, re, logging
 from . import transformation_data
-SMELL_NAMES = ['Misplaced Precondition', 'Unverified Action', 'Misplaced Action', 'Misplaced Verification']
-
+#SMELL_NAMES = ['Misplaced Precondition', 'Unverified Action', 'Misplaced Action', 'Misplaced Verification']
+SMELL_NAMES = ['Misplaced Precondition']
+skipped_tests = 0
 
 def transformation_closure(df):
     log = logging.getLogger(__name__)
+    global skipped_tests
     def sentence_not_found(start_pos):
         return start_pos == -1
     def misplaced_precondition(df):
         log.debug('MisPre')
+        global skipped_tests
         filtered_df = transformation_data.get_filtered_df_by_smell_name(df,'Misplaced Precondition')
         for _, row in filtered_df.iterrows():
             if os.path.exists(row['Copy Path']) and os.path.isfile(row['Copy Path']):
@@ -18,6 +21,10 @@ def transformation_closure(df):
                     contents = file.read()
                     # find the start and end positions of the block of text to move
                     start_pos = contents.find('<dt>' + row['Sentence'] + '</dt>') #this is where the smell will be
+                    if sentence_not_found(start_pos):
+                        skipped_tests += 1
+                        continue
+
                     end_pos = start_pos + len('<dt>' + row['Sentence'] + '</dt>')
 
                     # extract the block of text to move
@@ -39,6 +46,7 @@ def transformation_closure(df):
 
     def unverified_action(df):
         log.debug('UnvAct')
+        global skipped_tests
         filtered_df = transformation_data.get_filtered_df_by_smell_name(df,'Unverified Action')
         for _, row in filtered_df.iterrows():
             if os.path.exists(row['Copy Path']) and os.path.isfile(row['Copy Path']):
@@ -49,6 +57,7 @@ def transformation_closure(df):
                     # find the start and end positions of the block of text to move
                     start_pos = contents.find('<dt>' + row['Sentence'] + '</dt>') #this is where the smell will be
                     if sentence_not_found(start_pos):
+                        skipped_tests += 1
                         continue
 
                     end_pos = start_pos + len('<dt>' + row['Sentence'] + '</dt>')
@@ -62,6 +71,7 @@ def transformation_closure(df):
 
     def misplaced_action(df):
         log.debug('MisAct')
+        global skipped_tests
         filtered_df = transformation_data.get_filtered_df_by_smell_name(df,'Misplaced Action')
         for _, row in filtered_df.iterrows():
             if os.path.exists(row['Copy Path']) and os.path.isfile(row['Copy Path']):
@@ -70,6 +80,7 @@ def transformation_closure(df):
 
                     start_pos = contents.find('<dd>' + row['Sentence'] + '</dd>')
                     if sentence_not_found(start_pos):
+                        skipped_tests += 1
                         continue
 
                     end_pos = start_pos + len('<dd>' + row['Sentence'] + '</dd>')
@@ -100,6 +111,7 @@ def transformation_closure(df):
 
     def misplaced_verification(df):
         log.debug('MisVer')
+        global skipped_tests
         filtered_df = transformation_data.get_filtered_df_by_smell_name(df,'Misplaced Verification')
         for _, row in filtered_df.iterrows():
             if os.path.exists(row['Copy Path']) and os.path.isfile(row['Copy Path']):
@@ -107,6 +119,7 @@ def transformation_closure(df):
                     contents = file.read()
                     start_pos = contents.find('<dt>' + row['Sentence'] + '</dt>')
                     if sentence_not_found(start_pos):
+                        skipped_tests += 1
                         continue
                     end_pos = start_pos + len('<dt>' + row['Sentence'] + '</dt>')
                     contents = contents[:start_pos] + "\t<dd>" + row['Sentence'] + '</dd>' + contents[end_pos:]
@@ -126,9 +139,9 @@ def transformation_closure(df):
 
     switcher = {
     'Misplaced Precondition': misplaced_precondition(df),
-    'Unverified Action': unverified_action(df),
-    'Misplaced Action': misplaced_action(df),
-    'Misplaced Verification': misplaced_verification(df)
+    #'Unverified Action': unverified_action(df),
+    #'Misplaced Action': misplaced_action(df),
+    #'Misplaced Verification': misplaced_verification(df)
     }
     for smell_name in SMELL_NAMES:
         switcher.get(smell_name)
