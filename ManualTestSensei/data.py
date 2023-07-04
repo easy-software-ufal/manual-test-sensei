@@ -183,7 +183,7 @@ def _(smell_acronym: str):
         for test_list in ubuntu_tests:
             sum_ubuntu_tests += len(test_list)
         log.info(f'{sum_ubuntu_tests} Ubuntu tests retrieved.')
-        return ubuntu_tests 
+        return ubuntu_tests
 
 def ubuntu_get_tests(smell_acronym):
     filepaths = [path for path in smells_loader(smell_acronym)[FILE_COL]]
@@ -195,6 +195,8 @@ def ubuntu_get_tests(smell_acronym):
     log.debug('End of ubuntu retrieving')
     return result
 
+def ubuntu_get_copy_tests():
+    pass
 
 @get_tests.register(PosixPath)
 def _(filepath: PosixPath):
