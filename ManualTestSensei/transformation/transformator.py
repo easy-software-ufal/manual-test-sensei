@@ -9,7 +9,6 @@ skipped_tests = 0
 
 def transformation_closure(df):
     log = logging.getLogger(__name__)
-    global skipped_tests
     def sentence_not_found(start_pos):
         return start_pos == -1
     def misplaced_precondition(df):
@@ -75,6 +74,7 @@ def transformation_closure(df):
     def misplaced_action(df):
         log.debug('MisAct')
         global skipped_tests
+
         filtered_df = transformation_data.get_filtered_df_by_smell_name(df,'Misplaced Action')
         for _, row in filtered_df.iterrows():
             if os.path.exists(row['Copy Path']) and os.path.isfile(row['Copy Path']):
@@ -138,7 +138,38 @@ def transformation_closure(df):
         pass
 
     def eager_action(df):
-        pass
+        global skipped_tests
+        filtered_df = transformation_data.get_filtered_df_by_smell_name(df,'Eager Action')
+        for _, row in filtered_df.iterrows():
+            if os.path.exists(row['Copy Path']) and os.path.isfile(row['Copy Path']):
+                # open the file for reading and writing
+                with open(row['Copy Path'], 'r+', encoding='utf8') as file:
+                    # read the entire contents of the file into a string
+                    contents = file.read()
+                    # find the start and end positions of the block of text to move
+                    start_pos = contents.find('<dt>' + row['Sentence'] + '</dt>') #this is where the smell will be
+                    if sentence_not_found(start_pos):
+                        skipped_tests += 1
+                        continue
+
+                    end_pos = start_pos + len('<dt>' + row['Sentence'] + '</dt>')
+
+                    # extract the block of text to move
+                    block = contents[start_pos+len('<dt>'):end_pos-len('</dt>')]
+
+                    # remove the block from its original location
+                    contents = contents[:start_pos] + contents[end_pos:]
+
+                    # find the position where the block should be moved to, i.e, before the <dl> tag
+                    dl_pos = contents[:start_pos].rfind('<dl>')
+
+                    # insert the block into its new location
+                    contents = contents[:dl_pos] + block + "\n" + contents[dl_pos:]
+
+                    # go back to the beginning of the file and overwrite its contents
+                    file.seek(0)
+                    file.truncate(0)
+                    file.write(contents)
 
     switcher = {
     'Misplaced Precondition': misplaced_precondition(df),
