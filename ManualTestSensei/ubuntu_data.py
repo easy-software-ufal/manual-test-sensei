@@ -14,31 +14,33 @@ import data
 from data import SmellsData
 from pipeline import Step, Test, nlp
 
+# def _k_closest_words_closure():
+#     vocab_ids = [x for x in nlp.vocab.vectors.keys()]
+#     vocab_vectors = np.array([nlp.vocab.vectors[x] for x in vocab_ids])
+
+#     def k_closest_words(input_word: str, k: int):
+#         input_word_vector = np.array([nlp.vocab[input_word].vector])
+#         # closest_indexes = distance.cdist(input_word_vector, vocab_vectors, metric='cosine').argsort()[0][:k]
+#         closest_indexes = distance.cdist(input_word_vector, vocab_vectors).argsort()[0][:k]
+#         return [nlp.vocab[vocab_ids[idx]].text for idx in closest_indexes]
+
+#     return k_closest_words
+
+
+# def _expand_words(words, k=5) -> tuple:
+#     # TODO: FIX THIS FUNCTION WHEN number of words = 1
+#     expanded_words = [k_closest_words(w, k) for w in words]
+#     print(f'{words}:{expanded_words}\n')
+#     return tuple(set([word.lower() for word_list in expanded_words for word in word_list]))
+
+
+
 
 class UbuntuSmellsData(SmellsData):
-    def k_closest_words_closure():
-        vocab_ids = [x for x in nlp.vocab.vectors.keys()]
-        vocab_vectors = np.array([nlp.vocab.vectors[x] for x in vocab_ids])
-
-        def k_closest_words(input_word: str, k: int):
-            input_word_vector = np.array([nlp.vocab[input_word].vector])
-            # closest_indexes = distance.cdist(input_word_vector, vocab_vectors, metric='cosine').argsort()[0][:k]
-            closest_indexes = distance.cdist(input_word_vector, vocab_vectors).argsort()[0][:k]
-            return [nlp.vocab[vocab_ids[idx]].text for idx in closest_indexes]
-
-        return k_closest_words
-
-
-    def expand_words(words, k=5) -> tuple:
-        # TODO: FIX THIS FUNCTION WHEN number of words = 1
-        expanded_words = [k_closest_words(w, k) for w in words]
-        print(f'{words}:{expanded_words}\n')
-        return tuple(set([word.lower() for word_list in expanded_words for word in word_list]))
-
-    def erase_split(self, text: str, erase: str, split: str):
+    def _erase_split(self, text: str, erase: str, split: str):
         return [chunk for chunk in text.replace(erase, '').split(split) if chunk]
 
-    def extract_texts(self, text: str, filepath: str) -> abc.Container:
+    def _extract_texts(self, text: str, filepath: str) -> abc.Container:
         """
         Gets the raw text from the filepath as well the filepath as a string and returns a list containing the parsed
         raw texts from the tests.
@@ -69,14 +71,13 @@ class UbuntuSmellsData(SmellsData):
         headers = [self.remove_html(header) for header in headers]
 
         tests = list(re.findall(tags, text))  # textão único, juntando tudo que tá dentro de <dl>
-        tests = [self.erase_split(text=r, erase='</dt>', split='<dt>') for r in
-                tests]  # se tiver mais de um caso de teste por arquivo, retorna todos os casos de teste separados
+        tests = [self._erase_split(text=r, erase='</dt>', split='<dt>') for r in tests]  # se tiver mais de um caso de teste por arquivo, retorna todos os casos de teste separados
         # if len(tests)>1:
         #     breakpoint()
         return tests, headers
 
     def split_tests(self, text: str, filepath: str) -> list:
-        tests, headers = self.extract_texts(text, filepath)
+        tests, headers = self._extract_texts(text, filepath)
         tests = self.split_tests_steps(tests)
 
         result = []  # lista de testes para cada filepath
@@ -98,7 +99,7 @@ class UbuntuSmellsData(SmellsData):
     def split_tests_steps(self, tests):
         result = []
         for test in tests:
-            test = [self.erase_split(t, '</dd>', '<dd>') for t in test]
+            test = [self._erase_split(t, '</dd>', '<dd>') for t in test]
             test = [Step(self.pipeline(action), [self.pipeline(reaction) for reaction in reactions])
                     for action, *reactions in test
                     ]
