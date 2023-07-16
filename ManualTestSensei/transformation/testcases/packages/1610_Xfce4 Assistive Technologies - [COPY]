@@ -1,0 +1,50 @@
+This test will check that Xfce4 Accessibility Settings opens either from a terminal window orfrom the applications menu and closes without error
+<dl>
+    <dt>Open a terminal window, type <code>xfce4-accessibility-settings</code> at the prompt and hit the "Enter" key</dt>
+        <dd>Accessibility dialogue window opens</dd>
+    <dt>Click the top right "X" of the window's title bar to close the application</dt>
+        <dd>Accessibility closes</dd>
+    <dt>Point your mouse pointer to the Applications Menu icon and click it</dt>
+        <dd>A menu drops down</dd>
+    <dt>Point your mouse cursor to the 'Accessibility' icon under the "Settings Manager" section and click it</dt>
+        <dd>Accessibility dialogue window opens</dd>
+    <dt>Click the "Close" button</dt>
+        <dd>Accessibility closes</dd>
+</dl>
+
+This test will check that Xfce4 Accessibility Settings allows to enable and configure Assistive Technologies
+<dl>
+    <!-- OMISSION OF STEPS and UNSPECIFIED WAITING TIME, UNSPECIFIED PARAMETER -->
+    <dt>Open Accessibility either from a terminal window or from the applications menu</dt>
+        <dd>Accessibility dialogue window opens with the 'Assistive Technologies' tab selected</dd>
+    <dt>Tick the 'Enable Assistive Technologies' checkbox</dt>
+        <dd>A message informs that Assistive technologies will be available at the next login</dd>
+        <dd>Xfce desktop will be enabled and xfce4-session will load the required modules so the toolkit (Gtk) can communicate with Orca, the suite of utilities for the visually impaired</dd>
+    <dt>Point your mouse cursor to the "Keyboard" tab and click it</dt>
+        <dd>Selected/active tab changes to "Keyboard" tab</dd>
+    <dt>Tick the 'Sticky Keys' checkbox</dt>
+        <dd>Pressing key combinations in sequence instead of at the same time is enabled. For instance, Ctrl followed by C (instead of Ctrl-C) will copy selected text</dd>
+    <dt>Tick the 'Slow Keys' checkbox</dt>
+        <dd>The keyboard will not register a keystroke until the key is hold down for a certain length of time</dd>
+        <dd>The default time is 500 milliseconds and the length of time is adjustable by moving the slider with the mouse</dd>
+    <dt>Tick the 'Bounce Keys' checkbox</dt>
+        <dd>The keyboard will not accept a keystroke until there has been a certain interval of time since the previous keystroke</dd>
+        <dd>The default time is 500 milliseconds and the length of time is adjustable by moving the slider with the mouse</dd>
+    <dt>Point your mouse cursor to the 'Mouse' tab and click it</dt>
+        <dd>Selected/active tab should change to 'Mouse' tab</dd>
+    <dt>Tick the 'Mouse Emulation' checkbox</dt>
+        <dd>Acceleration delay (in milliseconds), Repeat interval (in milliseconds), Acceleration time (in milliseconds), Maximum speed (in pixels per second) and Acceleration profile options are enabled and configurable</dd>
+</dl>
+
+This test will check that Xfce4 Accessibility Settings will open Help in a web browser
+<dl>
+    <dt>Open Accessibility either from a terminal window or from the applications menu</dt>
+        <dd>Accessibility dialogue window opens</dd>
+    <dt>Click the "Help" button</dt>
+        <dd>Online Documentation dialogue appears</dd>
+    <dt>Click "Read Online" button</dt>
+        <dd>Dialogue closes and browser opens at Xfce4 Accessibility Settings Docs</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

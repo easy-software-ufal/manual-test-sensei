@@ -1,0 +1,74 @@
+Test-case name: rhythmbox/rhy-001
+This test will check that Rhythmbox can play internet radio
+<dl>
+    <dt> Open the dash and launch rhythmbox by pressing the super key, and then entering ‘rhythmbox’</dt>
+        <dd>rhythmbox should launch</dd>
+    <dt> In the Library list, select Radio</dt>
+        <dd>Genre and Radio lists appear</dd>
+    <dt> Select any genre</dt>
+        <dd>Radio stations are filtered by selected genre</dd>
+    <dt> Pick a station and press the play button.</dt>
+        <dd>Does the radio start playing?</dd>
+</dl>
+
+Test-case name: rhythmbox/rhy-002
+This test will check that Rhythmbox can play play podcast episodes
+<dl>
+    <dt> Open the dash and launch rhythmbox by pressing the super key, and then entering ‘rhythmbox’</dt>
+        <dd>rhythmbox should launch</dd>
+    <dt> Right-click on Podcasts, select New Podcast Feed</dt>
+        <dd>New Podcast Feed window appears</dd>
+    <dt> Add the URI to your favorite podcast or http://feeds.feedburner.com/UbuntuUkPodcastOgg-high?format=xml</dt>
+        <dd>Podcast is added to the list</dd>
+        <dd>Notification on new podcast appears</dd>
+        <dd>List of episodes is downloaded</dd>
+        <dd>Last episode is downloaded</dd>
+    <dt> Double click on any episode</dt>
+        <dd>Progress bar appears in Status column</dd>
+    <dt> Wait until episode is downloaded</dt>
+        <dd>Status for episode changes to Downloaded</dd>
+    <dt> Double click on downloaded episode</dt>
+        <dd>Does episode playback start?</dd>
+</dl>
+
+Test-case name: rhythmbox/rhy-003
+This test will check that Rhythmbox can install codecs and play stream from MTP-compatible players
+<dl>
+    <dd>Have any MTP-compatible MP3 player</dd>
+<dt> Open the dash and launch rhythmbox by pressing the super key, and then entering ‘rhythmbox’</dt>
+    <dd>rhythmbox should launch</dd>
+<dt> Plug a music player device containing MP3 files into your system and check whether rhythmbox imports the music correctly.</dt>
+    <dd>A new entry Devices appears</dd>
+<dt> Test playing music from the device.</dt>
+    <dd>Did the easy codec installer recognize any codecs that aren't installed and install them? Did playback start?</dd>
+</dl>
+
+Test-case name: rhythmbox/rhy-004
+This test will check that Rhythmbox can play Last.FM radio
+<dl>
+    <dd>Have Last.fm Account must be pre-registered and used for a time in order to get a play list.</dd>
+<dt> Open the dash and launch rhythmbox by pressing the super key, and then entering ‘rhythmbox’</dt>
+    <dd>rhythmbox should launch</dd>
+<dt> Click on Library - Last.fm entry</dt>
+    <dd>'You are not currently logged in' toolbar with 'Log in' button appears</dd>
+<dt> Click 'Log in' button</dt>
+    <dd>'Waiting for authentication' label with 'Cancel' button appear on toolbar</dd>
+    <dd>Last.fm authorization page is opened in default browser</dd>
+<dt> Login to Last.fm using your credentials in the browser</dt>
+    <dd>'Connect application' Last.fm page appears</dd>
+    <dd>The page contains the following elements:</dd>
+    <dd>- 'The application Rhythmbox would like permission to access your Last.fm account. You should only give access to your Last.fm account to third parties you trust.' label</dd>
+    <dd>- 'Yes, allow access' button</dd>
+    <dd>- 'cancel' link</dd>
+<dt> Click 'Yes, allow access' button</dt>
+    <dd>'Application authenticated' page appears</dd>
+<dt> Switch to Rhythmbox window</dt>
+    <dd>User is authenticated, Last.fm page appears</dd>
+<dt> Expand 'Last.fm' item in the left list view, select 'My Library'</dt>
+    <dd>Track listview contains some played tracks</dd>
+<dt> Select any track, click 'Play'</dt>
+    <dd>Did playback start?</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

@@ -1,0 +1,59 @@
+<em>Testcase requires use of video and/or audio files</em>
+
+This test will check that VLC can open an audio file
+<dl>
+    <dt>Launch VLC</dt>
+        <dd>VLC media player opens, showing one window by default</dd>
+    <!-- EAGER STEP -->
+    <dt>Go to Media > Click on 'Open File'..., select an audio file and press Open</dt>
+        <dd>The selected audio is played</dd>
+    <dt>Click on 'stop playback' button at the bottom</dt>
+        <dd>The audio is stopped</dd>
+</dl>
+
+This test will check that VLC can open an video file
+<dl>
+    <!-- EAGER STEP -->
+    <dt>Go to Media > Click on 'Open File'..., select a video file and press Open</dt>
+        <dd>The selected video is played</dd>
+    <dt>Click on 'stop playback' button at the bottom</dt>
+        <dd>The video is stopped</dd>
+</dl>
+
+This test will check VLC track slider
+<dl>
+    <!-- EAGER STEP -->
+    <dt>Go to Media > Click on 'Open File'..., select a video/audio file and press Open</dt>
+	    <dd>The selected video/audio is played</dd>
+    <dt>In the bottom of window change current playing time by clicking at the random place of the VLC track slider<dt>
+	    <dd>Played audio/video timing changed, audio/video still playing</dd> 
+</dl>
+
+This test will check VLC volume control
+<dl>
+    <!-- EAGER STEP -->
+    <dt>Go to Media > Click on 'Open File'..., select a video/audio file and press Open</dt>
+	    <dd>The selected video/audio is played</dd>
+    <dt>In the bottom right corner of the window change volume by moving green slider in triangle</dt>
+        <dd>Playback volume changed</dd>
+    <dt>In the bottom right corner of the window press "mute" icon (small speaker icon)</dt>
+    	<dd>Playback volume muted</dd>
+</dl>
+
+This test will check VLC control panel
+<dl>
+    <!-- EAGER STEP -->
+    <dt>Go to Media > Click on 'Open File'..., select two different video/audio files and press Open</dt>
+	    <dd>The selected video/audio is played</dd>
+    <dt>Click on "Pause the playback" button at the bottom</dt>
+	    <dd>The selected video/audio is paused</dt>
+    <dt>Click on "Play" button at the bottom</dt>
+	    <dd>Video/audio is resumed from where it was paused</dt>
+    <dt>Click on "Next media" button at the bottom</dt>
+	    <dd>The next file in the list starts playing</dd>
+    <dt>Click on 'Stop playback' button at the bottom</dt>
+        <dd>The video is stopped</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

@@ -1,0 +1,45 @@
+This test will check that the Settings dialog opens and closes without error
+<dl>
+    <dt>Open Settings from the menu</dt>
+        <dd>Settings dialog opens</dd>
+    <dt>Click Close Button</dt>
+        <dd>Settings dialog closes</dd>
+</dl>
+
+This test will check that new system settings tools are populated into Settings dialog, installing software is a requirement for this test.
+<dl>
+    <dt>Open a terminal and type sudo apt-get install arandr press enter, supply password as required and enter</dt>
+        <dd>Arandr is installed without error</dd>
+    <dt>Open Settings from the menu</dt>
+        <dd>Settings dialog opens</dd>
+        <dd>Arandr is shown in Hardware section</dd>
+    <dt>In the terminal type sudo apt-get purge arandr, enter and supply password as required, enter again</dt>
+        <dd>Arandr is uninstalled without error</dd>
+        <dd>Arandr is removed from Hardware section of Settings</dd>
+    <dt>Close terminal with X in top right</dt>
+        <dd>Terminal closes</dd>
+    <dt>Click Close button</dt>
+        <dd>Settings dialog closes</dd>
+</dl>
+
+This test will check that Settings will open a sub menu and return to main menu
+<dl>
+    <dt>Open Settings from the menu</dt>
+        <dd>Settings dialog opens</dd>
+    <dt>Click Appearance</dt>
+        <dd>Appearance menu opens</dd>
+    <dt>Click All Settings button</dt>
+        <dd>Main Settings menu appears</dd>
+</dl>
+
+This test will check that Settings will open Help in a web browser
+<dt>Click Help</dt>
+    <dd>Online Documentation dialogue appears</dd>
+<dt>Click Read Online</dt>
+    <dd>Dialogue closes and browser opens at XFCE Settings Docs</dd>
+<dt>Close browser</dt>
+    <dd>Browser closes</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

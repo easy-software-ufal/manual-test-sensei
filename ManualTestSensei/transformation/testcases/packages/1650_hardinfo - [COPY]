@@ -1,0 +1,12 @@
+This test will check that hardinfo can generate report on each hardware in the system
+<dl>
+    <dt>Launch hardinfo</dt>
+        <dd>System Information screen opens, showing one window by default</dd>
+    <dt>Click on "Generate Report" button > Verify that the checkboxes are checked > click on "Generate"</dt>
+        <dd>"Save File" window will be opened</dd>
+    <dt>Enter the name of the file and Click on "Save" button</dt>
+        <dd>A report will get generated with all the hardware informations in the system</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

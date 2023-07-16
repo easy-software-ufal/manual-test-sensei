@@ -1,0 +1,30 @@
+This test checks whether BBC integration is working
+<dl>
+<!-- good -->
+    <dt>Open Firefox and navigate to http://www.bbc.co.uk/news/</dt>
+        <dd>The site opens and displays a prompt asking if you want ubuntu to integrate with the website</dd>
+    <dt>Click on the button "Integrate"</dt>
+        <dd>The BBC icon appears in the launcher, and news appears as notifications</dd>
+    <dt>Open a second tab and go to http://www.ubuntu.com/</dt>
+        <dd>The ubuntu.com website is display in the new tab</dd>
+    <dt>Click on the BBC’s Launcher icon</dt>
+        <dd>The BBC tab is raised and is now visible</dd>
+    <dt>Close the BBC tab.</dt>
+        <dd>The icon must disappear from the Launcher.</dd>
+    <dt>Go to http://www.bbc.co.uk/news</dt>
+        <dd>The BBC news site loads</dd>
+    <dt>Right click on the BBC’s Launcher icon and select "quit"</dt>
+        <dd>The icon disappears from the Launcher</dd>
+    <dt>Go to http://www.bbc.co.uk/news</dt>
+        <dd>The BBC news site loads</dd>
+    <dt>Right click on the BBC’s Launcher icon and select "Lock to the Launcher"</dt>
+        <dd>The Launcher icon is locked to the launcher</dd>
+    <dt>Close Firefox</dt>
+        <dd>Firefox is closed</dd>
+    <dt>Click on the BBC’s Launcher icon.</dt>
+        <dd>The browser opens a tab with BBC News</dd>
+    <dt>Repeat the above steps using chromium</dt>
+        <dd>All of the expected results are the same using chromium instead of firefox</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

@@ -1,0 +1,61 @@
+Scope of this test is to verify that the system is installed, you can login into it and rootfs is rightly mounted.
+
+<em>Proceed in your native language if you wish. Instructions will remain in English</em>
+<!-- Smells: UNVERIFIED STEPS, EXPECTED RESULTS AS STEP (misplaced result)-->
+<dl>
+    <dt>Boot up the image</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Choose the desired language</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Select "Install Ubuntu Server"</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Choose the language</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Select your location</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Configure locales</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>At configure keyboard page, select NO </dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Select the country of the keyboard</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Select the keyboard layout</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Select hostname ubuntu as default</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Insert the name for the new user</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Insert the name for the account</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Choose a password</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Reinsert the password</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>At encrypt request select NO</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    	<dd>Verify or setup the timezone</dd>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>At partitioning select "Guided - Use entire disk and set up LVM"</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Select disk to partition</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    	<dd>At "Write changes to disks", verify that everythings is right and select YES</dd>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>At "http proxy" request, leave it blank and press enter</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>At managing upgrades select "No automatic updates"</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>At Software selection, press "Enter"</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Select to install Grub in the master boot record</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Remove the installation media (CDROM or USB key)</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Wait that the system reboot</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Login and run:</dt>
+        <dd>sudo mount</dd>
+        <dd>Verify that the root file system is mounted from /dev/mapper/ubuntu-root.</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

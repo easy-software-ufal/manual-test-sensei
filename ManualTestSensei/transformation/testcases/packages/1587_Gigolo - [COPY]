@@ -1,0 +1,63 @@
+This test will check that Gigolo can be opened either from a terminal window or from the applications menu
+<dl>
+    <dt>Open a terminal window, type "gigolo" at the prompt and hit the 'Enter' key</dt>
+        <dd>Gigolo window opens</dd>
+    <dt>Point your mouse pointer to the menu icon and click it</dt>
+        <dd>A menu drops down</dd>
+    <dt>Navigate to System -> Gigolo</dt>
+        <dd>Gigolo window opens</dd>
+</dl>
+
+This test will check that Gigolo allows to configure a connection and connects to local or remote filesystems
+<dl>
+    <dt>Navigate to Actions -> Connect or point your mouse pointer to the 'Connect' icon and click it</dt>
+        <dd>The 'Connect to Server' dialog window opens</dd>
+    <!-- UNSPECIFIED PARAMETER -->
+    <dt>Click on the 'Service type' drop-list and choose a communication protocol from the list, define 'Server' and 'Share' address or names, when applicable, and click the 'Connect' button</dt>
+        <dd>The connection with the remote filesystem is established</dd>
+</dl>
+
+This test will check that Gigolo's GUI and behaviour can be configured
+<dl>
+    <dt>Navigate to Edit -> Preferences or hit Ctrl+P keys</dt>
+        <dd>The 'Preferences' dialog window opens on the 'General' tab</dd>
+    <dt>Change the default file manager to launch, in the 'File Manager' text box</dt>
+        <dd>The inserted file manager is launched, when a resource is opened from within Gigolo with the correct path for the chosen resource</dd>
+    <dt>Change the value of the 'Bookmark Auto-Connect Interval' setting</dt>
+        <dd>The interval (in seconds) at which Gigolo auto-connect bookmarks changes accordingly. A value of 0 disables this feature</dd>
+    <dt>Point your mouse pointer to the 'Interface' tab and click it</dt>
+        <dd>Interface tab displays</dd>
+    <dt>Tick/Untick the options given</dt>
+        <dd>Gigolo's GUI definitions and display of the auto-connect error messages change according to the preferences set</dd>
+    <dt>Point your mouse pointer to the 'Toolbar' tab and click it</dt>
+        <dd>Toolbar tab displays</dd>
+    <dt>Untick the 'Show toolbar' option</dt>
+        <dd>Gigolo's GUI toolbar isn't visible</dd>
+    <dt>Click on the 'Style' and on the 'Orientation' buttons</dt>
+        <dd>A list of possible toolbar styles and orientation is displayed</dd>
+    <dt>Select one of the desired styles and orientation</dt>
+        <dd>The position of the toolbar, the layout of icons and text on it, change accordingly to the preferences set</dd>
+</dl>
+
+This test will check that Gigolo allows to add, delete and edit bookmarks
+<dl>
+    <dt>Navigate to Edit -> Edit Bookmarks or hit Ctrl+B keys</dt>
+        <dd>The 'Edit Bookmarks' dialog window opens</dd>
+    <dt>Click the 'Add' button</dt>
+        <dd>The 'Create Bookmark' dialog window opens</dd>
+    <dt>Fill the text boxes with the data required and click the 'Add' button</dt>
+        <dd>The bookmark is created and listed in the window main area</dd>
+    <dt>Select one bookmark in the window main area</dt>
+        <dd>The 'Edit' and 'Delete' buttons are now enabled and clickable</dd>
+    <dt>Click the 'Edit' button</dt>
+        <dd>The 'Edit Bookmark' dialog window opens</dd>
+    <dt>Change the values of the bookmark data in the appropriate text boxes and click the 'OK' button</dt>
+        <dd>Bookmark configuration is changed accordingly to the preferences set</dd>
+    <dt>Select one bookmark in the window main area</dt>
+        <dd>The 'Edit' and 'Delete' buttons are now enabled and clickable</dd>
+    <dt>Click the 'Delete' button</dt>
+        <dd>The selected bookmark is deleted</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

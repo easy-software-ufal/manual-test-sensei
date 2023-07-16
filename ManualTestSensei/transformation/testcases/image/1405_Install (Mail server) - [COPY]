@@ -1,0 +1,77 @@
+Scope of this test is to verify that the system is installed, you can login into it and the mail server is up and running.
+
+<em>Proceed in your native language if you wish. Instructions will remain in English</em>
+<!-- Smells: UNVERIFIED STEPS, EXPECTED RESULTS AS STEP -->
+<dl>
+    <dt>Boot up the image</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Choose the desired language</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Select "Install Ubuntu Server"</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Choose the language</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Select your location</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Configure locales</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>At configure keyboard page, select NO </dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Select the country of the keyboard</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Select the keyboard layout</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Select hostname ubuntu as default</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Insert the name for the new user</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Insert the name for the account</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Choose a password</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Reinsert the password</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>At encrypt request select NO</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    	<dd>Verify or setup the timezone</dd>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>At partitioning select "Guided - Use entire disk"</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Select disk to partition</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    	<dd>At "Write changes to disks", verify that everythings is right and select YES</dd>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>At "http proxy" request, leave it blank and press enter</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>At managing upgrades select "No automatic updates"</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>At Software selection, choose "Mail server" with arrows, select it with "space bar" and confirm with "Enter"</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>At Postfix Configuration select "Internet Site"</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>At System mail name, let ubuntu</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>At Configuring dovecot-core select "Yes"</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    	<dd>At Configuring dovecot-core verify the hostname is "localhost" and select "Continue"</dd>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Select to install Grub in the master boot record</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Remove the installation media (CDROM or USB key)</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Wait that the system reboot then login</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    	<dd>Verify that postfix is running:</dd>
+        <dd>telnet 127.0.0.1 25</dd>
+        <dd>Has to return: Ubuntu ESMTP Postfix (Ubuntu). Type quit to exit</dd>
+    	<dd>Verify that dovecot pop3 and imap servers are running:</dd>
+        <dd>sudo netstat -ltnp | grep dovecot</dd>
+        <dd>should list 8 dovecot instances (port 110, 143, 993 and 995) 4 for tcp and 4 tcp6</dd>
+    <dt>Try to send a test email:</dt>
+        
+        <dd>Run mutt and press enter to see the mail, press <strong>q</strong> to exit</dd>
+	<dt>echo foo | mail -s test ${USER}</dt>
+		<dd>[FILL VERIFICATION]</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

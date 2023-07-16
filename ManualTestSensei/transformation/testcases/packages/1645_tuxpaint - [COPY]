@@ -1,0 +1,20 @@
+This test will check for the Tools in the tuxpaint window
+<dl>
+    <dt>Launch tuxpaint</dt>
+        <dd>tuxpaint opens and showing a window with 'Tools' list</dd>
+    <!-- EAGER TEST -->
+    <dt>Click on 'Stamp' button under Tools list</dt>
+        <dd>The mouse pointer will be changed to frog shape by default</dd>
+        <dd>'Stamps' list will get opened at the right side</dd>
+    <dt>Drag the mousepointer and click it in the drawing area</dd>
+        <dd>A frog will be displayed in the drawing area</dd>
+    <dt>Click on 'Text' button under Tools list</dt>
+        <dd>'Letters' list will get opened at the right side</dd>
+    <dt>Write any text in the drawing area</dt>
+        <dd>The text is displayed in the drawing area</dd>
+    <dt>Click on 'Save' button under Tools list</dt>
+        <dd>The image is saved and the following message is displayed at the bottom 'Your image has been saved'</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

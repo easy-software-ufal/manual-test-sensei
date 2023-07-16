@@ -1,0 +1,151 @@
+This test will check the applications list
+<dl>
+    <dt>Click on <em>Applications</em> in the navigation menu.</dt>
+        <dd>PCManFM shows categories of applications.</dd>
+    <dt>Double Click on <em>Internet</em>.</dt>
+        <dd>PCManFM window shows identical listing to the Internet applications in the panel menu.</dd>
+</dl>
+
+This test will check basic file management
+<dl>
+    <dt>Click on the PCManFM icon in the task bar.</dt>
+        <dd>The PCManFM Window appears.</dd>
+    <dt>Click on Desktop in the PCManFM navigation menu.</dt>
+        <dd>Contents of your desktop appear.</dd>
+    <dt>In the PCManFM Window, right click on a blank section and click on <em>Create New</em> and select <em>Folder</em>.</dt>
+        <dd>Window appears, prompting for folder name.</dd>
+    <dt>Enter <em>test</em> and click on <em>OK</em>.</dt>
+        <dd>New folder called <strong>test</strong> appears.</dd>
+    <dt>In the PCManFM Window, right click on a blank section and click on <em>Create New</em> and select <em>File</em>.</dt>
+        <dd>Window appears, prompting for file name.</dd>
+    <dt>Enter <em>moveme.txt</em> and click on <em>OK</em>.</dt>
+        <dd>A new file called <strong>moveme.txt</strong> appears.</dd>
+    <dt>Click on the file <em>moveme.txt</em>, then drag and drop into the folder <em>test</em>.</dt>
+        <dd>File <strong>moveme.txt</strong> moves to the folder <strong>test</strong>. Double click folder <strong>test</strong> to confirm the file <strong>moveme.txt</strong> is there.</dd>
+    <dt>Click on the  &lt;  icon  in the navigation section</dt>
+        <dd>The PCManFM window now displays your desktop.</dd>
+    <dt>Right click on the folder <em>test</em>, select <em>Move to Trash</em>.</dt>
+        <dd>A window pops up requesting confirmation.</dd>
+    <dt>Click <em>OK</em>.</dt>
+        <dd>Folder <strong>test</strong> no longer appears in the PCManFM window.</dd>
+    <dt>Click on <em>Trash(or Rubbish) Can</em> in the navigation menu.</dt>
+        <dd>Folder <strong>test</strong> is displayed.</dd>
+    <dt>Right click on folder <em>test</em> and select <em>Restore</em>.</dt>
+        <dd>Folder <strong>test</strong> no longer appears.</dd>
+    <dt>Click on  the  &lt;  icon  in the navigation section</dt>
+        <dd>PCManFM window now displays desktop and folder <strong>test</strong> is now visible.</dd>
+    <dt>Right click on the folder <em>test</em>, select <em>Move to Trash</em>.</dt>
+        <dd>Window pops up requesting confirmation.</dd>
+    <dt>Click on <em>OK</em>.</dt>
+        <dd>Folder <strong>test</strong> no longer appears in PCManFM window.</dd>
+    <dt>Click on <em>Trash(or Rubbish) Can</em> in side bar menu.</dt>
+        <dd>Folder <strong>test</strong> is displayed.</dd>
+    <dt>Right click on the folder <em>test</em> and select <em>Delete</em>.</dt>
+        <dd>Window pops up requesting confirmation.</dd>
+    <dt>Click <em>OK</em>.</dt>
+        <dd>Folder <strong>test</strong> no longer appears in the PCManFM window.</dd>
+    <dt>Click on File in the navigation menu and select Close Window.</dt>
+        <dd>PCManFM closes.</dd>
+    <dt>Click on the PCManFM icon in the task bar.</dt>
+        <dd>PCManFM Window appears.</dd>
+    <dt>Click on 'X' at top of PCManFM window.</dt>
+        <dd>PCManFM closes.</dd>
+</dl>
+
+This test will check bookmark management
+<dl>
+    <dt>Click on the <em>Bookmarks</em> menu and select <em>+ Add to Bookmarks</em></dt>
+        <dd>A window appears asking you to <strong>Enter a name for the new bookmark item</strong>.</dd>
+    <dt>Type in <em>Home</em> and click on <em>OK</em>.</dt>
+        <dd><strong>Home</strong> appears in the sidebar.</dd>
+    <dt>Right click on  <em>Home</em> and select <em>Rename Bookmark Item</em>.</dt>
+        <dd>Window appears asking you to <strong>Enter a new name</strong>.</dd>
+    <dt>Type in <em>Del</em> and click on <em>OK</em>.</dt>
+        <dd>Entry on sidebar changes from <strong>Home</strong> to <strong>Del</strong>.</dd>
+    <dt>Right click on <em>Del</em> and select <em>Remove  from Bookmark</em>.</dt>
+        <dd>The entry <strong>Del</strong> no longer appears in the sidebar.</dd>
+</dl>
+
+This test will check the 'open in terminal' functionality
+<dl>
+    <dt>Click on <em>Desktop</em> in left hand panel.</dt>
+        <dd>PCManFM shows contents of Desktop directory.</dd>
+    <dt>Click on <em>Tools</em> and select <em>Open Current Folder in Terminal</em>.</dt>
+        <dd>Terminal launches showing the Desktop directory.</dd>
+</dl>
+
+This test will check the 'right click' functionality
+<dl>
+    <dt>Click on <em>Home</em> icon in left hand panel.</dt>
+        <dd>PCManFM shows  listing of folders and files.</dd>
+    <dt>Right click on <em>Desktop</em>.</dt>
+        <dd>A second menu appears, offering such things as options to open, copy folder etc.</dd>
+</dl>
+
+This test will check tab management
+<dl>
+    <dt>Click on <em>File</em> select <em>New Tab</em></dt>
+        <dd>Two tabs appear of the current directory.</dd>
+    <dt>Click on the second tab and drag it so that appears before the first tab.</dt>
+        <dd>Tab moves.</dd>
+    <dt>Click on the <em>X</em> on the tab label.</dt>
+        <dd>Tab closes.</dd>
+</dl>
+
+This test will check USB device management
+<dl>
+    <dt> Plug in USB device</dt>
+        <dd>Window appears saying Removable medium is inserted and asking if you want to Open in File Manager.</dd>
+    <dt>Click <em>OK</em>.</dt>
+        <dd>Contents of USB device appears in PCManFM window and device is listed in the PCManFM panel.</dd>
+    <dt>In the PCManFM Window, right click on a blank section and click on <em>Create New</em> and select <em>Folder</em>.</dt>
+        <dd>Window appears, prompting for folder name.</dd>
+    <dt>Enter <em>test</em> and click on <em>OK</em>.</dt>
+        <dd>New folder called <strong>test</strong> appears in PCManFM window.</dd>
+    <dt>Right click on the folder <em>test</em> and click on <em> Copy </em>.</dt>
+        <dd>No error should be reported.</dd>
+    <dt>Click on <em> Desktop </em> in navigation section.</dt>
+        <dd>PCManFM window now displays desktop.</dd>
+    <dt>In the PCManFM Window, right click on a blank section and click on <em>Paste</em>.</dt>
+        <dd>Folder <strong>test</strong> should appear.</dd>
+    <dt>In the PCManFM Window, right click on a blank section and click on <em>Create New</em> and select <em>Folder</em>.</dt>
+        <dd>Window appears, prompting for folder name.</dd>
+    <dt>Enter <em>test1</em> and click on <em>OK</em>.</dt>
+        <dd>New folder called <strong>test1</strong> appears in PCManFM window.</dd>
+    <dt>Right click on the folder <em>test1</em> and click on <em> Copy </em>.</dt>
+        <dd>No error should be reported.</dd>
+    <dt>Click on USB device in PCManFM panel.</dt>
+        <dd>PCManFM window now displays USB device.</dd>
+    <dt>In the PCManFM Window, right click on a blank section and click on <em>Paste</em>.</dt>
+        <dd>Folder <strong>test1</strong> should appear.</dd>
+    <dt>Click on <em> Desktop </em> in navigation section.</dt>
+        <dd>PCManFM window now displays desktop.</dd>
+    <dt>Right click on the USB device in the PCManFM panel, select <em>Eject Removable Media</em>.</dt>
+        <dd>The USB device is no longer listed in the PCManFM panel.</dd>
+</dl>
+
+This test will check view management
+<dl>
+    <dt>Click on <em>Home Folder</em> in left hand panel.</dt>
+        <dd>PCManFM shows contents of home directory.</dd>
+    <dt>Click on <em>View</em> and select <em>Show Hidden</em>.</dt>
+        <dd>Files beginning with <em>.</em> are listed.</dd>
+    <dt>Hold down  <em>Fn/em>; key and press <em>PrtSC</em> key.</em></dt>
+        <dd>File appears in window with name ending <em>scrot.png</em></dd>
+    <dt>Click on <em>View</em> and select <em>Thumbnail View <em>.</em></em></dt>
+        <dd>Icons appear as thumbnails and the file ending <em>scrot.png</em> has an image of the file.</dd>
+    <dt>Click on <em>View</em> and select <em>Compact View</em>.</dt>
+        <dd>Icons are reduced in size.</dd>
+    <dt>Click on <em>View</em> and select <em>Detailed View</em>.</dt>
+        <dd>Folders and files appears with several columns: <em>Name</em>, <em>Description</em>, <em>Size</em> and <em>Modified</em>.</dd>
+    <dt>Click on <em>View</em> then <em>Sort Files</em> followed by <em>Descending</em>.</dt>
+        <dd>Files are sorted by name, and in a inversed order.</dd>
+    <dt>Click on <em>View</em> then <em>Sort Files</em> followed by <em>By Modification Time</em>.</dt>
+        <dd>Files are sorted by modification time, and in a inversed order.</dd>
+    <dt>Click on <em>View</em> then <em>Sort Files</em> followed by <em>Size</em>.</dt>
+        <dd>Files are sorted by size, and in a inversed order.</dd>
+    <dt>Click on <em>View</em> then <em>Sort Files</em> followed by <em>FileType</em>.</dt>
+        <dd>Files are sorted by file type, and in a inversed order.</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

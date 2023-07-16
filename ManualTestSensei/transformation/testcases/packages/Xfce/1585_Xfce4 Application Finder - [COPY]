@@ -1,0 +1,48 @@
+This test will check that Application Finder opens and closes without error
+<dl>
+    <dt>Press Alt+F2</dt>
+        <dd>Application Finder opens</dd>
+    <dt>Press Close</dt>
+        <dd>Application Finder closes</dd>
+</dl>
+
+This test will check that Application Finder runs and stores custom commands
+<dl>
+    <dt>Press Alt+F2</dt>
+        <dd>Application Finder opens</dd>
+    <dt>In dialogue type 'thunar /home' to open the file manager and press Launch</dt>
+        <dd>The file manager window opens showing /home/</dd>
+    <dt>Close the file manager and Press Alt+F2</dt>
+        <dd>The file manager closes, Application Finder opens</dd>
+    <dt>In dialogue type 'th'</dt>
+        <dd>Dialogue autocompletes remainder of 'thunar /home' command</dd>
+</dl>
+
+This test will check that Application Finder will clear stored commands
+<dl>
+    <dt>Press Alt+F2</dt>
+        <dd>Application Finder opens</dd>
+    <dt>Press down arrow</dt>
+        <dd>Application Finder opens to command listings</dd>
+    <dt>Select Commands History</dt>
+        <dd>Right Pane is populated with 'thunar /home' command</dd>
+    <dt>Select Preferences</dt>
+        <dd>Preferences dialogue opens</dd>
+    <dt>Press Clear Custom Command History button</dt>
+        <dd>Question dialogue opens</dd>
+    <dt>Press Clear</dt>
+        <dd>Question dialogue window closes</dd>
+    <dt>Press Close button</dt>
+        <dd>Preferences closes and commands history is cleared</dd>
+</dl>
+
+This test will check that Application Finder opens applications correctly and closes itself
+<dl>
+    <dt>Select an application from All Applications and press Launch button</dt>
+        <dd>Selected Application launches without error, Application Finder closes</dd>
+    <dt>Close opened application</dt>
+        <dd>Application closes</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong> 

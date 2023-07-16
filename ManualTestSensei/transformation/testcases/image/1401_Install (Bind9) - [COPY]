@@ -1,0 +1,68 @@
+Scope of this test is to verify that the system is installed, you can login into it, bind is installable and working.
+
+<em>Proceed in your native language if you wish. Instructions will remain in English</em>
+<!-- Smells: EAGER TEST, UNVERIFIED STEPS, CONDITIONAL TEST -->
+<dl>
+    <dt>Boot up the image</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Choose the desired language</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Select "Install Ubuntu Server"</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Choose the language</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Select your location</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Configure locales</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>At configure keyboard page, select NO </dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Select the country of the keyboard</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Select the keyboard layout</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Select hostname ubuntu as default</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Insert the name for the new user</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Insert the name for the account</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Choose a password</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Reinsert the password</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>At encrypt request select NO</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    	<dd>Verify or setup the timezone</dd>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>At partitioning select "Guided - Use entire disk"</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Select disk to partition</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    	<dd>At "Write changes to disks", verify that everythings is right and select YES</dd>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>At "http proxy" request, leave it blank and press enter</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>At managing upgrades select "No automatic updates"</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>At Software selection, choose "DNS Server" with arrows, select it with "space bar" and confirm with "Enter"</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Select to install Grub in the master boot record</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Remove the installation media (CDROM or USB key)</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Wait that the system reboot and login</dt>
+		<dd>[FILL VERIFICATION]</dd>            
+    	<dd>Verify that bind:</dd>        
+        <dd>Is running</dd>
+        <dd>pgrep named returns the pid of named</dd>
+    <dt>Is listening for IPv4 and IPv6:</dt>
+        <dd>sudo netstat -atuvpn | egrep '(:53)' | egrep -v '(ESTABLISHED|CLOSE_WAIT|LAST_ACK)' should list named is listening on port 53 for tcp, tcp6, udp and udp6.</dd>
+    <dt>If the system can access the outside world, dns queries against the server at localhost should work</dt>
+        <dd>host www.ubuntu.com localhost</dd>
+        <dd>host -T www.ubuntu.com localhost</dd>
+        <dd>host -6 www.ubuntu.com ip6-localhost</dd>
+        <dd>host -T -6 www.ubuntu.com ip6-localhost</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

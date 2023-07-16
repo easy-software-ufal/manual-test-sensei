@@ -1,0 +1,114 @@
+Scope of this test is to verify that the system is installed, you can login into it, Apache and MySQL are working.
+
+<em>Proceed in your native language if you wish. Instructions will remain in English</em>
+<!-- Smells: UNVERIFIED STEPS, EXPECTED RESULTS AS STEP, EAGER TEST, NON-DETERMINISTIC STEP -->
+<dl>
+    <dt>Boot up the image</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Choose the desired language</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Select "Install Ubuntu Server"</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Choose the language</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Select your location</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Configure locales</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>At configure keyboard page, select NO </dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Select the country of the keyboard</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Select the keyboard layout</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Select hostname ubuntu as default</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Insert the name for the new user</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Insert the name for the account</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Choose a password</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Reinsert the password</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>At encrypt request select NO</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    	<dd>Verify or setup the timezone</dd>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>At partitioning select "Guided - Use entire disk"</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Select disk to partition</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    	<dd>At "Write changes to disks", verify that everythings is right and select YES</dd>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>At "http proxy" request, leave it blank and press enter</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>At managing upgrades select "No automatic updates"</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>At Software selection, choose "LAMP server" with arrows, select it with "space bar" and confirm with "Enter"</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Select to install Grub in the master boot record</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Remove the installation media (CDROM or USB key)</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Wait that the system reboot and login</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Test Apache:</dt>
+        <dd>w3m http://127.0.0.1/</dd>
+        
+	<dt>Press q and confirm to exit</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <!-- SMELL: EAGER TEST -->
+    <dt>Test MySQL:</dt>
+        <dd>sudo mysql</dd>
+        <!-- SMELL: NON-DETERMINISTIC STEP -->
+        <dd>You should then be presented with a mysql prompt mysql> where you can enter some mysql commands:</dd>
+        <pre>show databases; connect mysql; select host,user from user;</pre>
+        <dd>that will produce an output like:
+            <pre>
+                +--------------------+
+                | Database           |
+                +--------------------+
+                | information_schema |
+                | mysql              |
+                | performance_schema |
+                | sys                |
+                +--------------------+
+                4 rows in set (0.00 sec)
+
+                Reading table information for completion of table and column names
+                You can turn off this feature to get a quicker startup with -A
+
+                Connection id:    7
+                Current database: mysql
+
+                +-----------+------------------+
+                | host      | user             |
+                +-----------+------------------+
+                | localhost | debian-sys-maint |
+                | localhost | mysql.session    |
+                | localhost | mysql.sys        |
+                | localhost | root             |
+                +-----------+------------------+
+                4 rows in set (0.00 sec)
+            </pre>
+        </dd>
+    <dt>Type exit to exit mysql</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Test PHP (command line)</dt>
+        <dd>php -r 'phpinfo();'</dd>
+        <dd>That will produce about 600 lines.</dd>
+    <dt>Test PHP (Apache mod_php)</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Create a file called /var/www/html/phptest.php:</dt>
+        <dd>sudo nano /var/www/html/phptest.php</dd>
+        <dd>add the following text to the file:
+            <pre>&lt;?php phpinfo(); ?&gt;</pre>
+        </dd>
+    <dt>run it on w3m</dt>
+        <dd>w3m localhost/phptest.php</dd>
+        <dd>Verify it outputs the text from phpinfo()</dd>
+
+    </dl>
+    <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+        If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

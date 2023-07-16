@@ -1,0 +1,55 @@
+Test-case UbuntuKylin Dash Video Scope
+<dl>
+    This test will check basic functions of UbuntuKylin Dash Video Scope.
+    <dt>Click the button of Dash, select the video icon in Dash. Enter the video name in the search bar.</dt>
+        <dd>Did the dash show related results of your search?</dd>
+    <dt>Double-click one of the search results to play the video in the "Dash Video Scope" page.</dt>
+        <dd>Did it open the play page of the selected video in browser? Can you watch the video?</dd>
+    <dt>Right-Click one of the search results in the "Dash Video Scope" page to the "Quick Preview Interface" page to see the detail information of the selected item.</dt>
+        <dd>Did the detail information show in Dash?</dd>
+    <dt>Click the button of "Playing" in the "Quick Preview Interface" page to play the video.</dt>
+        <dd>Did it open the play page of the selected video in browser? Can you watch the video?</dd>
+    <dt>Click the preview picture of the video in the "Quick Preview Interface" page.</dt>
+        <dd>Did it go back to search results page?</dd>
+    <dt>If the buttons ">" and "<" exist in the "Quick Preview Interface" page, click the button ">" or "<".</dt>
+        <dd>Did the item change according to your click?</dd>
+
+    </dl>
+
+    Test-case UbuntuKylin Dash Music Scope
+    <dl>
+        This test will check basic functions of UbuntuKylin Dash Music Scope.
+        <dt>Click the button of Dash, select the music icon in Dash. Enter the song name or album name in the search bar.</dt>
+            <dd>Did the dash show related results of your search?</dd>
+        <dt>Double-click one of the search results to download or listen the song or album in the "Dash Music Scope" page.</dt>
+            <dd>Did it open the download page of the selected song or album in browser? Can you download or listen the song or album?</dd>
+        <dt>Click one of the search results in the "Dash Music Scope" page to the "Quick Preview Interface" page to see the detail information of the selected item.</dt>
+            <dd>Did the detail information show in Dash?</dd>
+        <dt>Click the button of "listening" in the "Quick Preview Interface" page to download or listen the song or album.</dt>
+            <dd>Did it open the download page of the selected song or album in browser? Can you download or listen the song or album?</dd>
+        <dt>Click the preview picture of the song or album in the "Quick Preview Interface" page.</dt>
+            <dd>Did it go back to search results page?</dd>
+        <dt>If the buttons ">" and "<" exist in the "Quick Preview Interface" page, click the button ">" or "<".</dt>
+            <dd>Did the item change according to your click?</dd>
+
+        </dl>
+
+        Test-case UbuntuKylin Dash Photo Scope
+        <dl>
+            This test will check basic functions of UbuntuKylin Dash Photo Scope.
+            <dt>Click the button of Dash, select the photo icon in Dash. Enter the picture name in the search bar.</dt>
+                <dd>Did the dash show related results of your search?</dd>
+            <dt>Double-click one of the search results to download or view the picture in the "Dash Photo Scope" page.</dt>
+                <dd>Did it open the download page of the selected picture in browser? Can you download or view the picture?</dd>
+            <dt>Click one of the search results in the "Dash Photo Scope" page to the "Quick Preview Interface" page to see the detail information of the selected item.</dt>
+                <dd>Did the detail information show in Dash?</dd>
+            <dt>Click the button of "Viewing" in the "Quick Preview Interface" page to download or view the picture.</dt>
+                <dd>Did it open the download page of the selected picture in browser? Can you download or view the picture?</dd>
+            <dt>Click the preview picture of the selected picture in the "Quick Preview Interface" page.</dt>
+                <dd>Did it go back to search results page?</dd>
+            <dt>If the buttons ">" and "<" exist in the "Quick Preview Interface" page, click the button ">" or "<".</dt>
+                <dd>Did the item change according to your click?</dd>
+
+            </dl>
+            <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+                If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

@@ -1,0 +1,13 @@
+LTSP is the Linux Terminal Server Project. It allows you to set up a diskless workstation environment with not much effort. The Edubuntu DVD ships with a feature called Live LTSP that allows you to try out or demonstrate LTSP without making any permanent changes to a system.
+<dl>
+    <dt>Start Edubuntu from an image and select the "Try Edubuntu without Installing" option from the boot menu to start up to a full desktop session</dt>
+        <dd>Edubuntu desktop boots up properly</dd>
+    <dt>Open the dash and type "LTSP Live"</dt>
+        <dd>"LTSP Live" launches and displays a prompt</dd>
+    <dt>Select an unused network interface</dt>
+        <dd>A configuring prompt displays showing progress</dd>
+    <dt>Boot a thin client and configure it to utilize the live LTSP server</dt>
+        <dd>Thin client boots and obtains a working desktop from server</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
