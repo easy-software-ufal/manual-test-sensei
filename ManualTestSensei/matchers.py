@@ -36,7 +36,10 @@ def find_eager_step(index: int, test: abc.Container):
     for step in test.steps:
         action_matches = matcher(step.action)
         if len(action_matches) > 1:
-            span = [step.action[start:end] for match_id, start, end in action_matches]
+            span = []
+            for match_id, start, end in action_matches:
+                substring = step.action[start:end]
+                span.append(str(substring))
             resultsWritter().write([test.file, index, 'Eager Action', 'multiple actions', 'action', span, step.action])
 
 

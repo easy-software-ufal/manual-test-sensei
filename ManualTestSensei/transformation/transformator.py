@@ -1,10 +1,10 @@
-import os, re, logging
+import os, re, logging, spacy, ast
 try:
     from . import transformation_data
 except ImportError:
     import transformation_data
 #SMELL_NAMES = ['Misplaced Precondition', 'Unverified Action', 'Misplaced Action', 'Misplaced Verification']
-SMELL_NAMES = ['Misplaced Precondition']
+SMELL_NAMES = ['Misplaced Precondition', 'Eager Action']
 skipped_tests = 0
 
 def transformation_closure(df):
@@ -130,7 +130,6 @@ def transformation_closure(df):
                     file.truncate(0)
                     file.write(contents)
 
-
     def ambiguous_test(df):
         pass
 
@@ -156,7 +155,7 @@ def transformation_closure(df):
 
                     # extract the block of text to move
                     block = contents[start_pos+len('<dt>'):end_pos-len('</dt>')]
-
+                    row['Term']
                     # remove the block from its original location
                     contents = contents[:start_pos] + contents[end_pos:]
 

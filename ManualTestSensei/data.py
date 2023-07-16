@@ -18,7 +18,7 @@ FILE_COL = 'NUMERO E NOME DO ARQUIVO'
 SMELL_COL = 'QUAL SMELL?'
 
 
-def smells_loader_closure():
+def smells_loader_closure(mode):
     def file_exists(file) -> bool:
         if Path(file).exists():
             return True
@@ -26,7 +26,10 @@ def smells_loader_closure():
             log.warning('Test file not found: ' + file)
             return False
 
-    df = pd.read_csv('files.csv')  # lê o caminho dos dados
+    if mode == "d":
+        df = pd.read_csv('files.csv')
+    elif mode == "t":
+        df = pd.read_csv('files_2.csv')  # lê o caminho dos dados
     df[SMELL_COL] = df[SMELL_COL].fillna('')
     df[SMELL_COL] = df[SMELL_COL].apply(lambda x: x.replace(' ', '').split(','))
     # df2 = pd.DataFrame(df[FILE_COL])
@@ -57,7 +60,7 @@ def smells_loader_closure():
 #     return df.reset_index(drop=True)
 
 
-smells_loader = smells_loader_closure()
+#smells_loader = smells_loader_closure()
 
 
 def k_closest_words_closure():
@@ -174,18 +177,19 @@ def get_tests(arg):
 
 
 @get_tests.register(str)
-def _(smell_acronym: str):
+def _(smell_acronym: str, mode):
     language = 'english'
     if language == 'english':
         log.debug(f'Starting Ubuntu Retrieving...')
-        ubuntu_tests = ubuntu_get_tests(smell_acronym)
+        ubuntu_tests = ubuntu_get_tests(smell_acronym, mode)
         sum_ubuntu_tests = 0
         for test_list in ubuntu_tests:
             sum_ubuntu_tests += len(test_list)
         log.info(f'{sum_ubuntu_tests} Ubuntu tests retrieved.')
         return ubuntu_tests 
 
-def ubuntu_get_tests(smell_acronym):
+def ubuntu_get_tests(smell_acronym, mode):
+    smells_loader = smells_loader_closure(mode)
     filepaths = [path for path in smells_loader(smell_acronym)[FILE_COL]]
     result = list()
     for path in filepaths:
