@@ -27,3 +27,11 @@ log.info(f'spaCy model: {model_name}')
 
 Test = namedtuple('Test', ['file', 'header', 'steps'])
 Step = namedtuple('Step', ['action', 'reactions'])
+
+def simplify_test(test:Test):
+    return [simplify_step(step) for step in test.steps]
+
+def simplify_step(step:Step):
+    action = step.action.text
+    reactions = '\n\n'.join([reaction.text for reaction in step.reactions])
+    return Step(action, reactions)

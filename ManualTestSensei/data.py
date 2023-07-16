@@ -1,9 +1,9 @@
 from pathlib import Path, PosixPath
 import logging
+from collections import abc
 log = logging.getLogger(__name__)
 import pandas as pd
-
-
+from pipeline import Step, Test, nlp
 
 
 DIR_COL = 'DIRETÓRIO'
@@ -17,13 +17,36 @@ class SmellsData:
         self._load_tests_catalog()
 
 
-    def by_aconym(self, smell_acronym: str) -> pd.DataFrame:
+    def by_acronym(self, smell_acronym: str) -> pd.DataFrame:
         """
         Will return every filepath that has the smell_acronym. If no acronym is passed, returns all.
         """
         if smell_acronym != '':
             return self.tests_catalog.loc[self.tests_catalog[SMELL_COL].apply(lambda x: smell_acronym in x)].reset_index(drop=True)  # this is a df of paths
         return self.tests_catalog.reset_index(drop=True)
+
+    def by_path(self, filepath: PosixPath):
+        return self._split_tests(filepath.read_text(encoding='utf-8'), filepath)
+
+    def by_catalog_index(self, index:int) -> abc.Container:
+        return self.by_path(self[index])
+
+    def list_files(self) -> list:
+        files = [(index, str(value.name)) for (index, value) in self.tests_catalog[FILE_COL].reset_index().values]
+        return files
+
+    def __getitem__(self, index:int) -> PosixPath:
+        return self.tests_catalog.iloc[index][FILE_COL]
+
+    def _split_tests(self, text: str, filepath: str) -> list:
+        tests, headers = self._extract_texts(text, filepath)
+        tests = self._split_tests_steps(tests)
+
+        result = []  # lista de testes para cada filepath
+        for test in tests:
+            temp = Test(file=filepath, header=[header for header in headers], steps=[steps for steps in test])
+            result.append(temp)
+        return result
 
     def _load_tests_catalog(self):
         def file_exists(file) -> bool:
@@ -41,8 +64,3 @@ class SmellsData:
         df = df.loc[df[FILE_COL].apply(lambda x: file_exists(x))]
         df[FILE_COL] = df[FILE_COL].apply(lambda x: Path(x))
         self.tests_catalog =df
-
-
-
-if __name__ == '__main__':
-    data = SmellsData('ubuntu_files.csv') #files.csv contains ubuntu files
