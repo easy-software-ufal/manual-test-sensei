@@ -15,14 +15,16 @@ def find_conditional_test_logic(index: int, test: abc.Container):
         # Actions
         action_matches = matcher(step.action)
         for match_id, start, end in action_matches:
+            breakpoint()
             span = step.action[start:end]
             resultsWritter().write(
                 [test.file, index, 'Conditional Test Logic', 'dependent clause', 'action', span, step.action])
-
+        # csv_header = ['Test file', 'Test index', 'Smell', 'Hint', 'Where', 'Term', 'Sentence']
         # Verifications
         for reaction in step.reactions:
             reaction_matches = matcher(reaction)
             for match_id, start, end in reaction_matches:
+                breakpoint()
                 span = reaction[start:end]
                 resultsWritter().write(
                     [test.file, index, 'Conditional Test Logic', 'dependent clause', 'verification', span, reaction])

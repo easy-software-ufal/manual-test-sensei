@@ -1,7 +1,7 @@
 import sys
 
 import spacy
-from collections import namedtuple
+from dataclasses import dataclass, field
 import logging
 
 log = logging.getLogger(__name__)
@@ -25,8 +25,27 @@ name = nlp.meta['name']
 model_name = lang + '_' + name
 log.info(f'spaCy model: {model_name}')
 
-Test = namedtuple('Test', ['file', 'header', 'steps'])
-Step = namedtuple('Step', ['action', 'reactions'])
+# Test = namedtuple('Test', ['file', 'header', 'steps', 'smell', 'where', 'term', 'action'])
+# Step = namedtuple('Step', ['action', 'reactions', 'smell', 'where', 'term'])
+
+@dataclass
+class Step:
+    action : str
+    reactions : list[str]
+    smell : str = field(default=None)
+    where : str = field(default=None)
+    term : str = field(default=None)
+
+@dataclass
+class Test:
+    file : str
+    header : str
+    steps : list[Step]
+    smell : str = field(default=None)
+    where : str = field(default=None)
+    term : str = field(default=None)
+    action : str = field(default=None)
+
 
 def simplify_test(test:Test):
     return [simplify_step(step) for step in test.steps]
