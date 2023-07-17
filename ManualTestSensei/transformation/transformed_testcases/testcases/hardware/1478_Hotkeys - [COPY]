@@ -1,0 +1,101 @@
+<strong>The following tests require a music playlist consisting of 2 or more pieces of music.</strong>
+
+<strong>Multimedia keys (Video Player)</strong>
+Case ID: khk-001
+This tests that the video player can respond to Multimedia keys on a keyboard
+<!-- Smells: UNVERIFIED STEPS (line 10)-->
+<dl>
+    <dt>Open Movie Player</dt> 
+        <dd>Movie player opens</dd>
+    <dt>Open a playlist</dt>
+    <dt>Press on the Play key (This can be combined with Pause key)</dt> 
+        <dd>This starts playing the playlist</dd> 
+    <dt>Press on the Stop key</dt> 
+        <dd>The Pause (or Play key if there is no separate Pause key) pauses playback</dd> 
+    <dt>Press on the Play key. To start the track playing again</dt> wing only apply if you have the internet hot keys.
+        <dd>Playing resumes</dd> 
+    <dt>Press on the Volume Up key</dt>
+        <dd>The volume increases</dd>  
+    <dt>Press on the Volume Down Key</dt> 
+        <dd>The volume decreases</dd> 
+    <dt>Press on the Volume Mute key</dt> 
+        <dd>The volume mutes</dd> 
+    <dt>Press on the Volume Mute key again</dt> 
+        <dd>This unmutes the audio</dd> 
+    <dt>Press on the Forward Track key</dt>
+        <dd>The next track starts playing</dd> 
+    <dt>Press on the Reverse Track key</dt> 
+        <dd>The previous track starts playing</dd> 
+</dl>
+
+<strong>Multimedia keys (Rhythmbox or Banshee)</strong>
+Case ID: khk-002
+
+<!-- Smells: UNVERIFIED STEPS -->
+<dl>
+    <dt>Open your Music Player</dt>
+        <dd>The music player opens</dd>
+    <dt>Open a playlist</dt>
+    <dt>Press on the Play key (This can be combined with Pause key)</dt>
+        <dd>The playlist starts to play</dd>
+    <dt>Press on the Stop key</dt>
+        <dd>The track stops playing</dd>
+    <dt>Press on the Play key</dt>
+        <dd>The track starts playing again</dd>
+    <dt>Press on the Volume Up key</dt>
+        <dd>The volume increases</dd>
+    <dt>Press on the Volume Down Key</dt>
+        <dd>The volume decreases</dd>
+    <dt>Press on the Volume Mute key</dt>
+        <dd>The volume mutes</dd>
+    <dt>Press on the Volume Mute key</dt>
+        <dd>The volume unmutes</dd>
+    <dt>Press on the Forward Track key</dt>
+        <dd>The next track starts playing</dd>
+    <dt>Press on the Reverse Track key</dt> 
+        <dd>The previous track starts playing</dd>
+</dl>
+
+<strong>Email</strong>
+Case ID: khk-003
+The following only apply if you have the internet hot keys.
+<!-- GOOD TEST -->
+<dl>
+    <dt>Press on the E-mail key</dt>
+        <dd>Your default email app opens</dd>
+</dl>
+
+
+<strong>Web browser</strong>
+Case ID: khk-004
+The following only apply if you have the internet hot keys.
+<!-- Smells: UNVERIFIED STEPS -->
+<dl>
+    <dt>Press on the Home or WWW key</dt>
+        <dd>The default internet browser opens</dd>
+    <dt>Go to www.ubuntu.com</dt> 
+    <dt>Go to planet.ubuntu.com</dt> 
+    <dt>Press the Back key</dt>
+        <dd>The ubuntu home page opens</dd>
+    <dt>Press the Forward key</dt> 
+        <dd>The planet ubuntu page opens</dd>
+    <dt>Open a webpage. Press the Stop key before the page has fully loaded</dt> 
+        <dd>The page stops loading</dd>        
+    <dt>Press the Home key</dt> 
+        <dd>Your homepage opens</dd>
+    <dt>Press the Favorites key</dt> 
+        <dd>The bookmarks sidebar opens</dd>
+</dl>
+
+
+<strong>Search (tracker)</strong>
+Case ID: khk-005
+<!-- GOOD TEST -->
+<dl>
+    <dt>Press the Search key</dt>
+        <dd>The desktop search tool opens</dd> 
+</dl>
+
+<strong>
+    If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

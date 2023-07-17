@@ -1,0 +1,310 @@
+These testcases test install MAAS from an image or previously installed system. You can also <a href="http://maas.ubuntu.com/docs/install.html">follow the documentation for help</a>. NOTE, if a Virtualbox is used, in network settings bridged adapter must be enabled, promiscuous mode must be enabled, and you must use the PCnet-FAST III adapater.
+
+<em>Proceed in your native language if you wish. Instructions will remain in English</em>
+
+Test-case name: maas/maas-001
+This test will check that the MAAS server can be installed from packages.
+<dl>
+    <dt> Please ensure you have the latest Ubuntu development version in a dedicated machine</dt>
+    <dt> Please ensure you have full control over the network</dt>
+    <dt> Please ensure you have internet access or a local mirror of the Ubuntu archive</dt>
+    <dt> Install MAAS, in a terminal type: "sudo apt-get install maas maas-dhcp maas-dns"</dt>
+        <dd>After some minutes, it shows a dialog with the IP of the MAAS server</dd>
+    <dt> Press enter and let it finish the installation</dt>
+    <dt> Visit the MAAS interface in your browser http://IP/MAAS</dt>
+        <dd>MAAS interface display a warning telling no admin user has been created</dd>
+    <dt> Run "sudo maas-region-admin createsuperuser" in your MAAS computer and fill the input fields</dt>
+        <dd>MAAS interface ask your credentials</dd>
+    <dt> Fill the input fields and press "Login"</dt>
+        <dd>Could you login into the MAAS server using the admin account created previously?</dd>
+        <dd>You get a free of warnings index page?</dd>
+</dl>
+
+Test-case name: maas/maas-002
+This test will check that the MAAS server can be installed from the Ubuntu Server iso.
+<dl>
+    <dt> Please ensure you have the <a href="http://cdimage.ubuntu.com/ubuntu-server/daily/current/">latest Ubuntu Server development version</a> in an iso</dt>
+    <dt> Please ensure you have a dedicated machine</dt>
+    <dt> Please ensure you have full control over the network</dt>
+    <dt> Please ensure you have internet access or a local mirror of the Ubuntu archive</dt>
+    <dt> Boot up the iso using a CD/DVD or USB Key</dt>
+        <dd>Language selector boot screen is displayed</dd>
+    <dt> Choose your preferred language</dt>
+        <dd>Language is selected and string are translated</dd>
+    <dt> In the main boot menu select "Multiple server install with MAAS"</dt>
+        <dd>Language selector for the installer is displayed</dd>
+    <dt> Choose your preferred language</dt>
+        <dd>Location selector is displayed</dd>
+    <dt> Select your location</dt>
+        <dd>Keyboard selector is displayed</dd>
+    <dt> At configure keyboard page, select NO </dt>
+        <dd>A list with countries is displayed</dd>
+    <dt> Select the country of the keyboard</dt>
+        <dd>A list with keyboard layouts is displayed</dd>
+    <dt> Select the keyboard layout</dt>
+        <dd>Installer downloads components and later ask for a hostname</dd>
+    <dt> Select hostname ubuntu as default</dt>
+        <dd>A menu asking for listing or creating a new MAAS server is displayed</dd>
+    <dt> Select "Create a new MAAS on this server"</dt>
+        <dd>Name window is displayed</dd>
+    <dt> Insert the name for the new user</dt>
+        <dd>User window is displayed</dd>
+    <dt> Insert the user for the account</dt>
+        <dd>Password input window is displayed</dd>
+    <dt> Choose a password</dt>
+        <dd>Password input window is displayed</dd>
+    <dt> Reinsert the password</dt>
+        <dd>A window asking for encrypting the /home partition is displayed</dd>
+    <dt> At encrypt request select NO</dt>
+        <dd>Timezone window is displayed</dd>
+    <dt> Verify or setup the timezone</dt>
+        <dd>Installer downloads components and later ask for a partition layout</dd>
+    <dt> At partitioning select "Guided - Use entire disk"</dt>
+        <dd>Partition window display the disks available</dd>
+    <dt> Select disk to partition</dt>
+        <dd>A confirmation window is displayed</dd>
+    <dt> At "Write changes to disks", verify that everything is right and select YES</dt>
+        <dd>Installer downloads and installs packages needed to compute next step</dd>
+    <dt> At "http proxy" request, let it blank and press enter</dt>
+        <dd>Installer asks to activate the "Automatic updates"</dd>
+    <dt> At managing upgrades select "No automatic updates"</dt>
+        <dd>After some minutes, it shows a dialog with the IP of the MAAS server</dd>
+    <dt> Press enter and let it finish the installation</dt>
+        <dd>A grub dialog is displayed</dd>
+    <dt> Answer 'Yes' to the 'Install the GRUB boot loader to the master boot record?' question</dt>
+        <dd>A dialog asking for UTC setup is displayed</dd>
+    <dt> Select 'Yes' to the 'Is the system clock set to UTC? question</dt>
+        <dd>A final dialog is displayed indicating the installation is complete</dd>
+    <dt> Select 'Continue'</dt>
+        <dd>The computer get restarted</dd>
+    <dt> After the machine got restarted, wait for the login screen and enter your user credentials</dt>
+    <dt> Type "ifconfig" and look for the ip assigned to the machine</dt>
+    <dt> Visit the MAAS interface in your browser http://IP/MAAS</dt>
+        <dd>MAAS interface display a warning telling no admin user has been created</dd>
+    <dt> Run "sudo maas-region-admin createsuperuser" in your MAAS computer and fill the input fields</dt>
+        <dd>MAAS interface ask your credentials</dd>
+    <dt> Fill the input fields and press "Login"</dt>
+        <dd>Could you login into the MAAS server using the admin account created during previously?</dd>
+    <dt> Run "sudo maas-region-admin createsuperuser" in your MAAS computer and fill the input fields</dt>
+        <dd>MAAS interface ask your credentials</dd>
+    <dt> Fill the input fields and press "Login"</dt>
+        <dd>Could you login into the MAAS server using the admin account created previously?</dd>
+        <dd>You get a free of warnings index page?</dd>
+</dl>
+
+Test-case name: maas/maas-003
+depends: maas/maas-001
+depends: maas/maas-002
+This test will check that an admin can add a new user to the MAAS server.
+<dl>
+    <dt> Open the main page to the MAAS server: http://IP/MAAS</dt>
+    <dt> Login with the admin account, defined in maas-001 or maas-002</dt>
+        <dd>A web page is loaded which shows 0 as the total number of nodes</dd>
+    <dt> Click the settings icon on the right side</dt>
+        <dd>A web page is loaded which shows general information about the MAAS server</dd>
+    <dt> Click the 'Add user' button</dt>
+        <dd>A web page is loaded which asks the details of a new user</dd>
+    <dt> Fill in the required fields, use 'ubuntuser' as the username</dt>
+    <dt> Click the 'Add user' button</dt>
+        <dd>A web page is loaded which shows general information about the MAAS server and the new 'ubuntuser' user</dd>
+    <dt> Log out from MAAS, click you admin name (root by default) and select 'logout'</dt>
+        <dd>A web page is loaded which asks for login credentials</dd>
+    <dt> Log back in using the username 'ubuntuser' and password created previously</dt>
+        <dd>Did you successfully login into the MAAS server with the user created?</dd>
+</dl>
+
+Test-case name: maas/maas-004
+depends: maas/maas-001
+depends: maas/maas-002
+This test will check that an admin can add an admin user to the MAAS server.
+<dl>
+    <dt> Open the main page to the MAAS server: http://IP/MAAS</dt>
+    <dt> Login with the admin account, defined in maas-001 or maas-002</dt>
+        <dd>A web page is loaded which shows 0 as the total number of nodes</dd>
+    <dt> Click the settings icon on the right side</dt>
+        <dd>A web page is loaded which shows general information about the MAAS server</dd>
+    <dt> Click the 'Add user' button</dt>
+        <dd>A web page is loaded which asks the details of a new user</dd>
+    <dt> Fill in the required fields and mark the 'MAAS administrator' field, use 'ubuntuadm' as username</dt>
+    <dt> Click the 'Add user' button</dt>
+        <dd>A web page is loaded which shows general information about the MAAS server and the new 'ubuntuadm' user, it must have the word 'yes' in the column of 'MAAS Admin'</dd>
+    <dt> Log out from MAAS, click you admin name (root by default) and select 'logout'</dt>
+        <dd>A web page is loaded which asks for login credentials</dd>
+    <dt> Log back in using the username 'ubuntuadm' and password created previously</dt>
+        <dd>Did you successfully login into the MAAS server with the admin user created?</dd>
+</dl>
+
+Test-case name: maas/maas-005
+depends: maas/maas-001
+depends: maas/maas-002
+depends: maas/maas-003
+This test will check that an admin can edit an user account from the MAAS server.
+<dl>
+    <dt> Open the main page to the MAAS server: http://IP/MAAS</dt>
+    <dt> Login with the admin account, defined in maas-001 or maas-002</dt>
+        <dd>A web page is loaded which shows 0 as the total number of nodes</dd>
+    <dt> Click the settings icon on the right side</dt>
+        <dd>A web page is loaded which shows general information about the MAAS server</dd>
+    <dt> Click on the 'ubuntuser' user</dt>
+        <dd>A web page is loaded which shows general information about 'ubuntuser'</dd>
+    <dt> Click the 'Edit user' button</dt>
+        <dd>A web page is loaded which shows input fields with information about 'ubuntuser'</dd>
+    <dt> Change the username from 'ubuntuser' to 'ubuser'</dt>
+    <dt> Click in the 'Save user' button</dt>
+        <dd>A web page is loaded which shows general information about the MAAS server and the 'ubuser' username is listed instead of 'ubuntuser'</dd>
+    <dt> Click on the 'ubuser' user</dt>
+        <dd>A web page is loaded which shows general information about 'ubuser'</dd>
+    <dt> Click the 'Edit user' button</dt>
+        <dd>A web page is loaded which shows input fields with information about 'ubuser'</dd>
+    <dt> Change the password for the 'ubuser' account</dt>
+    <dt> Click in the 'Change password' button</dt>
+        <dd>A web page is loaded which shows general information about the MAAS server and the 'ubuser' username is listed</dd>
+    <dt> Click on the 'ubuser' user</dt>
+        <dd>A web page is loaded which shows general information about 'ubuser'</dd>
+    <dt> Click the 'Edit user' button</dt>
+        <dd>A web page is loaded which shows input fields with information about 'ubuser'</dd>
+    <dt> Mark the 'MAAS administrator' checkbox</dt>
+    <dt> Click in the 'Save user' button</dt>
+        <dd>A web page is loaded which shows general information about the MAAS server and the 'ubuser' username is listed as 'MAAS administrator'</dd>
+    <dt> Log out from MAAS, click your admin name (root by default) and select 'logout'</dt>
+        <dd>A web page is loaded which asks for login credentials</dd>
+    <dt> Log back in using the username 'ubuser' and password edited previously</dt>
+        <dd>Did you successfully login into the MAAS server with the 'ubuser' account?</dd>
+</dl>
+
+Test-case name: maas/maas-006
+depends: maas/maas-001
+depends: maas/maas-002
+depends: maas/maas-004
+This test will check that an admin can edit an admin account from the MAAS server.
+<dl>
+    <dt> Open the main page to the MAAS server: http://IP/MAAS</dt>
+    <dt> Login with the admin account, defined in maas-001 or maas-002</dt>
+        <dd>A web page is loaded which shows 0 as the total number of nodes</dd>
+    <dt> Click the settings icon on the right side</dt>
+        <dd>A web page is loaded which shows general information about the MAAS server</dd>
+    <dt> Click on the 'ubuntuadm' user</dt>
+        <dd>A web page is loaded which shows general information about 'ubuntuadm'</dd>
+    <dt> Click the 'Edit user' button</dt>
+        <dd>A web page is loaded which shows input fields with information about 'ubuntuser'</dd>
+    <dt> Change the username from 'ubuntuadm' to 'ubuadm'</dt>
+    <dt> Click in the 'Save user' button</dt>
+        <dd>A web page is loaded which shows general information about the MAAS server and the 'ubuadm' username is listed instead of 'ubuntuadm'</dd>
+    <dt> Click on the 'ubuadm' user</dt>
+        <dd>A web page is loaded which shows general information about 'ubuadm'</dd>
+    <dt> Click the 'Edit user' button</dt>
+        <dd>A web page is loaded which shows input fields with information about 'ubuadm'</dd>
+    <dt> Change the password for the 'ubuadm' account</dt>
+    <dt> Click in the 'Change password' button</dt>
+        <dd>A web page is loaded which shows general information about the MAAS server and the 'ubuadm' username is listed</dd>
+    <dt> Click on the 'ubuadm' user</dt>
+        <dd>A web page is loaded which shows general information about 'ubuadm'</dd>
+    <dt> Click the 'Edit user' button</dt>
+        <dd>A web page is loaded which shows input fields with information about 'ubuadm'</dd>
+    <dt> Unmark the 'MAAS administrator' checkbox</dt>
+    <dt> Click in the 'Save user' button</dt>
+        <dd>A web page is loaded which shows general information about the MAAS server and the 'ubuadm' username is listed as normal user</dd>
+    <dt> Log out from MAAS, click your admin name (root by default) and select 'logout'</dt>
+        <dd>A web page is loaded which asks for login credentials</dd>
+    <dt> Log back in using the username 'ubuadm' and password edited previously</dt>
+        <dd>Did you successfully login into the MAAS server with the 'ubuadm' account?</dd>
+</dl>
+
+Test-case name: maas/maas-007
+depends: maas/maas-001
+depends: maas/maas-002
+depends: maas/maas-004
+depends: maas/maas-006
+This test will check that an user can't edit nor delete any account from the MAAS server.
+<dl>
+    <dt> Open the main page to the MAAS server: http://IP/MAAS</dt>
+    <dt> Login with the username 'ubuadm' and password  defined in maas-004 and maas-006</dt>
+        <dd>A web page is loaded which shows 0 as the total number of nodes</dd>
+    <dt> Go to http://IP/MAAS/settings/</dt>
+        <dd>Do you see a login screen?</dd>
+</dl>
+
+Test-case name: maas/maas-008
+depends: maas/maas-001
+depends: maas/maas-002
+depends: maas/maas-003
+depends: maas/maas-004
+depends: maas/maas-005
+depends: maas/maas-006
+This test will check that an admin can delete user and admin accounts from the MAAS server.
+<dl>
+    <dt> Open the main page to the MAAS server: http://IP/MAAS</dt>
+    <dt> Login with the admin account, defined in maas-001 or maas-002</dt>
+        <dd>A web page is loaded which shows 0 as the total number of nodes</dd>
+    <dt> Click the settings icon on the right side</dt>
+        <dd>A web page is loaded which shows general information about the MAAS server</dd>
+    <dt> Click on the 'ubuadm' user</dt>
+        <dd>A web page is loaded which shows general information about 'ubuadm'</dd>
+    <dt> Click the 'Delete user' button</dt>
+        <dd>A web page is loaded which asks for confirmation</dd>
+    <dt> Click the 'Delete user' button</dt>
+        <dd>A web page is loaded which shows general information about the MAAS server and an announcement about the 'ubuadm' deleted user</dd>
+    <dt> Click on the 'ubuser' user</dt>
+        <dd>A web page is loaded which shows general information about 'ubuser'</dd>
+    <dt> Click the 'Delete user' button</dt>
+        <dd>A web page is loaded which asks for confirmation</dd>
+    <dt> Click the 'Delete user' button</dt>
+        <dd>A web page is loaded which shows general information about the MAAS server and an announcement about the 'ubuser' deleted user</dd>
+        <dd>Did you successfully deleted both accounts?</dd>
+</dl>
+
+Test-case name: maas/maas-009
+depends: maas/maas-001
+depends: maas/maas-002
+This test will check that you can do the initial image import
+<dl>
+    <dt> Open the main page to the MAAS server: http://IP/MAAS</dt>
+    <dt> Click the gear or navigate to: http://IP/MAAS/settings</dt>
+    <dt> Under cluster controllers, click the "Import boot images" button</dt>
+        <dd>A message displayed the import of boot images should appear</dd>
+        <dd>This will download boot images, which will take some time to complete (WARNING: This is an large download, 4+ gb)</dd>
+        <dd>Eventually the images are available</dd>
+</dl>
+
+Test-case name: maas/maas-010
+depends: maas/maas-009
+This test will check that you deploy a node for MAAS
+<dl>
+    <dt> Please ensure you have the <a href="http://cdimage.ubuntu.com/ubuntu-server/daily/current/">latest Ubuntu Server development version</a> in an iso</dt>
+    <dt> Boot up the iso using a CD/DVD or USB Key</dt>
+        <dd>Language selector boot screen is displayed</dd>
+    <dt> Choose your preferred language</dt>
+        <dd>Language is selected and string are translated</dd>
+    <dt> In the main boot menu select "Multiple server install with MAAS"</dt>
+        <dd>Language selector for the installer is displayed</dd>
+    <dt> Choose your preferred language</dt>
+        <dd>Location selector is displayed</dd>
+    <dt> Select your location</dt>
+        <dd>Keyboard selector is displayed</dd>
+    <dt> At configure keyboard page, select NO </dt>
+        <dd>A list with countries is displayed</dd>
+    <dt> Select the country of the keyboard</dt>
+        <dd>A list with keyboard layouts is displayed</dd>
+    <dt> Select the keyboard layout</dt>
+        <dd>Installer downloads components and later ask for a hostname</dd>
+    <dt> Select hostname ubuntu as default</dt>
+        <dd>A menu asking for listing or creating a new MAAS server is displayed</dd>
+    <dt> Select "Specify MAAS by name or address "</dt>
+        <dd>Enter the ip address of the configured MAAS server</dd>
+    <dt> Specify hostname box appears</dt>
+        <dd>Leave blank or enter a name</dd>
+    <dt> The pc should shut down</dt>
+    <dt> Note, if you used virtualbox, please ensure 'network' boot is enabled and is set as the top. For a physical machine, please ensure pxe boot is enabled</dt>
+        <dd>The node should be deployed and eventually shown on the http://IP/MAAS screen. The total nodes in the system should now read 1</dd>
+    <dt> Click the nodes link in the menu bar</dt>
+        <dd>Your new node should be displayed</dd>
+    <dt> Click the node</dt>
+        <dd>The nodes property page should be displayed</dd>
+    <dt> Click accept and commission</dt>
+        <dd>The node should now be available for use</dd>
+    <dt> In order to test maas+juju, you should add and prepare additional nodes now using the above steps</dt>
+        <dd> The total nodes in the system should now correspond to the number of added nodes</dd>
+</dl>
+<strong>
+    If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

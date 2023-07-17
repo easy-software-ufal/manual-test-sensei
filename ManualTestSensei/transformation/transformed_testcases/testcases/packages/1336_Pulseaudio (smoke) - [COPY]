@@ -1,0 +1,26 @@
+Test-case name: pulseaudio/pulseaudio-001
+Tests should be performed to make sure PulseAudio is properly recognising your audio hardware.
+<dl>
+    <dt>Check the log output of PulseAudio, either in syslog, or following the instructions on https://wiki.ubuntu.com/PulseAudio/Log</dt>
+        <dd>The log output should contain references to module-udev-detect detecting either a pci or USB audio device</dd>
+    <dt>Check the output of the command "pactl list"</dt>
+        <dd>The pactl list command should list loaded modules and their parameters, as well as all current sinks, sources, and their current volume, device information, and output profile</dd>
+    <dt>Open up the sound settings window from the sound indicator and check both the output and input pages.</dt>
+        <dd>The output and input pages should list all detected hardware, both internal and USB, and allow for volume adjustment</dd>
+</dl>
+
+<!-- Smells: UNVERIFIED STEPS, EXCEPTION HANDLING, CONDITIONAL TEST-->
+Test-case name: pulseaudio/pulseaudio-002
+General PulseAudio tests.
+<dl>
+    <dt>Does your audio work properly?</dt>
+    <dt>Are you still able to control sound via the sound applet?</dt>
+    <dt>If you use pavucontrol (sudo apt-get install pavucontrol), are you still able to control sound and input devices properly?</dt>
+    <dt>Is your sound hardware recognized properly?</dt>
+    <dt>Does hotplugging a microphone or headset work properly?</dt>
+    <dt>If you have bluetooth audio hardware, does it work properly once paired?</dt>
+    <dt>Overall, does everything function the same or better than the stable version?</dt>
+</dl>
+
+<strong>If all actions produce the expected results listed, and you can answer yes to the above questions, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, or you answer no to any of the above questions, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

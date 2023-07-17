@@ -1,0 +1,15 @@
+Scope of this testcase is to install an iSCSI server on KVM
+<strong>Prerequisites</strong>
+<dl
+<!-- Misplaced Pre-Condition, Unverified Steps -->
+    <dt>Make sure that your processor supports hardware virtualization running in terminal: <code>egrep "flags.*:.*(svm|vmx)" /proc/cpuinfo</code></dt>
+        <dd>If it prints anything the processor is suitable to use KVM</dd>
+</dl>
+
+<dl>
+    <dt>sudo apt-get install qemu-kvm virt-manager</dt>
+    <dt>Open Virtual Manager and connect to localhost. We will be using the default network for the first part of the environment set up, which allows DHCP and forwarding, as we will need Internet connection</dt>
+        <dd><img src="http://testcases.qa.ubuntu.com/Install/ServeriSCSIRoot/KVMExample?action=AttachFile&do=get&target=Step1.png" alt="" /></dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

@@ -1,0 +1,107 @@
+This test will check that Orage can be opened either from a terminal window or from the applications menu, and shutdown
+<dl>
+    <dt>Open a terminal window, type <code>orage</code> at the prompt and hit the "Enter" key</dt>
+        <dd>Orage opens</dd>
+    <dt>Click the top right "X" of the window's title bar to close the application</dt>
+        <dd>Orage closes</dd>
+    <dt>Point your mouse pointer to the menu icon and click it</dt>
+        <dd>A menu drops down</dd>
+    <dt>Navigate to Office -> Orage Calendar</dt>
+        <dd>Orage opens</dd>
+</dl>
+
+This test will check that Orage's File menu options work as expected
+<dl>
+    <dt>Navigate to File -> New or alternatively hit Ctrl+N keys</dt>
+        <dd>New appointment dialogue window opens</dd>
+    <dt>Navigate to File -> Exchange data</dt>
+        <dd>Exchange data dialogue window opens</dd>
+    <dt>Navigate to File -> Close or alternatively hit Ctrl+W keys</dt>
+        <dd>Orage window is hidden but Orage keeps running in the background</dd>
+    <dt>Navigate to File -> Quit or alternatively hit Ctrl+Q keys</dt>
+        <dd>Orage closes</dd>
+</dl>
+
+This test will check that Orage's Edit menu options work as expected and Orage's preferences can be configured
+<dl>
+    <dt>Open Orage either from a terminal window or from the applications menu</dt>
+        <dd>Orage opens</dd>
+    <dt>Navigate to Edit -> Preferences</dt>
+        <dd>Preferences dialogue window opens with the "Main settings" tab selected</dd>
+    <dt>Click the "Timezone" button</dt>
+        <dd>Pick timezone dialogue window opens</dd>
+    <dt>Select a timezone and click the "OK" button</dt>
+        <dd>The default timezone for Orage is set accordingly to the choice made</dd>
+    <dt>Increase the value of months under the "Archive threshold" option</dt>
+        <dd>Archiving is enabled by changing the threshold from a 0 value (no archiving) up to 12 (maximum period of time)</dd>
+        <dd>The number of months before old appointments are to be moved from the active calendar file to passive history file is set accordingly</dd>
+    <dt>Click the "Open" button under the sound command option</dt>
+        <dd>"Select a file..." window dialogue opens</dd>
+    <dt>Navigate to /usr/share/orage/sounds choose a sound file and click the "Open" button</dt>
+        <dd>The selected file will define which sound Orage uses when playing sound files</dd>
+    <dt>Point your mouse cursor to the "Calendar window" tab and click it</dt>
+        <dd>Selected/active tab changes to "Calendar window" tab</dd>
+    <dt>Tick/Untick the options given</dt>
+        <dd>Orage's GUI definitions and visibility options for the main window change accordingly to the preferences set</dd>
+    <dt>Point your mouse cursor to the "Extra settings" tab and click it</dt>
+        <dd>Selected/active tab changes to "Extra settings" tab</dd>
+    <dt>Tick/Untick the options given</dt>
+        <dd>The selected day after Orage main calendar window is hidden and comes visible again, the use of a dynamic icon in the taskbar, the definition to start either the event list or the day view window when double clicking day numbers in the main calendar window and how many days to show in the event list when it starts, change accordingly to the preferences set</dd>    
+</dl>
+
+This test will check that Orage's View menu options work as expected
+<dl>
+    <dt>Navigate to View -> View selected date</dt>
+        <dd>A dialogue window opens showing the events list for the currently selected date</dd>
+    <dt>Navigate to View -> View selected week</dt>
+        <dd>A dialogue window opens showing the day window starting from current day</dd>
+    <dt>Navigate to View -> Select Today</dt>
+        <dd>Calendar's selected day is set to be today</dd>
+    <dt>Navigate to View -> Show Globaltime</dt>
+        <dd>Orage Globaltime window opens</dd>
+</dl>
+
+This test will check that Orage's Help menu options work as expected
+<dl>
+    <dt>Navigate to Help -> Help or alternatively hit Ctrl+H keys</dt>
+        <dd>Orage offline documentation opens in a web browser</dd>
+    <dt>Navigate to Help -> About</dt>
+        <dd>About Orage dialogue window opens and not only the "Credits" button correctly display the associated information but also the "Close" button properly closes the dialogue window</dd>
+</dl>
+
+This test will check that Orage allows you to add, edit and delete appointments
+<dl>
+    <dt>Navigate to File -> New or alternatively hit Ctrl+N keys</dt>
+        <dd>New appointment dialogue window opens with the "General" tab selected</dd>
+    <dt>Define the contents of the appointment, detailing its Type, Title, Location, whether it's a all day event or not, its start time, duration, availability, categories, priority and notes. When finished either navigate to File -> Save and close or alternatively hit Alt+W keys</dt>
+        <dd>The dialogue window closes and the appointment is saved</dd>
+        <dd>In addition, three kinds of alarms can be defined and also the recurrence of the appointment, using for that effect the "Alarm" and "Recurrence" tabs, respectively</dd>
+        <dd>The calendar window marks every appointment not only bolding in its correspondent day but also in bottom in a small window showing active TODOs and EVENTs on the selected day</dd>
+    <dt>In the calendar window double click the date where previously the appointment was created, or alternatively just click the date and navigate to View -> View selected date</dt>
+        <dd>Selected date dialogue window opens</dd>
+    <dt>Double click the appointment line to edit it</dt>
+        <dd>Appointment dialogue window opens with the "General" tab selected</dd>
+    <dt>Edit any of the parameters of the appointment and when finished either navigate to File -> Save and close or alternatively hit Alt+W keys</dt>
+        <dd>Appointment dialogue window closes</dd>
+        <dd>Selected date dialogue window displays the appointment with the new data</dd>
+    <dt>Navigate to File -> Close or alternatively hit Ctrl+W keys</dt>
+        <dd>Selected date dialogue window closes</dd>
+    <dt>In the calendar window double click the date where previously the appointment was created/edited, or alternatively just click the date and navigate to View -> View selected date</dt>
+        <dd>Selected date dialogue window opens</dd>
+    <dt>Select the appointment line and navigate to File -> Delete or alternatively "Delete" button in the toolbar</dt>
+        <dd>Dialogue window opens warning that selected appointments will be permanently removed</dd>
+    <dt>Click the "Yes" button</dt>
+        <dd>Dialogue window closes and the Selected date dialogue window doesn't displays the deleted appointment</dd>
+</dl>
+
+This test will check that Orage allows to import and export calendar data
+<dl>
+    <dt>Navigate to File -> Exchange data</dt>
+        <dd>Exchange dialogue window opens with the "Import/export" tab selected</dd>
+    <dt>In the Import text box enter the name of the file or several files in a row by separating names with comma to copy into Orage and click the "Save" button</dt>
+        <dd>The file(s) are imported making the appointments part of Orage and can't be differentiated or put back into the file</dd>
+    <dt>In the Export text box enter the name of the file where Orage will write appointments or choose either all appointments or just a list of ids and click the "Save" button</dt>
+        <dd>The appointments will be read and written to the external file and are not deleted from Orage</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

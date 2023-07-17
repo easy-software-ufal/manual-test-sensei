@@ -1,0 +1,60 @@
+Test-case name: ChineseCalendar/chi-001
+<dl>
+    <!-- EXCEPTION HANDLING -->
+    This test will check that Chinese Calendar can display calendar and the main window may hide.
+    <dt>Find the indicator icon of Chinese Calendar to check whether it autostart</dt>
+        <dd>Did Chinese Calendar autostart?</dd>
+    <dt>Click the indicator icon of Chinese Calendar and select "Hide/Show" menu item</dt>
+        <dd>Did the Chinese calendar main window display?</dd>
+    <dt>Click the indicator icon of Chinese Calendar and select "Hide/Show" menu item again</dt>
+        <dd>Did the Chinese calendar main window disappear?</dd>
+</dl>
+
+Test-case name: ChineseCalendar/chi-002
+<dl>
+    <!-- EXCEPTION HANDLING, EAGER TEST -->
+    This test will check that Chinese Calendar can be configured to show the main window in different mode.
+    <dt>Click the indicator icon of Chinese Calendar and select "Always Top" menu item</dt>
+        <dd>Is the main window showed in front of all other windows?</dd>
+    <dt>Click the indicator icon of Chinese Calendar and select "Always Bottom" menu item</dt>
+        <dd>Is the main window showed behind all other windows except the desktop?</dd>
+    <dt>Click the indicator icon of Chinese Calendar and select "Normal" menu item</dt>
+        <dd>Is the main window showed as normal application window?</dd>
+</dl>
+
+Test-case name: ChineseCalendar/chi-003
+<dl>
+    This test will check each basic function of Chinese Calendar.
+    <dt>Click the non blank part on the application window of Chinese Calendar for any date</dt>
+        <dd>Are the lunar date, the compatibility and incompatibility of the lunar calendar and the schedule that day showed on the right of the application window correct?</dd>
+    <dt>Click the drop-down box of “Year” on the application window to change the current year</dt>
+        <dd>Is the modified date showed in the application window correct?</dd>
+    <dt>Click the drop-down box of “Month” on the application window change the current month</dt>
+        <dd>Is the modified date showed in the application window correct?</dd>
+    <dt>Click the button of “Today” on the application window</dt>
+        <dd>Is the date information of today correct?</dd>
+    <dt>Change the date and time in system setting. Click the "Today" button to update according to system</dt> 
+        <dd>Did the date and time in the main window change correctly?</dd>
+</dl>
+
+Test-case name: ChineseCalendar/chi-004
+<dl>
+    This test will check the Memo function of Chinese Calendar.
+    <dt>Double click the non blank part on the application window of Chinese Calendar for any date</dt>
+        <dd>Did the Memo editor window pop up?</dd>
+    <dt>Double click the blank part on the application window of Chinese Calendar</dt>
+        <dd>Did the Memo editor window pop up? No respond is right.</dd>
+    
+    <dt>Add content to the popped up Memo, then click the green tick</dt>
+        <!-- EAGER TEST, EXCEPTION HANDLING -->
+        <dd>Did the bottom of the application window showed “Have schedule today” for that day?</dd>
+        <dd>Did the Memo for that day showed the content what you have just write？</dd>
+    <dt>Add content to the popped up Memo, then click the red cross</dt>
+        <dd>Did the bottom of the application window showed “No schedule today” for that day?</dd>
+        <dd>Did the Memo for that day showed anything?</dd>
+
+
+        Note:The schedule information on the main window does not update in real time. It will be updated when we click the button for that date.
+    </dl>
+    <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+        If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

@@ -36,9 +36,8 @@ Test-case launcher/auto-hide
 </dl>
 
 Test-case launcher/auto-hide-behavior
-Make sure auto-hide is enabled.
 <dl>
-    
+    <dt>Make sure auto-hide is enabled.</dt>
     <dt>Move the mouse on the edge and:
         <ul>
             <li> - continue pushing to the left (as if you want to put the mouse offscreen) until the launcher reveal</li>
@@ -282,9 +281,8 @@ Test-case launcher/keyboard-nav-exit
 </dl>
 
 Test-case launcher/keyboard-nav-auto-hide
-Make sure auto-hide is enabled
 <dl>
-    
+    <dt>Make sure auto-hide is enabled</dt>
     <dt>Press alt + F1</dt>
         <dd>The launcher should appear</dd>
     <dt>Press escape</dt>

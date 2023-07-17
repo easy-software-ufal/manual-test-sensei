@@ -1,0 +1,110 @@
+This test will check that Session and Startup opens and closes correctly
+<dl>
+    <dt>Open Settings from the Whiskermenu</dt>
+        <dd>Settings dialog opens</dd>
+    <dt>Open Session and Startup from System group</dt>
+        <dd>Session and Startup opens</dd>
+    <dt>Press All Settings</dt>
+        <dd>Session closes leaving main Settings window</dd>
+</dl>
+
+This test will check that Session chooser appears at login. Logging out will be required.
+<dl>
+    <dt>Open Session and Startup from System group</dt>
+        <dd>Session and Startup opens</dd>
+    <dt>In General tab, select Display chooser on login</dt>
+        <dd>Tick appears in box</dd>
+    <dt>Press Close</dt>
+        <dd>Session and Startup closes</dd>
+    <dt>From whiskermenu power button choose logout, select Save session for future logins</dt>
+        <dd>Tick appears in box</dd>
+    <dt>Press logout</dt>
+        <dd>User is logged out</dd>
+    <dt>Login as user, entering password if required</dt>
+        <dd>Lightdm login dialogue closes</dd>
+        <dd>Session dialogue appears</dd>
+    <dt>Double click Default</dt>
+        <dd>User logged in to Desktop</dd>
+</dl>
+
+This test will check that applications are restored with sessions. Logging out will be required.
+<dl>
+    <dt>Open Settings from the Whiskermenu</dt>
+        <dd>Settings dialog opens</dd>
+    <dt>Open Session and Startup from System group</dt>
+        <dd>Session and Startup opens</dd>
+    <dt>Press Super+3</dt>
+        <dd>LibreOffice Writer opens</dd>
+    <dt>Go to Session tab of Session and Startup</dt>
+        <dd>Dialogue changes to session</dd>
+    <dt>Press Save Session</dt>
+        <dd>Session save dialogue momentarily appears and closes</dd>
+    <dt>Close Session and Startup with close button</dt>
+        <dd>Session dialogue closes</dd>
+    <dt>Focus on LibreOffice Writer and press Ctrl+Q</dt>
+        <dd>LibreOffice Writer closes</dd>
+    <dt>From whiskermenu power button choose logout</dt>
+        <dd>Logout dialogue appears with Save session ticked</dd>
+    <dt>Untick Save session and press logout</dt>
+        <dd>User is logged out</dd>
+    <dt>Login as user, entering password if required</dt>
+        <dd>Lightdm login dialogue closes</dd>
+        <dd>Session dialogue appears</dd>
+    <dt>Double click Default</dt>
+        <dd>User logged in to Desktop</dd>
+        <dd>LibreOffice Writer opens</dd>
+    <dt>Close LibreOffice Writer</dt>
+        <dd>LibreOffice Writer closes</dd>
+</dl>
+
+This test will check that Session saves are cleared correctly. Logging out will be required.
+<dl>
+    <dt>Open Settings from the Whiskermenu</dt>
+        <dd>Settings dialog opens</dd>
+    <dt>Open Session and Startup from System group</dt>
+        <dd>Session and Startup opens</dd>
+    <dt>Go to Session tab of Session and Startup</dt>
+        <dd>Dialogue changes to session</dd>
+    <dt>Press Clear saved sessions</dt>
+        <dd>Clear sessions dialogue appears</dd>
+    <dt>Press Proceed</dt>
+        <dd>Dialogue closes</dd>
+    <dt>Close Session and Startup with close button</dt>
+        <dd>Session dialogue closes</dd>
+    <dt>From whiskermenu power button choose logout</dt>
+        <dd>User is logged out</dd>
+    <dt>Login as user, entering password if required</dt>
+        <dd>Lightdm login dialogue closes</dd>
+        <dd>User logged in to Desktop with no saved applications appearing</dd>
+</dl>
+
+This test will check that Applications added the Autostart list start correctly. Logging out will be required.
+<dl>
+    <dt>Open Settings from the Whsikermenu</dt>
+        <dd>Settings dialog opens</dd>
+    <dt>Open Session and Startup from System group</dt>
+        <dd>Session and Startup opens</dd>
+    <dt>In General Tab - select Display Chooser on login</dt>
+        <dd>Tick not shown in box</dd>
+    <dt>Go to Application Autostart tab</dt>
+        <dd>Dialogue changes to show current Autostart applications</dd>
+    <dt>Press Add button</dt>
+        <dd>Add application dialogue appears</dd>
+    <dt>In Name box type Test, select Description box</dt>
+        <dd>Test shows in Name box</dd>
+    <dt>In description box type LibreOffice Writer test, select Command box</dt>
+        <dd>LibreOffice Writer test shows in Description box</dd>
+    <dt>Click button to right of Command box</dt>
+        <dd>Select command dialogue appears</dd>
+    <dt>Navigate to /usr/bin/LibreOffice Writer, select and click OK</dt>
+        <dd>Command selection dialogue closes, command box populated with command</dd>
+    <dt>Click OK</dt>
+        <dd>Add application dialogue closes</dd>
+    <dt>Move to the bottom of the application list</dt>
+        <dd>New item shown as Test(LibreOffice Writer Test) with box populated with a tick</dd>
+    <dt>Close Session and startup, logout and then login once more</dt>
+        <dd>User logs back into Desktop, LibreOffice Writer starts</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>  

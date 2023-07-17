@@ -8,13 +8,15 @@ import logging
        #'Ambiguous Test', 'Unverified Action', 'Misplaced Verification',
        #'Misplaced Precondition']
 
-SMELL_NAMES = ['Misplaced Precondition']
+SMELL_NAMES = ['Eager Action']
 
 def create_copy(df:pd.DataFrame, filteredDataFrame):
     def update_df_with_copy_location(df:pd.DataFrame,copied_paths:dict) -> pd.DataFrame:
         df_zero = df
+        #breakpoint()
         try:
-            df['Copy Path'] = df['Test file'].map(copied_paths, 'ignore').fillna(df_zero['Copy Path'])
+            df['Test file'] = df['Test file'].str.replace(r'\\', '/', regex=True)
+            df['Copy Path'] = df['Test file'].map(copied_paths, 'ignore')
         except:
             df['Copy Path'] = df['Test file'].map(copied_paths, 'ignore')
         return df
@@ -23,14 +25,14 @@ def create_copy(df:pd.DataFrame, filteredDataFrame):
     copied_paths = {}
     for file in path_files:
         path = Path(file)
-        if __name__ == 'main': #rodando dentro da pasta transforamtion
+        if __name__ == 'main': #rodando dentro da pasta transforamtio
             os.makedirs(os.path.dirname(file[3:]), exist_ok=True)
             new_file_path = shutil.copy(Path('../',file), file[3:] + ' - [COPY]')
         else:
             if sys.platform.startswith('linux'):
-                os.makedirs(os.path.dirname(Path('transformed_testcases//',file[3:])), exist_ok=True)
-                #breakpoint()
-                new_file_path = shutil.copy(src=Path('.',file), dst=(Path('.//transformed_testcases',file[3:] + ' - [COPY]')))
+                file = file.replace('\\', '/')
+                os.makedirs(os.path.dirname(Path('transformation//transformed_testcases//',file[3:])), exist_ok=True)
+                new_file_path = shutil.copy(src=file, dst='transformation/transformed_testcases/' + file[3:] + ' - [COPY]')
             else:
                 os.makedirs(os.path.dirname(Path('transformed_testcases\\',file[3:])), exist_ok=True)
                 # breakpoint()

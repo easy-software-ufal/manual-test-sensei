@@ -1,0 +1,20 @@
+Test-case name: IndicatorChinaWeather
+This test will check the Indicator China Weather can display the right weather information and  you can configure the application rightly.
+<dl>
+    <dt>Find the indicator icon of Indicator China Weather</dt>
+        <dd>Did the Indicator China Weather autostart?</dd>
+    <dt>When you first startup the Indicator China Weather, you need to configure your location. Click "Configure..." menu,then click "Locale" and click "Add(A)" button,input the location in chinese or in pinyin,click "Search" button and choose a locale then click "Forward(F)" and "Apply(A)" button,then click the "OK(O)" button to finish the configuration. </dt>
+        <dd>Does the application display the weather information of your locale?</dd>
+    <dt>To show the weather forecast for the next 6 days, click the "Weather forecast" menu</dt>
+        <dd>Does the application show the 6 day weather forecast?</dd>
+    <dt>To show temperature beside the indicator icon, click "Configure..." menu, then Click "Show temperature beside icon" checkbox and click "OK(O)" button</dt>
+        <dd>Did the app display temperature beside the icon?</dd>
+    <dt>Check the configured update time interval for the weather information</dt>
+        <dd>Did the weather information update according to the configuration?</dd>
+    <dt>Add multi-locale and change locale from one to another</dt>
+        <dd>Did the information change corresponding to the change of locale?</dd>
+    <dt>Open configuration dialog of locale. Select a locale and delete it. </dt>
+        <dd>Can the locale be deleted?</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

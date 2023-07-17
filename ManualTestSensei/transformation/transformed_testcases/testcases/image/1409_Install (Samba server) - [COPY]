@@ -1,0 +1,45 @@
+Scope of this test is to verify that the system is installed, you can login into it and samba is running.
+<!-- Smells: UNVERIFIED STEPS -->
+<em>Proceed in your native language if you wish. Instructions will remain in English</em>
+
+<dl>
+    <dt>Boot up the image</dt>
+    <dt>Choose the desired language</dt>
+    <dt>Select "Install Ubuntu Server"</dt>
+    <dt>Choose the language</dt>
+    <dt>Select your location</dt>
+    <dt>Configure locales</dt>
+    <dt>At configure keyboard page, select NO </dt>
+    <dt>Select the country of the keyboard</dt>
+    <dt>Select the keyboard layout</dt>
+    <dt>Select hostname ubuntu as default</dt>
+    <dt>Insert the name for the new user</dt>
+    <dt>Insert the name for the account</dt>
+    <dt>Choose a password</dt>
+    <dt>Reinsert the password</dt>
+    <dt>At encrypt request select NO</dt>
+    <dt>Verify or setup the timezone</dt>
+    <dt>At partitioning select "Guided - Use entire disk"</dt>
+    <dt>Select disk to partition</dt>
+    <dt>At "Write changes to disks", verify that everythings is right and select YES</dt>
+    <dt>At "http proxy" request, leave it blank and press enter</dt>
+    <dt>At managing upgrades select "No automatic updates"</dt>
+    <dt>At Software selection, choose "Samba server"</dt>
+    <dt>Select to install Grub in the master boot record</dt>
+    <dt>Remove the installation media (CDROM or USB key)</dt>
+    <dt>Wait that the system reboot and login</dt>
+    <dt>Verify that samba is running:</dt>
+        <dd>echo smbd ; pgrep smbd; echo; echo nmbd; pgrep nmbd; echo ; echo winbindd; pgrep winbindd ; echo</dd>
+        <dd>should return the pid for pgrep smbd, pgrep nmbd, pgrep winbindd.</dd>
+    <dt>Verify the default workgroup name is displayed:</dt>
+        <dd>sudo net getlocalsid</dd>
+        <dd>should return a line similar to sid for domain UBUNTU is S-1-5....</dd>
+    <dt>Verify winbind is responding to requests:</dt>
+        <dd>wbinfo -p</dd>
+        <dd>has to return a line similar to "Ping to winbindd succeeded".</dd>
+    <dt>Verify winbind basic functionality:</dt>
+        <dd>wbinfo --all-domains</dd>
+        <dd>has to return two lines: one with "BUILTIN", the other with the unqualified hostname in uppercase. For example, a hostname like "ubuntu" would be in the wbinfo output text as "UBUNTU".</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

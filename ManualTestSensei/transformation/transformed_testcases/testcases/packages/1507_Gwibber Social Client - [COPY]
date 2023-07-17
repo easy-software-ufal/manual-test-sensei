@@ -1,0 +1,97 @@
+These tests check the Gwibber application and its integration to Twitter, Facebook and Flickr.
+
+Test-Case name: gwibber/gwb-001
+This test will check that Gwibber can be started
+<dl>
+    <dt> Look for Gwibber and launch it</dt>
+        <dd>Is Gwibber launched?</dd>
+</dl>
+
+Test-Case name: gwibber/gwb-002
+depends: gwibber/gwb-001
+This test will check the Facebook integration
+<dl>
+    <dt>Open the Online Accounts application</dt>
+        <dd>The Online Accounts window appear</dd>
+    <dt>Select "Facebook"</dt>
+        <dd>A screen asking for authentication is displayed</dd>
+    <dt>Fill the fields with your credentials and click on the "Log In" button</dt>
+        <dd>The accounts gets added and in the right panel the Gwibber turn on button is enabled</dd>
+    <dt>Open Gwibber</dt>
+        <dd>Gwibber displays Facebook's timeline on window screen and notifications are shown with previous messages</dd>
+    <dt>Drag down and up with the cursor the timeline</dt>
+        <dd>Displayed messages moves up and down</dd>
+    <dt>Click on a random message</dt>
+        <dd>New elements appear below the message; previous comments, a star, an input field with the phrase "Reply" and a "Send" button</dd>
+    <dt>Click on the same message</dt>
+        <dd>Additional elements disappear</dd>
+    <dt>Click one more time on the same message</dt>
+    <dt>Write "ping" into the "Reply" input field, press "Send" and drag up to the top of the timeline</dt>
+        <dd>A message containing "ping" is shown at the top of the timeline</dd>
+    <dt>Click on the "Post" button</dt>
+        <dd>The "Share with your friends" window is shown, it contains your nickname in Facebook, a "Compose" input file, and a "Send" button</dd>
+    <dt>Write some text and press "Send"</dt>
+        <dd>Gwibber goes back to the timeline window</dd>
+    <dt>Click the "Top" button</dt>
+        <dd>The text previously written is shown into the top of the timeline on your Facebook account</dd>
+    <dt>Make someone write in your wall</dt>
+    <dt>Click on the mention message in the timeline window</dt>
+    <dt>Write a reply into the "Reply" input field and press "Send"</dt>
+        <dd>The timeline window shown the message used to reply</dd>
+    <dt>Click on some random message</dt>
+        <dd>New elements appear below the message; previous comments, a star, an input field with the phrase "Reply" and a "Send" button</dd>
+    <dt>Click the star button on the left</dt>
+        <dd>The "# people liked this" increments one"</dd>
+    <dt>Go to the Online Accounts application</dt>
+    <dt>Select "Remove Account" to delete the Facebook account</dt>
+        <dd>A confirmation dialog is shown</dd>
+    <dt>Select "Remove"</dt>
+    <dt>Go back to Gwibber</dt>
+        <dd>Is the Gwibber Timeline window blank?</dd>
+</dl>
+
+Test-Case name: gwibber/gwb-003
+depends: gwibber/gwb-001
+This test will check the Twitter integration
+<dl>
+    <dt>Open the Online Accounts application</dt>
+        <dd>The Online Accounts window appear</dd>
+    <dt>Select "Twitter"</dt>
+        <dd>A screen asking for authentication is displayed</dd>
+    <dt>Fill the fields with your credentials and click on the "Authorize app" button</dt>
+        <dd>The accounts gets added and in the right panel the Gwibber turn on button is enabled</dd>
+    <dt>Open Gwibber</dt>
+        <dd>Gwibber displays Twitter’s timeline on window screen and notifications are shown with previous messages</dd>
+    <dt>Drag down and up with the cursor the timeline</dt>
+        <dd>Displayed messages moves up and down</dd>
+    <dt>Click on a random message</dt>
+        <dd>New elements appear below the message; a "Send" button, a "retweet" button and an Input field with the phrase "Reply"</dd>
+    <dt>Click on the same message</dt>
+        <dd>Additional elements disappear</dd>
+    <dt>Click one more time on the same message</dt>
+    <dt>Write "ping" into the "Reply" input field, press "Send" and drag up to the top of the timeline</dt>
+        <dd>A message containing "ping" is shown at the top of the timeline</dd>
+    <dt>Click on the "Post" button</dt>
+        <dd>The "Share with your friends" window is shown, it contains your nickname in Twitter, a "Compose" input file, and a "Send" button</dd>
+    <dt>Write some text and press "Send"</dt>
+        <dd>Gwibber goes back to the timeline window</dd>
+    <dt>Click the "Top" button</dt>
+        <dd>The text previously written is shown into the top of the timeline on your Twitter account</dd>
+    <dt>Make someone mention you</dt>
+    <dt>Click on the mention message in the timeline window</dt>
+    <dt>Write a reply into the "Reply" input field and press "Send"</dt>
+        <dd>The timeline window shown the message and auto-completes your friend's nickname</dd>
+    <dt>Click on some random message</dt>
+        <dd>New elements appear below the message; a "Send" button, a "retweet" button and an Input field with the phrase "Reply"</dd>
+    <dt>Click the retweet button on the left</dt>
+        <dd>A new message appears at the top of the timeline with the word "RT" at the beginning and the random message after</dd>
+    <dt>Go to the Online Accounts application</dt>
+    <dt>Select "Remove Account" to delete the Twitter account</dt>
+        <dd>A confirmation dialog is shown</dd>
+    <dt>Select "Remove"</dt>
+    <dt>Go back to Gwibber</dt>
+        <dd>Is the Gwibber Timeline window blank?</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

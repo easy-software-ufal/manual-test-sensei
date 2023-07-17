@@ -1,0 +1,33 @@
+This testcase is to be carried out on an IBM POWER system (POWER 8 or higher, but cannot be executed on a PowerVM DLPAR). 
+Scope of this testcase is to verify that the system can be installed using a live server image and netbooting from the Petitboot firmware prompt.
+
+<em>Proceed in your native language if you wish. Instructions will remain in English.</em>
+
+<dl>
+    <dt>Boot up a system using IPMI, monitor the (sol) console, until the Petitboot menu shows up and select 'Exit to shell'.</dt>
+        <dd>It takes takes a while to boot the OPAL firmware aka embedded Linux up to the Petitboot menu.</dd>
+        <dd>Select 'Exit to shell' in Petitboot promptly before the system times out and proceeds with booting from the default device.</dd>
+    <dt>Download the ISO image, usually the one mentioned here in the QA tracker that was requested to be tested, using wget (a proxy server might need to be specified).</dt>
+        <dd>wget http://path/to/image.iso   # proxy might be needed: '-e use_proxy=yes -e http_proxy=squid.internal:3128' </dd>
+    <dt>Loop-back mount the ISO image:</dt>
+        <dd>mkdir iso</dd>
+        <dd>mount -t iso9660 -o loop image.iso iso</dd>
+    <dt>Start The installer using kexec</dt>
+        <dd>kexec -l ./iso/casper/vmlinux --initrd=./iso/casper/initrd.gz --append="ip=dhcp url=http://path/to/image.iso --- quiet"</dd>
+        <dd>kexec -e</dd>
+    <dt>The subiquity UI will pop-up after some time, choose your desired language, or confirm the default 'English'.</dt>
+    <dt>At the network configuration screen, just select 'Done' (it should be pre-selected).</dt>
+    <dt>At the filesystem setup screen, select "Use An Entire Disk" (should be pre-selected).</dt>
+    <dt>Choose a disk to install to.</dt>
+    <dt>At the file system summary screen select Done (should be selected by default).</dt>
+    <dt>At the confirmation dialog, select "Continue" (should not be selected by default).</dt>
+    <dt>Fill out the user information dialog, ideally making sure to import your SSH keys from git or launchpad.</dt>
+    <dt>Wait until the installation is completed.</dt>
+    <dt>Reboot the system, and monitor the progress via the (sol) console.</dt>
+    <dt>Ensure that it's possible to login to the system.</dt>
+    <dt>Ensure that you can run commands with sudo.</dt>
+    <dt>Check that the correct SSH keys have been imported by SSHing into the machine or looking in ~/.ssh./</dt>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
+

@@ -1,0 +1,33 @@
+This testcase is intended to test gnome-screensaver on Xubuntu.
+
+<strong>Rather than have many duplicate bugs show up for similar issues here, for the purpose of this test, do not fail the testcase but use the Comment area on your tracker result to report issues to us.</strong>
+
+<strong>Install Y-Y to <em>hardware</em> from the current iso http://cdimage.ubuntu.com/xubuntu/daily-live/current/ </strong>
+
+<strong>Using Users and Groups in Settings - add a new user to the install for use during the test</strong>
+
+<dl>
+    <dt> Run <code>sudo apt-get purge light-locker && sudo apt-get install gnome-screensaver && sudo apt-get autoremove</code> in a terminal</dt>
+    <dt>reboot</dt>
+    <dt>login</dt>
+    <dt>start some application on the desktop</dt>
+    <dt>suspend</dt>
+    <dt>resume</dt>
+    <dt>unlock</dt>
+        <dd>check application appears on desktop</dd>
+    <dt>lock screen</dt>
+    <dt>unlock</dt>
+        <dd>check application appears on desktop</dd>
+    <dt>suspend or lock</dt>
+    <dt>Click "Switch User..."</dt>
+    <dt>login as your <strong>new</strong> User</dt>
+        <dd>Desktop should be clear</dd>
+    <dt>Open any application - <em>suggest a different one from previous login</em></dt>
+    <dt>lock</dt>
+    <dt>switch to your first user</dt>
+    <dt>enter password again to unlock your session</dt>
+        <dd>desktop should show application on desktop</dd>
+    <dt>logout</dt>
+    <dt>login as second user</dt>
+	<dd>Application from new user's session shows on desktop</dd>
+</dl>

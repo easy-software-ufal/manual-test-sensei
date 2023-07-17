@@ -1,0 +1,37 @@
+Scope of this test is to verify that the system is installed, you can login into it and sshd is up and running.
+<!-- Smells: UNVERIFIED STEPS, CONDITIONAL TEST LOGIC -->
+<em>Proceed in your native language if you wish. Instructions will remain in English</em>
+
+<dl>
+    <dt>Boot up the image</dt>
+    <dt>Choose the desired language</dt>
+    <dt>Select "Install Ubuntu Server"</dt>
+    <dt>Choose the language</dt>
+    <dt>Select your location</dt>
+    <dt>Configure locales</dt>
+    <dt>At configure keyboard page, select NO </dt>
+    <dt>Select the country of the keyboard</dt>
+    <dt>Select the keyboard layout</dt>
+    <dt>Select hostname ubuntu as default</dt>
+    <dt>Insert the name for the new user</dt>
+    <dt>Insert the name for the account</dt>
+    <dt>Choose a password</dt>
+    <dt>Reinsert the password</dt>
+    <dt>At encrypt request select NO</dt>
+    <dt>Verify or setup the timezone</dt>
+    <dt>At partitioning select "Guided - Use entire disk"</dt>
+    <dt>Select disk to partition</dt>
+    <dt>At "Write changes to disks", verify that everythings is right and select YES</dt>
+    <dt>At "http proxy" request, leave it blank and press enter</dt>
+    <dt>At managing upgrades select "No automatic updates"</dt>
+    <dt>At Software selection, choose "OpenSSH server" with arrows, select it with "space bar" and confirm with "Enter"</dt>
+    <dt>Select to install Grub in the master boot record</dt>
+    <dt>Remove the installation media (CDROM or USB key)</dt>
+    <dt>Wait that the system reboot and login</dt>
+    <dt>Verify that sshd is running:</dt>
+        <dd>pgrep sshd</dd>
+        <dd>should return the pid of sshd.</dd>
+        <dd>If you can, try to connect to the server from a remote client.</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

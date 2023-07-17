@@ -1,0 +1,100 @@
+Test-case dash/application-lens
+<dl>
+    <dt>Tap super to show the dash</dt>
+    <dt>Click on the application lens icon</dt>
+        <dd>The search entry should show "search applications" and you should have three categories:
+            <ul>
+                <li> - recently used apps </li>
+                <li> - installed </li>
+                <li> - apps available for download</li>
+            </ul>
+        </dd>
+</dl>
+
+Test-case dash/application-lens-search
+<dl>
+    <dt>Tap super to show the dash</dt>
+    <dt>Click on the application lens icon</dt>
+    <dt>Make a search</dt>
+        <dd>Results should appear in each category</dd>
+    <dt>Open the filter by clicking on "Filter Results"</dt>
+    <dt>Change the filters for each filter type</dt>
+        <dd>Search results should change, at least on one category</dd>
+</dl>
+
+Test-case dash/file-lens
+<dl>
+    <dt>Tap super to show the dash</dt>
+    <dt>Click on the file lens icon</dt>
+        <dd>The search entry should show "search files" and you should have three categories:
+            <ul>
+                <li> - recent (if you opened at least one file on your computer) </li>
+                <li> - download (if you have files in ~/Download) </li>
+                <li> - folder </li>
+            </ul>
+        </dd>
+</dl>
+
+Test-case dash/file-lens-search
+<dl>
+    <dt>Tap super to show the dash</dt>
+    <dt>Click on the file lens icon</dt>
+    <dt>Make a search</dt>
+        <dd>It should impact the result on each category</dd>
+    <dt>Open the filter by clicking on "Filter Results"</dt>
+    <dt>Change the filters for each of filter type</dt>
+        <dd>It should change the results, at least on one category</dd>
+</dl>
+
+Test-case dash/lens-preview-file
+<dl>
+    <dt>Tap super to show the dash</dt>
+    <dt>Right click on a file under the the Files & Folders Category</dt>
+        <dd>A lens preview should appear showing a preview of the file (the file icon), with right and left buttons to scroll between previews, and some details on the filename and the time and date information. Further several buttons; email, open/play, and show in folder should exist below the preview</dd>
+    <dt>Click the open button</dt>
+        <dd>The file should be opened/played</dd>
+    <dt>Click the email button</dt>
+        <dd>The file should be attached to an email in your email client</dd>
+    <dt>Click the show in folder button</dt>
+        <dd>The file should show in the folder</dd>
+</dl>
+
+Test-case dash/lens-preview-video
+<dl>
+    <dt>Tap super to show the dash</dt>
+    <dt>Click on the videos lens icon</dt>
+    <dt>Right click on a file</dt>
+        <dd>A lens preview should appear showing a preview of the file (the file icon), with right and left buttons to scroll between previews, and some details on the filename and the time and date information. Further several buttons;  open, and show in folder should exist below the preview</dd>
+    <dt>Click the open/play button</dt>
+        <dd>The file should be opened/played</dd>
+    <dt>Click the show in folder button</dt>
+        <dd>The file should show in the folder</dd>
+</dl>
+
+Test-case dash/lens-preview-application
+<dl>
+    <dt>Tap super to show the dash</dt>
+    <dt>Right click on an application under the the applications Category</dt>
+        <dd>A lens preview should appear showing a preview of the application (potentially a screenshot), with right and left buttons to scroll between previews, and some details on the application, including the review from the software center. Further two buttons; uninstall and launch should exist below the preview</dd>
+    <dt>Click the uninstall button</dt>
+        <dd>A password prompt displays (if password is not cached) and the program is uninstalled </dd>
+    <dt>Tap super to show the dash</dt>
+    <dt>Open the applications lens</dt>
+    <dt>Search for the application you uninstalled and right click on it</dt>
+        <dd>A lens preview should appear showing a preview of the application (potentially a screenshot), with right and left buttons to scroll between previews, and some details on the application, including the review from the software center. Further two buttons; developer site and a download button should exist below the preview</dd>
+    <dt>Click the download button</dt>
+        <dd>The application should install and add a new launcher icon to the launcher</dd>
+</dl>
+
+Test-case dash/more-suggestions
+<dl>
+    <dt>Tap super to show the dash</dt>
+    <dt>Type in a word to search for, for example 'cheese'</dt>
+        <dd>A more-suggestions category should appear</dd>
+    <dt>Right click on one of the listings in the more-suggestions category</dt>
+        <dd>A lens preview should appear showing a preview of the item (potentially a picture), with right and left buttons to scroll between previews, and some details on the item. Further one buy button should exist below the preview</dd>
+    <dt>Click the buy button</dt>
+        <dd>A web browser should launch loading the amazon page containing the item</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

@@ -1,0 +1,58 @@
+<em>Proceed in your native language if you wish. Instructions will remain in English</em>
+
+<dl>
+    <dt>Select a language for the install and press Enter</dt>
+    <dt>Select a location for the install and press Enter</dt>
+    <dt>On Keyboard Layout select No and press Enter</dt>
+    <dt>Select the origin of the keyboard and press Enter /!\ The default for your location and language should already be selected.</dt>
+    <dt>Select the layout you wish to use on the keyboard and press Enter /!\ The default for your location and language should already be selected.</dt>
+    <dt>Add a hostname for the machine and press Enter</dt>
+    <dt>Select Manual and press Enter</dt>
+    <dt>Select Configure iSCSI volumes</dt>
+    <dt>Select Log into iSCSI targets /!\ If the machine is diskless, these steps will appear before selecting the partition scheme</dt>
+    <dt>Enter the IP address of the iSCSI target</dt>
+    <dt>Enter the username configured in the iSCSI target</dt>
+    <dt>Enter the password configured in the iSCSI target</dt>
+    <dt>Select a target from the list</dt>
+    <dt>Select Finish</dt>
+    <dt>On the list of partitions, select the new one (VIRTUAL DISK)</dt>
+    <dt>Select pri/log "drive size" FREE SPACE and press Enter</dt>
+    <dt>Select Create a new partition and press Enter</dt>
+    <dt>Change the size to 20.0 GB and press Enter /!\ Alter for smaller drives</dt>
+    <dt>Select Primary and press Enter</dt>
+    <dt>Select Beginning and press Enter</dt>
+    <dt>Select Use as: line and press Enter</dt>
+    <dt>Select Ext4 journaling file system and press Enter</dt>
+    <dt>Select Done setting up the partition and press Enter</dt>
+    <dt>Select pri/log "drive size" FREE SPACE and press Enter</dt>
+    <dt>Select Create a new partition and press Enter</dt>
+    <dt>Change the size to 2.0 GB and press Enter /!\ Alter for smaller drives</dt>
+    <dt>Select Logical and press Enter</dt>
+    <dt>Select Beginning and press Enter</dt>
+    <dt>Select Use as: line and press Enter</dt>
+    <dt>Select swap area and press Enter</dt>
+    <dt>Select Done setting up the partition and press Enter</dt>
+    <dt>Select pri/log "drive size" FREE SPACE and press Enter</dt>
+    <dt>Select Create a new partition and press Enter</dt>
+    <dt>Press Enter to use the whole of the space remaining</dt>
+    <dt>Select Logical and press Enter</dt>
+    <dt>Select Beginning and press Enter</dt>
+    <dt>Select Use as: line and press Enter</dt>
+    <dt>Select Ext4 journaling file system and press Enter</dt>
+    <dt>Select Done setting up the partition and press Enter</dt>
+    <dt>Select Finish partitioning and write changes to disk and press Enter</dt>
+    <dt>Select Yes to accept the changes and press Enter</dt>
+    <dt>Type in your name and press Enter</dt>
+    <dt>Add a username and press Enter</dt>
+    <dt>Add a password and press Enter</dt>
+    <dt>Confirm your password and press Enter</dt>
+    <dt>Select No for encrypted home directory and press Enter</dt>
+    <dt>Input http proxy info or press Enter</dt>
+    <dt>Wait for a while /!\ The install may seem like it has locked at 6% but is actually working in the background.</dt>
+    <dt>Select Yes to setting your clock to utc and press Enter</dt>
+    <dt>Remove the cd and press Enter</dt>
+    <dt>This will then reboot the machine log in and check the desktop is installed</dt> 
+</dl>
+<strong>
+    If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

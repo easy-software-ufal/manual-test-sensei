@@ -1,0 +1,72 @@
+This test will check that the Ubuntu Server system is installed and you can login into it
+<!-- Smells: OMISSION OF STEP-->
+<em>Proceed in your native language if you wish. Instructions will remain in English</em>
+
+<dl>
+    <dt>Boot up the image</dt>
+        <dd>The system boots properly and loads the installer displaying a screen with language selection</dd>
+    <dt>Choose the desired language and press "Enter"</dt>
+        <dd>Ubuntu installer main menu is displayed</dd>
+    <dt>Select "Install Ubuntu Server"</dt>
+        <dd>The 'Select a language' screen is displayed requesting for a language selection to be used for the installation process</dd>
+    <dt>Choose the language to be used during the installation process which will also be the default language for the installed system</dt>
+        <dd>The 'Select your location' screen is displayed</dd>
+    <dt>Select your location to set your time zone and the system locale</dt>
+        <dd>The 'Configure the keyboard' is displayed requesting to detect the keyboard layout</dd>
+    <dt>Select "No"</dt>
+        <dd>The 'Configure the keyboard' is displayed requesting to select the country of origin for the keyboard of your computer</dd>
+    <dt>Choose the correct country of origin for the keyboard</dt>
+        <dd>The 'Configure the keyboard' is displayed requesting to select the layout matching the keyboard of your computer</dd>
+    <dt>Choose the correct layout for the keyboard</dt>
+        <dd>The installer starts</dd>
+        <dd>The 'Configure the network' screen is displayed requesting to enter the hostname for the system</dd>
+    <dt>Select hostname 'ubuntu' as default</dt>
+        <dd>The 'Set up users and passwords' screen is displayed requesting to define a user account name</dd>
+    <dt>Enter your desired user account name</dt>
+        <dd>The 'Set up users and passwords' screen is displayed requesting to define a username for the user account</dd>
+    <dt>Enter your desired username</dt>
+        <dd>The 'Set up users and passwords' screen is displayed requesting to define a password for the new user</dd>
+    <dt>Enter your desired password</dt>
+        <dd>The 'Set up users and passwords' screen is displayed requesting to re-enter the password for verification</dd>
+        <!-- SMELL: OMISSION OF STEP -->
+        <dd>User account, username and password are accepted</dd>
+        <dd>The 'Set up users and passwords' screen is displayed requesting to encrypt user's home directory</dd>
+    <dt>Select "No"</dt>
+        <dd>The 'Configure the clock' screen is displayed requesting to verify or setup the timezone</dd>
+    <dt>Select the correct location in your time zone</dt>
+        <dd>The installer proceeds with the installation and the 'Partition disks' screen is displayed</dd>
+    <dt>Select "Guided - Use entire disk"</dt>
+        <dd>The 'Partition disks' screen is displayed requesting to select the disk to partition</dd>
+    <dt>Select the desired disk</dt>
+        <dd>The installer starts the partitioning of the disk and the 'Partition disks' screen is displayed requesting for confirmation before writing the changes to the disk</dd>
+    <dt>Verify that everything is right and select "Yes"</dt>
+        <dd>The installer proceeds with the partitioning of the disk and starts installing the base system</dd>
+        <dd>The 'Configure the package manager' screen is displayed requesting to enter a 'HTTP proxy'</dd>
+    <dt>Leave it blank and press "Enter"</dt>
+        <dd>The installer proceeds with the configuration of the package manager</dd>
+        <dd>The 'Configuration tasksel' screen is displayed requesting to define the upgrades management</dd>
+    <dt>Select "No automatic updates"</dt>
+        <dd>The 'Software selection' screen is displayed requesting to select the software to be installed</dd>
+    <dt>Choose "Tomcat Java server" using the arrows keys, select it with "space bar" and confirm with "Enter"</dt>
+        <dd>The installer proceeds with the installation of "Tomcat Java server"</dd>
+        <dd>The 'Install the GRUB boot loader on a hard disk' screen is displayed requesting to install the GRUB boot loader to the master boot record</dd>
+    <dt>Select "Yes" and wait for the installer to finish</dt>
+        <dd>An 'Installation Complete' screen is displayed</dd>
+    <dt>Remove the installation media (CD/DVD or USB key), wait for the reboot of the system</dt>
+        <dd>The system boots properly and loads into login</dd>
+</dl>
+
+This test will check that the Tomcat Java server is running correctly.
+<dl>
+    <dt>Login and check Tomcat is running entering <code>sudo netstat -ltnp | grep java</code> at the prompt</dt>
+        <dd>It should show a jsvc instance listening on port 8080</dd>
+    <dt>Verify that Tomcat is working properly entering <code>w3m http://127.0.0.1:8080</code> at the prompt</dt>
+        <dd>A "It works !" page should be brought up</dd>
+    <dt>Verify that Tomcat is able to properly display the "Hello World!" example page, entering <code>w3m http:localhost:8080/examples/servletsservlet/HelloWorldExample</code> at the prompt</dt>
+        <dd>A "Hello World!" page should be brought up</dd>
+    <dt>Verify that Tomcat is able to display a page containing basic arithmetics, entering <code>w3m http:localhost:8080/examples/jsp/jsp2/el/basic-arithmetic.jsp</code> at the prompt</dt>
+        <dd>A "JSP 2.0 Expression Language - Basic Arithmetic" page should be brought up</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

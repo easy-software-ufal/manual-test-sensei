@@ -1,0 +1,37 @@
+<dl>
+    <dt>Boot up the server image</dt>
+    <dt>Select language</dt>
+    <dt>Press F4, arrow down, select <em>Install a virtual minimal system</em>, press Enter</dt>
+    <dt>Press Enter a 2nd time to <em>Install FAMILY Server</em></dt>
+    <dt>Choose the language</dt>
+    <dt>Select your location</dt>
+    <dt>Configure the keyboard</dt>
+    <ul>
+        <li>Select layout, <em>No</em></li>
+        <li>Select country</li>
+    </ul>
+    <dt>Choose a hostname</dt>
+    <dt>Choose a username</dt>
+    <dt>Choose a password</dt>
+    <dt>Re-enter password</dt>
+    <dt>Encrypt your home directory, <em>No</em></dt>
+    <dt>Is this time zone correct? <em>Yes</em> if correct, <em>No</em> to setup</dt>
+    <dt>Partitioning method, <em>Guided - Use entire disk</em></dt>
+    <dt>Select disk to partition, use the listed device</dt>
+    <dt>Write changes to disks, verify targets, if correct, <em>Yes</em> to start</dt>
+    <dt>http proxy request, leave blank, <em>continue</em></dt>
+    <dt>How do you want to manage upgrades on this system? <em>No automatic updates</em></dt>
+    <dt>Choose software to install, Tab to <em>continue</em>, no additional selections</dt>
+    <dt>Install the GRUB boot loader to the master boot record, <em>Yes</em></dt>
+    <dt>Remove the installation media (CDROM or USB key), then <em>continue</em></dt>
+    <dt>Wait for the system reboot and login</dt>
+    <dt>Verify internet access with: sudo apt-get update</dt>
+        <dd>When asked, add sudo password</dd>
+        <dd>apt-get will perform a normal update</dd>
+    <dt>Verify access to tasksel: sudo tasksel</dt>
+        <dd>ncurses GUI will render, listing upgrade options</dd>
+    <dt>Hit Tab, then <em>Ok</em> to exit.</dt>
+    <dt>Logout by typing: <em>logout</em></dt>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

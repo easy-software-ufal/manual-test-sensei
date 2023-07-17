@@ -1,0 +1,69 @@
+<em>Testcase assumes that the test is run completely</em>
+
+This test will check that Mousepad opens
+<dl>
+    <dt>Open Mousepad</dt>
+        <dd>Mousepad opens with an unnamed text document</dd>
+</dl>
+
+This test will check that Mousepad can save and open saved files
+<dl>
+    <dt>Type in "The quick brown fox jumps over the lazy dog"</dt>
+        <dd>Text appears in window</dd>
+    <dt>Click File -> Save</dt>
+        <dd>Save As window opens</dd>
+    <dt>Type "test" in Name: box</dt>
+    <dt>Select any folder to save file to</dt>
+        <dd>Chosen file name and target folder remain as selected</dd>
+    <dt>Click Save button</dt>
+        <dd>Save as dialogue closes</dd>
+    <dt>Close Mousepad with File -> Close Window</dt>
+        <dd>Mousepad closes</dd>
+    <dt>Open File Manager, navigate to saved file and double click to open in Mousepad</dt>
+        <dd>Mousepad opens with saved text</dd>
+</dl>
+
+This test will check that Mousepad can find and highlight searched text
+<dl>
+    <dt>Press Ctrl+F</dt>
+        <dd>Search box appears</dd>
+    <dt>Type "t" in the box</dt>
+        <dd>First "t" is found in the text document</dd>
+    <dt>Press Ctrl+G</dt>
+        <dd>Next "t" is found in the text document</dd>
+    <dt>Type "he" in the search box</dt>
+        <dd>Second "the" is found in the document with the search term highlighted</dd>
+    <dt>Press Ctrl+G</dt>
+        <dd>First "the" is found in the document</dd>
+    <dt>Press esc</dt>
+        <dd>Search box closes, focus returns to text document with search term highlighted</dd>
+</dl>
+
+This test will check that Mousepad can find and replace text, including case sensitivity and saves on close
+<dl>
+    <dt>Press Ctrl+R</dt>
+        <dd>Replace dialogue opens</dd>
+    <dt>Type "fox" in the Search for: box</dt>
+    <dt>Type "cat" in the Replace with: box</dt>
+    <dt>Check the Replace all in: option</dt>
+        <dd>1 occurence is found and the Replace button changes to say Replace All</dd>
+    <dt>Click Replace All</dt>
+        <dd>Replace dialogue does not close</dd>
+        <dd>Text now reads "The quick brown cat jumps over the lazy dog"</dd>
+    <dt>Type "the" in the Search for: box</dt>
+    <dt>Type "a" in the Replace with: box</dt>
+    <dt>Check the Case sensitive option and click the Replace All button</dt>
+        <dd>Replace dialogue does not close</dd>
+        <dd>Text now reads "The quick brown cat jumps over a lazy dog"</dd>
+    <dt>Click Close button in Replace dialogue</dt>
+        <dd>Replace dialogue closes</dd>
+    <dt>Close Mousepad with File -> Close Window</dt>
+        <dd>Save before closing dialogue appears</dd>
+    <dt>Click Save</dt>
+        <dd>Mousepad saves the changes made to the file and closes</dd>
+    <dt>Find the saved file and double click to open in Mousepad</dt>
+        <dd>Mousepad opens with saved text</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

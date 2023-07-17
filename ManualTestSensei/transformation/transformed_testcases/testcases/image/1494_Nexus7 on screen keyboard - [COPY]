@@ -1,0 +1,13 @@
+<dl>
+    <dt>Locate the dash icon in the launcher and press it to bring up the Dash</dt>
+    <dt>If the on screen keyboard does not appear, tap the input box at the top of the Dash screen</dt>
+    <dt>Using the on screen keyboard, start typing the word 'terminal'</dt>
+        <dd>After you get about as far as 'term', you will probably see an icon for 'Terminal' just below the text entry field</dd>
+    <dt>Tap the 'Terminal' icon when it appears</dt>
+    <dt>If the on screen keyboard is not present, tap inside the terminal window near where the cursor is blinking</dt>
+        <dd>The on screen keyboard should come up</dd>
+    <dt>Using the on screen keyboard, enter a few basic commands to sanity check the shell such as 'ls', 'pwd', 'uname -a'</dt>
+        <dd>These commands should all return there expected results</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

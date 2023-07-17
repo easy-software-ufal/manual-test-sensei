@@ -1,0 +1,19 @@
+Start by downloading the boot.img-[fb|serial] file from http://ports.ubuntu.com/dists/RELEASE/main/installer-armel/current/images/SOC/netboot/ where RELEASE is the current release, SOC is the armel processor (omap, omap4, etc), and either boot.img-fb for console based install or boot.img-serial for serial console (headless) install.
+<dl>
+    <!-- Unverified Steps, Unspecified Parameter -->
+    <dt>sudo dd bs=1024 if=boot.img-[fb|serial] of="path-to-raw-sdcard-device".</dt>
+    <dt>insert sd card into platform and reboot.</dt>
+    <dt>System should boot to the debian installer. Follow prompts to install using the following parameters:</dt>
+        <dd>
+            <ul>
+                <li>Guided partitioning - full drive.</li>
+                <li>No encryption on home directory</li>
+                <li>Pick a task (note not all graphical environments have been tested on armel)</li>
+            </ul>
+        </dd>
+</dl>
+
+The install will pull the necessary packages from the ports.ubuntu.com repository (alternatively you can pull from a local mirror). Record any failures during the install process. Success is determined when the system completes the installation and reboots into a working image.
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

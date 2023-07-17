@@ -1,0 +1,153 @@
+<em>Testcase assumes that the test is run completely</em>
+
+This test will check that the file manager Thunar opens and closes as expected
+<dl>
+    <dt>Open Thunar from the menu</dt>
+        <dd>Thunar opens at /home/USER</dd>
+    <dt>Close Thunar with the X in the top left corner</dt>
+        <dd>Thunar closes with no error</dd>
+</dl>
+
+This test will check that a device, when plugged in, triggers a Device entry, mounts, unmounts and ejects correctly
+<dl>
+    <dt>Plug in a USB</dt>
+        <dd>A new Thunar window opens, Device appears in left pane within Devices section and selected</dd>
+        <dd>Main Thunar window shows expected contents and location selector shows path</dd>
+    <!-- UNVERIFIED STEP -->
+    <dt>Right click device in Device Pane</dt>
+    <dt>Select unmount from menu</dt>
+        <dd>Main Thunar window reverts to /home/USER</dd>
+        <dd>Device still available in Device pane</dd>
+    <dt>Right click device in Device Pane</dt>
+    <dt>Select Eject from menu</dt>
+        <dd>Device is removed from Device pane list</dd>
+</dl>
+
+These tests will check items in the File menu
+<dl>
+    <!-- PRE CONDITION AS STEP -->
+    <dt>This test requires the previous test to have run</dt>
+    <dt>Press Ctrl+T</dt>
+        <dd>A new tab showing /home/USER opens</dd>
+    <dt>Press Ctrl+N</dt>
+        <dd>A new Thunar window opens showing /home/USER</dd>
+    <dt>Press Shift+Ctrl+N</dt>
+        <dd>Create New Folder dialogue opens</dd>
+    <dt>Type Test and click Create</dt>
+        <dd>New folder is created and selected</dd>
+    <dt>From File Menu - select Create Document</dt>
+        <dd>Select Empty File</dd>
+        <dd>New Empty File dialogue opens</dd>
+    <dt>Type test in dialogue and click Create</dt>
+        <dd>File test is created and selected</dd>
+    <dt>Press Ctrl+O</dt>
+        <dd>Text Editor opens file named test</dd>
+    <dt>Close text editor with X in corner of window</dt>
+        <dd>Text editor closes</dd>
+    <dt>SelectFile -> Open With, select LibreOffice Writer</dt>
+        <dd>LibreOffice Writer opens with file named test</dd>
+    <dt>Close LibreOffice Writer with X in corner of window</dt>
+        <dd>LibreOffice Writer closes</dd>
+    <dt>SelectFile -> Send to Desktop (create link)</dt>
+    <dt>Select Desktop in Places pane in Thunar</dt>
+        <dd>Link to file test shows</dd>
+    <dt>Select USER in Places pane</dt>
+        <dd>Window shows contents of /home/USER</dd>
+    <dt>Press Ctrl+W</dt>
+        <dd>Thunar closes, leaving original window open</dd>
+    <dt>Press Ctrl+Q</dt>
+        <dd>Thunar closes</dd>
+</dl>
+
+These Tests will check items in the Edit menu
+<dl>
+    <dt>This test requires that Thunar is open at /home/USER and previous test has been run</dt>
+    <dt>Select the test file previously created</dt>
+    <dt>Press Ctrl+X</dt>
+    <dt>Select Desktop from the Places sidebar</dt>
+        <dd>Thunar window changes to show Desktop contents</dd>
+    <dt>Press Ctrl+V</dt>
+        <dd>File Operation Progress and Confirm to replace files dialogue boxes appear</dd>
+    <dt>Click Replace in Confirm dialogue</dt>
+        <dd>Dialogues disappear, existing symbolic link on Desktop replaced by file test</dd>
+    <dt>Select test file on Desktop</dt>
+    <dt>Press Ctrl+C</dt>
+    <dt>Select USER from places sidebar</dt>
+        <dd>Thunar window shows contents of /home/USER</dd>
+    <dt>Focus mouse pointer in main window and press Ctrl+V</dt>
+        <dd>File test is copied to /home/USER</dd>
+    <dt>Select file test and go to Edit -> Move to Wastebasket and select</dt>
+        <dd>File test disappears from window</dd>
+    <dt>Select Desktop from Places sidebar</dt>
+        <dd>Contents of Desktop displayed</dd>
+    <dt>Select file test, from Edit menu - select Delete</dt>
+        <dd> Permanent Deletion warning appears</dd>
+    <dt>Select Delete button</dt>
+        <dd>Warning dialogue disappears and file test is deleted from Desktop</dd>
+    <dt>Select Wastebasket/Rubbish Bin from Places sidebar</dt>
+        <dd>Contents displayed - only one test is visible</dd>
+    <dt>Right Click on file test, select Restore</dt>
+        <dd>File test no longer shows in Rubbish Bin</dd>
+    <dt>Select USER from Places Sidebar</dt>
+        <dd>Contents of /home/USER displayed including file test</dd>
+    <dt>Select Edit -> Select All files</dt>
+        <dd>All files in window are highlighted</dd>
+    <dt>Select Edit -> Select by pattern</dt>
+        <dd>Select dialogue appears</dd>
+    <dt>Type test in box and press Select</dt>
+        <dd>Only file test is highlighted</dd>
+    <dt>Select file test, go to Edit -> Select Duplicate</dt>
+        <dd>New file copy of test appears in window</dd>
+    <dt>Select copy of test</dt>
+    <dt>Select Edit -> Rename and select</dt>
+        <dd>Rename dialogue box appears</dd>
+    <dt>Type tested in box and click Rename</dt>
+        <dd>File copy of test is renamed tested</dd>
+</dl>
+
+These tests will check items in the View Menu
+<dl>
+    <dt>Select View -> Location Selector, pick Pathbar Style</dt>
+        <dd>Location changes to show path icons</dd>
+    <dt>Select View -> Sidepane - Tree</dt>
+        <dd>Sidepane changes to show Tree view</dd>
+    <dt>Select View -> Statusbar</dt>
+        <dd>Status bar is removed from bottom of Thunar</dd>
+    <dt>Reverse Statusbar test and then select Menubar</dt>
+        <dd>Status bar appears, menu bar disappears</dd>
+    <dt>Press Ctrl+M</dt>
+        <dd>Menu Bar reappears</dd>
+    <dt>Select View -> Show Hidden Files</dt>
+        <dd>Hidden files appear in main window</dd>
+    <dt>Press Ctrl+H</dt>
+        <dd>Hidden files removed from view</dd>
+    <dt>Select View -> Arrange Items - cycle through options</dt>
+        <dd>Ordered view changes as Arrange type is changed</dd>
+    <dt>Press Ctrl+1</dt>
+        <dd>View changes to Icons</dd>
+    <dt>Press Ctrl+2</dt>
+        <dd>View changes to detailed list, Configure Columns appears in View menu</dd>
+    <dt>Press Ctrl+3</dt>
+        <dd>View changes to Compact List</dd>
+</dl>
+
+These tests will check items in the Go and Help menus
+<dl>
+    <dt>Select Go -> Open Parent</dt>
+        <dd>View changes to /home/</dd>
+    <dt>Select Go -> Back</dt>
+        <dd>View changes to /home/USER</dd>
+    <dt>Select Go - Forwards</dt>
+        <dd>View changed to /home/</dd>
+    <dt>Select Go - Home</dt>
+        <dd>View changes to /home/USER</dd>
+    <dt>Cycle through Go -> Desktop, Rubbish Bin, Filesystem, Templates</dt>
+        <dd>View changes to selected locations</dd>
+    <dt>Select Help -> Contents</dt>
+        <dd>Read manual online dialogue opens</dd>
+    <dt>Select Read online</dt>
+        <dd>Dialogue closes, web browser opens at http://docs.xfce.org/xfce/thunar/start</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

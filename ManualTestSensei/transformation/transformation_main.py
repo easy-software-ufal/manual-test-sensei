@@ -13,6 +13,7 @@ def transformation_runner(log):
     log = logging.getLogger(__name__)
     log.info('Initializing transformations...')
     df = transformation_data.data_closure()
+    breakpoint()
     df = transformator.transformation_closure(df)
 
 if __name__ == '__main__':

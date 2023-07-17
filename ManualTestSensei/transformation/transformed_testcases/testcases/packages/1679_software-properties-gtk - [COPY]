@@ -1,0 +1,44 @@
+<strong>For this test, you need an active Internet connection</strong>
+
+<strong>This will make sure that Software & Updates can properly enable and disable default respositories.</strong>
+<dl>
+    <dt>Open Software & Updates</dt>
+    <dt>Uncheck <code>Community-maintained free and open-source software (universe)</code></dt>
+        <dd>A dialog box should pop up prompting you for your password</dd>
+    <dt>Type in your password and click OK</dt>
+        <dd>The password dialog box should close</dd>
+    <dt>Open a terminal and type: <code>cat /etc/apt/sources.list | grep "universe"</code></dt>
+        <dd>There should be no output</dd>
+    <dt>In Software & Updates, recheck <code>Community-maintained free and open-source software (universe)</code></dt>
+        <dd>The checkbox should be toggled</dd>
+    <dt>Open a terminal and type: <code>cat /etc/apt/sources.list | grep "universe"</code></dt>
+        <dd>It should output several lines with the word <code>universe</code> highlighted</dd>
+</dl>
+<strong>This will check the ability to switch servers and revert</strong>
+<dl>
+    <dt>Ensure Software & Updates is open</dt>
+    <dt>Click the dropdown next to <code>Download from:</code>, and note the mirror you are currently on</dt>
+        <dd>The dropdown should show with several options</dd>
+    <dt>Select <code>Other...</code></dt>
+        <dd>A popup should be present titled <code>Choose a Download Server</code></dd>
+    <dt>Select a mirror of your choice, the protocol of your choice, and click the <code>Choose Server</code> button</dt>
+        <dd>A dialog box should pop up prompting you for your password</dd>
+    <dt>Type in your password and click OK</dt>
+        <dd>The password dialog box should close and the mirror you just selected should be selected in the dropdown menu</dd>
+    <dt>Click the <code>Revert</code> button</dt>
+        <dd>The mirror selected in the dropdown menu should be reverted to the one you previously had selected</dd>
+</dl>
+<strong>This test will ensure the program closes correctly and the repositories update correctly</strong>
+<dl>
+    <dt>Click the <code>Close</code> button</dt>
+        <dd>A dialog box should pop up titled <code>The information about available software is out-of-date</code></dd>
+    <dt>Click the <code>Reload</code> button</dt>
+        <dd>A dialog box should pop up titled <code>Updating cache</code> and it should close successfully</dd>
+    <dt>Open a terminal and type: <code>sudo apt update</code>, enter your password, and press the Return key</dt>
+        <dd>This should update the repositories with no error and print "Reading package lists... Done" at the end</dd>
+</dl>
+<strong>
+    If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>.
+    Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.
+</strong>

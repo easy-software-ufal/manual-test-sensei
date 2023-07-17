@@ -1,0 +1,19 @@
+This test will check that krecipes can able to create a new recipe
+<dl>
+    <dt>Launch krecipes</dt>
+        <dd>krecipes opens, a welcoming message will be displayed</dd>
+    <!-- EAGER STEP -->
+    <dt>Click on "Next" > select the database type and click on "Next" > Enter the db filename and click on "Next"</dt>
+        <dd>Initialize Database screen will be displayed</dd>
+    <dt>Click on "Next" > click on "Finish"</dt>
+        <dd>Krecipes window will be opened</dd>
+    <dt>Click on "New Recipe"</dt>
+        <dd>Edit Recipe window will be opened</dd>
+    <dt>Fill the informations in the "Recipe","Ingredients","Instructions" & "Ratings" tab > Click on "Save recipe" button</dt>
+        <dd>The recipe is saved</dd>
+    <dt>Click on "Show Recipe" button</dt>
+        <dd>The new recipe will be displayed</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

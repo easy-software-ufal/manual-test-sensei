@@ -23,17 +23,29 @@ def run_code(mode):
     #nlp = create_pipeline(str(model_name[0]))
     
     if mode == 'all' or mode == 'detect' or mode == 'd':
-        detector_main.detection_runner(log)
+        detector_main.detection_runner(log, "d")
 
     if mode == 'all' or mode == 'transform' or mode =='t':
+        #detector_main.detection_runner(log, "d")
         log.info('Starting transformation...')
-        while True:
-            file = transformation_data.get_csv_path()
-            df = pd.read_csv(file)
-            transformation_main.transformation_runner(log)
-            detector_main.detection_runner(log)
-            if no_test_left_to_transform(df):
-                break
+        count = 0
+        #while True:
+        file = transformation_data.get_csv_path()
+        df = pd.read_csv(file)
+        #breakpoint()
+        #breakpoint()
+        transformation_main.transformation_runner(log)
+        #detector_main.detection_runner(log, "d")
+            # if count > 0:
+            #     detector_main.detection_runner(log, "t")
+            # else:
+            #     detector_main.detection_runner(log, "d")
+            
+            
+            # if no_test_left_to_transform(df):
+            #     break
+            # count += 1
+        #breakpoint()
         log.info('FINISHED TRANSFORMATION.')
 
 

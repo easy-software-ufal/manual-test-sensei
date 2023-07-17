@@ -25,9 +25,8 @@ This test will check that light-locker-settings can set the amount of delay afte
 </dl>
 
 This test will check that light-locker-settings will lock the screen when resuming from suspend
-Verify that the "Lock on suspend" switch is set to OFF
 <dl>
-    
+    <dt>Verify that the "Lock on suspend" switch is set to OFF</dt>
     <dt>Click "Apply" (if necessary)</dt>
     <dt>Suspend your session from the menu</dt>
     <dt>Resume from suspend</dt>

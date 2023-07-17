@@ -1,0 +1,52 @@
+To execute this test, a pre-existing Ubuntu (or derivative) installation is needed
+
+<strong>Upgrade will only be offered as an alternative when there is 1 installed FAMILY system</strong>
+
+<em>Proceed in your native language if you wish. Instructions will remain in English.</em>
+
+<dl>
+    <dt>Boot up the image</dt>
+        <dd>The system boots properly and loads the installer displaying Welcome dialog with language selection and 'Try FAMILY' and 'Install FAMILY' buttons</dd>
+    <dt>Click on the Install FAMILY button </dt>	
+        <dd>The 'Keyboard Layout' screen appears</dd>
+        <dd>The proposed keyboard corresponds with your keyboard</dd>
+	<dt>Select your keyboard layout and click on continue</dt>
+        <dd>The 'Preparing to install FAMILY' screen is displayed</dd>
+    <dt>On the screen Preparing to install FAMILY, note the availability of the following components</dt>
+        <dd>Available options should represent the state of your system accurately</dd>
+        <dd>
+            <ul>
+                <li>(If network is available) Download updates while installing FAMILY</li>
+                <li>(If on a 'laptop') Is plugged to a power source</li>
+                <li>Install third-party software ... option available</li>
+            </ul>
+        </dd>
+    <dt>Check the box 'Download updates while installing' if a network is available </dt>
+    <dt>Click on the Continue button</dt>
+        <dd>'Installation type' screen is displayed</dd>
+    <dt>Select the 'Upgrade FAMILY' option </dt>
+    <dt>Click 'Install Now' button </dt>
+        <dd>'Where are you?' screen is displayed</dd>
+    <dt>If connected, verify that your timezone is proposed correctly </dt>
+    <dt>Click on the Continue button</dt>
+        <dd>'Who are you?' screen is displayed</dd>
+    <dt>Insert all the requested fields and choose if you want autologin or encrypted home</dt>
+    <dt>Click on the Continue button</dt>
+        <dd>The 'Welcome to FAMILY' slide is displayed</dd>
+    <dt>Wait for the installer to finish</dt>
+        <dd>An 'Installation Complete' dialog appears</dd>
+    <dt>Click the Restart now button</dt>
+        <dd>GUI is shut down, a prompt to remove media and press Enter appears</dd>
+    <dt>Remove the disc and press enter</dt>
+        <dd>The machine has been rebooted</dd>
+    <dt>Allow the machine to reboot</dt>
+        <dd>The system boots properly and loads into the new ubuntu (or derivative name)</dd>
+    <dt>Open a Terminal and enter the command <code>lsb_release -a</code></dt>
+        <dd>New version will be shown on the Description line</dd>
+    <dt>Open a terminal and enter the command <code>grep Prompt= /etc/update-manager/release-upgrades</code></dt>
+                <dd>Terminal will show Prompt=lts</dd>
+            <dt>Verify that your pre-upgrade files and installed applications are still present</dt>
+        </dl>
+
+        <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+            If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

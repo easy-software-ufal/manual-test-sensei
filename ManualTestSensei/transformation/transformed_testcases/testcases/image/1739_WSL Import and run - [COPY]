@@ -1,0 +1,177 @@
+This test case imports a WSL image from a rootfs and runs it.</p>
+
+It requires a working Microsoft Windows 10 or higher installation with WSL2 enabled. Installing Windows and enabling WSL 2 is outside of the scope of this  test case.
+
+To run this test you must download the image from <a href="http://cloud-images.ubuntu.com/">http://cloud-images.ubuntu.com/</a>
+
+For example for latest focal image download: <a href="http://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64-wsl.rootfs.tar.gz">http://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64-wsl.rootfs.tar.gz</a>
+Make sure to download the image from the download link associated to this test case.
+
+Open Windows Terminal or PowerShell and execute the test case below:
+
+<dl>
+	<dt>Import the image in WSL
+<pre>
+> wsl.exe --import &lt;name of the distro&gt; &lt;location to unpack rootfs&gt; &lt;rootfs&gt; [--version &lt;version of WSL&gt;]
+</pre>
+For example:
+<pre>
+> wsl.exe --import Ubuntu20.04.3 .\wsl\ .\Downloads\focal-server-cloudimg-amd64-wsl.rootfs.tar.gz --version 2
+</pre>
+	</dt>
+		<dd>Verify that the	image has been imported by running the following command:
+<pre>
+> wsl.exe --list --all --verbose
+NAME             STATE           VERSION
+*Ubuntu          Running         2
+Ubuntu20.04.3    Stopped         2
+Ubuntu-Preview   Stopped         2
+Ubuntu-20.04     Stopped         2
+TestUbuntuWSL    Stopped         2
+</pre>
+		</dd>
+		<dd>Check the the name used in previous command appears in the list.</dd>
+
+	<dt>Launch the newly installed application
+<pre>
+> wsl -d Ubuntu20.04.3
+</pre>
+	</dt>
+		<dd>Verify that	you're inside the WSL instance and running the right distribution. For example run:
+<pre>
+# lsb_release -a
+No LSB modules are available.
+Distributor ID: Ubuntu
+Description:    Ubuntu 20.04.3 LTS
+Release:        20.04
+Codename:       focal
+</pre>
+		</dd>
+
+	<dt>Since the image	has been installed directly and not with the distro launcher, you're logged in a root by default and have to create a first user manually.
+<pre>
+# adduser ubuntu
+Adding user `ubuntu' ...
+Adding new group `ubuntu' (1000) ...
+Adding new user `ubuntu' (1000) with group `ubuntu' ...
+Creating home directory `/home/ubuntu' ...
+Copying files from `/etc/skel' ...
+New password:
+Retype new password:
+passwd: password updated successfully
+Changing the user information for ubuntu
+Enter the new value, or press ENTER for the default
+Full Name []:
+Room Number []:
+Work Phone []:
+Home Phone []:
+Other []:
+Is the information correct? [Y/n]
+</pre>
+	</dt>
+
+	<dt>Add the newly created user to the sudo group:
+<pre>
+# usermod -aG sudo ubuntu
+</pre>
+	</dt>
+	<dd>Verify that you	can switch to the new user
+<pre>
+# su ubuntu
+To run a command as administrator (user &quot;root&quot;), use &quot;sudo &lt;command&gt;&quot;.
+See &quot;man sudo_root&quot; for details.
+$ whoami
+ubuntu
+</pre>
+	</dd>
+
+	<dt>Exit WSL. Type CTRL+D twice until you're back to the PowerShell prompt.</dt>
+
+	<dt>Start a WSL	session directly with the newly created user.
+<pre>
+&gt; wsl -d Ubuntu20.04.3 -u ubuntu
+To run a command as administrator (user &quot;root&quot;), use &quot;sudo &lt;command&gt;&quot;.
+See &quot;man sudo_root&quot; for details.
+
+Welcome to Ubuntu 20.04.3 LTS (GNU/Linux 5.10.43.3-microsoft-standard-WSL2 x86_64)
+
+* Documentation:  https://help.ubuntu.com
+* Management:     https://landscape.canonical.com
+* Support:        https://ubuntu.com/advantage
+
+System information as of Mon Aug 23 03:31:35 PDT 2021
+
+System load:  0.16               Processes:             8
+Usage of /:   0.5% of 250.98GB   Users logged in:       0
+Memory usage: 6%                 IPv4 address for eth0: 172.30.131.4
+Swap usage:   0%
+
+1 update can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+This message is shown once a day. To disable it please create the
+/home/ubuntu/.hushlogin file.
+ubuntu@WSL:/mnt/c/Users/ubuntu$
+</pre>
+	</dt>
+
+	<dt>Run a command as root with sudo, for instance
+		<pre>$ sudo apt update</pre>
+	</dt>
+		<dd>Verify that the	command ends successfully</dd>
+
+	<dt>Apply any update
+		<pre>$ sudo apt full-upgrade</pre></dt>
+		<dd>Verify that the	command ends successfully and that any packge that must be upgraded has been upgraded</dd>
+
+	<dt>Install a package
+		<pre>$ sudo apt install hello</pre>
+	</dt>
+		<dd>Verify that the	package has been successfully installed and the application can run<dd>
+<pre>
+$ hello
+Hello, world!
+</pre></dd>
+
+	<dt>Install and run a graphical application
+<pre>
+$ sudo apt install x11-utils
+[...]
+</pre>
+	</dt>
+		<dd>Start one of the graphical application from the x11-utils package, like xcalc for example:
+<pre>
+$ xcalc
+(Wait a moment until the application starts and is displayed)
+</pre></dd>
+
+<dt>Exit WSL
+<pre>logout</pre></dt>
+	<dd>Check that your back to the PowerShell prompt</dd>
+
+	<dt>Uninstall the application
+<pre>
+> wsl.exe --unregister Ubuntu20.04.3
+</pre></dt>
+		<dd>The application	is no longer listed
+<pre>
+> wsl --list
+Windows Subsystem for Linux Distributions:
+Ubuntu (Default)
+Ubuntu-Preview
+Ubuntu-20.04
+TestUbuntuWSL
+</pre>
+		</dd>
+
+		<dd>And the	directory is empty
+<pre>
+&gt; ls .\wsl
+&gt;
+</pre>
+		</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
+

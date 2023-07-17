@@ -1,0 +1,93 @@
+This test will enable the menu bar
+<dl>
+    <dt>Do you use an Ubuntu flavour (Kubuntu, Xubuntu, Lubuntu)? If no, skip this test. The unity desktop provides the menu in its top panel by hovering over it</dt>
+    <dt>Right click next to your opened tabs</dt>
+        <dd>A context menu appears</dd>
+    <dt>If there is no check mark next to "menu bar", click on "menu bar"</dt>
+        <dd>The menu bar appears</dd>
+</dl>
+
+This test will check that Firefox can display websites and save them as bookmarks.
+<dl>
+    <dt>Click on the address field and fill in "wikipedia.org". Press enter</dt>
+        <dd>The website "wikipedia.org" opens</dd>
+    <dt>In the menu bar, click on "Bookmarks", then "Bookmark this page"</dt>
+        <dd>A small window opens, with details for the bookmark</dd>
+    <dt>Click on "Done"</dt>
+        <dd>The window closes. The website "wikipedia" is added to your bookmarks</dd>
+    <dt>Now Click on "Bookmarks" in menu bar, then on "Recently Bookmarked"</dt>
+        <dd>In the context menu you see the new entry of your bookmark</dd>
+</dl>
+
+This test will check that Firefox can display search suggestions and results for a query
+<dl>
+    <dt>In the Search area, select "Wikipedia (en)"</dt>
+        <dd>The background of the search field has changed to "Wikipedia (en)"</dd>
+    <dt>Enter "ubuntu" into the search field</dt>
+        <dd>A list with suggestions appears</dd>
+    <dt>Hit enter</dt>
+        <dd>A website opens, showing the search result for "ubuntu" in Wikipedia</dd>
+</dl>
+
+This test will check that Firefox can install addons and themes.
+<dl>
+    <dt>In menu bar, click on "Tools" and "Add-ons"</dt>
+        <dd>A overview of your installed Add-ons appears</dd>
+    <dt>Click on "Get add-ons" on the left</dt>
+        <dd>Firefox's main add-ons page opens</dd>
+    <dt>In the upper right corner is a search window. Enter "noscript" and press enter</dt>
+        <dd>The window shows the search results of your inquiry</dd>
+    <dt>Look for the entry "NoScript Security Suite" and click on "install"</dt>
+        <dd>The Add-on is downloaded and installed. The entry changes the color</dd>
+    <dt>Click on "restart now"</dt>
+        <dd>Firefox is restarted</dd>
+    <dt>In menu bar, click on "Tools" and "Add-ons"</dt>
+        <dd>The main add-on page opens</dd>
+    <dt>Click on "extensions"</dt>
+        <dd>An overview with your installed add-ons is shown. "Noscript" is be installed and enabled</dd>
+    <dt>Click on"remove"</dt>
+        <dd>A security warning is shown</dd>
+    <dt>Click on "Yes, remove all protections"</dt>
+        <dd>The entry of NoScript changes to "NoScript has been removed"</dd>
+    <dt>Click on "Restart now"</dt>
+        <dd>Firefox is restarted</dd>
+    <dt>In menu bar, click on "Tools" and "Add-ons"</dt>
+        <dd>The main add-on page opens</dd>
+    <dt>Click on "extensions"</dt>
+        <dd>An overview with your installed add-ons is shown. "Noscript" is not listed</dd>
+    <dt>Click on "Get Add-ons"</dt>
+        <dd>The main add-on page opens.</dd>
+    <dt>On the right side, you can see a box with "Featured themes". Choose one of them and click on it</dt>
+        <dd>A tab with information about the tab opens</dd>
+    <dt>Click on "Add to Firefox"</dt>
+        <dd>An information about the installation pops up below your tabs</dd>
+    <dt>Click on "allow"</dt>
+        <dd>The selected theme is installed and shown in Firefox.</dd>
+    <dt>Close the add-ons tab</dt>
+        <dd>You now see your start page</dd>
+</dl>
+
+This test will check that Firefox can search in browsing history.
+<dl>
+    <dt>Into the address field, type "wiki"</dt>
+        <dd>A list opens below the address field, showing the bookmark you have set and other fitting entries</dd>
+    <dt>Click on the bookmark of "wikipedia.org"</dt>
+        <dd>The page "wikipedia.org" opens</dd>
+</dl>
+
+This test will check that Firefox can print websites.
+<dl>
+    <dt>Open the website "wiki.ubuntu.com"</dt>
+        <dd>The website opens, showing the wiki</dd>
+    <dt>In menu bar, click on "File", then "Print Preview"</dt>
+        <dd>A window opens, which shows the Preview of the website in printing format</dd>
+    <dt>Click on "Print"</dt>
+        <dd>The printing dialogue opens</dd>
+    <dt>Select "print to file" as printer and enter "firefox.pdf" as filename. Select your home folder as location. Then click on "Print"</dt>
+        <dd>A window opens, showing the progress of the print</dd>
+    <dt>Open your file manager and open the created file "firefox.pdf"</dt>
+        <dd>The pdf shows the same document as seen in the print preview</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

@@ -1,0 +1,99 @@
+<em>Proceed in your native language if you wish. Instructions will remain in English</em>
+<!-- Smells: EAGER TEST, CONDITIONAL TEST LOGIC, AIMLESS TEST  -->
+<dl>
+    <dt>Boot up the image</dt>
+        <dd>The system boots properly</dd>
+    <dt>When you see the screen with a solid color with an icon at the bottom, press any key to get the menu</dt>
+        <dd>Language list will appear</dd>
+    <dt>Select your language and then press Enter</dt>
+        <dd>The installer menu is displayed</dd>
+    <dt>Press F4 and select â€˜OEM Install (for manufacturers)â€™â€™ and press Enter</dt>
+        <dd>The installer menu is displayed again</dd>
+    <dt>Press Enter on the â€˜Try FAMILY without installingâ€™ option</dt>
+        <dd>The live session is loaded</dd>
+    <dt>Double Click on â€˜Install FAMILYâ€™</dt>
+        <dd>The ubiquity installer starts, with a welcome dialog with language selection</dd>
+    <dt>Type a series name E.G. "QATeam"</dt>
+		<dd>The 'Keyboard Layout' screen appears</dd>
+        <dd>The proposed keyboard corresponds with your keyboard</dd>
+	<dt>Select your keyboard layout and click on continue</dt>
+        <dd>The 'Preparing to install FAMILY' screen is displayed</dd>
+    <dt>On the screen Preparing to install FAMILY, note the availability of the following components</dt>
+        <dd>Available options should represent the state of your system accurately</dd>
+        <dd>
+            <ul>
+                <li>(If network is available) Download updates while installing FAMILY</li>
+                <li>(If on a 'laptop') Is plugged to a power source</li>
+                <li>Install third-party software ... option available</li>
+            </ul>
+        </dd>
+    <dt>Click on the continue button</dt>
+        <dd>The 'Installation type' screen is displayed</dd>
+    <dt>Note the state of the 'Check Erase Disk and install FAMILY' radio button</dt>
+        <dd>The 'Check Erase Disk and install FAMILY' radio button is selected</dd>
+    <dt>Click on the continue button</dt>
+        <dd>The 'Erase Disk and install FAMILY' is displayed</dd>
+    <dt>Verify that the drive selected on the Select drive list correspond to the drive on the chart (e.g /dev/sda)</dt>
+        <dd>Selected drive is displayed on the chart</dd>
+    <dt>Verify that the full drive space is allocated</dt>
+        <dd>Full drive space is allocated for installation</dd>
+    <dt>Click on Install Now button</dt>
+        <dd>The 'Where are you?' screen is displayed</dd>
+    <dt>If your system is connected to the network, note the preselected timezone correspond with your timezone and the city indicated in the text box </dt>
+        <dd>The timezone and city displayed match your timezone and a city from your area</dd>
+    <dt>Select your timezone, and click on the continue button</dt>
+        <dd>The 'Who are you?' screen appears</dd>
+    <dt>Input Password</dt>
+        <dd>password is accepted, the series name you typed earlier is visible but cannot be edited. Additionally, the continue button is enabled</dd>
+    
+	<!-- Smell: EAGER TEST -->
+	<dt>Click on the continue button</dt>
+        <dd>The 'Welcome to FAMILY ' slide is displayed</dd>
+        <dd>The slideshow is entirely in your language</dd> 
+    <dt>Wait for the installer to finish</dt>
+        <dd>An 'Installation Complete' dialog appears</dd>
+    <dt>Click the Restart now button</dt>
+        <dd>GUI is shut down, a prompt to remove media and press Enter appears</dd>
+    <dt>Remove the disc and press enter</dt>
+        <dd>The machine has been rebooted</dd>
+    <dt>Allow the machine to reboot</dt>
+        <dd>The system boots properly and loads into FAMILY</dd>
+    <dt>Execute the following command on the command line to install any updates that may be present <pre>sudo apt-get update && sudo apt-get dist-upgrade</pre></dt>
+        <dd>The system updates and installs new packages (if any exist)</dd>
+    <dt>Restart the computer</dt>
+        <dd>The system restarts and boots into the FAMILY desktop</dd>
+    <dt>Double click the â€˜Prepare for shipping to end userâ€™ icon on the desktop</dt>
+        <dd>The OEM config preparation window appears</dd>
+    <dt>Enter your oem password and click ok</dt>
+        <dd>The window is closed</dd>
+    <dt>Shutdown the machine and remove the install disc. Turn the machine back on</dt>
+        <dd>The system boots into the end-user installer (Note that any case where the user is taken out of a graphical experience should be filed as a bug)</dd>
+    <dt>Select a language and click Continue</dt>
+        <dd>The timezone screen is displayed</dd>
+    <dt>Select a timezone and click Continue</dt>
+        <dd>Keyboard Layout screen is displayed</dd>
+    <dt>Select a keyboard layout and click Continue</dt>
+        <dd>User details screen is displayed</dd>
+    <dt>Add end user details and click Continue</dt>
+        <dd>After a wait, the login screen appears</dd>
+    <dt>Type in the â€˜end usersâ€™ username and password and hit enter</dt>
+        <dd>The machine logins successfully</dd>
+    <dt>Execute the following command on the command line: <pre>lsb_release -rd</pre></dt>
+        <dd>Both the description and the release presented matches the version of FAMILY you installed</dd>
+    <dt>Execute the following command on the command line: <pre>arch</pre></dt>
+        <dd>Verify the result correctly lists the architecture of the installation you installed. For example, x86_64 for 64-bit x86 machine.</dd>
+    <dt>Execute the following command on the command line: <pre>sudo sfdisk -l</pre></dt>
+        <dd>Verify the partition scheme displayed matches the partition scheme you chose during installation</dd>
+    <dt>Execute the following command on the command line: <pre>sudo apt-get update</pre></dt>
+        <dd>Apt hits each of the package mirrors and update all of them without error</dd>
+    <dt>Launch 'update-manager' (for quantal this is being renamed to software-updater) and install any updates presented</dt>
+        <dd>The updates are downloaded and installed without error</dd>
+    <dt>Launch 'firefox' and navigate to http://ubuntu.com</dt>
+        <dd>The Ubuntu homepage is loaded and displays properly</dd>
+    <dt>Launch 'Time & Date' settings menu and note the timezone information and local time and date</dt>
+        <dd>The timezone, date and time match the settings you selected during installation</dd>
+<!-- Smell: CONDITIONAL TEST LOGIC -->
+    <dt>If you installed a non-english version of FAMILY, note the language used on the desktop</dt>
+        <dd>The desktop is localized into your language, or it has prompted you upon initial login to install the missing components for your language</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
