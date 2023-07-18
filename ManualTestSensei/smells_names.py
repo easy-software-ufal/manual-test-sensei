@@ -1,0 +1,7 @@
+CONDITIONAL_TEST_LOGIC = 'Conditional Test Logic'
+UNVERIFIED_ACTION = 'Unverified Action'
+EAGER_STEP = 'Eager Step'
+MISPLACED_PRECONDITION = 'Misplaced Precondition'
+MISPLACED_STEP = 'Misplaced Step'
+MISPLACED_VERIFICATION = 'Misplaced Verification'
+AMBIGUOUS_TEST = 'Ambiguous Test'

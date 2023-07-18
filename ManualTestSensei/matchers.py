@@ -1,9 +1,12 @@
 from collections import abc
 
+import spacy
 from spacy.tokens import Doc
 
+import smells_names
 from csv_writter import resultsWritter
 from matchers_factory import MatchersFactory
+from pipeline import Step, Test, Smell
 
 
 def find_conditional_test_logic(index: int, test: abc.Container):
@@ -15,31 +18,24 @@ def find_conditional_test_logic(index: int, test: abc.Container):
         # Actions
         action_matches = matcher(step.action)
         for match_id, start, end in action_matches:
-            breakpoint()
-            span = step.action[start:end]
-            resultsWritter().write(
-                [test.file, index, 'Conditional Test Logic', 'dependent clause', 'action', span, step.action])
-        # csv_header = ['Test file', 'Test index', 'Smell', 'Hint', 'Where', 'Term', 'Sentence']
-        # Verifications
+            _store_smell(step, smells_names.CONDITIONAL_TEST_LOGIC, 'dependent clause', 'verification', step.action[start:end])
+        #Reactions
         for reaction in step.reactions:
             reaction_matches = matcher(reaction)
             for match_id, start, end in reaction_matches:
-                breakpoint()
-                span = reaction[start:end]
-                resultsWritter().write(
-                    [test.file, index, 'Conditional Test Logic', 'dependent clause', 'verification', span, reaction])
+                _store_smell(step, smells_names.CONDITIONAL_TEST_LOGIC, 'dependent clause', 'verification', reaction[start:end])
 
-
-def find_eager_step(index: int, test: abc.Container):
-    """
-    More than one action (imperative verbs not preceded by particles because this construction shows intent) per step.
-    """
-    matcher = MatchersFactory.eager_step_matcher()
-    for step in test.steps:
-        action_matches = matcher(step.action)
-        if len(action_matches) > 1:
-            span = [step.action[start:end] for match_id, start, end in action_matches]
-            resultsWritter().write([test.file, index, 'Eager Action', 'multiple actions', 'action', span, step.action])
+# def find_eager_step(index: int, test: abc.Container):
+#     """
+#     More than one action (imperative verbs not preceded by particles because this construction shows intent) per step.
+#     """
+#     matcher = MatchersFactory.eager_step_matcher()
+#     for step in test.steps:
+#         action_matches = matcher(step.action)
+#         if len(action_matches) > 1: # TODO: Isso aqui é > 1 mesmo? "ao menos dois elementos?"
+#             span = [step.action[start:end] for match_id, start, end in action_matches]
+#             _fill_step_or_test(step, smells_names.EAGER_STEP, 'dependent clause', 'verification', step.action[start:end])
+#             breakpoint()
 
 
 def find_unverified_step(index: int, test: abc.Container):
@@ -49,7 +45,7 @@ def find_unverified_step(index: int, test: abc.Container):
     steps = test.steps
     unverified_steps = [step for step in steps if len(step.reactions) == 0]
     for step in unverified_steps:
-        resultsWritter().write([test.file, index, 'Unverified Action', '', 'action', '', step.action])
+        _store_smell(step, smells_names.UNVERIFIED_ACTION, '', 'action', step.action)
 
 
 def find_misplaced_precondition(index: int, test: abc.Container):
@@ -57,13 +53,11 @@ def find_misplaced_precondition(index: int, test: abc.Container):
         The first action step declares the SUT state (e.g. 'wifi is turned off')
     """
     matcher = MatchersFactory.misplaced_precondition_matcher()
-    #breakpoint()
     step = test.steps[0]
     action_matches = matcher(step.action)
     for match_id, token_ids in action_matches:
         words = [step.action[token_id] for token_id in sorted(token_ids)]
-        resultsWritter().write(
-            [test.file, index, 'Misplaced Precondition', 'SUT state', 'action', words, step.action])
+        _store_smell(step, smells_names.MISPLACED_PRECONDITION, 'SUT state', 'action', words)
 
 def find_misplaced_step(index: int, test: abc.Container):
     """
@@ -76,8 +70,7 @@ def find_misplaced_step(index: int, test: abc.Container):
         for reaction in step.reactions:
             reaction_matches = matcher(reaction)
             for match_id, start, end in reaction_matches:
-                span = reaction[start:end]
-                resultsWritter().write([test.file, index, 'Misplaced Action', '', 'verification', span, reaction])
+                _store_smell(step, smells_names.MISPLACED_STEP, '', 'verification', reaction[start:end])
 
 
 def find_misplaced_result(index: int, test: abc.Container):
@@ -106,14 +99,12 @@ def find_misplaced_result(index: int, test: abc.Container):
         action_matches = matcher(step.action)
         for match_id, token_ids in action_matches:
             for token_id in token_ids:
-                resultsWritter().write(
-                    [test.file, index, 'Misplaced Verification', 'verification performed', 'action', step.action[token_id], step.action])
+                _store_smell(step, smells_names.MISPLACED_VERIFICATION, 'verification performed', 'action', step.action[token_id])
 
         # Second test: Interrogative sentences as step
         for sentence in step.action.sents:
             if is_interrogative_sentence(sentence):
-                resultsWritter().write(
-                    [test.file, index, 'Misplaced Verification', 'question as step', 'action', '', sentence])
+                _store_smell(step, smells_names.MISPLACED_VERIFICATION, 'question as step', 'action', sentence)
 
     # Third test: SUT state declaration after any action
     matcher = MatchersFactory.misplaced_result_affirmative_sentences()
@@ -123,11 +114,10 @@ def find_misplaced_result(index: int, test: abc.Container):
                 action_matches = matcher(sentence)
                 for match_id, token_ids in action_matches:
                     words = [sentence[token_id] for token_id in sorted(token_ids)]
-                    resultsWritter().write(
-                        [test.file, index, 'Misplaced Verification', 'SUT state declaration', 'action', words, sentence])
+                    _store_smell(step, smells_names.MISPLACED_VERIFICATION, 'SUT state declaration', 'action', sentence)
 
 
-def find_ambiguous_test(index: int, test: abc.Container):
+def find_ambiguous_test(index: int, test: abc.Container): # TODO: Muito código repetido. Refazer
     """
         Comparative adverbs (RBR)
         Adverbs of manner(RB)
@@ -142,8 +132,7 @@ def find_ambiguous_test(index: int, test: abc.Container):
         action_matches = matcher(step.action)
         for match_id, start, end in action_matches:
             span = step.action[start:end]  # The matched span of tokens
-            resultsWritter().write(
-                [test.file, index, 'Ambiguous Test', 'comparative adverb', 'action', span, step.action])
+            _store_smell(step, smells_names.AMBIGUOUS_TEST, 'comparative adverb', 'action', span)
 
     # Verifications
     for step in test.steps:
@@ -151,19 +140,16 @@ def find_ambiguous_test(index: int, test: abc.Container):
             reaction_matches = matcher(reaction)
             for match_id, start, end in reaction_matches:
                 span = reaction[start:end]  # The matched span of tokens
-                resultsWritter().write(
-                    [test.file, index, 'Ambiguous Test', 'comparative adverb', 'verification', span, reaction])
+                _store_smell(step, smells_names.AMBIGUOUS_TEST, 'comparative adverb', 'verification', span)
 
     # Adverbs of manner(RB)
     matcher = MatchersFactory.ambiguous_test_adverbs_of_manner_matcher()
-
     # Actions
     for step in test.steps:
         action_matches = matcher(step.action)
         for match_id, start, end in action_matches:
             span = step.action[start:end]
-            resultsWritter().write(
-                [test.file, index, 'Ambiguous Test', 'adverb of manner', 'action', span, step.action])
+            _store_smell(step, smells_names.AMBIGUOUS_TEST, 'adverb of manner', 'action', span)
 
     # Verifications
     for step in test.steps:
@@ -171,8 +157,7 @@ def find_ambiguous_test(index: int, test: abc.Container):
             reaction_matches = matcher(reaction)
             for match_id, start, end in reaction_matches:
                 span = reaction[start:end]
-                resultsWritter().write(
-                    [test.file, index, 'Ambiguous Test', 'adverb of manner', 'verification', span, reaction])
+                _store_smell(step, smells_names.AMBIGUOUS_TEST, 'comparative adverb', 'verification', span)
 
     # Adjectives
     matcher = MatchersFactory.ambiguous_test_adjectives_matcher()
@@ -235,3 +220,9 @@ def find_ambiguous_test(index: int, test: abc.Container):
                 span = reaction[start:end]
                 resultsWritter().write(
                     [test.file, index, 'Ambiguous Test', 'indefinite pronoun', 'verification', span, reaction])
+
+
+def _store_smell(container: Test|Step, smell_name:str, hint:str, where:str, term:spacy.tokens.Span) -> None:
+    smell = Smell(smell_name, where, hint, term)
+    container.smells.append(smell)
+    return None
