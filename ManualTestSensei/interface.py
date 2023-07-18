@@ -12,16 +12,15 @@ ubuntu = ubuntu_data.UbuntuSmellsData()
 file_index, _ = st.selectbox('Select the files containing the tests', ubuntu.list_files())
 file_tests = ubuntu.by_catalog_index(file_index)
 
-header = ''
-header_new = ''
-for test in file_tests:
-  find_conditional_test_logic(1, test) # TODO: Remover essa execução do interface.py
-  simplified_test = simplify_test(test)
-  header_new = '\n'.join(test.header)
-  if header_new != header:
-    st.write(header_new)
-    header = header_new
-  with st.container(): # Test container
-    df = pd.DataFrame(simplified_test)
-    df = df.drop(columns='where')
-    st.table(df)
+for (test_index, test) in enumerate(file_tests):
+    find_conditional_test_logic(test) # TODO: Remover essa execução do interface.py
+    simplified_test = simplify_test(test)
+    try:
+        header = test.header[test_index]
+        st.write(header)
+    except:
+        pass
+    with st.container(): # Test container
+        df = pd.DataFrame(simplified_test)
+        df = df.drop(columns='where')
+        st.table(df)

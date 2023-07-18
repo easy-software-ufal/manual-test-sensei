@@ -9,7 +9,7 @@ from matchers_factory import MatchersFactory
 from pipeline import Step, Test, Smell
 
 
-def find_conditional_test_logic(index: int, test: abc.Container):
+def find_conditional_test_logic(test: abc.Container):
     """
     Subordinate (dependent clauses). They start with a subordinating conjunction
     """
