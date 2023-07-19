@@ -1,11 +1,10 @@
-import streamlit as st
 import pandas as pd
-
+import streamlit as st
 import ubuntu_data
-from pipeline import simplify_test
 from matchers import find_conditional_test_logic
-st.set_page_config(layout='wide')
+from pipeline import simplify_test
 
+st.set_page_config(layout='wide')
 
 ubuntu = ubuntu_data.UbuntuSmellsData()
 
