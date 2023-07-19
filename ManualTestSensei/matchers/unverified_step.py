@@ -1,11 +1,15 @@
 from pipeline import Test
 import smells_names
+from matchers import helpers
 
-def unverified_step(test: Test):
-    """
-    Missing verification step
-    """
-    steps = test.steps
-    unverified_steps = [step for step in steps if len(step.reactions) == 0]
-    for step in unverified_steps:
-        _store_smell(step, smells_names.UNVERIFIED_ACTION, '', 'action', step.action)
+class UnverifiedStep:
+    smell:str = smells_names.UNVERIFIED_STEP
+
+    def __call__(self, test: Test):
+        """
+        Missing verification step
+        """
+        steps = test.steps
+        unverified_steps = [step for step in steps if len(step.reactions) == 0]
+        for step in unverified_steps:
+            helpers._store_smell(step, self.smell, '', 'action', step.action)

@@ -1,6 +1,7 @@
 from pipeline import Test
 import smells_names
 from matchers import helpers
+from matchers_factory import MatchersFactory
 
 def find_misplaced_step(test: Test):
     '''

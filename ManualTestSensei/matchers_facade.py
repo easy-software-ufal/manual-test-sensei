@@ -1,12 +1,24 @@
-from matchers import conditional_test_logic, ambiguous_test, conditional_test_logic, eager_step
+from matchers import (ambiguous_test, conditional_test_logic, eager_step,
+                      misplaced_precondition, unverified_step, misplaced_result)
 from ubuntu_data import UbuntuSmellsData
+from pipeline import Test
+
+class MatchersFacade:
+    condition_test_logic = conditional_test_logic.ConditionalTestLogic()
+    eager_step = eager_step.EagerStep()
+    # ambiguous_test = ambiguous_test.AmbiguousTest() # TODO: Fix this test
+    misplaced_precondition = misplaced_precondition.MisplacedPrecondition()
+    unverified_step = unverified_step.UnverifiedStep()
+    misplaced_result = misplaced_result.MisplacedResult()
+
+    def __call__(self, test:Test) -> bool:
+        pipeline = [getattr(MatchersFacade,m) for m in dir(MatchersFacade) if not m.startswith('__')]
+        for pipe in pipeline:
+            pipe(test)
+        return True
 
 if __name__ == '__main__':
+    facade = MatchersFacade()
     tests = UbuntuSmellsData('ubuntu_files.csv') #files.csv contains ubuntu files
     test = tests.by_catalog_index(2)[0]
-    eager_step.find(test)
-    conditional_test_logic.find(test)
-    ambiguous_test.find(test)
-    conditional_test_logic.find(test)
-    eager_step.find(test)
-    print(test.smells)
+    facade(test)
