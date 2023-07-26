@@ -11,6 +11,7 @@ FILE_COL = 'NUMERO E NOME DO ARQUIVO'
 SMELL_COL = 'QUAL SMELL?'
 
 class SmellsData:
+    '''This `abstract` class is intended to be inherited by the classes containing the data of the tests. Example: Ubuntu Tests.'''
     def __init__(self, tests_catalog_file:str):
         self.tests_catalog_file = tests_catalog_file
         self.tests_catalog = None

@@ -1,8 +1,9 @@
+import logging
 import re
 from collections import abc
 from functools import singledispatch
 from pathlib import Path, PosixPath
-import logging
+
 log = logging.getLogger(__name__)
 
 import numpy as np
@@ -16,6 +17,8 @@ from pipeline import Step, Test, nlp
 
 
 class UbuntuSmellsData(SmellsData):
+    '''This class keeps the Ubuntu tests'''
+
     def __init__(self, tests_catalog_file:str='ubuntu_files.csv'):
         return super().__init__(tests_catalog_file)
 
