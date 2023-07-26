@@ -64,7 +64,10 @@ class Memento:
 
     def rollback(self):
         data = self.__class__()
-        last = self._snapshots[-1]
+        try:
+            last = self._snapshots[-1]
+        except: #There are no snapshots
+            return None
         attribute_names = self._get_attributes_names()
         for name in attribute_names:
             attribute_value = getattr(self, name)
@@ -121,7 +124,6 @@ def simplify_step(step:Step):
     if not smells:
         smells = '-'
     return Step(action, reactions, smells=smells)
-
 
 if __name__ == '__main__':
     step = Step('a', list(), 'abc', list())
