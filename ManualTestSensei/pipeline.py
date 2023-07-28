@@ -1,6 +1,7 @@
 import sys
 from itertools import chain
 import collections
+import copy
 
 import spacy
 from dataclasses import dataclass, field
@@ -47,34 +48,23 @@ class Memento:
 
     def take_snapshot(self) -> bool:
         '''Stores the current state of the memento into the attribute self.snapshots'''
-        if self._snapshots:
-            last_snapshot = self._snapshots[-1]
-        else:
-            last_snapshot = None
+        if not self._snapshots:
             self._snapshots = list()
-        snapshot = self.__class__(self) # This is poorly optimized since it duplicates data, but we are dealing with few data.
-        attribute_names = self._get_attributes_names()
-        for name in attribute_names:
-            attribute_value = getattr(self, name)
-            if isinstance(attribute_value, collections.abc.Sequence) and not isinstance(attribute_value, str):
-                for inner_attribute_value in attribute_value:
-                    inner_attribute_value.take_snapshot()
+        snapshot = copy.deepcopy(self)
         self._snapshots.append(snapshot)
         return True
 
     def rollback(self):
-        data = self.__class__()
-        try:
-            last = self._snapshots[-1]
-        except: #There are no snapshots
-            return None
-        attribute_names = self._get_attributes_names()
-        for name in attribute_names:
-            attribute_value = getattr(self, name)
-            if isinstance(attribute_value, collections.abc.Sequence) and not isinstance(attribute_value, str):
-                values = [inner_value.rollback()  for inner_value in attribute_value]
-                setattr(data, name, values)
-        return data
+        if self._snapshots:
+            return self._snapshots[-1]
+        return None
+
+    def rollback_all(self):
+        yield self
+        r = self.rollback()
+        while r:
+            yield r
+            r = r.rollback()
 
     def _get_attributes_names(self) ->list[str]:
         names = [name for name in dir(self) if not name.startswith('_') and not callable(getattr(self, name))]
@@ -84,12 +74,15 @@ class Step(Memento):
     def __init__(self, action:str='', reactions:list = None, where:str='', smells:list = None):
         super().__init__()
         self.action = action
+        self.where = where
         if reactions:
             self.reactions = reactions
         else:
             self.reactions = list()
-        self.where = where
-        self.smells = smells
+        if smells:
+            self.smells = smells
+        else:
+            self.smells = list()
 
 
 class Test(Memento):
@@ -104,18 +97,19 @@ class Test(Memento):
         if smells:
             self.smells = smells
         else:
-            self.smells = list(0)
+            self.smells = list()
 
     def get_smells(self) -> list:
         smells = list()
         smells = smells + self.smells
-        steps_smells = [step.smells for step in self.steps if step.smells]
+        steps_smells = [step.smells for step in self.steps if st.smells]
         smells = smells + steps_smells
         return list(chain(*smells))
 
 
 def simplify_test(test:Test):
-    return [simplify_step(step) for step in test.steps]
+    simplified = [simplify_step(step) for step in test.steps]
+    return simplified
 
 def simplify_step(step:Step):
     action = step.action.text
@@ -123,9 +117,19 @@ def simplify_step(step:Step):
     smells = '\n'.join([str(smell) for smell in step.smells])
     if not smells:
         smells = '-'
-    return Step(action, reactions, smells=smells)
+    return {'action':action, 'expected results':reactions, 'smells':smells}
 
 if __name__ == '__main__':
-    step = Step('a', list(), 'abc', list())
-    print(step._get_attributes_names())
-    step.take_snapshot()
+    st1 = Step('step0', ['testando'], 'step1', ['testando isso'])
+    tt1 = Test('abc.txt', ['teste1'], [st1])
+    tt1.take_snapshot()
+    tt1.steps[0] = Step('step1', ['testando'], 'step1', ['testando isso'])
+    tt1.take_snapshot()
+    tt1.steps[0] = Step('step2', ['testando'], 'step1', ['testando isso'])
+    tt1.take_snapshot()
+    tt1.steps[0] = Step('step3', ['testando'], 'step1', ['testando isso'])
+    tt1.take_snapshot()
+    tt1.steps[0] = Step('step4', ['testando'], 'step1', ['testando isso'])
+    # [print(t.steps[0].action) for t in tt1.rollback_all()]
+    for tt in tt1.rollback_all():
+        print(tt.steps[0].action)
