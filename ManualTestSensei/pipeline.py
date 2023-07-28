@@ -50,31 +50,21 @@ class Memento:
         '''Stores the current state of the memento into the attribute self.snapshots'''
         if not self._snapshots:
             self._snapshots = list()
-        snapshot = copy.copy(self)
-        attribute_names = self._get_attributes_names()
-        for name in attribute_names:
-            attribute_value = getattr(self, name)
-            if isinstance(attribute_value, collections.abc.Sequence) and not isinstance(attribute_value, str):
-                for inner_attribute_value in attribute_value:
-                    inner_attribute_value.take_snapshot()
+        snapshot = copy.deepcopy(self)
         self._snapshots.append(snapshot)
         return True
 
     def rollback(self):
-        try:
-            last_snapshot = self._snapshots.pop()
-        except IndexError: #There are no snapshots
-            return None
-        attribute_names = self._get_attributes_names()
-        for name in attribute_names:
-            attribute_value = getattr(self, name)
-            if isinstance(attribute_value, collections.abc.Sequence) and not isinstance(attribute_value, str):
-                values = (inner_value.rollback()  for inner_value in attribute_value)
-                values = [v for v in values if v is not None]
-                setattr(self, name, values)
-            else:
-                setattr(self, name, getattr(last_snapshot, name))
-        return self
+        if self._snapshots:
+            return self._snapshots[-1]
+        return None
+
+    def rollback_all(self):
+        yield self
+        r = self.rollback()
+        while r:
+            yield r
+            r = r.rollback()
 
     def _get_attributes_names(self) ->list[str]:
         names = [name for name in dir(self) if not name.startswith('_') and not callable(getattr(self, name))]
@@ -130,8 +120,16 @@ def simplify_step(step:Step):
     return {'action':action, 'expected results':reactions, 'smells':smells}
 
 if __name__ == '__main__':
-    st = Step('primeiro_action', list(), 'primeiro_where', list())
-    st.take_snapshot()
-    st.action = 'segundo_action'
-    print(st.action)
-    print(st.rollback().action)
+    st1 = Step('step0', ['testando'], 'step1', ['testando isso'])
+    tt1 = Test('abc.txt', ['teste1'], [st1])
+    tt1.take_snapshot()
+    tt1.steps[0] = Step('step1', ['testando'], 'step1', ['testando isso'])
+    tt1.take_snapshot()
+    tt1.steps[0] = Step('step2', ['testando'], 'step1', ['testando isso'])
+    tt1.take_snapshot()
+    tt1.steps[0] = Step('step3', ['testando'], 'step1', ['testando isso'])
+    tt1.take_snapshot()
+    tt1.steps[0] = Step('step4', ['testando'], 'step1', ['testando isso'])
+    # [print(t.steps[0].action) for t in tt1.rollback_all()]
+    for tt in tt1.rollback_all():
+        print(tt.steps[0].action)
