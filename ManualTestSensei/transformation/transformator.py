@@ -151,13 +151,13 @@ def transformation_closure(df):
                     term_end = term_start + len(term) + 1
 
                     breakpoint()
-                    contents = cotworking and are connected ntents[:term_start] + contents[term_end:]
+                    contents = contents[:term_start] + contents[term_end:]
                     file.seek(0)
                     file.truncate(0)
                     file.write(contents)
 
     def conditional_test_logic(df):
-        
+        pass
 
     def eager_action(df):
         global skipped_tests

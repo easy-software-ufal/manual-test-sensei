@@ -1,5 +1,6 @@
 \nlp
 \__pycache__
+\env
 \venv
 *.html
 *.htm
