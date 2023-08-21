@@ -1,0 +1,33 @@
+This test will check correct functioning of Agave.
+
+<dl>
+    <dt>Open Agave</dt>
+        <dd>Agave opens with a awatch of colours set from the default</dd>
+    <dt>Pick a colour with the colour picker</dt>
+        <dd>The shown swatch changes</dd>
+    <dt>Change the scheme type</dt>
+        <dd>The swatch changes to the new scheme</dd>
+    <dt>Pick a colour from the palette</dt>
+        <dd>The swatches change to suit the new colour</dd>
+    <dt>Change the available colours from the palette drop down</dt>
+        <dd>Colours in palette change</dd>
+    <dt>Add current scheme to favourites with Ctrl+D</dt>
+    <dt>Export favourites from File menu, choosing a suitable path</dt>
+        <dd>File saves</dd>
+    <dt>Close Agave from menu or with Ctrl+Q</dt>
+        <dd>Agave closes</dd>
+</dl>
+
+This test will check that Agave opens with a palette.
+<dl>
+    <dl>Open file manager</dl>
+    <dl>Locate previosly saved favourite</dl>
+    <dl>Move file to .local/share/agave/palettes</dl>
+    <dl>Rename file to include .gpl extension</dl>
+    <dl>Open Agave</dl>
+    <dd>Agave opens with the new palette</dd>
+</dl>
+
+
+<strong>If you answer 'yes' to all questions, please <a href="results#add_result">submit</a> a 'passed' result.
+    If you answer 'no' to any question, then please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

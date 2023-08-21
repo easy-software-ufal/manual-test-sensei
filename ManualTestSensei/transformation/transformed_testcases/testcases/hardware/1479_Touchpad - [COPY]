@@ -1,0 +1,22 @@
+<strong>Test Touchpad</strong>
+
+Case ID: hmo-001
+<!-- GOOD TEST -->
+<dl>
+    <dt>Move a finger on the touchpad</dt>
+        <dd>The cursor moves</dd>
+    <dt>Left-click something</dt>
+        <dd>The thing is selected</dd>
+    <dt>Right-click on the desktop using the touchpad buttons</dt> 
+        <dd>The right-click menu opens</dd>
+    <dt>Double-click something on the desktop</dt> 
+        <dd>The thing opens</dd>
+    <dt>Drag an icon across the desktop</dt>
+        <dd>The icon drags</dd>
+    <dt>Tap the touchpad</dd>
+        <dd>This produce the same result as left-clicking</dd>
+</dl>
+
+<strong>
+    If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

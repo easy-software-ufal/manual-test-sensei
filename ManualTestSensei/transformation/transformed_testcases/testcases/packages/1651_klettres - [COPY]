@@ -1,0 +1,16 @@
+This test will check klettres accepts the correctly entered letters
+<dl>
+    <dt>Launch klettres</dt>
+        <dd>klettres opens, showing one alphabet by default on the screen</dd>
+    <dt>Enter the alphabet correctly in the textbox</dt>
+        <dd>The application accepts the letter and shows another letter</dd>
+</dl>
+
+This test will check klettres does not accept the incorrect letters
+<dl>
+    <dt>Enter an incorrect letter in the textbox</dt>
+        <dd>The application does not accept the letter and shows the existing letter</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

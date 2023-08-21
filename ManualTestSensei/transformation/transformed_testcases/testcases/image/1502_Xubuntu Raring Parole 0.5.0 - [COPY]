@@ -1,0 +1,15 @@
+<dl>
+    <dt>Launch Parole from the menu</dt>
+    <dt>Play files in multiple formats</dt>
+        <dd>All files play (including those that needed new codecs)</dd>
+        <dd>If a required codec is missing, an installation prompt should appear and install the missing codec.  Afterwards, media playback should begin.</dd>
+    <dt>Play CDs and DVDs</dt>
+        <dd>CDs and DVDs play (note: to play encrypted DVDs, you will need to have libdvdcss2 installed)</dd>
+        <dd>Chapters and tracks for CDs/DVDs are shown in the playlist.</dd>
+    <dt>Localization strings for embedded subtitles</dt>
+        <dd>Embedded subtitles display proper localization name for audio tracks and subtitles.</dd>
+    <dt>Use (external) subtitles for a video file</dt>
+        <dd>Subtitles work and show up correctly</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result. If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

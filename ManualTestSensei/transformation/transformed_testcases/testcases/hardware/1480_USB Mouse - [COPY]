@@ -1,0 +1,39 @@
+<strong>Connect USB Mouse</strong>
+Case ID: hmu-001
+
+This tests that FAMILY can recognise your mouse.
+<!-- Smells: UNVERIFIED STEPS -->
+<dl>
+    <dt>Remove all USB mice and trackballs connected to the computer 
+    <dt>Open Terminal</dt> 
+    <dt>Run lsusb in the terminal</dt> 
+        <dd>No USB mice are detected</dd>
+    <dt>Connect the USB mouse to the computer</dt> 
+    <dt>Run lsusb in the terminal</dt> 
+        <dd>The mouse is detected</dd>
+    <dt>Disconnect the mouse from the computer.</dt>
+    <dt>Run lsusb again</dt> 
+        <dd>The mouse is no longer detected</dd>
+    <dt>Please include your device's model in your feedback</dd>
+</dl>
+
+<!-- GOOD TEST -->
+<strong>Test USB Mouse</strong>
+Case ID: hmu-002
+This tests that the mouse responds normally in Ubuntu.
+<dl>
+    <dt>Move the mouse</dt>
+        <dd>The cursor moves</dd>
+    <dt>Left-click a file</dt>
+        <dd>The file selects</dd>
+    <dt>Right-click on the desktop</dt>
+        <dd>The right-click menu opens</dd>
+    <dt>Double-click a file</dt>
+        <dd>The file opens</dd>
+    <dt>Drag a file</dt> 
+        <dd>The file drags</dd>
+</dl>
+
+<strong>
+    If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

@@ -4,7 +4,7 @@ try:
 except ImportError:
     import transformation_data
 #SMELL_NAMES = ['Misplaced Precondition', 'Unverified Action', 'Misplaced Action', 'Misplaced Verification']
-SMELL_NAMES = ['Eager Action']
+SMELL_NAMES = ['Ambiguous Test']
 skipped_tests = 0
 
 def transformation_closure(df):
@@ -134,10 +134,30 @@ def transformation_closure(df):
                     file.write(contents)
 
     def ambiguous_test(df):
-        pass
+        global skipped_tests
+        filtered_df = transformation_data.get_filtered_df_by_smell_name(df,'Ambiguous Test')
+        for _, row in filtered_df.iterrows():
+            breakpoint()
+            if os.path.exists(row['Copy Path']) and os.path.isfile(row['Copy Path']):
+                with open(row['Copy Path'], 'r+', encoding='utf8') as file:
+                    contents = file.read()
+                    start_pos = contents.find(row['Sentence'])
+                    if sentence_not_found(start_pos):
+                        skipped_tests += 1
+                        continue
+                    end_pos = start_pos + len(row['Sentence'])
+                    term = row['Term']
+                    term_start = contents.find(term, start_pos, end_pos)
+                    term_end = term_start + len(term) + 1
+
+                    breakpoint()
+                    contents = cotworking and are connected ntents[:term_start] + contents[term_end:]
+                    file.seek(0)
+                    file.truncate(0)
+                    file.write(contents)
 
     def conditional_test_logic(df):
-        pass
+        
 
     def eager_action(df):
         global skipped_tests
@@ -194,7 +214,8 @@ def transformation_closure(df):
 
     switcher = {
     #'Misplaced Precondition': misplaced_precondition(df),
-    'Eager Action': eager_action(df)
+    'Ambiguous Test': ambiguous_test(df)
+    #'Eager Action': eager_action(df)
     #'Unverified Action': unverified_action(df),
     #'Misplaced Action': misplaced_action(df),
     #'Misplaced Verification': misplaced_verification(df)

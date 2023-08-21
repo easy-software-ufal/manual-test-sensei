@@ -1,0 +1,9 @@
+<dl>
+    <dt>Does the system boot properly?</dt>
+    <dt>Is your graphics card recognized?</dt>
+    <dt>Is your networking hardware properly recognized?</dt>
+    <dt>Where applicable, are you able to suspend and resume your system?</dt>
+    <dt>Does all of your hardware work?</dt>
+</dl>
+<strong>If you answer 'yes' to all questions, please <a href="results#add_result">submit</a> a 'passed' result.
+    If you answer 'no' to any question, then please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
