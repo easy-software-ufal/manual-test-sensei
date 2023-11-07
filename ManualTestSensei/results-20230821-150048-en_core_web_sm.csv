@@ -1,0 +1,2 @@
+Test file,Test index,Smell,Hint,Where,Term,Sentence
+../testcases/packages/1424_Nautilus,2,Misplaced Precondition,SUT state,action,"[window, is, running]",Please ensure the Nautilus window is running and the Nautilus window is focused

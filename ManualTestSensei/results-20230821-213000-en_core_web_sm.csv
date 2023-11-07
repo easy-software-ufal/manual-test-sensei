@@ -1,0 +1,258 @@
+Test file,Test index,Smell,Hint,Where,Term,Sentence
+../testcases/image/1433_Post-installation (Xubuntu),0,Misplaced Action,,verification,Confirm,Confirm that the page loads
+../testcases/image/1434_Desktop (Xubuntu),0,Misplaced Action,,verification,Confirm,Confirm that there are no missing/wrong icons in the applications you tested
+../testcases/image/1434_Desktop (Xubuntu),3,Misplaced Action,,verification,Confirm,Confirm that you are able to switch between keyboard layouts
+../testcases/image/1434_Desktop (Xubuntu),4,Misplaced Action,,verification,Confirm,Confirm that the main menus and outputs in the desktop are translated
+../testcases/image/1434_Desktop (Xubuntu),8,Misplaced Action,,verification,Confirm,Confirm you are able to read files from it
+../testcases/image/1437_Alternate Install (Entire Disk),0,Misplaced Action,,verification,Wait,Wait for a while - The install may seem like it has locked at a percentage but is actually working in the background. You can check and see if it is working by switching to tty4 (alt + f4).
+../testcases/image/1438_Alternate Install (Guided),0,Misplaced Action,,verification,Wait,Wait for a while - The install may seem like it has locked at a percentage but is actually working in the background. You can check and see if it is working by switching to tty4 (alt + f4).
+../testcases/image/1439_Alternate Install (Encryption),0,Misplaced Action,,verification,Wait,Wait for a while - The install may seem like it has locked at a percentage but is actually working in the background. You can check and see if it is working by switching to tty4 (alt + f4).
+../testcases/image/1443_Rescue Mode,0,Misplaced Action,,verification,Ensure,Ensure that changes have been made and that there is a new file created
+../testcases/image/1443_Rescue Mode,0,Misplaced Action,,verification,Ensure,Ensure that chroot works and that files are listed in both enviroments
+../testcases/image/1443_Rescue Mode,0,Misplaced Action,,verification,Ensure,Ensure the system boots as expected
+../testcases/image/1443_Rescue Mode,0,Misplaced Action,,verification,Choose,Choose your new root file system and press Enter
+../testcases/image/1446_Ubiquity MemTest,0,Misplaced Action,,verification,Ensure,Ensure that the system restarts
+../testcases/image/1455_Post-installation (Ubuntu Studio),0,Misplaced Action,,verification,Start,Start Jack and confirm it runs properly (DSP shows a percentage). Then stop jack to confirm it closes properly (DSP shows 0%). Finish by starting Jack and keeping it on for the duration of this test.
+../testcases/image/1455_Post-installation (Ubuntu Studio),0,Misplaced Action,,verification,Start,Start Carla and keep it around for your Patchbay. 
+../testcases/image/1455_Post-installation (Ubuntu Studio),0,Misplaced Action,,verification,Create,"Create a quick beat and play it - you should hear sound. If you aren't hearing any sound, make sure that connections are accurate in Carla ->Patchbay, and that your hardware levels are not muted."
+../testcases/image/1455_Post-installation (Ubuntu Studio),0,Misplaced Action,,verification,See,See http://help.ubuntu.com/community/UbuntuStudio/ProAudioIntro for more info on audio on Ubuntu Studio if you're having trouble. 
+../testcases/image/1456_Install (JeOS on ESX),0,Misplaced Action,,verification,uname,uname -r
+../testcases/image/1457_Install (default + RAID1),0,Misplaced Action,,verification,Reconnect,Reconnect the second disk (disk2) - both disks now connected.
+../testcases/image/1457_Install (default + RAID1),0,Misplaced Action,,verification,Note,"Note that this may fail with a message requiring you to zero the superblock first, this is a result of an added check in mdadm 3.2, and should only happen on precise or later (see bug 943397)."
+../testcases/image/1457_Install (default + RAID1),0,Misplaced Action,,verification,make,"make sure that all disk arrays are synchronized before proceeding, if the array is doing a full re-sync, it may take a few minutes, use"
+../testcases/image/1457_Install (default + RAID1),0,Misplaced Action,,verification,Poweroff,Poweroff the system.
+../testcases/image/1457_Install (default + RAID1),0,Misplaced Action,,verification,Reconnect,Reconnect the first disk (so both are now connected)
+../testcases/image/1457_Install (default + RAID1),0,Misplaced Action,,verification,Say,Say yes
+../testcases/image/1457_Install (default + RAID1),0,Misplaced Action,,verification,Say,Say yes
+../testcases/image/1457_Install (default + RAID1),0,Misplaced Action,,verification,Reconnect,Reconnect the first disk (so both are now connected)
+../testcases/image/1457_Install (default + RAID1),0,Misplaced Action,,verification,Add,Add the missing drives back to the RAIDs:
+../testcases/image/1457_Install (default + RAID1),1,Misplaced Action,,verification,Reconnect,Reconnect the first disk (so both are now connected)
+../testcases/image/1457_Install (default + RAID1),1,Misplaced Action,,verification,Say,Say yes
+../testcases/image/1457_Install (default + RAID1),1,Misplaced Action,,verification,Say,Say yes
+../testcases/image/1457_Install (default + RAID1),1,Misplaced Action,,verification,Reconnect,Reconnect the first disk (so both are now connected)
+../testcases/image/1457_Install (default + RAID1),1,Misplaced Action,,verification,Add,Add the missing drives back to the RAIDs:
+../testcases/image/1457_Install (default + RAID1),2,Misplaced Action,,verification,Reconnect,Reconnect the first disk (so both are now connected)
+../testcases/image/1457_Install (default + RAID1),2,Misplaced Action,,verification,Say,Say yes
+../testcases/image/1457_Install (default + RAID1),2,Misplaced Action,,verification,Say,Say yes
+../testcases/image/1457_Install (default + RAID1),2,Misplaced Action,,verification,Reconnect,Reconnect the first disk (so both are now connected)
+../testcases/image/1457_Install (default + RAID1),2,Misplaced Action,,verification,Add,Add the missing drives back to the RAIDs:
+../testcases/image/1458_Install ((JeOS on KVM),0,Misplaced Action,,verification,uname,uname -r
+../testcases/image/1461_MAAS (Installer),9,Misplaced Action,,verification,Enter,Enter the ip address of the configured MAAS server
+../testcases/image/1461_MAAS (Installer),9,Misplaced Action,,verification,Leave,Leave blank or enter a name
+../testcases/image/1503_Ubuntu Kylin Chinese Calendar,3,Misplaced Action,,verification,Note,Note:The schedule information on the main window does not update in real time. It will be updated when we click the button for that date
+../testcases/image/1611_Live Session Persistence,0,Misplaced Action,,verification,Provide,Provide password if requested. Pausing at this point should not cause an error
+../testcases/image/1611_Live Session Persistence,0,Misplaced Action,,verification,Provide,Provide password if requested. Pausing at this point should not cause an error
+../testcases/image/1628_Xubuntu Post-install,1,Misplaced Action,,verification,Confirm,Confirm they are listed in the file manager
+../testcases/image/1628_Xubuntu Post-install,1,Misplaced Action,,verification,Confirm,Confirm you are able to read files from it
+../testcases/image/1634_Kubuntu Localisation Support,0,Misplaced Action,,verification,Click,"Click on the tab labelled ""General"", are all labels localized?"
+../testcases/image/1634_Kubuntu Localisation Support,0,Misplaced Action,,verification,Launch,"Launch the ""Dolphin"" settings via the ""Control"" menu"
+../testcases/image/1634_Kubuntu Localisation Support,0,Misplaced Action,,verification,Click,"Click on the wrench icon, are the entries localized?"
+../testcases/image/1634_Kubuntu Localisation Support,0,Misplaced Action,,verification,Click,"Click on the entry marked ""Settings"", is the ""Settings"" window localized?"
+../testcases/image/1634_Kubuntu Localisation Support,0,Misplaced Action,,verification,Click,"Click on the menu item labeled ""Edit"", are the entries localized?"
+../testcases/image/1634_Kubuntu Localisation Support,0,Misplaced Action,,verification,Make,Make sure all the strings are localized
+../testcases/image/1634_Kubuntu Localisation Support,0,Misplaced Action,,verification,Try,"Try and upgrade your system, is the ""Download Rate"" at the bottom left correctly localized?"
+../testcases/image/1640_Install_Minimal_System,0,Misplaced Action,,verification,Provide,Provide sudo password
+../testcases/image/1642_Server_Upgrade_CLI,0,Misplaced Action,,verification,Return,Return: Prompt=normal
+../testcases/image/1642_Server_Upgrade_CLI,0,Misplaced Action,,verification,Return,Return: Prompt=normal
+../testcases/image/1642_Server_Upgrade_CLI,0,Misplaced Action,,verification,Return,Return to the command prompt
+../testcases/image/1642_Server_Upgrade_CLI,1,Misplaced Action,,verification,Return,Return: Prompt=normal
+../testcases/image/1642_Server_Upgrade_CLI,1,Misplaced Action,,verification,Return,Return: Prompt=normal
+../testcases/image/1642_Server_Upgrade_CLI,1,Misplaced Action,,verification,Note,Note the release version
+../testcases/image/1642_Server_Upgrade_CLI,1,Misplaced Action,,verification,Compare,"Compare results to step(5), will be the next sequential release."
+../testcases/image/1642_Server_Upgrade_CLI,2,Misplaced Action,,verification,Return,Return: Prompt=normal
+../testcases/image/1642_Server_Upgrade_CLI,2,Misplaced Action,,verification,Return,Return: Prompt=normal
+../testcases/image/1642_Server_Upgrade_CLI,2,Misplaced Action,,verification,Note,Note the release version
+../testcases/image/1642_Server_Upgrade_CLI,2,Misplaced Action,,verification,Compare,"Compare results to step(5), will be the next sequential LTS release."
+../testcases/image/1642_Server_Upgrade_CLI,3,Misplaced Action,,verification,Return,Return: Prompt=normal
+../testcases/image/1642_Server_Upgrade_CLI,3,Misplaced Action,,verification,Return,Return: Prompt=normal
+../testcases/image/1642_Server_Upgrade_CLI,3,Misplaced Action,,verification,Note,Note the release version
+../testcases/image/1642_Server_Upgrade_CLI,3,Misplaced Action,,verification,Compare,"Compare results to step(5), will be the next development release."
+../testcases/image/1655_Xubuntu Core Install tasksel,0,Misplaced Action,,verification,Choose,Choose a mirror dialogue displays
+../testcases/image/1660_Alternate Install (Unencrypted Home),0,Misplaced Action,,verification,Wait,Wait for a while - The install may seem like it has locked at a percentage but is actually working in the background. You can check and see if it is working by switching to tty4 (alt + f4).
+../testcases/image/1661_Alternate Install (Manual Partitioning),0,Misplaced Action,,verification,Select,Select the partition and set up the scheme you prefer and the additional options you may want
+../testcases/image/1661_Alternate Install (Manual Partitioning),0,Misplaced Action,,verification,Wait,Wait for a while - The install may seem like it has locked at a percentage but is actually working in the background. You can check and see if it is working by switching to tty4 (alt + f4).
+../testcases/image/1687_Xubuntu Core Install,0,Misplaced Action,,verification,Write,Write changes dialogue appears
+../testcases/image/1687_Xubuntu Core Install,0,Misplaced Action,,verification,Continue,Continue button becomes available
+../testcases/image/1689_Install (no Network),0,Misplaced Action,,verification,Write,Write changes dialogue appears
+../testcases/image/1689_Install (no Network),0,Misplaced Action,,verification,Continue,Continue button becomes available
+../testcases/image/1698_Install_BIOS,0,Misplaced Action,,verification,Write,Write changes dialogue appears
+../testcases/image/1698_Install_BIOS,0,Misplaced Action,,verification,Continue,Continue button becomes available
+../testcases/image/1699_Install_UEFI,0,Misplaced Action,,verification,Write,Write changes dialogue appears
+../testcases/image/1699_Install_UEFI,0,Misplaced Action,,verification,Continue,Continue button becomes available
+../testcases/image/1700_Alternate Install (No Network),0,Misplaced Action,,verification,Wait,Wait for a while - The install may seem like it has locked at a percentage but is actually working in the background. You can check and see if it is working by switching to tty4 (Alt + F4).
+../testcases/image/1701_Install using Calamares (entire disk),0,Misplaced Action,,verification,Test,"Test the keyboard layout in the given box, which should be set correctly"
+../testcases/image/1702_Install using Calamares (manual partitioning),0,Misplaced Action,,verification,Test,"Test the keyboard layout in the given box, which should be set correctly"
+../testcases/image/1717_Install RST,0,Misplaced Action,,verification,Write,Write changes dialogue appears
+../testcases/image/1717_Install RST,0,Misplaced Action,,verification,Continue,Continue button becomes available
+../testcases/image/1718_Install UEFI SecureBoot nVidia,0,Misplaced Action,,verification,Write,Write changes dialogue appears
+../testcases/image/1718_Install UEFI SecureBoot nVidia,0,Misplaced Action,,verification,Continue,Continue button becomes available
+../testcases/image/1728_PPC64EL Install using Netboot (Petitboot),0,Misplaced Action,,verification,wget,wget http://path/to/image.iso # proxy might be needed: '-e use_proxy=yes -e http_proxy=squid.internal:3128' 
+../testcases/image/1729_S390X Install LPAR (Server live),0,Misplaced Action,,verification,Start,"Start the interactive questionnaire about the basic network configuration and make sure that the URL to image, that needs to be specified too, is accessible (hence, ideally point to the image located on the install server)."
+../testcases/image/1730_S390X Install zVM (Server live),0,Misplaced Action,,verification,Start,"Start the interactive questionnaire about the basic network configuration and make sure the URL to image (that needs to be specified in addition) is accessible (hence, ideally point to the image located on the install server.)"
+../testcases/image/1733_Install (Safe Graphics mode),0,Misplaced Action,,verification,Write,Write changes dialogue appears
+../testcases/image/1733_Install (Safe Graphics mode),0,Misplaced Action,,verification,Continue,Continue button becomes available
+../testcases/image/1736_Install Unleashed,0,Misplaced Action,,verification,Set,Set new password
+../testcases/image/1736_Install Unleashed,0,Misplaced Action,,verification,Confirm,Confirm the new password
+../testcases/image/1736_Install Unleashed,0,Misplaced Action,,verification,Run,"Run any command that is not installed, check that command-not-found recommends things to install"
+../testcases/image/1736_Install Unleashed,0,Misplaced Action,,verification,Install,"Install a package and check that it works, i.e. hello"
+../testcases/image/1737_Install Unmatched,0,Misplaced Action,,verification,Set,Set new password
+../testcases/image/1737_Install Unmatched,0,Misplaced Action,,verification,Confirm,Confirm the new password
+../testcases/image/1737_Install Unmatched,0,Misplaced Action,,verification,Run,"Run any command that is not installed, check that command-not-found recommends things to install"
+../testcases/image/1737_Install Unmatched,0,Misplaced Action,,verification,Install,"Install a package and check that it works, i.e. hello"
+../testcases/image/1738_Install Qemu,0,Misplaced Action,,verification,Follow,Follow instructions from wikion how to boot with QEMU
+../testcases/image/1738_Install Qemu,0,Misplaced Action,,verification,Set,Set new password
+../testcases/image/1738_Install Qemu,0,Misplaced Action,,verification,Confirm,Confirm the new password
+../testcases/image/1738_Install Qemu,0,Misplaced Action,,verification,Run,"Run any command that is not installed, check that command-not-found recommends things to install"
+../testcases/image/1738_Install Qemu,0,Misplaced Action,,verification,Install,"Install a package and check that it works, i.e. hello"
+../testcases/image/1739_WSL Import and run,0,Misplaced Action,,verification,See,"Verify that you	can switch to the new user # su ubuntu To run a command as administrator (user &quot;root&quot;), use &quot;sudo &lt;command&gt;&quot;. See &quot;man sudo_root&quot; for details. $ whoami ubuntu "
+../testcases/image/1739_WSL Import and run,0,Misplaced Action,,verification,Start,"Start one of the graphical application from the x11-utils package, like xcalc for example: $ xcalc (Wait a moment until the application starts and is displayed) "
+../testcases/image/1300_Install (entire disk),0,Misplaced Action,,verification,Write,Write changes dialogue appears
+../testcases/image/1300_Install (entire disk),0,Misplaced Action,,verification,Continue,Continue button becomes available
+../testcases/image/1316_Non-English Installation Full Network Support & CJK Input,0,Misplaced Action,,verification,Click,"Simplified Chinese: Open dash and type gedit into the search box. Click on the editor (文本编辑器) icon.Click on the keyboard icon on the top panel area and select SunPinyin as the input method to switch to.Type renlei in the new gedit document, press Space, and see if it turns out to be 人类Traditional Chinese: Open dash and type gedit into the search box. Click on the editor (文字编辑器) icon.Click on the keyboard icon on the top panel area and select Chewing (酷音) as the input method to switch to. Type bp6xo4 in the new gedit document (or if you have a keyboard with Bopomofo, type ㄖㄣˊㄌㄟˋ), press Enter, and see if it turns out to be 人類Japanese: Open dash and type gedit into the search box. Click on the editor (テキストエディター) icon.Click on the keyboard icon on the notification area, select 日本語 - Anthy as the input method to switch to. Type nihon in the new gedit document, press Enter and see if it turns out to be にほんType nihon again, then press space and see if it turns out to be 日本 or 二本. Keep pressing space to cycle between the presented options, if necessaryKorean: Open dash and type gedit into the search box. Click on the editor (텍스트 편집기) icon.Click on the keyboard icon on the notification area, select Hangul (한국어) as the input method to switch to.Type gks rmf in the new gedit document and see if it turns out to be 한 글"
+../testcases/image/1316_Non-English Installation Full Network Support & CJK Input,0,Misplaced Action,,verification,Click,"Simplified Chinese: Open dash and type gedit into the search box. Click on the editor (文本编辑器) icon.Click on the keyboard icon on the top panel area and select SunPinyin as the input method to switch to.Type renlei in the new gedit document, press Space, and see if it turns out to be 人类Traditional Chinese: Open dash and type gedit into the search box. Click on the editor (文字编辑器) icon.Click on the keyboard icon on the top panel area and select Chewing (酷音) as the input method to switch to. Type bp6xo4 in the new gedit document (or if you have a keyboard with Bopomofo, type ㄖㄣˊㄌㄟˋ), press Enter, and see if it turns out to be 人類Japanese: Open dash and type gedit into the search box. Click on the editor (テキストエディター) icon.Click on the keyboard icon on the notification area, select 日本語 - Anthy as the input method to switch to. Type nihon in the new gedit document, press Enter and see if it turns out to be にほんType nihon again, then press space and see if it turns out to be 日本 or 二本. Keep pressing space to cycle between the presented options, if necessaryKorean: Open dash and type gedit into the search box. Click on the editor (텍스트 편집기) icon.Click on the keyboard icon on the notification area, select Hangul (한국어) as the input method to switch to.Type gks rmf in the new gedit document and see if it turns out to be 한 글"
+../testcases/image/1316_Non-English Installation Full Network Support & CJK Input,0,Misplaced Action,,verification,Click,"Simplified Chinese: Open dash and type gedit into the search box. Click on the editor (文本编辑器) icon.Click on the keyboard icon on the top panel area and select SunPinyin as the input method to switch to.Type renlei in the new gedit document, press Space, and see if it turns out to be 人类Traditional Chinese: Open dash and type gedit into the search box. Click on the editor (文字编辑器) icon.Click on the keyboard icon on the top panel area and select Chewing (酷音) as the input method to switch to. Type bp6xo4 in the new gedit document (or if you have a keyboard with Bopomofo, type ㄖㄣˊㄌㄟˋ), press Enter, and see if it turns out to be 人類Japanese: Open dash and type gedit into the search box. Click on the editor (テキストエディター) icon.Click on the keyboard icon on the notification area, select 日本語 - Anthy as the input method to switch to. Type nihon in the new gedit document, press Enter and see if it turns out to be にほんType nihon again, then press space and see if it turns out to be 日本 or 二本. Keep pressing space to cycle between the presented options, if necessaryKorean: Open dash and type gedit into the search box. Click on the editor (텍스트 편집기) icon.Click on the keyboard icon on the notification area, select Hangul (한국어) as the input method to switch to.Type gks rmf in the new gedit document and see if it turns out to be 한 글"
+../testcases/image/1316_Non-English Installation Full Network Support & CJK Input,0,Misplaced Action,,verification,Click,"Simplified Chinese: Open dash and type gedit into the search box. Click on the editor (文本编辑器) icon.Click on the keyboard icon on the top panel area and select SunPinyin as the input method to switch to.Type renlei in the new gedit document, press Space, and see if it turns out to be 人类Traditional Chinese: Open dash and type gedit into the search box. Click on the editor (文字编辑器) icon.Click on the keyboard icon on the top panel area and select Chewing (酷音) as the input method to switch to. Type bp6xo4 in the new gedit document (or if you have a keyboard with Bopomofo, type ㄖㄣˊㄌㄟˋ), press Enter, and see if it turns out to be 人類Japanese: Open dash and type gedit into the search box. Click on the editor (テキストエディター) icon.Click on the keyboard icon on the notification area, select 日本語 - Anthy as the input method to switch to. Type nihon in the new gedit document, press Enter and see if it turns out to be にほんType nihon again, then press space and see if it turns out to be 日本 or 二本. Keep pressing space to cycle between the presented options, if necessaryKorean: Open dash and type gedit into the search box. Click on the editor (텍스트 편집기) icon.Click on the keyboard icon on the notification area, select Hangul (한국어) as the input method to switch to.Type gks rmf in the new gedit document and see if it turns out to be 한 글"
+../testcases/image/1316_Non-English Installation Full Network Support & CJK Input,0,Misplaced Action,,verification,Click,"Simplified Chinese: Open dash and type gedit into the search box. Click on the editor (文本编辑器) icon.Click on the keyboard icon on the top panel area and select SunPinyin as the input method to switch to.Type renlei in the new gedit document, press Space, and see if it turns out to be 人类Traditional Chinese: Open dash and type gedit into the search box. Click on the editor (文字编辑器) icon.Click on the keyboard icon on the top panel area and select Chewing (酷音) as the input method to switch to. Type bp6xo4 in the new gedit document (or if you have a keyboard with Bopomofo, type ㄖㄣˊㄌㄟˋ), press Enter, and see if it turns out to be 人類Japanese: Open dash and type gedit into the search box. Click on the editor (テキストエディター) icon.Click on the keyboard icon on the notification area, select 日本語 - Anthy as the input method to switch to. Type nihon in the new gedit document, press Enter and see if it turns out to be にほんType nihon again, then press space and see if it turns out to be 日本 or 二本. Keep pressing space to cycle between the presented options, if necessaryKorean: Open dash and type gedit into the search box. Click on the editor (텍스트 편집기) icon.Click on the keyboard icon on the notification area, select Hangul (한국어) as the input method to switch to.Type gks rmf in the new gedit document and see if it turns out to be 한 글"
+../testcases/image/1316_Non-English Installation Full Network Support & CJK Input,0,Misplaced Action,,verification,Click,"Simplified Chinese: Open dash and type gedit into the search box. Click on the editor (文本编辑器) icon.Click on the keyboard icon on the top panel area and select SunPinyin as the input method to switch to.Type renlei in the new gedit document, press Space, and see if it turns out to be 人类Traditional Chinese: Open dash and type gedit into the search box. Click on the editor (文字编辑器) icon.Click on the keyboard icon on the top panel area and select Chewing (酷音) as the input method to switch to. Type bp6xo4 in the new gedit document (or if you have a keyboard with Bopomofo, type ㄖㄣˊㄌㄟˋ), press Enter, and see if it turns out to be 人類Japanese: Open dash and type gedit into the search box. Click on the editor (テキストエディター) icon.Click on the keyboard icon on the notification area, select 日本語 - Anthy as the input method to switch to. Type nihon in the new gedit document, press Enter and see if it turns out to be にほんType nihon again, then press space and see if it turns out to be 日本 or 二本. Keep pressing space to cycle between the presented options, if necessaryKorean: Open dash and type gedit into the search box. Click on the editor (텍스트 편집기) icon.Click on the keyboard icon on the notification area, select Hangul (한국어) as the input method to switch to.Type gks rmf in the new gedit document and see if it turns out to be 한 글"
+../testcases/image/1316_Non-English Installation Full Network Support & CJK Input,0,Misplaced Action,,verification,Type,"Simplified Chinese: Open dash and type gedit into the search box. Click on the editor (文本编辑器) icon.Click on the keyboard icon on the top panel area and select SunPinyin as the input method to switch to.Type renlei in the new gedit document, press Space, and see if it turns out to be 人类Traditional Chinese: Open dash and type gedit into the search box. Click on the editor (文字编辑器) icon.Click on the keyboard icon on the top panel area and select Chewing (酷音) as the input method to switch to. Type bp6xo4 in the new gedit document (or if you have a keyboard with Bopomofo, type ㄖㄣˊㄌㄟˋ), press Enter, and see if it turns out to be 人類Japanese: Open dash and type gedit into the search box. Click on the editor (テキストエディター) icon.Click on the keyboard icon on the notification area, select 日本語 - Anthy as the input method to switch to. Type nihon in the new gedit document, press Enter and see if it turns out to be にほんType nihon again, then press space and see if it turns out to be 日本 or 二本. Keep pressing space to cycle between the presented options, if necessaryKorean: Open dash and type gedit into the search box. Click on the editor (텍스트 편집기) icon.Click on the keyboard icon on the notification area, select Hangul (한국어) as the input method to switch to.Type gks rmf in the new gedit document and see if it turns out to be 한 글"
+../testcases/image/1316_Non-English Installation Full Network Support & CJK Input,0,Misplaced Action,,verification,Keep,"Simplified Chinese: Open dash and type gedit into the search box. Click on the editor (文本编辑器) icon.Click on the keyboard icon on the top panel area and select SunPinyin as the input method to switch to.Type renlei in the new gedit document, press Space, and see if it turns out to be 人类Traditional Chinese: Open dash and type gedit into the search box. Click on the editor (文字编辑器) icon.Click on the keyboard icon on the top panel area and select Chewing (酷音) as the input method to switch to. Type bp6xo4 in the new gedit document (or if you have a keyboard with Bopomofo, type ㄖㄣˊㄌㄟˋ), press Enter, and see if it turns out to be 人類Japanese: Open dash and type gedit into the search box. Click on the editor (テキストエディター) icon.Click on the keyboard icon on the notification area, select 日本語 - Anthy as the input method to switch to. Type nihon in the new gedit document, press Enter and see if it turns out to be にほんType nihon again, then press space and see if it turns out to be 日本 or 二本. Keep pressing space to cycle between the presented options, if necessaryKorean: Open dash and type gedit into the search box. Click on the editor (텍스트 편집기) icon.Click on the keyboard icon on the notification area, select Hangul (한국어) as the input method to switch to.Type gks rmf in the new gedit document and see if it turns out to be 한 글"
+../testcases/image/1316_Non-English Installation Full Network Support & CJK Input,0,Misplaced Action,,verification,Click,"Simplified Chinese: Open dash and type gedit into the search box. Click on the editor (文本编辑器) icon.Click on the keyboard icon on the top panel area and select SunPinyin as the input method to switch to.Type renlei in the new gedit document, press Space, and see if it turns out to be 人类Traditional Chinese: Open dash and type gedit into the search box. Click on the editor (文字编辑器) icon.Click on the keyboard icon on the top panel area and select Chewing (酷音) as the input method to switch to. Type bp6xo4 in the new gedit document (or if you have a keyboard with Bopomofo, type ㄖㄣˊㄌㄟˋ), press Enter, and see if it turns out to be 人類Japanese: Open dash and type gedit into the search box. Click on the editor (テキストエディター) icon.Click on the keyboard icon on the notification area, select 日本語 - Anthy as the input method to switch to. Type nihon in the new gedit document, press Enter and see if it turns out to be にほんType nihon again, then press space and see if it turns out to be 日本 or 二本. Keep pressing space to cycle between the presented options, if necessaryKorean: Open dash and type gedit into the search box. Click on the editor (텍스트 편집기) icon.Click on the keyboard icon on the notification area, select Hangul (한국어) as the input method to switch to.Type gks rmf in the new gedit document and see if it turns out to be 한 글"
+../testcases/image/1316_Non-English Installation Full Network Support & CJK Input,0,Misplaced Action,,verification,Click,"Simplified Chinese: Open dash and type gedit into the search box. Click on the editor (文本编辑器) icon.Click on the keyboard icon on the top panel area and select SunPinyin as the input method to switch to.Type renlei in the new gedit document, press Space, and see if it turns out to be 人类Traditional Chinese: Open dash and type gedit into the search box. Click on the editor (文字编辑器) icon.Click on the keyboard icon on the top panel area and select Chewing (酷音) as the input method to switch to. Type bp6xo4 in the new gedit document (or if you have a keyboard with Bopomofo, type ㄖㄣˊㄌㄟˋ), press Enter, and see if it turns out to be 人類Japanese: Open dash and type gedit into the search box. Click on the editor (テキストエディター) icon.Click on the keyboard icon on the notification area, select 日本語 - Anthy as the input method to switch to. Type nihon in the new gedit document, press Enter and see if it turns out to be にほんType nihon again, then press space and see if it turns out to be 日本 or 二本. Keep pressing space to cycle between the presented options, if necessaryKorean: Open dash and type gedit into the search box. Click on the editor (텍스트 편집기) icon.Click on the keyboard icon on the notification area, select Hangul (한국어) as the input method to switch to.Type gks rmf in the new gedit document and see if it turns out to be 한 글"
+../testcases/image/1404_Install (LAMP),0,Misplaced Action,,verification,add,add the following text to the file: &lt;?php phpinfo(); ?&gt;
+../testcases/image/1405_Install (Mail server),0,Misplaced Action,,verification,echo,echo foo | mail -s test ${USER}
+../testcases/image/1405_Install (Mail server),0,Misplaced Action,,verification,Run,"Run mutt and press enter to see the mail, press qto exit"
+../testcases/image/1410_Install (Tomcat Java server),0,Misplaced Action,,verification,Ubuntu,Ubuntu installer main menu is displayed
+../testcases/packages/Studio/1577_Audacity,0,Misplaced Action,,verification,Record,"Record your voice, stopped and play it. Can you hear yourself?"
+../testcases/packages/Studio/1577_Audacity,7,Misplaced Action,,verification,Choose,"Choose a location for your file.aup and click on ""Save"""
+../testcases/packages/Studio/1577_Audacity,7,Misplaced Action,,verification,Choose,"Choose a location for your file.aup and click on ""Save"""
+../testcases/packages/Studio/1577_Audacity,8,Misplaced Action,,verification,Click,"Click on ""OK"" and the interface disappears."
+../testcases/packages/Studio/1577_Audacity,8,Misplaced Action,,verification,Click,"Click on ""Reset Toolbars"" and everything come back to default mode."
+../testcases/packages/Studio/1577_Audacity,10,Misplaced Action,,verification,Click,"Click on ""Insert After"" and ""Insert Before"", Can you see these entries?"
+../testcases/packages/Studio/1577_Audacity,10,Misplaced Action,,verification,Click,"Click on ""Export"", select a folder and save it as a txt file. Did it work?"
+../testcases/packages/Studio/1577_Audacity,10,Misplaced Action,,verification,Click,"Click on ""OK"", a new entry should appear in the desk."
+../testcases/packages/Studio/1577_Audacity,11,Misplaced Action,,verification,Click,"Click on ""OK"", Can you see the difference in the audio chart?"
+../testcases/packages/Studio/1577_Audacity,11,Misplaced Action,,verification,Click,"Click on ""OK"", Can you see the difference in the audio chart?"
+../testcases/packages/Studio/1577_Audacity,11,Misplaced Action,,verification,Select,"Select a noise type, amplitude and then click on OK"
+../testcases/packages/Studio/1577_Audacity,11,Misplaced Action,,verification,Select,"Select a new ""Duration"" and click on ""OK"""
+../testcases/packages/Studio/1577_Audacity,11,Misplaced Action,,verification,Change,"Change the default values and click on ""OK"""
+../testcases/packages/Studio/1577_Audacity,12,Misplaced Action,,verification,Try,"Try to change the Algorithm, the chart is updated. Did you see it?"
+../testcases/packages/Studio/1577_Audacity,12,Misplaced Action,,verification,Try,"Try to change the Size, the chart is updated. Did you see it?"
+../testcases/packages/Studio/1577_Audacity,12,Misplaced Action,,verification,Click,"Click on ""Close"" and the interface disappears"
+../testcases/packages/Studio/1577_Audacity,12,Misplaced Action,,verification,Click,"Click on OK, a new entry in the desk should appear called ""Clipping"", Can you see the points?, Can you move them?, Can you change their labels?"
+../testcases/packages/Studio/1577_Audacity,12,Misplaced Action,,verification,Click,"Click on OK and a new entry in the desk appears, Can you see the points with a B Label?, Can you move them?, Can you change their labels?"
+../testcases/packages/Studio/1577_Audacity,12,Misplaced Action,,verification,Click,"Click on OK and a new entry in the desk appears, Can you see the points with Labels?, Can you move them?, Can you change their labels?"
+../testcases/packages/Studio/1577_Audacity,12,Misplaced Action,,verification,Click,Click on OK. Could you create the file in the directory?
+../testcases/packages/Studio/1577_Audacity,12,Misplaced Action,,verification,Click,"Click on OK and a new entry in the desk appears, Can you see the points with a S Label?, Can you move them?, Can you change their labels?"
+../testcases/packages/Studio/1577_Audacity,12,Misplaced Action,,verification,Click,"Click on OK and a new entry in the desk appears, Can you see the points with a number Label?, Can you move them?, Can you change their labels?"
+../testcases/packages/Studio/1577_Audacity,13,Misplaced Action,,verification,Click,"Click on ""OK... Audacious!"" must close the window"
+../testcases/packages/Studio/1577_Audacity,13,Misplaced Action,,verification,Make,Make a capture and check that it is in the right location
+../testcases/packages/Studio/1664_krita,0,Misplaced Action,,verification,Open,Open the krita application from GRAPHIC DESIGN subsection in Main Menu.
+../testcases/packages/Studio/1665_inkscape,2,Misplaced Action,,verification,Draw,Draw shape on canvas
+../testcases/packages/Studio/1674_Kdenlive,0,Misplaced Action,,verification,Keep,"Keep adding expected results in ""dd"" fields"
+../testcases/packages/Studio/1674_Kdenlive,1,Misplaced Action,,verification,Note,"More expected results. Note: Make sure you keep the following ""strong"" text at the end"
+../testcases/packages/Studio/1674_Kdenlive,1,Misplaced Action,,verification,Make,"More expected results. Note: Make sure you keep the following ""strong"" text at the end"
+../testcases/packages/Unity/1393_Unity Dash,5,Misplaced Action,,verification,Enter,"Enter ""firefox"""
+../testcases/packages/Unity/1393_Unity Dash,16,Misplaced Action,,verification,Make,"Make a search, open the filters and choose some options"
+../testcases/packages/Unity/1396_Unity multimonitor multi-launchers,8,Misplaced Action,,verification,Ensure,Ensure the application is always opened on the monitor where your cursor is
+../testcases/packages/Xfce/1562_Xfce4 Panel,0,Misplaced Action,,verification,Add,Add New Items window appears
+../testcases/packages/Xfce/1568_exo-helper,0,Misplaced Action,,verification,Drop,Drop down appears
+../testcases/packages/Xfce/1568_exo-helper,0,Misplaced Action,,verification,Drop,Drop down appears
+../testcases/packages/Xfce/1571_Xfce4 Keyboard Settings,0,Misplaced Action,,verification,Restore,Restore num lock state is unticked
+../testcases/packages/Xfce/1571_Xfce4 Keyboard Settings,0,Misplaced Action,,verification,Restore,Restore num lock state is ticked
+../testcases/packages/Xfce/1571_Xfce4 Keyboard Settings,1,Misplaced Action,,verification,Run,Run dialogue opens
+../testcases/packages/Xfce/1571_Xfce4 Keyboard Settings,2,Misplaced Action,,verification,Shortcut,Shortcut command dialogue closes
+../testcases/packages/Xfce/1571_Xfce4 Keyboard Settings,2,Misplaced Action,,verification,Shortcut,Shortcut changes to Super+9
+../testcases/packages/Xfce/1571_Xfce4 Keyboard Settings,3,Misplaced Action,,verification,Use,"Use default button ticked, model and layout options unavailable and greyed out"
+../testcases/packages/Xfce/1576_Xfce4 Session and Startup Settings,4,Misplaced Action,,verification,Add,Add application dialogue appears
+../testcases/packages/Xfce/1576_Xfce4 Session and Startup Settings,4,Misplaced Action,,verification,Add,Add application dialogue closes
+../testcases/packages/Xfce/1580_Xfdesktop Settings,2,Misplaced Action,,verification,Ensure,Ensure that each are applied correctly.
+../testcases/packages/Xfce/1580_Xfdesktop Settings,3,Misplaced Action,,verification,Ensure,Ensure that they each enable and disable their labelled functions
+../testcases/packages/Xfce/1580_Xfdesktop Settings,4,Misplaced Action,,verification,Ensure,Ensure the desktop icons now represent the currently running applications
+../testcases/packages/Xfce/1580_Xfdesktop Settings,4,Misplaced Action,,verification,Ensure,"Ensure that using the up or down arrows, or entering a value, changes the icon font size correctly. Unchecking the box should restore the font size to default"
+../testcases/packages/Xfce/1580_Xfdesktop Settings,4,Misplaced Action,,verification,Ensure,Ensure that the icon applications now launch upon being clicked
+../testcases/packages/Xfce/1582_Xfce4 Power Manager Settings,2,Misplaced Action,,verification,Note,Note: 15 minutes is the shortest duration you can set with the sliders
+../testcases/packages/Xfce/1583_Xfce4 Task Manager,2,Misplaced Action,,verification,Note,Note: the match might be found in the application's description instead of its name
+../testcases/packages/Xfce/1583_Xfce4 Task Manager,3,Misplaced Action,,verification,Click,"Click ""Stop"""
+../testcases/packages/Xfce/1586_Xfce4 Display Settings,1,Misplaced Action,,verification,Keep,Keep resolution dialogue appears
+../testcases/packages/Xfce/1586_Xfce4 Display Settings,2,Misplaced Action,,verification,Keep,Keep resolution dialogue appears
+../testcases/packages/Xfce/1628_Xubuntu Post-install,1,Misplaced Action,,verification,Confirm,Confirm they are listed in Thunar
+../testcases/packages/Xfce/1628_Xubuntu Post-install,1,Misplaced Action,,verification,Confirm,Confirm you are able to read files from it
+../testcases/packages/1424_Nautilus,11,Misplaced Action,,verification,have,have the same content?
+../testcases/packages/1506_Software Center,11,Misplaced Action,,verification,Help,Help topics show information
+../testcases/packages/1508_Simple Scan,5,Misplaced Action,,verification,move,move the mouse to a corner of the box can you resize the area you would like to crop?
+../testcases/packages/1511_Pcmanfm,1,Misplaced Action,,verification,File,File moveme.txtmoves to the folder test. Double click folder testto confirm the file moveme.txtis there.
+../testcases/packages/1517_Privacy,5,Misplaced Action,,verification,Feel,Are any applications missing? Feel free to do a quick glance of your favorite applications instead of the entire list.
+../testcases/packages/1557_Mousepad,1,Misplaced Action,,verification,Save,Save As window opens
+../testcases/packages/1557_Mousepad,1,Misplaced Action,,verification,Save,Save as dialogue closes
+../testcases/packages/1557_Mousepad,3,Misplaced Action,,verification,Replace,Replace dialogue opens
+../testcases/packages/1557_Mousepad,3,Misplaced Action,,verification,Replace,Replace dialogue does not close
+../testcases/packages/1557_Mousepad,3,Misplaced Action,,verification,Replace,Replace dialogue does not close
+../testcases/packages/1557_Mousepad,3,Misplaced Action,,verification,Replace,Replace dialogue closes
+../testcases/packages/1557_Mousepad,3,Misplaced Action,,verification,Save,Save before closing dialogue appears
+../testcases/packages/1558_Xfce4 Terminal,9,Misplaced Action,,verification,Find,Find dialog window opens
+../testcases/packages/1569_Thunar,2,Misplaced Action,,verification,Create,Create New Folder dialogue opens
+../testcases/packages/1569_Thunar,4,Misplaced Action,,verification,View,View changes to Icons
+../testcases/packages/1569_Thunar,4,Misplaced Action,,verification,View,"View changes to detailed list, Configure Columns appears in View menu"
+../testcases/packages/1569_Thunar,4,Misplaced Action,,verification,View,View changes to Compact List
+../testcases/packages/1569_Thunar,5,Misplaced Action,,verification,View,View changes to /home/
+../testcases/packages/1569_Thunar,5,Misplaced Action,,verification,View,View changes to /home/USER
+../testcases/packages/1569_Thunar,5,Misplaced Action,,verification,View,View changes to /home/USER
+../testcases/packages/1569_Thunar,5,Misplaced Action,,verification,View,View changes to selected locations
+../testcases/packages/1569_Thunar,5,Misplaced Action,,verification,Read,Read manual online dialogue opens
+../testcases/packages/1570_Gnumeric,0,Misplaced Action,,verification,Save,Save the current workbook dialogue opens
+../testcases/packages/1570_Gnumeric,2,Misplaced Action,,verification,Save,"Save as dialogue appears, original file name and path highlighted"
+../testcases/packages/1572_xMir,1,Misplaced Action,,verification,Ensure,Ensure preconditions
+../testcases/packages/1572_xMir,1,Misplaced Action,,verification,open,open some window (e.g. terminal)
+../testcases/packages/1572_xMir,1,Misplaced Action,,verification,connect,connect switched on monitor
+../testcases/packages/1572_xMir,1,Misplaced Action,,verification,Reconnect,Reconnect the monitor
+../testcases/packages/1572_xMir,1,Misplaced Action,,verification,Reconnect,Reconnect the monitor
+../testcases/packages/1572_xMir,2,Misplaced Action,,verification,Ensure,Ensure preconditions
+../testcases/packages/1572_xMir,3,Misplaced Action,,verification,Ensure,Ensure preconditions
+../testcases/packages/1572_xMir,3,Misplaced Action,,verification,Open,Open some windows (e.g. terminal)
+../testcases/packages/1572_xMir,3,Misplaced Action,,verification,reconnect,reconnect the display
+../testcases/packages/1572_xMir,4,Misplaced Action,,verification,Ensure,Ensure preconditions
+../testcases/packages/1572_xMir,4,Misplaced Action,,verification,change,"change resolution down for “built in display”, note it, refer to as res2"
+../testcases/packages/1572_xMir,4,Misplaced Action,,verification,open,"open some windows (e.g. terminal & file browser), have windows on each screen open"
+../testcases/packages/1572_xMir,4,Misplaced Action,,verification,Reconnect,Reconnect the monitor
+../testcases/packages/1572_xMir,4,Misplaced Action,,verification,Reconnect,Reconnect the monitor
+../testcases/packages/1572_xMir,4,Misplaced Action,,verification,Reconnect,Reconnect monitor
+../testcases/packages/1572_xMir,4,Misplaced Action,,verification,reconnect,reconnect monitor
+../testcases/packages/1572_xMir,5,Misplaced Action,,verification,Ensure,Ensure preconditions
+../testcases/packages/1572_xMir,5,Misplaced Action,,verification,return,"return the orientation of the primary screen to normal, via System Settings... ->Displays, change the “Rotation” for the “built-in display” to be normal"
+../testcases/packages/1572_xMir,5,Misplaced Action,,verification,return,"return rotation to normal, open System Settings... ->Displays, change the “Rotation” for mirrored displays to normal"
+../testcases/packages/1572_xMir,5,Misplaced Action,,verification,select,select the 2nd monitor in the System Settings... ->Displays and change the Rotation clockwise
+../testcases/packages/1572_xMir,6,Misplaced Action,,verification,Ensure,Ensure preconditions
+../testcases/packages/1588_gThumb,1,Misplaced Action,,verification,Save,Save Image dialogue window opens
+../testcases/packages/1588_gThumb,1,Misplaced Action,,verification,Create,Create Folder dialogue window opens
+../testcases/packages/1588_gThumb,2,Misplaced Action,,verification,Find,Find dialogue window opens
+../testcases/packages/1588_gThumb,2,Misplaced Action,,verification,Find,Find Duplicates dialogue window opens
+../testcases/packages/1588_gThumb,7,Misplaced Action,,verification,Find,Find dialogue window opens
+../testcases/packages/1593_pavucontrol,3,Misplaced Action,,verification,Drop,Drop down menu appears
+../testcases/packages/1594_Pidgin,1,Misplaced Action,,verification,Add,Add Account dialogue opens
+../testcases/packages/1594_Pidgin,1,Misplaced Action,,verification,Add,Add Account box closes
+../testcases/packages/1594_Pidgin,2,Misplaced Action,,verification,Join,Join a Chat dialogue appears
+../testcases/packages/1597_Users Settings,1,Misplaced Action,,verification,Create,Create New User dialogue opens
+../testcases/packages/1597_Users Settings,2,Misplaced Action,,verification,Change,Change Advanced User setting dialogue opens at Contact Information tab
+../testcases/packages/1597_Users Settings,3,Misplaced Action,,verification,Remove,Remove home folder for test user shows
+../testcases/packages/1599_Orage,2,Misplaced Action,,verification,Pick,Pick timezone dialogue window opens
+../testcases/packages/1600_Ristretto,2,Misplaced Action,,verification,Ensure,Ensure that the Preferences dialog box pop ups and is editable.
+../testcases/packages/1614_Xfburn,2,Misplaced Action,,verification,Give,Give a name to the directory and add files to it as you did in the previous step
+../testcases/packages/1614_Xfburn,4,Misplaced Action,,verification,Change,Change the size of the FIFO buffer
+../testcases/packages/1614_Xfburn,4,Misplaced Action,,verification,Click,"Click on ""Scan for devices"" if your devices are not in the list"
+../testcases/packages/1622_IndicatorChinaWeather,0,Misplaced Action,,verification,Click,"When you firstly startup the Indicator China Weather, you need to configure your location. Click ""Configure..."" menu,then click ""Locale"" and click ""Add(A)"" button,input the location in chinese or in pinyin,click ""Search"" button and choose a locale then click ""Forward(F)"" and ""Apply(A)"" button,then click the ""OK(O)"" button to finish the configuration.Did the app display the weather information of your locale?"
+../testcases/packages/1622_IndicatorChinaWeather,0,Misplaced Action,,verification,Click,"Click the ""Weather forecast"" menu, did the app show 6 days weather forecast."
+../testcases/packages/1622_IndicatorChinaWeather,0,Misplaced Action,,verification,Click,"Click ""Configure..."" menu, then Click ""Show temperature beside icon"" checkbox and click ""OK(O)"" button，did the app display temperature beside the icon?"
+../testcases/packages/1622_IndicatorChinaWeather,0,Misplaced Action,,verification,Add,"Add several locales, did the information change corresponding to the change of locale?"
+../testcases/packages/1624_Youker-Assistant,1,Misplaced Action,,verification,Reboot,Reboot the system to see weather the boot animation change to the setting.
+../testcases/packages/1627_Mugshot,1,Misplaced Action,,verification,Capture,Capture from camera... dialog opens
+../testcases/packages/1627_Mugshot,1,Misplaced Action,,verification,Capture,Capture from camera... dialog closes and the taken photo shows as label in the image button
+../testcases/packages/1627_Mugshot,2,Misplaced Action,,verification,Select,Select a photo... dialog opens
+../testcases/packages/1627_Mugshot,2,Misplaced Action,,verification,Select,Select a photo... dialog closes and the selected photo shows as label in the image button
+../testcases/packages/1627_Mugshot,4,Misplaced Action,,verification,Help,Help opens ghelp:mugshot page
+../testcases/packages/1638_MenuLibre,0,Misplaced Action,,verification,Select,Select a category appears
+../testcases/packages/1644_Dia,1,Misplaced Action,,verification,Give,"Dia opens the ""Save"" window. Give a name to the file and press ""save"" button. The image is saved now"
+../testcases/packages/1644_Dia,1,Misplaced Action,,verification,Give,"Dia opens the ""Export"" window. Give a name to the file, extension as "".svg"" and press ""save"" button. The image is exported as a SVG image now"
+../testcases/packages/1646_Vym,1,Misplaced Action,,verification,Give,"Vym opens the ""Save"" window. Give a name to the file and press ""save"" button. The mind map is saved now"
+../testcases/packages/1646_Vym,1,Misplaced Action,,verification,Give,"Vym opens the ""Export"" window. Give a name to the file, extension as "".svg"" and press ""save"" button. The mind map is exported as a SVG image now"
+../testcases/packages/1652_kolourpaint4,0,Misplaced Action,,verification,Draw,Draw anything in the drawing area
+../testcases/packages/1654_krecipes,0,Misplaced Action,,verification,Initialize,Initialize Database screen will be displayed

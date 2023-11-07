@@ -11,7 +11,7 @@
         <dd>The session is terminated properly</dd>
     <dt>Open a text editor and write some text</dt>
         <dd>The keyboard layout is as expected</dd>
-    <dt>If you set up networking and are connected to the Internet, open Firefox and load xubuntu.org</dt>
+    <dt>If you set up networking and are physically connected to the Internet, open Firefox and load xubuntu.org</dt>
         <dd>Confirm that the page loads</dd>
 </dl>
 <strong>Panel icons</strong>

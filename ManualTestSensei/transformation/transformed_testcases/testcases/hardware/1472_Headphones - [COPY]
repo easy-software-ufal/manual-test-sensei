@@ -7,8 +7,8 @@ This will test FAMILY's ability to play sound through headphones.
     <dt>Select either of the .ogg files</dt>
         <dd>The file opens in your default media player</dd>
     <dd>Sound should be played through the headphones without strange noises or distortions</dd>
-    <dt>Adjust the volume with the Volume Control applet. Verify that the audio volume changes</dt>
-    <dt>Right-click the Volume Control icon and check Mute</dt>
+    	<dd>Adjust the volume with the Volume Control applet. Verify that the audio volume changes</dd>
+    	<dd>Right-click the Volume Control icon and check Mute</dd>
         <dd>The volume is muted</dd>
     <dt>Right-click the Volume Control icon and uncheck Mute</dt>
         <dd>Audio resumes</dd>

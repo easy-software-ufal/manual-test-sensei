@@ -8,7 +8,7 @@ import logging
        #'Ambiguous Test', 'Unverified Action', 'Misplaced Verification',
        #'Misplaced Precondition']
 
-SMELL_NAMES = ['Ambiguous Test']
+SMELL_NAMES = ['Conditional Test Logic']
 
 def create_copy(df:pd.DataFrame, filteredDataFrame):
     def update_df_with_copy_location(df:pd.DataFrame,copied_paths:dict) -> pd.DataFrame:

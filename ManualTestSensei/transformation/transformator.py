@@ -4,8 +4,10 @@ try:
 except ImportError:
     import transformation_data
 #SMELL_NAMES = ['Misplaced Precondition', 'Unverified Action', 'Misplaced Action', 'Misplaced Verification']
-SMELL_NAMES = ['Ambiguous Test']
+SMELL_NAMES = ['Conditional Test Logic']
 skipped_tests = 0
+
+warning_counter = {}
 
 def transformation_closure(df):
     #breakpoint()
@@ -13,7 +15,7 @@ def transformation_closure(df):
     def sentence_not_found(start_pos):
         return start_pos == -1
     def misplaced_precondition(df):
-        breakpoint()
+        #breakpoint()
         log.debug('MisPre')
         global skipped_tests
         filtered_df = transformation_data.get_filtered_df_by_smell_name(df,'Misplaced Precondition')
@@ -24,12 +26,15 @@ def transformation_closure(df):
                     # read the entire contents of the file into a string
                     contents = file.read()
                     # find the start and end positions of the block of text to move
-                    start_pos = contents.find('<dt>' + row['Sentence'] + '</dt>') #this is where the smell will be
+                    breakpoint()
+                    match = re.search(r"<dt>\s*" + "row['Sentence]" + "\s*</dt>", contents)
+                    start_pos = match.start()
+                    #start_pos = contents.find('<dt>' + row['Sentence'] + '</dt>') #this is where the smell will be
                     if sentence_not_found(start_pos):
                         skipped_tests += 1
                         continue
-
-                    end_pos = start_pos + len('<dt>' + row['Sentence'] + '</dt>')
+                    end_pos = match.end()
+                    #end_pos = start_pos + len('<dt>' + row['Sentence'] + '</dt>')
 
                     # extract the block of text to move
                     block = contents[start_pos+len('<dt>'):end_pos-len('</dt>')]
@@ -78,7 +83,7 @@ def transformation_closure(df):
         global skipped_tests
 
         filtered_df = transformation_data.get_filtered_df_by_smell_name(df,'Misplaced Action')
-        breakpoint()
+        #breakpoint()
         for _, row in filtered_df.iterrows():
             if os.path.exists(row['Copy Path']) and os.path.isfile(row['Copy Path']):
                 with open(row['Copy Path'], 'r+', encoding='utf8') as file:
@@ -137,7 +142,6 @@ def transformation_closure(df):
         global skipped_tests
         filtered_df = transformation_data.get_filtered_df_by_smell_name(df,'Ambiguous Test')
         for _, row in filtered_df.iterrows():
-            breakpoint()
             if os.path.exists(row['Copy Path']) and os.path.isfile(row['Copy Path']):
                 with open(row['Copy Path'], 'r+', encoding='utf8') as file:
                     contents = file.read()
@@ -145,13 +149,59 @@ def transformation_closure(df):
                     if sentence_not_found(start_pos):
                         skipped_tests += 1
                         continue
-                    end_pos = start_pos + len(row['Sentence'])
+                    
                     term = row['Term']
-                    term_start = contents.find(term, start_pos, end_pos)
-                    term_end = term_start + len(term) + 1
+                    
+                    #Verifica se é o caso de advérbio ou artigo indefinido
+                    index_word = contents.find(term, start_pos)
+                    index_word = index_word + len(term) + 1
+                    word = ''
+                    while index_word < len(contents) and contents[index_word] != ' ':
+                        word += contents[index_word]
+                        index_word += 1
+
+                    sentence = term + " " + word
+                    
+                    nlp = spacy.load("en_core_web_sm")
+                    doc = nlp(sentence)
+
+                    article_case = 0
+                    adv_case = 0
+
+                    for word_doc in doc:
+                        if word_doc.pos_ == 'DET':
+                            article = word_doc.text
+                            article_case = 1
+                            break
+                        if word_doc.pos_ == 'ADV':
+                            adv = word_doc.text
+                            adv_case = 1
+                            break
+                    
+                    if article_case:
+                        pos = contents.find(article, index_word)
+                        contents = contents[:pos] + 'the' + contents[pos + len(article):]
+                        pos = contents.find(word, index_word)
+                        
+                    elif adv_case:
+                        pos = contents.find(adv, start_pos)
+                        word = adv
+                    else:
+                        return
+                    
+                    if row['Copy Path'] in warning_counter:
+                        warning_counter[row['Copy Path']] += 1
+                    else:
+                        warning_counter[row['Copy Path']] = 1
 
                     breakpoint()
-                    contents = contents[:term_start] + contents[term_end:]
+                    contents = contents[:pos] + word + " (" + str(warning_counter[row['Copy Path']]) + ")" + contents[pos + len(word):]
+
+                    dl_pos = contents[:start_pos].rfind('<dl>')
+
+                    # insert the block into its new location
+                    contents = contents[:dl_pos] + "[FILL IN MORE INFORMATION ABOUT (" + str(warning_counter[row['Copy Path']]) + ")]" + "\n" + contents[dl_pos:]
+                    
                     file.seek(0)
                     file.truncate(0)
                     file.write(contents)
@@ -214,11 +264,12 @@ def transformation_closure(df):
 
     switcher = {
     #'Misplaced Precondition': misplaced_precondition(df),
-    'Ambiguous Test': ambiguous_test(df)
-    #'Eager Action': eager_action(df)
+    #'Ambiguous Test': ambiguous_test(df),
+    'Conditional Test Logic': conditional_test_logic(df),
+    #'Eager Action': eager_action(df),
     #'Unverified Action': unverified_action(df),
     #'Misplaced Action': misplaced_action(df),
-    #'Misplaced Verification': misplaced_verification(df)
+    #'Misplaced Verification': misplaced_verification(df),
     }
     for smell_name in SMELL_NAMES:
         switcher.get(smell_name)

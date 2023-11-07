@@ -4,7 +4,7 @@ This tests check whether the browser extensions are available.
         <dd>Firefox opens</dd>
     <dt>Open the "add-ons" dialog by pressing shift+ctrl+a or by using the Tools->addons menu link</dt>
         <dd>The addons page opens in a new tab</dd>
-    <dt>Check for the Unity Websites Integration and Unity Desktop Integration extensions</dt>
+    	<dd>Check for the Unity Websites Integration and Unity Desktop Integration extensions</dd>
         <dd>Both extensions are listed and enabled</dd>
     <dt>Open Chromium</dt>
         <dd>Chromium opens</dd>

@@ -7,8 +7,8 @@ This test that FAMILY works with external speakers
     <dt>Select either of the .ogg files</dt>
         <dd>The file opens in your default media player</dd>
         <dd>Sound is played through the speakers without noises or distortions.</dd>
-    <dt>Adjust the volume with the Volume Control applet. Verify that the audio volume changes.</dt>
-    <dt>Right-click the Volume Control applet and check Mute</dt>
+    	<dd>Adjust the volume with the Volume Control applet. Verify that the audio volume changes.</dd>
+    	<dd>Right-click the Volume Control applet and check Mute</dd>
         <dd>The audio mutes</dd>
     <dt>Right-click the Volume Control applet and uncheck Mute</dt> 
         <dd>The audio resumes</dd>

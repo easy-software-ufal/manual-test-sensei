@@ -68,11 +68,12 @@
 <p>Apart from the first point, the rest of this section is optional according to the devices in your possession. Please verify before testing any of the devices, that they are commonly known to have working drivers for Linux. While it's great for the community to get information about devices that don't, the purpose for ISO testing is to make sure the contents of the image are working as they're supposed to, and that no regressions have emerged since the previous milestones.</p>
 
 <strong>Printer</strong>
+[FILL IN MORE INFORMATION ABOUT (1)]
 <dl>
     <dt>Plug in your printer and run <b>Applications -> System -> Printing</b></dt>
     <dt>If your printer doesn't show up, add it to the list (click <b>Add</b> and follow the wizard)</dt>
-    <dt>Try to print a test page</dt>
-        <dd>Did the printer print the test page?</dd>
+    <dt>Try to print a test pthege</dt>
+        <dd>Did the printer print the test (1) page?</dd>
 </dl>
 <p>You can repeat the tests with all printers you have access to, including network printers.</p>
 
