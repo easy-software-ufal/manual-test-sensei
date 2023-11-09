@@ -7,8 +7,7 @@ Test-case Live Session Start
         <dd>FAMILY boot screen is displayed</dd>
     <dt>When ubiquity starts select your language in the left column</dt>
         <dd>Language is selected, all labels are changed to translated versions</dd>
-    <dt>Press "Try FAMILY"</dt>
-	<dt>wait for the Live session to start</dt>
+    <dt>Press "Try FAMILY" and wait for the Live session to start</dt>
         <dd>The default desktop is displayed</dd>
 </dl>
 

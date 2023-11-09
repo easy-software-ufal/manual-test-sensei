@@ -5,8 +5,7 @@ Tests should be performed to make sure PulseAudio is properly recognising your a
         <dd>The log output should contain references to module-udev-detect detecting either a pci or USB audio device</dd>
     <dt>Check the output of the command "pactl list"</dt>
         <dd>The pactl list command should list loaded modules and their parameters, as well as all current sinks, sources, and their current volume, device information, and output profile</dd>
-    <dt>Open up the sound settings window from the sound indicator</dt>
-	<dt>check both the output and input pages.</dt>
+    <dt>Open up the sound settings window from the sound indicator and check both the output and input pages.</dt>
         <dd>The output and input pages should list all detected hardware, both internal and USB, and allow for volume adjustment</dd>
 </dl>
 
