@@ -1,13 +1,11 @@
-Ensure you have a USB drive (1)
-Ensure you have a DVD or an audio CD (2)
 <dl>
     <dt>Log in with the Xubuntu session</dt>
         <dd>The screen resolution is as expected</dd>
     <dt>Open Ubuntu Software Center and install applications you would like to use</dt>
         <dd>The applications are installed correctly and appear in the applications menu</dd>
-    <dt>plug it in (1)</dt>
+    <dt>If you have a USB drive, plug it in</dt>
         <dd>The USB drive is mounted and you can open files from it</dd>
-    <dt>insert it (2)</dt>
+    <dt>If you have a DVD or an audio CD, insert it</dt>
         <dd>The disk is mounted and you can open and/or play files/tracks from it</dd>
     <dt>Log out, shutdown or restart</dt>
         <dd>The session is terminated properly</dd>
@@ -16,24 +14,6 @@ Ensure you have a DVD or an audio CD (2)
     <dt>If you set up networking and are physically connected to the Internet, open Firefox and load xubuntu.org</dt>
         <dd>Confirm that the page loads</dd>
 </dl>
-[False Condition] 
-<dl>
-    <dt>Log in with the Xubuntu session</dt>
-        <dd>The screen resolution is as expected</dd>
-    <dt>Open Ubuntu Software Center and install applications you would like to use</dt>
-        <dd>The applications are installed correctly and appear in the applications menu</dd>
-    <dt>plug it in (1)</dt>
-        <dd>The USB drive is mounted and you can open files from it</dd>
-</dl>
-
-[False Condition] 
-<dl>
-    <dt>Log in with the Xubuntu session</dt>
-        <dd>The screen resolution is as expected</dd>
-    <dt>Open Ubuntu Software Center and install applications you would like to use</dt>
-        <dd>The applications are installed correctly and appear in the applications menu</dd>
-</dl>
-
 <strong>Panel icons</strong>
 <dl>
     <dt>Move the mouse to the very bottom of the screen</dt>

@@ -3,19 +3,16 @@ try:
     from . import transformation_data
 except ImportError:
     import transformation_data
-#SMELL_NAMES = ['Misplaced Precondition', 'Unverified Action', 'Misplaced Action', 'Misplaced Verification']
-SMELL_NAMES = ['Conditional Test Logic']
+
 skipped_tests = 0
 
 warning_counter = {}
 
 def transformation_closure(df):
-    #breakpoint()
     log = logging.getLogger(__name__)
     def sentence_not_found(start_pos):
         return start_pos == -1
     def misplaced_precondition(df):
-        #breakpoint()
         log.debug('MisPre')
         global skipped_tests
         filtered_df = transformation_data.get_filtered_df_by_smell_name(df,'Misplaced Precondition')
@@ -26,9 +23,13 @@ def transformation_closure(df):
                     # read the entire contents of the file into a string
                     contents = file.read()
                     # find the start and end positions of the block of text to move
-                    breakpoint()
                     match = re.search(r"<dt>\s*" + "row['Sentence]" + "\s*</dt>", contents)
-                    start_pos = match.start()
+
+                    if match:
+                        start_pos = match.start()
+                    else:
+                        skipped_tests+=1
+                        continue
                     #start_pos = contents.find('<dt>' + row['Sentence'] + '</dt>') #this is where the smell will be
                     if sentence_not_found(start_pos):
                         skipped_tests += 1
@@ -83,7 +84,6 @@ def transformation_closure(df):
         global skipped_tests
 
         filtered_df = transformation_data.get_filtered_df_by_smell_name(df,'Misplaced Action')
-        #breakpoint()
         for _, row in filtered_df.iterrows():
             if os.path.exists(row['Copy Path']) and os.path.isfile(row['Copy Path']):
                 with open(row['Copy Path'], 'r+', encoding='utf8') as file:
@@ -194,7 +194,6 @@ def transformation_closure(df):
                     else:
                         warning_counter[row['Copy Path']] = 1
 
-                    breakpoint()
                     contents = contents[:pos] + word + " (" + str(warning_counter[row['Copy Path']]) + ")" + contents[pos + len(word):]
 
                     dl_pos = contents[:start_pos].rfind('<dl>')
@@ -218,7 +217,6 @@ def transformation_closure(df):
                         skipped_tests += 1
                         continue
                     
-                    breakpoint()
 
                     dl_pos = contents.rfind("<dl>", 0, start_pos)
                     dt_pos = contents.rfind("<dt>", 0, start_pos)
@@ -230,7 +228,6 @@ def transformation_closure(df):
                     
                     comma_pos = row['Sentence'].find(",")
 
-                    breakpoint()
                     
                     action_block = row['Sentence'][comma_pos+2:]
                     pre_condition_block = row['Sentence'][len(row["Term"])+1:comma_pos]
@@ -306,13 +303,13 @@ def transformation_closure(df):
                     file.write(contents)
 
     switcher = {
-    #'Misplaced Precondition': misplaced_precondition(df),
-    #'Ambiguous Test': ambiguous_test(df),
+    'Misplaced Precondition': misplaced_precondition(df),
+    'Ambiguous Test': ambiguous_test(df),
     'Conditional Test Logic': conditional_test_logic(df),
-    #'Eager Action': eager_action(df),
-    #'Unverified Action': unverified_action(df),
-    #'Misplaced Action': misplaced_action(df),
-    #'Misplaced Verification': misplaced_verification(df),
+    'Eager Action': eager_action(df),
+    'Unverified Action': unverified_action(df),
+    'Misplaced Action': misplaced_action(df),
+    'Misplaced Verification': misplaced_verification(df),
     }
-    for smell_name in SMELL_NAMES:
+    for smell_name in transformation_data.SMELL_NAMES:
         switcher.get(smell_name)

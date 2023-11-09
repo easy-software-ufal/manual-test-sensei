@@ -1,6 +1,7 @@
 Test-case name: ristretto
 
 This test will check that Ristretto can start and shutdown.
+Ensure m within the File Manager (1)
 <dl>
     <dt>Open "Ristretto Image Viewer"</dt>
         <dd>Ristretto starts up and the main window is visible on the screen.</dd>
@@ -12,9 +13,23 @@ This test will check that Ristretto can start and shutdown.
     <dt>Click the X on the window title bar to close the application</dt>
         <dd>The application quits without any errors</dd>
     <!-- CONDITIONAL TEST -->
-    <dt>From within the File Manager, right-click on an image file and Select "Open with Ristretto". If that option does not exist, select "Open With..." and either Select Ristretto from the list or choose the "Open With Other Application" and select Ristretto from the list.</dt>
+    <dt>right-click on an image file and Select "Open with Ristretto". If that option does not exist, select "Open With..." and either Select Ristretto from the list or choose the "Open With Other Application" and select Ristretto from the list. (1)</dt>
         <dd>Ristretto starts and opens the image that you right-clicked on.</dd>
 </dl>
+[False Condition] 
+<dl>
+    <dt>Open "Ristretto Image Viewer"</dt>
+        <dd>Ristretto starts up and the main window is visible on the screen.</dd>
+    <dt>Select File->Quit to exit the application</dt>
+        <dd>The application quits without any errors</dd>
+    <!-- OMISSION OF STEP -->
+    <dt>From an open terminal window, start Ristretto by typing "ristretto" (no quotes) and press the Enter key.</dt>
+        <dd>Ristretto starts up and the main window is visible on the screen.</dd>
+    <dt>Click the X on the window title bar to close the application</dt>
+        <dd>The application quits without any errors</dd>
+    <!-- CONDITIONAL TEST -->
+</dl>
+
 
 This test will verify that the File menu options work properly.
 <dl>
@@ -132,6 +147,7 @@ This test case will verify that the thumbnail bar works properly.
 </dl>
 
 This test case will verify that the adjustable settings in the Preferences dialog box work properly.
+Ensure Edit->Preferences->Control tab (2)
 <dl>
     <dt>Ensure that Ristretto is loaded and displaying images from a directory containing multiple images. Go to Edit->Preferences->Display tab, select the "Override background color" checkbox and select a background color.</dt>
         <dd>The main window background changes to the correct color.</dd>
@@ -143,7 +159,7 @@ This test case will verify that the adjustable settings in the Preferences dialo
         <dd>The fullscreen image also displays an analog clock with the current time.</dd>
     <dt>Go to Edit->Preferences->Slideshow tab, and change the "Timeout" value. View a slideshow.</dt>
         <dd>The images in the slideshow cycle based on the "Timeout" value that you just set.</dd>
-    <dt>Go to Edit->Preferences->Control tab, and check the "Invert zoom direction" checkbox. While pressing the Ctrl key, zoom in turning the mouse scroll-wheel backward and zoom out turning the mouse scroll-wheel forward.</dt>
+    <dt>and check the "Invert zoom direction" checkbox. While pressing the Ctrl key, zoom in turning the mouse scroll-wheel backward and zoom out turning the mouse scroll-wheel forward. (2)</dt>
         <dd>The zoom direction is reversed.</dd>
     <dt>Go to Edit->Preferences->Behaviour tab, and uncheck the "Maximize window on startup when opening an image" checkbox. Shutdown ristretto. Right-click on an image in the File Manager and open with Ristretto.</dt>
         <dd>Ristretto opens and the window is not maximized.</dd>
@@ -151,6 +167,20 @@ This test case will verify that the adjustable settings in the Preferences dialo
         <dd>The "Next image" toolbar icon is greyed out and you are unable to wrap around to the first image.</dd>
     <dt></dt>
 </dl>
+[False Condition] 
+<dl>
+    <dt>Ensure that Ristretto is loaded and displaying images from a directory containing multiple images. Go to Edit->Preferences->Display tab, select the "Override background color" checkbox and select a background color.</dt>
+        <dd>The main window background changes to the correct color.</dd>
+    <dt>(Note: you will need an image with a resolution greater than your screen resolution). Go to Edit->Preferences->Display tab and select the "Limit rendering quality" checkbox.</dt>
+        <dd>The image quality changes.</dd>
+    <dt>Go to Edit->Preferences->Fullscreen tab, and uncheck the "Hide thumbnail bar when fullscreen checkbox. View an image fullscreen.</dt>
+        <dd>The thumbnail bar is visible in fullscreen mode.</dd>
+    <dt>Go to Edit->Preferences->Fullscreen tab, and check the "Show fullscreen clock" checkbox. View an image fullscreen.</dt>
+        <dd>The fullscreen image also displays an analog clock with the current time.</dd>
+    <dt>Go to Edit->Preferences->Slideshow tab, and change the "Timeout" value. View a slideshow.</dt>
+        <dd>The images in the slideshow cycle based on the "Timeout" value that you just set.</dd>
+</dl>
+
 
 This test case will verify that the status bar is displaying image information.
 <dl>

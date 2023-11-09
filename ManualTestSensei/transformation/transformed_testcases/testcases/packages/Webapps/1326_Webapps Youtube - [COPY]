@@ -2,8 +2,7 @@ This test checks whether Youtube integration is working properly
 <dl>
     <dt>Open Firefox and go to http://www.youtube.com/watch?v=FFK0kjT1SW0</dt>
         <dd>The integration popup should appear</dd>
-    <dt>Click on the button</dt>
-	<dt>"Integrate"</dt>
+    <dt>Click on the button "Integrate"</dt>
         <dd>The YouTube icon should appear in the Launcher</dd>
     <dt>Open the Sound Menu</dt>
         <dd>YouTube entry appears in the Sound Menu</dd>

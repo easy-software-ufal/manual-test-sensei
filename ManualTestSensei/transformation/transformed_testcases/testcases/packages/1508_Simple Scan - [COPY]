@@ -1,11 +1,16 @@
 This test will check that simple-scan can be started.
 
+Ensure simple-scan did not detect your scanner did you get an error message displaying "No scanners detected" (1)
 <dl>
     <dt>Open simple-scan.</dt>
         <dd>Did simple-Scan launch?</dd>
         <dd>Did simple-scan detect your scanner?</dd>
-        <dd>If simple-scan did not detect your scanner did you get an error message displaying "No scanners detected"?</dd>
+        <dd>f simple-scan did not detect your scanner did you get an error message displaying "No scanners detected"? (1)</dd>
 </dl>
+[False Condition] 
+<dl>
+</dl>
+
 
 This test will check that simple-scan can scan and then save files.
 
@@ -53,11 +58,17 @@ This test will check that simple-scan can scan change image rotation.
 
 This test will check that simple-scan can Stop a scan.
 
+Ensure document into the scanner and Click "Scan". After the scan begins (2)
 <dl>
     <!-- EXCEPTION HANDLING -->
-    <dt>Put a document into the scanner and Click "Scan". After the scan begins, click "Stop the current scan"</dt>
+    <dt>click "Stop the current scan" (2)</dt>
         <dd>Did simple-scan stop the current scan?</dd>
 </dl>
+[False Condition] 
+<dl>
+    <!-- EXCEPTION HANDLING -->
+</dl>
+
 
 This test will check that simple-scan can Crop a scan.
 

@@ -4,11 +4,7 @@ import pandas as pd
 from pathlib import Path, PureWindowsPath
 import logging
 
-#SMELL_NAMES = ['Conditional Test Logic', 'Eager Action', 'Misplaced Action',
-       #'Ambiguous Test', 'Unverified Action', 'Misplaced Verification',
-       #'Misplaced Precondition']
-
-SMELL_NAMES = ['Conditional Test Logic']
+SMELL_NAMES = ['Conditional Test Logic', 'Eager Action', 'Misplaced Action', 'Ambiguous Test', 'Unverified Action', 'Misplaced Verification', 'Misplaced Precondition']
 
 def create_copy(df:pd.DataFrame, filteredDataFrame):
     def update_df_with_copy_location(df:pd.DataFrame,copied_paths:dict) -> pd.DataFrame:

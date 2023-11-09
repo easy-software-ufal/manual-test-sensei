@@ -1,0 +1,30 @@
+This test will check that Update Manager opens correctly
+<dl>
+    <dt>Open Update Manager from your FAMILY menu</dt>
+        <dd>Software Updater starts, checking for updates as it opens</dd>
+        <dd>Update Manager opens showing available updates</dd>
+</dl>
+This test will check that Update Manager opens Software Sources correctly
+<dl>
+    <dt>Press Settings button at bottom left of Update Manager</dt>
+        <dd>"Software & Updates" window opens at "Updates" tab</dd>
+    <dt>Close "Software & Updates" window</dt>
+        <dd>"Software & Updates" window closes, focus returns to Update Manager</dd>
+</dl>
+This test will check that Technical Description is available (depends on updates being available)
+<dl>
+    <dt>Select update from list</dt>
+    <dt>Press Technical Description</dt>
+        <dd>Description pane drops down</dd>
+</dl>
+This test will check that Updates are installed correctly (depends on updates being available)
+<dl>
+    <dt>Press Install Now, provide password if required</dt>
+        <dd>Installation proceeds</dd>
+        <dd>Popup opens after updates installed</dd>
+    <dt>Press OK</dt>
+        <dd>Software Updater closes</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

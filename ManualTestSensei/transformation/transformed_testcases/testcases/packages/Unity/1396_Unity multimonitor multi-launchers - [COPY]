@@ -66,13 +66,20 @@ Test-case multimonitor/sticky-edge
         <dd>After applying some force, the cursor should move over to the desired screen</dd>
 </dl>
 Test-case multimonitor/sticky-edge-hold
+Ensure not much force is applied and the movement is slow (1)
 <dl>
     <dt>In the Diplays settings, ensure that Sticky edges are enabled</dt>
     <dt>Move your mouse cursor to the right edge of the leftmost monitor adjacent to your enabled second screen</dt>
     <dt>Try pushing the mouse cursor very slowly onto the edge</dt>
         <dd>You should feel the mouse cursor resisting on the edge</dd>
-        <dd>If not much force is applied and the movement is slow, the mouse cursor should stay on the screen</dd>
+        <dd>the mouse cursor should stay on the screen (1)</dd>
 </dl>
+[False Condition] 
+<dl>
+    <dt>In the Diplays settings, ensure that Sticky edges are enabled</dt>
+    <dt>Move your mouse cursor to the right edge of the leftmost monitor adjacent to your enabled second screen</dt>
+</dl>
+
 Test-case multimonitor/sticky-edge-disabled
 <dl>
     <dt>In the Diplays settings, ensure that Sticky edges are disabled</dt>
