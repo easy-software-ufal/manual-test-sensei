@@ -1,0 +1,42 @@
+This test will check that shutdown works correctly from the Log out dialogue
+
+<dl>
+    <dt>Click Power button plugin on menu</dt>
+        <dd>Logout dialogue appears</dd>
+    <dt>Press Shut Down</dt>
+        <dd>Machine shuts down</dd>
+</dl>
+
+This test will check that restart works correctly from the Log out dialogue
+
+<dl>
+    <dt>Click Power button plugin on menu</dt>
+        <dd>Logout dialogue appears</dd>
+    <dt>Press Restart</dt>
+        <dd>Machine restarts</dd>
+</dl>
+
+This test will check that suspend works correctly from the Log out dialogue
+
+<dl>
+    <dt>Click Power button plugin on menu</dt>
+        <dd>Logout dialogue appears</dd>
+    <dt>Press Suspend</dt>
+        <dd>Screen locks and machine suspends</dd>
+    <dt>Restart the machine</dt>
+        <dd>Machine comes out of suspend to an unlock dialogue</dd>
+</dl>
+
+This test will check that logout works correctly
+
+<dl>
+    <dt>Click Power button plugin on menu</dt>
+        <dd>Logout dialogue appears</dd>
+    <dt>Press Logout</dt>
+        <dd>Machine logs out</dd>
+    <dt>Login</dt>
+        <dd>Machine logs back in</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

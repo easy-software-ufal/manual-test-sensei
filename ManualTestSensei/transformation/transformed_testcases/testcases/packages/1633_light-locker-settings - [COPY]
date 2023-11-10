@@ -9,31 +9,43 @@ This test will check that light-locker-settings can set the amount of delay afte
     <dt>Click the "Display" tab</dt>
         <dd>The Display power management settings screen appears</dd>
     <dt>Change the "Blank after" slider to 1 minute</dt>
-    <dt>Click "Close"</dt>
-    <dt>In the Light Locker Settings dialog, set the "Enable light-locker" switch to ON</dt>
-    <dt>Change "Automatically lock the session" to "When the screensaver is activated"</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Click</dt>
+	<dt>"Close"</dt>
+    <dt>In the Light Locker Settings dialog, set the</dt>
+	<dt>"Enable light-locker" switch to ON</dt>
+    <dt>Change "</dt>
+	<dt>Automatically lock the session" to "When the screensaver is activated"</dt>
     <dt>Change the "Delay locking after screensaver" slider to 10 seconds</dt>
-    <dt>Click "Apply"</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Click</dt>
+	<dt>"Apply"</dt>
         <dd>After 1 minute of no activity, your screen will go blank</dd>
     <dt>Move your mouse as soon as the screen blanks</dt>
         <dd>Your screen is restored</dd>
     <dt>Wait another minute</dt>
         <dd>Your screen will go blank</dd>
-    <dt>Wait 10 more seconds and then move your mouse</dt>
+    <dt>Wait 10 more seconds</dt>
+	<dt>then move your mouse</dt>
         <dd>The Unlock dialag appears</dd>
     <dt>Enter your password to unlock the session</dt>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 
 This test will check that light-locker-settings will lock the screen when resuming from suspend
-Verify that the "Lock on suspend" switch is set to OFF
 <dl>
-    
-    <dt>Click "Apply" (if necessary)</dt>
+    	<dd>Verify that the "Lock on suspend" switch is set to OFF</dd>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Click</dt>
+	<dt>"Apply" (if necessary)</dt>
     <dt>Suspend your session from the menu</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Resume from suspend</dt>
         <dd>The screen is restored immediately</dd>
-    <dt>Set the "Lock on suspend" switch to ON</dt>
+    <dt>Set the</dt>
+	<dt>"Lock on suspend" switch to ON</dt>
     <dt>Click "Apply"</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Suspend your session from the menu</dt>
     <dt>Resume from suspend</dt>
         <dd>The Unlock dialog appears</dd>

@@ -1,0 +1,78 @@
+This test will check that Window Manager Tweaks opens and close correctly
+<dl>
+    <dt>Open Window Manager Tweaks from Settings menu</dt>
+		<dd>[FILL VERIFICATION]</dd>
+        <dd>Dialogue opens</dd>
+    <dt>Press Close</dt>
+        <dd>Dialogue closes</dd>
+</dl>
+
+This test will check options in Cycling tab
+<dl>
+    <dt>Open Window Manager Tweaks from Settings menu</dt>
+    <dt>Open any application</dt>
+	<dt>minimise it</dt>
+    <dt>Change to another workspace</dt>
+	<dt>open another application</dt>
+    <dt>Change back to previous workspace</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Press Alt+Tab repeatedly</dt>
+        <dd>Applications available are cycled through</dd>
+    <dt>Focus on Window Manager Tweaks</dt>
+	<dt>select Cycle through windows on all workspaces</dt>
+        <dd>Tick appears in box</dd>
+    <dt>Press Alt+Tab repeatedly</dt>
+        <dd>Applications on all workspaces are cycled through</dd>
+    <dt>Deselect Include Hidden windows</dt>
+        <dd>Tick removed from box</dd>
+    <dt>Press Alt+Tab repeatedly</dt>
+        <dd>Applications on all workspaces are cycled through with exception of minimised application</dd>
+    <dt>Deselect Draw Frame</dt>
+        <dd>Tick removed from box</dd>
+    <dt>Press Alt+Tab repeatedly</dt>
+        <dd>Applications on all workspaces are cycled through without frame around selected window</dd>
+</dl>
+
+This test will check some options in Compositor tab
+Ensure window moves - window is slightly transparen (1)
+Ensure window moves - window is completely opaqu (2)
+<dl>
+    <dt>Open Window Manager Tweaks from Settings menu</dt>
+	<dt>select Compositor tab</dt>
+        <dd>Dialogue changes to compositor tab</dd>
+    <dt>Change value of opacity of windows during move to approximately 50%</dt>
+        <dd>Slider position changes and stays where moved to</dd>
+    <dt>Grab Window Tweak setting window by title bar</dt>
+	<dt>move window</dt>
+        <dd>hile window moves - window is slightly transparent (1)</dd>
+    <dt>Deselect Enable window compositing</dt>
+        <dd>Tick removed from box</dd>
+    <dt>Grab Window Tweak setting window by title bar and move window</dt>
+        <dd>hile window moves - window is completely opaque (2)</dd>
+    <dt>Enable display compositing</dt>
+	<dt>deselect Show shadows under regular windows</dt>
+        <dd>Shadows disappear from window</dd>
+</dl>
+[False Condition] 
+<dl>
+    <dt>Open Window Manager Tweaks from Settings menu, select Compositor tab</dt>
+        <dd>Dialogue changes to compositor tab</dd>
+    <dt>Change value of opacity of windows during move to approximately 50%</dt>
+        <dd>Slider position changes and stays where moved to</dd>
+    <dt>Grab Window Tweak setting window by title bar and move window</dt>
+        <dd>hile window moves - window is slightly transparent (1)</dd>
+    <dt>Deselect Enable window compositing</dt>
+        <dd>Tick removed from box</dd>
+</dl>
+
+[False Condition] 
+<dl>
+    <dt>Open Window Manager Tweaks from Settings menu, select Compositor tab</dt>
+        <dd>Dialogue changes to compositor tab</dd>
+    <dt>Change value of opacity of windows during move to approximately 50%</dt>
+        <dd>Slider position changes and stays where moved to</dd>
+</dl>
+
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

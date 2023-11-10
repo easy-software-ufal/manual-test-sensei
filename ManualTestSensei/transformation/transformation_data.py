@@ -4,33 +4,36 @@ import pandas as pd
 from pathlib import Path, PureWindowsPath
 import logging
 
-#SMELL_NAMES = ['Conditional Test Logic', 'Eager Action', 'Misplaced Action',
-       #'Ambiguous Test', 'Unverified Action', 'Misplaced Verification',
-       #'Misplaced Precondition']
-
-SMELL_NAMES = ['Misplaced Precondition']
+SMELL_NAMES = ['Conditional Test Logic', 'Eager Action', 'Misplaced Action', 'Ambiguous Test', 'Unverified Action', 'Misplaced Verification', 'Misplaced Precondition']
 
 def create_copy(df:pd.DataFrame, filteredDataFrame):
     def update_df_with_copy_location(df:pd.DataFrame,copied_paths:dict) -> pd.DataFrame:
-        df_zero = df
-        try:
-            df['Copy Path'] = df['Test file'].map(copied_paths, 'ignore').fillna(df_zero['Copy Path'])
-        except:
-            df['Copy Path'] = df['Test file'].map(copied_paths, 'ignore')
-        return df
+        
+        df_copy = df.copy()
 
+        try:
+            df_copy['Test file'] = df_copy['Test file'].str.replace(r'\\', '/', regex=True)
+            
+            mask = df_copy['Test file'].isin(copied_paths)
+            df_copy.loc[mask, 'Copy Path'] = df_copy.loc[mask, 'Test file'].map(copied_paths)
+        except:
+            mask = df_copy['Test file'].isin(copied_paths)
+            df_copy.loc[mask, 'Copy Path'] = df_copy.loc[mask, 'Test file'].map(copied_paths)
+        return df_copy
+
+    
     path_files = filteredDataFrame['Test file'].unique()
     copied_paths = {}
     for file in path_files:
         path = Path(file)
-        if __name__ == 'main': #rodando dentro da pasta transforamtion
+        if __name__ == 'main': #rodando dentro da pasta transforamtio
             os.makedirs(os.path.dirname(file[3:]), exist_ok=True)
             new_file_path = shutil.copy(Path('../',file), file[3:] + ' - [COPY]')
         else:
             if sys.platform.startswith('linux'):
-                os.makedirs(os.path.dirname(Path('transformed_testcases//',file[3:])), exist_ok=True)
-                #breakpoint()
-                new_file_path = shutil.copy(src=Path('.',file), dst=(Path('.//transformed_testcases',file[3:] + ' - [COPY]')))
+                file = file.replace('\\', '/')
+                os.makedirs(os.path.dirname(Path('transformation//transformed_testcases//',file[3:])), exist_ok=True)
+                new_file_path = shutil.copy(src=file, dst='transformation/transformed_testcases/' + file[3:] + ' - [COPY]')
             else:
                 os.makedirs(os.path.dirname(Path('transformed_testcases\\',file[3:])), exist_ok=True)
                 # breakpoint()
@@ -82,6 +85,7 @@ def data_closure() -> pd.DataFrame:
     log.info(f'CSV found: {file}')
     for smell_name in SMELL_NAMES:
         df = create_copy_from_smell_name(df, smell_name)
+
     df = remove_duplicates(df)
     df = remove_NaN_values(df)
     log.info('CSV Data loaded.')

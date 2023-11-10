@@ -1,0 +1,159 @@
+<em>Proceed in your native language if you wish. Instructions will remain in English</em>
+
+Ensure there is only one hard disk (1)
+Ensure there is only one hard disk (2)
+Ensure your system is connected to the network (3)
+<dl>
+    <dt>Boot up the image</dt>
+        <dd>The system boots properly and loads the installer displaying the Welcome dialog with language selection and 'Try FAMILY' and 'Install FAMILY' buttons</dd>
+    <dt>Click on</dt>
+	<dt>the Install FAMILY icon</dt>	
+        <dd>The 'Keyboard Layout' screen appears</dd>
+        <dd>The proposed keyboard corresponds with your keyboard</dd>
+	<dt>Select your keyboard layout</dt>
+	<dt>click</dt>
+	<dt>on continue</dt>
+        <dd>The 'Preparing to install FAMILY' screen is displayed</dd>
+    <dt>On the screen Preparing to install FAMILY, note the availability of the following components</dt>
+        <dd>Available options should represent the state of your system accurately</dd>
+        <dd>
+            <ul>
+                <li>(If network is available) Download updates while installing FAMILY</li>
+                <li>(If on a 'laptop') Is plugged to a power source</li>
+                <li>Install third-party software ... option available</li>
+            </ul>
+        </dd>
+    <dt>Click on the continue button</dt>
+	<dd>The Ubuntu Studio installation options screen is displayed</dd>
+    <dt>Select which options to install</dt>
+	<dd>Check marks only show against selected options</dd>
+    <dt>Click on the continue button</dt>
+        <dd>The 'Installation type' screen is displayed</dd>
+    <dt>Select Erase disk</dt>
+	<dt>install FAMILY</dt>
+    <dt>Click on the continue button (if there is only one hard disk in the system, the button</dt>
+	<dt>should read</dt>
+	<dt>'Install now')</dt>
+        <dd>the installer skips to the "Where are you?' screen. Otherwise, the 'Installation type' screen is displayed (1)</dd>
+    <dt>skip to step 10 (On the 'Where are you?' screen...). Otherwise, on the 'Installation type' screen verify that the drive selected on the Select drive list corresponds to the drive on the chart (e.g /dev/sda) (2)</dt>
+        <dd>Selected drive i displayed on the chart</dd>
+    	<dd>Verify that the full drive space is allocated</dd>
+        <dd>Full drive space is allocated for installation</dd>
+    <dt>Click on</dt>
+	<dt>the Install Now button</dt>
+        <dd>The 'Where are you?' screen is displayed</dd>
+    <dt>note the preselected timezone correspond with your timezone and the city indicated in the text box  (3)</dt>
+        <dd>The timezone and city displayed match your timezone and the main city from your area</dd>
+    <dt>Select your timezone,</dt>
+	<dt>click on the continue button</dt>
+        <dd>The 'Who are you?' screen appears</dd>
+    <dt>Input your initial user details and password</dt>
+	<dt>(Note admin can not be used - it is a dedicated Linux User)</dt>
+        <dd>Name, username and password are accepted. Additionally, the continue button is enabled</dd>
+        <dd>The 'Welcome to FAMILY ' slide is displayed</dd>
+        <dd>The slideshow is entirely in your language</dd> 
+    <dt>Wait for the installer to finish</dt>
+        <dd>An 'Installation Complete' dialog appears</dd>
+    <dt>Click</dt>
+	<dt>the Restart now button</dt>
+        <dd>GUI is shut down, a prompt to remove media and press Enter appears</dd>
+    <dt>Remove the disc</dt>
+	<dt>press enter</dt>
+        <dd>The machine is rebooted</dd>
+    <dt>Allow the machine to reboot</dt>
+        <dd>The system boots properly and loads into FAMILY</dd>
+</dl>
+[False Condition] 
+<dl>
+    <dt>Boot up the image</dt>
+        <dd>The system boots properly and loads the installer displaying the Welcome dialog with language selection and 'Try FAMILY' and 'Install FAMILY' buttons</dd>
+    <dt>Click on the Install FAMILY icon</dt>	
+        <dd>The 'Keyboard Layout' screen appears</dd>
+        <dd>The proposed keyboard corresponds with your keyboard</dd>
+	<dt>Select your keyboard layout and click on continue</dt>
+        <dd>The 'Preparing to install FAMILY' screen is displayed</dd>
+    <dt>On the screen Preparing to install FAMILY, note the availability of the following components</dt>
+        <dd>Available options should represent the state of your system accurately</dd>
+        <dd>
+            <ul>
+                <li>(If network is available) Download updates while installing FAMILY</li>
+                <li>(If on a 'laptop') Is plugged to a power source</li>
+                <li>Install third-party software ... option available</li>
+            </ul>
+        </dd>
+    <dt>Click on the continue button</dt>
+	<dd>The Ubuntu Studio installation options screen is displayed</dd>
+    <dt>Select which options to install</dt>
+	<dd>Check marks only show against selected options</dd>
+    <dt>Click on the continue button</dt>
+        <dd>The 'Installation type' screen is displayed</dd>
+    <dt>Select Erase disk and install FAMILY</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Click on the continue button (if there is only one hard disk in the system, the button should read 'Install now')</dt>
+        <dd>the installer skips to the "Where are you?' screen. Otherwise, the 'Installation type' screen is displayed (1)</dd>
+    <dt>skip to step 10 (On the 'Where are you?' screen...). Otherwise, on the 'Installation type' screen verify that the drive selected on the Select drive list corresponds to the drive on the chart (e.g /dev/sda) (2)</dt>
+        <dd>Selected drive i displayed on the chart</dd>
+    <dt>Verify that the full drive space is allocated</dt>
+        <dd>Full drive space is allocated for installation</dd>
+    <dt>Click on the Install Now button</dt>
+        <dd>The 'Where are you?' screen is displayed</dd>
+</dl>
+
+[False Condition] 
+<dl>
+    <dt>Boot up the image</dt>
+        <dd>The system boots properly and loads the installer displaying the Welcome dialog with language selection and 'Try FAMILY' and 'Install FAMILY' buttons</dd>
+    <dt>Click on the Install FAMILY icon</dt>	
+        <dd>The 'Keyboard Layout' screen appears</dd>
+        <dd>The proposed keyboard corresponds with your keyboard</dd>
+	<dt>Select your keyboard layout and click on continue</dt>
+        <dd>The 'Preparing to install FAMILY' screen is displayed</dd>
+    <dt>On the screen Preparing to install FAMILY, note the availability of the following components</dt>
+        <dd>Available options should represent the state of your system accurately</dd>
+        <dd>
+            <ul>
+                <li>(If network is available) Download updates while installing FAMILY</li>
+                <li>(If on a 'laptop') Is plugged to a power source</li>
+                <li>Install third-party software ... option available</li>
+            </ul>
+        </dd>
+    <dt>Click on the continue button</dt>
+	<dd>The Ubuntu Studio installation options screen is displayed</dd>
+    <dt>Select which options to install</dt>
+	<dd>Check marks only show against selected options</dd>
+    <dt>Click on the continue button</dt>
+        <dd>The 'Installation type' screen is displayed</dd>
+    <dt>Select Erase disk and install FAMILY</dt>
+    <dt>Click on the continue button (if there is only one hard disk in the system, the button should read 'Install now')</dt>
+        <dd>the installer skips to the "Where are you?' screen. Otherwise, the 'Installation type' screen is displayed (1)</dd>
+</dl>
+
+[False Condition] 
+<dl>
+    <dt>Boot up the image</dt>
+        <dd>The system boots properly and loads the installer displaying the Welcome dialog with language selection and 'Try FAMILY' and 'Install FAMILY' buttons</dd>
+    <dt>Click on the Install FAMILY icon</dt>	
+        <dd>The 'Keyboard Layout' screen appears</dd>
+        <dd>The proposed keyboard corresponds with your keyboard</dd>
+	<dt>Select your keyboard layout and click on continue</dt>
+        <dd>The 'Preparing to install FAMILY' screen is displayed</dd>
+    <dt>On the screen Preparing to install FAMILY, note the availability of the following components</dt>
+        <dd>Available options should represent the state of your system accurately</dd>
+        <dd>
+            <ul>
+                <li>(If network is available) Download updates while installing FAMILY</li>
+                <li>(If on a 'laptop') Is plugged to a power source</li>
+                <li>Install third-party software ... option available</li>
+            </ul>
+        </dd>
+    <dt>Click on the continue button</dt>
+	<dd>The Ubuntu Studio installation options screen is displayed</dd>
+    <dt>Select which options to install</dt>
+	<dd>Check marks only show against selected options</dd>
+    <dt>Click on the continue button</dt>
+        <dd>The 'Installation type' screen is displayed</dd>
+    <dt>Select Erase disk and install FAMILY</dt>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

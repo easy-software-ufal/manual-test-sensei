@@ -1,0 +1,54 @@
+The testcase tests the installation and basic functionality of a Frontend. You will need a MythTV backend in the network to do this testcase completely.
+
+Ensure installation is finished (1)
+Ensure the machine boots up (2)
+<dl>
+    <dt>Go though the Ubiquity install as you would any other install. Most options won't matter for this testcase, but be sure to choose the following options</dt>'
+        <dd>
+            <ul>
+                <li title="Specified Setting">Do NOT name the user mythtv</li>
+                <li title="Specified Setting">Automatic (Guided) Partitioning</li>
+                <li title="Specified Setting">"Frontend"</li>
+                <li title="Specified Setting">If you have no remote, choose no remote suppport</li>
+                <li title="Specified Setting">For the security key, enter the PIN from the backend (in the backend testcase, this is set to 1234)</li>
+            </ul>
+        </dd>
+    <dt>remove the installation media and reboot. (1)</dt>
+    <dt>it should boot into the frontend. (2)</dt>
+    <dt>Select</dt>
+	<dt>"Watch TV". (this will</dt>
+	<dt>only work if you have a backend already in the network)</dt>
+        <dd>The demo video should start playing.</dd>
+</dl>
+[False Condition] 
+<dl>
+    <dt>Go though the Ubiquity install as you would any other install. Most options won't matter for this testcase, but be sure to choose the following options</dt>'
+        <dd>
+            <ul>
+                <li title="Specified Setting">Do NOT name the user mythtv</li>
+                <li title="Specified Setting">Automatic (Guided) Partitioning</li>
+                <li title="Specified Setting">"Frontend"</li>
+                <li title="Specified Setting">If you have no remote, choose no remote suppport</li>
+                <li title="Specified Setting">For the security key, enter the PIN from the backend (in the backend testcase, this is set to 1234)</li>
+            </ul>
+        </dd>
+    <dt>remove the installation media and reboot. (1)</dt>
+</dl>
+
+[False Condition] 
+<dl>
+    <dt>Go though the Ubiquity install as you would any other install. Most options won't matter for this testcase, but be sure to choose the following options</dt>'
+        <dd>
+            <ul>
+                <li title="Specified Setting">Do NOT name the user mythtv</li>
+                <li title="Specified Setting">Automatic (Guided) Partitioning</li>
+                <li title="Specified Setting">"Frontend"</li>
+                <li title="Specified Setting">If you have no remote, choose no remote suppport</li>
+                <li title="Specified Setting">For the security key, enter the PIN from the backend (in the backend testcase, this is set to 1234)</li>
+            </ul>
+        </dd>
+</dl>
+
+<strong>
+    If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.
