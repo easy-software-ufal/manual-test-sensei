@@ -32,8 +32,7 @@ def run_code(mode):
         #while True:
         file = transformation_data.get_csv_path()
         df = pd.read_csv(file)
-        #breakpoint()
-        #breakpoint()
+        
         transformation_main.transformation_runner(log)
         #detector_main.detection_runner(log, "d")
             # if count > 0:
@@ -45,7 +44,7 @@ def run_code(mode):
             # if no_test_left_to_transform(df):
             #     break
             # count += 1
-        #breakpoint()
+        
         log.info('FINISHED TRANSFORMATION.')
 
 
