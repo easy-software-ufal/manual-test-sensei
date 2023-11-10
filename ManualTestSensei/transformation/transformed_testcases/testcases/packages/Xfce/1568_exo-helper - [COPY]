@@ -1,0 +1,73 @@
+This test will check that exo helper opens applications correctly 
+Ensure you have more than one browser installed (1)
+Ensure you have more than one mail reader installed (2)
+Ensure more than one file manager is installed (3)
+<dl>
+    <dt>Open Settings -> Preferred Applications</dt>
+        <dd>Preferred Applications opens at Internet</dd>
+    <dt>Select Web default web browser</dt>
+		<dd>[FILL VERIFICATION]</dd>
+	
+	<dt>Drop down appears</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>select a different one (1)</dt>
+	<dd>Browser name changes if choice amended</dd>
+    <dt>Press Help</dt>
+	<dd>Online help opens in browser</dd>
+    <dt>change default in Mail reader dropdown (2)</dt>
+    <dt>Open a terminal and type <code>exo-open mailto:xfce4-dev@xfce.org</code> and press enter</dt>
+	<dd>Correct mail reader opens with correct e-mail address in To field of a new e-mail</dd>
+    <dt>Select Utilities tab</dt>
+	<dd>File Manager and Terminal Emulator appear</dd>
+    <dt>change default file manager (3)</dt>
+	<dd>File Manager changes if choice amended</dd>
+    <dt>Open a terminal and type <code>exo-open --launch FileManager</code> and press enter</dt>
+	<dd>File Manager selected in drop down opens</dd>
+    <dt>Select Terminal Emulator</dt>
+	<dd>Drop down appears</dd>
+    <dt>Select X Terminal</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Press Super+T</dt>
+	<dd>Selected terminal opens</dd>
+</dl>
+[False Condition] 
+<dl>
+    <dt>Open Settings -> Preferred Applications</dt>
+        <dd>Preferred Applications opens at Internet</dd>
+    <dt>Select Web default web browser</dt>
+	<dd>Drop down appears</dd>
+    <dt>select a different one (1)</dt>
+	<dd>Browser name changes if choice amended</dd>
+    <dt>Press Help</dt>
+	<dd>Online help opens in browser</dd>
+    <dt>change default in Mail reader dropdown (2)</dt>
+    <dt>Open a terminal and type <code>exo-open mailto:xfce4-dev@xfce.org</code> and press enter</dt>
+	<dd>Correct mail reader opens with correct e-mail address in To field of a new e-mail</dd>
+    <dt>Select Utilities tab</dt>
+	<dd>File Manager and Terminal Emulator appear</dd>
+</dl>
+
+[False Condition] 
+<dl>
+    <dt>Open Settings -> Preferred Applications</dt>
+        <dd>Preferred Applications opens at Internet</dd>
+    <dt>Select Web default web browser</dt>
+	<dd>Drop down appears</dd>
+    <dt>select a different one (1)</dt>
+	<dd>Browser name changes if choice amended</dd>
+    <dt>Press Help</dt>
+	<dd>Online help opens in browser</dd>
+</dl>
+
+[False Condition] 
+<dl>
+    <dt>Open Settings -> Preferred Applications</dt>
+        <dd>Preferred Applications opens at Internet</dd>
+    <dt>Select Web default web browser</dt>
+	<dd>Drop down appears</dd>
+</dl>
+
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
+

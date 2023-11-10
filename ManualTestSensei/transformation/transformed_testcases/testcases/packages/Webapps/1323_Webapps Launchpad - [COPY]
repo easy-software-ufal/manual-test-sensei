@@ -1,0 +1,19 @@
+<dl>
+<!-- Aimless Test -->
+    <dt>Open Firefox</dt>
+	<dt>navigate to http://launchpad.net/</dt>
+        <dd>The site opens and displays a prompt asking if you want ubuntu to integrate with the website</dd>
+    <dt>Click on the button</dt>
+	<dt>"Integrate".</dt>
+        <dd>The Launchpad icon appears in the launcher</dd>
+    <dt>Open the Dash</dt>
+	<dt>(press Super key)</dt>
+	<dt>navigate to applications category</dt>
+        <dd>Applications category appears</dd>
+    <dt>Type Launchpad</dt>
+        <dd>The Launchpad icon appears</dd>
+    <dt>Repeat the above steps using chromium</dt>
+        <dd>All of the expected results are the same using chromium instead of firefox</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
