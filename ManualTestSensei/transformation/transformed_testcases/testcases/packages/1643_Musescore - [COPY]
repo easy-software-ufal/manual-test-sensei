@@ -1,0 +1,85 @@
+This test will check that Musescore opens correctly
+<dl>
+    <dt>Open the Musescore application from your menu</dt>
+        <dd>The Musescore application opens with the default score "Reunion" on screen</dd>
+    <dt>Click on the "Help" menu and choose "About"</dt>
+        <dd>A window opens displaying the Musescore version and license information</dd>
+    <dt>Click on OK</dt>
+        <dd>The About window disappears</dd>
+</dl>
+
+This test will check that the default score "Reunion" plays
+<dl>
+    <dt>Click on the "Playback" icon, or press the space-bar on your keyboard</dt>
+        <dd>The default "Reunion" piece starts playing through your speakers</dd>
+    <dt>Click on the "Playback" icon (or the space-bar) while the piece is playing</dt>
+        <dd>The piece pauses and the sound stops</dd>
+    <dt>Click on the "Playback" icon (or the space-bar)</dt>
+        <dd>The piece plays through to the end</dd>
+    </dl>
+
+    This test will check that the default score "Reunion" prints, or that a PDF file is created
+    <dl>
+        <dt>Click on the "Print" icon (or choose File > Print from the menu)</dt>
+            <dd>A "Print" window opens</dd>
+        <dt>Choose your printer from the drop down list (or "Print to File (PDF)" and choose a suitable location)</dt>
+            <dd>Musescore prints a copy of the default "Reunion" score, or creates a PDF file that can be opened in a PDF viewer</dd>
+</dl>
+
+This test will check that a new score can be created, notes entered and the file saved and opened again
+<dl>
+    <dt>Click on the "Create New Score" icon (File > New from the menu)</dt>
+        <dd>The "Create New Score" window opens</dd>
+    <dt>Enter a title for the new piece (e.g. "Test")</dt>
+    <dt>Check that "create new score from scratch" is selected</dt>
+    <dt>Click "Next"</dt>
+        <dd>A list of instruments to choose from appears</dd>
+    <dt>Click on an instrument from the list so that it is highlighted</dt>
+    <dt>Click on "Add"</dt>
+        <dd>The chosen instrument now appears in the "Staves" box to the right of the instrument list</dd>
+    <dt>Click "Next"</dt>
+        <dd>The "Select Key Signature" step now appears</dd>
+    <dt>Choose a Key Signature (e.g. G major)</dt>
+    <dt>Click "Next"</dt>
+        <dd>The "Create Time Signature" step now appears</dd>
+    <dt>Choose a Time Signature (e.g. 3/4)</dt>
+    <dt>Choose 2 measures</dt>
+    <dt>Click Finish</dt>
+        <dd>An empty score appears with your chosen title, Key Signature & Time Signature</dd>
+    <dt>Click "Note Input Mode" icon (or press "N" on the keyboard)</dt>
+    <dt>Click somewhere on the staff to enter a note</dt>
+        <dd>If the "enable sound while editing" icon is highlighted, you hear the note sound as it appears on the staff</dd>
+    <dt>Continue filling the staff with a variety of notes</dt>
+    <dt>Click the "Rewind to Start Position" icon</dt>
+    <dt>Click the "Play" icon (or the space-bar on the keyboard)</dt>
+        <dd>You hear your new piece play</dd>
+    <dt>Click the "Save Score to File" icon (File > Save from the menu)</dt>
+    <dt>Type in a name for your file and choose a location to save it</dt>
+    <dt>Click "Save"</dt>
+    <dt>Close the tab for your new file by clicking the "X"</dt>
+    <dt>Click the "Load Score from File" icon (File > Open from the menu)</dt>
+    <dt>Find and Choose your file</dt>
+    <dt>Click "Open"</dt>
+        <dd>Your file opens again and appears as it was when you saved it</dd>
+</dl>
+
+This test will check if you can enter notes stepwise using a midi keyboard
+If your midi keyboard has not been switched on, close down Musescore, turn on your midi keyboard, and reopen your test score in Musescore.
+If you don't have a physical midi keyboard, install/use vkeybd instead, and have this running before starting Musescore.
+<dl>
+    <dt>From the menu, choose Create > Measures> Append Measures (or press Shift+Ctrl+B)</dt>
+    <dt>Choose 2 measures</dt>
+    <dt>Click "OK"</dt>
+    <dt>Check midi entry is enabled by clicking the "Enable Midi Input" icon until it is highlighted</dt>
+    <dt>Click on one of the 2 new empty measures to indicate where to start note entry</dt>
+    <dt>Click on "N" to begin note entry</dt>
+    <dt>Press some notes on your midi keyboard</dt>
+        <dd>Notes appear on the score</dd>
+    <dt>Fill the score with notes from the midi keyboard</dt>
+    <dt>Click the "Rewind to Start Position" icon</dt>
+    <dt>Click the "Play" icon</dt>
+        <dd>You hear your entered notes being played</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

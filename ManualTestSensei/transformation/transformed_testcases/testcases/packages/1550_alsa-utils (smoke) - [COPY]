@@ -1,0 +1,14 @@
+Test-case name: alsa-utils/alsa-utils-001
+Tests should be performed to make sure ALSA is properly recognising your audio hardware.
+<dl>
+    <!-- EVEN THOUGH IT SAYS ALL CARDS, IT IS -->
+    <dt>Check the output of aplay -l</dt>
+        <dd>Aplay should list all cards that have an output</dd>
+    <dt>Check arecord -l</dt>
+        <dd>Arecord should list all cards that have an input</dd>
+    <dt>Check alsamixer</dt>
+        <dd>Alsamixer should show all playback and capture controls under their respective pages</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

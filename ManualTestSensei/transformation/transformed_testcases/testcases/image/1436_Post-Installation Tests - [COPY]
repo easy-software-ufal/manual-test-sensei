@@ -1,0 +1,23 @@
+<dl>
+    <dt>Login as the user you created, or ensure that you are auto-logged in as the user created during setup if you checked the auto-login option</dt>
+        <dd>The new user's desktop is presented</dd>
+    <dt>Execute the following commands on the command line:</dt>
+    <dt><pre>lsb_release -rd</pre></dt>
+        <dd>Both the description and the release presented matches the version of FAMILY you installed</dd>
+    <dt><pre>arch</pre></dt>
+        <dd>The result correctly lists the architecture of the installation you installed. For example, x86_64 for 64-bit x86 machine.</dd>
+    <dt><pre>sudo sfdisk -l</pre></dt>
+        <dd>The partition scheme displayed matches the partition scheme you chose during installation</dd>
+    <dt><pre>sudo apt-get update</pre></dt>
+        <dd>Apt hits each of the package mirrors and updates all of them without error</dd>
+    <dt>Launch 'software-updater' (precise and earlier version are called update-manager) and install any updates presented</dt>
+        <dd>The updates are downloaded and installed without error</dd>
+    <dt>Launch 'firefox' and navigate to http://www.ubuntu.com</dt>
+        <dd>The ubuntu homepage is loaded and displays properly</dd>
+    <dt>Launch 'Time & Date' settings menu and note the timezone information and local time and date</dt>
+        <dd>The timezone, date and time should match the settings you selected during installation</dd>
+    <dt>If you installed a non-english version of FAMILY, note the language used on the desktop</dt>
+        <dd>The desktop should be localized into your language, or it should have prompted you upon initial login to install the missing components for your language</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

@@ -1,0 +1,15 @@
+<dl>
+    <dt>If this is your first time, make sure to read the <a href="https://wiki.ubuntu.com/Nexus7/Installation">Nexus7 Installation Instructions</a> completely and setup ubuntu-nexus7-installer as described in this document.</dt>
+    <dt>Make sure that your nexus7 is unlocked, and in fastboot mode</dt>
+        <dd>To boot into fastboot mode, turn the device off and hold the <b>volume-down</b> button while pressing the power button to turn the device on</dd>
+    <dt>Run the Ubuntu Nexus7 Installer from the launcher, or by manually running <pre>ubuntu-nexus7-installer</pre></dt>
+        <dt>At the 'Welcome to the Ubuntu Core Nexus7 Installer' screen, select 'Yes' that you are ready to begin the installation.</dt>
+        <dt>If you have used this tool before, the next screen may tell you that there were previously downloaded images found and ask if you would like to re-flash using those images.  Select 'No'.</dt>
+        <dt>Click 'OK' on the next screen, read the license agreement, and select 'Agree' to continue the installation</dt>
+        <dt>Complete the rest of the installation and wait for the device to boot</dt>
+        <dt>After the device boots up, you should see the oem installer, asking you to select your time zone, username, etc. Complete this portion of the install as well</dt>
+            <dd>After all installation steps are complete, you should be at an Ubuntu desktop</dd>
+        <dt>Make sure the Dash works by pressing the dash icon on the launcher at the left-hand side of the screen</dt>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

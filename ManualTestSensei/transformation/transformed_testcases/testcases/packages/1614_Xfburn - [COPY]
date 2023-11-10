@@ -1,0 +1,87 @@
+This test will test if you are able to launch Xfburn
+<dl>
+    <dt>Open "Xfburn"</dt>
+        <dd>Xfburn launches</dd>
+</dl>
+
+        <!-- THE FILES ARE ADDED WITHOUT CONFIRMATION????? AMBIGUOUS TEST -->
+This test will check that "New Audio Composition" Works
+<dl>
+    <dt>Click "New Audio Composition"</dt>
+        <dd>You should see a new tab called "Audio composition 1"</dd>
+    <dt>Press the "Add" button (+)</dt>
+        <!-- CONDITIONAL TEST LOGIC -->
+        <dd>If this is your first time a message appears about adding your home directory</dd>
+        <dd>A new window asking for files appears</dd>
+    <dt>Select several music files</dt>
+        <!-- EAGER TEST -->
+        <dd>The files are added to the project</dd>
+        <dd>All information about the files is displayed: Pos, Length, Filename</dd>
+        <dd>The size bar will contains information now</dd>
+    <dt>Remove any music file selecting it and using the "Remove" button (-)</dt>
+        <dd>The file is removed</dd>
+        <dd>The size bar has changed</dd>
+    <dt>Click on "Clear" button</dt>
+        <dd>All files are remove</dd>
+    <dt>Add again new files, press the "Add" button (+)</dt>
+    <!-- UNVERIFIED STEPS -->
+    <dt>Click on "Proceed to Burn"</dt>
+</dl>
+
+This test will check that "Data Composition" Works
+<dl>
+    <dt>Click "New Data Composition"</dt>
+        <dd>You should see a new tab called "Data composition 1"</dd>
+        <dd>If you have previous tabs open, the number of the composition will be the last</dd>
+    <dt>Press the "Add" button (+)</dt>
+        <dd>If this is your first time a message appears about adding your home directory</dd>
+        <dd>A new window asking for files appears</dd>
+    <dt>Click on "Create Directory"</dt>
+        <dd>Give a name to the directory and add files to it as you did in the previous step</dd>
+    <dt>Select several files</dt>
+        <dd>The files are added to the project</dd>
+        <dd>All information about the files is displayed: Contents, Size, Local Path</dd>
+        <dd>The size bar will contains information now</dd>
+    <dt>Remove any music file selecting it and using the "Remove" button (-)</dt>
+        <dd>The file is removed</dd>
+        <dd>The size bar has changed</dd>
+    <dt>Click on "Clear" button</dt>
+        <dd>All files are remove</dd>
+    <dt>Add again new files, press the "Add" button (+)</dt>
+    <dt>Go to "Volume Name" and write a new name</dt>
+    <dt>Click on "Proceed to Burn"</dt>
+</dl>
+
+This test will check that the "View" menu works
+<dl>
+    <dt>Go to the top bar and click on the "View" menu and later on "Refresh"</dt>
+        <dd>It will list all items and your file system again</dd>
+    <dt>Click on "Show toolbar"</dt>
+        <dd>The show bar will hide</dd>
+    <dt>Click on "Show file browser"</dt>
+        <dd>The show bar will hide</dd>
+</dl>
+
+This test will check that the "Edit" menu works
+<dl>
+    <dt>Go to the top bar and click on the "Edit" menu and later on "Preferences"</dt>
+        <dd>A new window named "Preferences" appears</dd>
+    <dt>Click on "General"</dt>
+    <dt>Select a new "Temporaly Directory"</dt>
+        <dd>Your new directory appears on the list</dd>
+    <dt>Click on "Devices"</dt>
+        <dd>Change the size of the FIFO buffer</dd>
+        <dd>Click on "Scan for devices" if your devices are not in the list</dd>
+</dl>
+
+This test will check that the Help menu works
+<dl>
+    <dt>Go to the top bar and click the "Help" menu and later "About"</dt>
+        <dd>A new "About Xfburn" window appears</dd>
+    <dt>Press the Xfburn link</dt>
+        <dd>Firefox should open the link <a href=http://www.xfce.org/projects/xfburn>http://www.xfce.org/projects/xfburn</a></dd>
+    <dt>Press the "Credits" button</dt>
+        <dd>The interface shows the credits</dd>
+    <dt>Press the "License" button</dt>
+        <dd>The interface shows the license</dd>
+</dl>

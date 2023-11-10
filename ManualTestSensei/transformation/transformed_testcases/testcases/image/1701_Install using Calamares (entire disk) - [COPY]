@@ -1,0 +1,26 @@
+<em>Proceed in your native language if you wish. Instructions will remain in English</em>
+
+<dl>
+    <dt>Boot up the image and select your language</dt>
+        <dd>The system boots properly and loads the language selection menu</dd>
+    <dt>Press enter over the "Start FAMILY" text</dt>
+        <dd>The system should boot to the live desktop</dd>
+    <dt>On the desktop, click the "Start FAMILY XX.YY" icon to open the installer</dt>
+    <dt>Select your language/localization in the dropdown menu and click "Next"</dt>
+        <dd>The installer should be localized in your language</dd>
+    <dt>Select your timezone and click "Next"</dt>
+        <dd>A map should appear allowing you to select your timezone, and if the internet is connected, should already be accurate</dd>
+    <dt>Select your keyboard layout and click "Next"</dt>
+        <dd>Test the keyboard layout in the given box, which should be set correctly</dd>
+    <dt>Select the "Erase disk" radio box and click "Next"</dt>
+        <dd>A partition layout should be shown which uses all disk space, and the bootloader should be installed to the correct disk</dd>
+    <dt>Enter details about the main system user and click "Next"</dt>
+        <dd>All details should be correctly filled in</dd>
+    <dt>Confirm the details you entered throughout the install are accurate and click "Install", then "Install now"</dt>
+        <dd>All details should match what you entered</dd>
+        <dd>The slideshow should correctly display, and when the installation is done, a menu should display asking you to confirm your settings</dd>
+    <dt>Allow the machine to reboot</dt>
+        <dd>The system boots properly and loads into FAMILY showing the username you entered</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

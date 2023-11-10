@@ -1,0 +1,64 @@
+This test confirms that Ardour starts and connects to JACK.
+
+<strong>JACK must be set up and working. See the Qjackctl test case for example settings.
+</strong>
+
+<dl>
+    <dt>Start Ardour4</dt>
+        <dd>The "Welcome to Ardour" window opens</dd>
+    <dt>Click the Forward button</dt>
+        <dd>The "Default folder for new sessions" window opens</dd>
+    <dt>Choose a location to store files and click the Forward button</dt>
+        <dd>The "Monitoring Choices" window opens</dd>
+    <dt>Unless there is an external device connected that can be used for monitoring, choose the "Ask Ardour to playback..." option and click the Forward button.</dt>
+        <dd>The "Monitoring Section" window opens</dd>
+    <dt>For simplicity, choose the "Use a Master Bus directly" option and click the Forward button.</dt>
+        <dd>The "Ardour is ready for use" window opens</dd>
+    <dt>Click the "Apply" button</dt>
+        <dd>The "Session Setup" window opens</dd>
+    <dt>Give the session a name, and click the Open button</dt>
+        <dd>The "Audio/MIDI Setup" window opens</dd>
+    <dt>From the "Audio System" dropdown list, choose JACK and click "Connect to Jack", and then once Ardour reports that it is connected to Jack, click the OK button</dt>
+        <dd>The Ardour application opens</dd>
+</dl>
+
+This test confirms that Ardour can record audio from an audio input (e.g. a microphone).
+
+<strong>If you don't gave anything connected to an audio input that you can record, skip this test.
+</strong>
+
+<dl>
+    <dt>Select "Add Track/Bus" from the "Session" menu</dt>
+        <dd>The "Add Track or Bus" window opens</dd>
+    <dt>Ensure that the options are set to add one audio track, either "mono" or "stereo" depending on your audio source, and the Recording Mode is "Normal".</dt>
+    <dt>Click the "Add" button</dt>
+        <dd>The "Add Track or Bus" window closes and the the Audio track appears in the editor window</dd>
+    <dt>Click on the red dot on the "Audio" track to arm it for recording</dt>
+        <dd>The surround of the red dot turns pink to highlight that the track is armed for recording</dd>
+    <dt>On the toolbar, click on the large red dot to enable Ardour for recording.</dt>
+        <dd>The surround of the large red dot begins flashing</dd>
+    <dt>Choose "Mixer" from the "Windows" menu</dt>
+        <dd>The mixer window opens</dd>
+    <dt>Click on the Input button near the top of the mixer column for the Audio track</dt>
+        <dd>A menu opens</dd>
+    <dt>Choose Routing Grid from the menu</dt>
+        <dd>The Audio input routing grid opens</dd>
+    <dt>Ensure that the correct audio source is connected to the system capture input</dt>
+    <dt>Click the "X" on the routing grid to close the window</dt>
+        <dd>The Routing Grid closes</dd>
+    <dt>Make some noise/music on the audio input</dt>
+        <dd>The meters on the mixer should move according to the sound level</dd>
+    <dt>User the faders on the mixer to set a good recording level</dt>
+        <dd>The meters should not go into the red range continuously</dd>
+    <dt>On the toolbar, click the Play (triangle) icon and begin making sounds</dt>
+        <dd>The cursor begins moving and the track editor shows the sounds being recorded</dd>
+    <dt>When you have recorded enough, press the Stop (square) icon</dt>
+        <dd>The coursor stops, the red dot stops flashing, and a your recording is shown in yellow on the Audio track</dd>
+    <dt>Click the "Go to start of session" button (left triangle) on the toolbar, and then click the Play icon again.</dt>
+        <dd>The recorded sound plays through the monitors/speakers</dd>
+    <dt>Click the Stop button (square) again</dt>
+        <dd>The recording stops playing</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

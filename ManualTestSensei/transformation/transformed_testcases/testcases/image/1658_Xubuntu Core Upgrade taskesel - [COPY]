@@ -1,0 +1,20 @@
+This test will make sure the Xubuntu Core upgrade will not pull in the xubuntu-desktop metapackage.
+<dl>
+    <dt>Install the core task in a current release.</dt>
+    <dt>Obtain all updates for your system.</dt>
+    <dt>Make sure xubuntu-desktop is not installed.</dt>
+    <dt>Upgrade to the development release.</dt>
+        <dd>This should upgrade without installing any metapackages.</dd>
+</dl>
+
+This test will make sure a Xubuntu upgrade with neither xubuntu-core nor xubuntu-desktop will install xubuntu-core.
+<dl>
+    <dt>Install the core task in a current release.</dt>
+    <dt>Obtain all updates for your system.</dt>
+    <dt>Uninstall both xubuntu-core and xubuntu-desktop, if installed.</dt>
+    <dt>Upgrade to the development release.</dt>
+        <dd>This should install xubuntu-core during upgrade, and you should end up with out the xubuntu-desktop package</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

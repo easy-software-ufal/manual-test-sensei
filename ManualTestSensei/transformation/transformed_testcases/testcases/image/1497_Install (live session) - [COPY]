@@ -1,0 +1,55 @@
+<em>Proceed in your native language if you wish. Instructions will remain in English</em>
+
+<dl>
+    <dt>Boot up the image</dt>
+        <dd>FAMILY boot screen is displayed</dd>
+    <dt>When ubiquity starts select your language in the left column</dt>
+        <dd>Language is selected, all labels are changed to translated versions</dd>
+    <dt>Press "Try FAMILY" and wait for the Live session to start</dt>
+        <dd>The default desktop is displayed</dd>
+    <dt>Use the desktop and open some applications to try FAMILY before installing</dt>
+    <dt>Go to the Install FAMILY icon (usually on the desktop) and install from the Live session</dt>		
+        <dd>The 'Keyboard Layout' screen appears</dd>
+        <dd>The proposed keyboard corresponds with your keyboard</dd>
+	<dt>Select your keyboard layout and click on continue</dt>
+    <dt>On the screen Preparing to install FAMILY, note the availability of the following components</dt>
+        <dd>Available options should represent the state of your system accurately</dd>
+        <dd>
+            <ul>
+                <li>(If network is available) Download updates while installing FAMILY</li>
+                <li>(If on a 'laptop') Is plugged to a power source</li>
+                <li>Install third-party software ... option available</li>
+            </ul>
+        </dd>
+    <dt>Click on the continue button</dt>
+        <dd>The 'Installation type' screen is displayed</dd>
+    <dt>Note the state of the 'Erase disk and install FAMILY' radio button</dt>
+        <dd>The 'Erase disk and install FAMILY' radio button should be checked</dd>
+    <dt>Click on the continue button (if there is only one hard disk in the system, the button should read 'Install now')</dt>
+        <dd>If there is only one hard disk, the installer should skip to the "Where are you?' screen. Otherwise, the 'Installation type' screen is displayed</dd>
+    <dt>If there is only one hard disk, skip to step 10 (On the 'Where are you?' screen...). Otherwise, on the 'Installation type' screen verify that the drive selected on the Select drive list corresponds to the drive on the chart (e.g /dev/sda)</dt>
+        <dd>Selected drive is displayed on the chart</dd>
+    <dt>Verify that the full drive space is allocated</dt>
+        <dd>Full drive space is allocated for installation</dd>
+    <dt>Click on Install Now button</dt>
+        <dd>The 'Where are you?' screen is displayed</dd>
+    <dt>If your system is connected to the network, note the preselected timezone correspond with your timezone and the city indicated in the text box </dt>
+        <dd>The timezone and city displayed match your timezone and a city from your area</dd>
+    <dt>Select your timezone, and click on the continue button</dt>
+        <dd>The 'Who are you?' screen appears</dd>
+    <dt>Input your initial user details and password (Note admin can not be used - it is a dedicated Linux User)</dt>
+        <dd>Name, username and password are accepted. Additionally, the continue button is enabled</dd>
+    <dt>Click on the continue button</dt>
+        <dd>The 'Welcome to FAMILY ' slide is displayed</dd>
+    <dt>Wait for the installer to finish</dt>
+        <dd>An 'Installation Complete' dialog appears</dd>
+    <dt>Click the Restart now button</dt>
+        <dd>GUI is shut down, a prompt to remove media and press Enter appears</dd>
+    <dt>Remove the disc and press enter</dt>
+        <dd>The machine has been rebooted</dd>
+    <dt>Allow the machine to reboot</dt>
+        <dd>The system boots properly and loads into FAMILY</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

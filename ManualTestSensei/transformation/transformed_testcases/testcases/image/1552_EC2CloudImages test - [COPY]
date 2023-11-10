@@ -1,0 +1,83 @@
+The following tests are to be run on each candidate AMI (each combination of region, arch, root-device). Some utilities for launching all instances and collecting data is available <a href="https://code.launchpad.net/~smoser/+junk/ec2-test">lp:~smoser/+junk/ec2-test</a>
+
+<strong>Test-case EC2CloudImages/MultipleInstanceRun</strong>
+
+Multiple Instance Run
+<dl>
+    <dt>Start 10 instances ('--instance-count') in the same availability zone. [optional for EBS root]</dt>
+    <dt>Start an instance of <a href="http://aws.amazon.com/ec2/instance-types/">each type</a> ('--instance-type')</dt>
+        <dd>
+            <ul>
+                <li>i386: m1.small c1.medium.</li>
+                <li>x86_64: m1.large m1.xlarge c1.xlarge.</li>
+                <li>Optional: m2.xlarge m2.2xlarge m2.4xlarge.</li>
+            </ul>
+        </dd>
+    <dt>Start an instance in each availability zone ('--availability-zone')[optional for EBS root].</dt>
+</dl>
+
+For each of the running instances, verify it is functional:
+<dl>
+    <dt>'ssh-keyscan -t rsa, dsa $hostname': should differ for each running instance.</dt>
+    <dt>You can ssh to instance as 'ubuntu@${hostname}'</dt>
+    <dt>Ubuntu user can 'sudo' without password prompt, and that 'sudo -l' contains '(ALL) NOPASSWD: ALL'.</dt>
+    <dt>Attempt to ssh to each running instance as 'root@${hostname}'.</dt>
+        <dd>Access is denied and provides a message suggesting use of 'ubuntu' user.</dd>
+    <dt>Run 'apt-get update' and verify that an ec2 mirror is used.</dt>
+        <dd>ec2 mirror looks like '(region).archive.ubuntu.com'.</dd>
+    <dt>Running 'ec2-get-console-output' returns console output with boot messages</dt>
+</dl>
+
+For each EBS instance, additionally verify:
+<dl>
+    <dt>Running 'ec2-stop-instances' will stop the instances.</dt>
+        <dd>After a short delay, state is 'stopped' in 'ec2-describe-instances' output.</dd>
+    <dt>Running 'ec2-start-instances' will start the instances.</dt>
+        <dd>The instance will have a different hostname in 'ec2-describe-instances'.</dd>
+    <dt>The remote ssh keys ('ssh-keyscan $hostname') is the same as before the start/stop.</dt>
+    <dt>'ssh ubuntu@${hostname}' functions correctly</dt>
+</dl>
+
+User data tests are run by starting an instance ('--user-data-file=ud-cloudconfig-01.txt') with a given user-data file and then verifying that the user-data was consumed by the instance in the appropriate manner.
+
+Test-case EC2CloudImages/UserDataTest
+<dl>
+    <dt>Start an instance passing a user-data script (#!) <a href="http://bazaar.launchpad.net/%7Esmoser/%2Bjunk/ec2-test/annotate/head%3A/user-data/ud-simple-01.txt">ud-simple-01</a> {<a href="http://bazaar.launchpad.net/%7Esmoser/%2Bjunk/ec2-test/download/head%3A/udsimple01.txt-20100406154950-mix31tepga5xj1v3-1/ud-simple-01.txt">download</a>}.</dt>
+        <dd>Verify that:
+            <ul>
+                <li> 'Hello World' message is present on the console.</li>
+                <li> /root/OUTPUT-simple-01.txt file is present in the instance.</li>
+            </ul>
+        </dd>
+    <dt>Start an instance passing multi-part user-data <a href="http://bazaar.launchpad.net/%7Esmoser/%2Bjunk/ec2-test/annotate/head%3A/user-data/ud-multipart-01.txt">ud-multipart-01</a> {<a href="http://bazaar.launchpad.net/%7Esmoser/%2Bjunk/ec2-test/download/head%3A/udmultipart01.txt-20100318140620-2uyih0q00udaxxn7-5/ud-multipart-01.txt">download</a>}.</dt>
+        <dd> Verify presence of the following files:
+            <ul>
+                <li>/root/OUTPUT-my-user-script-1.sh</li>
+                <li>/root/OUTPUT-my-user-script-2.sh</li>
+                <li>/root/OUTPUT-my-upstart-job.conf</li>
+                <li>/etc/init/my-upstart-job.conf</li>
+                <li>/root/OUTPUT-upstartjob1.txt</li>
+                <li>/etc/init/upstartjob1.txt.conf</li>
+                <li>/root/OUTPUT-include-compressed-script-01.txt</li>
+                <li>/root/OUTPUT-include-script-01.txt</li>
+            </ul>
+        </dd>
+        <dd>Verify 'pastebinit' package is installed</dd>
+    <dt>Start an instance passing <a href="http://bazaar.launchpad.net/%7Esmoser/%2Bjunk/ec2-test/annotate/head%3A/user-data/ud-cloudconfig-01.txt">ud-cloudconfig-01</a> {<a href="http://bazaar.launchpad.net/%7Esmoser/%2Bjunk/ec2-test/download/head%3A/udcloudconfig01.txt-20100318140620-2uyih0q00udaxxn7-4/ud-cloudconfig-01.txt">download</a>}</dt>
+        <dd>Verify each of the following
+            <ul>
+                <li>'apt-get update' and 'apt-get upgrade' were run (output in the console)</li>
+                <li>Mirror used in /etc/apt/sources.list is us.archive.ubuntu.com.</li>
+                <li>'ubuntu-on-ec2/ec2-tools' ppa has been added in /etc/apt/sources.list.d/ .</li>
+                <li>'alestic' ppa has been added in /etc/apt/sources.list.d .</li>
+                <li>'runurl' and 'pastbinit' packages are installed.</li>
+                <li>ephemeral0 storage is mounted on /opt (run 'df /opt')</li>
+                <li>Swap is disabled, nothing listed in /proc/swaps.</li>
+                <li>'cloudconfig@test' key is present in /home/ubuntu/.ssh/authorized_keys.</li>
+                <li>/root/runcmd.date.txt file exists, and has 'date' output in it.</li>
+            </ul>
+        </dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

@@ -1,0 +1,78 @@
+If options are available, these tests are to be undertaken <em>following</em> a successful install of Xubuntu.
+
+Network connections
+<dl>
+    <dt>If you have access to more than one method to connect to Internet, connect to them all</dt>
+        <dd>You are able to connect as expected</dd>
+</dl>
+
+If you have other partitions...
+<dl>
+    <dt>Open the file manager</dt>
+        <dd>Confirm they are listed in the file manager</dd>
+        <dd>Confirm you are able to read files from it</dd>
+</dl>
+
+If you have a USB drive available
+<dl>
+    <dt>If you have a USB drive, plug it in</dt>
+        <dd>The USB drive is mounted, the file manager opens and you can open files from USB</dd>
+</dl>
+
+<em> Lock and suspend testing</em>
+<em> If unlocking requires more than one password entry - fail the testcase</em>
+
+<strong>To test desktop locking, a new user should be created with the User and Groups option from Settings menu</strong>
+
+<strong>Testing on Hardware</strong>
+
+Test Suspend
+<dl>
+    <dt>Open any application and suspend machine</dt>
+        <dd>Machine suspends</dd>
+    <dt>Restart suspended machine and unlock</dt>
+        <dd>Desktop shows previously started application</dd>
+</dl>
+
+
+Test Desktop Locking
+<dl>
+    <dt>Open any application and lock desktop</dt>
+        <dd>Desktop locks</dd>
+    <dt>Unlock desktop</dt>
+        <dd>Desktop shows previously started application</dd>
+</dl>
+
+Test Lock/new User use/Unlock
+<dl>
+    <dt>Open any application then lock desktop</dt>
+        <dd>Desktop locks</dd>
+    <dt>Login as new user</dt>
+    <dt>Logout from new user</dt>
+    <dt>Login to normal user, unlocking</dt>
+        <dd>Desktop shows previously started application</dd>
+</dl>
+
+<strong>When testing on virtual machine</strong>
+Test Desktop Locking
+<dl>
+    <dt>Open any application and lock desktop</dt>
+        <dd>Desktop locks</dd>
+    <dt>Unlock desktop</dt>
+        <dd>Desktop shows previously started application</dd>
+</dl>
+
+Test Lock/new user Session use/Unlock
+<dl>
+    <dt>Open any application then lock desktop</dt>
+        <dd>Desktop locks</dd>
+    <dt>Login as new user</dt>
+    <dt>Logout from new user</dt>
+    <dt>Login to normal user, unlocking</dt>
+        <dd>Desktop shows previously started application</dd>
+</dl>
+
+
+<strong>
+    If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

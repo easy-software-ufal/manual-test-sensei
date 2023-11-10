@@ -74,9 +74,8 @@ This test will check that simple-scan can Crop a scan.
 
 This test will check that simple-scan can Save multiple images.
 
-Put a document into the scanner and Click "Scan" once image has scanned put another document into the scanner and click "Scan" one more.
 <dl>
-    
+    <dt>Put a document into the scanner and Click "Scan" once image has scanned put another document into the scanner and click "Scan" one more.</dt>
         <dd>Did both appear side by side on screen?</dd>
     <dt>Click save and name it "Scanned Document(multi).jpg" then navigate to Scanned Document(multi).jpg (by default this should be in /home/USERNAME/Documents/)</dt>
         <dd>Did both images save as separate images named "Scanned Document(multi) 1.jpg" and "Scanned Document(multi) 2.jpg"?</dd>

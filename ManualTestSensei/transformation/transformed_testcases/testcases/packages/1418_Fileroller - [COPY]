@@ -1,0 +1,29 @@
+Test-case name: fileroller/flr-001
+This test will check that File Roller can archive and extract files
+<dl>
+    <dt>Open Fileroller</dt>
+        <dd>File-roller launches</dd>
+    <dt>Click 'New' button from the toolbar</dt>
+        <dd>The 'New' file save dialog appears</dd>
+    <dt>Input any test name for archive, select 'Tar compressed with gzip' from available formats combobox, click 'Create' button</dt>
+        <dd>A new empty archive with specified name and format is created</dd>
+    <dt>Click 'Add files to archive' button from toolbar</dt>
+        <dd>'Add Files' file open dialog is displayed</dd>
+    <dt>Select any files and/or folders to be added to the archive, click 'Add' button</dt>
+        <dd>Selected files and/or folders are displayed in the archive contents list</dd>
+    <dt>Close file-roller, open nautilus and navigate to the folder where the archive has been created</dt>
+        <dd>Archive is present in the folder</dd>
+    <dt>Open the archive using file-roller</dt>
+        <dd>Archive contents is displayed correctly in file-roller</dd>
+    <dt>Click 'Extract' button from toolbar</dt>
+        <dd>'Extract' folder open dialog appears</dd>
+    <dt>Select any folder to extract files to, click 'Extract' button</dt>
+        <dd>Dialog closes. 'Extracting files from archive' dialog appears</dd>
+    <dt>Wait until extracting process is complete</dt>
+        <dd>'Extraction completed successfully' label appears</dd>
+    <dt>Open Nautilus and navigate to the selected extract folder</dt>
+        <dd>The files and folders from archive extracted correctly in the selected folder</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

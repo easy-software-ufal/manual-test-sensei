@@ -1,0 +1,33 @@
+To execute this test, a pre-existing Ubuntu (or derivative) installation is needed
+
+<em>Proceed in your native language if you wish. Instructions will remain in English.</em>
+<!-- Smells: UNVERIFIED STEPS, EAGER TEST, QUESTIONING EXPECTED RESULT -->
+<dl>
+    <dt>Install all updates available for the release you want to upgrade by running update-manager, then click "Install now" to install the updates.</dt>
+    <dt>Ensure the upgrade process is looking for any new version by running 'Software & Updates' or clicking "Settings ..." in update-manager. Select the updates tab, and make sure the 'Notify me of a new Ubuntu version' option has the 'For any new version' selection</dt>
+    <dt>Run update-manager -d -c from a terminal</dt>
+    <dt>Click the upgrade version button</dt>
+    <dt>Watch it upgrade, noting any errors</dt>
+    <dt>Reboot into your new system:</dt>
+        <dd>
+            <ul>
+                <!-- Smell: QUESTIONING EXPECTED RESULT -->
+                <li>Were any errors encountered during the upgrade?</li>
+                <li>Were any errors encountered after rebooting to new desktop?</li>
+                <li>Does your hardware still work properly?</li>
+                <li>Are you experiencing any application or background service crashes?</li>
+            </ul>
+        </dd>
+            <!-- Smell: EAGER TEST, CONDITIONAL TEST LOGIC -->
+        <dt>Open a terminal and enter the command <code>grep Prompt= /etc/update-manager/release-upgrades</code></dt>
+            <dd>For a <em>normal to normal</em>upgrade, terminal will show Prompt=normal</dd>
+            <dd>For a <em>normal to LTS</em> upgrade, terminal will show Prompt=lts</dd>
+            <dd>For a <em>LTS to normal</em> upgrade, terminal will show Prompt=normal</dd>
+            <dd>For a <em>LTS to LTS</em> upgrade, terminal will show Prompt=lts</dd>
+
+        <dt>Open a terminal and enter the command <code>lsb_release -r</code></dt>
+             <dd>Terminal will show the upgraded version</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

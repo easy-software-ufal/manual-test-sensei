@@ -1,0 +1,144 @@
+Test-case wm/close button
+<dl>
+    <dt>Press super+w</dt>
+    <dt>Hover over an application</dt>
+        <dd>The application contains a close button</dd>
+    <dt>Click the close button</dt>
+        <dd>The application closes</dd>
+</dl>
+Test-case wm/move
+<dl>
+    <dt>Open a window</dt>
+    <dt>Drag the title bar</dt>
+        <dd>Window moves</dd>
+</dl>
+Test-case wm/move_edge_resistance
+<dl>
+    <dt>Open an application</dt>
+    <dt>Drag the title bar slowly to the left or right of the screen until the window edge gets out of the screen</dt>
+        <dd>Window resists a bit before getting out of the screen</dd>
+</dl>
+Test-case wm/active
+<dl>
+    <dt>Start two applications</dt>
+    <dt>Click on the window for the inactive application</dt>
+        <dd>Window gets the focus and is shown above the other application window.</dd>
+        <dd>Window title bar lights up (lighter title, colored buttons).</dd>
+        <dd>Previous active window title bar darkens (dark title, monochrome buttons).</dd>
+</dl>
+Test-case wm/close
+<dl>
+    <dt>Open an application</dt>
+    <dt>Click on the close button in the title bar</dt>
+        <dd>Window closes</dd>
+</dl>
+Test-case wm/minimize
+<dl>
+    <dt>Open an application</dt>
+    <dt>Click on the minimize button of the title bar</dt>
+        <dd>A fast animation shows the window minimizing to its launcher icon</dd>
+        <dd>Window is minimized</dd>
+</dl>
+Test-case wm/maximize
+<dl>
+    <dt>Open an application, make sure it is not maximized</dt>
+    <dt>Click on the maximize button of the title bar</dt>
+        <dd>Window is maximized</dd>
+</dl>
+Test-case wm/maximize_double_click
+<dl>
+    <dt>Open an application</dt>
+    <dt>Double-click on the title bar</dt>
+        <dd>Window is maximized</dd>
+</dl>
+Test-case wm/drag_to_maximize
+<dl>
+    <dt>Open an application</dt>
+    <dt>Drag the title bar to the top unity panel</dt>
+        <dd>A maximize preview shows, covering the whole screen</dd>
+    <dt>Release mouse button</dt>
+        <dd>Window is maximized</dd>
+    <dt>Drag the title bar from the unity panel downwards</dt>
+        <dd>Window is restored</dd>
+    <dt>Drag the title bar to the left so that the mouse cursor is on the left edge of the screen</dt>
+        <dd>A maximize preview shows, covering the left-half of the screen</dd>
+    <dt>Release mouse button</dt>
+        <dd>Window is semi-maximized to the left of the screen</dd>
+    <dt>Drag the title bar to the right so that the mouse cursor is on the right edge of the screen</dt>
+        <dd>A maximize preview shows, covering the right-half of the screen</dd>
+    <dt>Release mouse button</dt>
+        <dd>Window is semi-maximized to the right of the screen</dd>
+</dl>
+Test-case wm/resize
+<dl>
+    <dt>Open an application</dt>
+    <dt>Move the mouse next to the right edge of the window</dt>
+        <dd>the cursor should transform into a resize cursor ( â†’| )</dd>
+    <dt>Drag the edge to resize to window</dt>
+        <dd>A preview rectangle appears</dd>
+    <dt>Release the mouse button</dt>
+        <dd>Window is resized</dd>
+    <dt>Ensure the other edges behave the same</dt>
+    <dt>Ensure the corners behave the same (to resize both width and height at the same time)</dt>
+</dl>
+Test-case wm/menu_basic
+<dl>
+    <dt>Open an application (not maximized)</dt>
+    <dt>Right click on the title bar</dt>
+        <dd>A context menu appears</dd>
+    <dt>Ensure the minimize/maximize/move/close entries work</dt>
+</dl>
+Test-case wm/always_on_top
+<dl>
+    <dt>Open 2 applications (not maximized)</dt>
+    <dt>Right click on the title bar, click "Always On Top"</dt>
+    <dt>Click the other application window</dt>
+        <dd>The other application window is activated, but stays behind the "always on top" window</dd>
+    <dt>Show context menu for "always on top" window again; click on "Always On Top"</dt>
+    <dt>Click the other application window</dt>
+        <dd>The other application window is activated and is moved in front of the previous window</dd>
+</dl>
+Test-case wm/workspace_always_visible
+<dl>
+    <dt>Open an application (not maximized)</dt>
+    <dt>Right click on the title bar, click on "Always on Visible Workspace"</dt>
+    <dt>Click on the spread icon in the Launcher</dt>
+        <dd>The window is visible in all workspaces</dd>
+    <dt>Select the window</dt>
+    <dt>Right click on the title bar, click on "Only on This Workspace"</dt>
+    <dt>Click on the spread icon in the Launcher</dt>
+        <dd>The window is only visible in the current workspace</dd>
+</dl>
+Test-case wm/workspace_move_to
+<dl>
+    <dt>Open an application (not maximized)</dt>
+    <dt>Right click on the title bar, click on "Move to Workspace Right"</dt>
+        <dd>Window disappears</dd>
+    <dt>Click on the spread icon in the Launcher</dt>
+        <dd>Window is visible on the top-right workspace</dd>
+    <dt>Select the window</dt>
+    <dt>Right click on the title bar</dt>
+        <dd>Menu entry title has changed to "Move to Workspace Left"</dd>
+    <dt>Move the mouse to the "Move to Another Workspace" menu item</dt>
+        <dd>4 items appear, item "Workspace 2" is disabled</dd>
+    <dt>Click on "Workspace 1"</dt>
+        <dd>Window disappears</dd>
+    <dt>Click on the spread icon in the Launcher</dt>
+        <dd>Window is visible on the top-left workspace</dd>
+</dl>
+Test-case wm/management_shortcuts
+<dl>
+    <dt>Open an application</dt>
+    <dt>Make sure the application is focused.</dt>
+    <dt>Press ALT + F4</dt>
+        <dd>The application should close</dd>
+</dl>
+Test-case wm/stacking
+<dl>
+    <dt>open an application and make it maximised</dt>
+    <dt>Attempt to open the dash</dt>
+    <dt>Attempt to open indicators</dt>
+        <dd>The dash and all indicators appear stacked correctly on top of the window</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

@@ -1,0 +1,27 @@
+This test will check if Font Manager opens properly from the STUDIO menu.
+<dl>
+    <dt>Open the Font Manager application from the UTILITIES sub-menu of the GRAPHIC DESIGN subsection in Main Menu.</dt>
+        <dd>Font Manager opens properly.</dd>
+</dl>
+This test will check if Font Manager properly imports fonts to the system.
+<dl>
+    <dt>Locate the button on the bottom left-hand of the window with gears and press it</dt> 
+    <dt>Select "Install Fonts"</dt>
+    <dt>Locate the font files that should be installed and press OK</dt>
+    <dt>In the pop window that appears, chose "Reload Now"</dt>
+        <dd>Font Manager Reloads</dd>
+    <dt>Open any application that uses fonts such as Inkscape, LibreOffice Writer or GIMP, search for the font you just installed</dt>
+        <dd>Newly Installed Font is available</dd>
+</dl>
+This test will check if Font Manager properly deactivates fonts from the system, without deleting them.
+<dl>
+    <dt>Select a Font Family in the family window.</dt> 
+    <dt>On the right-hand of the window, press the "Minus" symbol ("-")</dt>
+        <dd>Font name is struck through.</dd>
+    <dt>Open any application that uses fonts such as Inkscape, LibreOffice Writer or GIMP, search for the font you just deactivated</dt>
+    <dt>Search for newly disabled font.</dt>
+        <dd>Font is unavailable</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

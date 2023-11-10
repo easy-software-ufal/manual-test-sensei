@@ -1,0 +1,20 @@
+This test will check if krita opens properly from the menu
+<dl>
+    <dt>Open Krita from menu</dt>
+        <dd>Open the krita application from GRAPHIC DESIGN subsection in Main Menu.</dd>
+        <dd>Krita opens properly.</dd>
+</dl>
+
+This test will check if krita opens blank files correctly
+<dt>Open the FILE menu then Custom Document with size Width: 1600px and Height: 1200px</dt>        
+    <dd>Blank file with set dimensions opens properly</dd>
+</dl>
+
+Testing brush selection and drawing with said brushes
+<dl>
+    <dt>Select some brushes and draw</dt>
+        <dd>The brushes work OK.</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

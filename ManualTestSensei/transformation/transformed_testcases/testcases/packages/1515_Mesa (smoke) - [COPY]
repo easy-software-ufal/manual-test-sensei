@@ -1,0 +1,12 @@
+<em>NOTE: When filing a result please include your graphics card / chipset information in the 'comment' box and on any bugs you file. You can use lspci to get this information if you don't know it. For example,</em> lspci | grep VGA <em>will just print your discrete graphics card</em>
+
+<dl>
+    <dt>Are there any graphical display issues after login to a desktop environment?</dt>
+    <dt>Where applicable, are you able to suspend and resume your system without issue?</dt>
+    <dt>Do desktop effects (opening the dash, pressing alt+tab, using the super key and shortcuts) still function properly on your system? Is the performance similar or better with no graphical display issues?</dt>
+    <dt>Does fast user switching work quickly and without any instability or display issues?</dt>
+    <dt>Execute <em>glxinfo|grep renderer</em>. Does the renderer listed match your expectations for the machine (ie, if no discrete card, a software renderer, else the card should be listed)?</dt>
+    <dt>Overall, does everything function the same or better than the stable version?</dt>
+</dl>
+<strong>If you answer 'yes' to all questions, please <a href="results#add_result">submit</a> a 'passed' result.
+    If you answer 'no' to any question, then please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

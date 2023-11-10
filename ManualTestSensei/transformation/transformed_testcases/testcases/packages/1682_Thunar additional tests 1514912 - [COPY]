@@ -1,0 +1,60 @@
+This testcase is intended to test for issues surrounding one specific bug.
+
+For this test - Thunar crashes on moving/copying/renaming files.
+
+<strong>This test might take some time to complete - please ensure you have enough time to allow Thunar to crash as we are trying to <em>force</em> a crash.</strong>
+
+This test will check for issues with renaming files.
+<dl>
+    <dt>Open Thunar and create folder A - the location is completely up to you</dt>
+    <dt>Create a new file inside the folder - the name is completely up to you</dt>
+    <dt>Rename this file a few times - has Thunar crashed? If not continue renaming this file until you see the crash</dt>
+        <dd>Close and ignore the Apport window</dd>
+    <dt>Restart Thunar.</dt>
+    <dt> Continue renaming your file until Thunar crashes once more</dt>
+
+    Things to note in your tracker report comment box:
+    1 - has the time it takes for Thunar to crash - following an initial crash - changed? 
+    2 - was the file name changed before Thunar crashed?
+    3 - had the file name changed when you restarted Thunar? (assuming it hadn't before the crash)
+
+    This test will check for issues with moving files amongst folders
+
+    <dl>
+        <dt>Open Thunar and inside your previously created folder A - create a new one B</dt>
+        <dt>Create enough files inside folder A to allow for moving some, without leaving folder A empty</dt>
+        <dt>Move some of your files from A to B</dt>
+        <dt>Move them back to A</dt>
+        <dt>Continue moving files back and forth between folder A and B</dt>
+        <dt> When Thunar crashes, again ignore the Apport warning and restart Thunar</dt>
+        <dt>Continue moving some of the files back and forth between folder A and B until Thunar crashes</dt>
+    </dl>
+
+    This test will check for issues with moving files amongst folders - in seperate Thunar instances
+
+    <dl>
+        <dt>Open Thunar at  folder A - open a new Thunar at folder B</dt>
+        <dt>Move some of your files from A to B</dt>
+        <dt>Move them back to A</dt>
+        <dt>Continue moving files back and forth between folder A and B</dt>
+        <dt> When Thunar crashes, again ignore the Apport warning and restart Thunar</dt>
+        <dt>Continue moving some of the files back and forth between folder A and B until Thunar crashes</dt>
+    </dl>
+
+    Things to note in your tracker report comment box:
+    1 - has the time it takes for Thunar to crash - following an initial crash - changed? 
+    2 - were the files moved before Thunar crashed?
+
+    <strong>Please report this fail against bug number 1514912</strong> 
+
+    <strong>Please report which version of Xubuntu you are using</strong>
+
+<strong>
+    If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>.
+    Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.
+</strong>
+
+
+
+

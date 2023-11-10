@@ -1,0 +1,20 @@
+Test-case name: IndicatorChinaWeather
+<dl>
+    This test will check the Indicator China Weather can display the right weather information and  you can configure the application rightly.
+    <dt>Find the indicator icon of Indicator China Weather</dt>
+        <dd>Did the Indicator China Weather autostart?</dd>
+    <dt>Configure the Indicator China Weather when first startup</dt>
+        <dd>When you firstly startup the Indicator China Weather, you need to configure your location. Click "Configure..." menu,then click "Locale" and click "Add(A)" button,input the location in chinese or in pinyin,click "Search" button and choose a locale then click "Forward(F)" and "Apply(A)" button,then click the "OK(O)" button to finish the configuration.Did the app display the weather information of your locale?</dd>
+    <dt>Show the weather forecast of next 6 days</dt>
+        <dd>Click the "Weather forecast" menu, did the app show 6 days weather forecast.</dd>
+    <dt>Show temperature beside the indicator icon</dt>
+        <dd>Click "Configure..." menu, then Click "Show temperature beside icon" checkbox and click "OK(O)" button，did the app display temperature beside the icon?</dd>
+    <dt>The weather information update in configured time interval.</dt>
+        <dd>Did the weather information update every several minutes according to the configuration?</dd>
+    <dt>Add multi-locale and change locale from one to another</dt>
+        <dd>Add several locales, did the information change corresponding to the change of locale?</dd>
+    <dt>Open configuration dialog of locale. Select a locale and delete it. </dt>
+        <dd>Can the locale be deleted?</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

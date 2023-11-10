@@ -1,0 +1,69 @@
+This test will check that Time Administration opens and closes without error
+<dl>
+    <dt>From the main menu, select Settings Manager->Time and Date, or</dt>
+    <dt>From a Terminal Emulator session, enter "time-admin"</dt>
+        <dd>The 'Time and Date Settings' dialog opens</dd>
+    <dt>Click the 'Close' button</dt>
+        <dd>'Time and Date Settings' closes</dd>
+</dl>
+
+This test will check that the time zone can be changed
+<dl>
+    <dt>Open 'Time and Date' again</dt>
+    <dt>Click the 'Unlock' button</dt>
+        <dd>The Authenticate dialog opens and prompts for the administrative password</dd>
+    <dt>Enter your password and click the 'Authenticate' button</dt>
+        <dd>All of the fields on the settings dialog are now unlocked</dd>
+        <dd>The time zone displayed is correct for your locale</dd>
+        <dd>The default 'Configuration:' option is 'Manual'</dd>
+    <dt>Click in the 'Time zone:' field</dt>
+        <dd>The Time zone dialog appears displaying a world map and a 'Time zone:' selector</dd>
+    <dt>Hover over a diamond on the map with your mouse</dt>
+        <dd>The corresponding region/city is displayed under the map</dd>
+    <dt>Click one of the diamonds from a different time zone</dt>
+        <dd>That region/city is displayed in the 'Time zone:' field under 'Selection'</dd>
+    <dt>Click the 'Close' button</dt>
+        <dd>You are returned to the 'Time and Date Settings' dialog, the new time zone is displayed and the time is updated correctly for that zone</dd>
+        <!-- EAGER TEST -->
+        <dd>The time displayed on the panel clock is also updated but this could take up to a minute</dd>
+
+    <dt>Click on 'Time zone:' again and change it back to the correct zone.</dt>
+</dl>
+
+This test will check that the time can be set manually
+<dl>
+    <!-- PRE CONDITION AS STEP -->
+    <dt>In the 'Time and Date Settings' dialog confirm that 'Configuration:' is set to 'Manual'</dt>
+    <dt>Move the clock ahead by 10 minutes by clicking the '+' button or directly entering a number in the minutes field</dt>
+        <dd>After some delay, the clock on the panel displays the new, incorrect time</dd>
+    <dt>Leave the time set 10 minutes fast for the next test</dt>
+</dl>
+
+This test will check that time can be synchronized with Internet servers
+<dl>
+    <dt>Click the button to the right of 'Configuration:'</dt>
+        <dd>Two choices are displayed, 'Manual' and 'Keep synchronized with Internet servers'</dd>
+    <dt>Select the 'Keep synchronized with Internet servers' option</dt>
+        <dd>On a fresh install of Xubuntu a dialog appears and notifies you that "NTP support is not installed"</dd>
+    <dt>Click the 'Install NTP support' button</dt>
+        <dd>You are prompted to enter the administrative password</dd>
+    <dt>Enter your password</dt>
+        <dd>An 'Applying changes' progress bar appears</dd>
+    <dt>When the 'Changes applied' dialog appears, click 'Close'</dt>
+        <dd>You are returned to the 'Time and Date Settings' dialog but now the 'Time:' and 'Date:' settings are no longer visible</dd>
+    <dt>Wait until automatic synchronization with an Internet server takes place in the background</dt>
+        <dd>The clock on the panel is reset back to the correct time (this may take several minutes)</dd>
+</dl>
+
+This test will check that the Help file opens and is current
+<dl>
+    <!-- UNVERIFIED STEPS -->
+    <dt>Click the 'Help' button</dt>
+        <dd>The Time Administration help file opens</dd>
+    <dt>Scroll through the file to make sure the screens and settings match the installed version</dt>
+    <dt>Close the Help file</dt>
+    <dt>Close Time and Date Settings</dt>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

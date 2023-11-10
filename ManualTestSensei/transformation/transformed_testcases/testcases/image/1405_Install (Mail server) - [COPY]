@@ -1,0 +1,46 @@
+Scope of this test is to verify that the system is installed, you can login into it and the mail server is up and running.
+
+<em>Proceed in your native language if you wish. Instructions will remain in English</em>
+<!-- Smells: UNVERIFIED STEPS, EXPECTED RESULTS AS STEP -->
+<dl>
+    <dt>Boot up the image</dt>
+    <dt>Choose the desired language</dt>
+    <dt>Select "Install Ubuntu Server"</dt>
+    <dt>Choose the language</dt>
+    <dt>Select your location</dt>
+    <dt>Configure locales</dt>
+    <dt>At configure keyboard page, select NO </dt>
+    <dt>Select the country of the keyboard</dt>
+    <dt>Select the keyboard layout</dt>
+    <dt>Select hostname ubuntu as default</dt>
+    <dt>Insert the name for the new user</dt>
+    <dt>Insert the name for the account</dt>
+    <dt>Choose a password</dt>
+    <dt>Reinsert the password</dt>
+    <dt>At encrypt request select NO</dt>
+    <dt>Verify or setup the timezone</dt>
+    <dt>At partitioning select "Guided - Use entire disk"</dt>
+    <dt>Select disk to partition</dt>
+    <dt>At "Write changes to disks", verify that everythings is right and select YES</dt>
+    <dt>At "http proxy" request, leave it blank and press enter</dt>
+    <dt>At managing upgrades select "No automatic updates"</dt>
+    <dt>At Software selection, choose "Mail server" with arrows, select it with "space bar" and confirm with "Enter"</dt>
+    <dt>At Postfix Configuration select "Internet Site"</dt>
+    <dt>At System mail name, let ubuntu</dt>
+    <dt>At Configuring dovecot-core select "Yes"</dt>
+    <dt>At Configuring dovecot-core verify the hostname is "localhost" and select "Continue"</dt>
+    <dt>Select to install Grub in the master boot record</dt>
+    <dt>Remove the installation media (CDROM or USB key)</dt>
+    <dt>Wait that the system reboot then login</dt>
+    <dt>Verify that postfix is running:</dt>
+        <dd>telnet 127.0.0.1 25</dd>
+        <dd>Has to return: Ubuntu ESMTP Postfix (Ubuntu). Type quit to exit</dd>
+    <dt>Verify that dovecot pop3 and imap servers are running:</dt>
+        <dd>sudo netstat -ltnp | grep dovecot</dd>
+        <dd>should list 8 dovecot instances (port 110, 143, 993 and 995) 4 for tcp and 4 tcp6</dd>
+    <dt>Try to send a test email:</dt>
+        <dd>echo foo | mail -s test ${USER}</dd>
+        <dd>Run mutt and press enter to see the mail, press <strong>q</strong> to exit</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

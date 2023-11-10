@@ -1,0 +1,88 @@
+This test will check that Audacious can play ogg files.
+<strong>For this test, an audio file in ogg format is required, which can be found in the internet, e.g. <a href="www.kahvi.org">www.kahvi.org</a>.
+    If you do not have such a file, skip the test.
+</strong>
+<dl>
+    <dt>Open Audacious from the start menu at "Sound & Video"</dt>
+        <dd>Audacious starts without an issue</dd>
+    <dt>Click on "File" and "Open Files"</dt>
+        <dd>A window opens, asking for a file to select</dd>
+    <dt>Select an ogg audio file and click on "Open"</dt>
+        <dd>Audacious playbacks the file correctly</dd>
+    <dt>Click on the "stop playback" button</dt>
+        <dd>Audacious stops the playback</dd>
+</dl>
+
+This test will check that Audacious can play a CD.
+<strong>For this test, an CD is required.
+    If you do not have a CD, skip the test.
+</strong>
+<dl>
+    <dt>Open Audacious from the start menu at "Sound & Video"</dt>
+        <dd>Audacious starts without an issue</dd>
+    <dt>Insert an audio CD into your computer</dt>
+        <dd>If a window opens asking which application to launch, click on "Cancel"</dd>
+    <dt>Click on "Services" and "Play CD"</dt>
+        <dd>Audacious begins playing the CD correctly</dd>
+    <dt>Click on the "stop playback" button</dt>
+        <dd>Audacious stops the playback</dd>
+</dl>
+
+This test will check that Audacious can play midi files.
+<strong>For this test, a midi file is required, which can be found on the internet.  You will also need to configure the fluidsynth backend as part of the test. A general midi soundfont file (*.SF2) will also be required e.g. <a href="www.musescore.org/en/handbook/soundfont">www.musescore.org</a>.
+    If you do not have such a file, skip the test.
+</strong>
+<dl>
+    <dt>Open Audacious from the start menu at "Sound & Video"</dt>
+        <dd>Audacious starts without an issue</dd>
+    <dt>Click on "File" and "Preferences"</dt>
+        <dd>A window opens, showing various settings</dd>
+    <!-- EAGER STEP -->
+    <dt>Click on "Plugins" and then the "Input" tab</dt>
+        <dd>This lists all the input plugins</dd>
+    <dt>Click on AMIDI-Plug (MIDI Player) and then the "Preferences" button</dt>
+        <dd>A window opens showing the AMID-Plug Settings</dd>
+    <dt>On the AMIDI Plug tab, select the FluidSynth Backend</dt>
+    <dt>Click the "FluidSynth backend" tab, and then click the "+" button on the top right</dt>
+        <dd>A window opens, asking for a file to be selected</dd>
+    <!-- UNVERIFIED STEPS  -->
+    <dt>Select a soundfont file and click on "Open"</dt>
+    <dt>Click on "OK" to close the AMIDI-Plug Settings, and then "Close" the Preferences window</dt>
+    <dt>Click on "File" and "Open Files"</dt>
+        <dd>A window opens, asking for a file to select</dd>
+    <dt>Select a midi file and click on "Open"</dt>
+        <dd>Audacious playbacks the file correctly</dd>
+    <dt>Click on the "stop playback" button</dt>
+        <dd>Audacious stops the playback</dd>
+</dl>
+
+This test will check that the library is working.
+<dl>
+    <dt>Copy the audio file(s) to the Music folder in your home directory, e.g. /home/USER/Music</dt>
+    <dt>In the menu bar, click on "File", then on "Search Library"</dt>
+        <dd>The "Search Tool" opens within Audacious</dd>
+    <dt>In the "Search Tool", click on the refresh button in the lower right corner</dt>
+        <dd>The library is updated with the file(s) in your Music folder and appear(s) in the library</dd>
+    <dt>In the "Search Tool", enter the name of the file you loaded into Audacious</dt>
+        <dd>The file shows up in the search results</dd>
+</dl>
+
+This test will check that the equalizer and effects are working properly.
+<dl>
+    <dt>Click on the playback button</dt>
+        <dd>Audacious playbacks the file again</dd>
+    <dt>In the menu bar, click on "Output" and then on "Equalizer"</dt>
+        <dd>The equalizer window opens</dd>
+    <!-- NON-DETERMINISTIC STEP -->
+    <dt>Tick "Enable". Try to change some of the sound levels</dt>
+        <dd>The sound alters while playing around with the sound levels</dd>
+    <dt>Untick "Enable" and close the equalizer window</dt>
+        <dd>The playback is equal to the begin of the test</dd>
+    <dt>In the menu bar, click on "Output", then on "Effects". Select an effect, e.g. "Echo", and click on it</dt>
+        <dd>The sound alters according to the chosen effect</dd>
+    <dt>Go back to the menu and deactivate the chosen effect</dt>
+        <dd>The playback is equal to the begin of the test</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

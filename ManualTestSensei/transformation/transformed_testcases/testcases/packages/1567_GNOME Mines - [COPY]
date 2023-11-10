@@ -1,0 +1,78 @@
+This tests that GNOME Mines will open
+<dl>
+    <dt>Open GNOME mines</dt>
+        <dd>GNOME Mines opens at the "New Game" screen</dd>
+</dl>
+
+This tests the main functionality of GNOME Mines
+<dl>
+    <!-- UNVERIFIED STEPS   -->
+    <dt>Click "8x8 10 mines"</dt>
+        <dd>A new game starts in an 8x8 grid</dd>
+    <dt>Play the game till you hit a mine</dt>
+        <dd>10 mines appear, one of which has exploded</dd>
+    <dt>Click "Change Difficulty"</dt>
+        <dd>The new game screen appears</dd>
+    <dt>Click "16x16 40 mines"</dt>
+        <dd>A new game starts in a 16x16 grid</dd>
+    <dt>Play the game till you hit a mine</dt>
+        <dd>40 mines appear, one of which has exploded</dd>
+    <dt>Click "Change Difficulty"</dt>
+        <dd>The new game screen appears</dd>
+    <dt>Click "30x16 99 mines"</dt>
+        <dd>A new game starts in a 30x16 grid</dd>
+    <dt>Play the game till you hit a mine</dt>
+        <dd>99 mines appear, one of which has exploded</dd>
+    <dt>Click "Change Difficulty"</dt>
+        <dd>The new game screen appears</dd>
+    <dt>Click "Custom"</dt>
+        <dd>A screen appears allowing you to select Horizontal, Vertical number of fields and percent of mines</dd>
+    <dt>Modify the three values to your desired sizes</dt>
+        <dd>A new game starts in a grid that is the size you chose</dd>
+    <dt>Click "Play Again"</dt>
+    <dt>Click a tile, if no mine appears then continue test, if mine appears, restart and attempt again</dt>       
+    <dt>Click to another window</dt>
+        <dd>The timer stops and the tiles are hidden by the word "Paused"</dd>
+        <dd>The Pause button changes to a Resume</dd>
+</dl>
+
+This tests the menu functionality of GNOME Mines
+<dl>
+    <dt>In default window select "8x8 10 mines"</dt>
+    	<dd>Game starts</dd>
+    <dt>Click a tile, if no mine appears then continue test, if mine appears, restart and attempt again</dt>
+    <dt>Click Mines --> New Game</dt>
+        <dd>A warning pop-up appears</dd>
+    <dt>Press "Start New Game", then select "8x8 10 mines"</dt>
+        <dd>A new game starts in an 8x8 grid</dd>
+    <dt>Click a tile, if no mine appears then continue test, if mine appears, restart and attempt again</dt>
+        <dd>Pause button appears on the right</dd>
+    <dt>Click Mines --> Appearance</dt>
+        <dd>Select Theme window appears</dd>
+    <dt>Change default theme and close window</dt>
+        <dd>Your chosen theme now applied in game<dd>
+    <dt>Click the Pause button</dt>
+        <dd>The timer stops and the tiles are hidden by the word "Paused"</dd>
+        <dd>The Pause button changes to a Resume</dd>
+    <dt>Click the Resume</dt>
+        <dd>The timer resumes and the tiles are fully visible again</dd>
+        <dd>The Play button changes to a Pause button</dd>
+    <dt>Click Help --> Contents</dt>
+        <dd>A manual opens</dd>
+    <dt>Close the manual</dt>
+    <dt>Click Help --> About</dt>
+        <dd>The game pauses</dd>
+        <dd>An about pop-up appears</dd>
+    <dt>Click "Close"</dt>
+        <dd>The pop-up disappears</dd>
+        <dd>The game auto-resumes</dd>
+    <dt>Click Mines --> Scores</dt>
+        <dd>A pop-up appears showing all you previous times</dd>
+    <dt>Select another size of grid in drop down menu</dt>
+        <dd>In "size" the scores are ordered by time (lowest to highest), and show what date they where achieved on</dd>
+    <dt>Click "Quit"</dt>
+        <dd>GNOME Mines closes</dd>
+</dl>        
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

@@ -1,0 +1,167 @@
+Test-case panel/appmenu_desktop
+<dl>
+    <dt>Click on the desktop</dt>
+        <dd>"Ubuntu Desktop" (or any localized string) appears in the panel</dd>
+    <dt>Move the mouse over the panel</dt>
+        <dd>"Ubuntu Desktop" label fades out and Desktop menubar items appear</dd>
+</dl>
+
+Test-case panel/appmenu_mouse_click
+<dl>
+    <dt>Start Gedit</dt>
+    <dt>Move the mouse over the panel</dt>
+        <dd>Gedit menubar items appear</dd>
+    <dt>Click on "Search"</dt>
+        <dd>"Seach" menu appears</dd>
+    <dt>Click back in the application</dt>
+        <dd>"Search" menu closes and menubar items disappear</dd>
+</dl>
+
+Test-case panel/appmenu_mouse_click2
+<dl>
+    <dt>Start Firefox</dt>
+    <dt>Move the mouse over the panel and click on "File"</dt>
+        <dd>"File" menu appears</dd>
+    <dt>Without moving the mouse, left-click again</dt>
+        <dd>"File" menu disappear, the menu titles are still visible on the launcher though</dd>
+</dl>
+
+Test-case panel/appmenu_mouse_hovering
+<dl>
+    <dt>Start Firefox</dt>
+    <dt>Move the mouse over the panel and click on "File"</dt>
+        <dd>"File" menu appears</dd>
+    <dt>Move the mouse to the "Edit" item</dt>
+        <dd>"File" menu disappears, "Edit" menu appears</dd>
+</dl>
+
+Test-case panel/appmenu_keyboard
+<dl>
+    <dt>Start Firefox</dt>
+    <dt>Move the mouse over the panel and click on "File"</dt>
+        <dd>"File" menu appears</dd>
+    <dt>Press the "Right arrow" keyboard key:</dt>
+        <dd>"File" menu disappears, "Edit" menu appears</dd>
+    <dt>Press the "Left arrow" keyboard key:</dt>
+        <dd>"Edit" menu disappears, "File" menu appears</dd>
+</dl>
+
+Test-case panel/appmenu_keyboard_f10
+<dl>
+    <dt>Start Firefox</dt>
+    <dt>Press Alt+F10</dt>
+        <dd>Firefox menubar appears, first menubar item is selected and its menu appears</dd>
+</dl>
+
+Test-case panel/appmenu_keyboard_mnemonic
+<dl>
+    <dt>Start Firefox</dt>
+    <dt>Press Alt + F (or any accelerator corresponding to the "File" item in your language)</dt>
+        <dd>Firefox menubar appears, first menubar item is selected and its menu appears</dd>
+</dl>
+
+Test-case panel/appmenu_keyboard_desktop_f10
+<dl>
+    <dt>Click on the desktop</dt>
+    <dt>Press Alt+F10</dt>
+        <dd>Desktop menubar appears, first menubar item is selected and its menu appears</dd>
+</dl>
+
+Test-case panel/appmenu_keyboard_desktop_mnemonic
+<dl>
+    <dt>Click on the desktop</dt>
+    <dt>Press Alt + F (or any accelerator corresponding to the "File" item in your language)</dt>
+        <dd>Desktop menubar appears, first menubar item is selected and its menu appears</dd>
+</dl>
+
+Test-case panel/titlebar_not_maximized
+<dl>
+    <dt>Start Nautilus</dt>
+    <dt>Make sure it is not maximized</dt>
+        <dd>Panel does not show window buttons</dd>
+        <dd>Panel shows application title (Same text as the tooltip for Nautilus launcher icon)</dd>
+    <dt>Move the mouse over the panel</dt>
+        <dd>Panel does not show window buttons</dd>
+        <dd>Title is partially faded on the right side, Nautilus menubar items are visible</dd>
+</dl>
+
+Test-case panel/titlebar_maximized
+<dl>
+    <dt>Start Nautilus</dt>
+    <dt>Maximize the window</dt>
+        <dd>Panel does not show window buttons</dd>
+        <dd>Panel shows the window title</dd>
+    <dt>Move the mouse over the panel</dt>
+        <dd>Panel shows window buttons</dd>
+        <dd>Panel shows Nautilus menubar items</dd>
+    <dt>Click on the "restore" window button</dt>
+        <dd>Nautilus window is restored (ie. not maximized anymore)</dd>
+        <dd>Panel does not show window buttons</dd>
+        <dd>Panel shows the window title</dd>
+    <dt>Maximize window again</dt>
+    <dt>Click on the "close" window button</dt>
+        <dd>Nautilus window closes</dd>
+</dl>
+
+Test-case panel/titlebar_maximized2
+<dl>
+    <dt>Start Nautilus</dt>
+    <dt>Maximize the window</dt>
+    <dt>Double-click on the unity panel, outside of the menubar</dt>
+        <dd>Nautilus window is restored (ie. not maximized anymore)</dd>
+</dl>
+
+Test-case panel/titlebar_multi_windows
+<dl>
+    <dt>Have a maximized window and a restored one in the same workspace</dt>
+    <dt>Focus the restored window and move the mouse over the panel</dt>
+        <dd>Panel does not show window buttons</dd>
+        <dd>Titlebar and menubar are those of the focused window</dd>
+    <dt>Click on an empty space of the panel</dt>
+        <dd>Maximized window gets the focus</dd>
+</dl>
+
+Test-case panel/indicators
+<dl>
+    <dt>Check the right part of the panel shows the following indicators:
+        <ul>
+            <li> - Messaging indicator: envelope icon</li>
+            <li> - (if system is a laptop, may be hidden depending on indicator settings) Battery indicator: battery icon, either charging or plugged</li>
+            <li> - (if system has bluetooth) Bluetooth indicator: Bluetooth icon</li>
+            <li> - (if system has network) Network indicator: either an "unplugged", "plugged", or "wifi" icon</li>
+            <li> - (if system has ubuntu one) Ubuntu one indicator: a cloud icon</li>
+            <li> - Sound indicator: volume icon</li>
+            <li> - Time indicator: the current time</li>
+            <li> - Session/System indicator: power icon</li>
+        </ul>
+    </dt>
+</dl>
+Test-case panel/indicators_mouse
+<dl>
+    <dt>Click on the messaging indicator</dt>
+        <dd>Messaging menu appears</dd>
+    <dt>Move mouse to the System indicator</dt>
+        <dd>Menus for all indicators appear and disappear as you move the mouse</dd>
+</dl>
+Test-case panel/appindicator
+<dl>
+    <dt>Start gtk-recordmydesktop (or any application with an appindicator)</dt>
+        <dd>Application indicator appears in the panel</dd>
+    <dt>Click on the indicator</dt>
+        <dd>Application indicator menu appears</dd>
+    <dt>Click on "close" or "quit"</dt>
+        <dd>Application closes</dd>
+        <dd>Application indicator menu disappears</dd>
+</dl>
+Test-case panel/appindicator_sni_qt
+<dl>
+    <dt>Start Skype or Mumble</dt>
+        <dd>Application indicator appears in the panel</dd>
+    <dt>Click on the indicator</dt>
+        <dd>Application indicator menu appears</dd>
+    <dt>Click on "close" or "quit"</dt>
+        <dd>Application closes</dd>
+        <dd>Application indicator menu disappears</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

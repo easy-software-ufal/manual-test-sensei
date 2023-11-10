@@ -1,0 +1,52 @@
+The goal of this test case is to check that localization support is functional during the installation and that language packs are downloaded and installed correctly from the Internet for Kubuntu.
+<dl>
+    <dt>Boot up the image. Follow the steps listed in the Non-English Installation Full Network Support test before proceeding.</dt>
+    <dt>Click on the launcher, are all the entries localized?</dt>
+    <dt>Click on the entry labeled 'System Settings', are all the entries in the new window that appears localized?</dt>
+    <dt>Open the entry marked as 'Locale' in the new window, is the correct language selected in the settings?</dt>
+    <dt>Click the tab labeled 'Numbers', is the correct decimal separator chosen for your region?</dt>
+    <dt>In the same tab, has the correct Digit set been chosen for your region?</dt>
+    <dt>Click the tab labeled 'Money', has the correct currency been chosen for your region?</dt>
+    <dt>Click on the tab labeled 'Date &amp; Time', has the correct time format been chosen for your system?</dt>
+    <dt>Click on the tab labeled 'Other', has the correct measurement system been chosen for your system?</dt>
+    <dt>Click on the 'Overview button to go back to System Settings, and open the entry marked as "User Manager"</dt>
+        <dd>Are all the text labels localized?</dd>
+    <dt>Click on the 'Overview button to go back to System Settings, and open the entry marked as "Login Screen"</dt>
+        <dd>Is the text in the ui localized?</dd>
+        <dd>Click on the tab labelled "General", are all labels localized?</dd>
+    <dt>Click on the 'Overview button to go back to System Settings, and open the entry marked as "About System"</dt>
+        <dd>Are all the labels localized?</dd>
+    <dt>Click on the 'Overview button to go back to System Settings, and open the entry marked as "Instant Messaging and VOIP", is the UI localized?</dt>
+    <dt>Click on the button marked as "Add Account" and complete the process to add a IM account, was entire process localized?</dt>
+    <dt>Click on the launcher and then click on the entry marked as "Instant Messenger Contacts" to open your contact list, has the contact list UI been localized?</dt>
+    <dt>Open a conversation window with a friend and send them some messages</dt>
+        <dd>The keyboard layout should be correctly set</dd>
+        <dd>The language that appears on the screen should be localized</dd>
+        <dd>Direction of text should be correct (RTL vs LTR)</dd>
+    <dt>Close/Minimize all windows, right click on the desktop, is the context menu localized?</dt>
+    <dt>Click on the "Default desktop settings" entry, is the new window that appears localized?</dt>
+    <dt>Click on the launcher, launch "Muon Discover" via Applications > System > Muon Discover</dt>
+        <dd>Is the toolbar localized?</dd>
+        <dd>Is all the text in the featured application slideshow localized?</dd>
+        <dd>Are all the application category names localized?</dd>
+    <dt>Open an application entry to see it's description in Muon Discover</dt>
+        <dd>Is the application description localized? (This is currently known not to work)</dd>
+    <dt>Click on the launcher, launch "Dolphin"</dt>
+        <dd>Is the "Places" panel on the left localized?</dd>
+        <dd>Are the entries on the top panel localized?</dd>
+        <dd>Are the entries in the "Control" menu localized?</dd>
+        <dd>Launch the "Dolphin" settings via the "Control" menu</dd>
+    <dt>Click on the launcher, search for "Kamoso" via the search bar and launch it</dt>
+        <dd>Click on the wrench icon, are the entries localized?</dd>
+        <dd>Click on the entry marked "Settings", is the "Settings" window localized?</dd>
+    <dt>Click on the launcher, search for "Gwenview" via the search bar and launch it</dt>
+        <dd>Is the "Places" tab on the right localized?</dd>
+        <dd>Is the "Tags" tab on the right localized?</dd>
+        <dd>Click on the menu item labeled "Edit", are the entries localized?</dd>
+    <dt>Click on the launcher, search for "Muon Update Manager" via the search bar and launch it</dt>
+        <dd>Make sure all the strings are localized</dd>
+        <dd>Try and upgrade your system, is the "Download Rate" at the bottom left correctly localized?</dd>
+        <dd>Are all the authentication dialogs correctly localized?</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

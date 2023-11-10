@@ -1,0 +1,40 @@
+This test will check that XPad can start and create a new pad.
+<dl>
+    <dt>XPad can be activated in the Lubuntu Start Menu at "Accessories". Click on "XPad"</dt>
+        <dd>A new symbol appears in the notifications area</dd>
+    <dt>Left click on the symbol</dt>
+        <dd>A new pad opens</dd>
+    <dt>Insert the text "Lubuntu is a lightweight distribution."</dt>
+        <dd>The text appears in the pad</dd>
+    <dt>Click on the cross "X" at the bottom of the pad</dt>
+        <dd>The pad is saved and closed</dd>
+</dl>
+
+This test will check that XPad can change the pad properties.
+<dl>
+    <dt>Right-click on the XPad symbol in the notification area, then on "Preferences"</dt>
+        <dd>A window appears, showing the XPad preferences</dd>
+    <dt>Change the properties. Check "Use this font” and click on the font name</dt>
+        <dd>A window opens, showing the font properties</dd>
+    <dt>Select Serif regular 11. Click on "OK"</dt>
+        <dd>The font window closes</dd>
+    <dt>In the preferences window, click on "Close"</dt>
+        <dd>The preferences window closes</dd>
+    <dt>Left-click on the XPad symbol in the notification area</dt>
+        <dd>The pad you just closed opens again, showing the new selected font</dd>
+    <dt>Click on the cross "X" at the bottom of the pad</dt>
+        <dd>The pad is saved and closed</dd>
+</dl>
+
+This test will check that XPad can open and delete an existing pad.
+<dl>
+    <dt>Left-click on the XPad symbol in the notification area</dt>
+        <dd>The pad you just closed opens again</dd>
+    <dt>Click on the trash bin at the bottom of the pad</dt>
+        <dd>A window opens, showing a notification</dd>
+    <dt>Click on "Delete"</dt>
+        <dd>The pad is closed and deleted</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

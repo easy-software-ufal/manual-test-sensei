@@ -1,0 +1,138 @@
+This test will check that Qtractor opens correctly. Jack should be loaded automatically when Qtractor runs. If not, there should be messages stating that Jack is not running in the Message area at the bottom of the Qtractor application. In this case, close Qtractor, start Jack with QJackCtl, confirm Jack is running, and then restart Qtractor.
+<dl>
+    <dt>Open the Qtractor application from your menu</dt>
+        <dd>The Qtractor application opens</dd>
+    <dt>Click on the "Help" menu and choose "About"</dt>
+        <dd>A window opens displaying the Qtractor version and license information</dd>
+    <dt>Click on OK</dt>
+        <dd>The About window disappears</dd>
+</dl>
+
+This test will check if Qtractor imports an audio file and play it
+<strong>For this test, an audio file in ogg format is used, which can be found in the internet, e.g. <a href="www.kahvi.org">www.kahvi.org</a>.
+    If you do not have such a file, skip the test.
+</strong>
+<dl>
+    <dt>Right-click in the Files pane and select "Add Files", or use Ctrl-F</dt>
+        <dd>The "Open Audio Files" window opens</dd>
+    <dt>Choose an audio file and click "Open"</dt>
+        <dd>The file now appears in the Files pane</dd>
+    <dt>Drag your file left and drop it on the Track Pane</dt>
+        <dd>The imported file now appears on the track pane with the waveform visible</dd>
+    <dt>Click on the play icon</dt>
+        <dd>The imported file plays through your speakers</dd>
+</dl>
+
+This test will check if Qtractor records audio
+<strong>For this test, a working microphone or other physical audio input is required.
+    If you have nothing connected to an audio input, skip the test.
+</strong>
+<dl>
+    <dt>Go to the View menu and select Windows > Connections</dt>
+        <dd>The connections Window opens</dd>
+    <dt>On the Audio tab, verify that there is a capture device on the left (under System) that is connected to one of the Qtractor Master Ins on the right hand side</dt>
+    <dt>Go to the Track menu and choose Add Track or use Ctrl+Shift+N</dt>
+        <dd>The Track properties window opens</dd>
+    <dt>On the Track tab, name the track and choose the Audio option, then click OK</dt>
+        <dd>The new track appears in the Track pane</dd>
+    <dt>Arm the new track for recording by clicking the R button in the track listing on the left of the Qtractor window.</dt>
+    <dt>Click the Record button in the top toolbar</dt>
+        <dd>The Session window opens</dd>
+    <dt>Give a name for the file that will hold this recorded input and Click OK</dt>
+    <dt>Click the Play button in the top toolbar and start singing/playing into the microphone/input device</dt>
+        <dd>The track pan displays the recorded waveform and scrolls along</dd>
+    <dt>Click the stop button when you have recorded enough</dt>
+    <dt>Click the "Backward" button until the track marker returns to the start</dt>
+    <dt>Click on play to hear the two track play</dt>
+        <dd>The track plays through your speakers</dd>
+</dl>
+
+This test will check that the recording can be saved and opened again
+<dl>
+    <dt>Click on the "Save Session" icon (File > Save from the menu)</dt>
+        <dd>The "Save Session" window opens</dd>
+    <dt>Name the file</dt>
+    <dt>Click "Save"</dt>
+        <dd>The file saves and the file name is displayed in the menu bar</dd>
+    <dt>Close the session by clicking the "X" (File > Exit from the menu)</dt>
+    <dt>Run the Qtractor application again</dt>
+    <dt>Click File > Open in the menu</dt>
+    <dt>Find and Choose your just recorded session from the Open Session window</dt>
+    <dt>Click "Open"</dt>
+        <dd>Your file opens again and appears as it was when you saved it</dd>
+</dl>
+
+This test will check if you can import a midi file and play it using a plugin instrument
+<strong>For this test, you will need a midi file to import. If you do not have one, you can download one from the internet. For example, download "Prelude and Fugue in a minor (ca.  1708-14), BWV 894" from <a href="http://www.kunstderfuge.com/bach/harpsi.htm">http://www.kunstderfuge.com/bach/harpsi.htm</a>.
+    A plug in is also required for this test. Ensure that a suitable soft-synth plugin is installed on the system. For example, install whysynth which can be used as a DSSI plugin in Qtractor.
+    For this test, only one track is assigned an instrument to keep the test short.
+</strong>
+<dl>
+    <dt>From the Track menu, select Import Tracks > MIDI</dt>
+        <dd>The "Open MIDI Files" window opens</dd>
+    <dt>Select a midi file and Click "Open"</dt>
+        <dd>The MIDI tracks appear in the Qtractor session</dd>
+    <dt>Right Click on one of the tracks in the Track Name pane and select Track Properties</dt>
+        <dd>The Track window opens</dd>
+    <dt>Click on the Plugins tab and Click "Add"</dt>
+        <dd>The Plugins window opens</dd>
+    <dt>Choose a plugin Synth and Click "OK"</dt>
+        <dd>The plugin synth shows in the Plugins tab and a window opens with the plugin in it</dd>
+    <dt>Right Click on the plugin synth and choose Activate</dt>
+    <dt>In the plugin window choose a patch name and Click "Send Test Note"</dt>
+        <dd>A sound plays through the speakers</dd>
+    <dt>Click on the Track tab of the track window</dt>
+    <dt>In the MIDI/Instrument Panel choose the Plugin as an instrument</dt>
+    <dt>Click "OK" in the Track window</dt>
+    <dt>Click on the "Play" icon</dt>
+        <dd>The midi track plays using the chosen sound of the plugin instrument</dd>
+</dl>
+
+This test will check that MIDI data can be entered with the matrix editor
+<strong>Make sure there are no other tracks in the track pane by deleting them or clicking on the New icon, then create a new MIDI track with an assigned instrument</strong>
+<dl>
+    <dt>Click on the "New Clip" button from Qtractor's button bar (or Clip > New from the menu)</dt>
+        <dd>The Session window opens</dd>
+    <dt>Type in a name for the session and Click on OK</dt>
+        <dd>The "matrix editor" or "piano roll" window opens</dd>
+    <dt>Click on the "Edit on" pencil icon</dt>
+        <dd>The edit pencil is highlighted</dd>
+    <dt>Click on the matrix area to create a few notes</dt>
+        <dd>The notes are shown on the matrix editor</dd>
+    <dt>Click on the "Edit off" arrow icon</dt>
+        <dd>The arrow icon is highlighted</dd>
+    <dt>Click on one of the notes and move it do a different place</dt>
+        <dd>The note remains where it was moved to</dd>
+    <dt>Hold the mouse over a note</dt>
+        <dd>The mouse icon turns into a double arrow</dd>
+    <dt>Click on the note</dt>
+        <dd>The note can then be stretched to different lengths</dd>
+    <dt>Click on Save icon in the matrix editor</dt>
+        <dd>The new notes are saved and the Save icon is greyed out</dd>
+    <dt>Choose File > Close from the menu</dt>
+        <dd>The matrix editor closes and the programmed notes can be seen in the track pane</dd>
+    <dt>Click on the Play icon</dt>
+        <dd>The track begins to play and the notes are heard through the speaker</dd>
+</dl>
+
+This test will check that MIDI data can be received from an external or virtual instrument
+<strong>If you do not have a physical keyboard, then open/run the Virtual Keyboard application</strong>
+<dl>
+    <dt>Click on the Connections icon</dt>
+        <dd>The connections window opens</dd>
+    <dt>Click on the arrow to the left of your instrument (or Virtual Keyboard) in the Output Ports pane</dt>
+        <dd>The available MIDI Output ports are shown</dd>
+    <dt>Highlight a MIDI Output port on the instrument</dt>
+        <dd>The MIDI Output port is highlighted</dd>
+    <dt>Click on the arrow to the left of Qtractor in the Input Ports pane</dt>
+        <dd>The available MIDI Input ports are shown</dd>
+    <dt>Highlight a Midi Input port on Qtractor</dt>
+        <dd>The MIDI Input port is highlighted</dd>
+    <dt>Click on Connect</dt>
+        <dd>The instrument MIDI Output port is shown connected to the MIDI Input port of Qtractor</dd>
+    <dt>Play some notes on the instrument (or Virtual Keyboard)</dt>
+        <dd>The notes are heard from the speakers</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

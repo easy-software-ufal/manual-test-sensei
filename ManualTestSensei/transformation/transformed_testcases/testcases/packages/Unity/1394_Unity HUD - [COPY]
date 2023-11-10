@@ -1,0 +1,74 @@
+Test-case hud/show
+<dl>
+    <dt>Tap ALT once</dt>
+        <dd>The HUD should appear, with "Type your command" text in the input field</dd>
+        <dd>The Unity Launcher should desaturate</dd>
+    <dt>Type any text to search for menu entries</dt>
+        <dd>The HUD should display entries matching the given search entry</dd>
+    <dt>Tap ALT once again</dt>
+        <dd>The HUD should close</dd>
+</dl>
+Test-case hud/show-hide
+<dl>
+    <dt>Tap ALT once</dt>
+        <dd>The HUD should appear</dd>
+    <dt>Press escape</dt>
+        <dd>The HUD should close</dd>
+    <dt>Tap ALT once again</dt>
+    <dt>Click outside of the HUD area</dt>
+        <dd>The HUD should close</dd>
+</dl>
+Test-case hud/normal-menu
+<dl>
+    <dt>Open any application</dt>
+    <dt>Press and hold ALT</dt>
+        <dd>The menu contents should appear on the global Unity panel</dd>
+</dl>
+Test-case hud/arrow-navigate
+<dl>
+    <dt>Tap ALT once to show the HUD</dt>
+    <dt>Type any text in the HUD search input field that returns more than one entry</dt>
+    <dt>Use the UP and DOWN arrow keys to navigate through the displayed entries</dt>
+        <dd>The currently selected entry should light up and have a thicker border</dd>
+</dl>
+Test-case hud/mouse-navigate
+<dl>
+    <dt>Tap ALT once to show the HUD</dt>
+    <dt>Type any text in the HUD search input field that returns entries</dt>
+    <dt>Click on one of the displayed menu entries</dt>
+        <dd>The clicked menu entry command should be executed</dd>
+</dl>
+Test-case hud/cancel-search
+<dl>
+    <dt>Tap ALT once</dt>
+        <dd>The HUD should appear</dd>
+    <dt>Type any text in the HUD search input field</dt>
+    <dt>Press escape</dt>
+        <dd>The HUD should still be visible, but the list of entries empty and the search field displaying the default "Type your command" text</dd>
+</dl>
+Test-case hud/search
+<dl>
+    <dt>Open gedit</dt>
+    <dt>Move the mouse cursor to the global menu area of the Unity panel</dt>
+        <dd>The gedit menu should become visible</dd>
+    <dt>Open the menu and locate a random menu entry (e.g. Quit, Preferences)</dt>
+    <dt>Tap ALT once to show the HUD</dt>
+    <dt>Try finding the menu entry as located during step 3 - using the HUD search field</dt>
+        <dd>After typing in text representing the menu entry it should appear in the list of recommended entries</dd>
+    <dt>Using the UP and DOWN arrows navigate to the entry of interest</dt>
+    <dt>Press ENTER</dt>
+        <dd>The selected menu command should be executed (e.g. if Quit was selected, gedit should quit)</dd>
+</dl>
+Test-case hud/search-indicators
+<dl>
+    <dt>Click on any of the system indicators (located in the right-most part the panel)</dt>
+    <dt>Locate a random menu entry</dt>
+    <dt>Tap ALT once to show the HUD</dt>
+    <dt>Try finding the menu entry as located during step 2 - using the HUD search field</dt>
+        <dd>After typing in text representing the menu entry it should appear in the list of recommended entries</dd>
+    <dt>Using the UP and DOWN arrows navigate to the entry of interest</dt>
+    <dt>Press ENTER</dt>
+        <dd>The selected menu command should be executed</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

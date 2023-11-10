@@ -1,0 +1,132 @@
+<em>This testcase requires suspending and shutting down</em>
+<em>These tests are intended to be run on a laptop and the laptop should be plugged in to start the test</em>
+<em>If you do choose to run them on a desktop, you will only see a subset of the options mentioned below</em>
+
+This test will check that Xfce4 Power Manager opens and closes correctly
+<dl>
+    <dt>Open Power Manager from Settings</dt>
+        <dd>The Xfce Power Manager dialog opens at the General tab</dd>
+    <dt>Click the "Close" button</dt>
+        <dd>Power Manager closes</dd>
+    <dt>Click the power indicator (battery icon) on the panel</dt>
+        <dd>Power menu appears</dd>
+    <dt>Click "Power Manager Settings..."</dt>
+        <dd>The Xfce Power Manager dialog opens at the General tab</dd>
+</dl>
+
+These tests will check the Xfce4 Power Manager settings under the General tab
+<dl>
+    <dt>Untick the "Handle display brightness keys" box</dt>
+    <dt>Press the laptop function keys that control screen brightness</dt>
+        <dd>A brightness notification bar may appear but the screen brightness does not change</dd>
+    <dt>Tick "Handle display brightness keys"</dt>
+    <dt>Press the laptop function keys that control screen brightness</dt>
+        <dd>Screen brightness changes</dd>
+    <dt>Verify that the "When power button is pressed:" option is set to "Ask"</dt>
+    <dt>Press the laptop's power button</dt>
+        <dd>The "Log out username" window appears</dd>
+    <dt>Click Cancel</dt>
+        <dd>The log out dialog closes</dd>
+    <dt>Change the "When power button is pressed:" option to "Shutdown"</dt>
+    <dt>Press the power button</dt>
+        <dd>The laptop does a normal shutdown</dd>
+    <dt>After restarting, open Power Manager</dt>
+        <dd>The Xfce Power Manager dialog opens at the General tab</dd>
+    <dt>Perform steps 12 through 18 twice; once while plugged in, changing the settings under "Plugged in" and once unplugged, changing the "On Battery" settings</dt>
+    <dt>Verify "When laptop lid is closed" is set to "Lock screen"</dt>
+    <dt>Close the laptop lid, wait several seconds, open the lid and move the mouse</dt>
+        <dd>Unlock dialog appears (assuming "Lock screen when system is going for sleep" is enabled under the Security tab)</dd>
+    <dt>Enter password and press Unlock</dt>
+        <dd>Desktop appears with Xfce Power Manager dialog still open</dd>
+    <dt>Change the "When laptop lid is closed" setting to "Suspend"</dt>
+    <dt>Close the laptop lid, wait several seconds, reopen and move the mouse</dt>
+        <dd>Laptop is in suspend mode</dd>
+    <dt>Press the appropriate key/button to resume from suspend</dt>
+        <dd>Laptop resumes from suspend mode and the Unlock dialog appears</dd>
+    <dt>Enter password and press Unlock</dt>
+        <dd>Desktop appears with Xfce Power Manager dialog still open</dd>
+    <dt>Plug the laptop back in</dt>
+</dl>
+
+These tests will check the Xfce4 Power Manager settings under the System tab    
+<em>Note: the suspend tests require a minimum of 15 minutes of inactivity, so only perform them if time allows</em>
+<dl>
+    <dt>Click the System tab</dt>
+        <dd>The settings page for "System power saving", Critical power" and "Security" is displayed</dd>
+    <dt>Verify that "System sleep mode:" is set to "Suspend" for both "On battery" and "Plugged in"</dt>
+    <dt>Move both "Put system to sleep when inactive for" sliders to the right to set them for 15 Minutes</dt>
+        <dd>Note: 15 minutes is the shortest duration you can set with the sliders</dd>
+    <dt>Wait 15 minutes</dt>
+        <dd>The laptop suspends at the end of 15 minutes of inactivity</dd>
+    <dt>Press the appropriate key/button to resume from suspend</dt>
+        <dd>Laptop resumes from suspend mode and the Unlock dialog appears</dd>
+    <dt>Enter password and press Unlock</dt>
+        <dd>Desktop appears with Xfce Power Manager  and Settings Editor dialogs still open</dd>
+    <dt>Unplug the laptop and repeat steps 4 through 6</dt>
+        <dd>Results are the same as they were when plugged in</dd>
+    <dt>Plug the laptop in</dt>
+    <dt>Move both of the "Put system to sleep when inactive for" sliders to the left until they say "Never" </dt>
+    <dt>Change the values in the "Critical battery power level:" spin box</dt>
+        <dd>Range can be set from 1% to 20%</dd>
+    <dt>Verify that you can change the "On critical battery power:" options in the picklist</dt>
+        <dd>Newly selected options are set</dd>
+</dl>
+
+These tests will check the Xfce4 Power Manager settings under the Display tab
+<dl>
+    <dt>Click the Display tab</dt>
+        <dd>The settings page for "Display power management settings" and "Brightness reduction" is displayed</dd>
+    <dt>Tick the "Handle display power management" box if it is not already ticked</dt>
+    <dt>Move the "Blank after" slider under "On battery" to approximately 5 minutes</dt>
+    <dt>Move the "Put to sleep after" and "Switch off after" sliders under "On battery" to approximately 10 minutes and 15 minutes respectively</dt>
+    <dt>Move the "Blank after" slider from 5 minutes to 20 minutes</dt>
+        <dd>The "Put to sleep after" and "Switch off after" sliders also move to +1 minute and +2 minutes respectively compared to the "Blank after" slider</dd>
+    <dt>Move the "Switch off after" slider to 10 minutes</dt>
+        <dd>The "Put to sleep after" and Blank after" sliders move to -1 minute and -2 minutes respectively compared to the "Switch off after" slider</dd>
+    <dt>Time permitting, experiment with as many of the settings on this page as you can. They are pretty much self-explanatory</dt>
+        <dd>The display power and brightness respond as expected according to the settings</dd>
+</dl>
+
+<em>This testcase requires suspending/resuming</em>
+
+This test will check that sessions are locked when appropriate.
+<dl>    
+    <dt>On Display tab, set Switch off to 3 minutes, Put to sleep to 2 minutes and Blank Screen to 1 minute</dt>
+    <dt>Click the Security tab</dt>
+        <dd>The settings page opens with current settings displayed</dd>
+    <dt>Change "Automatically lock the session" to "When the screensaver is activated"</dt>
+    <dt>Change the "Delay locking after screensaver" slider to 10 seconds</dt>
+        <dd>After 1 minute of no activity, your screen will go blank</dd>
+    <dt>Move your mouse as soon as the screen blanks</dt>
+        <dd>Your screen is restored</dd>
+    <dt>Wait another minute</dt>
+        <dd>Your screen will go blank</dd>
+    <dt>Wait 10 more seconds and then move your mouse</dt>
+        <dd>The Unlock dialag appears</dd>
+    <dt>Enter your password to unlock the session</dt>
+        <dd>Session unlocked</dd> 
+    <dt>Verify that the "Lock screen when system is going for sleep" switch is disabled</dt>
+    <dt>Suspend your session from the menu</dt>
+    <dt>Resume from suspend</dt>
+        <dd>The screen is restored immediately</dd>
+    <dt>Set the "Lock on suspend" switch to ON</dt>
+    <dt>Suspend your session from the menu</dt>
+    <dt>Resume from suspend</dt>
+        <dd>The Unlock dialog appears</dd>
+</dl>
+
+These tests will check the Xfce4 Power Manager settings under the Devices tab    
+<dl>
+    <dt>Click the Devices tab</dt>
+        <dd>The page for line power and battery status is displayed</dd>
+    <dt>Plug the laptop in</dt>
+        <dd>The "Line power" icon reads "Plugged in"</dd>
+        <dd>The battery vendor icon displays the status of the battery charge</dd>
+    <dt>Unplug the laptop</dt>
+        <dd>The "Line power" icon reads "Not plugged in"</dd>
+        <dd>The battery vendor icon reads "Discharging" and displays the charge percentage and time until discharge</dd>
+        <dd>If "Show notifications" is ticked on the General tab page, a popup notification appears</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
