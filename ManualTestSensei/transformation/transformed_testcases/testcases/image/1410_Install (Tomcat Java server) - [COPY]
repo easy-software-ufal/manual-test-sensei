@@ -5,9 +5,12 @@ This test will check that the Ubuntu Server system is installed and you can logi
 <dl>
     <dt>Boot up the image</dt>
         <dd>The system boots properly and loads the installer displaying a screen with language selection</dd>
-    <dt>Choose the desired language and press "Enter"</dt>
+    <dt>Choose the desired language</dt>
+	<dt>press</dt>
+	<dt>"Enter"</dt>
         <dd>Ubuntu installer main menu is displayed</dd>
-    <dt>Select "Install Ubuntu Server"</dt>
+    <dt>Select</dt>
+	<dt>"Install Ubuntu Server"</dt>
         <dd>The 'Select a language' screen is displayed requesting for a language selection to be used for the installation process</dd>
     <dt>Choose the language to be used during the installation process which will also be the default language for the installed system</dt>
         <dd>The 'Select your location' screen is displayed</dd>
@@ -35,24 +38,32 @@ This test will check that the Ubuntu Server system is installed and you can logi
         <dd>The 'Configure the clock' screen is displayed requesting to verify or setup the timezone</dd>
     <dt>Select the correct location in your time zone</dt>
         <dd>The installer proceeds with the installation and the 'Partition disks' screen is displayed</dd>
-    <dt>Select "Guided - Use entire disk"</dt>
+    <dt>Select "Guided</dt>
+	<dt>- Use entire disk"</dt>
         <dd>The 'Partition disks' screen is displayed requesting to select the disk to partition</dd>
     <dt>Select the desired disk</dt>
         <dd>The installer starts the partitioning of the disk and the 'Partition disks' screen is displayed requesting for confirmation before writing the changes to the disk</dd>
-    <dt>Verify that everything is right and select "Yes"</dt>
+    <dt>Verify that everything is right</dt>
+	<dt>select "Yes"</dt>
         <dd>The installer proceeds with the partitioning of the disk and starts installing the base system</dd>
         <dd>The 'Configure the package manager' screen is displayed requesting to enter a 'HTTP proxy'</dd>
-    <dt>Leave it blank and press "Enter"</dt>
+    <dt>Leave it blank</dt>
+	<dt>press</dt>
+	<dt>"Enter"</dt>
         <dd>The installer proceeds with the configuration of the package manager</dd>
         <dd>The 'Configuration tasksel' screen is displayed requesting to define the upgrades management</dd>
     <dt>Select "No automatic updates"</dt>
         <dd>The 'Software selection' screen is displayed requesting to select the software to be installed</dd>
-    <dt>Choose "Tomcat Java server" using the arrows keys, select it with "space bar" and confirm with "Enter"</dt>
+    <dt>Choose "Tomcat Java server" using the arrows keys</dt>
+	<dt>select it with "space bar"</dt>
+	<dt>confirm with "Enter"</dt>
         <dd>The installer proceeds with the installation of "Tomcat Java server"</dd>
         <dd>The 'Install the GRUB boot loader on a hard disk' screen is displayed requesting to install the GRUB boot loader to the master boot record</dd>
-    <dt>Select "Yes" and wait for the installer to finish</dt>
+    <dt>Select "Yes"</dt>
+	<dt>wait for the installer to finish</dt>
         <dd>An 'Installation Complete' screen is displayed</dd>
-    <dt>Remove the installation media (CD/DVD or USB key), wait for the reboot of the system</dt>
+    <dt>Remove the installation media (CD/DVD or USB key)</dt>
+	<dt>wait for the reboot of the system</dt>
         <dd>The system boots properly and loads into login</dd>
 </dl>
 

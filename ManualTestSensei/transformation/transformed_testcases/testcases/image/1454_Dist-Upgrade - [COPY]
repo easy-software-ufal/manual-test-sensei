@@ -1,8 +1,12 @@
 <!-- Aimless Test, Misplaced Pre-Condition, Exception Handling -->
 <dl>
     <dt><a href="http://cdimage.ubuntu.com/releases/quantal/beta-1/">Install the specific release</a> you wish to dist-upgrade from</dt>
-    <dt>Install all updates available for the release you want to upgrade by running update-manager. Click Check if any update is availabe, and click Install to install them</dt>
-    <dt>Watch it update, noting any errors</dt>
+    <dt>Install all updates available for the release you want to upgrade by running update-manager</dt>
+	<dt>.</dt>
+	<dt>Click Check if any update is availabe,</dt>
+	<dt>click Install to install them</dt>
+    <dt>Watch</dt>
+	<dt>it update, noting any errors</dt>
     <dt>Reboot into your new system:</dt>
         <dd>
             <ul>

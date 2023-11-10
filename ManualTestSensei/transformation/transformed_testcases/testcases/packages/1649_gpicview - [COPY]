@@ -8,7 +8,8 @@ This test will check that gpicview can open an image file
 
 This tests will that gpicview can delete an image file
 <dl>
-    <dt>Click on "Delete File" button at the bottom</dt>
+    <dt>Click on</dt>
+	<dt>"Delete File" button at the bottom</dt>
         <dd>The picture is deleted</dd>
 </dl>
 

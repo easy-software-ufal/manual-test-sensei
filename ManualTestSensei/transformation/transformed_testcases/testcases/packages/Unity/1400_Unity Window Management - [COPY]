@@ -1,6 +1,7 @@
 Test-case wm/close button
 <dl>
     <dt>Press super+w</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Hover over an application</dt>
         <dd>The application contains a close button</dd>
     <dt>Click the close button</dt>
@@ -9,18 +10,21 @@ Test-case wm/close button
 Test-case wm/move
 <dl>
     <dt>Open a window</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Drag the title bar</dt>
         <dd>Window moves</dd>
 </dl>
 Test-case wm/move_edge_resistance
 <dl>
     <dt>Open an application</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Drag the title bar slowly to the left or right of the screen until the window edge gets out of the screen</dt>
         <dd>Window resists a bit before getting out of the screen</dd>
 </dl>
 Test-case wm/active
 <dl>
     <dt>Start two applications</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click on the window for the inactive application</dt>
         <dd>Window gets the focus and is shown above the other application window.</dd>
         <dd>Window title bar lights up (lighter title, colored buttons).</dd>
@@ -41,7 +45,8 @@ Test-case wm/minimize
 </dl>
 Test-case wm/maximize
 <dl>
-    <dt>Open an application, make sure it is not maximized</dt>
+    <dt>Open an application</dt>
+	<dt>make sure it is not maximized</dt>
     <dt>Click on the maximize button of the title bar</dt>
         <dd>Window is maximized</dd>
 </dl>
@@ -79,47 +84,67 @@ Test-case wm/resize
     <dt>Release the mouse button</dt>
         <dd>Window is resized</dd>
     <dt>Ensure the other edges behave the same</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Ensure the corners behave the same (to resize both width and height at the same time)</dt>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 Test-case wm/menu_basic
 <dl>
     <dt>Open an application (not maximized)</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Right click on the title bar</dt>
         <dd>A context menu appears</dd>
-    <dt>Ensure the minimize/maximize/move/close entries work</dt>
+    <dt>Ensure</dt>
+	<dt>the minimize</dt>
+	<dt>/maximize</dt>
+	<dt>/move</dt>
+	<dt>/close entries work</dt>
 </dl>
 Test-case wm/always_on_top
 <dl>
     <dt>Open 2 applications (not maximized)</dt>
-    <dt>Right click on the title bar, click "Always On Top"</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Right</dt>
+	<dt>click on the title bar</dt>
+	<dt>click "Always On Top"</dt>
     <dt>Click the other application window</dt>
         <dd>The other application window is activated, but stays behind the "always on top" window</dd>
-    <dt>Show context menu for "always on top" window again; click on "Always On Top"</dt>
+    <dt>Show context menu for "always on top" window again</dt>
+	<dt>; click on "Always On Top"</dt>
     <dt>Click the other application window</dt>
         <dd>The other application window is activated and is moved in front of the previous window</dd>
 </dl>
 Test-case wm/workspace_always_visible
 <dl>
     <dt>Open an application (not maximized)</dt>
-    <dt>Right click on the title bar, click on "Always on Visible Workspace"</dt>
+    <dt>Right</dt>
+	<dt>click on the title bar</dt>
+	<dt>click on "Always on Visible Workspace"</dt>
     <dt>Click on the spread icon in the Launcher</dt>
         <dd>The window is visible in all workspaces</dd>
     <dt>Select the window</dt>
-    <dt>Right click on the title bar, click on "Only on This Workspace"</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Right</dt>
+	<dt>click on the title bar</dt>
+	<dt>click on "Only on This Workspace"</dt>
     <dt>Click on the spread icon in the Launcher</dt>
         <dd>The window is only visible in the current workspace</dd>
 </dl>
 Test-case wm/workspace_move_to
 <dl>
     <dt>Open an application (not maximized)</dt>
-    <dt>Right click on the title bar, click on "Move to Workspace Right"</dt>
+    <dt>Right</dt>
+	<dt>click on the title bar</dt>
+	<dt>click on</dt>
+	<dt>"Move to Workspace Right"</dt>
         <dd>Window disappears</dd>
     <dt>Click on the spread icon in the Launcher</dt>
         <dd>Window is visible on the top-right workspace</dd>
     <dt>Select the window</dt>
     <dt>Right click on the title bar</dt>
         <dd>Menu entry title has changed to "Move to Workspace Left"</dd>
-    <dt>Move the mouse to the "Move to Another Workspace" menu item</dt>
+    <dt>Move the mouse to the</dt>
+	<dt>"Move to Another Workspace" menu item</dt>
         <dd>4 items appear, item "Workspace 2" is disabled</dd>
     <dt>Click on "Workspace 1"</dt>
         <dd>Window disappears</dd>
@@ -130,13 +155,16 @@ Test-case wm/management_shortcuts
 <dl>
     <dt>Open an application</dt>
     <dt>Make sure the application is focused.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Press ALT + F4</dt>
         <dd>The application should close</dd>
 </dl>
 Test-case wm/stacking
 <dl>
-    <dt>open an application and make it maximised</dt>
+    <dt>open an application</dt>
+	<dt>make it maximised</dt>
     <dt>Attempt to open the dash</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Attempt to open indicators</dt>
         <dd>The dash and all indicators appear stacked correctly on top of the window</dd>
 </dl>

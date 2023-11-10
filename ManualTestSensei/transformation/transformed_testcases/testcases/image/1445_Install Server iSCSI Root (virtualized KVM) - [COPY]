@@ -8,8 +8,11 @@ Scope of this testcase is to install an iSCSI server on KVM
 
 <dl>
     <dt>sudo apt-get install qemu-kvm virt-manager</dt>
-    <dt>Open Virtual Manager and connect to localhost. We will be using the default network for the first part of the environment set up, which allows DHCP and forwarding, as we</dt>
-	<dt>will need Internet connection</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Open Virtual Manager</dt>
+	<dt>connect to localhost. We will be using the default network for the first part of the environment set up, which allows DHCP and forwarding, as we</dt>
+	<dt>will need Internet</dt>
+	<dt>connection</dt>
         <dd><img src="http://testcases.qa.ubuntu.com/Install/ServeriSCSIRoot/KVMExample?action=AttachFile&do=get&target=Step1.png" alt="" /></dd>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.

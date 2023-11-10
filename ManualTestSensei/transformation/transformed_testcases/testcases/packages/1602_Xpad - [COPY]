@@ -1,6 +1,7 @@
 This test will check that XPad can start and create a new pad.
 <dl>
-    <dt>XPad can be activated in the Lubuntu Start Menu at "Accessories". Click on "XPad"</dt>
+    <dt>XPad can be activated in the Lubuntu Start Menu at "Accessories".</dt>
+	<dt>Click on "XPad"</dt>
         <dd>A new symbol appears in the notifications area</dd>
     <dt>Left click on the symbol</dt>
         <dd>A new pad opens</dd>
@@ -14,11 +15,18 @@ This test will check that XPad can change the pad properties.
 <dl>
     <dt>Right-click on the XPad symbol in the notification area, then on "Preferences"</dt>
         <dd>A window appears, showing the XPad preferences</dd>
-    <dt>Change the properties. Check "Use this font” and click on the font name</dt>
+    <dt>Change the properties</dt>
+	<dt>.</dt>
+	<dt>Check</dt>
+	<dt>"Use this font”</dt>
+	<dt>click on the font name</dt>
         <dd>A window opens, showing the font properties</dd>
-    <dt>Select Serif regular 11. Click on "OK"</dt>
+    <dt>Select Serif regular 11</dt>
+	<dt>.</dt>
+	<dt>Click on "OK"</dt>
         <dd>The font window closes</dd>
-    <dt>In the preferences window, click on "Close"</dt>
+    <dt>In the preferences window, click on</dt>
+	<dt>"Close"</dt>
         <dd>The preferences window closes</dd>
     <dt>Left-click on the XPad symbol in the notification area</dt>
         <dd>The pad you just closed opens again, showing the new selected font</dd>
@@ -32,7 +40,8 @@ This test will check that XPad can open and delete an existing pad.
         <dd>The pad you just closed opens again</dd>
     <dt>Click on the trash bin at the bottom of the pad</dt>
         <dd>A window opens, showing a notification</dd>
-    <dt>Click on "Delete"</dt>
+    <dt>Click on</dt>
+	<dt>"Delete"</dt>
         <dd>The pad is closed and deleted</dd>
 </dl>
 

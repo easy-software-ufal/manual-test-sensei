@@ -13,7 +13,9 @@ This test will check that Gedit can save files
         <dd>The side panel opens and closes properly</dd>
     <dt>Click on Save</dt>
         <dd>'Save as' window appears</dd>
-    <dt>Type in 'gedit.txt' for the name of the file, select any folder and press the save button</dt>
+    <dt>Type in 'gedit.txt' for the name of the file</dt>
+	<dt>select any folder</dt>
+	<dt>press the save button</dt>
         <dd>'Save as' window closes</dd>
     <dt>Close the text editor by pressing the 'x' in the left hand corner</dt>
         <dd>Gedit closes</dd>
@@ -23,7 +25,8 @@ This test will check that Gedit can save files
         <dl>
             <dt>Open File manager</dt>
                 <dd>File manager launches</dd>
-            <dt>Navigate to the directory where you saved the file gedit.txt and double click it to launch gedit</dt>
+            <dt>Navigate to the directory where you saved the file gedit.txt</dt>
+	<dt>double click it to launch gedit</dt>
                 <dd>Gedit launches and the displays the text "The quick brown foxes jumps over the lazy dog"</dd>
             <dt> Type in "The quick brown fox jumps over the lazy dog"</dt>
                 <dd>Text appears</dd>
@@ -41,7 +44,13 @@ This test will check that Gedit can save files
                 <dd>The search box closes and focus returns to the document, with the search term still highlighted</dd>
             <dt>Press "Ctrl+H"</dt>
                 <dd>The 'Replace' dialog appears</dd>
-            <dt>In the 'Search for' box type 'fox', and in the 'Replace with' box, type 'potato'. Then click "Replace all"</dt>
+            <dt>In the 'Search for'</dt>
+	<dt>box</dt>
+	<dt>type 'fox', and in the</dt>
+	<dt>'Replace with' box</dt>
+	<dt>type 'potato'.</dt>
+	<dt>Then click</dt>
+	<dt>"Replace all"</dt>
                 <dd>The 'Replace' dialog is not closed</dd>
                 <dd>The text displayed now reads "The quick brown potato jumps over the lazy dog"</dd>
 </dl>
@@ -55,13 +64,17 @@ This test will check that Gedit can save HTML files correctly
         <dd>Text appears</dd>
     <dt>Click on Save</dt>
         <dd>'Save as' window appears</dd>
-    <dt>Type in gedit.html for the name of the file, select any folder and press the save button</dt>
+    <dt>Type in gedit.html for the name of the file</dt>
+	<dt>select any folder</dt>
+	<dt>press the save button</dt>
         <dd>'Save as' window closes</dd>
     <dt>Close the text editor by pressing the 'x' in the left hand corner</dt>
         <dd>Gedit closes</dd>
     <dt>Open File manager</dt>
         <dd>File manager launches</dd>
-    <dt>Navigate to the directory where you saved the file and double click it to launch the default browser and display the html file</dt>
+    <dt>Navigate to the directory where you saved the file</dt>
+	<dt>double click it to launch the default browser</dt>
+	<dt>display the html file</dt>
         <dd>Your default browser launches and displays a page with a link to the ubuntu website</dd>
 </dl>
 

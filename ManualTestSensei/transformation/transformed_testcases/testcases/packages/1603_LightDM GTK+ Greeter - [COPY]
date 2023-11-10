@@ -5,20 +5,28 @@ This test will check that you can change a session correctly
     <dt>Logout of existing session</dt>
         <dd>Greeter screen appears</dd>
     <dt>From session menu (gear icon), choose any session</dt>
-    <dt>In user dialogue, choose user, enter password as required and press Log In</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>In user dialogue, choose user</dt>
+	<dt>enter password as required</dt>
+	<dt>press Log In</dt>
         <dd>The selected session starts</dd>
-    <dt>Logout of the session, change session to another session and repeat login steps</dt>
+    <dt>Logout of the session</dt>
+	<dt>change session to another session</dt>
+	<dt>repeat login steps</dt>
         <dd>The other session starts</dd>
     <dt>Logout</dt>
+		<dd>[FILL VERIFICATION]</dd>
         <dd>Greeter screen shows</dd>
 </dl>
 
 This test will check that localisation changes are applied correctly
 <dl>
     <dt>From Localisation menu (flag icon) choose one of the available languages</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>In user dialogue, choose user, enter password as required and press Log In</dt>
         <dd>Session starts with the expected language</dd>
-    <dt>Logout of session, change language and repeat login steps</dt>
+    <dt>Logout of session, change language</dt>
+	<dt>repeat login steps</dt>
         <dd>Session starts with new language</dd>
     <dt>Logout</dt>
         <dd>Greeter screen shows</dd>
@@ -27,10 +35,12 @@ This test will check that localisation changes are applied correctly
 This test will check that Accessibility options are applied correctly
 <dl>
     <dt>From Accessibility options - select both Large Font and High Contrast</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>In user dialogue, choose user, enter password as required and press Log In</dt>
         <dd>Session starts with the expected font options</dd>
     <dt>Logout</dt>
     <dt>From Accessibility options - deselect both Large Font and High Contrast</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>In user dialogue, choose user, enter password as required and press Log In</dt>
         <dd>Session starts with the expected font options</dd>
     <dt>Logout</dt>
@@ -47,7 +57,9 @@ This test will check that System Power options work correctly
     <dt>Press Shut Down</dt>
         <dd>Machine shuts down</dd>
     <dt>Restart machine</dt>
-    <dt>From System Power options select Suspend if available</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>From System Power options</dt>
+	<dt>select Suspend if available</dt>
         <dd>Dialogue appears with Cancel or Suspend Option</dd>
     <dt>Press Suspend</dt>
         <dd>Machine suspends</dd>

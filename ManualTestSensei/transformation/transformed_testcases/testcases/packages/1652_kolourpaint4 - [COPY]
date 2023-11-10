@@ -3,7 +3,10 @@ This test will check that Kolourpaint can draw an image
     <dt>Launch kolourpaint</dt>
         <dd>kolourpaint opens and showing one window by default</dd>
     <dt>Click on 'Pen(P)' button in the leftside of the window</dt>
-        <dd>Draw anything in the drawing area</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Draw anything in the drawing area</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <!-- EAGER STEP -->    
     <dt>Click on 'Save' > Enter the name of the file > Click on 'Save' button in the 'Save Image' dialogue box</dt>
         <dd>The image is saved</dd>

@@ -62,6 +62,7 @@ This test will check that Network Manager can establish a 3G connection
 </dl>
 
 This test will check that Network Manager can establish a connection to Cisco VPN
+Ensure done (1)
 <dl>
     <dt> Please ensure you have a Cisco VPN to connect to.</dt>
     <dt> Install the network-manager-vpnc package, make sure both network-manager-vpnc and network-manager-vpnc-gnome get installed.</dt>
@@ -70,13 +71,24 @@ This test will check that Network Manager can establish a connection to Cisco VP
     <dt> Click the VPN tab.</dt>
     <dt> Click Add, then select the correct type of VPNplugin.</dt>
     <dt> Create settings for your VPN connection</dt>
-    <dt> When done, close the connection manager window.</dt>
+    <dt> close the connection manager window. (1)</dt>
     <dt> Click on the NetworkManager icon</dt>
     <dt> Click on your VPN profile under "VPN Connections"</dt>
     <dt> Enter credentials if prompted.</dt>
         <dd>The NetworkManager icon will "swirl", then you should see a small lock at the bottom right corner of the normal connection icon (half-circles or arrows).</dd>
         <dd>Are you now able to access resources restricted to your VPN?</dd>
 </dl>
+[False Condition] 
+<dl>
+    <dt> Please ensure you have a Cisco VPN to connect to.</dt>
+    <dt> Install the network-manager-vpnc package, make sure both network-manager-vpnc and network-manager-vpnc-gnome get installed.</dt>
+    <dt> Right-click on the NetworkManager icon</dt>
+    <dt> Click Edit Connections...</dt>
+    <dt> Click the VPN tab.</dt>
+    <dt> Click Add, then select the correct type of VPNplugin.</dt>
+    <dt> Create settings for your VPN connection</dt>
+</dl>
+
 
 This test will check that Network Manager can export and import Cisco VPN connections
 <dl>

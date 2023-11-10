@@ -16,7 +16,8 @@ This test will check that Session chooser appears at login. Logging out will be 
         <dd>Tick appears in box</dd>
     <dt>Press Close</dt>
         <dd>Session and Startup closes</dd>
-    <dt>From whiskermenu power button choose logout, select Save session for future logins</dt>
+    <dt>From whiskermenu power button choose logout</dt>
+	<dt>select Save session for future logins</dt>
         <dd>Tick appears in box</dd>
     <dt>Press logout</dt>
         <dd>User is logged out</dd>
@@ -41,7 +42,8 @@ This test will check that applications are restored with sessions. Logging out w
         <dd>Session save dialogue momentarily appears and closes</dd>
     <dt>Close Session and Startup with close button</dt>
         <dd>Session dialogue closes</dd>
-    <dt>Focus on LibreOffice Writer and press Ctrl+Q</dt>
+    <dt>Focus on LibreOffice Writer</dt>
+	<dt>press Ctrl+Q</dt>
         <dd>LibreOffice Writer closes</dd>
     <dt>From whiskermenu power button choose logout</dt>
         <dd>Logout dialogue appears with Save session ticked</dd>
@@ -89,20 +91,32 @@ This test will check that Applications added the Autostart list start correctly.
     <dt>Go to Application Autostart tab</dt>
         <dd>Dialogue changes to show current Autostart applications</dd>
     <dt>Press Add button</dt>
-        <dd>Add application dialogue appears</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Add application dialogue appears</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>In Name box type Test, select Description box</dt>
         <dd>Test shows in Name box</dd>
     <dt>In description box type LibreOffice Writer test, select Command box</dt>
         <dd>LibreOffice Writer test shows in Description box</dd>
     <dt>Click button to right of Command box</dt>
-        <dd>Select command dialogue appears</dd>
-    <dt>Navigate to /usr/bin/LibreOffice Writer, select and click OK</dt>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Select command dialogue appears</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Navigate to /usr/bin/LibreOffice Writer</dt>
+	<dt>select</dt>
+	<dt>click OK</dt>
         <dd>Command selection dialogue closes, command box populated with command</dd>
     <dt>Click OK</dt>
-        <dd>Add application dialogue closes</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Add application dialogue closes</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Move to the bottom of the application list</dt>
         <dd>New item shown as Test(LibreOffice Writer Test) with box populated with a tick</dd>
-    <dt>Close Session and startup, logout and then login once more</dt>
+    <dt>Close Session and startup, logout</dt>
+	<dt>then login once more</dt>
         <dd>User logs back into Desktop, LibreOffice Writer starts</dd>
 </dl>
 

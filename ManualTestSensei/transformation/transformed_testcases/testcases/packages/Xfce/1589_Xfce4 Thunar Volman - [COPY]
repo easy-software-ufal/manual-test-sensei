@@ -9,7 +9,11 @@ This test will check that Volume Management is enabled and configurable
     <dt>Select Edit->Preferences</dt>
         <dd>The File Manager Preferences dialog opens</dd>
     <dt>Click the 'Advanced' tab</dt>
-    <dt>Verify that 'Enable Volume Management' is checked, if not, check it.</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Verify that</dt>
+	<dt>'Enable Volume Management' is</dt>
+	<dt>checked, if not</dt>
+	<dt>check it.</dt>
     <dt>Click the 'Configure' link</dt>
         <dd>The Removable Drives and Media dialog opens</dd>
 </dl>
@@ -17,40 +21,57 @@ This test will check that Volume Management is enabled and configurable
 This test will check that Storage options work as expected
 <dl>
     <dt>Make sure that the 'Storage' tab is selected</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Uncheck all the options under 'Removable Storage'</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Plug in an external hard drive or USB flash drive</dt>
         <dd>The drive appears in the File Manager side pane but is unmounted</dd>
     <dt>Insert a CD or DVD containing data files into an appropriate drive</dt>
         <dd>The disc appears in the File Manager side pane but is unmounted</dd>
-    <dt>Right-click on both of those media in File Manager and select 'Eject'</dt>
+    <dt>Right-click on both of those media in File Manager</dt>
+	<dt>select</dt>
+	<dt>'Eject'</dt>
         <dd>They disappear from the side pane</dd>
-    <dt>In the Removable Drives and Media dialog, check both 'Mount removable drives when hot-plugged' and 'Mount removable media when inserted'</dt>
+    <dt>In the Removable Drives and Media dialog, check both</dt>
+	<dt>'Mount removable drives when hot-plugged'</dt>
+	<dt>'Mount removable media when inserted'</dt>
     <dt>Insert the USB drive and optical disc again</dt>
         <dd>Both media appear in the side pane of File Manager and are automatically mounted but no contents are displayed in the File Manager window</dd>
     <dt>Eject both media again</dt>
         <dd>They disappear from the side pane</dd>
-    <dt>In the Volume Manager, check 'Browse removable media when inserted'</dt>
+    <dt>In the Volume Manager, check</dt>
+	<dt>'Browse removable media when inserted'</dt>
     <dt>Insert the USB drive and optical disc again</dt>
         <dd>Both media appear in the side pane, they are automatically mounted and their contents are displayed in the File Manager window</dd>
     <dt>Eject both media</dt>
-    <dt>Check the 'Burn a CD or DVD when a blank disc is inserted' option under 'Blank CDs and DVDs'</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Check the</dt>
+	<dt>'Burn a CD or DVD when a blank disc is inserted' option under 'Blank CDs and DVDs'</dt>
         <dd>The two 'Command' fields become active and are pre-populated with an 'xfburn' command</dd>
     <dt>Insert a blank recordable CD or DVD into an RW optical drive</dt>
         <dd>A dialog appears asking for confirmation to burn the disc</dd>
-    <dt>Close the dialog and eject the disc</dt>
+    <dt>Close the dialog</dt>
+	<dt>eject the disc</dt>
 </dl>
 
 This test will check that the Multimedia options work as expected
 <dl>
     <dt>Click the 'Multimedia' tab</dt>
         <dd>Options for Audio CDs, Video CDs/DVDs and Portable Music Players are displayed</dd>
-        <dd>Note: portable music player formats vary too greatly to allow a standardized test to be included here </dd>
+        
+	<dt>Note: portable music player formats vary too greatly to allow a standardized test to be included here </dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Ensure that both the Audio and Video options are checked and that there is a default command for Parole in the 'Command:' fields</dt>
-    <dt>Ensure that the 'Mount removable media when inserted' option is checked under the 'Storage' tab</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Ensure that the</dt>
+	<dt>'Mount removable media when inserted' option is checked under the 'Storage' tab</dt>
     <dt>Insert pre-recorded audio and video discs in an optical drive</dt>
         <dd>The discs play automatically after they are inserted</dd>
     <dt>Eject the discs</dt>
-    <dt>Uncheck the options to play when inserted and insert the discs again</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Uncheck the options to play when</dt>
+	<dt>inserted</dt>
+	<dt>insert the discs again</dt>
         <dd>The discs will not play automatically but will behave according to the current settings under the Storage tab for removable media</dd>
 </dl>
 

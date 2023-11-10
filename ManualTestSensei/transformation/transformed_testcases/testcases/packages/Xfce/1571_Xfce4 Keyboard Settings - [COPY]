@@ -2,28 +2,37 @@ This test will check that keyboard behaviour is correctly applied. The test will
 <dl>
     <dt>Open Keyboard from Settings</dt>
         <dd>Keyboard Setting dialogue opens at Behaviour</dd>
-    <dt>Toggle 'Restore num lock state' button</dt>
+    <dt>Toggle</dt>
+	<dt>'Restore num lock state' button</dt>
         <dd>Tick disappears from box</dd>
-    <dt>In Test Area, press a letter and hold down</dt>
+    <dt>In Test Area, press a letter</dt>
+	<dt>hold down</dt>
         <dd>Letter pressed is repeated</dd>
-    <dt>Toggle Enable key repeat</dt>	
+    <dt>Toggle Enable key repeat</dt>
+		<dd>[FILL VERIFICATION]</dd>	
     <dt>In Test Area, press a letter and hold down</dt>
         <dd>Letter pressed is not repeated</dd>
     <dt>Toggle Enable key repeat</dt>
     <dt>Change Repeat delay to 1000</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>In Test Area, press a letter and hold down</dt>
         <dd>Time to start repeating letter increases to 1000ms</dd>
     <dt>Change Repeat delay to 50</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>In Test Area, press a letter and hold down</dt>
         <dd>Time to start repeating letter decreases to 50ms</dd>
     <dt>Reset repeat delay to default 500</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Change Repeat Speed to 250</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>In Test Area, press a letter and hold down</dt>
         <dd>Speed of key repeat increases</dd>
     <dt>Change Repeat Speed to 1</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>In Test Area, press a letter and hold down</dt>
         <dd>Speed of key repeat decreases</dd>
     <dt>Reset repeat delay to default 20</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Toggle Cursor show blinking</dt>
         <dd>Tick disappears from box</dd>
     <dt>Select Test Area</dt>
@@ -39,18 +48,24 @@ This test will check that keyboard behaviour is correctly applied. The test will
     <dt>Reset Blink delay to default 1200</dt>
         <dd>Cursor blink returns to normal speed</dd>
     <dt>Restart machine</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Open Keyboard from Settings</dt>
         <dd>Keyboard Setting dialogue opens at Behaviour</dd>
-        <dd>Restore num lock state is unticked</dd>
+        
         <dd>Num lock is off</dd>
+	<dt>Restore num lock state is unticked</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Turn num lock on</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Toggle 'Restore num lock state' button</dt>
         <dd>Tick appears in box</dd>
     <dt>Restart machine</dt>
     <dt>Open Keyboard from Settings</dt>
         <dd>Keyboard Setting dialogue opens at Behaviour</dd>
-        <dd>Restore num lock state is ticked</dd>
+        
         <dd>Num lock is on</dd>
+	<dt>Restore num lock state is ticked</dt>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 
 This test will check that application shortcuts are applied correctly
@@ -105,7 +120,9 @@ This test will check that shortcuts and their targets can be changed
 <dl>
     <dt>Double click on Command 'LibreOffice Writer'</dt>
         <dd>Shortcut Command dialogue opens with LibreOffice Writer highlighted</dd>
-    <dt>Press backspace and type gnome-mines, press OK</dt>
+    <dt>Press backspace</dt>
+	<dt>type gnome-mines</dt>
+	<dt>press OK</dt>
         <dd>Shortcut command dialogue closes</dd>
         <dd>Command listed as Mines</dd>
     <dt>Press Super+3</dt>
@@ -138,34 +155,45 @@ This test will check that Layout options apply correctly
         <dd>Layout dialogue appears</dd>
     <dt>Press Add button</dt>
         <dd>Keyboard layout selection dialogue appears</dd>
-    <dt>Select a new layout and press OK</dt>
+    <dt>Select a new layout</dt>
+	<dt>press OK</dt>
         <dd>New layout added to Keyboard Layout list</dd>
     <dt>Open a text editor</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Type some symbols</dt>
-    <dt>In Keyboard layout list - select new layout and move to top of the list</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>In Keyboard layout list - select new layout</dt>
+	<dt>move to top of the list</dt>
         <dd>New layout highlighted</dd>
     <dt>Type some text or symbols</dt>
         <dd>Some or all characters typed are different</dd>
     <dt>Select new layout in layout list</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Press Delete button</dt>
         <dd>New layout is removed from list</dd>
     <dt>Select existing layout in layout list</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Press Edit button</dt>
         <dd>Keyboard Layout selection dialogue appears with current choice highlighted</dd>
-    <dt>Change layout, press OK</dt>
+    <dt>Change layout</dt>
+	<dt>press OK</dt>
         <dd>Layout in list changes</dd>
     <dt>Type some characters in text document</dt>
         <dd>Symbols do not match keyboard</dd>
     <dt>Press Edit button</dt>
         <dd>Keyboard Layout selection dialogue appears with current choice highlighted</dd>
-    <dt>Set layout to match keyboard, press OK</dt>
+    <dt>Set layout to match keyboard</dt>
+	<dt>press OK</dt>
         <dd>Layout in list changes</dd>
     <dt>Type some characters in text document</dt>
         <dd>Symbols match keyboard</dd>
     <dt>Toggle Use System Defaults</dt>
         <dd>Warning dialogue appears</dd>
     <dt>Press OK</dt>
-        <dd>Use default button ticked, model and layout options unavailable and greyed out</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Use default button ticked, model and layout options unavailable and greyed out</dt>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.

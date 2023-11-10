@@ -12,7 +12,9 @@ This test will check that mypaint can open an image file
     <dt>Select "File" > "Open" from the "MyPaint" dropdown box</dt>
         <dd>A window will be opened with the list of images from our system</dd>
     <!-- UNSPECIFIED PARAMETER -->
-    <dt>Select an image and click on "Open" button</dt>
+    <dt>Select an image</dt>
+	<dt>click on</dt>
+	<dt>"Open" button</dt>
         <dd>The image is displayed in the mypaint window</dd>
 </dl>
 

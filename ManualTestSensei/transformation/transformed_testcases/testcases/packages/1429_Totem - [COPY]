@@ -11,16 +11,22 @@ This test will check that Totem can playback video
         <dd>Video should pause and the button becomes a play button</dd>
     <dt> Press the play button</dt>
         <dd>Video should begin playing</dd>
-    <dt>Go to the top bar and click the "Movie" menu and later "Properties"</dt>
+    <dt>Go to the top bar</dt>
+	<dt>click the "Movie" menu and later "Properties"</dt>
         <dd>A new panel should appear with information about the video (Video information, Sound information...)</dd>
         <dd>Do you get the same result using the key combination Ctrl+P ?</dd>
-    <dt>Go to the top bar and click the "View" menu and later "Subtitles"</dt>
+    <dt>Go to the top bar</dt>
+	<dt>click the "View" menu and later "Subtitles"</dt>
         <dd>A new window should appear, select a subtitle file</dd>
         <dd>Can you see the subtitles on the video?</dd>
-    <dt>Go to the top bar and click the "Edit" menu and later "Create Screenshot Gallery..."</dt>
+    <dt>Go to the top bar</dt>
+	<dt>click the "Edit" menu and later</dt>
+	<dt>"Create Screenshot Gallery..."</dt>
         <dd>A new interface will appear called "Save Gallery"</dd>
         <dd>Can you create a folder?</dd>
-    <dt>Go to the top bar and click the "Edit" menu and later "Take Screenshot"</dt>
+    <dt>Go to the top bar</dt>
+	<dt>click the "Edit" menu and later</dt>
+	<dt>"Take Screenshot"</dt>
         <dd>A new image file will appear in your Pictures folder</dd>
         <dd>Do you get the same result using the key combination Ctrl+S ?</dd>
     <dt> Press the full screen button</dt>
@@ -44,9 +50,11 @@ This test will check that the plugins Work
 <dl>
     <dt>Open the Totem</dt>
         <dd>Can you open Totem correctly?</dd>
-    <dt>Go to the top bar and click on "Edit" and later on "Plugins"</dt>
+    <dt>Go to the top bar</dt>
+	<dt>click on "Edit" and later on "Plugins"</dt>
         <dd>A new "Configure Plugins" window appears</dd>
-    <dt>Select a plugin and mark it</dt>
+    <dt>Select a plugin</dt>
+	<dt>mark it</dt>
     <dt>Click the "About" button</dt>
         <dd>A new window appears with information about the plugin and its developers</dd>
     <dt>Select "Close"</dt>
@@ -59,24 +67,31 @@ This test will check that the Preferences Work
 <dl>
     <dt>Open Totem</dt>
         <dd>Can you open totem correctly?</dd>
-    <dt>Go to the top bar and click the "Edit" menu and later "Preferences"</dt>
+    <dt>Go to the top bar</dt>
+	<dt>click the "Edit" menu and later "Preferences"</dt>
         <dd>A new interface called "Preferences" must appear</dd>
     <dt>Go to the "General" tab</dt>
-    <dt>Click on "Start playing files from last position"</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Click on</dt>
+	<dt>"Start playing files from last position"</dt>
         <dd>Can you see the changes on the video?</dd>
-    <dt>Click on "Load subtitle files when movie is loaded"</dt>
+    <dt>Click on</dt>
+	<dt>"Load subtitle files when movie is loaded"</dt>
         <dd>Can you see the changes on the video?</dd>
     <dt>Change the Text Subtitles Font</dt>
         <dd>Can you see the changes on the video?</dd>
     <dt>Change the Text Subtitles Encoding</dt>
         <dd>Can you see the changes on the video?</dd>
-    <dt>Click on "Load chapter files when movie is loaded"</dt>
+    <dt>Click on</dt>
+	<dt>"Load chapter files when movie is loaded"</dt>
         <dd>Can you see the changes on the video?</dd>
     <dt>Go to the "Display" tab</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Change the Display settings</dt>
         <dd>Can you see the changes on the video?</dd>
         <em>we're going to change the Visual Effects settings</em>
-        <dt>Click on "Show visual effects when an audio file is played"</dt>
+        <dt>Click on</dt>
+	<dt>"Show visual effects when an audio file is played"</dt>
         <dt>Change the "Type of visualization"</dt>
             <dd>Can you see the changes on the video?</dd>
         <dt>Change the "Visualization size"(Normal, Large, Extra Large)</dt>
@@ -86,6 +101,7 @@ This test will check that the Preferences Work
         <dt>Click on "Reset to Defaults"</dt>
             <dd>All changes were changed?</dd>
         <dt>Go to the "Audio" tab</dt>
+		<dd>[FILL VERIFICATION]</dd>
         <dt>Change the audio output type</dt>
             <dd>Can you feel any difference?</dd>
 </dl>
@@ -97,18 +113,23 @@ This testcase will check that videos mode work, we're going to need at least thr
         <dd>Can you open totem correctly?</dd>
     <dt>Open a video</dt>
         <dd>Can you see the video correctly?</dd>
-    <dt>Go to the top bar and click the "Edit" menu and later "Repeat Mode"</dt>
+    <dt>Go to the top bar</dt>
+	<dt>click the "Edit" menu and later "Repeat Mode"</dt>
         <dd>A mark will appear next to "Repeat Mode", can you see it?</dd>
         <dd>The video will be repeat until you stop it.</dd>
     <dt>Click on "Repeat Mode" to turn it off</dt>
         <dd>The mark should disappear</dd>
     <dt>We're going to open three videos for this test</dt>
-    <dt>Go to the top bar and click the "Edit" menu and later "Shuffle Mode"</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Go to the top bar</dt>
+	<dt>click the "Edit" menu and later "Shuffle Mode"</dt>
         <dd>A mark will appear next to "Shuffle Mode", can you see it?</dd>
         <dd>Do you see the videos on mode shuffle?</dd>
     <dt>Click on "Shuffle Mode" to turn it off</dt>
         <dd>The mark should disappear</dd>
-    <dt>Go to the top bar and click the "Edit" menu and later "Clear Playlist"</dt>
+    <dt>Go to the top bar</dt>
+	<dt>click the "Edit" menu and later</dt>
+	<dt>"Clear Playlist"</dt>
         <dd>The videos have disappeared?</dd>
 </dl>
 
@@ -123,15 +144,19 @@ This test will check that the Help menu works
         <dd>Is there any issue with the content?</dd>
     <dt>Close the "Totem Movie Player Manual" window</dt>
         <dd>The main Totem window is displayed</dd>
-    <dt>Go to the top bar and click the "Help" menu and later "Contents"</dt>
+    <dt>Go to the top bar</dt>
+	<dt>click the "Help" menu and later "Contents"</dt>
         <dd>The same content which was displayed in the previous step is shown</dd>
-    <dt>Close the "Totem Help" window</dt>
+    <dt>Close the "</dt>
+	<dt>Totem Help" window</dt>
         <dd>The main Totem window is displayed</dd>
-    <dt>Go to the top bar and click the "Help" menu and later "About"</dt>
+    <dt>Go to the top bar</dt>
+	<dt>click the "Help" menu and later "About"</dt>
         <dd>A new "About Totem" window appears</dd>
     <dt>Press the "Totem Homepage" link</dt>
         <dd>Firefox open a valid url?</dd>
     <dt>Go back to the "About Totem" window</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Press the "Credits" button</dt>
         <dd>The interface shows credits?</dd>
     <dt>Press the "License" button</dt>

@@ -6,7 +6,9 @@ This tests that xfce4 notes works
         <dd>Text appears</dd>
     <dt>Press Ctrl+Z</dt> 
         <dd>The text dissapears</dd>
-    <dt>Press F2, then type 'test1', press OK</dt>
+    <dt>Press F2</dt>
+	<dt>then type 'test1'</dt>
+	<dt>press OK</dt>
         <dd>The title is now "Notes - test1"</dd>
     <dt>Press Ctrl+N</dt>
         <dd>A new note opens</dd>
@@ -23,6 +25,7 @@ This tests that xfce4 notes works
     <dt>Change each setting visible</dt>
         <dd>Each change does as expected</dd>
     <dt>Press Close to close the properties dialogue</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Press Ctrl+Shift+N</dt>
         <dd>A new Group (window) opens</dd>
 </dl>
@@ -34,9 +37,11 @@ This tests that xfce4 notes remembers notes
     <dt>Type some text</dt>
         <dd>Text appears</dd>
     <dt>Click "X"</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click the indicator icon for notes</dt>
         <dd>All your text is still there</dd>
-    <dt>Restart your computer, Then open notes</dt>
+    <dt>Restart your computer</dt>
+	<dt>Then open notes</dt>
         <dd>Your text is still there</dd>
 </dl>
 

@@ -20,7 +20,8 @@ This test will check that Technical Description is available (depends on updates
 </dl>
 This test will check that Updates are installed correctly (depends on updates being available)
 <dl>
-    <dt>Press Install Now, provide password if required</dt>
+    <dt>Press Install Now</dt>
+	<dt>provide password if required</dt>
         <dd>Installation proceeds</dd>
         <dd>Popup opens after updates installed</dd>
     <dt>Press OK</dt>

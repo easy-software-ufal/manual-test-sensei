@@ -3,8 +3,12 @@ This test will check that Gnumeric will open, create a new file and close withou
     <dt>Open Gnumeric from your Menu</dt>
         <dd>Gnumeric opens</dd>
     <dt>Press Ctrl+S</dt>
-        <dd>Save the current workbook dialogue opens</dd>
-    <dt>File name set to Book1, Set Destination to Desktop, press Save</dt>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Save the current workbook dialogue opens</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>File name set to Book1, Set Destination to Desktop</dt>
+	<dt>press Save</dt>
         <dd>Gnumeric window name changes to Book1.Gnumeric</dd>
         <dd>Book1.Gnumeric shows on Desktop</dd>
     <dt>Press Ctrl+Q</dt>
@@ -23,8 +27,12 @@ This test will check that Gnumeric accepts input and Save As
     <dt>Enter some data in cells</dt>
         <dd>Data entered appears in cells as typed</dd>
     <dt>Press Shift+Ctrl+S</dt>
-        <dd>Save as dialogue appears, original file name and path highlighted</dd>
-    <dt>Change filename to Book2, press Save</dt>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Save as dialogue appears, original file name and path highlighted</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Change filename to Book2</dt>
+	<dt>press Save</dt>
         <dd>Gnumeric window name changes to Book2.Gnumeric</dd>
         <dd>Book2.Gnumeric shows on Desktop</dd>
     <dt>Press Ctrl+Q</dt>
@@ -37,7 +45,8 @@ This test will check that Gnumeric will close seperate windows
         <dd>Gnumeric opens with blank Book1 file</dd>
     <dt>Double Click Book2 on desktop</dt>
         <dd>Gnumeric opens with Book2 showing previously entered data</dd>
-    <dt>Focus on Book1 and press Ctrl+W</dt>
+    <dt>Focus on Book1</dt>
+	<dt>press Ctrl+W</dt>
         <dd>Book1 closes leaving Book2 open</dd>
 </dl>
 
@@ -52,15 +61,18 @@ This test will check that Gnumeric will print
 
 This test will check that Gnumeric will Copy and Paste
 <dl>
-    <dt>Select previously entered data, press Ctrl+C</dt>
+    <dt>Select previously entered data</dt>
+	<dt>press Ctrl+C</dt>
         <dd>Selection outline appears as flashing dashes</dd>
-    <dt>Select a new cell and press Ctrl+V</dt>
+    <dt>Select a new cell</dt>
+	<dt>press Ctrl+V</dt>
         <dd>Selection is copied to workbook</dd>
 </dl>
 
 This test will check that Gnumeric will Cut and Paste
 <dl>
-    <dt>Select all data on workbook, press Ctrl+X</dt>
+    <dt>Select all data on workbook</dt>
+	<dt>press Ctrl+X</dt>
         <dd>Selection outline appears as flashing dashes</dd>
     <dt>Select a new cell and press Ctrl+V</dt>
         <dd>Selection is moved to new position on workbook</dd>
@@ -70,7 +82,8 @@ This test will check that Gnumeric will create new files from templates
 <dl>
     <dt>From menu select - New From Template ->calendar.Gnumeric</dt>
         <dd>New window opens with calendar</dd>
-    <dt>Focus on new window, press Ctrl+W</dt>
+    <dt>Focus on new window</dt>
+	<dt>press Ctrl+W</dt>
         <dd>Calendar window closes</dd>
 </dl>
 

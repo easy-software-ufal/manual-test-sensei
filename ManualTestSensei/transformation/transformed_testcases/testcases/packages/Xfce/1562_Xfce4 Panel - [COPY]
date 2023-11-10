@@ -2,15 +2,23 @@
 
 This test will check that Xfce4 Panel allows to insert plugins into the panel
 <dl>
-    <dt>Point your mouse cursor to an empty space on a panel and press the right mouse button</dt>
+    <dt>Point your mouse cursor to an empty space on a panel</dt>
+	<dt>press the right mouse button</dt>
         <dd>A popup menu appears</dd>
     <dt>Point the mouse pointer to the 'Panel' option</dt>
         <dd>A drop-down menu appears</dd>
-    <dt>Select the 'Add New Items...' option</dt>
-        <dd>Add New Items window appears</dd>
-    <dt>Select a plugin in the list and click the Add button</dt>
+    <dt>Select the</dt>
+	<dt>'Add New Items...' option</dt>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Add New Items window appears</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Select a plugin in the list</dt>
+	<dt>click the Add button</dt>
         <dd>The selected panel plugin appears at the end of the selected panel</dd>
-    <dt>Select an item from the dialog, drag it and drop it in the panel</dt>
+    <dt>Select an item from the dialog</dt>
+	<dt>drag it</dt>
+	<dt>drop it in the panel</dt>
         <dd>The selected panel plugin appears at the end of the selected panel</dd>
 </dl>
 
@@ -36,9 +44,11 @@ This test will check that Xfce4 Panel allows to configure panel preferences
 
 This test will check that Xfce4 Panel allows to add and remove panels
 <dl>
-    <dt>Point your mouse cursor to the '+' button and click it</dt>
+    <dt>Point your mouse cursor to the '+' button</dt>
+	<dt>click it</dt>
         <dd>A new empty panel appears showing a selection around it and the new panel is listed in the drop down list at the top of Panel dialog window</dd>
-    <dt>Point your mouse cursor to the '-' button and click it</dt>
+    <dt>Point your mouse cursor to the '-' button</dt>
+	<dt>click it</dt>
         <dd>A Question dialog appears asking to confirm the removal</dd>
     <dt>Click the Remove button</dt>
         <dd>The currently selected panel is removed</dd>
@@ -46,27 +56,34 @@ This test will check that Xfce4 Panel allows to add and remove panels
 
 This test will check that Xfce4 Panel allows to change the panel's height, width, length and the number of rows
 <dl>
-    <dt>Point the mouse pointer to the 'Row size (pixels):' slidebar under the "Measurements" section and move the slider to the right</dt>
+    <dt>Point the mouse pointer to the 'Row size (pixels):' slidebar under the "Measurements" section</dt>
+	<dt>move the slider to the right</dt>
         <dd>The total panel height (or width) increases</dd>
-    <dt>Point the mouse pointer to the 'Length (%):' slidebar under the "Measurements" section and move the slider to the right</dt>
+    <dt>Point the mouse pointer to the 'Length (%):' slidebar under the "Measurements" section</dt>
+	<dt>move the slider to the right</dt>
         <dd>The total panel width (or height) increases as a percentage of the width (or height) of the monitor screen</dd>
-    <dt>Tick the 'Automatically increase length' option under the "Measurements" section</dt>
+    <dt>Tick the '</dt>
+	<dt>Automatically increase length' option under the "Measurements" section</dt>
         <dd>The panel expands as the panel contents change</dd>
-    <dt>Point the mouse pointer to the 'Number of rows:' slidebar under the "Measurements" section and move the slider to the right</dt>
+    <dt>Point the mouse pointer to the 'Number of rows:' slidebar under the "Measurements" section</dt>
+	<dt>move the slider to the right</dt>
         <dd>Small panel plugins, such as launchers, are laid out in multiple rows (or columns), while larger ones, like window buttons, continue to occupy the whole panel height (or width)</dd>
 </dl>
 
 This test will check that Xfce4 Panel allows to change the color, background image and transparency of the panel
 <dl>
-    <dt>Point your mouse cursor to the 'Appearance' tab and click it</dt>
+    <dt>Point your mouse cursor to the 'Appearance' tab</dt>
+	<dt>click it</dt>
         <dd>'Panel Preferences...' selected/active tab changes to 'Appearance' tab</dd>
-    <dt>Point the mouse pointer to the 'Style:' option button and click it</dt>
+    <dt>Point the mouse pointer to the 'Style:' option button</dt>
+	<dt>click it</dt>
         <dd>A list of available styles drops down</dd>
     <dt>Select 'Solid color' option</dt>
         <dd>The 'Color:' button appears</dd>
     <dt>Click the color picker button</dt>
         <dd>The 'Pick a Panel Color' opens</dd>
-    <dt>Select a color using the provided color picker and click the 'OK' button</dt>
+    <dt>Select a color using the provided color picker</dt>
+	<dt>click the 'OK' button</dt>
         <dd>The selected color is applied to the panel</dd>
     <dt>Point the mouse pointer to the 'Style:' option button and click it</dt>
         <dd>A list of available styles drops down</dd>
@@ -74,36 +91,50 @@ This test will check that Xfce4 Panel allows to change the color, background ima
         <dd>The 'File:' button appears</dd>
     <dt>Click the file browser button</dt>
         <dd>The 'Select a Background Image' dialog window opens</dd>
-    <dt>Select a background image for the panel and click the 'Open' button</dt>
+    <dt>Select a background image for the panel</dt>
+	<dt>click the</dt>
+	<dt>'Open' button</dt>
         <dd>The selected image is applied as a background image for the panel</dd>
     <dt>Point the mouse pointer to the 'Style:' option button and click it</dt>
         <dd>A list of available styles drops down</dd>
-    <dt>Select 'None (use system style)' option</dt>
+    <dt>Select 'None</dt>
+	<dt>(use system style)' option</dt>
         <dd>The 'Alpha:' slidebar appears</dd>
-    <dt>Point the mouse pointer to the 'Alpha:' slidebar and move the slider to the left</dt>
+    <dt>Point the mouse pointer to the 'Alpha:' slidebar</dt>
+	<dt>move the slider to the left</dt>
         <dd>The panel inherits the colors from the currently selected GTK+ theme and the percentage of transparency of the panel decreases</dd>
-    <dt>Point the mouse pointer to the 'Enter:' slidebar under the "Opacity" section, and move the slider to the left</dt>
+    <dt>Point the mouse pointer to the 'Enter:' slidebar under the "Opacity" section,</dt>
+	<dt>move the slider to the left</dt>
         <dd>The percentage opacity of the panel and of all panel plugins decreases when the mouse pointer is hovering over the panel</dd>
-    <dt>Point the mouse pointer to the 'Leave:' slidebar under the "Opacity" section, and move the slider to the left</dt>
+    <dt>Point the mouse pointer to the 'Leave:' slidebar under the "Opacity" section,</dt>
+	<dt>move the slider to the left</dt>
         <dd>The percentage opacity of the panel and of all panel plugins decreases when the mouse pointer is not hovering over the panel</dd>
 </dl>
 
 This test will check that Xfce4 Panel allows to automatically hide and show panels when the mouse hovers over them
 <dl>
     <dt>Click the Display tab</dt>
-    <dt>Next to the 'Automatically hide the panel' option under the "General" section, select Always and click the 'Close' button</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Next to the 'Automatically hide the panel' option under the "General" section</dt>
+	<dt>select Always</dt>
+	<dt>click the 'Close' button</dt>
         <dd>Selected panel is automatically hidden</dd>
     <dt>Hover your mouse over the location of the hidden panel</dt>
         <dd>The panel pops up and remains visible while the mouse is over it</dd>
     <dt>Move your mouse away from the panel</dt>
         <dd>The panel automatically hides</dd>
     <dt>Open the Panel dialog again</dt>
-    <dt>Next to the 'Automatically hide the panel' option, select Intelligently and click the 'Close' button</dt>
-    <dt>Open any application and maximize its window</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Next to the 'Automatically hide the panel' option</dt>
+	<dt>select Intelligently</dt>
+	<dt>click the 'Close' button</dt>
+    <dt>Open any application</dt>
+	<dt>maximize its window</dt>
         <dd>The panel hides</dd>
     <dt>Unmaximize the application window</dt>
         <dd>The panel reappears</dd>
     <dt>Reset the panel hide option to Never</dt>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 This test will check the panel backup/restore tool
 <dl>

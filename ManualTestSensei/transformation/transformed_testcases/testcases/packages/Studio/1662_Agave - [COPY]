@@ -2,6 +2,7 @@ This test will check correct functioning of Agave.
 
 <dl>
     <dt>Open Agave</dt>
+		<dd>[FILL VERIFICATION]</dd>
         <dd>Agave opens with a awatch of colours set from the default</dd>
     <dt>Pick a colour with the colour picker</dt>
         <dd>The shown swatch changes</dd>
@@ -12,6 +13,7 @@ This test will check correct functioning of Agave.
     <dt>Change the available colours from the palette drop down</dt>
         <dd>Colours in palette change</dd>
     <dt>Add current scheme to favourites with Ctrl+D</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Export favourites from File menu, choosing a suitable path</dt>
         <dd>File saves</dd>
     <dt>Close Agave from menu or with Ctrl+Q</dt>

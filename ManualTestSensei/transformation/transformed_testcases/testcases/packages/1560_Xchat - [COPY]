@@ -6,7 +6,8 @@
 
 This test will check that XChat let you specify Nicks, Names
 <dl>
-    <dt>Double click existing nick in Nick name and enter your nick</dt>
+    <dt>Double click existing nick in Nick name</dt>
+	<dt>enter your nick</dt>
         <dd>Your choice is saved</dd>
     <dt>Repeat for Second and Third choice</dt>
         <dd>All your choices are saved</dd>
@@ -24,15 +25,18 @@ This test will check that XChat will use specified Network, Network Settings and
         <dd>Box is populated with a tickmark</dd>
     <dt>Click Edit button</dt>
         <dd> Edit Freenode window opens</dd>
-    <dt>Click in Connect to selected server only</dt>
+    <dt>Click</dt>
+	<dt>in Connect to selected server only</dt>
         <dd>Box is populated with a tickmark</dd>
-    <dt>Click in Auto connect to this network at startup</dt>
+    <dt>Click in</dt>
+	<dt>Auto connect to this network at startup</dt>
         <dd>Box is populated with a tickmark</dd>
     <dt>Click the ... button next to text box for Favorite channels</dt>
         <dd>Favorite Channels (Auto-Join List) window opens</dd>
     <dt>Click Add button</dt>
         <dd>Channel dialog appears highlighted</dd>
-    <dt>Enter channel name in #channel syntax and enter</dt>
+    <dt>Enter channel name in #channel syntax</dt>
+	<dt>enter</dt>
         <dd>Your chosen channel is added to the list</dd>
     <dt>Click Ok</dt>
         <dd>Favorite Channels window closes, your channel is added to Favourite Channel list</dd>
@@ -41,7 +45,10 @@ This test will check that XChat will use specified Network, Network Settings and
     <dt>Enter your freenode password</dt>
         <dd>Symbols appear in password box as you type</dd>
     <dt>Click Close button</dt>
-        <dd>Edit Freenode window closes</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Edit Freenode window closes</dt>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 
 This test will check that Xchat connects to your chosen network and channel(s) with your chosen nickname
@@ -49,7 +56,8 @@ This test will check that Xchat connects to your chosen network and channel(s) w
     <dt>Click Connect button</dt>
         <dd>Xchat opens a new window connected to your chosen channel(s)</dd>
         <dd>Xchat Connection Complete window opens</dd>
-    <dt>Click in Always show this dialog after connecting box</dt>
+    <dt>Click in</dt>
+	<dt>Always show this dialog after connecting box</dt>
         <dd>Tickmark is removed from the box</dd>
     <dt>Click OK</dt>
         <dd>Connection Complete window closes</dd>
@@ -76,7 +84,10 @@ This test checks some of xchat's more advanced features
 This test checks that XChat closes properly, and will reopen with the settings previously applied
 <dl>
     <dt>Click X in top right (or left depending on Desktop Environment)</dt>
-        <dd>Quit XChat window appears</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Quit XChat window appears</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select Don't ask next time</dt>
         <dd>Tickmark appears in box</dd>
     <dt>Click Quit button</dt>

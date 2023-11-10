@@ -1,23 +1,38 @@
 If options are available, these tests are to be undertaken <em>following</em> a successful install of Xubuntu.
 
 Network connections
+Ensure you have access to more than one method to connect to Internet (1)
 <dl>
-    <dt>If you have access to more than one method to connect to Internet, connect to them all</dt>
+    <dt>connect to them all (1)</dt>
         <dd>You are able to connect as expected</dd>
 </dl>
+[False Condition] 
+<dl>
+</dl>
+
 
 If you have other partitions...
 <dl>
     <dt>Open the file manager</dt>
-        <dd>Confirm they are listed in the file manager</dd>
-        <dd>Confirm you are able to read files from it</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+        
+	<dt>Confirm you are able to read files from it</dt>
+		<dd>[FILL VERIFICATION]</dd>
+	<dt>Confirm they are listed in the file manager</dt>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 
 If you have a USB drive available
+Ensure you have a USB drive (2)
 <dl>
-    <dt>If you have a USB drive, plug it in</dt>
+    <dt>plug it in (2)</dt>
         <dd>The USB drive is mounted, the file manager opens and you can open files from USB</dd>
 </dl>
+[False Condition] 
+<dl>
+</dl>
+
 
 <em> Lock and suspend testing</em>
 <em> If unlocking requires more than one password entry - fail the testcase</em>
@@ -28,16 +43,19 @@ If you have a USB drive available
 
 Test Suspend
 <dl>
-    <dt>Open any application and suspend machine</dt>
+    <dt>Open any application</dt>
+	<dt>suspend machine</dt>
         <dd>Machine suspends</dd>
-    <dt>Restart suspended machine and unlock</dt>
+    <dt>Restart suspended machine</dt>
+	<dt>unlock</dt>
         <dd>Desktop shows previously started application</dd>
 </dl>
 
 
 Test Desktop Locking
 <dl>
-    <dt>Open any application and lock desktop</dt>
+    <dt>Open any application</dt>
+	<dt>lock desktop</dt>
         <dd>Desktop locks</dd>
     <dt>Unlock desktop</dt>
         <dd>Desktop shows previously started application</dd>
@@ -45,10 +63,13 @@ Test Desktop Locking
 
 Test Lock/new User use/Unlock
 <dl>
-    <dt>Open any application then lock desktop</dt>
+    <dt>Open any application</dt>
+	<dt>then lock desktop</dt>
         <dd>Desktop locks</dd>
     <dt>Login as new user</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Logout from new user</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Login to normal user, unlocking</dt>
         <dd>Desktop shows previously started application</dd>
 </dl>

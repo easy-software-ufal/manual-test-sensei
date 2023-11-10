@@ -8,12 +8,22 @@ This test will check that the Settings dialog opens and closes without error
 
 This test will check that new system settings tools are populated into Settings dialog, installing software is a requirement for this test.
 <dl>
-    <dt>Open a terminal and type sudo apt-get install arandr press enter, supply password as required and enter</dt>
+    <dt>Open a terminal</dt>
+	<dt>type sudo apt-</dt>
+	<dt>get install</dt>
+	<dt>arandr</dt>
+	<dt>press</dt>
+	<dt>enter</dt>
+	<dt>supply password as required</dt>
+	<dt>enter</dt>
         <dd>Arandr is installed without error</dd>
     <dt>Open Settings from the menu</dt>
         <dd>Settings dialog opens</dd>
         <dd>Arandr is shown in Hardware section</dd>
-    <dt>In the terminal type sudo apt-get purge arandr, enter and supply password as required, enter again</dt>
+    <dt>In the terminal type sudo apt-get purge arandr</dt>
+	<dt>enter</dt>
+	<dt>supply password as required</dt>
+	<dt>enter again</dt>
         <dd>Arandr is uninstalled without error</dd>
         <dd>Arandr is removed from Hardware section of Settings</dd>
     <dt>Close terminal with X in top right</dt>

@@ -6,10 +6,14 @@ Case ID: him-001
     <dt>Insert a media card into the reader</dt>
         <dd>The card is recognised</dd>
     <dt>Open the file manager</dt>
-    <dt>Find the media card in the menu on the left. Right click on this</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Find the media card in the menu on the left.</dt>
+	<dt>Right click on this</dt>
 	<dt>open it</dt>
        <dd>A window opens showing the contents of the card (if any)</dd>
-    <dt>Right-click within the window and select Create Document</dt>
+    <dt>Right</dt>
+	<dt>-click within the window</dt>
+	<dt>select Create Document</dt>
 	<dt>→ Create Empty File</dt>
 	<dt>.</dt>
 	<dt>Call the file test.txt</dt>
@@ -17,9 +21,11 @@ Case ID: him-001
     <dt>Drag test.txt to the trash can in the left hand menu</dt>
         <dd>test.txt is removed from the card</dd>
     <dt>Close the card window</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Eject the card</dt>
         <dd>The icon is removed from the desktop</dd>
-    <dt>Repeat for every type of media supported (e.g. CF, SD, MMC, etc.)</dt> 
+    <dt>Repeat for every type of media supported (e.g. CF, SD, MMC, etc.)</dt>
+		<dd>[FILL VERIFICATION]</dd> 
 </dl>
 
 

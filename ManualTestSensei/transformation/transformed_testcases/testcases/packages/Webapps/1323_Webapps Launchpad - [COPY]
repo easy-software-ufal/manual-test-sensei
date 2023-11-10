@@ -1,10 +1,14 @@
 <dl>
 <!-- Aimless Test -->
-    <dt>Open Firefox and navigate to http://launchpad.net/</dt>
+    <dt>Open Firefox</dt>
+	<dt>navigate to http://launchpad.net/</dt>
         <dd>The site opens and displays a prompt asking if you want ubuntu to integrate with the website</dd>
-    <dt>Click on the button "Integrate".</dt>
+    <dt>Click on the button</dt>
+	<dt>"Integrate".</dt>
         <dd>The Launchpad icon appears in the launcher</dd>
-    <dt>Open the Dash (press Super key) and navigate to applications category</dt>
+    <dt>Open the Dash</dt>
+	<dt>(press Super key)</dt>
+	<dt>navigate to applications category</dt>
         <dd>Applications category appears</dd>
     <dt>Type Launchpad</dt>
         <dd>The Launchpad icon appears</dd>

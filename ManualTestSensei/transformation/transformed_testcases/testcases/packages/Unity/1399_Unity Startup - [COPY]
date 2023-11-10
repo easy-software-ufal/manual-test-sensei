@@ -1,13 +1,15 @@
 Test-case unity/startup
 <dl>
-    <dt>Login and ensure Unity starts and is displayed</dt>
+    <dt>Login</dt>
+	<dt>ensure Unity starts and is displayed</dt>
         <dd>You see a panel (top bar) and a launcher (left bar) with buttons</dd>
 </dl>
 
 Test-case unity/i18n
 The following test requires a non-english language to be running
 <dl>
-    <dt>Look at different text parts of the interface and check they are translated</dt>
+    <dt>Look at different text parts of the interface</dt>
+	<dt>check they are translated</dt>
         <dd>Everything is properly translated</dd>
 </dl>
 

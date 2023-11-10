@@ -15,8 +15,9 @@ This testcase is intended to confirm the core chroot tarball is in proper workin
 		<dd>[FILL VERIFICATION]</dd>
     <dt>sudo chroot core</dt>
 		<dd>[FILL VERIFICATION]</dd>
-    <dt>apt-get update;apt-get install (some package)</dt>
-		<dd>[FILL VERIFICATION]</dd>
+    <dt>apt</dt>
+	<dt>-get update;apt</dt>
+	<dt>-get install (some package)</dt>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

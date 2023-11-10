@@ -1,5 +1,54 @@
 The goal of this test case is to check that localization support is functional during the installation from a live cd session and that language packs are downloaded and installed correctly from the Internet.
 <!-- Smells: UNVERIFIED STEPS -->
+Ensure the live session has started (1)
+Ensure Ubiquity starts click on Forwar (2)
+Ensure the installer has finished choose to Restart the system no (3)
+<dl>
+    <dt>Boot up the image</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Select a non-English language</dt>
+	<dt>press Enter</dt>
+	<dd>The boot screen is displayed in the selected language</dd>
+    <dt>Select Try FAMILY without any change to your computer</dt>
+	<dt>press Enter</dt>
+        <dd>
+            <ul>
+                <li>verify that the system is localized to the previously selected language (1)</li>
+            </ul>
+        </dd>
+    <dt>Double click on the Install icon</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>nce Ubiquity starts click on Forward (2)</dt>
+    <dt>Select the same non English language from the list</dt>
+	<dt>click Forward</dt>
+    <dt>Check your keyboard layout is correct</dt>
+	<dt>alter click Forward</dt>
+    <dt>Select Erase</dt>
+	<dt>use the entire disk</dt>
+	<dt>click Forward</dt>
+    <dt>Select your timezone</dt>
+	<dt>click Forward</dt>
+    <dt>Input your initial user details</dt>
+	<dt>password Note admin can not be used it is a dedicated Linux User</dt>
+    <dt>Tick Log in automatically</dt>
+	<dt>click on Forward</dt>
+    <dt>Check the details are correct on the final page</dt>
+	<dt>click Install</dt>
+    <dt>nce the installer has finished choose to Restart the system now (3)</dt>
+    <dt>Remove the disc</dt>
+	<dt>press Enter</dt>
+    <dt>Allow the machine to reboot</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    	<dd>Verify that your system is localized:</dd>
+        <dd>
+            <ul>
+                <li>For any language, the system has to be fully localized. Note: the translation coverage of some languages might not be complete</li>
+            </ul>
+        </dd>
+    	<dd>Check that the calendar shows the regional settings correctly</dd>
+		<dd>[FILL VERIFICATION]</dd>
+</dl>
+[False Condition] 
 <dl>
     <dt>Boot up the image</dt>
     <dt>Select a non-English language and press Enter</dt>
@@ -7,28 +56,47 @@ The goal of this test case is to check that localization support is functional d
     <dt>Select Try FAMILY without any change to your computer and press Enter</dt>
         <dd>
             <ul>
-                <li>Once the live session has started, verify that the system is localized to the previously selected language</li>
+                <li>verify that the system is localized to the previously selected language (1)</li>
             </ul>
         </dd>
     <dt>Double click on the Install icon</dt>
-    <dt>Once Ubiquity starts click on Forward</dt>
+    <dt>nce Ubiquity starts click on Forward (2)</dt>
     <dt>Select the same non English language from the list and click Forward</dt>
-    <dt>Check your keyboard layout is correct or alter click Forward</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    	<dd>Check your keyboard layout is correct or alter click Forward</dd>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select Erase and use the entire disk and click Forward</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select your timezone and click Forward</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Input your initial user details and password Note admin can not be used it is a dedicated Linux User</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Tick Log in automatically and click on Forward</dt>
-    <dt>Check the details are correct on the final page and click Install</dt>
-    <dt>Once the installer has finished choose to Restart the system now</dt>
-    <dt>Remove the disc and press Enter</dt>
-    <dt>Allow the machine to reboot</dt>
-    <dt>Verify that your system is localized:</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    	<dd>Check the details are correct on the final page and click Install</dd>
+		<dd>[FILL VERIFICATION]</dd>
+</dl>
+
+[False Condition] 
+<dl>
+    <dt>Boot up the image</dt>
+    <dt>Select a non-English language and press Enter</dt>
+	<dd>The boot screen is displayed in the selected language</dd>
+    <dt>Select Try FAMILY without any change to your computer and press Enter</dt>
         <dd>
             <ul>
-                <li>For any language, the system has to be fully localized. Note: the translation coverage of some languages might not be complete</li>
+                <li>verify that the system is localized to the previously selected language (1)</li>
             </ul>
         </dd>
-    <dt>Check that the calendar shows the regional settings correctly</dt>
+    <dt>Double click on the Install icon</dt>
 </dl>
+
+[False Condition] 
+<dl>
+    <dt>Boot up the image</dt>
+    <dt>Select a non-English language and press Enter</dt>
+	<dd>The boot screen is displayed in the selected language</dd>
+</dl>
+
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

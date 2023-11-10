@@ -1,17 +1,35 @@
 This test will enable the menu bar
+Ensure you use an Ubuntu flavour (Kubuntu (1)
+Ensure there is no check mark next to "menu bar" (2)
 <dl>
-    <dt>Do you use an Ubuntu flavour (Kubuntu, Xubuntu, Lubuntu)? If no, skip this test. The unity desktop provides the menu in its top panel by hovering over it</dt>
+    <dt>Xubuntu, Lubuntu)? If no, skip this test. The unity desktop provides the menu in its top panel by hovering over it (1)</dt>
     <dt>Right click next to your opened tabs</dt>
         <dd>A context menu appears</dd>
-    <dt>If there is no check mark next to "menu bar", click on "menu bar"</dt>
+    <dt>click on "menu bar" (2)</dt>
         <dd>The menu bar appears</dd>
 </dl>
+[False Condition] 
+<dl>
+    <dt>Xubuntu, Lubuntu)? If no, skip this test. The unity desktop provides the menu in its top panel by hovering over it (1)</dt>
+    <dt>Right click next to your opened tabs</dt>
+        <dd>A context menu appears</dd>
+</dl>
+
+[False Condition] 
+<dl>
+</dl>
+
 
 This test will check that Firefox can display websites and save them as bookmarks.
 <dl>
-    <dt>Click on the address field and fill in "wikipedia.org". Press enter</dt>
+    <dt>Click on the address field</dt>
+	<dt>fill in "wikipedia.org"</dt>
+	<dt>.</dt>
+	<dt>Press enter</dt>
         <dd>The website "wikipedia.org" opens</dd>
-    <dt>In the menu bar, click on "Bookmarks", then "Bookmark this page"</dt>
+    <dt>In the menu bar, click on</dt>
+	<dt>"Bookmarks", then</dt>
+	<dt>"Bookmark this page"</dt>
         <dd>A small window opens, with details for the bookmark</dd>
     <dt>Click on "Done"</dt>
         <dd>The window closes. The website "wikipedia" is added to your bookmarks</dd>
@@ -33,13 +51,18 @@ This test will check that Firefox can install addons and themes.
 <dl>
     <dt>In menu bar, click on "Tools" and "Add-ons"</dt>
         <dd>A overview of your installed Add-ons appears</dd>
-    <dt>Click on "Get add-ons" on the left</dt>
+    <dt>Click on</dt>
+	<dt>"Get add-ons" on the left</dt>
         <dd>Firefox's main add-ons page opens</dd>
-    <dt>In the upper right corner is a search window. Enter "noscript" and press enter</dt>
+    <dt>In the upper right corner is a search window.</dt>
+	<dt>Enter "noscript"</dt>
+	<dt>press enter</dt>
         <dd>The window shows the search results of your inquiry</dd>
-    <dt>Look for the entry "NoScript Security Suite" and click on "install"</dt>
+    <dt>Look for the entry "NoScript Security Suite"</dt>
+	<dt>click on "install"</dt>
         <dd>The Add-on is downloaded and installed. The entry changes the color</dd>
-    <dt>Click on "restart now"</dt>
+    <dt>Click on</dt>
+	<dt>"restart now"</dt>
         <dd>Firefox is restarted</dd>
     <dt>In menu bar, click on "Tools" and "Add-ons"</dt>
         <dd>The main add-on page opens</dd>
@@ -47,21 +70,29 @@ This test will check that Firefox can install addons and themes.
         <dd>An overview with your installed add-ons is shown. "Noscript" is be installed and enabled</dd>
     <dt>Click on"remove"</dt>
         <dd>A security warning is shown</dd>
-    <dt>Click on "Yes, remove all protections"</dt>
+    <dt>Click on "Yes</dt>
+	<dt>remove all protections"</dt>
         <dd>The entry of NoScript changes to "NoScript has been removed"</dd>
-    <dt>Click on "Restart now"</dt>
+    <dt>Click on</dt>
+	<dt>"Restart now"</dt>
         <dd>Firefox is restarted</dd>
     <dt>In menu bar, click on "Tools" and "Add-ons"</dt>
         <dd>The main add-on page opens</dd>
     <dt>Click on "extensions"</dt>
         <dd>An overview with your installed add-ons is shown. "Noscript" is not listed</dd>
-    <dt>Click on "Get Add-ons"</dt>
+    <dt>Click on</dt>
+	<dt>"Get Add-ons"</dt>
         <dd>The main add-on page opens.</dd>
-    <dt>On the right side, you can see a box with "Featured themes". Choose one of them and click on it</dt>
+    <dt>On the right side, you can see a box with "Featured themes"</dt>
+	<dt>.</dt>
+	<dt>Choose one of them</dt>
+	<dt>click on it</dt>
         <dd>A tab with information about the tab opens</dd>
-    <dt>Click on "Add to Firefox"</dt>
+    <dt>Click on</dt>
+	<dt>"Add to Firefox"</dt>
         <dd>An information about the installation pops up below your tabs</dd>
-    <dt>Click on "allow"</dt>
+    <dt>Click on</dt>
+	<dt>"allow"</dt>
         <dd>The selected theme is installed and shown in Firefox.</dd>
     <dt>Close the add-ons tab</dt>
         <dd>You now see your start page</dd>
@@ -83,9 +114,15 @@ This test will check that Firefox can print websites.
         <dd>A window opens, which shows the Preview of the website in printing format</dd>
     <dt>Click on "Print"</dt>
         <dd>The printing dialogue opens</dd>
-    <dt>Select "print to file" as printer and enter "firefox.pdf" as filename. Select your home folder as location. Then click on "Print"</dt>
+    <dt>Select</dt>
+	<dt>"print to file" as printer</dt>
+	<dt>enter "firefox.pdf" as filename</dt>
+	<dt>.</dt>
+	<dt>Select your home folder as location.</dt>
+	<dt>Then click on "Print"</dt>
         <dd>A window opens, showing the progress of the print</dd>
-    <dt>Open your file manager and open the created file "firefox.pdf"</dt>
+    <dt>Open your file manager</dt>
+	<dt>open the created file "firefox.pdf"</dt>
         <dd>The pdf shows the same document as seen in the print preview</dd>
 </dl>
 

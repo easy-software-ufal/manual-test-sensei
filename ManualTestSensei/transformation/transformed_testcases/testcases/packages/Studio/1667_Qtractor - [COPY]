@@ -2,7 +2,8 @@ This test will check that Qtractor opens correctly. Jack should be loaded automa
 <dl>
     <dt>Open the Qtractor application from your menu</dt>
         <dd>The Qtractor application opens</dd>
-    <dt>Click on the "Help" menu and choose "About"</dt>
+    <dt>Click on the "Help" menu</dt>
+	<dt>choose "About"</dt>
         <dd>A window opens displaying the Qtractor version and license information</dd>
     <dt>Click on OK</dt>
         <dd>The About window disappears</dd>
@@ -13,11 +14,17 @@ This test will check if Qtractor imports an audio file and play it
     If you do not have such a file, skip the test.
 </strong>
 <dl>
-    <dt>Right-click in the Files pane and select "Add Files", or use Ctrl-F</dt>
+    <dt>Right-click in the Files pane</dt>
+	<dt>select</dt>
+	<dt>"Add Files",</dt>
+	<dt>use Ctrl-F</dt>
         <dd>The "Open Audio Files" window opens</dd>
-    <dt>Choose an audio file and click "Open"</dt>
+    <dt>Choose an audio file</dt>
+	<dt>click</dt>
+	<dt>"Open"</dt>
         <dd>The file now appears in the Files pane</dd>
-    <dt>Drag your file left and drop it on the Track Pane</dt>
+    <dt>Drag your file left</dt>
+	<dt>drop it on the Track Pane</dt>
         <dd>The imported file now appears on the track pane with the waveform visible</dd>
     <dt>Click on the play icon</dt>
         <dd>The imported file plays through your speakers</dd>
@@ -30,19 +37,30 @@ This test will check if Qtractor records audio
 <dl>
     <dt>Go to the View menu and select Windows > Connections</dt>
         <dd>The connections Window opens</dd>
-    <dt>On the Audio tab, verify that there is a capture device on the left (under System) that is connected to one of the Qtractor Master Ins on the right hand side</dt>
-    <dt>Go to the Track menu and choose Add Track or use Ctrl+Shift+N</dt>
+    	<dd>On the Audio tab, verify that there is a capture device on the left (under System) that is connected to one of the Qtractor Master Ins on the right hand side</dd>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Go to the Track menu</dt>
+	<dt>choose Add Track</dt>
+	<dt>use Ctrl+Shift+N</dt>
         <dd>The Track properties window opens</dd>
-    <dt>On the Track tab, name the track and choose the Audio option, then click OK</dt>
+    <dt>On the Track tab, name the track</dt>
+	<dt>choose the Audio option</dt>
+	<dt>then click OK</dt>
         <dd>The new track appears in the Track pane</dd>
     <dt>Arm the new track for recording by clicking the R button in the track listing on the left of the Qtractor window.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click the Record button in the top toolbar</dt>
         <dd>The Session window opens</dd>
-    <dt>Give a name for the file that will hold this recorded input and Click OK</dt>
-    <dt>Click the Play button in the top toolbar and start singing/playing into the microphone/input device</dt>
+    <dt>Give a name for the file that</dt>
+	<dt>will hold this recorded input</dt>
+	<dt>Click OK</dt>
+    <dt>Click the Play button in the top toolbar</dt>
+	<dt>start singing/playing into the microphone/input device</dt>
         <dd>The track pan displays the recorded waveform and scrolls along</dd>
     <dt>Click the stop button when you have recorded enough</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click the "Backward" button until the track marker returns to the start</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click on play to hear the two track play</dt>
         <dd>The track plays through your speakers</dd>
 </dl>
@@ -52,13 +70,18 @@ This test will check that the recording can be saved and opened again
     <dt>Click on the "Save Session" icon (File > Save from the menu)</dt>
         <dd>The "Save Session" window opens</dd>
     <dt>Name the file</dt>
-    <dt>Click "Save"</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Click</dt>
+	<dt>"Save"</dt>
         <dd>The file saves and the file name is displayed in the menu bar</dd>
     <dt>Close the session by clicking the "X" (File > Exit from the menu)</dt>
     <dt>Run the Qtractor application again</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click File > Open in the menu</dt>
-    <dt>Find and Choose your just recorded session from the Open Session window</dt>
-    <dt>Click "Open"</dt>
+    <dt>Find</dt>
+	<dt>Choose your just recorded session from the Open Session window</dt>
+    <dt>Click</dt>
+	<dt>"Open"</dt>
         <dd>Your file opens again and appears as it was when you saved it</dd>
 </dl>
 
@@ -70,20 +93,32 @@ This test will check if you can import a midi file and play it using a plugin in
 <dl>
     <dt>From the Track menu, select Import Tracks > MIDI</dt>
         <dd>The "Open MIDI Files" window opens</dd>
-    <dt>Select a midi file and Click "Open"</dt>
+    <dt>Select a midi file</dt>
+	<dt>Click</dt>
+	<dt>"Open"</dt>
         <dd>The MIDI tracks appear in the Qtractor session</dd>
-    <dt>Right Click on one of the tracks in the Track Name pane and select Track Properties</dt>
+    <dt>Right Click on one of the tracks in the Track Name pane</dt>
+	<dt>select Track Properties</dt>
         <dd>The Track window opens</dd>
-    <dt>Click on the Plugins tab and Click "Add"</dt>
+    <dt>Click on the Plugins tab</dt>
+	<dt>Click</dt>
+	<dt>"Add"</dt>
         <dd>The Plugins window opens</dd>
-    <dt>Choose a plugin Synth and Click "OK"</dt>
+    <dt>Choose a plugin Synth</dt>
+	<dt>Click "OK"</dt>
         <dd>The plugin synth shows in the Plugins tab and a window opens with the plugin in it</dd>
-    <dt>Right Click on the plugin synth and choose Activate</dt>
-    <dt>In the plugin window choose a patch name and Click "Send Test Note"</dt>
+    <dt>Right Click on the plugin synth</dt>
+	<dt>choose Activate</dt>
+    <dt>In the plugin window choose a patch name</dt>
+	<dt>Click</dt>
+	<dt>"Send Test Note"</dt>
         <dd>A sound plays through the speakers</dd>
     <dt>Click on the Track tab of the track window</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>In the MIDI/Instrument Panel choose the Plugin as an instrument</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click "OK" in the Track window</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click on the "Play" icon</dt>
         <dd>The midi track plays using the chosen sound of the plugin instrument</dd>
 </dl>
@@ -93,15 +128,20 @@ This test will check that MIDI data can be entered with the matrix editor
 <dl>
     <dt>Click on the "New Clip" button from Qtractor's button bar (or Clip > New from the menu)</dt>
         <dd>The Session window opens</dd>
-    <dt>Type in a name for the session and Click on OK</dt>
+    <dt>Type in a name for the session</dt>
+	<dt>Click on OK</dt>
         <dd>The "matrix editor" or "piano roll" window opens</dd>
-    <dt>Click on the "Edit on" pencil icon</dt>
+    <dt>Click on the</dt>
+	<dt>"Edit on" pencil icon</dt>
         <dd>The edit pencil is highlighted</dd>
     <dt>Click on the matrix area to create a few notes</dt>
         <dd>The notes are shown on the matrix editor</dd>
-    <dt>Click on the "Edit off" arrow icon</dt>
+    <dt>Click on the</dt>
+	<dt>"Edit off" arrow icon</dt>
         <dd>The arrow icon is highlighted</dd>
-    <dt>Click on one of the notes and move it do a different place</dt>
+    <dt>Click on one of the notes</dt>
+	<dt>move</dt>
+	<dt>it do a different place</dt>
         <dd>The note remains where it was moved to</dd>
     <dt>Hold the mouse over a note</dt>
         <dd>The mouse icon turns into a double arrow</dd>

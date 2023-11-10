@@ -44,7 +44,8 @@ This test will check basic file management
         <dd>Window pops up requesting confirmation.</dd>
     <dt>Click <em>OK</em>.</dt>
         <dd>Folder <strong>test</strong> no longer appears in the PCManFM window.</dd>
-    <dt>Click on File in the navigation menu and select Close Window.</dt>
+    <dt>Click on File in the navigation menu</dt>
+	<dt>select Close Window.</dt>
         <dd>PCManFM closes.</dd>
     <dt>Click on the PCManFM icon in the task bar.</dt>
         <dd>PCManFM Window appears.</dd>
@@ -86,7 +87,8 @@ This test will check tab management
 <dl>
     <dt>Click on <em>File</em> select <em>New Tab</em></dt>
         <dd>Two tabs appear of the current directory.</dd>
-    <dt>Click on the second tab and drag it so that appears before the first tab.</dt>
+    <dt>Click on the second tab</dt>
+	<dt>drag it so that appears before the first tab.</dt>
         <dd>Tab moves.</dd>
     <dt>Click on the <em>X</em> on the tab label.</dt>
         <dd>Tab closes.</dd>

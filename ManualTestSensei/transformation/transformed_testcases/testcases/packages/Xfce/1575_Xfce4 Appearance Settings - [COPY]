@@ -9,10 +9,12 @@ This test will check that the Appearance Setting Dialog is visible in the Settin
 </dl>
 
 This test will verify that the Style tab works properly.
+Ensure the "Appearance" module open to the "Style" tab (1)
 <dl>
-    <dt>With the "Appearance" module open to the "Style" tab, select another style.</dt>
+    <dt>select another style. (1)</dt>
         <dd>The GTK appearance of the on screen widgets changes to the new style.</dd>
     <dt>Click on the "All Settings" button to return to the "Settings"</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Open a terminal and install the clearlooks-phenix-theme package <code>sudo apt-get install clearlooks-phenix-theme</code> </dt>
     <dt>Click on the "Appearance" module.</dt>
         <dd>Clearlooks-Phenix appears as a style in the "Style" tab.</dd>
@@ -25,32 +27,50 @@ This test will verify that the Style tab works properly.
     <dt>Click on any style to select it.</dt>
         <dd>The GTK appearance of the on screen widgets changes to the new style.</dd>
 </dl>
+[False Condition] 
+<dl>
+</dl>
+
 
 This test will verify that the Icons tab works properly.
+Ensure the "Appearance" module loaded and the "Icons" tab visible (2)
 <dl>
-    <dt>With the "Appearance" module loaded and the "Icons" tab visible, select another icon theme.</dt>
+    <dt>select another icon theme. (2)</dt>
         <dd>The icons on the screen change to the newly-selected icon theme.</dd>
     <dt>Click on the "All Settings" button to return to the "Settings"</dt>
     <dt>Open a terminal and install the tango-icon-theme package <code>sudo apt-get install tango-icon-theme</code></dt>
-    <dt>Click on "Appearance" module and go to the "Icons" tab.</dt>
+    <dt>Click on "Appearance" module</dt>
+	<dt>go to the "Icons" tab.</dt>
         <dd>Tango appears as an icon theme.</dd>
     <dt>Click on Tango to select the theme.</dt>
         <dd>The icons on the screen change to the new icon style.</dd>
     <dt>Click the "All Settings" button to return to the "Settings".</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Open a terminal and remove the tango-icon-theme package <code>sudo apt-get purge tango-icon-theme</code></dt>
-    <dt>Click on the "Appearance" module and go to the "Icons" tab.</dt>
+    <dt>Click on the "Appearance" module</dt>
+	<dt>go to the "Icons" tab.</dt>
         <dd>The "Appearance" module (Icons tab) re-appears with no icon themes selected.</dd>
     <dt>Click on any icon theme to select it.</dt>
         <dd>The icons on the screen change to the newly-selected icon theme.</dd>
 </dl>
+[False Condition] 
+<dl>
+</dl>
+
 
 This test will verify that the Fonts tab works properly.
+Ensure the "Appearance" module loaded and the "Fonts" tab visible (3)
 <dl>
-    <dt>With the "Appearance" module loaded and the "Fonts" tab visible, change the "Default Font".</dt>
+    <dt>change the "Default Font". (3)</dt>
         <dd>The on-screen fonts change accordingly.</dd>
-    <dt>Uncheck the "Enable anit-aliasing" checkbox.</dt>
+    <dt>Uncheck the</dt>
+	<dt>"Enable anit-aliasing" checkbox.</dt>
         <dd>The on-screen fonts change (they appear blockier).</dd>
-    <dt>Re-check the "Enable anti-aliasing" checkbox.</dt>
+    <dt>Re</dt>
+	<dt>-</dt>
+	<dt>check the</dt>
+	<dt>"Enable anti-aliasing"</dt>
+	<dt>checkbox.</dt>
         <dd>The fonts change again (appear smoother).</dd>
     <dt>Change the "Hinting" to none.</dt>
         <dd>There should be a slight change to the appearance of the fonts.</dd>
@@ -75,10 +95,15 @@ This test will verify that the Fonts tab works properly.
     <dt>Change the "DPI" value back to 96.</dt>
         <dd>The fonts should return to their default size.</dd>
 </dl>
+[False Condition] 
+<dl>
+</dl>
+
 
 This test will verify that the Settings tab works properly.
+Ensure the "Appearance" module loaded and the "Settings" tab visible (4)
 <dl>
-    <dt>With the "Appearance" module loaded and the "Settings" tab visible, load a GTK-compliant application (e.g. Globaltime Preferences).</dt>
+    <dt>load a GTK-compliant application (e.g. Globaltime Preferences). (4)</dt>
         <dd>Globaltime Preferences loads.</dd>
     <dt>Change the "Toolbar Style" to Text.</dt>
         <dd>The Globaltime Preferences toolbar changes to text.</dd>
@@ -86,27 +111,56 @@ This test will verify that the Settings tab works properly.
         <dd>The Globaltime Preferences toolbar changes to both icons and text with the text below the icon.</dd>
     <dt>Change the "Toolbar Style" back to Icons.</dt>
         <dd>The Globaltime Preferences toolbar changes the default icons look.</dd>
-    <dt>Uncheck the "Show images on buttons" checkbox.</dt>
+    <dt>Uncheck the</dt>
+	<dt>"Show images on buttons" checkbox.</dt>
         <dd>The images disappear from the Help, All Settings, and Close button on the Appearance dialog.</dd>
-    <dt>Re-check the "Show images on buttons" checkbox.</dt>
+    <dt>Re</dt>
+	<dt>-</dt>
+	<dt>check the</dt>
+	<dt>"Show images on buttons"</dt>
+	<dt>checkbox.</dt>
         <dd>The images re-appear on the Help, All Settings, and Close button on the Appearance dialog.</dd>
-    <dt>Uncheck the "Show images in menus" checkbox.</dt>
+    <dt>Uncheck the</dt>
+	<dt>"Show images in menus" checkbox.</dt>
         <dd>The icon images disappear from the main menu.</dd>
-    <dt>Re-check the "Show images in menus" checkbox.</dt>
+    <dt>Re</dt>
+	<dt>-</dt>
+	<dt>check the</dt>
+	<dt>"Show images in menus"</dt>
+	<dt>checkbox.</dt>
         <dd>The icon images re-appear on the main menu.</dd>
-    <dt>Check the "Enable editable accelerators" checkbox. In xfce4-terminal, hover your mouse over the Edit->Select All option and press Ctrl+a.</dt>
+    <dt>Check the</dt>
+	<dt>"Enable editable accelerators" checkbox. In xfce4-terminal</dt>
+	<dt>hover your mouse over</dt>
+	<dt>the Edit->Select All option</dt>
+	<dt>press Ctrl+a.</dt>
         <dd>The menu accelerator change to Ctrl+a.</dd>
-    <dt>In xfce4-terminal, hover your mouse over the Edit->Select All option and press Shift+Ctrl+a.</dt>
+    <dt>In xfce4-terminal, hover your mouse over the Edit->Select All option</dt>
+	<dt>press Shift+Ctrl+a.</dt>
         <dd>The accelerator changes back to the default Shift+Ctrl+a.</dd>
-    <dt>Uncheck the "Enable editable accelerators" checkbox. Open xfce4-terminal, hover your mouse over the Edit->Select All option and press Ctrl+a.</dt>
+    <dt>Uncheck the</dt>
+	<dt>"Enable editable accelerators" checkbox</dt>
+	<dt>.</dt>
+	<dt>Open xfce4-terminal</dt>
+	<dt>hover your mouse over</dt>
+	<dt>the Edit->Select All option</dt>
+	<dt>press Ctrl+a.</dt>
         <dd>The menu accelerator should not change.</dd>
-    <dt>Check the "Enable event sounds" checkbox and minimize/maximize a window.</dt>
+    <dt>Check the</dt>
+	<dt>"Enable event sounds" checkbox</dt>
+	<dt>minimize</dt>
+	<dt>/maximize a window.</dt>
         <dd>A sound should play.</dd>
 </dl>
+[False Condition] 
+<dl>
+</dl>
+
 
 This test will verify that the Help works properly.
 <dl>
-    <dt>With an active internet connection and the "Appearance" module loaded, click the Help button and then on "Read Online".</dt>
+    <dt>With an active internet connection and the "Appearance" module loaded, click the Help button and then on</dt>
+	<dt>"Read Online".</dt>
         <dd>The appropriate online help file loads in the default browser.</dd>
 </dl>
 

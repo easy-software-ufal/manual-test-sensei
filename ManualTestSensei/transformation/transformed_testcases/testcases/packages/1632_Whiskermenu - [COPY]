@@ -1,7 +1,8 @@
 This test will check that applications launch correctly from the menu
 
 <dl>
-    <dt>Select Archive Manager from Accessories menu and click</dt>
+    <dt>Select Archive Manager from Accessories menu</dt>
+	<dt>click</dt>
         <dd>Archive Manager opens</dd>
     <dt>In whiskermenu search box type <em>ter</em></dt>
         <dd>Terminal Emulator appears in dialogue</dd>
@@ -35,7 +36,8 @@ This test will check that Favourites menu can be sorted alphabetically
 
 <dl>
     <!-- NON DETERMINISTIC STEP -->
-    <dt>Select and add a number of applications from the menu to Favourites</dt>
+    <dt>Select</dt>
+	<dt>add a number of applications from the menu to Favourites</dt>
         <dd>New applications appear in Favourites menu</dd>
     <dt>Right click on any application and <em>Sort Alphabetically A-Z</em></dt>
         <dd>Order of applications is sorted A-Z</dd>

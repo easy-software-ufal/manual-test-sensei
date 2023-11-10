@@ -1,7 +1,9 @@
 Test-case dash/application-lens
 <dl>
     <dt>Tap super to show the dash</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click on the application lens icon</dt>
+		<dd>[FILL VERIFICATION]</dd>
         <dd>The search entry should show "search applications" and you should have three categories:
             <ul>
                 <li> - recently used apps </li>
@@ -18,6 +20,7 @@ Test-case dash/application-lens-search
     <dt>Make a search</dt>
         <dd>Results should appear in each category</dd>
     <dt>Open the filter by clicking on "Filter Results"</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Change the filters for each filter type</dt>
         <dd>Search results should change, at least on one category</dd>
 </dl>
@@ -26,6 +29,7 @@ Test-case dash/file-lens
 <dl>
     <dt>Tap super to show the dash</dt>
     <dt>Click on the file lens icon</dt>
+		<dd>[FILL VERIFICATION]</dd>
         <dd>The search entry should show "search files" and you should have three categories:
             <ul>
                 <li> - recent (if you opened at least one file on your computer) </li>
@@ -50,6 +54,7 @@ Test-case dash/music-lens
 <dl>
     <dt>Tap super to show the dash</dt>
     <dt>Click on the music lens icon</dt>
+		<dd>[FILL VERIFICATION]</dd>
         <dd>the search entry should show "search music" and you should have two categories, filled with the indexed music
             <ul>
                 <li>tracks</li>
@@ -79,7 +84,8 @@ Test-case dash/lens-preview-music
         <dd>A lens preview should appear showing the album cover, with right and left buttons to scroll between previews, and a list of songs within the album. Further a Download or buy button should be located below the track listing</dd>
     <dt>Click the play button next to a track</dt>
         <dd>The button should change to a pause button and begin playing, showing the track progress as it plays</dd>
-    <dt>Click the pause button next to a track and then click the play button again</dt>
+    <dt>Click the pause button next to a track</dt>
+	<dt>then click the play button again</dt>
         <dd>The track should stop playing and then start again from the same location in the song</dd>
     <dt>Click the right and left arrows next to the preview</dt>
         <dd>The item in the list to the right and left of the preview should display</dd>
@@ -94,7 +100,8 @@ Test-case dash/lens-preview-file
         <dd>The file should be opened/played</dd>
     <dt>Click the email button</dt>
         <dd>The file should be attached to an email in your email client</dd>
-    <dt>Click the show in folder button</dt>
+    <dt>Click</dt>
+	<dt>the show in folder button</dt>
         <dd>The file should show in the folder</dd>
 </dl>
 
@@ -102,6 +109,7 @@ Test-case dash/lens-preview-video
 <dl>
     <dt>Tap super to show the dash</dt>
     <dt>Click on the videos lens icon</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Right click on a file</dt>
         <dd>A lens preview should appear showing a preview of the file (the file icon), with right and left buttons to scroll between previews, and some details on the filename and the time and date information. Further several buttons;  open, and show in folder should exist below the preview</dd>
     <dt>Click the open/play button</dt>
@@ -119,7 +127,9 @@ Test-case dash/lens-preview-application
         <dd>A password prompt displays (if password is not cached) and the program is uninstalled </dd>
     <dt>Tap super to show the dash</dt>
     <dt>Open the applications lens</dt>
-    <dt>Search for the application you uninstalled and right click on it</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Search for the application you uninstalled</dt>
+	<dt>right click on it</dt>
         <dd>A lens preview should appear showing a preview of the application (potentially a screenshot), with right and left buttons to scroll between previews, and some details on the application, including the review from the software center. Further two buttons; developer site and a download button should exist below the preview</dd>
     <dt>Click the download button</dt>
         <dd>The application should install and add a new launcher icon to the launcher</dd>

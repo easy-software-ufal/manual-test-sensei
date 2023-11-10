@@ -2,11 +2,17 @@ This test will check that Sudoku can start a game in all levels.
 <dl>
     <dt>Click on "very hard" to start a new game</dt>
         <dd>A window appears showing a new Sudoku</dd>
-    <dt>Now click on "New Puzzle". Select a new game with level "hard"</dt>
+    <dt>Now click on "New Puzzle"</dt>
+	<dt>.</dt>
+	<dt>Select a new game with level "hard"</dt>
         <dd>A window appears showing a new Sudoku</dd> 
-    <dt>Now click on "New Puzzle". Select a new game with level "medium"</dt>
+    <dt>Now click on "New Puzzle"</dt>
+	<dt>.</dt>
+	<dt>Select a new game with level "medium"</dt>
         <dd>A window appears showing a new Sudoku</dd>
-    <dt>Now click on "New Puzzle". Select a new game with level "easy"</dt>
+    <dt>Now click on "New Puzzle"</dt>
+	<dt>.</dt>
+	<dt>Select a new game with level "easy"</dt>
         <dd>A window appears showing a new Sudoku</dd>
 </dl>
 This test will check that Sudoku can finish a game
@@ -22,7 +28,11 @@ This test will check that Sudoku can print a game
         <dd>A window appears showing a new Sudoku</dd>
     <dt>Select "Sudoku" >> "Print Current Puzzle"</dt>
         <dd>A window appears showing the printing dialogue</dd>
-    <dt>Select the printer "Print to file" and select an output filename and directory (e.g. "sudoku_test.pdf" in your home directory). Click on "Preview"</dt>
+    <dt>Select the printer</dt>
+	<dt>"Print to file"</dt>
+	<dt>select an output filename and directory (e.g. "sudoku_test.pdf" in your home directory)</dt>
+	<dt>.</dt>
+	<dt>Click on "Preview"</dt>
         <dd>A window appears showing the preview of the Sudoku to be printed</dd>
     <dt>Click on the printer symbol</dt>
         <dd>The print preview window closes</dd>

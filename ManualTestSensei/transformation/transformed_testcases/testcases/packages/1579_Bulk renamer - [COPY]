@@ -1,12 +1,21 @@
 This test will check that Bulk Renamer can be run separately from the file manager (Thunar), by running a command at a terminal window
 <dl>
-    <dt>Open a terminal window, type "Thunar -B" at the prompt and hit the 'Enter' key</dt>
+    <dt>Open a terminal window</dt>
+	<dt>type "Thunar -B" at the prompt</dt>
+	<dt>hit the 'Enter' key</dt>
         <dd>Bulk Rename application window should open</dd>
-    <dt>Point your mouse cursor to the '+' at the top left of the window and click it</dt>
-        <dd>Open files dialog window should open</dd>
-    <dt>Select two or more files and click the 'Open' button</dt>
+    <dt>Point your mouse cursor to the '+' at the top left of the window</dt>
+	<dt>click it</dt>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Open files dialog window should open</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Select two or more files</dt>
+	<dt>click the</dt>
+	<dt>'Open' button</dt>
         <dd>Selected files should appear in the application window main area</dd>
-    <dt>Use some criterion to rename the selected files and press the 'Rename files' button</dt>
+    <dt>Use some criterion to rename the selected files</dt>
+	<dt>press the 'Rename files' button</dt>
         <dd>Selected files should be renamed accordingly</dd>
 </dl>
 
@@ -14,11 +23,14 @@ This test will check that Bulk Renamer can be run from within the file manager b
 <dl>
     <dt>Hit Super+F keys</dt>
         <dd>The file manager should open</dd>
-    <dt>Select two or more files in the file manager's main area and hit the F2 key</dt>
+    <dt>Select two or more files in the file manager's main area</dt>
+	<dt>hit the F2 key</dt>
         <dd>Bulk Rename application window should open with the selected files in the window main area</dd>
     <dt>Use some criterion to rename the selected files and press the 'Rename files' button</dt>
         <dd>Selected files should be renamed accordingly</dd>
-    <dt>Reproduce the steps to open the file manager, select two or more files in the file manager's main area and click on the 'Edit' option in the file managers's main menu</dt>
+    <dt>Reproduce the steps to open the file manager</dt>
+	<dt>select two or more files in the file manager's main area</dt>
+	<dt>click on the 'Edit' option in the file managers's main menu</dt>
         <dd>A drop-down menu should appear</dd>
     <dt>Select the 'Rename' option</dt>
         <dd>Bulk Rename application window should open with the selected files in the window main area</dd>

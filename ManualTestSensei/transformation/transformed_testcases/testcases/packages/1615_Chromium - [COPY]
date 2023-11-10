@@ -3,13 +3,21 @@ This test will check that Chromium can display websites and save them as bookmar
     <dt>Start Chromium</dt>
         <dd>Chromium starts in a new window</dd>
     <!-- eager step -->
-    <dt>Click on the address field and fill in "wikipedia.org". Press enter</dt>
+    <dt>Click on the address field</dt>
+	<dt>fill in "wikipedia.org"</dt>
+	<dt>.</dt>
+	<dt>Press enter</dt>
         <dd>The website "wikipedia.org" opens</dd>
-    <dt>Click on the Button "Customize and Control Chromium" on the right of the address field. Then click on "Bookmarks" and "Bookmarks this page..."</dt>
+    <dt>Click on the Button</dt>
+	<dt>"Customize</dt>
+	<dt>Control Chromium" on the right of the address field.</dt>
+	<dt>Then click on "Bookmarks" and "Bookmarks this page..."</dt>
         <dd>A small notification opens, with details for the bookmark</dd>
     <dt>Click on "Done"</dt>
         <dd>The notification closes. The website "wikipedia" is added to your bookmarks. The star at the right end of the address field is now yellow</dd>
-    <dt>Now Click on "Customize and Control Chromium" and "Bookmarks" in menu bar</dt>
+    <dt>Now Click on</dt>
+	<dt>"Customize</dt>
+	<dt>Control Chromium" and "Bookmarks" in menu bar</dt>
         <dd>In the context menu you see the new entry of your bookmark</dd>
 </dl>
 
@@ -23,17 +31,26 @@ This test will check that Chromium can display search suggestions and results fo
 
 This test will check that Chromium can install extensions and themes.
 <dl>
-    <dt>Click on the Button "Customize and Control Chromium" on the right of the address field. Then click on "Settings"</dt>
+    <dt>Click on the Button</dt>
+	<dt>"Customize</dt>
+	<dt>Control Chromium" on the right of the address field.</dt>
+	<dt>Then click on "Settings"</dt>
         <dd>A tab opens, showing the settings</dd>
     <dt>Click on "Extensions" on the left</dt>
         <dd>A overview of your installed extensions appears. This should be empty when using a fresh install</dd>
-    <dt>Click on "browse the gallery"</dt>
+    <dt>Click on</dt>
+	<dt>"browse the gallery"</dt>
         <dd>The "Chrome Web Store" opens in a new tab</dd>
-    <dt>In the upper left corner is a search window. Enter "duckduckgo" and press enter</dt>
+    <dt>In the upper left corner is a search window.</dt>
+	<dt>Enter "duckduckgo"</dt>
+	<dt>press enter</dt>
         <dd>The window shows the search results of your inquiry</dd>
-    <dt>Look for the entry "DuckDuckGo for Chrome" and click on "add to chrome"</dt>
+    <dt>Look for the entry "DuckDuckGo for Chrome"</dt>
+	<dt>click on</dt>
+	<dt>"add to chrome"</dt>
         <dd>A window opens, asking to confirm the installation</dd>
-    <dt>Click on "add"</dt>
+    <dt>Click on</dt>
+	<dt>"add"</dt>
         <dd>The Add-on is downloaded and installed. A notification appears, confirming the successful installation</dd>
     <dt>Click on the "X" of the notification</dt>
         <dd>The notification closes. You should see the DuckDuckGo symbol right of your address field</dd>
@@ -41,13 +58,19 @@ This test will check that Chromium can install extensions and themes.
         <dd>The tab opens. You see the tab "Extensions" again. Now there is an entry called "DuckDuckGo for Chrome"</dd>
     <dt>Click on the trash right of the entry "DuckDuckGo for Chrome"</dt>
         <dd>A window opens, asking to confirm the removal</dd>
-    <dt>Click on "remove"</dt>
+    <dt>Click on</dt>
+	<dt>"remove"</dt>
         <dd>The extensions is removed from your system. "DuckDuckGo for Chrome" does not appear in your list of extensions</dd>
     <dt>Click now on "Settings"</dt>
         <dd>The tab "Settings appears</dd>
-    <dt>Under "Appearance" click on "Get themes"</dt>
+    <dt>Under "Appearance" click on</dt>
+	<dt>"Get themes"</dt>
         <dd>A tab opens with the "Chrome web Store"</dd>
-    <dt>Select a theme and hover over it. Click on "choose theme"</dt>
+    <dt>Select a theme</dt>
+	<dt>hover over it</dt>
+	<dt>.</dt>
+	<dt>Click on</dt>
+	<dt>"choose theme"</dt>
         <dd>The theme is installed and applied to Chromium</dd>
     <dt>Close the tabs "Chrome Web Store" </dt>
         <dd>You now see your search inquiry again</dd>
@@ -65,11 +88,20 @@ This test will check that Chromium can print and email websites.
 <dl>
     <dt>Open the website "wiki.ubuntu.com"</dt>
         <dd>The website opens, showing the wiki</dd>
-    <dt>Click on the Button "Customize and Control Chromium" on the right of the adress field. Then click on "Print..."</dt>
+    <dt>Click on the Button</dt>
+	<dt>"Customize</dt>
+	<dt>Control Chromium" on the right of the adress field.</dt>
+	<dt>Then click on "Print..."</dt>
         <dd>A window opens, which shows the Preview of the website in printing format</dd>
-    <dt>Select "print to file" as printer and enter "chromium.pdf" as filename. Select your home folder as location. Then click on "Print"</dt>
+    <dt>Select</dt>
+	<dt>"print to file" as printer</dt>
+	<dt>enter "chromium.pdf" as filename</dt>
+	<dt>.</dt>
+	<dt>Select your home folder as location.</dt>
+	<dt>Then click on "Print"</dt>
         <dd>A window opens, showing the progress of the print</dd>
-    <dt>Open your file manager and open the created file "chromium.pdf"</dt>
+    <dt>Open your file manager</dt>
+	<dt>open the created file "chromium.pdf"</dt>
         <dd>The pdf shows the homepage printed.</dd>
 </dl>
 

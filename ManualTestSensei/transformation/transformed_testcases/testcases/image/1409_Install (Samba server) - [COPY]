@@ -4,40 +4,66 @@ Scope of this test is to verify that the system is installed, you can login into
 
 <dl>
     <dt>Boot up the image</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Choose the desired language</dt>
-    <dt>Select "Install Ubuntu Server"</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Select</dt>
+	<dt>"Install Ubuntu Server"</dt>
     <dt>Choose the language</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select your location</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Configure locales</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>At configure keyboard page, select NO </dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select the country of the keyboard</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select the keyboard layout</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select hostname ubuntu as default</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Insert the name for the new user</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Insert the name for the account</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Choose a password</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Reinsert the password</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>At encrypt request select NO</dt>
-    <dt>Verify or setup the timezone</dt>
-    <dt>At partitioning select "Guided - Use entire disk"</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Verify</dt>
+	<dt>setup the timezone</dt>
+    <dt>At partitioning select "Guided</dt>
+	<dt>- Use entire disk"</dt>
     <dt>Select disk to partition</dt>
-    <dt>At "Write changes to disks", verify that everythings is right and select YES</dt>
-    <dt>At "http proxy" request, leave it blank and press enter</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>At "Write changes to disks"</dt>
+	<dt>verify that everythings is right</dt>
+	<dt>select YES</dt>
+    <dt>At "http proxy" request, leave it blank</dt>
+	<dt>press enter</dt>
     <dt>At managing upgrades select "No automatic updates"</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>At Software selection, choose "Samba server"</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select to install Grub in the master boot record</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Remove the installation media (CDROM or USB key)</dt>
-    <dt>Wait that the system reboot and login</dt>
-    <dt>Verify that samba is running:</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Wait that the system reboot</dt>
+	<dt>login</dt>
+    	<dd>Verify that samba is running:</dd>
         <dd>echo smbd ; pgrep smbd; echo; echo nmbd; pgrep nmbd; echo ; echo winbindd; pgrep winbindd ; echo</dd>
         <dd>should return the pid for pgrep smbd, pgrep nmbd, pgrep winbindd.</dd>
-    <dt>Verify the default workgroup name is displayed:</dt>
+    	<dd>Verify the default workgroup name is displayed:</dd>
         <dd>sudo net getlocalsid</dd>
         <dd>should return a line similar to sid for domain UBUNTU is S-1-5....</dd>
-    <dt>Verify winbind is responding to requests:</dt>
+    	<dd>Verify winbind is responding to requests:</dd>
         <dd>wbinfo -p</dd>
         <dd>has to return a line similar to "Ping to winbindd succeeded".</dd>
-    <dt>Verify winbind basic functionality:</dt>
+    	<dd>Verify winbind basic functionality:</dd>
         <dd>wbinfo --all-domains</dd>
         <dd>has to return two lines: one with "BUILTIN", the other with the unqualified hostname in uppercase. For example, a hostname like "ubuntu" would be in the wbinfo output text as "UBUNTU".</dd>
 </dl>

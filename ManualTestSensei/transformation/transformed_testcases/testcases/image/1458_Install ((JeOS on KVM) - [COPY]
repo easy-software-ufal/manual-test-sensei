@@ -2,26 +2,39 @@
 
 <dl>
     <dt>Boot the CD from KVM</dt>
-    <dt>Press F4 and select Install a minimal virtual machine</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Press F4</dt>
+	<dt>select Install a minimal virtual machine</dt>
     <dt>Choose your language, country and keyboard layout</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Set default hostname: ubuntu</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Partition disks: Guided use entire disk</dt>
-    <dt>Select your time zone and set the system clock to UTC</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Select your time zone</dt>
+	<dt>set the system clock to UTC</dt>
     <dt>User account: enter username and password</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>No software selection.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Boot the newly created guest</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Log in</dt>
-    <dt>Check that the uname -r returns a -generic kernel</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    	<dd>Check that the uname -r returns a -generic kernel</dd>
         <dd>uname -r</dd>
-    <dt>Check that the linux-virtual package is installed for the release or the correct hardware enablement stack:</dt>
+    	<dd>Check that the linux-virtual package is installed for the release or the correct hardware enablement stack:</dd>
         <dd>dpkg -l | grep linux-virtual</dd>
     <dt>Ping outside network</dt>
-    <dt>Check with the mount command that virtual disk are mounted read-write</dt>
-    <dt>Check that the ubuntu-standard package is not installed:</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Check with the mount command that virtual disk are</dt>
+	<dt>mounted read</dt>
+	<dt>-write</dt>
+    	<dd>Check that the ubuntu-standard package is not installed:</dd>
         <dd>dpkg -l ubuntu-standard</dd>
-    <dt>Check that the size of the kernel modules are below 40M:</dt>
+    	<dd>Check that the size of the kernel modules are below 40M:</dd>
         <dd>du -sh /lib/modules/</dd>
-    <dt>Check that the size of the installed system is below 800M:</dt>
+    	<dd>Check that the size of the installed system is below 800M:</dd>
         <dd>df -h</dd>
 </dl>
 <strong>

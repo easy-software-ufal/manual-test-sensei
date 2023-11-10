@@ -4,34 +4,67 @@ Scope of this test is to verify that the system is installed, you can login into
 <!-- Smells: UNVERIFIED STEPS, EXPECTED RESULTS AS STEP -->
 <dl>
     <dt>Boot up the image</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Choose the desired language</dt>
-    <dt>Select "Install Ubuntu Server"</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Select</dt>
+	<dt>"Install Ubuntu Server"</dt>
     <dt>Choose the language</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select your location</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Configure locales</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>At configure keyboard page, select NO </dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select the country of the keyboard</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select the keyboard layout</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select hostname ubuntu as default</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Insert the name for the new user</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Insert the name for the account</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Choose a password</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Reinsert the password</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>At encrypt request select NO</dt>
-    <dt>Verify or setup the timezone</dt>
-    <dt>At partitioning select "Guided - Use entire disk and set up encrypted LVM"</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Verify</dt>
+	<dt>setup the timezone</dt>
+    <dt>At partitioning select "Guided</dt>
+	<dt>- Use entire disk</dt>
+	<dt>set up encrypted LVM"</dt>
     <dt>Select disk to partition</dt>
-    <dt>At "Write changes to disks", verify that everythings is right and select YES</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>At "Write changes to disks"</dt>
+	<dt>verify that everythings is right</dt>
+	<dt>select YES</dt>
     <dt>Enter the encryption passphrase</dt>
-    <dt>Re-enter passphrase</dt>
-    <dt>Change the amount of the volume or let it as default</dt>
-    <dt>At "http proxy" request, leave it blank and press enter</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Re</dt>
+	<dt>-</dt>
+	<dt>enter passphrase</dt>
+    <dt>Change the amount of the volume</dt>
+	<dt>let it as default</dt>
+    <dt>At "http proxy" request, leave it blank</dt>
+	<dt>press enter</dt>
     <dt>At managing upgrades select "No automatic updates"</dt>
-    <dt>At Software selection, press "Enter"</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>At Software selection, press</dt>
+	<dt>"Enter"</dt>
     <dt>Select to install Grub in the master boot record</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Remove the installation media (CDROM or USB key)</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Wait that the system reboot</dt>
-    <dt>Enter passphrase, login and run:</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Enter passphrase</dt>
+	<dt>login</dt>
+	<dt>run:</dt>
         <dd>sudo mount</dd>
         <dd>Verify that the root file system is mounted from /dev/mapper/ubuntu-root and securityfs is mounted from /sys/kernel/security.</dd>        
 </dl>

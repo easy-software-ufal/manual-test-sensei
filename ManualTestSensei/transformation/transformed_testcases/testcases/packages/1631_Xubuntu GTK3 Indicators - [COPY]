@@ -2,6 +2,31 @@ This test will check that sound indicator works correctly
 
 <em>Requires media to be available for media application and for sound to be working</em>
 
+Ensure choose playlist is available (1)
+<dl>
+    <dt>Click sound indicator in panel</dt>
+        <dd>Sound menu appears</dd>
+    <dt>Select</dt>
+	<dt>click available media application</dt>
+        <dd>Selected application opens</dd>
+    <dt>Click play in indicator menu</dt>
+        <dd>Music plays in selected source</dd>
+    <dt>Change volume on indicator menu</dt>
+        <dd>Notification of volume changes appears</dd>
+        <dd>Volume of playing application changes</dd>
+    <dt>Press Forward</dt>
+        <dd>Track playing in source moves forward to next</dd>
+    <dt>Press Back</dt>
+        <dd>Track playing in source moves backward to previous</dd>
+    <dt>Press Pause</dt>
+        <dd>Track playing in source pauses</dd>
+    <dt>select new playlist (1)</dt>
+        <dd>Playlist changes, previous playing track stops, first track in new playlist plays</dd>
+<em>If more than one media application is available in indicator, complete the above test for each application</em>
+<dt>Press Sound Settings</dt>
+    <dd>pavucontrol opens</dd>
+</dl>
+[False Condition] 
 <dl>
     <dt>Click sound indicator in panel</dt>
         <dd>Sound menu appears</dd>
@@ -18,12 +43,8 @@ This test will check that sound indicator works correctly
         <dd>Track playing in source moves backward to previous</dd>
     <dt>Press Pause</dt>
         <dd>Track playing in source pauses</dd>
-    <dt>If choose playlist is available, select new playlist</dt>
-        <dd>Playlist changes, previous playing track stops, first track in new playlist plays</dd>
-<em>If more than one media application is available in indicator, complete the above test for each application</em>
-<dt>Press Sound Settings</dt>
-    <dd>pavucontrol opens</dd>
 </dl>
+
 
 This test will check that messages indicator works correctly
 
@@ -73,6 +94,7 @@ This test will check that power indicator works correctly
     <dt>Select "Power manager settings..."</dt>
         <dd>The Xfce Power Manager dialogue opens at the General tab</dd>
     <dt>Close the Xfce Power Manager dialogue</dt>
+		<dd>[FILL VERIFICATION]</dd>
 <em>If testing a laptop, complete the following tests.</em>    
     <dt>Click the power indicator in the panel</dt>
         <dd>Power menu appears</dd>

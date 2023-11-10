@@ -4,36 +4,64 @@ Scope of this test is to verify that the system is installed, you can login and 
 
 <dl>
     <dt>Boot up the image</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Choose the desired language</dt>
-    <dt>Select "Install Ubuntu Server"</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Select</dt>
+	<dt>"Install Ubuntu Server"</dt>
     <dt>Choose the language</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select your location</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Configure locales</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>At configure keyboard page, select NO </dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select the country of the keyboard</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select the keyboard layout</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select hostname ubuntu as default</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Insert the name for the new user</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Insert the name for the account</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Choose a password</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Reinsert the password</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>At encrypt request select NO</dt>
-    <dt>Verify or setup the timezone</dt>
-    <dt>At partitioning select "Guided - Use entire disk"</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Verify</dt>
+	<dt>setup the timezone</dt>
+    <dt>At partitioning select "Guided</dt>
+	<dt>- Use entire disk"</dt>
     <dt>Select disk to partition</dt>
-    <dt>At "Write changes to disks", verify that everythings is right and select YES</dt>
-    <dt>At "http proxy" request, leave it blank and press enter</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>At "Write changes to disks"</dt>
+	<dt>verify that everythings is right</dt>
+	<dt>select YES</dt>
+    <dt>At "http proxy" request, leave it blank</dt>
+	<dt>press enter</dt>
     <dt>At managing upgrades select "No automatic updates"</dt>
-    <dt>At Software selection, choose "Virtual Machine host" with arrows, select it with "space bar" and confirm with "Enter"</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>At Software</dt>
+	<dt>selection, choose "Virtual Machine host" with arrows</dt>
+	<dt>select it with "space bar"</dt>
+	<dt>confirm with "Enter"</dt>
     <dt>Select to install Grub in the master boot record</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Remove the installation media (CDROM or USB key)</dt>
-    <dt>Wait that the system reboot, login</dt>
-    <dt>Verify that ubuntu-virt-server package is installed:</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Wait that the system reboot</dt>
+	<dt>login</dt>
+    	<dd>Verify that ubuntu-virt-server package is installed:</dd>
         <dd>dpkg -l ubuntu-virt-server</dd>
-    <dt>Verify that you have KVM-capable hardware:</dt>
+    	<dd>Verify that you have KVM-capable hardware:</dd>
         <dd>kvm-ok</dd>
         <dd>has to return that KVM acceleration can be used</dd>
-    <dt>Verify that the KVM kernel module is loaded</dt>
+    	<dd>Verify that the KVM kernel module is loaded</dd>
         <dd>lsmod | grep kvm</dd>        
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.

@@ -7,7 +7,8 @@ This test will check that VLC can open an audio file
     <!-- EAGER STEP -->
     <dt>Go to Media > Click on 'Open File'..., select an audio file and press Open</dt>
         <dd>The selected audio is played</dd>
-    <dt>Click on 'stop playback' button at the bottom</dt>
+    <dt>Click on</dt>
+	<dt>'stop playback' button at the bottom</dt>
         <dd>The audio is stopped</dd>
 </dl>
 
@@ -45,13 +46,15 @@ This test will check VLC control panel
     <!-- EAGER STEP -->
     <dt>Go to Media > Click on 'Open File'..., select two different video/audio files and press Open</dt>
 	    <dd>The selected video/audio is played</dd>
-    <dt>Click on "Pause the playback" button at the bottom</dt>
+    <dt>Click on</dt>
+	<dt>"Pause the playback" button at the bottom</dt>
 	    <dd>The selected video/audio is paused</dt>
     <dt>Click on "Play" button at the bottom</dt>
 	    <dd>Video/audio is resumed from where it was paused</dt>
     <dt>Click on "Next media" button at the bottom</dt>
 	    <dd>The next file in the list starts playing</dd>
-    <dt>Click on 'Stop playback' button at the bottom</dt>
+    <dt>Click on</dt>
+	<dt>'Stop playback' button at the bottom</dt>
         <dd>The video is stopped</dd>
 </dl>
 

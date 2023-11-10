@@ -290,14 +290,21 @@ This test will check that LibreOffice Impress can open and save Powerpoint files
 
 Test-case name: libreoffice/lbc-030
 This test will check that LibreOffice Impress can convert ODF to Powerpoint
+Ensure reopening the file (1)
 <dl>
     <dt> Open an OpenDocument presentation (.odp) file containing special characters in your language</dt>
         <dd>The file should save correctly.</dd>
     <dt> Save the file to MS PowerPoint (.ppt) file format.</dt>
-        <dd>When reopening the file, the content should display correctly in PowerPoint application or the viewer.</dd>
+        <dd>the content should display correctly in PowerPoint application or the viewer. (1)</dd>
     <dt> Reopen the file in PowerPoint or in PowerPoint viewer.</dt>
         <dd>Is the content not altered?</dd>
 </dl>
+[False Condition] 
+<dl>
+    <dt> Open an OpenDocument presentation (.odp) file containing special characters in your language</dt>
+        <dd>The file should save correctly.</dd>
+</dl>
+
 
 Test-case name: libreoffice/lbc-031
 This test will check that LibreOffice Impress can convert Powerpoint to ODF

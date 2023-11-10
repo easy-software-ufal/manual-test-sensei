@@ -11,26 +11,47 @@ Test-case name: Youker-Assistant
     Testcases for "system customizations".
     <dt> Choose "theme setting" under "Personalization" and select one theme in the list such as "Radiance", then click "OK" to apply the change.</dt>
         <dd>Did the system theme change to "Radiance" style?</dd>
-    <dt>Choose "icon setting" under Personalization and select one icon theme in the list such as "unity-icon-theme", then click "OK" to apply the change.</dt>
+    <dt>Choose "icon setting" under Personalization</dt>
+	<dt>select one icon theme in the list such as "unity-icon-theme"</dt>
+	<dt>then click "OK" to apply the change.</dt>
         <dd>Did the system icons change to "unity-icon-theme"?</dd>
     <dt>Choose "Mouse pointer setting" under "Personalization" and select one mouse pointer theme from the drop-down list, check the mouse pointer size option as  "large size" or "small size", then click "OK" to apply the change.</dt>
         <dd>Did the mouse pointer change to selected options? </dd>
     <!-- EAGER STEP  -->
-    <dt>Choose "Sound effect setting" under "Personalization" and select one sound theme from the drop-down list, then click "OK" to apply the change. Select one item in the "sound event list" and click play/replace/reset to test the according functions.</dt>
+    <dt>Choose "Sound effect setting" under "Personalization"</dt>
+	<dt>select one sound theme from</dt>
+	<dt>the drop-down list</dt>
+	<dt>then</dt>
+	<dt>click "OK" to apply the change</dt>
+	<dt>.</dt>
+	<dt>Select one item in the "sound event list"</dt>
+	<dt>click play/replace/reset to test the according functions.</dt>
         <dd>Did the sound change take effect? </dd>
-    <dt>Choose "Boot animation setting" under "Personalization" and click "user-defined picture" to choose a local picture. Then select one item in the avaliable list and click "OK" to apply the change.</dt>
-        <dd>Reboot the system to see weather the boot animation change to the setting.</dd>
+    <dt>Choose "Boot animation setting" under "Personalization"</dt>
+	<dt>click "user-defined picture" to choose a local picture.</dt>
+	<dt>Then select one item in the avaliable list</dt>
+	<dt>click "OK" to apply the change.</dt>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Reboot the system to see weather the boot animation change to the setting.</dt>
+		<dd>[FILL VERIFICATION]</dd>
 
     <dt>Choose "launcher setting" under "Unity" and click the  launcher options such as "auto hide","launcher icon size", "show desktop icon on launcher". Then click "OK" to apply the change.</dt>
         <dd>Did the launcher change to selected options?</dd>
 
-    <dt>Choose "font setting" under "Unity" and set the font options such as "system default font","document font","window title font".</dt>
+    <dt>Choose "font</dt>
+	<dt>setting" under "Unity"</dt>
+	<dt>set the font options such as "system default font","document font","window title font".</dt>
         <dd>Did the font change to selected options?</dd>
 
-    <dt>Choose "touchpad setting" under "System options" and set the touchpad options.</dt>
+    <dt>Choose "touchpad</dt>
+	<dt>setting" under "System options"</dt>
+	<dt>set the touchpad options.</dt>
         <dd>Did the touchpad change to selected options?</dd>
 
-    <dt>Choose "screen test" under "System options" and click "OK" to begin screen test. Then click mouse to change background color to check pixel.</dt>
+    <dt>Choose "screen test" under "System options"</dt>
+	<dt>click "OK" to begin screen test. Then</dt>
+	<dt>click mouse to change background color to check pixel.</dt>
         <dd>Did the function work as expected?</dd>
 </dl>
 

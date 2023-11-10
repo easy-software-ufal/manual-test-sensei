@@ -15,7 +15,8 @@ This test will check if Recording button works
 </dl>
 This test will check if RecordMyDesktop saves a file to .ogv file format
 <dl> 
-    <dt>Select "Save As" from the main program screen</dt>
+    <dt>Select</dt>
+	<dt>"Save As" from the main program screen</dt>
 	<dd>File saved in .ogv format correctly</dd>
 </dl>    
 

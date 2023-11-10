@@ -132,7 +132,9 @@ This test will check that user can share documents to another system using Samba
     <dt> Double click on 'test' folder, right click on 'moveme.txt' file and select 'copy'</dt>
     <dt> Go to the local drive of the extern system and paste 'moveme.txt' there</dt>
         <dd>is 'moveme.txt' pasted?</dd>
-        <dd>have the same content?</dd>
+        
+	<dt>have the same content?</dt>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 This test will check that a mounted USB drive appears in Nautilus:
 <dl>
@@ -149,6 +151,7 @@ This test will check that 'Open' dialog appears when plugging in a music device:
     <dt> Insert the player into the USB port of the system under tests and wait for new dialog to appear</dt>
         <dd>An 'Open' dialog window will appear offering you options.</dd> 
     <dt>Select the 'Rhythmbox Music Player' application, if not already selected</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt> Click OK button in the dialog box</dt>
         <dd>Did Rhythmbox open with the Music Device displayed as a separate entry in the left panel tree?</dd>
 </dl>
@@ -158,6 +161,7 @@ This test will check that 'Open' dialog appears when inserting a DVD:
     <dt> Insert the DVD into the DVD drive of the system under tests and wait for new dialog to appear</dt>
         <dd>An 'Open' dialog window will appear offering you options.</dd> 
     <dt>Select the 'Movie Player (Totem)' application, if not already selected</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt> Click OK button in the dialog box</dt>
         <dd>Did DVD playback start in Totem?</dd>
 </dl>
@@ -176,6 +180,7 @@ This test will check that 'Open' dialog appears on inserting a camera:
     <dt> Plug in the camera to the system under test and wait for new dialog to appear.</dt>
         <dd>An 'Open' dialog window will appear offering you options.</dd> 
     <dt>Select the 'Shotwell' application, if not already selected.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt> Click OK button in the dialog box</dt>
         <dd>Did Shotwell open with the camera displayed in left panel tree?</dd>
 </dl>

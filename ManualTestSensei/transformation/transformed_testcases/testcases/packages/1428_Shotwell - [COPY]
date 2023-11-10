@@ -1,10 +1,14 @@
 This test will check that Shotwell can import images from camera
 <dl>
-    <dt>Plug in your camera using a USB cable. Your camera may need to be switched on, check the camera manual</dt>
+    <dt>Plug in your camera using a USB cable. Your camera</dt>
+	<dt>may need to be switched on</dt>
+	<dt>check the camera manual</dt>
         <dd>A window appears telling you that it has detected media that contains digital photos</dd>
-    <dt>Select ‘shotwell’ in the dropdown and click ok</dt>
+    <dt>Select ‘shotwell’ in the dropdown</dt>
+	<dt>click ok</dt>
         <dd>Shotwell loads and display thumbnails of the photos on your camera</dd>
-    <dt>Select a single photo and click Import Selected</dt>
+    <dt>Select a single photo</dt>
+	<dt>click Import Selected</dt>
         <dd>Shotwell imports the photo and displays a prompt asking you if you wish to delete the photos from the camera</dd>
     <dt>Select no</dt>
         <dd>The dialog disappears</dd>
@@ -13,13 +17,15 @@ This test will check that Shotwell can import images from camera
 </dl>
 This test will check that Shotwell can edit images
 <dl>
-    <dt>Ensure shotwell is still loaded and displaying your import picture. Double click the picture thumbnail</dt>
+    <dt>Ensure shotwell is still loaded and displaying your import picture.</dt>
+	<dt>Double click the picture thumbnail</dt>
         <dd>The image is enlarged and editing buttons exist below the image: Rotate, Crop, Red-eye, Adjust, Enhance</dd>
     <dt>Click rotate button four times</dt>
         <dd>The image turns 90 degrees after each click and return to its original orientation upon completion</dd>
     <dt>Click the Crop button</dt>
         <dd>A square appears, the photo within the square will appear with normal contrast, outside the square the photo will have reduced contrast</dd>
-    <dt>Click and drag the square with the mouse to the left hand side of the image</dt>
+    <dt>Click</dt>
+	<dt>drag the square with the mouse to the left hand side of the image</dt>
         <dd>The cropped square moves and a grid will appear that divides the cropped area into nine smaller squares</dd>
     <dt>Click OK</dt>
         <dd>The photo is now cropped and contains only the area selected</dd>
@@ -40,31 +46,41 @@ This test will check that Shotwell can edit images
 </dl>
 This test will check that Shotwell can publish images online
 <dl>
-    <dt>Select an image you want to publish in thumbnail view, and then select File, Publish.</dt>
+    <dt>Select an image you want to publish in thumbnail view,</dt>
+	<dt>then select File, Publish.</dt>
         <dd>The shotwell publish dialog appears</dd>
-    <dt>Select an on-line provider from the dropdown and press Login</dt>
+    <dt>Select an on-line provider from the dropdown</dt>
+	<dt>press Login</dt>
         <dd>The dialog connects to the providers login page</dd>
-    <dt>Enter your login details and login to the providers page</dt>
+    <dt>Enter your</dt>
+	<dt>login details</dt>
+	<dt>login to the providers page</dt>
         <dd>Login is successful</dd>
-    <dt>Name the new album and hit publish</dt>
+    <dt>Name the new album</dt>
+	<dt>hit publish</dt>
         <dd>The images are published to the online provider</dd>
 </dl>
 This test will check that Shotwell can export pictures to folder
 <dl>
-    <dt>Select an image you want to export in thumbnail view, and then select File, Export</dt>
+    <dt>Select an image you want to export in thumbnail view,</dt>
+	<dt>then select File, Export</dt>
         <dd>Export dialog appears</dd>
     <dt>Click ok</dt>
         <dd>Folder select dialog appears</dd>
-    <dt>Select folder and hit save</dt>
+    <dt>Select folder</dt>
+	<dt>hit save</dt>
         <dd>The Picture gets exported to a new location</dd>
 </dl>
 This test will check that Shotwell can set images as the desktop background
 <dl>
-    <dt>Select an image you want to set as your desktop background in thumbnail view, and then select File, Set As Desktop Background</dt>
+    <dt>Select an image you want to set as your desktop background in thumbnail view,</dt>
+	<dt>then select File, Set As Desktop Background</dt>
         <dd>Your desktop background is now set to the picture you selected</dd>
-    <dt>Select a group of images you want to set as your desktop slideshow in thumbnail view, and then select File, Set As Desktop Slideshow</dt>
+    <dt>Select a group of images you want to set as your desktop slideshow in thumbnail view,</dt>
+	<dt>then select File, Set As Desktop Slideshow</dt>
         <dd>The Set as Desktop Slideshow dialog appears</dd>
-    <dt>Slide the slider to set show each photo for 5 seconds</dt>
+    <dt>Slide the slider to</dt>
+	<dt>set show each photo for 5 seconds</dt>
         <dd>Exporting dialog pops up and disappears</dd>
         <dd>Your desktop background is now set to the images you selected and they are rotating every 5 seconds as set</dd>
 </dl>

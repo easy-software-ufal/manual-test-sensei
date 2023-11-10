@@ -1,7 +1,9 @@
 Test-case softwarecenter/install-app
 <dl>
     <dt>Open the Software Center</dt>
-    <dt>Search and select any graphical application that has not been yet installed</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Search</dt>
+	<dt>select any graphical application that has not been yet installed</dt>
     <dt>Press Install to install the application</dt>
         <dd>A standard authentication dialog should pop out</dd>
         <dd>The icon for the installing application should appear on the Launcher</dd>
@@ -12,7 +14,8 @@ Test-case softwarecenter/install-app
 Test-case softwarecenter/uninstall-app
 <dl>
     <dt>Open the Software Center</dt>
-    <dt>Search and install any graphical application</dt>
+    <dt>Search</dt>
+	<dt>install any graphical application</dt>
         <dd>Its icon should be added to the Launcher</dd>
     <dt>Using Software Center uninstall the newly installed application</dt>
         <dd>The uninstalled application icon should disappear from the Launcher</dd>

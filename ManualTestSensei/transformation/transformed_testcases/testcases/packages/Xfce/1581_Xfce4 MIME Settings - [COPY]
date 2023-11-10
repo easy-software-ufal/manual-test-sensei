@@ -1,6 +1,7 @@
 This test will check that the MIME Type Editor can open
 <dl>
-    <dt>Locate "MIME Type Editor" under "System" in the Settings dialog and click on it</dt>
+    <dt>Locate "MIME Type Editor" under "System" in the Settings dialog</dt>
+	<dt>click on it</dt>
         <dd>The MIME Type Editor dialog opens</dd>
 </dl>
 
@@ -20,34 +21,51 @@ This test will check that application associations can be set and changed
 <dl>
     <dt>Enter "log" in the "Filter:" field</dt>
         <dd>The list of MIME types is filtered to those names containing "log"</dd>
-    <dt>Locate the "text/x-log" entry and click on it</dt>
+    <dt>Locate the "text/x-log" entry</dt>
+	<dt>click on it</dt>
         <dd>Its associated default application shows Mousepad</dd>
     <dt>Click on "Mousepad"</dt>
         <dd>A drop-down list appears displaying two recommended applications, Mousepad and LibreOffice Writer</dd>
     <dt>Select LibreOffice Writer</dt>
         <dd>LibreOffice Writer now appears as the "Default Application", the "Status" changes to "User Set", and the typeface of the entire row changes to bold</dd>
-    <dt>Open the File Manager and navigate to the /var/log folder</dt>
-    <dt>Double-click on any file with a .log extension</dt>
+    <dt>Open the File Manager</dt>
+	<dt>navigate to the /var/log folder</dt>
+    <dt>Double</dt>
+	<dt>-</dt>
+	<dt>click on any file with a .log extension</dt>
         <dd>The file opens with LibreOffice Writer</dd>
     <dt>Close LibreOffice Writer</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>In the MIME Type Editor, click again on the "Default Application" field of the "text/x-log" entry</dt>
         <dd>The drop-down menu appears</dd>
-    <dt>Click "Reset to Default"</dt>
+    <dt>Click</dt>
+	<dt>"Reset to Default"</dt>
     <dt>Click the 'Reset to Default' button on the 'Question' dialog to confirm</dt>
         <dd>"Status" changes back to "Default", "Default Application" again shows "Mousepad" and the typeface is un-bolded</dd>
-    <dt>Locate the same .log file in File Manager and double-click on it</dt>
+    <dt>Locate the same .log file in File Manager</dt>
+	<dt>double</dt>
+	<dt>-click on it</dt>
         <dd>The file opens in Mousepad</dd>
     <dt>Close Mousepad</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Close MIME Type Editor</dt>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 
 This test will check that MIME Type Editor will correctly display a file association changed with another application
 <dl>
-    <dt>Right-click on the same .log file in File Manager and select "Open with LibreOffice Writer" from the Properties drop-down</dt>
+    <dt>Right</dt>
+	<dt>-click on the same .log file in File Manager</dt>
+	<dt>select</dt>
+	<dt>"Open with LibreOffice Writer" from the Properties drop-down</dt>
         <dd>The file opens in LibreOffice Writer</dd>
-    <dt>Open MIME Type Editor and locate the "text/x-log" MIME Type entry</dt>
+    <dt>Open MIME Type Editor</dt>
+	<dt>locate the "text/x-log" MIME Type entry</dt>
         <dd>The "Status" shows "User Set" and the "Default Application" shows "LibreOffice Writer"</dd>
-    <dt>Click on "LibreOffice Writer", select "Reset to Default" and confirm your choice</dt>
+    <dt>Click on "LibreOffice Writer"</dt>
+	<dt>select</dt>
+	<dt>"Reset to Default"</dt>
+	<dt>confirm your choice</dt>
         <dd>The "text/x-log" entry is set back to its default of Mousepad</dd>
     <dt>Close MIME Type Editor</dt>
     <dt>Close LibreOffice Writer</dt>

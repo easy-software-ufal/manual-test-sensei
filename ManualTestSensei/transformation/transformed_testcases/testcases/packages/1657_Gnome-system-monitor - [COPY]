@@ -1,10 +1,11 @@
 These instructions test that the Gnome System Monitor app is able to clearly display system resource usage and is able to end a running process
 If the gnome-system-monitor is not installed, install it with <code>apt-get install gnome-system-monitor</code>
+Ensure not shown (1)
 <dl>
     <dt>Launch the application</dt>
         <dd>The application launches</dd>
 Application by default, shows the processes tab that shows a list of processes ran by the login user
-    <dt>If not shown, click the processes tab</dt>
+    <dt>click the processes tab (1)</dt>
         <dd>The application lists the name of processes that are running,</dd>
         <dd>resources they are using(cpu%, system memory)</dd>
         <dd>user that is running each process</dd>
@@ -31,6 +32,13 @@ Closing a process
     <dt>Click "End Process"</dt>
 	<dd>The application closes</dd>
 </dl>
+[False Condition] 
+<dl>
+    <dt>Launch the application</dt>
+        <dd>The application launches</dd>
+Application by default, shows the processes tab that shows a list of processes ran by the login user
+</dl>
+
 
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
             If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

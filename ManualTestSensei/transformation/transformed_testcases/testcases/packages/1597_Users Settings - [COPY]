@@ -8,15 +8,22 @@ This test will check that Users Settings will open and close correctly
 
 This test will check that users can be added, password being generated - logout and login will be required for this test
 <dl>
-    <dt>Open Users Settings, press Add</dt>
+    <dt>Open Users Settings</dt>
+	<dt>press Add</dt>
         <dd>Authenticate dialogue opens</dd>
-    <dt>Enter password and press Authenticate</dt>
-        <dd>Create New User dialogue opens</dd>
+    <dt>Enter password</dt>
+	<dt>press Authenticate</dt>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Create New User dialogue opens</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Supply a Name and Username</dt>
         <dd>OK button becomes available</dd>
     <dt>Press OK</dt>
         <dd>New User dialogue closes</dd>
-        <dd>Change User Password dialogue opens</dd>
+        
+	<dt>Change User Password dialogue opens</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select Generate random password</dt>
         <dd>Random password generated</dd>
     <dt>Press OK</dt>
@@ -26,22 +33,37 @@ This test will check that users can be added, password being generated - logout 
 
 This test will check that Users settings can be amended
 <dl>
-    <dt>Select new user and press Change next to user name in right of panel</dt>
-        <dd>Change User Name dialogue opens</dd>
-    <dt>Change user name and press OK</dt>
+    <dt>Select new user</dt>
+	<dt>press Change next to user name in right of panel</dt>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Change User Name dialogue opens</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Change user name</dt>
+	<dt>press OK</dt>
         <dd>Dialogues reflect user name change</dd>
     <dt>Press change next to account type</dt>
-        <dd>Change User Type dialogue opens</dd>
-    <dt>Change user to Administrator and press OK</dt>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Change User Type dialogue opens</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Change user to Administrator</dt>
+	<dt>press OK</dt>
         <dd>Authenticate dialogue opens</dd>
     <dt>Supply your password</dt>
         <dd>Authenticate dialogue closes, User type dialogue closes, Account type reflects change</dd>
     <dt>Select change next to Password</dt>
         <dd>Password dialogue opens</dd>
-    <dt>Change password manually and supply confirmation, press OK</dt>
+    <dt>Change password manually</dt>
+	<dt>supply confirmation</dt>
+	<dt>press OK</dt>
         <dd>Password dialogue closes</dd>
-    <dt>Click Advanced Settings, supply password if required</dt>
-        <dd>Change Advanced User setting dialogue opens at Contact Information tab</dd>
+    <dt>Click Advanced Settings</dt>
+	<dt>supply password if required</dt>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Change Advanced User setting dialogue opens at Contact Information tab</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select User Privileges tab</dt>
         <dd>Dialogue changes</dd>
     <dt>Change a privilege</dt>
@@ -50,7 +72,8 @@ This test will check that Users settings can be amended
         <dd>Dialogues closes</dd>
     <dt>Click Manage groups</dt>
         <dd>Groups settings dialogue opens</dd>
-    <dt>Select a group and press Properties</dt>
+    <dt>Select a group</dt>
+	<dt>press Properties</dt>
         <dd>Group properties dialogue opens</dd>
     <dt>Change permission for <b>test account only</b></dt>
         <dd>Permission for property changes</dd>
@@ -64,7 +87,10 @@ This test will check that Users can be deleted
 <dl>
     <dt>Select <b>test user previously created</b></dt>
     <dt>Press Delete</dt>
-        <dd>Remove home folder for test user shows</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Remove home folder for test user shows</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Select Delete Files</dt>
         <dd>Dialogue closes, test user removed from list</dd>
 </dl>

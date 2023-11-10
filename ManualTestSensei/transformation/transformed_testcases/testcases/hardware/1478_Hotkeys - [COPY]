@@ -8,6 +8,7 @@ This tests that the video player can respond to Multimedia keys on a keyboard
     <dt>Open Movie Player</dt> 
         <dd>Movie player opens</dd>
     <dt>Open a playlist</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Press on the Play key (This can be combined with Pause key)</dt> 
         <dd>This starts playing the playlist</dd> 
     <dt>Press on the Stop key</dt> 
@@ -73,13 +74,17 @@ The following only apply if you have the internet hot keys.
 <dl>
     <dt>Press on the Home or WWW key</dt>
         <dd>The default internet browser opens</dd>
-    <dt>Go to www.ubuntu.com</dt> 
-    <dt>Go to planet.ubuntu.com</dt> 
+    <dt>Go to www.ubuntu.com</dt>
+		<dd>[FILL VERIFICATION]</dd> 
+    <dt>Go to planet.ubuntu.com</dt>
+		<dd>[FILL VERIFICATION]</dd> 
     <dt>Press the Back key</dt>
         <dd>The ubuntu home page opens</dd>
     <dt>Press the Forward key</dt> 
         <dd>The planet ubuntu page opens</dd>
-    <dt>Open a webpage. Press the Stop key before the page has fully loaded</dt> 
+    <dt>Open a webpage</dt>
+	<dt>.</dt>
+	<dt>Press the Stop key before the page has fully loaded</dt> 
         <dd>The page stops loading</dd>        
     <dt>Press the Home key</dt> 
         <dd>Your homepage opens</dd>

@@ -25,7 +25,8 @@ This test will check that Window title and button customisation's are applied co
         <dd>Title alignment changes</dd>
     <dt>Change Title font and alignment back to default</dt>
         <dd>Title font and alignment change</dd>
-    <dt>Click and drag buttons in Button layout</dt>
+    <dt>Click</dt>
+	<dt>drag buttons in Button layout</dt>
         <dd>Buttons move in Window title bar</dd>
     <dt>Return buttons to default position</dt>
         <dd>Buttons return to default positions</dd>
@@ -42,14 +43,21 @@ This test will check that Focus changes are applied correctly
     <dt>Select Focus Tab</dt>
         <dd>Window changes to Focus tab, Click to focus, New window focus, Raise on click selected by default</dd> 
     <dt>Select Focus follows mouse</dt>
-        <dd>Focus follow mouse button selected</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Focus follow mouse button selected</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Open any other application</dt>
         <dd>Chosen application opens</dd>
     <dt>Move between application windows without clicking</dt>
-        <dd>Focus moves between applications following mouse</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Focus moves between applications following mouse</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Move Focus delay slider</dt>
         <dd>Speed at which focus is applied changes</dd>
-    <dt>Deselect all focus options, leaving focus model at Click to focus</dt>
+    <dt>Deselect all focus options, leaving focus model</dt>
+	<dt>at Click to focus</dt>
         <dd>All ticks removed from boxes</dd>
         <!-- is this eager test? -->
     <dt>Open the file manager with Super +f</dt>
@@ -61,11 +69,15 @@ This test will check that Focus changes are applied correctly
         <dd>Tick appears in box</dd>
     <dt>Click inside the file manager</dt>
         <dd>The file manager gains focus and is raised above other windows</dd>
-    <dt>Deselect Raise on click, select Raise on focus</dt>
+    <dt>De</dt>
+	<dt>select Raise on click</dt>
+	<dt>select Raise on focus</dt>
         <dd>Tick appears in Raise on focus, removed from Raise on click</dd>
     <dt>Click in the file manager</dt>
         <dd>The file manager gains focus</dd>
-    <dt>Deselect Raise on focus, select New Window focus</dt>
+    <dt>De</dt>
+	<dt>select Raise on focus</dt>
+	<dt>select New Window focus</dt>
         <dd>Tick appears in New window focus, tick removed from Raise on focus</dd>
     <dt>Open the file manager</dt>
         <dd>The file manager opens raised and with focus</dd>
@@ -84,10 +96,12 @@ This test will check that Advanced options are applied correctly
         <dd>Cursor changes to a 'hand'</dd>
     <dt>Drag window to screen border</dt>
         <dd>Window snaps to screen border</dd>
-    <dt>Select Snap windows to other windows, press Super +T</dt>
+    <dt>Select Snap windows to other windows</dt>
+	<dt>press Super +T</dt>
         <dd>Tick appears in Window Manager dialogue</dd>
         <dd>Terminal opens</dd>
-    <dt>Grab Terminal by left clicking on title bar, move terminal until closes with Window Manager edge</dt>
+    <dt>Grab Terminal by left clicking on title bar</dt>
+	<dt>move terminal until closes with Window Manager edge</dt>
         <dd>Terminal snaps to Window Manager</dd>
     <dt>Select both windows snapping options</dt>
         <dd>Ticks removed from dialogue window</dd>
@@ -95,13 +109,16 @@ This test will check that Advanced options are applied correctly
     <dt>Select both windows snapping options</dt>
         <dd>Ticks appear from dialogue window</dd>
     <dt>Change edge resistance using slider</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Move window close to screen border</dt>
         <dd>Distance at which window snaps changes</dd>
     <dt>Move window close to another window</dt>
         <dd>Distance at which window snaps changes</dd>
-    <dt>Select Terminal and press X in top right</dt>
+    <dt>Select Terminal</dt>
+	<dt>press X in top right</dt>
         <dd>Terminal closes</dd>
-    <dt>Left click on Window manager title bar and move to screen border</dt>
+    <dt>Left click on Window manager title bar</dt>
+	<dt>move to screen border</dt>
         <dd>Window Manager wraps to next workspace</dd>
     <dt>Select Wrap works space when pointer reaches screen edge</dt>
         <dd>Tick appears in dialogue</dd>
@@ -112,17 +129,20 @@ This test will check that Advanced options are applied correctly
     <dt>Change edge resistance using slider</dt>
     <dt>Repeat wrap tests for both mouse cursor and window</dt>
         <dd>Distance at which wrap occurs changes</dd>
-    <dt>Select both Box move and resize options</dt>
+    <dt>Select both Box move</dt>
+	<dt>resize options</dt>
         <dd>Ticks appear in 2 boxes</dd>
     <dt>Move cursor to top right corner of Window Manager</dt>
         <dd>Cursor changes to resize icon</dd>
     <dt>Resize window</dt>
         <dd>Window content not visible in resize border</dd>
-    <dt>Grab window by title bar and move window</dt>
+    <dt>Grab window by title bar</dt>
+	<dt>move window</dt>
         <dd>Window content not visible in moving border</dd>
     <dt>Select both Box move and resize options</dt>
         <dd>Ticks removed in 2 boxes</dd>
-    <dt>Repeat resize and move tests</dt>
+    <dt>Repeat resize</dt>
+	<dt>move tests</dt>
         <dd>Window content visible during both tests</dd>
     <dt>Select Double click action</dt>
         <dd>Action choice menu appears</dd>

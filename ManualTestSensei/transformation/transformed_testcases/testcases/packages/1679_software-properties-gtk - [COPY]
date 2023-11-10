@@ -3,9 +3,11 @@
 <strong>This will make sure that Software & Updates can properly enable and disable default respositories.</strong>
 <dl>
     <dt>Open Software & Updates</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Uncheck <code>Community-maintained free and open-source software (universe)</code></dt>
         <dd>A dialog box should pop up prompting you for your password</dd>
-    <dt>Type in your password and click OK</dt>
+    <dt>Type in your password</dt>
+	<dt>click OK</dt>
         <dd>The password dialog box should close</dd>
     <dt>Open a terminal and type: <code>cat /etc/apt/sources.list | grep "universe"</code></dt>
         <dd>There should be no output</dd>
@@ -17,6 +19,7 @@
 <strong>This will check the ability to switch servers and revert</strong>
 <dl>
     <dt>Ensure Software & Updates is open</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click the dropdown next to <code>Download from:</code>, and note the mirror you are currently on</dt>
         <dd>The dropdown should show with several options</dd>
     <dt>Select <code>Other...</code></dt>

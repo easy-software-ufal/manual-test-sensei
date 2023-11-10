@@ -6,11 +6,16 @@
 <dl>
     <!-- UNVERIFIED STEPS -->
     <dt>Open /tmp in File Manager</dt>
-    <dt>Right-click the downloaded .deb file and select GDebi Package Installer</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Right</dt>
+	<dt>-click the downloaded .deb file</dt>
+	<dt>select GDebi Package Installer</dt>
         <dd>vrms should open in GDebi and the "Description" tag should be active with a description of vrms</dd>
-    <dt>Click the "Install Package" button</dt>
+    <dt>Click the</dt>
+	<dt>"Install Package" button</dt>
         <dd>You should be prompted for your password</dd>
-    <dt>Enter your password and press Enter</dt>
+    <dt>Enter your password</dt>
+	<dt>press Enter</dt>
         <dd>After a short amount of time, a dialog box should appear saying, "Installation Finished"</dd>
     <dt>Click the "Close" button on the dialog box</dt>
         <dd>The original dialog box should appear with three (3) buttons instead of two (2)</dd>
@@ -18,17 +23,21 @@
         <dd>The package details should properly show</dd>
     <dt>Select the "Included files" tab</dt>
         <dd>A list of files should properly show with several dropdown menus</dd>
-    <dt>Click the "Remove Package" button</dt>
+    <dt>Click the</dt>
+	<dt>"Remove Package" button</dt>
         <dd>After a short amount of time, a dialog box should appear saying, "Removal finished"</dd>
     <dt>Click the "Close" button on the dialog box</dt>
         <dd>The original dialog box should appear with two (2) buttons</dd>
-    <dt>Install the package again and close the additional dialog box</dt>
+    <dt>Install the package again</dt>
+	<dt>close the additional dialog box</dt>
         <dd>The original dialog box should appear with three (3) buttons instead of two (2)</dd>
     <dt>Click the "Reinstall Package" button</dt>
         <dd>After a short amount of time, a dialog box should appear saying, "Installation Finished"</dd>
     <dt>Install the package again and close the additional dialog box</dt>
         <dd>The original dialog box should appear with three (3) buttons</dd>
-    <dt>Open a terminal, type "vrms", and press Return</dt>
+    <dt>Open a terminal</dt>
+	<dt>type "vrms",</dt>
+	<dt>press Return</dt>
         <dd>vrms should function like normal, showing the nonfree packages on your system</dd>
 </dl>
 <strong>This will make sure that the command line GDebi interface works properly.</strong>
@@ -38,9 +47,10 @@
         <dd>Apt should prompt you to remove vrms, type "y" then Return, then apt should successfully remove vrms</dd>
     <!-- UNVERIFIED STEPS -->
     <dt>Change directories into /tmp</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Run the following command to install vrms: sudo -H gdebi vrms_PACKAGEVERSION_all.deb</dt>
         <dd>GDebi should prompt you to install vrms, type "y" then Return, then GDebi should successfully install vrms</dd>
-    <dt>Run the following command to check the version of GDebi: gdebi --version</dt>
+    	<dd>Run the following command to check the version of GDebi: gdebi --version</dd>
         <dd>This should output the version of GDebi</dd>
 </dl>
 <strong>

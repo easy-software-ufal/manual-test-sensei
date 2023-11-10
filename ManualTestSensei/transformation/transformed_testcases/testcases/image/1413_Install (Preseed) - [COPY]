@@ -9,16 +9,20 @@ Scope of this test is to verify that the system is installed in itself starting 
 
 <dl>
     <dt>Boot up the image</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Choose the desired language,  press F6, Esc, and F8. This will show you the Boot Options line:
         Boot Options file=/cdrom/preseed/ubuntu-server.seed vga=788 initrd=/install/initrd.gz quiet --</dt>
     <dt>Replace 'file=/cdrom/preseed/ubuntu-server.seed' by 'auto
         url=http://people.canonical.com/~plars/default.cfg auto=true
         priority=critical'. The Boot Options line should now look like:
         Boot Options auto url=http://people.canonical.com/~plars/default.cfg auto=true priority=critical vga=788 initrd=/install/initrd.gz quiet --</dt>
-    <dt>Press Enter to accept the boot command line and start the installation</dt>
-    <dt>From this point on, the installation should proceed automatically. Wait until the system reboots. </dt>
+    <dt>Press Enter to accept the boot command line</dt>
+	<dt>start the installation</dt>
+    <dt>From this point on, the installation should proceed automatically</dt>
+	<dt>.</dt>
+	<dt>Wait until the system reboots.</dt>
     <dt>At the login insert ubuntu as userid and <strong>ubuntu</strong> as password</dt>
-    <dt>Verify that the server is working executing:</dt>
+    	<dd>Verify that the server is working executing:</dd>
         <dd>ntptime</dd>
         <dd>the output should look like:
             <pre>

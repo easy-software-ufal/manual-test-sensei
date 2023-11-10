@@ -10,9 +10,11 @@ This test will check that Application Finder runs and stores custom commands
 <dl>
     <dt>Press Alt+F2</dt>
         <dd>Application Finder opens</dd>
-    <dt>In dialogue type 'thunar /home' to open the file manager and press Launch</dt>
+    <dt>In dialogue type 'thunar /home' to open the file manager</dt>
+	<dt>press Launch</dt>
         <dd>The file manager window opens showing /home/</dd>
-    <dt>Close the file manager and Press Alt+F2</dt>
+    <dt>Close the file manager</dt>
+	<dt>Press Alt+F2</dt>
         <dd>The file manager closes, Application Finder opens</dd>
     <dt>In dialogue type 'th'</dt>
         <dd>Dialogue autocompletes remainder of 'thunar /home' command</dd>
@@ -38,7 +40,8 @@ This test will check that Application Finder will clear stored commands
 
 This test will check that Application Finder opens applications correctly and closes itself
 <dl>
-    <dt>Select an application from All Applications and press Launch button</dt>
+    <dt>Select an application from All Applications</dt>
+	<dt>press Launch button</dt>
         <dd>Selected Application launches without error, Application Finder closes</dd>
     <dt>Close opened application</dt>
         <dd>Application closes</dd>

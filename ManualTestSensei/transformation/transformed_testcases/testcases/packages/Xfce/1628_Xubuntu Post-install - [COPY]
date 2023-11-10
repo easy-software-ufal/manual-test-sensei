@@ -1,23 +1,35 @@
 These tests are to be undertaken following a successful install of Xubuntu.
 
 Network connections
+Ensure you have access to several methods to connect to Internet (1)
 <dl>
-    <dt>If you have access to several methods to connect to Internet, connect to them all</dt>
+    <dt>connect to them all (1)</dt>
         <dd>You are able to connect as expected</dd>
 </dl>
+[False Condition] 
+<dl>
+</dl>
+
 
 If you have other partitions...
 <dl>
     <dt>Open Thunar</dt>
         <dd>Confirm they are listed in <b>Thunar</b></dd>
-        <dd>Confirm you are able to read files from it</dd>
+        
+	<dt>Confirm you are able to read files from it</dt>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 
 If you have USB drive available
+Ensure you have a USB drive (2)
 <dl>
-    <dt>If you have a USB drive, plug it in</dt>
+    <dt>plug it in (2)</dt>
         <dd>The USB drive is mounted, Thunar opens and you can open files from USB</dd>
 </dl>
+[False Condition] 
+<dl>
+</dl>
+
 
 <strong>
     If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.

@@ -13,9 +13,11 @@ Test-case dash/show-hide
     <dt>Click the first item of the launcher</dt>
         <dd>The dash should appear</dd>
     <dt>Ensure that the content of the search is empty</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Press escape</dt>
         <dd>The dash should close</dd>
     <dt>Press super to show again the dash</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click outside of the dash area</dt>
         <dd>The dash should close </dd>
 </dl>
@@ -23,8 +25,11 @@ Test-case dash/launcher-interaction
 <dl>
     <!-- Misplaced Pre-Condition -->
     <dt>Make sure Launcher auto-hide is enabled.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Have a maximized application and launcher hidden</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Press super to get the dash opened</dt>
+		<dd>[FILL VERIFICATION]</dd>
         <dd>The launcher should show, and all launcher icons should be darkened</dd>
     <dt>Hover the launcher with your mouse</dt>
         <dd>The launcher icons should be lightened up.</dd>
@@ -46,6 +51,7 @@ Test-case dash/panel-buttons
 Test-case dash/global-search-click
 <dl>
     <dt>Click on the first item of the launcher</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Enter "firefox"</dt>
         <dd>A spinning icon should appear shortly in the text search area and a firefox match should be there</dd>
     <dt>Click on the firefox entry</dt>
@@ -54,15 +60,20 @@ Test-case dash/global-search-click
 Test-case dash/global-search-enter
 <dl>
     <dt>Press super to get the dash opened</dt>
-        <dd>Enter "firefox"</dd>
+        
+	<dt>Enter "firefox"</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Press enter</dt>
         <dd>Firefox should be launched and the dash is closed</dd>
 </dl>
 Test-case dash/global-search-files-apps
 <dl>
     <dt>Start gedit.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Save a file named "foo" in your home folder.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Tap super to open the dash</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Enter "f"</dt>
         <dd>The results should contain at least the "foo" file and "Firefox"</dd>
     <dt>Click on the cross next to "f", in the textentry</dt>
@@ -72,6 +83,7 @@ Test-case dash/global-search-backspace
 <dl>
     <dt>Press super to get the dash opened</dt>
     <dt>Make a search</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <!-- Unspecified Parameter -->
         <dd>Some results should appear</dd>
     <dt>Click on backspace until the search is empty</dt>
@@ -99,6 +111,7 @@ Test-case dash/go-to-lens
     <dt>Click on one of them</dt>
         <dd>The dash should open, directly heading to the corresponing lens</dd>
     <dt>Repeat with other items of the quicklist</dt>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 Test-case dash/home
 <dl>
@@ -119,7 +132,9 @@ Test-case dash/home
 Test-case dash/drag-item-to-launcher
 <dl>
     <dt>Tap super to show the dash</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Click on the application lens icon</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Drag an item which is not in the launcher to the launcher</dt>
         <dd>All launcher icons should become colored again and an empty place should appear in the launcher</dd>
     <dt>Drop the item in the launcher</dt>
@@ -128,8 +143,10 @@ Test-case dash/drag-item-to-launcher
 Test-case dash/show-hide-more-results
 <dl>
     <dt>Tap super to show the dash</dt>
-    <dt>Go to a lens having multiple results and a category with "see xx more results"</dt>
-    <dt>Next to a category showing "see xx more results", click on this label</dt>
+    <dt>Go to a lens having multiple results and a category with</dt>
+	<dt>"see xx more results"</dt>
+    <dt>Next to a category showing "see xx more results"</dt>
+	<dt>click on this label</dt>
         <dd>The result content should expand and show more content</dd>
     <dt>Use the mouse scrollwheel</dt>
         <dd>This should scroll the whole windows content</dd>
@@ -140,6 +157,7 @@ Test-case dash/keyboard-navigation
 <dl>
     <dt>Tap super to show the dash</dt>
     <dt>Go to a lens having multiple results and a category with "see xx more results"</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Navigate between the items between the results:
         <ul>
             <li> - If you press the down key on your keyboard once, the category should have the focus, if you press it again, you should go to the result of this category. If you press down again, it should go to next category.</li>
@@ -154,6 +172,23 @@ Test-case dash/keyboard-navigation
     </dt>
 </dl>
 Test-case dash/keyboard-navigation-filters
+Ensure the last lens category is highlighted (1)
+<dl>
+    <dt>Tap super to show the dash</dt>
+    <dt>Go to a lens with the "Filter Results" filter button visible</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Tap the tab key to navigate to the filter button
+        <ul>
+            <li> - After navigating through all categories, the filter button should be focused next</li>
+        </ul>
+    </dt>
+    <dt>Press enter</dt>
+        <dd>The filter view should appear</dd>
+    <dt>Tap the tab key to navigate</dt>
+        <dd>Pressing the tab key should navigate through lens categories and filter categories</dd>
+        <dd>pressing tab will move the focus to the first filter category and vice versa (1)</dd>
+</dl>
+[False Condition] 
 <dl>
     <dt>Tap super to show the dash</dt>
     <dt>Go to a lens with the "Filter Results" filter button visible</dt>
@@ -164,20 +199,24 @@ Test-case dash/keyboard-navigation-filters
     </dt>
     <dt>Press enter</dt>
         <dd>The filter view should appear</dd>
-    <dt>Tap the tab key to navigate</dt>
-        <dd>Pressing the tab key should navigate through lens categories and filter categories</dd>
-        <dd>Once the last lens category is highlighted, pressing tab will move the focus to the first filter category and vice versa</dd>
 </dl>
+
 Test-case dash/state-lenses
 <dl>
-    <dt>Tap super to open the dash, click on a lens</dt>
-        <dd>Make a search, open the filters and choose some options</dd>
+    <dt>Tap super to open the dash</dt>
+	<dt>click on a lens</dt>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Make a search, open the filters and choose some options</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Close the dash with super</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Reopen the dash:</dt>
         <dd>The main dash home shouldn't contain previous search</dd>
     <dt>Open on the previous lens</dt>
         <dd>You should see the same search results, with the same filter enabled</dd>
     <dt>Click on other lenses:</dt>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 Test-case dash/state-dash
 <dl>
@@ -190,6 +229,7 @@ Test-case dash/state-dash
 Test-case dash/altf2-desktopapp
 <dl>
     <dt>Press alt + f2</dt>
+		<dd>[FILL VERIFICATION]</dd>
         <dd>The runner lens should be shown with a "Run a command" search field (no filter should be there)</dd>
     <dt>Type "ged"</dt>
         <dd>You should see gedit in a "result" category with the gedit icon</dd>
@@ -200,6 +240,7 @@ Test-case dash/altf2-history
 <dl>
     <dt>Press alt + f2</dt>
     <dt>Type "ged" click on the "gedit" result to run it</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Press alt + f2</dt>
 </dl>
 Test-case dash/altf2-see-binary
@@ -221,7 +262,8 @@ Test-case dash/altf2-browse-directory
 Test-case dash/altf2-browse-directory-exec
 <dl>
     <dt>Press alt + f2</dt>
-    <dt>Type "/bin/" (notice the ending '/')</dt>
+    <dt>Type "/bin/"</dt>
+	<dt>(notice the ending '/')</dt>
         <dd>All executables from the /bin directory should be proposed as result</dd>
 </dl>
 Test-case dash/altf2-browse-directory-home

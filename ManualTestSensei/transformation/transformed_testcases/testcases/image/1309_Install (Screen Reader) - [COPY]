@@ -2,6 +2,69 @@ This is an installation using the Screen-Reader as done by a visually blind indi
 
 <em>Proceed in your native language if you wish. Instructions will remain in English</em>
 <!-- UNVERIFIED STEPS, UNSPECIFIED WAIT TIME, UNSPECIFIED PARAMETER -->
+Ensure the installer tells you it is finished (1)
+<dl>
+    <dt>Boot up the image</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Wait to hear the drums</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Press Alt+Super+S to start the screen-reader</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Press Alt+Tab to change to the installer</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Press Up or Down arrow to select your language(default is English)</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Press Tab once to</dt>
+	<dt>"Try FAMILY"</dt>
+    <dt>Press Enter</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Wait for the Desktop to begin the installation. </dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Press Super+1 to begin the installation. Super is the left windows key</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Use up-arrow and down-arrow to select the language you want to the installation to use </dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Press Enter</dt>
+    <dt>Use up-arrow and down-arrow to hear the options and spacebar to select them</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Press Enter</dt>
+    <dt>Use up-arrow and down-arrow to hear</dt>
+	<dt>select partitioning options</dt>
+    <dt>Press Enter</dt>
+    <dt>Press up-arrow and down-arrow to select the drive to install FAMILY on </dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Press Tab three times </dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Press Enter</dt>
+    <dt>Press Tab </dt>
+		<dd>[FILL VERIFICATION]</dd>
+    	<dd>Select country either by typing in the name of the country or city or timezone (WARNING: time zones are not read by the screen-reader; the default should be fine)</dd>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Press Tab until you are</dt>
+	<dt>on Continue</dt>
+    <dt>Press Enter</dt>
+    <dt>Check your keyboard layout is correct</dt>
+	<dt>alter</dt>
+    <dt>Press Enter</dt>
+    <dt>Input your initial user details and password</dt>
+	<dt>/!\ Note admin can not be used - it is a dedicated Linux User</dt>
+    <dt>After entering "Confirm your password" </dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Press Tab</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Press up-arrow for auto-login </dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Press Enter to begin the installation</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Restart the system now by pressing Enter (1)</dt>
+    <dt>Wait a few seconds for the cd drive to quit spinning</dt>
+	<dt>remove the disc</dt>
+	<dt>press Enter</dt>
+    <dt>After restarting, at the desktop, you must restart again. This</dt>
+	<dt>will start the screen-reader. It will</dt>
+	<dt>then start at login</dt>
+</dl>
+[False Condition] 
 <dl>
     <dt>Boot up the image</dt>
     <dt>Wait to hear the drums</dt>
@@ -9,6 +72,7 @@ This is an installation using the Screen-Reader as done by a visually blind indi
     <dt>Press Alt+Tab to change to the installer</dt>
     <dt>Press Up or Down arrow to select your language(default is English)</dt>
     <dt>Press Tab once to "Try FAMILY"</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Press Enter</dt>
     <dt>Wait for the Desktop to begin the installation. </dt>
     <dt>Press Super+1 to begin the installation. Super is the left windows key</dt>
@@ -17,6 +81,7 @@ This is an installation using the Screen-Reader as done by a visually blind indi
     <dt>Use up-arrow and down-arrow to hear the options and spacebar to select them</dt>
     <dt>Press Enter</dt>
     <dt>Use up-arrow and down-arrow to hear and select partitioning options </dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Press Enter</dt>
     <dt>Press up-arrow and down-arrow to select the drive to install FAMILY on </dt>
     <dt>Press Tab three times </dt>
@@ -24,17 +89,18 @@ This is an installation using the Screen-Reader as done by a visually blind indi
     <dt>Press Tab </dt>
     <dt>Select country either by typing in the name of the country or city or timezone (WARNING: time zones are not read by the screen-reader; the default should be fine)</dt>
     <dt>Press Tab until you are on Continue</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Press Enter</dt>
-    <dt>Check your keyboard layout is correct or alter </dt>
+    	<dd>Check your keyboard layout is correct or alter </dd>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Press Enter</dt>
     <dt>Input your initial user details and password /!\ Note admin can not be used - it is a dedicated Linux User </dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>After entering "Confirm your password" </dt>
     <dt>Press Tab</dt>
     <dt>Press up-arrow for auto-login </dt>
     <dt>Press Enter to begin the installation</dt>
-    <dt>Once the installer tells you it is finished, Restart the system now by pressing Enter</dt>
-    <dt>Wait a few seconds for the cd drive to quit spinning, remove the disc and press Enter</dt>
-    <dt>After restarting, at the desktop, you must restart again. This will start the screen-reader. It will then start at login</dt>
 </dl>
+
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

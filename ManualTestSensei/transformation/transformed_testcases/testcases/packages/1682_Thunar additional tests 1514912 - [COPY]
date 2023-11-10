@@ -5,12 +5,19 @@ For this test - Thunar crashes on moving/copying/renaming files.
 <strong>This test might take some time to complete - please ensure you have enough time to allow Thunar to crash as we are trying to <em>force</em> a crash.</strong>
 
 This test will check for issues with renaming files.
+Ensure ame this file a few times - has Thunar crashed? If not continue renaming this file until you see the cras (1)
 <dl>
-    <dt>Open Thunar and create folder A - the location is completely up to you</dt>
+    <dt>Open Thunar</dt>
+	<dt>create folder A - the location is completely up to you</dt>
     <dt>Create a new file inside the folder - the name is completely up to you</dt>
-    <dt>Rename this file a few times - has Thunar crashed? If not continue renaming this file until you see the crash</dt>
-        <dd>Close and ignore the Apport window</dd>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>ename this file a few times - has Thunar crashed? If not continue renaming this file until you see the crash (1)</dt>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Close and ignore the Apport window</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Restart Thunar.</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt> Continue renaming your file until Thunar crashes once more</dt>
 
     Things to note in your tracker report comment box:
@@ -20,15 +27,39 @@ This test will check for issues with renaming files.
 
     This test will check for issues with moving files amongst folders
 
-    <dl>
+    Ensure Thunar crashes (2)
+<dl>
+        <dt>Open Thunar and inside your previously created folder A</dt>
+	<dt>- create a new one B</dt>
+        <dt>Create enough files inside folder A to allow for moving some, without leaving folder A empty</dt>
+		<dd>[FILL VERIFICATION]</dd>
+        <dt>Move some of your files from A to B</dt>
+		<dd>[FILL VERIFICATION]</dd>
+        <dt>Move them back to A</dt>
+		<dd>[FILL VERIFICATION]</dd>
+        <dt>Continue moving files back and forth between folder A and B</dt>
+		<dd>[FILL VERIFICATION]</dd>
+        <dt> again ignore the Apport warning and restart Thunar (2)</dt>
+        <dt>Continue moving some of the files back and forth between folder A and B until Thunar crashes</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    </dl>
+[False Condition] 
+<dl>
         <dt>Open Thunar and inside your previously created folder A - create a new one B</dt>
+		<dd>[FILL VERIFICATION]</dd>
         <dt>Create enough files inside folder A to allow for moving some, without leaving folder A empty</dt>
         <dt>Move some of your files from A to B</dt>
         <dt>Move them back to A</dt>
         <dt>Continue moving files back and forth between folder A and B</dt>
-        <dt> When Thunar crashes, again ignore the Apport warning and restart Thunar</dt>
-        <dt>Continue moving some of the files back and forth between folder A and B until Thunar crashes</dt>
     </dl>
+
+[False Condition] 
+<dl>
+    <dt>Open Thunar and create folder A - the location is completely up to you</dt>
+		<dd>[FILL VERIFICATION]</dd>
+    <dt>Create a new file inside the folder - the name is completely up to you</dt>
+</dl>
+
 
     This test will check for issues with moving files amongst folders - in seperate Thunar instances
 

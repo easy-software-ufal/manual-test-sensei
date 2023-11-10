@@ -1,19 +1,23 @@
 Test-case multimonitor/multi-launchers
 <dl>
     <dt>In the Diplays settings, ensure that Launcher placement is set to "All displays"</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Ensure you have not any other opened application than checkbox-unity</dt>
         <dd>You should see one Launcher on every screen</dd>
 </dl>
 Test-case multimonitor/multi-reveal-launcher-monitor2
 <dl>
-    <dt>Put your mouse on this monitor, and try to reveal the launcher by pressing against the left edge</dt>
+    <dt>Put your mouse on this monitor,</dt>
+	<dt>try to reveal the launcher by pressing against the left edge</dt>
         <dd>The launcher should reveal</dd>
 </dl>
 Test-case multimonitor/multi-super-reveal
 <dl>
-    <dt>Press super and hold it</dt>
+    <dt>Press super</dt>
+	<dt>hold it</dt>
         <dd>The launcher on the monitor where your mouse is should reveal, with the numbers and the shortcuts window displayed. The other monitor shouldn't get any of them displayed.</dd>
-    <dt>Bring your cursor to the other monitor and press super</dt>
+    <dt>Bring your cursor to the other monitor</dt>
+	<dt>press super</dt>
         <dd>Check that those items are only displayed on the monitor where the cursor is.</dd>
 </dl>
 Test-case multimonitor/multi-arrow-monitor-launcher
@@ -25,7 +29,9 @@ Test-case multimonitor/multi-arrow-monitor-launcher
 </dl>
 Test-case multimonitor/multi-reorder-other-monitor
 <dl>
-    <dt>On the rightmost monitor, reorder the launcher icon (and eventually add/remove icons)</dt>
+    <dt>On the rightmost monitor, reorder the launcher icon (</dt>
+	<dt>eventually add</dt>
+	<dt>/remove icons)</dt>
         <dd>Check that the reording/addition/removal are impact both launchers</dd>
 </dl>
 Test-case multimonitor/multi-show-dash-on-monitor
@@ -39,7 +45,8 @@ Test-case multimonitor/alttab-per-monitor
 <dl>
     <dt>Press alt + tab to reveal the alt tab switcher</dt>
         <dd>Check that Alt - Tab is shown on the monitor where your cursor is</dd>
-    <dt>Put your cursor on the other monitor, and again, press alt + tab to reveal the alt tab switcher</dt>
+    <dt>Put your cursor on the other monitor, and again</dt>
+	<dt>press alt + tab to reveal the alt tab switcher</dt>
         <dd>check that Alt - Tab is shown on the newly monitor where your cursor is</dd>
 </dl>
 Test-case multimonitor/workspace-switcher
@@ -55,27 +62,40 @@ Test-case multimonitor/launch-application-per-monitor
     <dt>Press Super + number to start an application</dt>
         <dd>The application should be opened on the monitor where your cursor is</dd>
     <dt>Repeat the same with the cursor on the other monitor</dt>
-        <dd>Ensure the application is always opened on the monitor where your cursor is</dd>
+		<dd>[FILL VERIFICATION]</dd>
+        
+	<dt>Ensure the application is always opened on the monitor where your cursor is</dt>
+		<dd>[FILL VERIFICATION]</dd>
 </dl>
 Test-case multimonitor/sticky-edge
 <dl>
     <dt>In the Diplays settings, ensure that Sticky edges are enabled</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Move your mouse cursor to the right edge of the leftmost monitor adjacent to your enabled second screen</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Try moving your cursor over to the screen to the right</dt>
         <dd>There should be a feeling of resistance when trying to push on the edge of the screen</dd>
         <dd>After applying some force, the cursor should move over to the desired screen</dd>
 </dl>
 Test-case multimonitor/sticky-edge-hold
+Ensure not much force is applied and the movement is slow (1)
 <dl>
     <dt>In the Diplays settings, ensure that Sticky edges are enabled</dt>
     <dt>Move your mouse cursor to the right edge of the leftmost monitor adjacent to your enabled second screen</dt>
     <dt>Try pushing the mouse cursor very slowly onto the edge</dt>
         <dd>You should feel the mouse cursor resisting on the edge</dd>
-        <dd>If not much force is applied and the movement is slow, the mouse cursor should stay on the screen</dd>
+        <dd>the mouse cursor should stay on the screen (1)</dd>
 </dl>
+[False Condition] 
+<dl>
+    <dt>In the Diplays settings, ensure that Sticky edges are enabled</dt>
+    <dt>Move your mouse cursor to the right edge of the leftmost monitor adjacent to your enabled second screen</dt>
+</dl>
+
 Test-case multimonitor/sticky-edge-disabled
 <dl>
     <dt>In the Diplays settings, ensure that Sticky edges are disabled</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Move your mouse cursor to the right edge of the leftmost monitor adjacent to your enabled second screen</dt>
     <dt>Try moving your cursor over to the screen to the right</dt>
         <dd>There should be no feeling of resistance on the edge, the cursor should move to the other screen with ease</dd>
@@ -83,6 +103,7 @@ Test-case multimonitor/sticky-edge-disabled
 Test-case multimonitor/single-launcher
 <dl>
     <dt>In the Diplays settings, ensure that Launcher placement is set to a single screen</dt>
+		<dd>[FILL VERIFICATION]</dd>
     <dt>Ensure you have not any other opened application than checkbox-unity</dt>
         <dd>You should see only one Launcher on the previously selected screen</dd>
 </dl>
@@ -90,12 +111,14 @@ Test-case multimonitor/single-show-dash-on-monitor
 <dl>
     <dt>Click on the first item of the launcher icon to show the dash</dt>
         <dd>The dash should be displayed on the primary screen where the Launcher is located</dd>
-    <dt>Move your cursor to the other screen and press Super</dt>
+    <dt>Move your cursor to the other screen</dt>
+	<dt>press Super</dt>
         <dd>The dash should be displayed on the primary screen where the Launcher is located</dd>
 </dl>
 Test-case multimonitor/single-arrow-monitor-launcher
 <dl>
-    <dt>Run an application and move it to a screen with no Launcher</dt>
+    <dt>Run an application</dt>
+	<dt>move it to a screen with no Launcher</dt>
         <dd>The launcher should have a white arrow on the left of the launcher icon on the primary screen</dd>
     <dt>Open a second instance of that application</dt>
         <dd>The launcher should have two white arrows on the left of the launcher icon on the primary screen, regardless of where the application is positioned</dd>
