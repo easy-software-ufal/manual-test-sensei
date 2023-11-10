@@ -15,6 +15,6 @@ setup(
                         'pandas',
                         'rich',
                         'scipy',
-                        'lxml'
+                        'lxml',
                         ]
 )
