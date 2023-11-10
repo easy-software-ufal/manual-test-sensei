@@ -19,20 +19,19 @@ matcher = ConditionalTestLogic()
 
 
 test = file_tests[test_index]
-initial_state = simplify_test(test)
+(initial_header, initial_state) = simplify_test(test)
 matcher(test)
-simplified = simplify_test(test)
+(header, simplified) = simplify_test(test)
 
-snapshots = [initial_state, test]
+snapshots = [(initial_header, initial_state), (header, simplified)]
 tabs = [f'T_{i}' for (i, _) in enumerate(snapshots)]
 tabs = st.tabs(tabs)
 data = zip(tabs, snapshots)
 
-for (tab, snapshot) in data:
+
+for (tab, content) in data:
+    header, snapshot = content
     with tab:
-        print(test.header)
-        breakpoint()
-        header = test.header[test_index]
         st.write(header)
         with st.container(): # Test container
             df = pd.DataFrame(snapshot)

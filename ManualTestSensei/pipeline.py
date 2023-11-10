@@ -109,7 +109,7 @@ class Test(Memento):
 
 def simplify_test(test:Test):
     simplified = [simplify_step(step) for step in test.steps]
-    return simplified
+    return (test.header[0], simplified)
 
 def simplify_step(step:Step):
     action = step.action.text

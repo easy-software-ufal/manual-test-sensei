@@ -41,12 +41,11 @@ class SmellsData:
 
     def _split_tests(self, text: str, filepath: str) -> list:
         tests, headers = self._extract_texts(text, filepath)
-        breakpoint()
         tests = self._split_tests_steps(tests)
 
         result = []  # lista de testes para cada filepath
-        for test in tests:
-            temp = Test(file=filepath, header=[header for header in headers], steps=[steps for steps in test])
+        for (index, test) in enumerate(tests):
+            temp = Test(file=filepath, header=[ headers[index] ], steps=[steps for steps in test])
             result.append(temp)
         return result
 

@@ -52,6 +52,8 @@ class UbuntuSmellsData(SmellsData):
         test_header = r'(?<=^)(.+?)(?=<dl>)|(?<=</dl>)(.+?)(?=<dl>)'  # it's the title and the preconditions
         comments = r'(?<=<!--)(.+?)(?=-->)'
         tags = r'(?<=<dl>)(.+?)(?=</dl>)'
+        dls = r'(<dl>)(.+?)(?=</dl>)'
+
         language_disclaimer = r'(?<=<em>)(.+?)(?=</em>)'
 
         text = re.sub(re.compile(language_disclaimer), '', text)
@@ -63,16 +65,15 @@ class UbuntuSmellsData(SmellsData):
         mid_header = r'(?<=<\/dl>)(.+?)(?=<dl>)'
         init_header = r'(?<=^)(.+?)(?=<dl>)'
 
-        headers1 = list(re.findall(init_header, text))
+        if text.strip().startswith('<dl>'):
+            headers1 = ''
+        else:
+            headers1 = list(re.findall(init_header, text))
         headers2 = list(re.findall(mid_header, text))
-
-        headers = headers1 + headers2  # TODO  #17   #talvez seja necessário usar self.erase_split() em headers2 para que a gente consiga pegar o caso de >=3 testes no arquivo
-        headers = [self._remove_html(header) for header in headers]
+        headers = [self._remove_html(sentence) for sentence in re.sub(dls,'<<REPLACEME>>', text).split('<<REPLACEME>>')][0:-1]
 
         tests = list(re.findall(tags, text))  # textão único, juntando tudo que tá dentro de <dl>
         tests = [self._erase_split(text=r, erase='</dt>', split='<dt>') for r in tests]  # se tiver mais de um caso de teste por arquivo, retorna todos os casos de teste separados
-        # if len(tests)>1:
-        #     breakpoint()
         return tests, headers
 
 
