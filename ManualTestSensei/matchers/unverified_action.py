@@ -7,9 +7,9 @@ class UnverifiedAction:
     smell:str = smells_names.UNVERIFIED_ACTION
 
     def __call__(self, test: Test):
-        """
+        '''
         Missing verification step
-        """
+        '''
         steps = test.steps
         unverified_actions = [step for step in steps if len(step.reactions) == 0]
         for st in unverified_actions:
