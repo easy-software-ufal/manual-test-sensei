@@ -41,6 +41,7 @@ class SmellsData:
 
     def _split_tests(self, text: str, filepath: str) -> list:
         tests, headers = self._extract_texts(text, filepath)
+        breakpoint()
         tests = self._split_tests_steps(tests)
 
         result = []  # lista de testes para cada filepath
