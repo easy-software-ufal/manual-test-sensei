@@ -1,7 +1,0 @@
-README.md
-setup.py
-manual_tests_sensei.egg-info/PKG-INFO
-manual_tests_sensei.egg-info/SOURCES.txt
-manual_tests_sensei.egg-info/dependency_links.txt
-manual_tests_sensei.egg-info/requires.txt
-manual_tests_sensei.egg-info/top_level.txt

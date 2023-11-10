@@ -1,5 +1,0 @@
-spacy==3.4.1
-pandas
-rich
-scipy
-lxml

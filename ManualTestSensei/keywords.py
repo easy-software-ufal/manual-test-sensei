@@ -1,4 +1,4 @@
-# from data import expand_words
+from data import expand_words
 import sys
 
 
