@@ -24,7 +24,9 @@ class ConditionalTestLogic:
                 first_subtree = [tuple(tkn.subtree)[1::] for tkn in doc if tkn.pos_ == 'VERB']
                 if first_subtree:
                     first_subtree = first_subtree[0]
-                    text = 'Ensure'+' '+' '.join([tkn.text for tkn in first_subtree])
+                    text = ' '.join([tkn.text for tkn in first_subtree])
+                    st.action = nlp(doc[1::].text.capitalize())
+                    text = 'Ensure' + ' ' + ' '.join([tkn.text for tkn in first_subtree])
                     test.header = [text] + test.header
             for match_id, start, end in action_matches:
                 helpers._store_smell(st, self.smell, 'dependent clause', 'verification', st.action[start:end])
