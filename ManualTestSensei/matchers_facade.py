@@ -1,5 +1,5 @@
 from matchers import (ambiguous_test, conditional_test_logic, eager_step,
-                      misplaced_precondition, unverified_step, misplaced_result)
+                      misplaced_precondition, unverified_action, misplaced_result)
 from ubuntu_data import UbuntuSmellsData
 from pipeline import Test
 
@@ -10,7 +10,7 @@ class MatchersFacade:
     eager_step = eager_step.EagerStep()
     # ambiguous_test = ambiguous_test.AmbiguousTest() # TODO: Fix this test
     misplaced_precondition = misplaced_precondition.MisplacedPrecondition()
-    unverified_step = unverified_step.UnverifiedStep()
+    unverified_action = unverified_action.UnverifiedAction()
     misplaced_result = misplaced_result.MisplacedResult()
 
     def __call__(self, test:Test) -> bool:

@@ -64,4 +64,4 @@ class SmellsData:
         df = df[[FILE_COL, SMELL_COL]]
         df = df.loc[df[FILE_COL].apply(lambda x: file_exists(x))]
         df[FILE_COL] = df[FILE_COL].apply(lambda x: Path(x))
-        self.tests_catalog =df
+        self.tests_catalog = df

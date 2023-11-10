@@ -2,6 +2,7 @@ import pandas as pd
 import streamlit as st
 import ubuntu_data
 from matchers.conditional_test_logic import ConditionalTestLogic
+from matchers.unverified_action import  UnverifiedAction
 from matchers_facade import MatchersFacade
 from pipeline import simplify_test
 from pipeline import nlp
@@ -16,25 +17,27 @@ all_tests_indexes = [index for index, value in enumerate(file_tests)]
 test_index = st.selectbox('Select the test', all_tests_indexes)
 
 conditional_test_logic = ConditionalTestLogic()
+unverified_action = UnverifiedAction()
 matchers = MatchersFacade()
 
 
 test = file_tests[test_index]
-test.take_snapshot()
-test.steps[0].action = nlp('Fazer algo bonito')
-snapshots = [t for t in test.rollback_all()]
+initial_state = simplify_test(test)
+unverified_action(test)
+test = simplify_test(test)
+
+snapshots = [initial_state, test]
 tabs = [f'T_{i}' for (i, _) in enumerate(snapshots)]
 tabs = st.tabs(tabs)
 data = zip(tabs, snapshots)
+
 for (tab, snapshot) in data:
     with tab:
-        conditional_test_logic(snapshot) # TODO: Remover essa execução do interface.py
-        simplified_test = simplify_test(snapshot)
         try:
             header = test.header[test_index]
             st.write(header)
         except:
             pass
         with st.container(): # Test container
-            df = pd.DataFrame(simplified_test)
+            df = pd.DataFrame(snapshot)
             st.table(df)

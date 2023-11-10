@@ -17,7 +17,7 @@ def detection_runner(log):
             for (test_index, test) in enumerate(test_file):
                 #matchers.conditional_test_logic(test_index, test)
                 # matchers.find_eager_step(test_index, test)
-                # matchers.find_unverified_step(test_index, test)
+                # matchers.find_unverified_action(test_index, test)
                 matchers.find_misplaced_precondition(test_index, test)
                 # matchers.find_misplaced_step(test_index, test)
                 # matchers.find_misplaced_result(test_index, test)
