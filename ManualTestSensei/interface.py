@@ -28,7 +28,6 @@ tabs = [f'T_{i}' for (i, _) in enumerate(snapshots)]
 tabs = st.tabs(tabs)
 data = zip(tabs, snapshots)
 
-
 for (tab, content) in data:
     header, snapshot = content
     with tab:
