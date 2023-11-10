@@ -145,6 +145,7 @@ def transformation_closure(df):
                     file.write(contents)
 
     def ambiguous_test(df):
+        #breakpoint()
         global skipped_tests
         filtered_df = transformation_data.get_filtered_df_by_smell_name(df,'Ambiguous Test')
         for _, row in filtered_df.iterrows():
@@ -184,9 +185,12 @@ def transformation_closure(df):
                             break
                     
                     if article_case:
-                        pos = contents.find(article, index_word)
+                        padrao = r'\b{}\b'.format(re.escape(article))
+                        pos = re.search(padrao, contents[start_pos:])
+                        pos = start_pos + pos.start()
+                        breakpoint()
                         contents = contents[:pos] + 'the' + contents[pos + len(article):]
-                        pos = contents.find(word, index_word)
+                        pos = contents.find(word, start_pos)
                         
                     elif adv_case:
                         pos = contents.find(adv, start_pos)
