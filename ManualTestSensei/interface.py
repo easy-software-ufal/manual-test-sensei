@@ -19,19 +19,26 @@ matcher = ConditionalTestLogic()
 
 
 test = file_tests[test_index]
-(initial_header, initial_state) = simplify_test(test)
-matcher(test)
-(header, simplified) = simplify_test(test)
+initial_test = simplify_test(test)
+refactored_tests = matcher(test)
+refactored_tests = [simplify_test(test) for test in refactored_tests]
 
-snapshots = [(initial_header, initial_state), (header, simplified)]
-tabs = [f'T_{i}' for (i, _) in enumerate(snapshots)]
+tabs = ['Initial', 'Refactored']
 tabs = st.tabs(tabs)
-data = zip(tabs, snapshots)
 
-for (tab, content) in data:
-    header, snapshot = content
-    with tab:
-        st.write(header)
-        with st.container(): # Test container
-            df = pd.DataFrame(snapshot)
+# Initial test
+with tabs[0]:
+    header, test = initial_test
+    st.markdown('\n'.join(header))
+    with st.container():
+        df = pd.DataFrame(test)
+        st.table(df)
+
+# Refactored tests
+with tabs[1]:
+    for test in refactored_tests:
+        header, test = test
+        st.markdown('\n'.join(header))
+        with st.container():
+            df = pd.DataFrame(test)
             st.table(df)
