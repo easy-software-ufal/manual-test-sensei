@@ -15,3 +15,5 @@ class UnverifiedAction:
         for st in unverified_actions:
             st = transformator.unverified_action(st)
             helpers._store_smell(st, self.smell, '', 'action', st.action)
+    
+    
