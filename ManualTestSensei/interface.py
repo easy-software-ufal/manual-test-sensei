@@ -47,4 +47,4 @@ with tabs[1]:
                 df = pd.DataFrame(test)
                 st.table(df)
     else:
-        st.markdown('UA not found')
+        st.table(df)
