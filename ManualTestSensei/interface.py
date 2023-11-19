@@ -22,7 +22,9 @@ matcher = UnverifiedAction()
 test = file_tests[test_index] #seleciona um único teste
 initial_test = simplify_test(test)
 refactored_tests = matcher(test)
-refactored_tests = [simplify_test(test) for test in refactored_tests]
+
+if refactored_tests:
+    refactored_tests = [simplify_test(test) for test in refactored_tests]
 
 tabs = ['Initial', 'Refactored']
 tabs = st.tabs(tabs)
@@ -37,9 +39,12 @@ with tabs[0]:
 
 # Refactored tests
 with tabs[1]:
-    for test in refactored_tests:
-        header, test = test
-        st.markdown('\n'.join(header))
-        with st.container():
-            df = pd.DataFrame(test)
-            st.table(df)
+    if refactored_tests:
+        for test in refactored_tests:
+            header, test = test
+            st.markdown('\n'.join(header))
+            with st.container():
+                df = pd.DataFrame(test)
+                st.table(df)
+    else:
+        st.markdown('UA not found')
