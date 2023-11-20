@@ -1,10 +1,10 @@
-from pipeline import Test, Step
+from pipeline import Test, Step, nlp
 import smells_names
 from matchers_factory import MatchersFactory
 from matchers import helpers
 import smells_names
 
-TINY_NUMBER = 0.0005
+TINY_NUMBER = 0.00005 # HackUsed to sort the substeps
 
 class EagerStep:
     smell:str = smells_names.EAGER_STEP
@@ -19,17 +19,17 @@ class EagerStep:
             action_matches = matcher(st.action)
             amount_matches = len(action_matches)
             if amount_matches > 1:
-                new_step = self.calc_new_step(action_matches, st, amount_matches, step_index, new_steps, all_steps)
+                new_steps = self.increase_new_steps(action_matches, st, amount_matches, step_index, new_steps, all_steps)
         all_steps = sorted(all_steps, key=lambda x: x[0])
-        all_steps = [step for (_, step) in all_steps]
+        all_steps = [step for (index, step) in all_steps if index not in new_steps]
         test.steps = all_steps
         return [test]
 
-    def calc_new_step(self, action_matches, st, amount_matches, step_index, new_steps, all_steps):
+    def increase_new_steps(self, action_matches, st, amount_matches, step_index, new_steps, all_steps) -> list[Step]:
         for (match_index, (_, start, end)) in enumerate(action_matches):
             action = self.extract_action_from_match(match_index, action_matches, st, amount_matches, start)
 
-            new_step = Step(action,list())
+            new_step = Step(action,list(nlp('[FILL ACTION]')))
             if step_index in new_steps:
                 position = (step_index + (len(new_steps[step_index]) * TINY_NUMBER))
                 new_step = (position, new_step)
@@ -40,7 +40,9 @@ class EagerStep:
                 new_step = (step_index + TINY_NUMBER, new_step)
                 new_steps[step_index].append(new_step)
                 all_steps.append(new_step)
-        return new_step
+        (_, step) = all_steps[step_index]
+        all_steps[-1][-1].reactions = step.reactions
+        return new_steps
 
     # helpers._store_smell(st, self.smell, 'dependent clause', 'verification', st.action[start:end])
     def extract_action_from_match(self, index:int, action_matches:tuple, st:Step, amount_matches:int, start:int):
