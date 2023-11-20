@@ -2,8 +2,7 @@
 import pandas as pd
 import streamlit as st
 import ubuntu_data
-from matchers.conditional_test_logic import  ConditionalTestLogic
-from matchers.unverified_action import UnverifiedAction
+from matchers.eager_step import EagerStep
 from pipeline import simplify_test
 from pipeline import nlp
 
@@ -16,8 +15,7 @@ file_tests = ubuntu.by_catalog_index(file_index)
 all_tests_indexes = [index for index, value in enumerate(file_tests)]
 test_index = st.selectbox('Select the test', all_tests_indexes)
 
-# matcher = ConditionalTestLogic()
-matcher = UnverifiedAction()
+matcher = EagerStep()
 
 test = file_tests[test_index] #seleciona um único teste
 initial_test = simplify_test(test)
