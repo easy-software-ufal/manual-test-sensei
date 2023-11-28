@@ -1,7 +1,7 @@
 from pipeline import Test
 import smells_names
 from matchers_factory import MatchersFactory
-from helpers import _store_smell
+# from helpers import _store_smell
 from itertools import product
 import copy
 
@@ -20,7 +20,6 @@ class MisplacedPrecondition:
         # for match_id, token_ids in action_matches:
         #     words = [step.action[token_id] for token_id in sorted(token_ids)]
         #     _store_smell(step, self.smell, 'SUT state', 'action', words)
-
         truth_table = self._map_smelly_steps(test)
         tests = list()
         for row in truth_table:
@@ -45,6 +44,11 @@ class MisplacedPrecondition:
         step_smells_map = list()
         for (index, st) in enumerate(test.steps):
             action_matches = self._matcher(st.action)
+            # if action_matches:
+            #     breakpoint()
+            # print(f'action_matches:{action_matches}')
+
+            #172 é um problemático
             if action_matches:
                 step_smells_map.append(True)
             else:
@@ -60,5 +64,6 @@ class MisplacedPrecondition:
         st = test.steps[step_index]
         action_matches = self._matcher(st.action)
         if action_matches:
-            doc = st.action
-            
+            new_header = st.action
+            test.header.append(new_header.text)
+        return test
