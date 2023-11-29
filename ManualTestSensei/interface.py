@@ -40,7 +40,6 @@ with tabs[0]:
 # Refactored tests
 with tabs[1]:
     if refactored_tests:
-        breakpoint()
         for test in refactored_tests:
             header, test = test
             st.markdown('\n'.join(header))
