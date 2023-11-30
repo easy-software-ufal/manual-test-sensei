@@ -1,4 +1,4 @@
-from pipeline import Test
+from pipeline import Test, nlp
 import smells_names
 from matchers_factory import MatchersFactory
 # from helpers import _store_smell
@@ -23,7 +23,7 @@ class MisplacedPrecondition:
 
         test_copy = self._refactor_test(test_copy, number_of_steps_to_be_refactored)
         test_copy = self._mark_step_to_deletion(test_copy, number_of_steps_to_be_refactored)
-
+        #TODO arrumar exclusao ao refatorar. ela esta tirando todo o passo, quando na verdade era pra tirar somente uma frase do passo.
         test_copy.steps =  [step for step in test_copy.steps if step is not None]
         test_copy.header = [header for header in test_copy.header if header is not None]
         tests.append(test_copy)
@@ -60,8 +60,11 @@ class MisplacedPrecondition:
         for step_index in range(number_of_steps):
             st = test.steps[step_index]
             # breakpoint()
-            action_matches = self._matcher(st.action)
-            if action_matches:
-                new_header = st.action
-                test.header.append(new_header.text)
+            sents = [sent for sent in st.action.sents]
+            for sent in sents:
+                action_matches = self._matcher(sent)
+                if action_matches:
+                    new_header = sent
+                    test.header.append(new_header.text)
+        test.steps[step_index].action = nlp("".join([sent.text for sent in sents if not self._matcher(sent)]))
         return test
