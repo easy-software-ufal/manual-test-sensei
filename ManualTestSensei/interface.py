@@ -1,8 +1,8 @@
+# https://docs.google.com/spreadsheets/d/19KgJ6MgGvAVZrh80dEa-ha-KUTUEVupemmBalWi3ZVM/edit#gid=523400574
 import pandas as pd
 import streamlit as st
 import ubuntu_data
-from matchers.conditional_test_logic import ConditionalTestLogic
-from matchers_facade import MatchersFacade
+from matchers.eager_step import EagerStep
 from pipeline import simplify_test
 from pipeline import nlp
 
@@ -15,26 +15,34 @@ file_tests = ubuntu.by_catalog_index(file_index)
 all_tests_indexes = [index for index, value in enumerate(file_tests)]
 test_index = st.selectbox('Select the test', all_tests_indexes)
 
-conditional_test_logic = ConditionalTestLogic()
-matchers = MatchersFacade()
+matcher = EagerStep()
 
+test = file_tests[test_index] #seleciona um único teste
+initial_test = simplify_test(test)
+refactored_tests = matcher(test)
 
-test = file_tests[test_index]
-test.take_snapshot()
-test.steps[0].action = nlp('Fazer algo bonito')
-snapshots = [t for t in test.rollback_all()]
-tabs = [f'T_{i}' for (i, _) in enumerate(snapshots)]
+if refactored_tests:
+    refactored_tests = [simplify_test(test) for test in refactored_tests]
+
+tabs = ['Initial', 'Refactored']
 tabs = st.tabs(tabs)
-data = zip(tabs, snapshots)
-for (tab, snapshot) in data:
-    with tab:
-        conditional_test_logic(snapshot) # TODO: Remover essa execução do interface.py
-        simplified_test = simplify_test(snapshot)
-        try:
-            header = test.header[test_index]
-            st.write(header)
-        except:
-            pass
-        with st.container(): # Test container
-            df = pd.DataFrame(simplified_test)
-            st.table(df)
+
+# Initial test
+with tabs[0]:
+    header, test = initial_test
+    st.markdown('\n'.join(header))
+    with st.container():
+        df = pd.DataFrame(test)
+        st.table(df)
+
+# Refactored tests
+with tabs[1]:
+    if refactored_tests:
+        for test in refactored_tests:
+            header, test = test
+            st.markdown('\n'.join(header))
+            with st.container():
+                df = pd.DataFrame(test)
+                st.table(df)
+    else:
+        st.table(df)

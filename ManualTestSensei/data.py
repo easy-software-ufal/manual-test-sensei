@@ -44,8 +44,8 @@ class SmellsData:
         tests = self._split_tests_steps(tests)
 
         result = []  # lista de testes para cada filepath
-        for test in tests:
-            temp = Test(file=filepath, header=[header for header in headers], steps=[steps for steps in test])
+        for (index, test) in enumerate(tests):
+            temp = Test(file=filepath, header=[ headers[index] ], steps=[steps for steps in test])
             result.append(temp)
         return result
 
@@ -64,4 +64,4 @@ class SmellsData:
         df = df[[FILE_COL, SMELL_COL]]
         df = df.loc[df[FILE_COL].apply(lambda x: file_exists(x))]
         df[FILE_COL] = df[FILE_COL].apply(lambda x: Path(x))
-        self.tests_catalog =df
+        self.tests_catalog = df
