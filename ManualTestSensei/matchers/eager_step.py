@@ -29,7 +29,7 @@ class EagerStep:
         for (match_index, (_, start, end)) in enumerate(action_matches):
             action = self.extract_action_from_match(match_index, action_matches, st, amount_matches, start)
 
-            new_step = Step(action,list(nlp('[FILL ACTION]')))
+            new_step = Step(action,list(nlp('[FILL VERIFICATION]')))
             if step_index in new_steps:
                 position = (step_index + (len(new_steps[step_index]) * TINY_NUMBER))
                 new_step = (position, new_step)
