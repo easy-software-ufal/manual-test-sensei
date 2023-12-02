@@ -27,7 +27,10 @@ class MisplacedPrecondition:
                     test.header.append(str(sent))
             if found_matches:
                 sentences = [str(sent[1]) for sent in sentences if sent != _REMOVE]
-                test.steps[step_index].action = nlp(' '.join(sentences))
+                if not sentences:
+                    test.steps.pop(steps_index)
+                else:
+                    test.steps[step_index].action = nlp(' '.join(sentences))
         return [test]
 
     # def _mark_step_to_deletion(self, test:Test, number_of_steps:int) -> Test:
