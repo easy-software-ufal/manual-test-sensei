@@ -1,9 +1,10 @@
-from pipeline import Test
+from pipeline import Test, nlp
 import smells_names
 from matchers_factory import MatchersFactory
-from helpers import _store_smell
+# from helpers import _store_smell
 from itertools import product
 import copy
+from collections import Counter
 
 _OPERATIONS = (_REMOVE:=0, _REFACTOR:=1)
 
@@ -15,50 +16,58 @@ class MisplacedPrecondition:
         """
             The first action step declares the SUT state (e.g. 'wifi is turned off')
         """
-        # step = test.steps[0]
-        # action_matches = matcher(step.action)
-        # for match_id, token_ids in action_matches:
-        #     words = [step.action[token_id] for token_id in sorted(token_ids)]
-        #     _store_smell(step, self.smell, 'SUT state', 'action', words)
 
-        truth_table = self._map_smelly_steps(test)
-        tests = list()
-        for row in truth_table:
-            test_copy = copy.deepcopy(test)
-            for (step_index, operation) in row:
-                if operation == _REMOVE:
-                    test_copy = self._mark_step_to_deletion(test_copy, step_index)
-                elif operation == _REFACTOR:
-                    test_copy = self._refactor_test(test_copy, step_index)
-            test_copy.steps =  [step for step in test_copy.steps if step is not None]
-            tests.append(test_copy)
-        return tests
+        for (step_index, st) in enumerate(test.steps):
+            sentences = list(enumerate(st.action.sents))
+            found_matches = False
+            for (sentence_index, sent) in sentences[::]:
+                if self._matcher(sent):
+                    found_matches = True
+                    sentences[sentence_index] = _REMOVE
+                    test.header.append(str(sent))
+            if found_matches:
+                sentences = [str(sent[1]) for sent in sentences if sent != _REMOVE]
+                if not sentences:
+                    test.steps.pop(steps_index)
+                else:
+                    test.steps[step_index].action = nlp(' '.join(sentences))
+        return [test]
 
-    def _mark_step_to_deletion(self, test:Test, step_index:int) -> Test:
-            test.steps[step_index] = None
-            return test
+    # def _mark_step_to_deletion(self, test:Test, number_of_steps:int) -> Test:
+    #         for step_index in range(number_of_steps):
+    #             test.steps[step_index] = None
+    #         return test
 
-    def _map_smelly_steps(self, test : Test) -> list:
-        '''
-        Returns the truth table where each row indicates wheter a step will be removed or refactored.
-        '''
-        step_smells_map = list()
-        for (index, st) in enumerate(test.steps):
-            action_matches = self._matcher(st.action)
-            if action_matches:
-                step_smells_map.append(True)
-            else:
-                step_smells_map.append(False)
-        step_smells_map = [index for (index, has_smell) in enumerate(step_smells_map) if has_smell]
+    # def count_smelly_steps(self, test : Test) -> int:
+    #     '''
+    #     Returns the truth table where each row indicates wheter a step will be removed or refactored.
+    #     '''
+    #     step_smells_map = list()
+    #     for (index, st) in enumerate(test.steps):
+    #         action_matches = self._matcher(st.action)
+    #         if action_matches:
+    #             step_smells_map.append(True)
+    #         else:
+    #             step_smells_map.append(False)
 
-        operations_truth_table = list(product((_REMOVE, _REFACTOR), repeat=len(step_smells_map)))
-        operations_truth_table = [list(zip(step_smells_map, row)) for row in operations_truth_table]
-        return operations_truth_table
+    #     counter = dict(Counter(step_smells_map))
+    #     try:
+    #         trues = counter[True]
+    #     except KeyError:
+    #         trues = 0
+
+    #     return trues
 
 
-    def _refactor_test(self, test:Test, step_index:int) -> Test:
-        st = test.steps[step_index]
-        action_matches = self._matcher(st.action)
-        if action_matches:
-            doc = st.action
-            
+    # def _refactor_test(self, test:Test, number_of_steps:int) -> Test:
+    #     for step_index in range(number_of_steps):
+    #         st = test.steps[step_index]
+    #         # breakpoint()
+    #         sents = [sent for sent in st.action.sents]
+    #         for sent in sents:
+    #             action_matches = self._matcher(sent)
+    #             if action_matches:
+    #                 new_header = sent
+    #                 test.header.append(new_header.text)
+    #     test.steps[step_index].action = nlp("".join([sent.text for sent in sents if not self._matcher(sent)]))
+    #     return test
