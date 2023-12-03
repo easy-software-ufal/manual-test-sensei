@@ -4,6 +4,7 @@ import streamlit as st
 import ubuntu_data
 # from matchers.eager_step import EagerStep
 from matchers.misplaced_precondition import MisplacedPrecondition
+from matchers_facade import  MatchersFacade
 from pipeline import simplify_test
 from pipeline import nlp
 
@@ -18,10 +19,11 @@ test_index = st.selectbox('Select the test', all_tests_indexes)
 
 # matcher = EagerStep()
 matcher = MisplacedPrecondition()
+facade = MatchersFacade()
 
 test = file_tests[test_index] #seleciona um único teste
 initial_test = simplify_test(test)
-refactored_tests = matcher(test)
+refactored_tests = facade(test)
 
 if refactored_tests:
     refactored_tests = [simplify_test(test) for test in refactored_tests]

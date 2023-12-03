@@ -12,7 +12,7 @@ class MisplacedPrecondition:
     smell:str = smells_names.MISPLACED_PRECONDITION
     _matcher = MatchersFactory.misplaced_precondition_matcher()
 
-    def __call__(self, test: Test):
+    def __call__(self, test: Test) -> list[Test]:
         """
             The first action step declares the SUT state (e.g. 'wifi is turned off')
         """

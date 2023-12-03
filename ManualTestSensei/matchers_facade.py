@@ -5,21 +5,25 @@ from pipeline import Test
 
 class MatchersFacade:
     '''This class is responsible for applying the smells detections of any smell. It contains an instance of each matcher.'''
+    pipeline =  (
+    eager_step.EagerStep(),
+    misplaced_precondition.MisplacedPrecondition(),
+    unverified_action.UnverifiedAction(),
+    conditional_test_logic.ConditionalTestLogic(),
+    # misplaced_result.MisplacedResult(),
+    # ambiguous_test.AmbiguousTest()
+    )
 
-    condition_test_logic = conditional_test_logic.ConditionalTestLogic()
-    eager_step = eager_step.EagerStep()
-    # ambiguous_test = ambiguous_test.AmbiguousTest() # TODO: Fix this test
-    misplaced_precondition = misplaced_precondition.MisplacedPrecondition()
-    unverified_action = unverified_action.UnverifiedAction()
-    misplaced_result = misplaced_result.MisplacedResult()
+    def __call__(self, tests:Test|list[Test]) -> list[Test]:
+        result = list()
+        if isinstance(tests, Test):
+            tests = [tests]
+        for pipe in self.pipeline:
+            for test in tests:
+                result = result+pipe(test)
+        return result
 
-    def __call__(self, test:Test) -> bool:
-        pipeline = (getattr(MatchersFacade,m) for m in self.pipeline_tostr())
-        for pipe in pipeline:
-            pipe(test)
-        return True
-
-    def pipeline_tostr(self) ->list[str]:
+    def _pipeline_tostr(self) ->list[str]:
         pipeline = [m for m in dir(MatchersFacade) if not m.startswith('_')] # Ignores dunders and private attributes.
         return pipeline
 
