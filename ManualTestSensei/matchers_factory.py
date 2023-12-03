@@ -14,13 +14,13 @@ class MatchersFactory:
     def misplaced_precondition_matcher():
         return MatchersFactory._build_dependency_matcher(misplaced_precondition.patterns)
 
-    def misplaced_step_matcher():
+    def misplaced_action_matcher():
         return MatchersFactory._build_matcher(misplaced_step.patterns)
 
     # def undefined_wait_matcher():
     #     return MatchersFactory._build_dependency_matcher(undefined_wait.patterns)
 
-    def misplaced_result_verification_matcher():
+    def misplaced_verification_matcher():
         return MatchersFactory._build_dependency_matcher(misplaced_result_verification.patterns)
 
     def misplaced_result_affirmative_sentences():
