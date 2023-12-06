@@ -1,4 +1,5 @@
-from pipeline import Test
+import copy
+from pipeline import Test, nlp
 import smells_names
 from matchers_factory import MatchersFactory
 from matchers import helpers
@@ -8,15 +9,18 @@ import smells_names
 class AmbiguousTest:
     smell:str = smells_names.AMBIGUOUS_TEST
 
-    def __call__(self, test: Test): # TODO: Muito código repetido. Refazer
+    def __call__(self, test: Test) -> Test: # TODO: Muito código repetido. Refazer
         """
             Comparative adverbs (RBR)
-            Adverbs of manner(RB)
             Comparative and superlative adjectives (JJR, JJS)
-            Indefinite pronouns (PRON)
+
+            Adverbs of manner(RB) --> excluir token do adverbio de modo
+            Indefinite pronouns (PRON) --> meter um asterisco e mandar o usuario resolver o problema
         """
         # Comparative adverbs (RBR)
         matcher = MatchersFactory.ambiguous_test_comparative_adverbs_matcher()
+
+        test_copy = copy.deepcopy(test)
 
         # Actions
         for step in test.steps:
@@ -58,7 +62,7 @@ class AmbiguousTest:
             action_matches = matcher(step.action)
             for match_id, start, end in action_matches:
                 span = step.action[start:end]
-                resultsWritter().write([test.file, index, 'Ambiguous Test', 'adjective', 'action', span, step.action])
+                helpers._store_smell(step, self.smell, 'adjective', 'action', span, step.action)
 
         # Verifications
         for step in test.steps:
@@ -66,8 +70,8 @@ class AmbiguousTest:
                 reaction_matches = matcher(reaction)
                 for match_id, start, end in reaction_matches:
                     span = reaction[start:end]
-                    resultsWritter().write(
-                        [test.file, index, 'Ambiguous Test', 'adjective', 'verification', span, reaction])
+                    helpers._store_smell(
+                        step, self.smell, 'adjective', 'verification', span, reaction)
 
         # Verb + indefinite determiner
         matcher = MatchersFactory.ambiguous_test_indefinite_determiners_matcher()
@@ -78,8 +82,8 @@ class AmbiguousTest:
             for match_id, start, end in action_matches:
                 span = step.action[start:end]
                 if "Definite=Def" not in str(span[-1].morph):  # spaCy recognizes definite determiners, which we don't want
-                    resultsWritter().write(
-                        [test.file, index, 'Ambiguous Test', 'verb + indefinite determiner', 'action', span, step.action])
+                    helpers._store_smell(
+                        step, self.smell, 'verb + indefinite determiner', 'action', span, step.action)
 
         # Verifications
         for step in test.steps:
@@ -89,8 +93,8 @@ class AmbiguousTest:
                     span = reaction[start:end]
                     if "Definite=Def" not in str(
                             span[-1].morph):  # spaCy recognizes definite determiners, which we don't want
-                        resultsWritter().write(
-                            [test.file, index, 'Ambiguous Test', 'verb + indefinite determiner', 'verification', span, reaction])
+                        helpers._store_smell(
+                            step, self.smell, 'verb + indefinite determiner', 'verification', span, reaction)
 
         # Indefinite pronouns
         matcher = MatchersFactory.ambiguous_test_indefinite_pronouns_matcher()
@@ -100,8 +104,8 @@ class AmbiguousTest:
             action_matches = matcher(step.action)
             for match_id, start, end in action_matches:
                 span = step.action[start:end]
-                resultsWritter().write(
-                    [test.file, index, 'Ambiguous Test', 'indefinite pronoun', 'action', span, step.action])
+                helpers._store_smell(
+                    step, self.smell, 'indefinite pronoun', 'action', span, step.action)
 
         # Verifications
         for step in test.steps:
@@ -109,5 +113,5 @@ class AmbiguousTest:
                 reaction_matches = matcher(reaction)
                 for match_id, start, end in reaction_matches:
                     span = reaction[start:end]
-                    resultsWritter().write(
-                        [test.file, index, 'Ambiguous Test', 'indefinite pronoun', 'verification', span, reaction])
+                    helpers._store_smell(
+                        step, self.smell, 'indefinite pronoun', 'verification', span, reaction)
