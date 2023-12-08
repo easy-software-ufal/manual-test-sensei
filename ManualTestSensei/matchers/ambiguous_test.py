@@ -1,5 +1,5 @@
 from spacy.tokens import Doc
-from pipeline import Test,Step, nlp
+from pipeline import Test,Step, Smell, nlp
 import smells_names
 from matchers_factory import MatchersFactory
 from matchers import helpers
@@ -30,19 +30,24 @@ class AmbiguousTest:
         for (step_index, st) in enumerate(test.steps):
             indefinite_determinant_smells = self._apply_indefinite_determinant(st)
             if indefinite_determinant_smells:
-                st.smells.append(indefinite_determinant_smells)
+                st.smells = st.smells+indefinite_determinant_smells
         return [test,]
 
-    def _apply_indefinite_determinant(self, st:Step) -> str:
-        matches = self.matcher_indef_det(st.action)
-        smell_label = ''
-        if matches:
+    def _apply_indefinite_determinant(self, st:Step) -> Smell:
+        def apply_refactoring(doc:Doc, location:str) -> list[Smell]:
+            matches = self.matcher_indef_det(doc)
             smells = list()
-            for (_, start, end) in matches:
-                smell_msg = '"'+st.action[start:end].text+'"'
-                smells.append(smell_msg)
-            smell_label = 'Please define the following: '+', '.join(smells)
-        return smell_label
+            if matches:
+                for (_, start, end) in matches:
+                    smell = Smell(self.smell, doc[start:end].text, f'Define this for the {location}')
+                    smells.append(smell)
+            return smells
+        action_smells = apply_refactoring(st.action, 'action')
+        reaction_smells = list()
+        for reaction in st.reactions:
+            reaction_smells = reaction_smells + apply_refactoring(reaction, 'verification')
+        smells = action_smells + reaction_smells
+        return smells
 
     def process_matches_action(self, step, matcher, smell_type, attribute, additional_action=None):
         matches = matcher(step.action)

@@ -39,7 +39,7 @@ class Smell:
     term : str = field(default=None)
 
     def __str__(self):
-        return f'{self.smell} ({self.hint})\nLocation: {self.where} | Term: {self.term}'
+        return f'{self.hint}: \'{self.where}\''
 
 class Memento:
     '''Implements the memento design pattern'''
