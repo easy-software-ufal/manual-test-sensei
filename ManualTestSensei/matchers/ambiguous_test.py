@@ -1,5 +1,5 @@
-import copy
-from pipeline import Test, nlp
+from spacy.tokens import Doc
+from pipeline import Test,Step, nlp
 import smells_names
 from matchers_factory import MatchersFactory
 from matchers import helpers
@@ -28,14 +28,21 @@ class AmbiguousTest:
             Adverbs of manner(RB) --> excluir token do adverbio de modo
         '''
         for (step_index, st) in enumerate(test.steps):
-            matches = self.matcher_indef_det(st.action)
-            if matches:
-                smells = list()
-                for (_, start, end) in matches:
-                    smell_msg = '"'+st.action[start:end].text+'"'
-                    smells.append(smell_msg)
-                st.smells.append('Please define the following: '+', '.join(smells))
+            indefinite_determinant_smells = self._apply_indefinite_determinant(st)
+            if indefinite_determinant_smells:
+                st.smells.append(indefinite_determinant_smells)
         return [test,]
+
+    def _apply_indefinite_determinant(self, st:Step) -> str:
+        matches = self.matcher_indef_det(st.action)
+        smell_label = ''
+        if matches:
+            smells = list()
+            for (_, start, end) in matches:
+                smell_msg = '"'+st.action[start:end].text+'"'
+                smells.append(smell_msg)
+            smell_label = 'Please define the following: '+', '.join(smells)
+        return smell_label
 
     def process_matches_action(self, step, matcher, smell_type, attribute, additional_action=None):
         matches = matcher(step.action)
