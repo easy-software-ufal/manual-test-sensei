@@ -25,7 +25,6 @@ refactored_tests = matcher(test)
 
 if refactored_tests:
     refactored_tests = [simplify_test(test) for test in refactored_tests]
-
 tabs = ['Initial', 'Refactored']
 tabs = st.tabs(tabs)
 

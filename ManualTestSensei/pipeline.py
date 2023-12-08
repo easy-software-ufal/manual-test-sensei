@@ -115,7 +115,7 @@ def simplify_test(test:Test):
 def simplify_step(step:Step):
     action = step.action.text
     reactions = '\n\n'.join([reaction.text for reaction in step.reactions])
-    smells = '\n'.join([str(smell) for smell in step.smells])
+    smells = ' | '.join([str(smell) for smell in step.smells])
     if not smells:
         smells = '-'
     return {'action':action, 'expected results':reactions, 'smells':smells}

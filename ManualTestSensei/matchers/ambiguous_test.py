@@ -11,13 +11,31 @@ _OPERATIONS = (_REMOVE := 0, _REFACTOR := 1)
 
 class AmbiguousTest:
     smell: str = smells_names.AMBIGUOUS_TEST
-    matcher_comparative_adverbs = MatchersFactory.ambiguous_test_comparative_adverbs_matcher()
-    matcher_manner = MatchersFactory.ambiguous_test_adverbs_of_manner_matcher()
-    matcher_adjective = MatchersFactory.ambiguous_test_adjectives_matcher()
+    # matcher_comparative_adverbs = MatchersFactory.ambiguous_test_comparative_adverbs_matcher()
+    # matcher_manner = MatchersFactory.ambiguous_test_adverbs_of_manner_matcher()
+    # matcher_adjective = MatchersFactory.ambiguous_test_adjectives_matcher()
+
     matcher_indef_det = MatchersFactory.ambiguous_test_indefinite_determiners_matcher()
-    matcher_indef_pron = MatchersFactory.ambiguous_test_indefinite_pronouns_matcher()
-    matchers = [matcher_comparative_adverbs, matcher_manner,
-                matcher_adjective, matcher_indef_det, matcher_indef_pron]
+
+    # matcher_indef_pron = MatchersFactory.ambiguous_test_indefinite_pronouns_matcher()
+
+    def __call__(self, test: Test) -> Test:  # TODO: Muito código repetido. Refazer
+        '''
+            Comparative adverbs (RBR)
+            Comparative and superlative adjectives (JJR, JJS)
+
+            Indefinite pronouns (PRON) --> meter um asterisco e mandar o usuario resolver o problema
+            Adverbs of manner(RB) --> excluir token do adverbio de modo
+        '''
+        for (step_index, st) in enumerate(test.steps):
+            matches = self.matcher_indef_det(st.action)
+            if matches:
+                smells = list()
+                for (_, start, end) in matches:
+                    smell_msg = '"'+st.action[start:end].text+'"'
+                    smells.append(smell_msg)
+                st.smells.append('Please define the following: '+', '.join(smells))
+        return [test,]
 
     def process_matches_action(self, step, matcher, smell_type, attribute, additional_action=None):
         matches = matcher(step.action)
@@ -33,7 +51,7 @@ class AmbiguousTest:
             reaction_matches = matcher(reaction)
             for _, start, end in reaction_matches:
                 span = reaction[start:end]
-                if filter_definite_det and "Definite=Def" in str(span[-1].morph):
+                if filter_definite_det and 'Definite=Def' in str(span[-1].morph):
                     helpers._store_smell(
                                 step, self.smell, 'verb + indefinite determiner', 'verification', span, reaction)
                     print(step, self.smell, 'verb + indefinite determiner', 'verification', span, reaction)
@@ -46,7 +64,7 @@ class AmbiguousTest:
         for _, start, end in matches:
             span = step.action[start:end]
             # spaCy recognizes definite determiners, which we don't want
-            if "Definite=Def" not in str(span[-1].morph):
+            if 'Definite=Def' not in str(span[-1].morph):
                 self.process_matches_action(step, self.matcher_indef_det, 'verb + indefinite determiner', 'action')
 
     def process_action(self, step_number, step):
@@ -66,101 +84,7 @@ class AmbiguousTest:
             self.process_reaction_matches(reaction, self.matcher_indef_det, 'verb + indefinite determiner', 'verification', filter_definite_det=True)
         print(step_number,step.reactions)
 
-    def __call__(self, test: Test) -> Test:  # TODO: Muito código repetido. Refazer
-        """
-            Comparative adverbs (RBR)
-            Comparative and superlative adjectives (JJR, JJS)
 
-            Adverbs of manner(RB) --> excluir token do adverbio de modo
-            Indefinite pronouns (PRON) --> meter um asterisco e mandar o usuario resolver o problema
-
-        """
-
-        test_copy = copy.deepcopy(test)
-
-        # for (step_number, step) in enumerate(test.steps):
-        #     self.process_matches_action(step, self.matcher_comparative_adverbs, 'comparative adverb', 'action')
-        #     self.process_matches_action(step, self.matcher_adjective, 'adjective', 'action', additional_action=helpers._store_smell)
-        #     self.process_matches_action(step, self.matcher_manner, 'adverb of manner', 'action')
-        #     self.process_matches_action(step, self.matcher_indef_pron, 'indefinite pronoun', 'action')
-        #     self.process_indefinite_determiner_action(step)
-
-        for (step_number, step) in enumerate(test.steps):
-                    self.process_action(step_number, step)
-                    self.process_reaction(step_number, step)
-
-        # # Actions
-        # for (step_number, step) in enumerate(test.steps):
-        #     action_matches = matcher_comparative_adverbs(step.action)
-        #     for _, start, end in action_matches:
-        #         span = step.action[start:end]  # The matched span of tokens
-        #         helpers._store_smell(
-        #             step, self.smell, 'comparative adverb', 'action', span)
-
-        #     action_matches = matcher_manner(step.action)
-        #     for _, start, end in action_matches:
-        #         span = step.action[start:end]
-        #         helpers._store_smell(
-        #             step, self.smell, 'adverb of manner', 'action', span)
-
-        #     action_matches = matcher_adjective(step.action)
-        #     for _, start, end in action_matches:
-        #         span = step.action[start:end]
-        #         helpers._store_smell(
-        #             step, self.smell, 'adjective', 'action', span, step.action)
-
-        #     action_matches = matcher_indef_det(step.action)
-        #     for _, start, end in action_matches:
-        #         span = step.action[start:end]
-        #         # spaCy recognizes definite determiners, which we don't want
-        #         if "Definite=Def" not in str(span[-1].morph):
-        #             helpers._store_smell(
-        #                 step, self.smell, 'verb + indefinite determiner', 'action', span, step.action)
-
-        #     action_matches = matcher_indef_pron(step.action)
-        #     for _, start, end in action_matches:
-        #         span = step.action[start:end]
-        #         helpers._store_smell(
-        #             step, self.smell, 'indefinite pronoun', 'action', span, step.action)
-
-        #     for reaction in step.reactions:
-        #         reaction_matches = matcher_comparative_adverbs(reaction)
-        #         for _, start, end in reaction_matches:
-        #             span = reaction[start:end]  # The matched span of tokens
-        #             helpers._store_smell(
-        #                 step, self.smell, 'comparative adverb', 'verification', span)
-
-        #     for reaction in step.reactions:
-        #         reaction_matches = matcher_manner(reaction)
-        #         for _, start, end in reaction_matches:
-        #             span = reaction[start:end]
-        #             helpers._store_smell(
-        #                 step, self.smell, 'comparative adverb', 'verification', span)
-
-        #     for reaction in step.reactions:
-        #         reaction_matches = matcher_adjective(reaction)
-        #         for _, start, end in reaction_matches:
-        #             span = reaction[start:end]
-        #             helpers._store_smell(
-        #                 step, self.smell, 'adjective', 'verification', span, reaction)
-
-        #     for reaction in step.reactions:
-        #         reaction_matches = matcher_indef_det(reaction)
-        #         for _, start, end in reaction_matches:
-        #             span = reaction[start:end]
-        #             if "Definite=Def" not in str(
-        #                     span[-1].morph):  # spaCy recognizes definite determiners, which we don't want
-        #                 helpers._store_smell(
-        #                     step, self.smell, 'verb + indefinite determiner', 'verification', span, reaction)
-
-        #     for reaction in step.reactions:
-        #         reaction_matches = matcher_indef_pron(reaction)
-        #         for _, start, end in reaction_matches:
-        #             span = reaction[start:end]
-        #             helpers._store_smell(
-        #                 step, self.smell, 'indefinite pronoun', 'verification', span, reaction)
-
-        return [test,]
 
     def _map_smelly_steps(self, test: Test) -> list:
         '''
