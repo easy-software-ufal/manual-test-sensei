@@ -17,7 +17,7 @@ class AmbiguousTest:
 
     matcher_indef_det = MatchersFactory.ambiguous_test_indefinite_determiners_matcher()
 
-    # matcher_indef_pron = MatchersFactory.ambiguous_test_indefinite_pronouns_matcher()
+    matcher_indef_pron = MatchersFactory.ambiguous_test_indefinite_pronouns_matcher()
 
     def __call__(self, test: Test) -> Test:  # TODO: Muito código repetido. Refazer
         '''
@@ -28,24 +28,27 @@ class AmbiguousTest:
             Adverbs of manner(RB) --> excluir token do adverbio de modo
         '''
         for (step_index, st) in enumerate(test.steps):
-            indefinite_determinant_smells = self._apply_indefinite_determinant(st)
+            indefinite_determinant_smells = self._apply_indefinite_determinant(st, self.matcher_indef_det)
             if indefinite_determinant_smells:
                 st.smells = st.smells+indefinite_determinant_smells
+            indefinite_pronouns_smells = self._apply_indefinite_determinant(st, self.matcher_indef_pron)
+            if indefinite_pronouns_smells:
+                st.smells = st.smells+indefinite_pronouns_smells
         return [test,]
 
-    def _apply_indefinite_determinant(self, st:Step) -> Smell:
-        def apply_refactoring(doc:Doc, location:str) -> list[Smell]:
-            matches = self.matcher_indef_det(doc)
+    def _apply_indefinite_determinant(self, st:Step, matcher) -> Smell:
+        def apply_refactoring(doc:Doc, location:str, matcher) -> list[Smell]:
+            matches = matcher(doc)
             smells = list()
             if matches:
                 for (_, start, end) in matches:
                     smell = Smell(self.smell, doc[start:end].text, f'Define this for the {location}')
                     smells.append(smell)
             return smells
-        action_smells = apply_refactoring(st.action, 'action')
+        action_smells = apply_refactoring(st.action, 'action', matcher)
         reaction_smells = list()
         for reaction in st.reactions:
-            reaction_smells = reaction_smells + apply_refactoring(reaction, 'verification')
+            reaction_smells = reaction_smells + apply_refactoring(reaction, 'verification', matcher)
         smells = action_smells + reaction_smells
         return smells
 
