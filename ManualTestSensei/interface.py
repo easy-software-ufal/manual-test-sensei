@@ -3,7 +3,7 @@ import pandas as pd
 import streamlit as st
 import ubuntu_data
 # from matchers.eager_step import EagerStep
-from matchers.misplaced_precondition import MisplacedPrecondition
+from matchers.ambiguous_test import AmbiguousTest
 from pipeline import simplify_test
 from pipeline import nlp
 
@@ -17,7 +17,7 @@ all_tests_indexes = [index for index, value in enumerate(file_tests)]
 test_index = st.selectbox('Select the test', all_tests_indexes)
 
 # matcher = EagerStep()
-matcher = MisplacedPrecondition()
+matcher = AmbiguousTest()
 
 test = file_tests[test_index] #seleciona um único teste
 initial_test = simplify_test(test)
