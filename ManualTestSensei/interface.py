@@ -3,6 +3,8 @@ import pandas as pd
 import streamlit as st
 import ubuntu_data
 # from matchers.eager_step import EagerStep
+
+from matchers.ambiguous_test import AmbiguousTest
 from matchers.misplaced_action import MisplacedAction
 from matchers_facade import  MatchersFacade
 from pipeline import simplify_test
@@ -21,13 +23,13 @@ test_index = st.selectbox('Select the test', all_tests_indexes)
 matcher = MisplacedAction()
 facade = MatchersFacade()
 
+
 test = file_tests[test_index] #seleciona um único teste
 initial_test = simplify_test(test)
 refactored_tests = matcher(test)
 
 if refactored_tests:
     refactored_tests = [simplify_test(test) for test in refactored_tests]
-
 tabs = ['Initial', 'Refactored']
 tabs = st.tabs(tabs)
 
