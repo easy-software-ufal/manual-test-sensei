@@ -44,7 +44,7 @@ with st.container():
     df = pd.DataFrame(test)
     st.table(df)
 st.divider()
-st.markdown('# Refactored Tests')
+st.markdown('# Transformed Test(s)')
 # Refactored tests
 # with tabs[1]:
 if refactored_tests:
