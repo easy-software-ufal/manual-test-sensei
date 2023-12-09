@@ -28,7 +28,7 @@ class MisplacedPrecondition:
             if found_matches:
                 sentences = [str(sent[1]) for sent in sentences if sent != _REMOVE]
                 if not sentences:
-                    test.steps.pop(steps_index)
+                    test.steps.pop(step_index)
                 else:
                     test.steps[step_index].action = nlp(' '.join(sentences))
         return [test]
