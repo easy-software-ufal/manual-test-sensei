@@ -33,24 +33,26 @@ refactored_tests = facade(test)
 if refactored_tests:
     refactored_tests = [simplify_test(test) for test in refactored_tests]
 tabs = ['Initial', 'Refactored']
-tabs = st.tabs(tabs)
+# tabs = st.tabs(tabs)
 
 # Initial test
-with tabs[0]:
-    header, test = initial_test
-    st.markdown('\n'.join(header))
-    with st.container():
-        df = pd.DataFrame(test)
-        st.table(df)
-
+# with tabs[0]:
+header, test = initial_test
+st.markdown('# Original Test')
+st.markdown('\n'.join(header))
+with st.container():
+    df = pd.DataFrame(test)
+    st.table(df)
+st.divider()
+st.markdown('# Refactored Tests')
 # Refactored tests
-with tabs[1]:
-    if refactored_tests:
-        for test in refactored_tests:
-            header, test = test
-            st.markdown('\n'.join(header))
-            with st.container():
-                df = pd.DataFrame(test)
-                st.table(df)
-    else:
-        st.table(df)
+# with tabs[1]:
+if refactored_tests:
+    for test in refactored_tests:
+        header, test = test
+        st.markdown('\n'.join(header))
+        with st.container():
+            df = pd.DataFrame(test)
+            st.table(df)
+else:
+    st.table(df)

@@ -9,10 +9,10 @@ class MatchersFacade:
     ambiguous_test.AmbiguousTest(),
     conditional_test_logic.ConditionalTestLogic(),
     eager_step.EagerStep(),
-    misplaced_precondition.MisplacedPrecondition(),
-    misplaced_action.MisplacedAction(),
-    misplaced_result.MisplacedResult(),
-    unverified_action.UnverifiedAction(),
+    # misplaced_precondition.MisplacedPrecondition(),
+    # misplaced_action.MisplacedAction(),
+    # misplaced_result.MisplacedResult(),
+    # unverified_action.UnverifiedAction(),
     )
 
     def __call__(self, tests:Test|list[Test]) -> list[Test]:
