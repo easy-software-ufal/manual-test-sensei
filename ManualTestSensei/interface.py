@@ -5,7 +5,7 @@ import ubuntu_data
 # from matchers.eager_step import EagerStep
 
 from matchers.ambiguous_test import AmbiguousTest
-from matchers.misplaced_action import MisplacedAction
+from matchers.misplaced_result import MisplacedResult
 from matchers_facade import  MatchersFacade
 from pipeline import simplify_test
 from pipeline import nlp
@@ -22,7 +22,7 @@ all_tests_indexes = [index for index, value in enumerate(file_tests)]
 test_index = st.selectbox('Select the test', all_tests_indexes)
 
 # matcher = EagerStep()
-matcher = MisplacedAction()
+matcher = MisplacedResult()
 facade = MatchersFacade()
 
 
