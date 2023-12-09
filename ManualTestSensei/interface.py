@@ -10,6 +10,8 @@ from matchers_facade import  MatchersFacade
 from pipeline import simplify_test
 from pipeline import nlp
 
+#'''Misplaced Result -> É o inverso de misplaced action'''
+
 st.set_page_config(layout='wide')
 
 ubuntu = ubuntu_data.UbuntuSmellsData()

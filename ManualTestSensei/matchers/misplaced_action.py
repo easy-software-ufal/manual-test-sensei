@@ -15,7 +15,7 @@ class MisplacedAction:
             for (reaction_index, reaction) in enumerate(st.reactions):
                 reaction_matches = matcher(reaction)
                 for (match_id, start, end) in reaction_matches:
-                    helpers._store_smell(st, smells_names.MISPLACED_STEP, '', 'verification', reaction[start:end])
+                    helpers._store_smell(st, smells_names.MISPLACED_STEP, 'Transformed misplaced action. Location', 'verification', reaction[start:end])
                     new_action = test.steps[step_index].action.text+'. '+reaction.text
                     test.steps[step_index].action = nlp(new_action)
                     test.steps[step_index].reactions.pop(reaction_index)
