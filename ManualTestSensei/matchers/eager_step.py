@@ -29,7 +29,7 @@ class EagerStep:
         for (match_index, (_, start, end)) in enumerate(action_matches):
             action = self.extract_action_from_match(match_index, action_matches, st, amount_matches, start)
 
-            new_step = Step(action,list(nlp('[FILL VERIFICATION]')))
+            new_step = Step(action, [nlp('FILL_VERIFICATION')])
             if step_index in new_steps:
                 position = (step_index + (len(new_steps[step_index]) * TINY_NUMBER))
                 new_step = (position, new_step)
@@ -40,8 +40,11 @@ class EagerStep:
                 new_step = (step_index + TINY_NUMBER, new_step)
                 new_steps[step_index].append(new_step)
                 all_steps.append(new_step)
-        (_, step) = all_steps[step_index]
-        all_steps[-1][-1].reactions = step.reactions
+        try:
+            (_, st) = all_steps[step_index]
+        except:
+            st = [st for st in all_steps if step_index == st[0]][0][1]
+        all_steps[-1][-1].reactions = st.reactions
         return new_steps
 
     # helpers._store_smell(st, self.smell, 'dependent clause', 'verification', st.action[start:end])

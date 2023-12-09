@@ -1,17 +1,18 @@
 from matchers import (ambiguous_test, conditional_test_logic, eager_step,
-                      misplaced_precondition, unverified_action, misplaced_result)
+                      misplaced_precondition, unverified_action, misplaced_result, misplaced_action)
 from ubuntu_data import UbuntuSmellsData
 from pipeline import Test
 
 class MatchersFacade:
     '''This class is responsible for applying the smells detections of any smell. It contains an instance of each matcher.'''
     pipeline =  (
+    ambiguous_test.AmbiguousTest(),
+    conditional_test_logic.ConditionalTestLogic(),
     eager_step.EagerStep(),
     misplaced_precondition.MisplacedPrecondition(),
+    misplaced_action.MisplacedAction(),
+    misplaced_result.MisplacedResult(),
     unverified_action.UnverifiedAction(),
-    conditional_test_logic.ConditionalTestLogic(),
-    # misplaced_result.MisplacedResult(),
-    # ambiguous_test.AmbiguousTest()
     )
 
     def __call__(self, tests:Test|list[Test]) -> list[Test]:

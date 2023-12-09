@@ -28,7 +28,7 @@ facade = MatchersFacade()
 
 test = file_tests[test_index] #seleciona um único teste
 initial_test = simplify_test(test)
-refactored_tests = matcher(test)
+refactored_tests = facade(test)
 
 if refactored_tests:
     refactored_tests = [simplify_test(test) for test in refactored_tests]
