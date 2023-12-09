@@ -64,7 +64,7 @@ class AmbiguousTest:
             smells = list()
             if matches:
                 for (_, start, end) in matches:
-                    smell = Smell(self.smell, doc[start:end].text, f'Define this for the {location}')
+                    smell = Smell(self.smell, doc[start:end].text, f'Define the following for the {location}')
                     smells.append(smell)
             return smells
         action_smells = refactor(st.action, 'action', matcher)

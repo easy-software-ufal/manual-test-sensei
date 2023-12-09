@@ -6,13 +6,13 @@ from pipeline import Test
 class MatchersFacade:
     '''This class is responsible for applying the smells detections of any smell. It contains an instance of each matcher.'''
     pipeline =  (
-    ambiguous_test.AmbiguousTest(),
     conditional_test_logic.ConditionalTestLogic(),
+    ambiguous_test.AmbiguousTest(),
     eager_step.EagerStep(),
-    # misplaced_precondition.MisplacedPrecondition(),
-    # misplaced_action.MisplacedAction(),
-    # misplaced_result.MisplacedResult(),
-    # unverified_action.UnverifiedAction(),
+    misplaced_precondition.MisplacedPrecondition(),
+    misplaced_action.MisplacedAction(),
+    misplaced_result.MisplacedResult(),
+    unverified_action.UnverifiedAction(),
     )
 
     def __call__(self, tests:Test|list[Test]) -> list[Test]:
