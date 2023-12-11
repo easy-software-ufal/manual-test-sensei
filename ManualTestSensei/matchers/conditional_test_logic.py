@@ -36,6 +36,8 @@ class ConditionalTestLogic:
             tests.append(test_copy)
                 # for (match_id, start, end) in action_matches:
                 #     helpers._store_smell(st, self.smell, 'dependent clause', 'verification', st.action[start:end])
+        if len(tests) == 1:
+            return [test, ]
         return tests
 
     def _refactor_test(self, test:Test, step_index:int) -> Test:

@@ -3,3 +3,4 @@ pandas
 rich
 scipy
 lxml
+streamlit

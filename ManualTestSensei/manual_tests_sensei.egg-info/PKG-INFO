@@ -1,3 +1,9 @@
 Metadata-Version: 2.1
 Name: manual-tests-sensei
 Version: 0.0.2
+Requires-Dist: spacy==3.4.1
+Requires-Dist: pandas
+Requires-Dist: rich
+Requires-Dist: scipy
+Requires-Dist: lxml
+Requires-Dist: streamlit

@@ -16,5 +16,6 @@ setup(
                         'rich',
                         'scipy',
                         'lxml',
+                        'streamlit'
                         ]
 )

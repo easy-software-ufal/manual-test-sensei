@@ -59,4 +59,5 @@ class EagerStep:
             action = st.action[previous_end::]
         if action[0].pos_ == 'CCONJ':
             action = action[1::]
+        action = nlp(str(action).capitalize())
         return action

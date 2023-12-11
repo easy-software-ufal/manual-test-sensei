@@ -7,11 +7,11 @@ class MatchersFacade:
     '''This class is responsible for applying the smells detections of any smell. It contains an instance of each matcher.'''
     pipeline =  (
     conditional_test_logic.ConditionalTestLogic(),
-    ambiguous_test.AmbiguousTest(),
     eager_step.EagerStep(),
+    misplaced_result.MisplacedResult(),
+    ambiguous_test.AmbiguousTest(),
     misplaced_precondition.MisplacedPrecondition(),
     misplaced_action.MisplacedAction(),
-    misplaced_result.MisplacedResult(),
     unverified_action.UnverifiedAction(),
     )
 
@@ -22,7 +22,7 @@ class MatchersFacade:
         for pipe in self.pipeline:
             for test in tests:
                 result = result+pipe(test)
-        return result
+        return list(set(result))
 
     def _pipeline_tostr(self) ->list[str]:
         pipeline = [m for m in dir(MatchersFacade) if not m.startswith('_')] # Ignores dunders and private attributes.
