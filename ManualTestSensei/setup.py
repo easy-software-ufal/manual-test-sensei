@@ -9,7 +9,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='manual_tests_sensei',
-    version='0.0.2',
+    version='2.0',
     packages=find_packages(),
     install_requires=['spacy==3.4.1',
                         'pandas',
