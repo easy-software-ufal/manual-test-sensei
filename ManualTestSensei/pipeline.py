@@ -9,7 +9,7 @@ import logging
 log = logging.getLogger(__name__)
 
 
-# TODO: Turn it into a singleton
+
 
 try:
     if sys.argv[1] == 'english' or sys.argv[1] == 'trf':
@@ -75,6 +75,7 @@ class Step(Memento):
         super().__init__()
         self.action = action
         self.where = where
+        self._flags=list()
         if reactions:
             self.reactions = reactions
         else:
@@ -83,6 +84,13 @@ class Step(Memento):
             self.smells = smells
         else:
             self.smells = list()
+
+    def add_flag(self, flag:str) -> bool:
+        self._flags.append(flag)
+        return True
+
+    def has_flag(self, flag:str) -> bool:
+        return flag in self._flags
 
 
 class Test(Memento):
