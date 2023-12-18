@@ -25,17 +25,24 @@ class EagerStep:
             # action_matches = [match for (_, start, end) in action_matches if not st.action[start:end]]
             if amount_matches > 1:
                 new_steps = self.increase_new_steps(action_matches, st, amount_matches, step_index, new_steps, all_steps)
-                test.steps = test.steps[0:step_index] + new_steps + test.steps[step_index+1::]
+                test.steps = test.steps[0:step_index] + new_steps + test.steps[step_index+1::] #what happens if step_index = ultimo?
                 break
         if amount_matches>1:
             return self.__call__(test)
         return [test]
 
-    def increase_new_steps(self, action_matches, st, amount_matches, step_index, new_steps, all_steps) -> list[Step]:
+    def increase_new_steps(self, action_matches, st:Step, amount_matches, step_index, new_steps, all_steps) -> list[Step]:
+        old_reactions = list()
+        if st.reactions:
+            old_reactions = st.reactions
         new_steps = list()
         for (match_index, (_, start, end)) in enumerate(action_matches):
             action = self.extract_action_from_match(match_index, action_matches, st, amount_matches, start)
-            new_step = Step(action, [nlp('[FILL_VERIFICATION]')])
+            if match_index == len(action_matches) - 1:
+                breakpoint()
+                new_step = Step(action, old_reactions)
+            else:
+                new_step = Step(action, [nlp('[FILL_VERIFICATION]')])
             new_step.add_flag(VISITED)
             new_steps.append(new_step)
         return new_steps
