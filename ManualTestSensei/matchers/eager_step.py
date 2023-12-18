@@ -4,6 +4,7 @@ from matchers_factory import MatchersFactory
 from matchers import helpers
 import smells_names
 import itertools
+from spacy.util import filter_spans
 
 
 VISITED = 'EAGER_ACTION_VISITED'
@@ -20,7 +21,10 @@ class EagerStep:
         for (step_index, st) in all_steps:
             if st.has_flag(VISITED):
                 continue
-            action_matches = matcher(st.action)
+
+            action_matches = matcher(st.action, as_spans=True)
+            action_matches = list(filter_spans(action_matches))
+            action_matches = [(-1,span.start, span.end) for span in action_matches]
             amount_matches = len(action_matches)
             # action_matches = [match for (_, start, end) in action_matches if not st.action[start:end]]
             if amount_matches > 1:
@@ -32,17 +36,22 @@ class EagerStep:
         return [test]
 
     def increase_new_steps(self, action_matches, st:Step, amount_matches, step_index, new_steps, all_steps) -> list[Step]:
+        action_matches = [(start, end) for (_, start, end) in action_matches]
         old_reactions = list()
         if st.reactions:
             old_reactions = st.reactions
         new_steps = list()
-        for (match_index, (_, start, end)) in enumerate(action_matches):
-            action = self.extract_action_from_match(match_index, action_matches, st, amount_matches, start)
-            # TODO: arrumar esse if pra funcionar, a ideia é somente criar novo step se e somente se len(action) >3, entao se o doc for pequeno nao vai ter mudança no step.
-            # isso tem implicação na atribuição de test.steps na linha 28. o que acontece se eu retornar new_steps como []?
-            # if len(action) <= 3:
-            #     st.add_flag(VISITED)
-            #     continue
+
+        action_matches = [start for (start, _) in action_matches]
+        action_matches[0] = 0
+        action_matches.append(len(st.action)+1)
+        _starts = list(action_matches)
+        _starts.pop()
+        _ends = list(action_matches)
+        _ends.pop(0)
+        action_matches = list(zip(_starts, _ends))
+        for (match_index, (start, end)) in enumerate(action_matches):
+            action = self.extract_action_from_match(st.action, start, end)
             if match_index == len(action_matches) - 1:
                 new_step = Step(action, old_reactions)
             else:
@@ -50,18 +59,12 @@ class EagerStep:
             new_step.add_flag(VISITED)
             new_steps.append(new_step)
         return new_steps
-
     # helpers._store_smell(st, self.smell, 'dependent clause', 'verification', st.action[start:end])
-    def extract_action_from_match(self, match_index:int, action_matches:tuple, st:Step, amount_matches:int, start:int):
-        if match_index == 0: # first
-            (_, next_start, _) = action_matches[match_index+1]
-            action = st.action[0:next_start]
-        else:
-            action = st.action[start::]
 
 
-
-        if action[0].pos_ == 'CCONJ':
-            action = action[1::]
-        action = nlp(str(action).capitalize())
-        return action
+    def extract_action_from_match(self, action, start:int, end:int):
+        span = action[start:end]
+        if span[0].pos_ == 'CCONJ':
+            span = span[1::]
+        span = nlp(str(span).capitalize())
+        return span
