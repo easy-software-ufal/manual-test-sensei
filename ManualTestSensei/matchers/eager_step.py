@@ -38,8 +38,12 @@ class EagerStep:
         new_steps = list()
         for (match_index, (_, start, end)) in enumerate(action_matches):
             action = self.extract_action_from_match(match_index, action_matches, st, amount_matches, start)
+            # TODO: arrumar esse if pra funcionar, a ideia é somente criar novo step se e somente se len(action) >3, entao se o doc for pequeno nao vai ter mudança no step.
+            # isso tem implicação na atribuição de test.steps na linha 28. o que acontece se eu retornar new_steps como []?
+            # if len(action) <= 3:
+            #     st.add_flag(VISITED)
+            #     continue
             if match_index == len(action_matches) - 1:
-                breakpoint()
                 new_step = Step(action, old_reactions)
             else:
                 new_step = Step(action, [nlp('[FILL_VERIFICATION]')])
