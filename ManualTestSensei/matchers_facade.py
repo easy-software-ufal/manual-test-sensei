@@ -5,24 +5,36 @@ from pipeline import Test
 
 class MatchersFacade:
     '''This class is responsible for applying the smells detections of any smell. It contains an instance of each matcher.'''
-    pipeline =  (
-        conditional_test_logic.ConditionalTestLogic(),
+    multiplicative_pipeline = (conditional_test_logic.ConditionalTestLogic(),)
+    non_multiplicative_pipeline =  (
         eager_step.EagerStep(),
-        misplaced_result.MisplacedResult(),
-        ambiguous_test.AmbiguousTest(),
-        misplaced_precondition.MisplacedPrecondition(),
-        misplaced_action.MisplacedAction(),
-        unverified_action.UnverifiedAction(),
+        # misplaced_result.MisplacedResult(),
+        # ambiguous_test.AmbiguousTest(),
+        # misplaced_precondition.MisplacedPrecondition(),
+        # misplaced_action.MisplacedAction(),
+        # unverified_action.UnverifiedAction(),
     )
 
     def __call__(self, tests:Test|list[Test]) -> list[Test]:
         result = list()
         if isinstance(tests, Test):
             tests = [tests]
-        for pipe in self.pipeline:
+        tests = self._call_multiplicative_pipeline(tests)
+        for pipe in self.non_multiplicative_pipeline:
             for test in tests:
                 result = result+pipe(test)
         return list(set(result))
+
+    def _call_multiplicative_pipeline(self, tests:Test|list[Test]) -> list[Test]:
+        initial_size = len(tests)
+        result = list()
+        for pipe in self.multiplicative_pipeline:
+            for test in tests:
+                result = result+pipe(test)
+        if len(result) == initial_size:
+            return result
+        return self._call_multiplicative_pipeline(result)
+
 
     def _pipeline_tostr(self) ->list[str]:
         pipeline = [m for m in dir(MatchersFacade) if not m.startswith('_')] # Ignores dunders and private attributes.

@@ -22,7 +22,11 @@ class EagerStep:
             if st.has_flag(VISITED):
                 continue
 
-            action_matches = matcher(st.action, as_spans=True)
+            try:
+                action_matches = matcher(st.action, as_spans=True)
+            except ValueError as _:
+                action_matches = matcher(st.action)
+                action_matches = [st.action[start:end] for (_, start, end) in action_matches]
             action_matches = list(filter_spans(action_matches))
             action_matches = [(-1,span.start, span.end) for span in action_matches]
             amount_matches = len(action_matches)
