@@ -7,11 +7,11 @@ class MatchersFacade:
     '''This class is responsible for applying the smells detections of any smell. It contains an instance of each matcher.'''
     multiplicative_pipeline = (conditional_test_logic.ConditionalTestLogic(),)
     non_multiplicative_pipeline =  (
+        misplaced_action.MisplacedAction(),
         eager_step.EagerStep(),
         misplaced_result.MisplacedResult(),
         ambiguous_test.AmbiguousTest(),
         misplaced_precondition.MisplacedPrecondition(),
-        misplaced_action.MisplacedAction(),
         unverified_action.UnverifiedAction(),
     )
 

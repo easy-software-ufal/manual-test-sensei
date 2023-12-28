@@ -9,6 +9,8 @@ class UnverifiedAction:
         '''Missing verification step'''
         for step in test.steps:
             if len(step.reactions) == 0:
+                if len(step.action) == 0:
+                    continue
                 step.reactions = [nlp('[FILL_VERIFICATION]'), ]
                 step.smells.append(self.smell)
         return [test, ]
