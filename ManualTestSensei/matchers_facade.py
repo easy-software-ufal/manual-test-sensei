@@ -3,6 +3,8 @@ from matchers import (ambiguous_test, conditional_test_logic, eager_step,
 from ubuntu_data import UbuntuSmellsData
 from pipeline import Test
 
+from batch import df
+
 class MatchersFacade:
     '''This class is responsible for applying the smells detections of any smell. It contains an instance of each matcher.'''
     multiplicative_pipeline = (conditional_test_logic.ConditionalTestLogic(),)
