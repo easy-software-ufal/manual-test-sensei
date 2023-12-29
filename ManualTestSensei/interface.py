@@ -4,6 +4,7 @@ import pandas as pd
 import streamlit as st
 import ubuntu_data
 import time
+import pygame
 # from matchers.eager_step import EagerStep
 
 from matchers.ambiguous_test import AmbiguousTest
@@ -54,7 +55,13 @@ if submit_button:
     print(f'{dt.now().strftime("%d-%m-%Y %H:%M:%S")} | Total time elapsed: {deltatime}')
     elapsed_time_element.write(f"Total time taken for transformation: {deltatime:.2f} seconds")
 
+    pygame.mixer.init()
+    pygame.mixer.music.load("sound.wav")
+    pygame.mixer.music.play()
 
+    # Wait for the sound to finish playing
+    while pygame.mixer.music.get_busy():
+        pygame.time.Clock().tick(10)
     if refactored_tests:
         refactored_tests = [simplify_test(test) for test in refactored_tests]
     tabs = ['Initial', 'Refactored']
