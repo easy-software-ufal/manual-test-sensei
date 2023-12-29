@@ -126,7 +126,7 @@ def simplify_step(step:Step):
     smells = ' | '.join([str(smell) for smell in step.smells])
     if not smells:
         smells = '-'
-    return {'action':action, 'expected results':reactions, 'smells':smells}
+    return {'action':action, 'verifications':reactions, 'hints':smells}
 
 if __name__ == '__main__':
     st1 = Step('step0', ['testando'], 'step1', ['testando isso'])

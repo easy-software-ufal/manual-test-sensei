@@ -7,12 +7,12 @@ class MatchersFacade:
     '''This class is responsible for applying the smells detections of any smell. It contains an instance of each matcher.'''
     multiplicative_pipeline = (conditional_test_logic.ConditionalTestLogic(),)
     non_multiplicative_pipeline =  (
-        misplaced_action.MisplacedAction(),
-        eager_step.EagerStep(),
-        misplaced_result.MisplacedResult(),
-        ambiguous_test.AmbiguousTest(),
-        misplaced_precondition.MisplacedPrecondition(),
-        unverified_action.UnverifiedAction(),
+        misplaced_action.MisplacedAction(), # Extract Actions
+        eager_step.EagerStep(), # Separate Actions
+        misplaced_result.MisplacedResult(), # Extract Verifications
+        ambiguous_test.AmbiguousTest(), # Extract Ambiguities
+        misplaced_precondition.MisplacedPrecondition(), # Extract Preconditions
+        unverified_action.UnverifiedAction(), # Fill Verifications
     )
 
     def __call__(self, tests:Test|list[Test]) -> list[Test]:
@@ -45,3 +45,5 @@ if __name__ == '__main__':
     tests = UbuntuSmellsData('ubuntu_files.csv') #files.csv contains ubuntu files
     test = tests.by_catalog_index(2)[0]
     facade(test)
+
+
