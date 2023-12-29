@@ -34,8 +34,7 @@ elapsed_time_element = st.empty()
 matcher = MisplacedResult()
 facade = MatchersFacade()
 
-with st.form(key='my_form_to_submit'):
-    submit_button = st.form_submit_button(label='Transform :sparkles:')
+submit_button = st.button(label='Transform :sparkles:')
 
 test = file_tests[test_index] #seleciona um único teste
 
