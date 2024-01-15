@@ -10,18 +10,21 @@ from matchers_factory import MatchersFactory
 from pipeline import Test
 from matchers import helpers
 import smells_names
+from transformator import Transformator
 
 _OPERATIONS = (_REMOVE:=0, _REFACTOR:=1)
 
-class ConditionalTestLogic:
-    smell = smells_names.CONDITIONAL_TEST_LOGIC
-    _matcher = MatchersFactory.conditional_test_matcher()
+class ConditionalTestLogic(Transformator):
+    def __init__(self):
+        self.smell = smells_names.CONDITIONAL_TEST_LOGIC
+        self._matcher = MatchersFactory.conditional_test_matcher()
+        super().__init__()
 
     def __call__(self, test: Test) -> list[Test]:
         '''
         Subordinate (dependent clauses). They start with a subordinating conjunction
         '''
-
+        self.start_counting_time()
         truth_table = self._map_smelly_steps(test)
         tests = list()
         for row in truth_table:
@@ -36,6 +39,7 @@ class ConditionalTestLogic:
             tests.append(test_copy)
                 # for (match_id, start, end) in action_matches:
                 #     helpers._store_smell(st, self.smell, 'dependent clause', 'verification', st.action[start:end])
+        self.stop_counting_time()
         if len(tests) == 1:
             return [test, ]
         return tests

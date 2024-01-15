@@ -5,15 +5,19 @@ from matchers import helpers
 import smells_names
 import itertools
 from spacy.util import filter_spans
+from transformator import Transformator
 
 
 VISITED = 'EAGER_ACTION_VISITED'
-class EagerStep:
-    smell:str = smells_names.EAGER_STEP
+class EagerStep(Transformator):
+    def __init__(self):
+        self.smell = smells_names.EAGER_ACTION
+        super().__init__()
 
 
     def __call__(self, test: Test) -> list[Test]:
         '''More than one action (imperative verbs not preceded by particles because this construction shows intent) per step.'''
+        self.start_counting_time()
         matcher = MatchersFactory.eager_step_matcher()
         all_steps = list(enumerate(test.steps))
         new_steps = dict()
@@ -35,6 +39,7 @@ class EagerStep:
                 new_steps = self.increase_new_steps(action_matches, st, amount_matches, step_index, new_steps, all_steps)
                 test.steps = test.steps[0:step_index] + new_steps + test.steps[step_index+1::] #what happens if step_index = ultimo?
                 break
+        self.stop_counting_time()
         if amount_matches>1:
             return self.__call__(test)
         return [test]

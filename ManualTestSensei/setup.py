@@ -16,6 +16,7 @@ setup(
                         'rich',
                         'scipy',
                         'lxml',
-                        'streamlit'
+                        'streamlit',
+                        'seaborn'
                         ]
 )

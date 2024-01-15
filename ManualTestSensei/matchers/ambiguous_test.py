@@ -5,18 +5,16 @@ from matchers_factory import MatchersFactory
 from matchers import helpers
 from itertools import product
 import smells_names
+from transformator import Transformator
 
 _OPERATIONS = (_REMOVE := 0, _REFACTOR := 1)
 
 
-class AmbiguousTest:
-    smell: str = smells_names.AMBIGUOUS_TEST
-    # matcher_comparative_adverbs = MatchersFactory.ambiguous_test_comparative_adverbs_matcher()
-    # matcher_adjective = MatchersFactory.ambiguous_test_adjectives_matcher()
-
-
-    matcher_indef_det = MatchersFactory.ambiguous_test_indefinite_determiners_matcher()
-    matcher_indef_pron = MatchersFactory.ambiguous_test_indefinite_pronouns_matcher()
+class AmbiguousTest(Transformator):
+    def __init__(self):
+        self.smell = smells_names.AMBIGUOUS_TEST
+        self.matcher_indef_det = MatchersFactory.ambiguous_test_indefinite_determiners_matcher()
+        self.matcher_indef_pron = MatchersFactory.ambiguous_test_indefinite_pronouns_matcher()
 
     def __call__(self, test: Test) -> Test:  # TODO: Muito código repetido. Refazer
         '''
@@ -26,6 +24,7 @@ class AmbiguousTest:
             Indefinite pronouns (PRON) --> meter um asterisco e mandar o usuario resolver o problema
             Adverbs of manner(RB) --> excluir token do adverbio de modo
         '''
+        self.start_counting_time()
         for (step_index, st) in enumerate(test.steps):
             mode_adverbs_smells = self._apply_mode_adverbs(st)
 
@@ -35,6 +34,7 @@ class AmbiguousTest:
             indefinite_pronouns_smells = self._apply_indefinite_matcher(st, self.matcher_indef_pron)
             if indefinite_pronouns_smells:
                 st.smells = st.smells+indefinite_pronouns_smells
+        self.stop_counting_time()
         return [test,]
 
     def _apply_mode_adverbs(self, st:Step) -> Step:

@@ -5,18 +5,21 @@ from matchers_factory import MatchersFactory
 from itertools import product
 import copy
 from collections import Counter
+from transformator import Transformator
 
 _OPERATIONS = (_REMOVE:=0, _REFACTOR:=1)
 
-class MisplacedPrecondition:
-    smell:str = smells_names.MISPLACED_PRECONDITION
-    _matcher = MatchersFactory.misplaced_precondition_matcher()
+class MisplacedPrecondition(Transformator):
+    def __init__(self):
+        self.smell = smells_names.MISPLACED_PRECONDITION
+        self._matcher = MatchersFactory.misplaced_precondition_matcher()
+        super().__init__()
 
     def __call__(self, test: Test) -> list[Test]:
         """
             The first action step declares the SUT state (e.g. 'wifi is turned off')
         """
-
+        self.start_counting_time()
         for (step_index, st) in enumerate(test.steps):
             sentences = list(enumerate(st.action.sents))
             found_matches = False
@@ -31,6 +34,7 @@ class MisplacedPrecondition:
                     test.steps.pop(step_index)
                 else:
                     test.steps[step_index].action = nlp(' '.join(sentences))
+        self.stop_counting_time()
         return [test]
 
     # def _mark_step_to_deletion(self, test:Test, number_of_steps:int) -> Test:

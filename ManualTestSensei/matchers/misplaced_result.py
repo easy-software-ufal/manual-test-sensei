@@ -3,9 +3,12 @@ import smells_names
 from matchers import helpers
 from spacy.tokens import Doc
 from matchers_factory import MatchersFactory
+from transformator import Transformator
 
-class MisplacedResult:
-    smell = smells_names.MISPLACED_RESULT
+class MisplacedResult(Transformator):
+    def __init__(self):
+        self.smell = smells_names.MISPLACED_VERIFICATION
+        super().__init__()
 
     def __call__(self, test: Test) -> list[Test]:
         '''
@@ -15,8 +18,10 @@ class MisplacedResult:
         '''
         # matcher = self.is_interrogative_sentence
 
+        self.start_counting_time()
         test = self._apply_verification_matcher(test)
         test = self._apply_affirmative_sentence_matcher(test)
+        self.stop_counting_time()
         return [test, ]
 
     def _apply_affirmative_sentence_matcher(self, test:Test) -> Test:

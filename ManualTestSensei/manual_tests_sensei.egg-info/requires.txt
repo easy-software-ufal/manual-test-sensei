@@ -4,3 +4,4 @@ rich
 scipy
 lxml
 streamlit
+seaborn
